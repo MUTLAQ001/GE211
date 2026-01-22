@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#0a0a0a">
+	<title>GE 211 - 471</title>
+	
+	<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700;900&display=swap");
+		@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+		:root{
+            --bg-dark: #050505;
+            --color-concept: #ffd700;
+            --color-lab: #00f2ff;
+            --color-holiday: #ff4757;
+            --font-body: "Cairo", sans-serif;
+            --font-nums: "Outfit", sans-serif;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+		
+        * {margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color: transparent;}
+		html{scroll-behavior:smooth;scrollbar-width:none;}
+		::-webkit-scrollbar {display: none;}
+        
+        @keyframes fadeIn { from {opacity: 0; transform: translateY(10px);} to {opacity: 1; transform: translateY(0);} }
+        @keyframes pulse-red { 0% {box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.4);} 70% {box-shadow: 0 0 0 10px rgba(255, 71, 87, 0);} 100% {box-shadow: 0 0 0 0 rgba(255, 71, 87, 0);} }
+        @keyframes pulse-border { 0% {border-color: rgba(255,255,255,0.2);} 50% {border-color: rgba(255,255,255,0.8);} 100% {border-color: rgba(255,255,255,0.2);} }
+
+		body{
+            font-family:var(--font-body);
+            background-color:var(--bg-dark);
+            color:#fff;
+            direction:rtl;
+            overflow-x:hidden;
+        }
+		
+        .cosmic-bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-2;background: radial-gradient(circle at 50% 10%, #1a1a2e 0%, #000 100%);}
+        .stars {position:absolute;width:100%;height:100%;background-image: radial-gradient(white 1px, transparent 1px); background-size: 50px 50px; opacity: 0.1;}
+		
+        .app{min-height:100vh;position:relative;padding:20px 15px;}
+		.container{width:100%;max-width:700px;margin:0 auto;}
+		
+        .header{text-align:center; margin-bottom: 30px; animation: fadeIn 0.8s ease; position: relative;}
+		.title{
+            font-family: var(--font-nums);
+            font-weight:700; font-size:3rem; margin:0;
+            background: linear-gradient(to right, #fff, #aaa);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            letter-spacing: -1px;
+        }
+		.subtitle{color:#888; font-size:1rem; margin-top: -5px;}
+
+        .team-settings-btn {
+            position: absolute; top: 10px; left: 0;
+            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+            color: #fff; border-radius: 50%; width: 40px; height: 40px;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; transition: var(--transition);
+            z-index: 10;
+        }
+        .team-settings-btn:hover { background: rgba(255,255,255,0.2); transform: scale(1.1); }
+
+        .author-link {
+            position: absolute; top: 10px; right: 0;
+            text-decoration: none;
+            color: #888; 
+            font-size: 0.8rem; font-weight: 700;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: var(--transition);
+            display: flex; align-items: center; gap: 5px;
+            z-index: 10;
+        }
+        .author-link:hover {
+            background: rgba(255,255,255,0.15);
+            color: #fff;
+            border-color: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+
+        .nav-tabs { 
+            background: rgba(255,255,255,0.05); 
+            padding: 5px; border-radius: 15px; 
+            display: flex; justify-content: space-between;
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .tab-btn {
+            flex: 1; text-align: center; padding: 12px;
+            background: transparent; border: none; color: #888;
+            font-family: var(--font-body); font-weight: 700; cursor: pointer;
+            border-radius: 12px; transition: var(--transition);
+        }
+        .tab-btn.active { 
+            background: rgba(255,255,255,0.1); color: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .timeline-container, .resources-grid { padding-bottom: 50px; }
+        
+        .session-card {
+            display: flex; align-items: stretch;
+            margin-bottom: 10px;
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition);
+            backdrop-filter: blur(12px);
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.05);
+            background: rgba(30,30,35,0.6);
+            animation: fadeIn 0.5s ease both;
+            cursor: pointer;
+            flex-wrap: wrap;
+        }
+        
+        .session-card.current-day {
+            border: 2px solid rgba(255,255,255,0.5);
+            box-shadow: 0 0 20px rgba(255,255,255,0.1);
+            animation: pulse-border 2s infinite;
+        }
+
+        .session-card.completed {
+            opacity: 0.6; filter: grayscale(0.8); border-color: #333;
+        }
+        .session-card.completed .session-topic { text-decoration: line-through; color: #666; }
+        .session-card.completed:hover { transform: none; box-shadow: none; cursor: default; }
+
+        .completed-badge {
+            position: absolute; top: 10px; left: 10px;
+            background: #00c853; color: #fff; font-size: 0.7rem; padding: 2px 8px;
+            border-radius: 10px; font-weight: bold;
+            display: flex; align-items: center; gap: 4px;
+        }
+
+        .session-card.concept { border-color: rgba(255, 215, 0, 0.4); background: linear-gradient(145deg, rgba(255, 215, 0, 0.05) 0%, rgba(20, 20, 25, 0.8) 100%); }
+        .session-card.lab { border-color: rgba(0, 242, 255, 0.4); background: linear-gradient(145deg, rgba(0, 242, 255, 0.05) 0%, rgba(20, 20, 25, 0.8) 100%); }
+        .session-card.holiday { border-color: rgba(255, 71, 87, 0.4); background: linear-gradient(145deg, rgba(255, 71, 87, 0.05) 0%, rgba(20, 20, 25, 0.8) 100%); pointer-events: none; }
+
+        .session-card:hover { transform: translateY(-3px) scale(1.01); box-shadow: 0 12px 40px rgba(0,0,0,0.5); }
+        
+        .date-box {
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            padding: 15px; min-width: 85px;
+            background: rgba(0,0,0,0.2);
+            border-left: 1px solid rgba(255,255,255,0.05);
+        }
+        .date-day-name { font-size: 0.8rem; color: #aaa; margin-bottom: 2px; }
+        .date-day-num { font-family: var(--font-nums); font-size: 1.8rem; font-weight: 700; color: #fff; line-height: 1; }
+        .date-month { font-family: var(--font-nums); font-size: 0.8rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+
+        .card-content { flex: 1; padding: 15px; display: flex; flex-direction: column; justify-content: center; position: relative; }
+        .session-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
+        
+        .session-id { 
+            font-family: var(--font-nums); font-size: 1.3rem; font-weight: 700; 
+            display: flex; align-items: center; gap: 8px; letter-spacing: 0.5px;
+        }
+        .session-card.concept .session-id { color: var(--color-concept); text-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
+        .session-card.lab .session-id { color: var(--color-lab); text-shadow: 0 0 10px rgba(0, 242, 255, 0.3); }
+        
+        .session-topic { font-size: 1rem; color: #eee; font-weight: 500; line-height: 1.4; transition: var(--transition); }
+        
+        .due-tag {
+            align-self: flex-start; margin-top: 10px; font-size: 0.8rem; padding: 5px 12px;
+            border-radius: 20px; background: rgba(255, 71, 87, 0.15); color: #ff6b81; border: 1px solid rgba(255, 71, 87, 0.3);
+            display: flex; align-items: center; gap: 6px; font-weight: 600; width: fit-content;
+        }
+
+        .external-file-btn {
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            background: rgba(0,0,0,0.4);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: var(--transition);
+            animation: fadeIn 0.5s ease both;
+        }
+        .external-file-btn.concept { color: var(--color-concept); border-color: rgba(255, 215, 0, 0.2); }
+        .external-file-btn.lab { color: var(--color-lab); border-color: rgba(0, 242, 255, 0.2); }
+
+        .external-file-btn:hover { background: rgba(255,255,255,0.1); transform: translateY(-2px); }
+
+
+        .block-divider {
+            height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+            margin: 25px 0; width: 70%; margin-left: auto; margin-right: auto;
+        }
+
+        .resource-card {
+            display: flex; flex-direction: column; 
+            padding: 20px; margin-bottom: 12px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            text-decoration: none; color: #fff;
+            transition: var(--transition);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 0.5s ease both;
+        }
+        .resource-header { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
+        .resource-icon { font-size: 1.8rem; color: var(--color-concept); }
+        .resource-info h3 { margin: 0; font-size: 1.1rem; font-weight: 700; }
+        .resource-info p { margin: 3px 0 0; font-size: 0.85rem; color: #888; }
+        
+        .resource-links { display: flex; gap: 10px; flex-wrap: wrap; }
+        .res-link-btn {
+            flex: 1; text-align: center; padding: 10px; font-size: 0.9rem;
+            background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+            color: #ccc; border-radius: 8px; text-decoration: none; transition: 0.2s;
+            display: flex; align-items: center; justify-content: center; gap: 5px; min-width: 140px;
+        }
+        .res-link-btn:hover { background: var(--color-lab); color: #000; border-color: var(--color-lab); font-weight: 700; }
+
+        .calc-container { padding: 5px; }
+        .calc-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        @media (min-width: 600px) {
+            .calc-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        .calc-section-title { margin-bottom: 10px; font-size: 1.2rem; display: flex; align-items: center; gap: 8px; }
+        .calc-section { 
+            background: rgba(255,255,255,0.02); 
+            padding: 15px; border-radius: 15px; 
+            border: 1px solid rgba(255,255,255,0.05); 
+        }
+
+        .input-row { 
+            display: flex; justify-content: space-between; align-items: center; 
+            margin-bottom: 12px; padding: 12px; 
+            background: rgba(0,0,0,0.2); 
+            border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); 
+        }
+        .input-row label { font-size: 0.9rem; color: #ccc; flex: 1; margin-left: 10px; line-height: 1.3; }
+        
+        .counter-control { 
+            display: flex; align-items: center; gap: 5px; 
+            background: #000; padding: 4px; 
+            border-radius: 10px; border: 1px solid #333; 
+            flex-shrink: 0;
+        }
+        .counter-btn { 
+            width: 32px; height: 32px; border: none; 
+            background: #222; color: #fff; border-radius: 8px; 
+            cursor: pointer; font-weight: bold; font-size: 1.2rem;
+            display: flex; align-items: center; justify-content: center;
+            transition: 0.2s; 
+        }
+        .counter-btn:active { background: #444; }
+        .counter-val { width: 30px; text-align: center; font-family: var(--font-nums); font-size: 1.1rem; }
+
+        .grade-result { 
+            text-align: center; padding: 30px; margin-top: 20px;
+            background: radial-gradient(circle, rgba(94, 156, 255, 0.1) 0%, transparent 70%);
+            border: 1px solid rgba(255,255,255,0.1); border-radius: 20px;
+        }
+        .grade-big { font-size: 4rem; font-family: var(--font-nums); font-weight: 800; text-shadow: 0 0 30px currentColor; }
+        .grade-A { color: #00c853; } .grade-B { color: #2979ff; } .grade-C { color: #ffd600; } .grade-D { color: #ff6d00; } .grade-F { color: #ff1744; }
+        .defects-text { font-size: 0.9rem; color: #888; margin-top: 5px; }
+        .reset-btn {
+            background: transparent; border: 1px solid rgba(255,71,87,0.3); color: #ff6b81;
+            padding: 8px 15px; border-radius: 8px; margin-top: 15px; cursor: pointer; font-size: 0.8rem;
+        }
+
+        .missed-btn {
+            width: 100%; display: flex; justify-content: center; align-items: center;
+            padding: 18px; margin-top: 25px; border-radius: 16px; cursor: pointer;
+            border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03);
+            transition: all 0.3s; text-align: center;
+        }
+        .missed-btn:active { transform: scale(0.98); }
+        .missed-btn.active {
+            background: rgba(255, 71, 87, 0.15); border-color: #ff4757;
+            box-shadow: 0 0 20px rgba(255, 71, 87, 0.2); animation: pulse-red 2s infinite;
+        }
+        .missed-info { display: flex; flex-direction: column; align-items: center; }
+        .missed-title { font-weight: 700; font-size: 1rem; color: #ccc; transition: 0.3s; }
+        .missed-sub { font-size: 0.8rem; color: #666; margin-top: 3px; }
+        .missed-btn.active .missed-title { color: #ff4757; }
+
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8); backdrop-filter: blur(5px);
+            z-index: 1000; display: flex; justify-content: center; align-items: center;
+            padding: 20px;
+        }
+        .modal-content {
+            background: #1a1a1f; width: 100%; max-width: 400px;
+            border-radius: 20px; border: 1px solid rgba(255,255,255,0.1);
+            padding: 25px; position: relative;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            animation: fadeIn 0.3s ease;
+        }
+        .modal-title { text-align: center; font-size: 1.2rem; margin-bottom: 20px; font-weight: 700; color: #fff; }
+        .modal-close {
+            position: absolute; top: 15px; left: 15px; background: none; border: none;
+            color: #888; font-size: 1.5rem; cursor: pointer;
+        }
+        
+        .role-row {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 12px; background: rgba(255,255,255,0.03); border-radius: 10px; margin-bottom: 8px;
+        }
+        .role-label { font-weight: 700; color: var(--color-lab); display: flex; align-items: center; gap: 8px; }
+        .role-value { font-family: var(--font-body); color: #fff; }
+
+        .complete-toggle-btn {
+            width: 100%; padding: 15px; border-radius: 12px; border: none; margin-top: 15px;
+            font-weight: 700; cursor: pointer; font-size: 1rem; transition: 0.2s;
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+        }
+        .btn-green { background: #00c853; color: #fff; }
+        .btn-outline { background: transparent; border: 1px solid #555; color: #ccc; }
+        
+        .team-input-row { margin-bottom: 10px; }
+        .team-input {
+            width: 100%; background: rgba(0,0,0,0.3); border: 1px solid #333;
+            color: #fff; padding: 10px; border-radius: 8px; font-family: var(--font-body);
+        }
+
+	</style>
+</head>
+<body>
+    <div class="cosmic-bg"><div class="stars"></div></div>
+	<div id="root"></div>
+
+	<script type="text/babel">
+		const { useState, useEffect, useMemo, StrictMode } = React;
+
+        const Icons = {
+            Concept: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>,
+            Lab: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M10 2v7.31"></path><path d="M14 2v7.31"></path><path d="M8.5 2h7"></path><path d="M14 9.3a6.5 6.5 0 1 1-4 0"></path></svg>,
+            Holiday: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>,
+            Alert: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>,
+            Folder: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>,
+            File: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>,
+            Check: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12"></polyline></svg>,
+            Users: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>,
+            Star: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>,
+            Clock: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>,
+            Edit: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+        };
+
+        const fileResources = {
+            'C1': 'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgBsZMm8IgCRTqhDX_ANa2pmAckD8u73ILSfXhTbOFK5WPE?e=ZCzoK2',
+            'C2': 'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgDn7UcbYTPtRpkJNVFch1yeAT37pqOezgtg554yCLiHyLM?e=pIf5yU',
+            'L1': 'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgDL-fpADYWmSaQESGlldC7WAZc9DHkFJus3G_DSoGF5J88?e=lwgE7y',
+            'FDM': 'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgCEkYAUr-F-TLUsEgwkrnb0AeUxpPv7XtflM9LuOicGtzA?e=acJxqo'
+        };
+
+        const ResourcesView = () => {
+            const files = [
+                { 
+                    title: 'First Day Material (FDM)', 
+                    sub: 'ملفات اليوم الأول', 
+                    type: 'folder',
+                    links: [
+                        { name: 'فتح المجلد', url: fileResources['FDM'] }
+                    ]
+                },
+                { 
+                    title: 'C1 Concept Session', 
+                    sub: 'ملفات C1 + المطلوب ورقياً', 
+                    type: 'mixed',
+                    links: [
+                        { name: 'ملفات الجلسة', url: fileResources['C1'] },
+                        { name: 'تسليم ورقي (Hard Copy)', url: 'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgA3a2WpU-uXTrOKBYRswqBeAWfVih3Z_XzIqH0UBUO0Y4M?e=lnLaDi', isImportant: true }
+                    ]
+                },
+                { 
+                    title: 'C2 Concept Session', 
+                    sub: 'ملفات جلسة المفاهيم 2', 
+                    type: 'folder',
+                    links: [
+                        { name: 'فتح المجلد', url: fileResources['C2'] }
+                    ]
+                },
+                { 
+                    title: 'L1 Lab Session', 
+                    sub: 'ملفات جلسة المعمل 1', 
+                    type: 'folder',
+                    links: [
+                        { name: 'فتح المجلد', url: fileResources['L1'] }
+                    ]
+                },
+            ];
+
+            return (
+                <div className="resources-grid">
+                    {files.map((f, i) => (
+                        <div key={i} className="resource-card" style={{animationDelay: `${i * 0.1}s`}}>
+                            <div className="resource-header">
+                                <div className="resource-icon">
+                                    {f.type === 'mixed' ? <Icons.Folder /> : <Icons.Folder />}
+                                </div>
+                                <div className="resource-info">
+                                    <h3>{f.title}</h3>
+                                    <p>{f.sub}</p>
+                                </div>
+                            </div>
+                            <div className="resource-links">
+                                {f.links.map((link, idx) => (
+                                    <a key={idx} href={link.url} target="_blank" className="res-link-btn" style={link.isImportant ? {borderColor:'#ff4757', color:'#ff6b81'} : {}}>
+                                        {link.isImportant ? <Icons.File/> : <Icons.File/>} {link.name}
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            )
+        };
+
+        const ScheduleView = ({ openTeamSettings, teamMembers }) => {
+            const startDate = new Date('2026-01-22');
+            
+            const holidays = [{ start: '2026-03-22', end: '2026-03-26', name: "إجازة عيد الفطر" }];
+            const deliverables = {
+                'C2-1': 'كويز #1', 'C2-2': 'تسليم C1', 'C2-3': 'كويز #2', 
+                'C3-1': 'كويز #3', 'C3-3': 'كويز #4', 
+                'C4-1': 'كويز #5', 'C4-3': 'كويز #6', 
+                'C5-1': 'كويز #7', 'C5-3': 'كويز #8', 
+                'C6-1': 'كويز #9', 'C6-2': 'إعادة Q6+Q7', 'C6-3': 'كويز #10',
+
+                'L2-1': 'مسودة L2', 'L2-2': 'فحص L5', 'L2-3': 'دفتر Zeroth',
+                
+                'L3-1': 'تسليم L1+L2 | إعادة Q1', 
+                'L3-2': 'إعادة Q2',
+                
+                'L4-1': 'L4-a + L2 Final', 
+                'L4-2': 'تسليم L4-b | إعادة Q3',
+                'L4-3': 'إعادة Q4',
+
+                'L5-2': 'تسليم L4-c | إعادة Q5', 
+                'L5-3': 'فحص نهائي', 
+                
+                'L6-1': 'تسليم L4-d | إعادة Q8', 
+                'L6-2': 'إعادة Q9',
+                'L6-3': 'تسليم L4-e | إعادة Q10'
+            };
+
+            const [completed, setCompleted] = useState(() => JSON.parse(localStorage.getItem('ge211_completed')) || {});
+            const [selectedSession, setSelectedSession] = useState(null);
+
+            useEffect(() => { localStorage.setItem('ge211_completed', JSON.stringify(completed)); }, [completed]);
+
+            const sessions = useMemo(() => {
+                let list = [], curr = new Date(startDate), type='concept', count=0, cycles={concept:1, lab:1};
+                let safety=0, sessionIndex = 0;
+                while(cycles.concept <= 10 && safety < 150) {
+                    let d = curr.getDay();
+                    if(d===0 || d===2 || d===4) {
+                        let dateStr = curr.toISOString().split('T')[0];
+                        let isHol = holidays.find(h => dateStr >= h.start && dateStr <= h.end);
+                        if(isHol) {
+                            list.push({type:'holiday', date:new Date(curr), id:'OFF', topic:isHol.name});
+                        } else {
+                            let pre = type==='concept'?'C':'L';
+                            let id = `${pre}${cycles[type]}-${count+1}`;
+                            let isStart = (count===0);
+                            list.push({
+                                type, date:new Date(curr), id, 
+                                topic: '',
+                                due: deliverables[id], isBlockStart: isStart,
+                                index: sessionIndex 
+                            });
+                            sessionIndex++;
+                            count++;
+                            if(count>=3) { cycles[type]++; count=0; type = type==='concept'?'lab':'concept'; }
+                        }
+                    }
+                    curr.setDate(curr.getDate()+1); safety++;
+                }
+                return list;
+            }, []);
+
+            const getDayName = (d) => d.toLocaleDateString('en-US', {weekday:'short'});
+            const getMonth = (d) => d.toLocaleDateString('en-US', {month:'short'});
+
+            const toggleComplete = (id) => {
+                setCompleted(prev => ({ ...prev, [id]: !prev[id] }));
+                setSelectedSession(null);
+            };
+
+            const getRoles = (idx) => {
+                if (idx === undefined) return null;
+                const leaderIdx = idx % 5;
+                const timerIdx = (idx + 1) % 5;
+                const writerIdx = (idx + 2) % 5;
+                return {
+                    Leader: teamMembers[leaderIdx],
+                    Timer: teamMembers[timerIdx],
+                    Writer: teamMembers[writerIdx]
+                };
+            };
+
+            const openDetails = (s) => {
+                if(s.type === 'holiday') return;
+                setSelectedSession({...s, roles: getRoles(s.index)});
+            };
+
+            const getFileUrl = (id) => {
+                if (!id) return null;
+                const prefix = id.split('-')[0];
+                return fileResources[prefix] || null;
+            };
+
+            const today = new Date();
+            today.setHours(0,0,0,0);
+
+            return (
+                <div className="timeline-container">
+                    {sessions.map((s, i) => {
+                        const sDate = new Date(s.date);
+                        sDate.setHours(0,0,0,0);
+
+                        const isPast = sDate.getTime() < today.getTime();
+                        
+                        const isToday = sDate.getTime() === today.getTime();
+
+                        const isDone = !!completed[s.id] || isPast;
+                        
+                        const currentPrefix = s.id.split('-')[0]; 
+                        const nextSession = sessions[i + 1];
+                        const nextPrefix = nextSession ? nextSession.id.split('-')[0] : null;
+                        const isEndOfBlock = currentPrefix !== nextPrefix;
+                        const fileUrl = isEndOfBlock ? getFileUrl(s.id) : null;
+
+                        return (
+                            <React.Fragment key={i}>
+                                {s.isBlockStart && i > 0 && <div className="block-divider"></div>}
+                                
+                                <div 
+                                    className={`session-card ${s.type} ${isDone ? 'completed' : ''} ${isToday ? 'current-day' : ''}`} 
+                                    style={{animationDelay: `${i * 0.05}s`}}
+                                    onClick={() => !isPast && openDetails(s)} 
+                                >
+                                    {isDone && <div className="completed-badge"><Icons.Check/> منجز</div>}
+                                    <div className="date-box">
+                                        <span className="date-day-name">{getDayName(s.date)}</span>
+                                        <span className="date-day-num">{s.date.getDate()}</span>
+                                        <span className="date-month">{getMonth(s.date)}</span>
+                                    </div>
+                                    <div className="card-content">
+                                        <div className="session-header">
+                                            <div className="session-id">
+                                                {s.type==='concept' && <Icons.Concept />}
+                                                {s.type==='lab' && <Icons.Lab />}
+                                                {s.type==='holiday' && <Icons.Holiday />}
+                                                <span style={{marginLeft:'5px'}}>{s.id}</span>
+                                            </div>
+                                        </div>
+                                        {s.topic && <div className="session-topic">{s.topic}</div>}
+                                        {s.due && <div className="due-tag"><Icons.Alert/> {s.due}</div>}
+                                    </div>
+                                </div>
+
+                                {fileUrl && (
+                                    <a 
+                                        href={fileUrl} 
+                                        target="_blank" 
+                                        className={`external-file-btn ${s.type}`}
+                                        style={{animationDelay: `${i * 0.05 + 0.05}s`}}
+                                    >
+                                        <Icons.Folder /> <span>فتح ملفات {currentPrefix}</span>
+                                    </a>
+                                )}
+                            </React.Fragment>
+                        )
+                    })}
+
+                    {selectedSession && (
+                        <div className="modal-overlay" onClick={() => setSelectedSession(null)}>
+                            <div className="modal-content" onClick={e => e.stopPropagation()}>
+                                <button className="modal-close" onClick={() => setSelectedSession(null)}>×</button>
+                                <h2 className="modal-title">{selectedSession.id} - تفاصيل الجلسة</h2>
+                                
+                                <div style={{marginBottom:'20px'}}>
+                                    <h3 style={{fontSize:'0.9rem', color:'#888', marginBottom:'10px'}}>أدوار الفريق لهذه الجلسة:</h3>
+                                    <div className="role-row">
+                                        <span className="role-label"><Icons.Star/> Leader</span>
+                                        <span className="role-value">{selectedSession.roles.Leader}</span>
+                                    </div>
+                                    <div className="role-row">
+                                        <span className="role-label"><Icons.Clock/> Timer</span>
+                                        <span className="role-value">{selectedSession.roles.Timer}</span>
+                                    </div>
+                                    <div className="role-row">
+                                        <span className="role-label"><Icons.Edit/> Writer</span>
+                                        <span className="role-value">{selectedSession.roles.Writer}</span>
+                                    </div>
+                                </div>
+
+                                <button 
+                                    className={`complete-toggle-btn ${completed[selectedSession.id] ? 'btn-outline' : 'btn-green'}`}
+                                    onClick={() => toggleComplete(selectedSession.id)}
+                                >
+                                    {completed[selectedSession.id] ? 'إلغاء "تم الانتهاء"' : 'وضع علامة "تم الانتهاء"'}
+                                </button>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            );
+        };
+
+        const Counter = ({ label, val, onChange }) => (
+            <div className="input-row">
+                <label>{label}</label>
+                <div className="counter-control">
+                    <button className="counter-btn" onClick={() => onChange(Math.max(0, val-1))}>-</button>
+                    <div className="counter-val">{val}</div>
+                    <button className="counter-btn" onClick={() => onChange(val+1)}>+</button>
+                </div>
+            </div>
+        );
+
+        const GradeView = () => {
+            const [state, setState] = useState(() => {
+                const saved = localStorage.getItem('ge211_data');
+                return saved ? JSON.parse(saved) : {
+                    cE: 0, cNI: 0, cNCE: 0, cLapses: 0,
+                    lE: 0, lNI: 0, lNCE: 0, lLapses: 0,
+                    missed: false
+                };
+            });
+
+            useEffect(() => { localStorage.setItem('ge211_data', JSON.stringify(state)); }, [state]);
+            const update = (key, val) => setState(prev => ({...prev, [key]: val}));
+
+            const calc = () => {
+                const getD = (nce, ni, lapses) => {
+                    let d = 0;
+                    if(nce===1) d+=2; else if(nce>=2) d+=3;
+                    if(ni===2) d+=1; else if(ni>2 && ni<=5) d+=2; else if(ni>5) d+=3;
+                    let lapseDefects = 0;
+                    if(lapses >= 4 && lapses <= 5) lapseDefects = 1;
+                    else if(lapses > 5 && lapses <= 7) lapseDefects = 2;
+                    else if(lapses > 7) lapseDefects = 3;
+                    return { total: d + lapseDefects, lapseDefects };
+                };
+                const getG = (ex, def, isL) => {
+                    if(def>=5) return 'F';
+                    if(def===0) return ex >= (isL?5:4) ? 'A' : 'B';
+                    if(def===1) return 'C'; if(def===2) return 'D'; return 'F';
+                };
+                let cStats = getD(state.cNCE, state.cNI, state.cLapses);
+                let lStats = getD(state.lNCE, state.lNI, state.lLapses);
+                let cg = getG(state.cE, cStats.total, false);
+                let lg = getG(state.lE, lStats.total, true);
+                if(state.missed || cStats.total>=5 || lStats.total>=5) return { grade: 'F', cd: cStats.total, ld: lStats.total };
+                const map = {'AA':'A+','AB':'A','AC':'B+','AD':'B','AF':'C+','BB':'B+','BC':'B','BD':'C+','BF':'C','CC':'C+','CD':'C','CF':'D+','DD':'D+','DF':'D','FF':'F'};
+                let key = [cg, lg].sort().join('');
+                return { grade: map[key] || 'F', cd: cStats.total, ld: lStats.total };
+            };
+
+            const result = calc();
+            const gClass = `grade-${result.grade.charAt(0)}`;
+
+            return (
+                <div className="calc-container">
+                    <div className="calc-grid">
+                        <div className="calc-section">
+                            <h3 className="calc-section-title" style={{color:'var(--color-concept)'}}>
+                                <Icons.Concept/> Concepts
+                            </h3>
+                            <Counter label="Exceeds (E)" val={state.cE} onChange={v => update('cE', v)} />
+                            <Counter label="Needs Imp. (NI)" val={state.cNI} onChange={v => update('cNI', v)} />
+                            <Counter label="No Credit (NCE)" val={state.cNCE} onChange={v => update('cNCE', v)} />
+                            <Counter label="Lapses (زلات)" val={state.cLapses} onChange={v => update('cLapses', v)} />
+                        </div>
+                        <div className="calc-section">
+                            <h3 className="calc-section-title" style={{color:'var(--color-lab)'}}>
+                                <Icons.Lab/> Lab
+                            </h3>
+                            <Counter label="Exceeds (E)" val={state.lE} onChange={v => update('lE', v)} />
+                            <Counter label="Needs Imp. (NI)" val={state.lNI} onChange={v => update('lNI', v)} />
+                            <Counter label="No Credit (NCE)" val={state.lNCE} onChange={v => update('lNCE', v)} />
+                            <Counter label="Lapses (زلات)" val={state.lLapses} onChange={v => update('lLapses', v)} />
+                        </div>
+                    </div>
+                    
+                    <div className={`missed-btn ${state.missed ? 'active' : ''}`} onClick={() => update('missed', !state.missed)}>
+                        <div className="missed-info">
+                            <span className="missed-title">{state.missed ? "فاتني الاختبار (رسوب)" : "حضور الاختبار النهائي"}</span>
+                            <span className="missed-sub">{state.missed ? "احذر! سيؤدي هذا إلى الرسوب الفوري." : "اضغط للتبديل في حال عدم الحضور."}</span>
+                        </div>
+                    </div>
+
+                    <div className="grade-result">
+                        <div style={{color:'#888', marginBottom:'5px'}}>الدرجة المتوقعة</div>
+                        <div className={`grade-big ${gClass}`}>{result.grade}</div>
+                        <div className="defects-text">العيوب: Concepts ({result.cd}) | Lab ({result.ld})</div>
+                        <button className="reset-btn" onClick={() => confirm('هل أنت متأكد؟') && setState({cE:0, cNI:0, cNCE:0, cLapses:0, lE:0, lNI:0, lNCE:0, lLapses:0, missed:false})}>تصفير البيانات</button>
+                    </div>
+                </div>
+            );
+        };
+
+        const TeamSettingsModal = ({ isOpen, onClose, members, setMembers }) => {
+            if(!isOpen) return null;
+            const handleChange = (i, val) => {
+                const newM = [...members]; newM[i] = val; setMembers(newM);
+            };
+            return (
+                <div className="modal-overlay" onClick={onClose}>
+                    <div className="modal-content" onClick={e => e.stopPropagation()}>
+                        <button className="modal-close" onClick={onClose}>×</button>
+                        <h2 className="modal-title">إعدادات الفريق</h2>
+                        <p style={{textAlign:'center', color:'#888', marginBottom:'15px', fontSize:'0.9rem'}}>قم بإدخال أسماء أعضاء الفريق لترتيب الأدوار تلقائياً.</p>
+                        {members.map((m, i) => (
+                            <div key={i} className="team-input-row">
+                                <label style={{fontSize:'0.8rem', color:'#aaa', display:'block', marginBottom:'3px'}}>العضو رقم {i+1}</label>
+                                <input type="text" className="team-input" value={m} onChange={(e) => handleChange(i, e.target.value)} placeholder={`Member ${i+1}`} />
+                            </div>
+                        ))}
+                        <button className="complete-toggle-btn btn-green" onClick={onClose}>حفظ وإغلاق</button>
+                    </div>
+                </div>
+            );
+        }
+
+		function App() {
+            const [tab, setTab] = useState('schedule');
+            const [showTeamModal, setShowTeamModal] = useState(false);
+            const [teamMembers, setTeamMembers] = useState(() => JSON.parse(localStorage.getItem('ge211_team')) || ["عضو 1", "عضو 2", "عضو 3", "عضو 4", "عضو 5"]);
+
+            useEffect(() => { localStorage.setItem('ge211_team', JSON.stringify(teamMembers)); }, [teamMembers]);
+
+			return (
+				<div className="app">
+					<div className="container">
+						<header className="header">
+                            <button className="team-settings-btn" onClick={() => setShowTeamModal(true)}>
+                                <Icons.Users />
+                            </button>
+                            
+                            <a href="https://t.me/MUTLAQ1" target="_blank" className="author-link">
+                                إعداد: مطلق
+                            </a>
+
+							<h1 className="title">GE 211</h1>
+							<p className="subtitle">Introduction to Engineering Design</p>
+						</header>
+
+                        <div className="nav-tabs">
+                            <button className={`tab-btn ${tab==='schedule'?'active':''}`} onClick={()=>setTab('schedule')}>الجدول</button>
+                            <button className={`tab-btn ${tab==='resources'?'active':''}`} onClick={()=>setTab('resources')}>الملفات</button>
+                            <button className={`tab-btn ${tab==='grades'?'active':''}`} onClick={()=>setTab('grades')}>الحاسبة</button>
+                        </div>
+
+                        {tab === 'schedule' && <ScheduleView openTeamSettings={() => setShowTeamModal(true)} teamMembers={teamMembers} />}
+                        {tab === 'resources' && <ResourcesView />}
+                        {tab === 'grades' && <GradeView />}
+
+                        <TeamSettingsModal isOpen={showTeamModal} onClose={() => setShowTeamModal(false)} members={teamMembers} setMembers={setTeamMembers} />
+					</div>
+				</div>
+			);
+		}
+		
+		const root = ReactDOM.createRoot(document.getElementById("root"));
+		root.render(<StrictMode><App /></StrictMode>);
+	</script>
+</body>
+</html>
