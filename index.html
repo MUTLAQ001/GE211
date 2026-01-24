@@ -678,7 +678,7 @@
                     title: {en: 'Submit L4-b | Makeup Q3', ar: 'تسليم L4-b | إعادة Q3'}, 
                     desc: {
                         en: 'Presentation of Project Phase (b) + DNB 2nd assessment. Makeup Quiz 3 in first 10 mins.',
-                        ar: 'عرض تقديمي للمشروع L-4-b + التقييم الثاني لدفتر التصميم. إعادة كويز 3 في أول 10 دقائق.'
+                        ar: 'عرض تقديمي للمشروع L-4-b + التقييم الثاني لدفتر التصميم. إعادة كويز 3 in first 10 mins.'
                     } 
                 },
                 'L4-3': { 
@@ -740,6 +740,8 @@
                         if(isHol) {
                             list.push({type:'holiday', date:new Date(curr), id:'OFF', topic:isHol.name});
                         } else {
+                            if (cycles[type] > 6) break;
+
                             let pre = type==='concept'?'C':'L';
                             let id = `${pre}${cycles[type]}-${count+1}`;
                             let isStart = (count===0);
