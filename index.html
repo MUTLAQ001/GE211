@@ -19,6 +19,7 @@
             --color-concept: #ffd700;
             --color-lab: #00f2ff;
             --color-holiday: #ff4757;
+            --color-success: #00e676;
             --font-body: "Cairo", sans-serif;
             --font-nums: "Outfit", sans-serif;
             --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -29,7 +30,6 @@
 		::-webkit-scrollbar {display: none;}
         
         @keyframes fadeIn { from {opacity: 0; transform: translateY(10px);} to {opacity: 1; transform: translateY(0);} }
-        @keyframes pulse-red { 0% {box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.4);} 70% {box-shadow: 0 0 0 10px rgba(255, 71, 87, 0);} 100% {box-shadow: 0 0 0 0 rgba(255, 71, 87, 0);} }
         @keyframes pulse-border { 0% {border-color: rgba(255,255,255,0.2);} 50% {border-color: rgba(255,255,255,0.8);} 100% {border-color: rgba(255,255,255,0.2);} }
 
 		body{
@@ -126,18 +126,25 @@
             box-shadow: 0 0 20px rgba(255,255,255,0.1);
             animation: pulse-border 2s infinite;
         }
-
-        .session-card.completed {
-            opacity: 0.6; filter: grayscale(0.8); border-color: #333;
+        
+        .session-card.is-past {
+            opacity: 0.6;
+            filter: grayscale(0.9);
+            border-color: #222;
         }
-        .session-card.completed .session-topic { text-decoration: line-through; color: #666; }
-        .session-card.completed:hover { transform: none; box-shadow: none; cursor: default; }
+        .session-card.is-past .session-topic {
+            text-decoration: line-through;
+            color: #666;
+        }
+        .session-card.is-past:hover {
+            opacity: 1; filter: grayscale(0);
+        }
 
-        .completed-badge {
+        .past-badge {
             position: absolute; top: 10px; left: 10px;
-            background: #00c853; color: #fff; font-size: 0.7rem; padding: 2px 8px;
-            border-radius: 10px; font-weight: bold;
-            display: flex; align-items: center; gap: 4px;
+            background: rgba(0,0,0,0.6); color: #aaa; font-size: 0.7rem; padding: 3px 10px;
+            border-radius: 10px; font-weight: bold; border: 1px solid #333;
+            display: flex; align-items: center; gap: 4px; z-index: 2;
         }
 
         .session-card.concept { border-color: rgba(255, 215, 0, 0.4); background: linear-gradient(145deg, rgba(255, 215, 0, 0.05) 0%, rgba(20, 20, 25, 0.8) 100%); }
@@ -166,7 +173,7 @@
         .session-card.concept .session-id { color: var(--color-concept); text-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
         .session-card.lab .session-id { color: var(--color-lab); text-shadow: 0 0 10px rgba(0, 242, 255, 0.3); }
         
-        .session-topic { font-size: 1rem; color: #eee; font-weight: 500; line-height: 1.4; transition: var(--transition); }
+        .session-topic { font-size: 1rem; color: #eee; font-weight: 500; line-height: 1.4; transition: var(--transition); direction: ltr; text-align: right; }
         
         .due-tag {
             align-self: flex-start; margin-top: 10px; font-size: 0.8rem; padding: 5px 12px;
@@ -198,6 +205,24 @@
             height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
             margin: 25px 0; width: 70%; margin-left: auto; margin-right: auto;
         }
+
+        .completed-block-card {
+            display: flex; align-items: center; justify-content: space-between;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px dashed rgba(255, 255, 255, 0.2);
+            padding: 15px 20px;
+            border-radius: 16px;
+            cursor: pointer;
+            margin-bottom: 25px;
+            transition: all 0.3s ease;
+        }
+        .completed-block-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+        }
+        .block-info { display: flex; align-items: center; gap: 12px; font-weight: 700; color: #aaa; }
+        .block-status { font-size: 0.8rem; color: #666; display: flex; align-items: center; gap: 5px; }
 
         .resource-card {
             display: flex; flex-direction: column; 
@@ -296,18 +321,18 @@
 
         .modal-overlay {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.8); backdrop-filter: blur(5px);
+            background: rgba(0,0,0,0.8); backdrop-filter: blur(8px);
             z-index: 1000; display: flex; justify-content: center; align-items: center;
             padding: 20px;
         }
         .modal-content {
-            background: #1a1a1f; width: 100%; max-width: 400px;
-            border-radius: 20px; border: 1px solid rgba(255,255,255,0.1);
-            padding: 25px; position: relative;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            background: #121215; width: 100%; max-width: 400px;
+            border-radius: 24px; border: 1px solid rgba(255,255,255,0.1);
+            padding: 30px; position: relative;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.6);
             animation: fadeIn 0.3s ease;
         }
-        .modal-title { text-align: center; font-size: 1.2rem; margin-bottom: 20px; font-weight: 700; color: #fff; }
+        .modal-title { text-align: center; font-size: 1.3rem; margin-bottom: 25px; font-weight: 800; color: #fff; }
         .modal-close {
             position: absolute; top: 15px; left: 15px; background: none; border: none;
             color: #888; font-size: 1.5rem; cursor: pointer;
@@ -320,19 +345,98 @@
         .role-label { font-weight: 700; color: var(--color-lab); display: flex; align-items: center; gap: 8px; }
         .role-value { font-family: var(--font-body); color: #fff; }
 
-        .complete-toggle-btn {
-            width: 100%; padding: 15px; border-radius: 12px; border: none; margin-top: 15px;
-            font-weight: 700; cursor: pointer; font-size: 1rem; transition: 0.2s;
-            display: flex; align-items: center; justify-content: center; gap: 10px;
+        .desc-box {
+            background: linear-gradient(145deg, #1e1e24, #121215);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 24px;
+            margin-top: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
         }
-        .btn-green { background: #00c853; color: #fff; }
-        .btn-outline { background: transparent; border: 1px solid #555; color: #ccc; }
+        .desc-header {
+            display: flex; align-items: center; justify-content: space-between;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding-bottom: 12px;
+        }
+        .desc-title {
+            color: #fff; font-weight: 700; display: flex; align-items: center; gap: 8px; font-size: 1rem;
+        }
+        .desc-content {
+            color: #ddd; lineHeight: 1.6; fontSize: 0.95rem; font-family: 'Outfit', sans-serif;
+            direction: ltr; text-align: left;
+        }
+        .desc-content.rtl {
+            direction: rtl; text-align: right; font-family: var(--font-body);
+        }
         
-        .team-input-row { margin-bottom: 10px; }
-        .team-input {
-            width: 100%; background: rgba(0,0,0,0.3); border: 1px solid #333;
-            color: #fff; padding: 10px; border-radius: 8px; font-family: var(--font-body);
+        .lang-switch {
+            display: flex; background: rgba(0,0,0,0.3); border-radius: 20px;
+            padding: 3px; border: 1px solid rgba(255,255,255,0.1); cursor: pointer;
+            position: relative; width: 70px; height: 28px;
         }
+        .lang-option {
+            flex: 1; display: flex; align-items: center; justify-content: center;
+            font-size: 0.7rem; font-weight: bold; color: #888; z-index: 2; transition: 0.3s;
+        }
+        .lang-active-bg {
+            position: absolute; top: 3px; left: 3px; width: 32px; height: 20px;
+            background: var(--color-lab); border-radius: 15px; z-index: 1;
+            transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .lang-switch.active .lang-active-bg { transform: translateX(32px); }
+        .lang-switch.active .lang-option:last-child { color: #000; }
+        .lang-switch:not(.active) .lang-option:first-child { color: #000; }
+        
+        .timer-toggle-btn {
+            width: 100%; padding: 15px; margin-bottom: 25px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            color: #fff; font-family: var(--font-body); font-weight: 700;
+            cursor: pointer; display: flex; align-items: center; justify-content: space-between;
+            transition: all 0.3s ease;
+        }
+        .timer-toggle-btn.active {
+            background: rgba(0, 230, 118, 0.15);
+            border-color: #00e676;
+            color: #00e676;
+            box-shadow: 0 0 15px rgba(0, 230, 118, 0.2);
+        }
+        .timer-toggle-btn:hover { transform: translateY(-2px); }
+        .timer-status-text { font-size: 0.9rem; }
+
+        .team-member-row {
+            display: flex; align-items: center; gap: 10px;
+            margin-bottom: 12px;
+            background: rgba(255,255,255,0.03);
+            padding: 8px 15px;
+            border-radius: 14px;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: 0.3s;
+        }
+        .team-member-row:focus-within {
+            border-color: var(--color-lab);
+            background: rgba(0, 242, 255, 0.05);
+        }
+        .member-icon { color: #666; font-size: 1.1rem; }
+        .team-input-clean {
+            background: transparent; border: none; color: #fff; width: 100%;
+            outline: none; font-family: var(--font-body); font-size: 0.95rem; padding: 5px 0;
+        }
+        .team-input-clean::placeholder { color: #444; }
+        
+        .save-btn-new {
+            width: 100%; padding: 16px; 
+            background: linear-gradient(90deg, var(--color-lab), #00d2ff);
+            color: #000; font-weight: 800; font-size: 1rem;
+            border: none; border-radius: 14px; margin-top: 20px;
+            cursor: pointer; transition: 0.3s;
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+        }
+        .save-btn-new:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0, 242, 255, 0.2); }
 
 	</style>
 </head>
@@ -354,7 +458,11 @@
             Users: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>,
             Star: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>,
             Clock: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>,
-            Edit: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+            Edit: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>,
+            Info: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>,
+            User: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>,
+            ChevronDown: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="6 9 12 15 18 9"></polyline></svg>,
+            ChevronUp: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
         };
 
         const fileResources = {
@@ -427,38 +535,199 @@
             )
         };
 
-        const ScheduleView = ({ openTeamSettings, teamMembers }) => {
+        const ScheduleView = ({ openTeamSettings, teamMembers, settings }) => {
             const startDate = new Date('2026-01-22');
             
             const holidays = [{ start: '2026-03-22', end: '2026-03-26', name: "إجازة عيد الفطر" }];
-            const deliverables = {
-                'C2-1': 'كويز #1', 'C2-2': 'تسليم C1', 'C2-3': 'كويز #2', 
-                'C3-1': 'كويز #3', 'C3-3': 'كويز #4', 
-                'C4-1': 'كويز #5', 'C4-3': 'كويز #6', 
-                'C5-1': 'كويز #7', 'C5-3': 'كويز #8', 
-                'C6-1': 'كويز #9', 'C6-2': 'إعادة Q6+Q7', 'C6-3': 'كويز #10',
-
-                'L2-1': 'مسودة L2', 'L2-2': 'فحص L5', 'L2-3': 'دفتر Zeroth',
-                
-                'L3-1': 'تسليم L1+L2 | إعادة Q1', 
-                'L3-2': 'إعادة Q2',
-                
-                'L4-1': 'L4-a + L2 Final', 
-                'L4-2': 'تسليم L4-b | إعادة Q3',
-                'L4-3': 'إعادة Q4',
-
-                'L5-2': 'تسليم L4-c | إعادة Q5', 
-                'L5-3': 'فحص نهائي', 
-                
-                'L6-1': 'تسليم L4-d | إعادة Q8', 
-                'L6-2': 'إعادة Q9',
-                'L6-3': 'تسليم L4-e | إعادة Q10'
+            
+            const sessionDetails = {
+                'C2-1': { 
+                    title: {en: 'Quiz #1', ar: 'كويز 1'},
+                    desc: {
+                        en: 'Quiz #1: First Day materials (white, orange, yellow packets) + Blue Workbook (J49-J56) - Various Levels of Learning.',
+                        ar: 'كويز 1: مواد اليوم الأول (الرزم البيضاء، البرتقالية، الصفراء) + كتاب العمل الأزرق (J49-J56).'
+                    } 
+                },
+                'C2-2': {
+                    title: {en: 'Submit C1', ar: 'تسليم C1'},
+                    desc: {
+                        en: 'Assignment C1 Due: Engineering the Profession.',
+                        ar: 'تسليم واجب C1: مهنة الهندسة.'
+                    }
+                },
+                'C2-3': { 
+                    title: {en: 'Quiz #2', ar: 'كويز 2'},
+                    desc: {
+                        en: 'Quiz #2: SCPS Chapter 1 (Pages 1-3) + Blue Workbook Sections B (B5-B10) and E (E1-E12).',
+                        ar: 'كويز 2: الفصل 1 من كتاب SCPS (ص 1-3) + الأقسام B و E من كتاب العمل الأزرق.'
+                    } 
+                },
+                'C3-1': { 
+                    title: {en: 'Quiz #3', ar: 'كويز 3'},
+                    desc: {
+                        en: 'Quiz #3: SCPS Chapter 2 (Sections 2.3, 2.5 on Page 12) + Chapter 3 (Page 29 to end of 3.2C).',
+                        ar: 'كويز 3: الفصل 2 (أقسام محددة) + الفصل 3 (من ص 29 إلى نهاية 3.2C) من SCPS.'
+                    } 
+                },
+                'C3-3': { 
+                    title: {en: 'Quiz #4', ar: 'كويز 4'},
+                    desc: {
+                        en: 'Quiz #4: SCPS Chapter 4 (Page 61 to end of Sec 4.3B).',
+                        ar: 'كويز 4: الفصل 4 من صفحة 61 حتى نهاية القسم 4.3B في كتاب SCPS.'
+                    } 
+                },
+                'C4-1': { 
+                    title: {en: 'Quiz #5', ar: 'كويز 5'},
+                    desc: {
+                        en: 'Quiz #5: More about problem definition: SCPS Chapter 3 (from 3.2D to end of chapter).',
+                        ar: 'كويز 5: تعريف المشكلة: الفصل 3 (من 3.2D للنهاية) في SCPS.'
+                    } 
+                },
+                'C4-3': { 
+                    title: {en: 'Quiz #6', ar: 'كويز 6'},
+                    desc: {
+                        en: 'Quiz #6: SCPS Chapter 5 until end of Page 102.',
+                        ar: 'كويز 6: الفصل 5 حتى نهاية الصفحة 102 في كتاب SCPS.'
+                    } 
+                },
+                'C5-1': { 
+                    title: {en: 'Quiz #7', ar: 'كويز 7'},
+                    desc: {
+                        en: 'Quiz #7: SCPS Chapter 5 (Page 103 to end) + Exxon Valdez problem (handouts).',
+                        ar: 'كويز 7: الفصل 5 (من ص 103 للنهاية) + مشكلة Exxon Valdez.'
+                    } 
+                },
+                'C5-3': { 
+                    title: {en: 'Quiz #8', ar: 'كويز 8'},
+                    desc: {
+                        en: 'Quiz #8: SCPS Chapter 6 until end of section 6.4.',
+                        ar: 'كويز 8: الفصل 6 حتى نهاية القسم 6.4 من الفصل 6 في كتاب SCPS.'
+                    } 
+                },
+                'C6-1': { 
+                    title: {en: 'Quiz #9', ar: 'كويز 9'},
+                    desc: {
+                        en: 'Quiz #9: SCPS Chapter 6 (from section 6.5 to end).',
+                        ar: 'كويز 9: الفصل 6 من القسم 6.5 حتى نهاية الفصل 6 في SCPS.'
+                    } 
+                },
+                'C6-2': {
+                    title: {en: 'Makeup Q6+Q7', ar: 'إعادة كويز 6+7'},
+                    desc: {
+                        en: 'Correction/Makeup for Quiz 6 and Quiz 7.',
+                        ar: 'فرصة إعادة أو تصحيح للكويز رقم 6 و 7.'
+                    }
+                },
+                'C6-3': { 
+                    title: {en: 'Quiz #10', ar: 'كويز 10'},
+                    desc: {
+                        en: 'Quiz #10: All of SCPS Chapter 7.',
+                        ar: 'كويز 10: كامل الفصل 7 في كتاب SCPS.'
+                    } 
+                },
+                'L1-3': {
+                    title: {en: 'Teammate Interview', ar: 'مقابلة الزملاء'},
+                    desc: {
+                        en: 'Submission: L-1 Teammate Interview (Hard copy).',
+                        ar: 'تسليم L-1 Teammate Interview (ورقي بالكامل).'
+                    }
+                },
+                'L2-1': {
+                    title: {en: 'L2 Draft', ar: 'مسودة L2'},
+                    desc: {
+                        en: 'L-2 Setting Team Norms (Step 1) - Draft only.',
+                        ar: 'تسليم L-2 Setting Team Norms (Step 1) - مسودة فقط.'
+                    }
+                },
+                'L2-2': {
+                    title: {en: 'L5 Checks', ar: 'فحص L5'},
+                    desc: {
+                        en: 'L-5 Team Process Checks (Checklist + forms).',
+                        ar: 'L-5 Team Process Checks (Checklist + forms).'
+                    }
+                },
+                'L2-3': { 
+                    title: {en: 'Zeroth Notebook', ar: 'دفتر Zeroth'}, 
+                    desc: {
+                        en: 'Submission: L-3-0th Team’s Design Notebook (Zeroth) (Hard copy).',
+                        ar: 'تسليم L-3-0th Team’s Design Notebook (Zeroth) (ورقي بالكامل).'
+                    } 
+                },
+                'L3-1': { 
+                    title: {en: 'Submit L1+L2 | Makeup Q1', ar: 'تسليم L1+L2 | إعادة Q1'}, 
+                    desc: {
+                        en: 'Final submission for L-1 & L-2. Makeup Quiz 1 in first 10 mins.',
+                        ar: 'تسليم نهائي لـ L-1 و L-2. إعادة كويز 1 في أول 10 دقائق.'
+                    } 
+                },
+                'L3-2': { 
+                    title: {en: 'Makeup Q2', ar: 'إعادة Q2'}, 
+                    desc: {
+                        en: 'Makeup Quiz 2 in first 10 mins.',
+                        ar: 'إعادة كويز 2 في أول 10 دقائق.'
+                    } 
+                },
+                'L4-1': { 
+                    title: {en: 'L4-a + L2 Final', ar: 'L4-a + L2 تسليم'}, 
+                    desc: {
+                        en: 'Presentation of Project Phase (a) + DNB 1st assessment. L-2 Final Submission.',
+                        ar: 'عرض تقديمي للمشروع L-4-a + التقييم الأول لدفتر التصميم (DNB). تسليم نهائي لـ L-2.'
+                    } 
+                },
+                'L4-2': { 
+                    title: {en: 'Submit L4-b | Makeup Q3', ar: 'تسليم L4-b | إعادة Q3'}, 
+                    desc: {
+                        en: 'Presentation of Project Phase (b) + DNB 2nd assessment. Makeup Quiz 3 in first 10 mins.',
+                        ar: 'عرض تقديمي للمشروع L-4-b + التقييم الثاني لدفتر التصميم. إعادة كويز 3 في أول 10 دقائق.'
+                    } 
+                },
+                'L4-3': { 
+                    title: {en: 'Makeup Q4', ar: 'إعادة Q4'}, 
+                    desc: {
+                        en: 'Makeup Quiz 4 in first 10 mins.',
+                        ar: 'إعادة كويز 4 في أول 10 دقائق.'
+                    } 
+                },
+                'L5-2': { 
+                    title: {en: 'Submit L4-c | Makeup Q5', ar: 'تسليم L4-c | إعادة Q5'}, 
+                    desc: {
+                        en: 'Presentation of Project Phase (c) + DNB 3rd assessment. Makeup Quiz 5 in first 10 mins.',
+                        ar: 'عرض تقديمي للمشروع L-4-c + التقييم الثالث لدفتر التصميم. إعادة كويز 5 في أول 10 دقائق.'
+                    } 
+                },
+                'L5-3': { 
+                    title: {en: 'Final Checks', ar: 'فحص نهائي'}, 
+                    desc: {
+                        en: 'Submission: L-4-d (Presentation) + DNB 4th Assessment.',
+                        ar: 'تسليم L-4-d (عرض تقديمي) + التقييم الرابع لدفتر التصميم.'
+                    } 
+                },
+                'L6-1': { 
+                    title: {en: 'Submit L4-d | Makeup Q8', ar: 'تسليم L4-d | إعادة Q8'}, 
+                    desc: {
+                        en: 'Submission: L-4-e (Presentation) + DNB 5th Assessment. Makeup Quiz 8 in first 10 mins.',
+                        ar: 'تسليم L-4-e (عرض تقديمي) + التقييم الخامس لدفتر التصميم. إعادة كويز 8 في أول 10 دقائق.'
+                    } 
+                },
+                'L6-2': { 
+                    title: {en: 'Makeup Q9', ar: 'إعادة Q9'}, 
+                    desc: {
+                        en: 'Makeup Quiz 9.',
+                        ar: 'إعادة كويز 9.'
+                    } 
+                },
+                'L6-3': { 
+                    title: {en: 'Submit L4-e | Makeup Q10', ar: 'تسليم L4-e | إعادة Q10'}, 
+                    desc: {
+                        en: 'Final Submission: L-3-final (Celebration) + DNB. Makeup Quiz 10.',
+                        ar: 'تسليم نهائي للمشروع L-3-final (Celebration) وملفات الدفتر. إعادة كويز 10.'
+                    } 
+                }
             };
 
-            const [completed, setCompleted] = useState(() => JSON.parse(localStorage.getItem('ge211_completed')) || {});
             const [selectedSession, setSelectedSession] = useState(null);
-
-            useEffect(() => { localStorage.setItem('ge211_completed', JSON.stringify(completed)); }, [completed]);
+            const [transMode, setTransMode] = useState(false);
+            const [expandedBlocks, setExpandedBlocks] = useState({});
 
             const sessions = useMemo(() => {
                 let list = [], curr = new Date(startDate), type='concept', count=0, cycles={concept:1, lab:1};
@@ -474,10 +743,15 @@
                             let pre = type==='concept'?'C':'L';
                             let id = `${pre}${cycles[type]}-${count+1}`;
                             let isStart = (count===0);
+                            
+                            let details = sessionDetails[id] || {};
+                            
                             list.push({
                                 type, date:new Date(curr), id, 
                                 topic: '',
-                                due: deliverables[id], isBlockStart: isStart,
+                                due: details.title, 
+                                fullDesc: details.desc,
+                                isBlockStart: isStart,
                                 index: sessionIndex 
                             });
                             sessionIndex++;
@@ -493,11 +767,6 @@
             const getDayName = (d) => d.toLocaleDateString('en-US', {weekday:'short'});
             const getMonth = (d) => d.toLocaleDateString('en-US', {month:'short'});
 
-            const toggleComplete = (id) => {
-                setCompleted(prev => ({ ...prev, [id]: !prev[id] }));
-                setSelectedSession(null);
-            };
-
             const getRoles = (idx) => {
                 if (idx === undefined) return null;
                 const leaderIdx = idx % 5;
@@ -512,6 +781,7 @@
 
             const openDetails = (s) => {
                 if(s.type === 'holiday') return;
+                setTransMode(false);
                 setSelectedSession({...s, roles: getRoles(s.index)});
             };
 
@@ -520,38 +790,40 @@
                 const prefix = id.split('-')[0];
                 return fileResources[prefix] || null;
             };
+            
+            const handleCloseModal = () => setSelectedSession(null);
+
+            const toggleBlock = (prefix) => {
+                setExpandedBlocks(prev => ({...prev, [prefix]: !prev[prefix]}));
+            };
 
             const today = new Date();
             today.setHours(0,0,0,0);
 
+            const groups = useMemo(() => {
+                let g = {};
+                let order = [];
+                sessions.forEach(s => {
+                    let prefix = s.type === 'holiday' ? `HOL-${s.date.getTime()}` : s.id.split('-')[0];
+                    if(!g[prefix]) {
+                        g[prefix] = [];
+                        order.push(prefix);
+                    }
+                    g[prefix].push(s);
+                });
+                return { data: g, keys: order };
+            }, [sessions]);
+
             return (
                 <div className="timeline-container">
-                    {sessions.map((s, i) => {
-                        const sDate = new Date(s.date);
-                        sDate.setHours(0,0,0,0);
-
-                        const isPast = sDate.getTime() < today.getTime();
+                    {groups.keys.map((prefix, groupIndex) => {
+                        const blockSessions = groups.data[prefix];
+                        const isHoliday = prefix.startsWith('HOL');
                         
-                        const isToday = sDate.getTime() === today.getTime();
-
-                        const isDone = !!completed[s.id] || isPast;
-                        
-                        const currentPrefix = s.id.split('-')[0]; 
-                        const nextSession = sessions[i + 1];
-                        const nextPrefix = nextSession ? nextSession.id.split('-')[0] : null;
-                        const isEndOfBlock = currentPrefix !== nextPrefix;
-                        const fileUrl = isEndOfBlock ? getFileUrl(s.id) : null;
-
-                        return (
-                            <React.Fragment key={i}>
-                                {s.isBlockStart && i > 0 && <div className="block-divider"></div>}
-                                
-                                <div 
-                                    className={`session-card ${s.type} ${isDone ? 'completed' : ''} ${isToday ? 'current-day' : ''}`} 
-                                    style={{animationDelay: `${i * 0.05}s`}}
-                                    onClick={() => !isPast && openDetails(s)} 
-                                >
-                                    {isDone && <div className="completed-badge"><Icons.Check/> منجز</div>}
+                        if (isHoliday) {
+                            const s = blockSessions[0];
+                            return (
+                                <div key={prefix} className="session-card holiday">
                                     <div className="date-box">
                                         <span className="date-day-name">{getDayName(s.date)}</span>
                                         <span className="date-day-num">{s.date.getDate()}</span>
@@ -559,36 +831,103 @@
                                     </div>
                                     <div className="card-content">
                                         <div className="session-header">
-                                            <div className="session-id">
-                                                {s.type==='concept' && <Icons.Concept />}
-                                                {s.type==='lab' && <Icons.Lab />}
-                                                {s.type==='holiday' && <Icons.Holiday />}
-                                                <span style={{marginLeft:'5px'}}>{s.id}</span>
-                                            </div>
+                                            <div className="session-id"><Icons.Holiday/> <span style={{margin:'0 8px'}}>OFF</span></div>
                                         </div>
-                                        {s.topic && <div className="session-topic">{s.topic}</div>}
-                                        {s.due && <div className="due-tag"><Icons.Alert/> {s.due}</div>}
+                                        <div className="session-topic">{s.topic}</div>
                                     </div>
                                 </div>
+                            );
+                        }
 
-                                {fileUrl && (
+                        const isAllPast = blockSessions.every(s => {
+                            let d = new Date(s.date); d.setHours(0,0,0,0);
+                            return d.getTime() < today.getTime();
+                        });
+
+                        const isExpanded = expandedBlocks[prefix];
+
+                        if (isAllPast && !isExpanded) {
+                            return (
+                                <React.Fragment key={prefix}>
+                                    {groupIndex > 0 && <div className="block-divider"></div>}
+                                    <div className="completed-block-card" onClick={() => toggleBlock(prefix)}>
+                                        <div className="block-info">
+                                            <Icons.Folder /> <span>تم الانتهاء من {prefix}</span>
+                                        </div>
+                                        <div className="block-status">
+                                            عرض التفاصيل <Icons.ChevronDown/>
+                                        </div>
+                                    </div>
+                                </React.Fragment>
+                            );
+                        }
+
+                        return (
+                            <React.Fragment key={prefix}>
+                                {groupIndex > 0 && <div className="block-divider"></div>}
+                                
+                                {isAllPast && isExpanded && (
+                                    <div className="completed-block-card" onClick={() => toggleBlock(prefix)} style={{marginBottom:'15px', background:'rgba(255,255,255,0.08)'}}>
+                                        <div className="block-info" style={{color:'#fff'}}>
+                                            <Icons.Folder /> <span>أرشيف {prefix}</span>
+                                        </div>
+                                        <div className="block-status" style={{color:'#fff'}}>
+                                            إخفاء <Icons.ChevronUp/>
+                                        </div>
+                                    </div>
+                                )}
+
+                                {blockSessions.map((s, i) => {
+                                    const sDate = new Date(s.date); sDate.setHours(0,0,0,0);
+                                    const isToday = sDate.getTime() === today.getTime();
+                                    const isPast = sDate.getTime() < today.getTime();
+                                    
+                                    const dueTitle = s.due ? s.due['en'] : '';
+                                    
+                                    return (
+                                        <div 
+                                            key={i}
+                                            className={`session-card ${s.type} ${isToday ? 'current-day' : ''} ${isPast ? 'is-past' : ''}`} 
+                                            style={{animationDelay: `${i * 0.05}s`}}
+                                            onClick={() => openDetails(s)} 
+                                        >
+                                            {isPast && <div className="past-badge"><Icons.Check/> منتهية</div>}
+                                            <div className="date-box">
+                                                <span className="date-day-name">{getDayName(s.date)}</span>
+                                                <span className="date-day-num">{s.date.getDate()}</span>
+                                                <span className="date-month">{getMonth(s.date)}</span>
+                                            </div>
+                                            <div className="card-content">
+                                                <div className="session-header">
+                                                    <div className="session-id">
+                                                        {s.type==='concept' && <Icons.Concept />}
+                                                        {s.type==='lab' && <Icons.Lab />}
+                                                        <span style={{margin:'0 8px'}}>{s.id}</span>
+                                                    </div>
+                                                </div>
+                                                {dueTitle && <div className="due-tag"><Icons.Alert/> {dueTitle}</div>}
+                                            </div>
+                                        </div>
+                                    );
+                                })}
+
+                                {getFileUrl(blockSessions[0].id) && (
                                     <a 
-                                        href={fileUrl} 
+                                        href={getFileUrl(blockSessions[0].id)} 
                                         target="_blank" 
-                                        className={`external-file-btn ${s.type}`}
-                                        style={{animationDelay: `${i * 0.05 + 0.05}s`}}
+                                        className={`external-file-btn ${blockSessions[0].type}`}
                                     >
-                                        <Icons.Folder /> <span>فتح ملفات {currentPrefix}</span>
+                                        <Icons.Folder /> <span>فتح ملفات {prefix}</span>
                                     </a>
                                 )}
                             </React.Fragment>
-                        )
+                        );
                     })}
 
                     {selectedSession && (
-                        <div className="modal-overlay" onClick={() => setSelectedSession(null)}>
+                        <div className="modal-overlay" onClick={handleCloseModal}>
                             <div className="modal-content" onClick={e => e.stopPropagation()}>
-                                <button className="modal-close" onClick={() => setSelectedSession(null)}>×</button>
+                                <button className="modal-close" onClick={handleCloseModal}>×</button>
                                 <h2 className="modal-title">{selectedSession.id} - تفاصيل الجلسة</h2>
                                 
                                 <div style={{marginBottom:'20px'}}>
@@ -597,22 +936,36 @@
                                         <span className="role-label"><Icons.Star/> Leader</span>
                                         <span className="role-value">{selectedSession.roles.Leader}</span>
                                     </div>
-                                    <div className="role-row">
-                                        <span className="role-label"><Icons.Clock/> Timer</span>
-                                        <span className="role-value">{selectedSession.roles.Timer}</span>
-                                    </div>
+                                    {settings.timer && (
+                                        <div className="role-row">
+                                            <span className="role-label"><Icons.Clock/> Timer</span>
+                                            <span className="role-value">{selectedSession.roles.Timer}</span>
+                                        </div>
+                                    )}
                                     <div className="role-row">
                                         <span className="role-label"><Icons.Edit/> Writer</span>
                                         <span className="role-value">{selectedSession.roles.Writer}</span>
                                     </div>
                                 </div>
 
-                                <button 
-                                    className={`complete-toggle-btn ${completed[selectedSession.id] ? 'btn-outline' : 'btn-green'}`}
-                                    onClick={() => toggleComplete(selectedSession.id)}
-                                >
-                                    {completed[selectedSession.id] ? 'إلغاء "تم الانتهاء"' : 'وضع علامة "تم الانتهاء"'}
-                                </button>
+                                {selectedSession.fullDesc && (
+                                    <div className="desc-box">
+                                        <div className="desc-header">
+                                            <div className="desc-title">
+                                                <Icons.Info/>
+                                                {transMode ? "تفاصيل المهمة / الكويز" : "Task / Quiz Details"}
+                                            </div>
+                                            <div className={`lang-switch ${transMode ? 'active' : ''}`} onClick={() => setTransMode(!transMode)}>
+                                                <div className="lang-active-bg"></div>
+                                                <div className="lang-option">EN</div>
+                                                <div className="lang-option">AR</div>
+                                            </div>
+                                        </div>
+                                        <div className={`desc-content ${transMode ? 'rtl' : ''}`}>
+                                            {selectedSession.fullDesc[transMode ? 'ar' : 'en']}
+                                        </div>
+                                    </div>
+                                )}
                             </div>
                         </div>
                     )}
@@ -713,7 +1066,7 @@
             );
         };
 
-        const TeamSettingsModal = ({ isOpen, onClose, members, setMembers }) => {
+        const TeamSettingsModal = ({ isOpen, onClose, members, setMembers, settings, setSettings }) => {
             if(!isOpen) return null;
             const handleChange = (i, val) => {
                 const newM = [...members]; newM[i] = val; setMembers(newM);
@@ -723,14 +1076,38 @@
                     <div className="modal-content" onClick={e => e.stopPropagation()}>
                         <button className="modal-close" onClick={onClose}>×</button>
                         <h2 className="modal-title">إعدادات الفريق</h2>
-                        <p style={{textAlign:'center', color:'#888', marginBottom:'15px', fontSize:'0.9rem'}}>قم بإدخال أسماء أعضاء الفريق لترتيب الأدوار تلقائياً.</p>
-                        {members.map((m, i) => (
-                            <div key={i} className="team-input-row">
-                                <label style={{fontSize:'0.8rem', color:'#aaa', display:'block', marginBottom:'3px'}}>العضو رقم {i+1}</label>
-                                <input type="text" className="team-input" value={m} onChange={(e) => handleChange(i, e.target.value)} placeholder={`Member ${i+1}`} />
+                        
+                        <button 
+                            className={`timer-toggle-btn ${settings.timer ? 'active' : ''}`}
+                            onClick={() => setSettings({...settings, timer: !settings.timer})}
+                        >
+                            <div style={{display:'flex', alignItems:'center', gap:'10px'}}>
+                                <Icons.Clock />
+                                <span>دور المؤقت (Timer)</span>
                             </div>
-                        ))}
-                        <button className="complete-toggle-btn btn-green" onClick={onClose}>حفظ وإغلاق</button>
+                            <span className="timer-status-text">
+                                {settings.timer ? 'مفعل' : 'غير مفعل'}
+                            </span>
+                        </button>
+
+                        <div className="members-grid">
+                            {members.map((m, i) => (
+                                <div key={i} className="team-member-row">
+                                    <span className="member-icon"><Icons.User/></span>
+                                    <input 
+                                        type="text" 
+                                        className="team-input-clean" 
+                                        value={m} 
+                                        onChange={(e) => handleChange(i, e.target.value)} 
+                                        placeholder={`اسم العضو ${i+1}`} 
+                                    />
+                                </div>
+                            ))}
+                        </div>
+
+                        <button className="save-btn-new" onClick={onClose}>
+                            <Icons.Check/> حفظ الإعدادات
+                        </button>
                     </div>
                 </div>
             );
@@ -740,8 +1117,10 @@
             const [tab, setTab] = useState('schedule');
             const [showTeamModal, setShowTeamModal] = useState(false);
             const [teamMembers, setTeamMembers] = useState(() => JSON.parse(localStorage.getItem('ge211_team')) || ["عضو 1", "عضو 2", "عضو 3", "عضو 4", "عضو 5"]);
+            const [settings, setSettings] = useState(() => JSON.parse(localStorage.getItem('ge211_settings')) || { timer: true });
 
             useEffect(() => { localStorage.setItem('ge211_team', JSON.stringify(teamMembers)); }, [teamMembers]);
+            useEffect(() => { localStorage.setItem('ge211_settings', JSON.stringify(settings)); }, [settings]);
 
 			return (
 				<div className="app">
@@ -765,11 +1144,16 @@
                             <button className={`tab-btn ${tab==='grades'?'active':''}`} onClick={()=>setTab('grades')}>الحاسبة</button>
                         </div>
 
-                        {tab === 'schedule' && <ScheduleView openTeamSettings={() => setShowTeamModal(true)} teamMembers={teamMembers} />}
+                        {tab === 'schedule' && <ScheduleView openTeamSettings={() => setShowTeamModal(true)} teamMembers={teamMembers} settings={settings} />}
                         {tab === 'resources' && <ResourcesView />}
                         {tab === 'grades' && <GradeView />}
 
-                        <TeamSettingsModal isOpen={showTeamModal} onClose={() => setShowTeamModal(false)} members={teamMembers} setMembers={setTeamMembers} />
+                        <TeamSettingsModal 
+                            isOpen={showTeamModal} 
+                            onClose={() => setShowTeamModal(false)} 
+                            members={teamMembers} setMembers={setTeamMembers}
+                            settings={settings} setSettings={setSettings}
+                        />
 					</div>
 				</div>
 			);
