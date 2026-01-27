@@ -175,24 +175,25 @@
 
         .audio-wrapper-styled {
             width: 100%;
-            height: 60px;
-            background: #000;
+            margin-top: 15px;
+            background: rgba(0, 0, 0, 0.4);
             border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid rgba(255,255,255,0.1);
-            position: relative;
-            margin-top: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            padding: 8px 12px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .drive-player-frame {
-            border: none;
-            width: 100%; 
-            height: 100%;
-            display: block;
-            filter: invert(100%) hue-rotate(180deg) contrast(1.1) brightness(0.95) saturate(1.2);
-            mix-blend-mode: screen; 
+        audio {
+            width: 100%;
+            height: 32px;
+            outline: none;
+            filter: invert(1) hue-rotate(180deg) grayscale(20%); 
+            opacity: 0.85;
+            transition: opacity 0.3s;
         }
+        audio:hover { opacity: 1; }
         
         .empty-state-box {
             text-align: center; padding: 60px 20px;
@@ -422,13 +423,14 @@
         };
 
         const AudioPlayer = ({ fileId }) => {
+            const audioSrc = `https://docs.google.com/uc?export=download&id=${fileId}`;
+            
             return (
                 <div className="audio-wrapper-styled">
-                    <iframe 
-                        className="drive-player-frame"
-                        src={`https://drive.google.com/file/d/${fileId}/preview`} 
-                        allow="autoplay"
-                    ></iframe>
+                    <audio controls controlsList="nodownload">
+                        <source src={audioSrc} type="audio/mp3" />
+                        المتصفح لا يدعم تشغيل الصوت.
+                    </audio>
                 </div>
             );
         };
@@ -447,7 +449,7 @@
                     title: 'Quiz #1',
                     type: 'quiz',
                     links: [
-                        { name: 'ملف الكويز (Drive)', url: 'https://drive.google.com/file/d/1IsNjNLcEwMpi9PnjCcotHVZI8ExCi2bX/view?usp=sharing' }
+                        { name: 'ملف الكويز ', url: 'https://drive.google.com/file/d/1IsNjNLcEwMpi9PnjCcotHVZI8ExCi2bX/view?usp=sharing' }
                     ]
                 }
             ];
