@@ -391,6 +391,116 @@ expand_less
     .save-btn-new { width: 100%; padding: 16px; background: linear-gradient(90deg, var(--color-lab), #00d2ff); color: #000; font-weight: 800; font-size: 1rem; border: none; border-radius: 14px; margin-top: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; justify-content: center; gap: 8px; }
     .save-btn-new:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0, 242, 255, 0.2); }
 
+    .audio-player-custom {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 12px 15px;
+        margin-top: 10px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: var(--transition);
+    }
+    .audio-player-custom:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+    .audio-controls-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    .audio-btn {
+        background: transparent;
+        border: none;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 50%;
+        transition: var(--transition);
+        font-size: 1.2rem;
+    }
+    .audio-btn:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transform: scale(1.1);
+        color: var(--color-lab);
+    }
+    .audio-btn.play-btn {
+        background: rgba(255, 255, 255, 0.1);
+        width: 40px;
+        height: 40px;
+    }
+    .audio-btn.play-btn:hover {
+        background: var(--color-lab);
+        color: #000;
+        box-shadow: 0 0 15px rgba(0, 242, 255, 0.4);
+    }
+    .time-text {
+        font-family: var(--font-nums);
+        font-size: 0.85rem;
+        color: #aaa;
+        min-width: 40px;
+        text-align: center;
+    }
+    .slider-container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        height: 20px;
+    }
+    .volume-container {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        width: 100px;
+    }
+    .audio-slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 2px;
+        outline: none;
+        cursor: pointer;
+        background-repeat: no-repeat;
+    }
+    .audio-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        transition: transform 0.1s;
+    }
+    .audio-slider::-webkit-slider-thumb:hover {
+        transform: scale(1.3);
+    }
+    .progress-slider {
+        background-image: linear-gradient(var(--color-lab), var(--color-lab));
+    }
+    .volume-slider {
+        background-image: linear-gradient(#fff, #fff);
+    }
+    .audio-error {
+        color: var(--color-record);
+        font-size: 0.8rem;
+        margin-top: 8px;
+        text-align: center;
+    }
+    .audio-error a {
+        color: #fff;
+        text-decoration: underline;
+    }
+    @media (max-width: 500px) {
+        .volume-container { display: none; }
+    }
+
 </style>
 </head>
 <body>
@@ -422,7 +532,12 @@ expand_less
         ChevronDown: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="6 9 12 15 18 9"></polyline></svg>,
         ChevronUp: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="18 15 12 9 6 15"></polyline></svg>,
         Video: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>,
-        Mic: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+        Mic: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>,
+        Play: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>,
+        Pause: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>,
+        Volume: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>,
+        VolumeX: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>,
+        ExternalLink: () => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
     };
 
     const fileResources = {
@@ -433,13 +548,126 @@ expand_less
     };
 
     const AudioPlayer = ({ fileId }) => {
+        const audioRef = React.useRef(null);
+        const [isPlaying, setIsPlaying] = useState(false);
+        const [progress, setProgress] = useState(0);
+        const [volume, setVolume] = useState(1);
+        const [isMuted, setIsMuted] = useState(false);
+        const [duration, setDuration] = useState(0);
+        const [currentTime, setCurrentTime] = useState(0);
+        const [error, setError] = useState(false);
+
+        const togglePlay = () => {
+            if (audioRef.current) {
+                if (isPlaying) {
+                    audioRef.current.pause();
+                } else {
+                    audioRef.current.play();
+                }
+                setIsPlaying(!isPlaying);
+            }
+        };
+
+        const handleTimeUpdate = () => {
+             if (audioRef.current) {
+                 const curr = audioRef.current.currentTime;
+                 const dur = audioRef.current.duration;
+                 if(dur > 0) {
+                     setCurrentTime(curr);
+                     setDuration(dur);
+                     setProgress((curr / dur) * 100);
+                 }
+             }
+        };
+
+        const handleSeek = (e) => {
+            const val = parseFloat(e.target.value);
+            if(audioRef.current && duration > 0) {
+                const newTime = (val / 100) * duration;
+                audioRef.current.currentTime = newTime;
+                setProgress(val);
+                setCurrentTime(newTime);
+            }
+        };
+
+        const handleVolumeChange = (e) => {
+            const val = parseFloat(e.target.value);
+            setVolume(val);
+            if(audioRef.current) {
+                audioRef.current.volume = val;
+                setIsMuted(val === 0);
+            }
+        };
+
+        const toggleMute = () => {
+            if(audioRef.current) {
+                const newMute = !isMuted;
+                setIsMuted(newMute);
+                audioRef.current.muted = newMute;
+            }
+        };
+
+        const formatTime = (time) => {
+            if(isNaN(time)) return "0:00";
+            const min = Math.floor(time / 60);
+            const sec = Math.floor(time % 60);
+            return `${min}:${sec < 10 ? '0'+sec : sec}`;
+        };
+
         return (
-            <div className="audio-wrapper-styled">
-                <iframe 
-                    className="drive-player-frame"
-                    src={`https://drive.google.com/file/d/${fileId}/preview`} 
-                    allow="autoplay"
-                ></iframe>
+            <div className="audio-player-custom">
+                <audio
+                    ref={audioRef}
+                    src={`https://docs.google.com/uc?export=download&id=${fileId}`}
+                    onTimeUpdate={handleTimeUpdate}
+                    onEnded={() => setIsPlaying(false)}
+                    onError={() => setError(true)}
+                    onLoadedMetadata={(e) => setDuration(e.target.duration)}
+                ></audio>
+
+                <div className="audio-controls-row">
+                    <button className="audio-btn play-btn" onClick={togglePlay}>
+                        {isPlaying ? <Icons.Pause/> : <Icons.Play/>}
+                    </button>
+
+                    <div className="time-text current">{formatTime(currentTime)}</div>
+
+                    <div className="slider-container">
+                        <input
+                            type="range"
+                            min="0"
+                            max="100"
+                            step="0.1"
+                            value={progress || 0}
+                            onChange={handleSeek}
+                            className="audio-slider progress-slider"
+                            style={{backgroundSize: `${progress}% 100%`}}
+                        />
+                    </div>
+
+                    <div className="time-text duration">{formatTime(duration)}</div>
+
+                    <div className="volume-container">
+                        <button className="audio-btn vol-btn" onClick={toggleMute}>
+                            {isMuted || volume === 0 ? <Icons.VolumeX/> : <Icons.Volume/>}
+                        </button>
+                        <input
+                            type="range"
+                            min="0"
+                            max="1"
+                            step="0.05"
+                            value={isMuted ? 0 : volume}
+                            onChange={handleVolumeChange}
+                            className="audio-slider volume-slider"
+                            style={{backgroundSize: `${(isMuted ? 0 : volume) * 100}% 100%`}}
+                        />
+                    </div>
+
+                    <a href={`https://drive.google.com/file/d/${fileId}/view?usp=sharing`} target="_blank" className="audio-btn external-btn">
+                        <Icons.ExternalLink/>
+                    </a>
+                </div>
+                {error && <div className="audio-error">تعذر تشغيل الملف مباشرة. <a href={`https://drive.google.com/file/d/${fileId}/view?usp=sharing`} target="_blank">فتح في Drive</a></div>}
             </div>
         );
     };
