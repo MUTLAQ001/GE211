@@ -414,10 +414,7 @@
         
         .due-tag {
             align-self: flex-start; margin-top: 10px; font-size: 0.8rem; padding: 5px 12px;
-            border-radius: 20px; 
-            background: rgba(255, 255, 255, 0.05); 
-            color: #ddd; 
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px; background: rgba(255, 71, 87, 0.15); color: #ff6b81; border: 1px solid rgba(255, 71, 87, 0.3);
             display: flex; align-items: center; gap: 6px; font-weight: 600; width: fit-content;
         }
 
@@ -1571,20 +1568,8 @@
                                 <button className="modal-close" onClick={handleCloseModal}>×</button>
                                 <h2 className="modal-title">{selectedSession.id} - تفاصيل الجلسة</h2>
                                 
-                                {selectedSession.fullDesc && (
-                                    <div style={{textAlign: 'center', marginBottom: '25px', color: '#ddd', fontSize: '1rem', lineHeight: '1.5'}}>
-                                        {selectedSession.fullDesc[transMode ? 'ar' : 'en']}
-                                        <div 
-                                            style={{fontSize: '0.8rem', color: '#888', marginTop: '5px', cursor: 'pointer', textDecoration: 'underline'}} 
-                                            onClick={() => setTransMode(!transMode)}
-                                        >
-                                            {transMode ? 'Read in English' : 'قراءة بالعربية'}
-                                        </div>
-                                    </div>
-                                )}
-
-                                <div style={{background: 'rgba(255,255,255,0.03)', padding: '15px', borderRadius: '15px'}}>
-                                    <h3 style={{fontSize:'0.95rem', color:'#aaa', marginBottom:'15px', textAlign: 'center'}}>أدوار الفريق لهذه الجلسة:</h3>
+                                <div style={{marginBottom:'20px'}}>
+                                    <h3 style={{fontSize:'0.9rem', color:'#888', marginBottom:'10px'}}>أدوار الفريق لهذه الجلسة:</h3>
                                     <div className="role-row">
                                         <span className="role-label"><Icons.Star/> Leader</span>
                                         <span className="role-value">{selectedSession.roles.Leader}</span>
@@ -1600,6 +1585,25 @@
                                         <span className="role-value">{selectedSession.roles.Writer}</span>
                                     </div>
                                 </div>
+
+                                {selectedSession.fullDesc && (
+                                    <div className="desc-box">
+                                        <div className="desc-header">
+                                            <div className="desc-title">
+                                                <Icons.Info/>
+                                                {transMode ? "تفاصيل المهمة / الكويز" : "Task / Quiz Details"}
+                                            </div>
+                                            <div className={`lang-switch ${transMode ? 'active' : ''}`} onClick={() => setTransMode(!transMode)}>
+                                                <div className="lang-active-bg"></div>
+                                                <div className="lang-option">EN</div>
+                                                <div className="lang-option">AR</div>
+                                            </div>
+                                        </div>
+                                        <div className={`desc-content ${transMode ? 'rtl' : ''}`}>
+                                            {selectedSession.fullDesc[transMode ? 'ar' : 'en']}
+                                        </div>
+                                    </div>
+                                )}
                             </div>
                         </div>
                     )}
