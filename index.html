@@ -395,7 +395,6 @@
                         </div>
                         <div className="player-text">
                             <h3>{title}</h3>
-                            <span>تسجيل مباشر • Direct Audio</span>
                         </div>
                     </div>
                     <div>
@@ -460,14 +459,8 @@
             ];
 
             const recordings = [
-                {
-                    title: 'Quiz #1 Recording',
-                    file: 'Q1'
-                },
-                {
-                    title: 'C1 Concept Session',
-                    file: 'C1'
-                }
+                { title: 'Quiz 1', file: 'Q1', category: 'Q' },
+                { title: 'C1', file: 'C1', category: 'C' }
             ];
 
             const renderContent = () => {
@@ -529,14 +522,42 @@
                 }
 
                 if (currentType === 'recordings') {
-                    if (recordings.length > 0) {
+                    const groups = {
+                        'Q': { title: 'Quizzes', icon: <Icons.Edit/>, list: recordings.filter(r => r.category === 'Q') },
+                        'C': { title: 'Concepts (C)', icon: <Icons.Concept/>, list: recordings.filter(r => r.category === 'C') },
+                        'L': { title: 'Labs (L)', icon: <Icons.Lab/>, list: recordings.filter(r => r.category === 'L') }
+                    };
+
+                    const hasAny = recordings.length > 0;
+
+                    if (hasAny) {
                         return (
                             <div className="content-area">
-                                {recordings.map((rec, i) => (
-                                    <div key={i} style={{marginBottom: '20px', animationDelay: `${i * 0.1}s`}}>
-                                        <AudioPlayer fileName={rec.file} title={rec.title} />
-                                    </div>
-                                ))}
+                                {['Q', 'C', 'L'].map(key => {
+                                    const group = groups[key];
+                                    if (group.list.length === 0) return null;
+                                    return (
+                                        <div key={key} style={{marginBottom: '25px'}}>
+                                            <h3 style={{
+                                                color: '#fff', 
+                                                marginBottom: '10px', 
+                                                display: 'flex', 
+                                                alignItems: 'center', 
+                                                gap: '8px',
+                                                fontSize: '1.1rem',
+                                                borderBottom: '1px solid rgba(255,255,255,0.1)',
+                                                paddingBottom: '5px'
+                                            }}>
+                                                {group.icon} {group.title}
+                                            </h3>
+                                            {group.list.map((rec, i) => (
+                                                <div key={i}>
+                                                    <AudioPlayer fileName={rec.file} title={rec.title} />
+                                                </div>
+                                            ))}
+                                        </div>
+                                    );
+                                })}
                             </div>
                         );
                     }
