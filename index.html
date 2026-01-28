@@ -110,7 +110,7 @@
         .sub-nav-wrapper {
             background: rgba(255,255,255,0.03);
             border-radius: 14px;
-            padding: 5px;
+            padding: 4px;
             position: relative;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -120,9 +120,9 @@
         }
         .sub-nav-glider {
             position: absolute;
-            top: 5px; bottom: 5px;
-            width: calc(33.333% - 6.66px); 
-            right: 5px;
+            top: 4px; bottom: 4px;
+            width: calc((100% - 8px) / 3);
+            right: 4px;
             background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
             border-radius: 10px;
             transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1), border-color 0.3s, box-shadow 0.3s;
@@ -132,8 +132,8 @@
         }
         
         .sub-nav-wrapper[data-active="0"] .sub-nav-glider { border-color: rgba(255, 215, 0, 0.3); box-shadow: 0 0 20px rgba(255, 215, 0, 0.1); transform: translateX(0); }
-        .sub-nav-wrapper[data-active="1"] .sub-nav-glider { border-color: rgba(0, 242, 255, 0.3); box-shadow: 0 0 20px rgba(0, 242, 255, 0.1); transform: translateX(calc(-100% - 5px)); }
-        .sub-nav-wrapper[data-active="2"] .sub-nav-glider { border-color: rgba(255, 62, 77, 0.3); box-shadow: 0 0 20px rgba(255, 62, 77, 0.1); transform: translateX(calc(-200% - 10px)); }
+        .sub-nav-wrapper[data-active="1"] .sub-nav-glider { border-color: rgba(0, 242, 255, 0.3); box-shadow: 0 0 20px rgba(0, 242, 255, 0.1); transform: translateX(-100%); }
+        .sub-nav-wrapper[data-active="2"] .sub-nav-glider { border-color: rgba(255, 62, 77, 0.3); box-shadow: 0 0 20px rgba(255, 62, 77, 0.1); transform: translateX(-200%); }
 
         .sub-tab-item {
             position: relative; z-index: 2; background: transparent; border: none; padding: 10px;
@@ -795,7 +795,7 @@
         };
 
         const ContentView = () => {
-            const [activeIdx, setActiveIdx] = useState(0); 
+            const [activeIdx, setActiveIdx] = useState(1); 
             const [activeQuizUrl, setActiveQuizUrl] = useState(null);
             const [showArchived, setShowArchived] = useState(false);
 
@@ -1145,7 +1145,7 @@
                 <div>
                     {!activeQuizUrl && (
                         <div className="sub-nav-wrapper" data-active={activeIdx}>
-                            <div className="sub-nav-glider" style={{ right: `calc(${activeIdx * 33.33}% + 5px)` }}></div>
+                            <div className="sub-nav-glider"></div>
                             {tabs.map((t, i) => (
                                 <button 
                                     key={t.id} 
