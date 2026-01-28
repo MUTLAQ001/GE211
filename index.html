@@ -622,7 +622,7 @@
                             return;
                         }
                         if (!q) {
-                            const isGroupHeader = /^\d{3}(\s+(AM|PM))?$/i.test(line) || (line.length < 15 && /\d/.test(line));
+                            const isGroupHeader = /^\d{3}(\s+(AM|PM))?$/i.test(line) || (line.length < 15 && /^[A-Z0-9]+$/i.test(line));
                             if (isGroupHeader) {
                                 currentGroup = line;
                             } else {
@@ -643,8 +643,8 @@
                 };
 
                 if (url === 'local_q1_data') {
-                    handleData(`General
-1) Which learning level involves "Using a concept without being told to"?
+                    handleData(`AI
+Which learning level involves "Using a concept without being told to"?
 a) Comprehension
 b) Application
 c) Analysis
@@ -1210,7 +1210,7 @@ b`);
                     title: {en: 'Quiz #5', ar: 'كويز 5'},
                     desc: {
                         en: 'Quiz #5: More about problem definition: SCPS Chapter 3 (from 3.2D to end of chapter).',
-                        ar: 'تعريف المشكلة: الفصل 3 (من 3.2D للنهاية) في SCPS.'
+                        ar: 'كويز 5: تعريف المشكلة: الفصل 3 (من 3.2D للنهاية) في SCPS.'
                     } 
                 },
                 'C4-3': { 
