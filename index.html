@@ -414,10 +414,7 @@
         
         .due-tag {
             align-self: flex-start; margin-top: 10px; font-size: 0.8rem; padding: 5px 12px;
-            border-radius: 20px; 
-            background: rgba(255, 71, 87, 0.15); 
-            color: #ff6b81; 
-            border: 1px solid rgba(255, 71, 87, 0.3);
+            border-radius: 20px; background: rgba(255, 71, 87, 0.15); color: #ff6b81; border: 1px solid rgba(255, 71, 87, 0.3);
             display: flex; align-items: center; gap: 6px; font-weight: 600; width: fit-content;
         }
 
@@ -1169,41 +1166,6 @@
         const ScheduleView = ({ openTeamSettings, teamMembers, settings }) => {
             
             const sessionDetails = {
-                'C1-1': {
-                    title: {en: 'Intro to GE211', ar: 'مقدمة المقرر'},
-                    desc: {
-                        en: 'Introduction to GE211.',
-                        ar: 'مقدمة لمقرر GE211.'
-                    }
-                },
-                'C1-2': {
-                    title: {en: 'Active Learning', ar: 'التعلم النشط'},
-                    desc: {
-                        en: 'Active learning session.',
-                        ar: 'جلسة التعلم النشط.'
-                    }
-                },
-                'C1-3': {
-                    title: {en: 'Concept Intro', ar: 'مقدمة الكونسيبت'},
-                    desc: {
-                        en: 'Introduction to Concept session. Video Announcement: Private Universe.',
-                        ar: 'مقدمة لجلسة الكونسيبت. فيديو: Private Universe.'
-                    }
-                },
-                'L1-1': {
-                    title: {en: 'Lab Intro', ar: 'مقدمة المعمل'},
-                    desc: {
-                        en: 'Introduction to LAB session.',
-                        ar: 'مقدمة لجلسة المعمل.'
-                    }
-                },
-                'L1-2': {
-                    title: {en: 'Air Volume', ar: 'حجم الهواء'},
-                    desc: {
-                        en: 'Air volume activity.',
-                        ar: 'نشاط حجم الهواء.'
-                    }
-                },
                 'C2-1': { 
                     title: {en: 'Quiz #1', ar: 'كويز 1'},
                     desc: {
@@ -1571,20 +1533,8 @@
                                 <button className="modal-close" onClick={handleCloseModal}>×</button>
                                 <h2 className="modal-title">{selectedSession.id} - تفاصيل الجلسة</h2>
                                 
-                                {selectedSession.fullDesc && (
-                                    <div style={{textAlign: 'center', marginBottom: '25px', color: '#ddd', fontSize: '1rem', lineHeight: '1.5'}}>
-                                        {selectedSession.fullDesc[transMode ? 'ar' : 'en']}
-                                        <div 
-                                            style={{fontSize: '0.8rem', color: '#888', marginTop: '5px', cursor: 'pointer', textDecoration: 'underline'}} 
-                                            onClick={() => setTransMode(!transMode)}
-                                        >
-                                            {transMode ? 'Read in English' : 'قراءة بالعربية'}
-                                        </div>
-                                    </div>
-                                )}
-
-                                <div style={{background: 'rgba(255,255,255,0.03)', padding: '15px', borderRadius: '15px'}}>
-                                    <h3 style={{fontSize:'0.95rem', color:'#aaa', marginBottom:'15px', textAlign: 'center'}}>أدوار الفريق لهذه الجلسة:</h3>
+                                <div style={{marginBottom:'20px'}}>
+                                    <h3 style={{fontSize:'0.9rem', color:'#888', marginBottom:'10px'}}>أدوار الفريق لهذه الجلسة:</h3>
                                     <div className="role-row">
                                         <span className="role-label"><Icons.Star/> Leader</span>
                                         <span className="role-value">{selectedSession.roles.Leader}</span>
@@ -1600,6 +1550,25 @@
                                         <span className="role-value">{selectedSession.roles.Writer}</span>
                                     </div>
                                 </div>
+
+                                {selectedSession.fullDesc && (
+                                    <div className="desc-box">
+                                        <div className="desc-header">
+                                            <div className="desc-title">
+                                                <Icons.Info/>
+                                                {transMode ? "تفاصيل المهمة / الكويز" : "Task / Quiz Details"}
+                                            </div>
+                                            <div className={`lang-switch ${transMode ? 'active' : ''}`} onClick={() => setTransMode(!transMode)}>
+                                                <div className="lang-active-bg"></div>
+                                                <div className="lang-option">EN</div>
+                                                <div className="lang-option">AR</div>
+                                            </div>
+                                        </div>
+                                        <div className={`desc-content ${transMode ? 'rtl' : ''}`}>
+                                            {selectedSession.fullDesc[transMode ? 'ar' : 'en']}
+                                        </div>
+                                    </div>
+                                )}
                             </div>
                         </div>
                     )}
