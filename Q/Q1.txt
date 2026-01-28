@@ -1,4 +1,1319 @@
-1. One of the following is not from the course objectives in GE 211:
+471 AM
+In the concepts session: If a student, finally, has one (1) final assessment of NS (No Submittal), one (1) final assessments of NI (Needs Improvement), and six (6) Self-Regulation Lapses, then the number of defects he accumulates in that session is
+a) 2 defects
+b) 3 defects
+c) 4 defects
+d) 5 defects
+c
+
+471 AM
+A student accumulates five defects (before taking the defect removal) in concepts and three defects in Lab. Does he have a chance to pass the course?
+a) Yes
+b) No
+b
+
+471 AM
+The Final Exam for GE 211 is called:
+a) The End
+b) The Termination
+c) The Festival
+d) The Celebration
+d
+
+471 AM
+Which of the following is true for late work
+a) Permitted for Original Lab/concepts work
+b) Permitted for resubmission Concepts work
+c) Associated with issuing 1 fault
+d) Associated with issuing 1 laps
+d
+
+471 AM
+The grading system of GE 211 is very generous and lenient indeed. A true statement supporting and manifesting this fact is
+a) Plagiarizing your colleague's work is tolerated and even encouraged
+b) A student can remove one defect in the concepts session
+c) A student can remove one defect in the laboratory session
+d) A single final grade of NCE is forgiven
+e) Two identical grades of F in both sessions lead to a passing grade of D in the course
+b
+
+471 AM
+No re-submission is accepted for a work product in the LAB session after
+a) 24 hours of its due date
+b) three days of its due date
+c) one week of its due date
+d) two weeks of its due date
+c
+
+471 AM
+One of the valid assessments of a work product in GE 211 is
+a) Extremely Weak
+b) Celebrating
+c) No Significant Expectations
+d) No Submittal (Not Submitted)
+d
+
+471 AM
+All of the following statements are TRUE for the GE 211 course, except
+a) "It requires no out-of-class work as all work is done in class under facilitator supervision."
+b) "It develops knowledge that is useful for latter courses."
+c) "It focuses on the process of how to solve problems."
+d) "Its main goal is to introduce students to the Engineering Method."
+a
+
+471 AM
+Which of the following session-grade unordered-combinations lead to grade C+ in GE211;
+a) { A, A }, { A, B }, or { B, B }
+b) { A, C }, or { B, C }
+c) { A, D }, { B, D }, or { C, C }
+d) { C, C }, { D, B }, or { A, F }
+d
+
+471 AM
+In GE211; the impact of violating the attendance ratio (according to the college and/or the university policies) on the student is:
+a) Has nothing to do as GE211 has its own grading system
+b) He fails the course
+c) He will be granted a total of 2.5 denials
+d) None of the listed answers
+b
+
+471 AM
+In the LAB session: If a student, finally, has one (1) final assessment of NS (No Submittal), one (1) final assessments of NI (Needs Improvement), and six (6) Self-Regulation Lapses, then the number of defects he accumulates in that session is
+a) 3 defects
+b) 4 defects
+c) 5 defects
+d) 6 defects
+c
+
+471 AM
+The grading system of GE 211 is very generous and lenient indeed. Each of the following statements is a 'TRUE' statement supporting and manifesting this fact , except
+a) A student can remove one defect in the laboratory session
+b) There is a possibility of obtaining a passing grade in the course despite failing one of its sessions
+c) Two identical grades of D in both sessions lead to a slightly better grade of D+ in the course
+d) Attending the celebration is necessary to pass the course
+a
+
+471 AM
+Each of the following is a valid assessment of a work product in GE 211, EXCEPT
+a) Meeting Expectations
+b) Needing Improvement
+c) Excellent
+d) No Submittal (Not Submitted)
+c
+
+471 AM
+Which of the following is not true for late work
+a) Permitted for Concepts work
+b) Permitted for resubmission Lab work
+c) Associated with issuing 1 laps
+d) Lateness is one week from the original time
+a
+
+471 AM
+A student accumulates three defects (before taking the defect removal) in concepts and four defects in Lab. Does he have a chance to pass the course?
+a) Yes
+b) No
+b
+
+471 AM
+Disruptive behavior in class includes all the following, except
+a) class conversations run by the instructor
+b) sleeping or eating
+c) working on material for other courses
+d) failure to appropriately respond to the " focus on facilitator" signal
+a
+
+471 AM
+If a student accumulates a total of exactly three defects in the two sessions put together (One possibility is: 1 defect in Concepts plus 2 defects in Laboratory), this means that the (unordered) set of his session grades is
+a) { A, C }, or { B, C }
+b) { A, D }, { B, D }, or { C, C }
+c) { C, D }, { F, B }, or { A, F }
+d) { A, F }, { B, F }, { C, F }, or { D, D }
+c
+
+471 AM
+If you obtain a grade of A in GE 211, this means
+a) you have zero defects in both sessions of the course
+b) you have a grade of A in both sessions of the course
+c) your Concepts grade is either B or A
+d) a and b
+e) a and c
+e
+
+471 AM
+If you are assigned a grade of NCE (No Credible Effort) repeatedly on the first and second submissions of a work product, then
+a) your final grade for this work product is NI
+b) your final grade for this work product is NCE
+c) you are automatically expelled from the course and awarded a course grade of Denial (DN)
+d) you have only two more chances to attempt to change this grade to either a Meet (M) or to an Exceed (E)
+b
+
+471 AM
+The grading system of GE 211 is very generous and lenient indeed. Each of the following statements is 'TRUE' statement supporting and manifesting this fact , except
+a) There is no harm if you accumulate up to seven lapses in any session
+b) There is no harm if you accumulate up to three and half lapses in any session
+c) Two identical grades of B in both sessions lead to a slightly better grade of B+ in the course
+d) There is a possibility of obtaining a passing grade in the course despite failing one of its sessions
+a
+
+471 AM
+Which of the following is not true for late work
+a) Permitted for resubmission Lab work
+b) Associated with issuing 1 laps
+c) Permitted for Original Lab/concepts work
+d) Lateness is one week from the original time
+c
+
+471 AM
+The grading system of GE 211 is very generous and lenient indeed. A true statement supporting and manifesting this fact is
+a) The facilitators and graders do not care if you cheat provided your work is technically correct and well presented
+b) A student can remove one defect in the laboratory session
+c) A student can't remove any defect in the lab session
+d) A single final grade of NCE is forgiven
+e) There is no harm if you accumulate up to three defects in any session
+c
+
+471 AM
+Two (2) or more final assessments of NS (No Submittal) or NCE (No Credible Effort) result in
+a) 0 defects
+b) 1 defect
+c) 2 defects
+d) 3 defects
+d
+
+471 AM
+If you obtain a grade of A in GE 211, this means
+a) you have zero defects in both sessions of the course
+b) you have a grade of A in both sessions of the course
+c) your Concepts grade is either B or A
+d) a and c
+e) b and c
+d
+
+471 AM
+Which of the following is NOT TRUE for an Engineering Journal
+a) "If accepted, it may result in an extra credit on the corresponding quiz."
+b) "It can be resubmitted if it is assessed as NI."
+c) "It must be submitted with a completed self-assessed Engineering Journal Checklist."
+d) "It must contain reflective writing."
+b
+
+471 AM
+All the following statements about 'defects' are 'TRUE' except
+a) A single final defect does not affect your session grade
+b) Defects may accumulate due to cognitive problems
+c) Defects may accumulate due to affective problems (Self-Regulation issues)
+d) Defects are usually more serious than lapses
+a
+
+471 AM
+In any of the two course sessions session: If a student, finally, has one (1) final assessment of NS (No Submittal), two (2) final assessments of NI (Needs Improvement), and six (6) Self-Regulation Lapses, then the student
+a) Fails in this session
+b) The student needs to have makeup
+c) Fails the course
+d) All of the listed answers
+a
+
+471 AM
+Which of the following is not applied for a hospital/medical statement (or any out of class official activity)
+a) The approval does not affect any other penalty associated with late submission, class activity, and/or team uncompleted work.
+b) The approval removes the NS penalty (for quiz only not any other work) if scheduled on the absent day.
+c) Up to 3 chances are given to a student per semester.
+d) The approval removes the absence penalty (1 lapse).
+e) The approval does not allow the student to get "E": in a specific quiz or work.
+c
+
+471 AM
+In the concepts session: Defects are cumulative. They may accumulate due to _________ problems or due to _________ problems (Self-Regulation issues). Only a single defect is _________ . (select the best fit statement)
+a) cognitive; affective; harmful
+b) cognitive; affective; removable
+c) affective; cognitive; bountiful
+d) affective; cognitive; un-removable
+b
+
+471 AM
+Each of the following is an explicit purpose for the Quizzes in GE 211, except
+a) to accustom you to refrain from cheating since your instructor is always there to catch you
+b) to encourage you to complete the assigned reading before class
+c) to enable you and the instructor to evaluate your knowledge of the important concepts before they are presented in class
+d) to focus your attention on, as well as refresh your recollection of, the topics to be presented in the class
+a
+
+471 AM
+If you obtain a grade of B+ in GE 211, this means
+a) you have zero defects in one session and one defect of the other
+b) you have a grade of B in both sessions of the course
+c) your Concepts grade is either C, B or A
+d) All of the listed answers
+b
+
+471 AM
+The course FDM consists of ....... parts in which the fourth part represents the course ......., select the best fitted combination
+a) Three, calendar
+b) Four, calendar
+c) Five, blue sheets
+d) Three, signoff sheet
+a
+
+471 AM
+The Final Exam for GE 211 is called:
+a) The End
+b) The Celebration
+c) The Completion
+d) The Festival
+b
+
+471 AM
+Each of the following is a valid assessment of a work product in GE 211, EXCEPT
+a) Exceeding Expectations
+b) Denied
+c) No Credible Effort
+d) No Submittal (Not Submitted)
+b
+
+471 AM
+The lapses having the most serious impact on your session grade are the lapses numbered
+a) 4, 5.5, and 7.5
+b) 1, 3, and 5.5
+c) 1, 2, and 3
+d) 1, 5.5, and 9
+a
+
+471 AM
+In any of the two course sessions session: If a student, finally, has one (1) final assessment of NS (No Submittal), two (2) final assessments of NI (Needs Improvement), and six (6) Self-Regulation Lapses, then the number of defects he accumulates in that session is
+a) 2 defects
+b) 3 defects
+c) 4 defects
+d) 5 defects
+d
+
+471 AM
+A student obtains NCE on the first submission of a work product, and M on the second submission. As a result, he accumulates
+a) 0 lapse
+b) 1 lapse
+c) 1 laps
+d) 2 lapses
+b
+
+471 AM
+The grading system of GE 211 is very generous and lenient indeed. Each of the following statements is a 'TRUE' statement supporting and manifesting this fact , except
+a) A single final grade of NCE is forgiven
+b) A single final grade of NI is forgiven
+c) A student can remove one defect in the concepts session
+d) There is a possibility of obtaining a passing grade in the course despite failing one of its sessions
+a
+
+471 AM
+Which of the following is not applied for a Hospital/medical statement (or any out of class official activity)
+a) Only one chance is given to a student per semester.
+b) The approval does not affect any other penalty associated with late submission, class activity, and/or team uncompleted work.
+c) The NS penalty is conserved and does not affect by the approval (for quiz only not any other work) if scheduled on the absent day.
+d) The approval removes the absence penalty (1 lapse).
+e) The approval does not allow the student to get "E": in a specific quiz or work
+c
+
+471 AM
+Which term of the FDM has the same meaning as ( is synonymous with) slip, slight error, little mistake, fault, oversight, omission, or a trifling offense ?
+a) concepts
+b) laboratory
+c) lapse
+d) active learning
+c
+
+471 AM
+Which of the following cases may end to a grade of D in GE 211;
+a) the student fails in only one of the two course sessions
+b) the student received F in both sessions of the course
+c) the student's combinations of grades is {A,F}
+d) None of the listed answers
+a
+
+471 AM
+A student was granted NCE in one of his PTW-checklist, which of the following is true
+a) This will be reflected in the original work-checklist
+b) The student gets one defect
+c) The student gets one lapse
+d) No such grade in PTW
+c
+
+471 AM
+A student obtains a final grade of F in GE 211 if he has
+a) a grade of F in both sessions of the course
+b) five or more defects in any of the course sessions
+c) if he did not attend the celebration
+d) any of the listed answers
+d
+
+471 AM
+A student who accumulates zero defects in both sessions (Concepts and laboratory) gets a minimum course grade of
+a) A+
+b) A
+c) B+
+d) B
+e) C+
+c
+
+471 AM
+A student obtains NI on the first submission of a work product, and M on the second submission. As a result, he accumulates
+a) 0 lapses
+b) 1 lapse
+c) 2 lapses
+d) 3 lapses
+a
+
+471 AM
+In the LAB session: Defects are cumulative. They may accumulate due to _________ problems (Self-Regulation issues), or due to _________ problems. _________ single defect is removable. (select the best fit statement)
+a) affective; cognitive; no
+b) cognitive; affective; one
+c) cognitive; affective; bountiful
+d) affective; cognitive; un-removable
+a
+
+471 AM
+In the concepts session: If a student, finally, has one (1) final assessment of NS (No Submittal), one (1) final assessments of NI (Needs Improvement), and six (6) Self-Regulation Lapses, then the number of defects he accumulates in that session is
+a) 2 defects
+b) 3 defects
+c) 4 defects
+d) 5 defects
+c
+
+471 AM
+A student accumulates five defects (before taking the defect removal) in concepts and three defects in Lab. Does he have a chance to pass the course?
+a) Yes
+b) No
+b
+
+471 AM
+The Final Exam for GE 211 is called:
+a) The End
+b) The Termination
+c) The Festival
+d) The Celebration
+d
+
+471 AM
+Which of the following is true for late work
+a) Permitted for Original Lab/concepts work
+b) Permitted for resubmission Concepts work
+c) Associated with issuing 1 fault
+d) Associated with issuing 1 laps
+d
+
+471 AM
+The grading system of GE 211 is very generous and lenient indeed. A true statement supporting and manifesting this fact is
+a) Plagiarizing your colleague's work is tolerated and even encouraged
+b) A student can remove one defect in the concepts session
+c) A student can remove one defect in the laboratory session
+d) A single final grade of NCE is forgiven
+e) Two identical grades of F in both sessions lead to a passing grade of D in the course
+b
+
+471 AM
+No re-submission is accepted for a work product in the LAB session after
+a) 24 hours of its due date
+b) three days of its due date
+c) one week of its due date
+d) two weeks of its due date
+c
+
+471 AM
+One of the valid assessments of a work product in GE 211 is
+a) Extremely Weak
+b) Celebrating
+c) No Significant Expectations
+d) No Submittal (Not Submitted)
+d
+
+471 AM
+All of the following statements are TRUE for the GE 211 course, except
+a) "It requires no out-of-class work as all work is done in class under facilitator supervision."
+b) "It develops knowledge that is useful for latter courses."
+c) "It focuses on the process of how to solve problems."
+d) "Its main goal is to introduce students to the Engineering Method."
+a
+
+471 AM
+Which of the following session-grade unordered-combinations lead to grade C+ in GE211;
+a) { A, A }, { A, B }, or { B, B }
+b) { A, C }, or { B, C }
+c) { A, D }, { B, D }, or { C, C }
+d) { C, C }, { D, B }, or { A, F }
+d
+
+471 AM
+In GE211; the impact of violating the attendance ratio (according to the college and/or the university policies) on the student is:
+a) Has nothing to do as GE211 has its own grading system
+b) He fails the course
+c) He will be granted a total of 2.5 denials
+d) None of the listed answers
+b
+
+471 AM
+In the LAB session: If a student, finally, has one (1) final assessment of NS (No Submittal), one (1) final assessments of NI (Needs Improvement), and six (6) Self-Regulation Lapses, then the number of defects he accumulates in that session is
+a) 3 defects
+b) 4 defects
+c) 5 defects
+d) 6 defects
+c
+
+471 AM
+The grading system of GE 211 is very generous and lenient indeed. Each of the following statements is a 'TRUE' statement supporting and manifesting this fact , except
+a) A student can remove one defect in the laboratory session
+b) There is a possibility of obtaining a passing grade in the course despite failing one of its sessions
+c) Two identical grades of D in both sessions lead to a slightly better grade of D+ in the course
+d) Attending the celebration is necessary to pass the course
+a
+
+471 AM
+Each of the following is a valid assessment of a work product in GE 211, EXCEPT
+a) Meeting Expectations
+b) Needing Improvement
+c) Excellent
+d) No Submittal (Not Submitted)
+c
+
+471 AM
+Which of the following is not true for late work
+a) Permitted for Concepts work
+b) Permitted for resubmission Lab work
+c) Associated with issuing 1 laps
+d) Lateness is one week from the original time
+a
+
+471 AM
+A student accumulates three defects (before taking the defect removal) in concepts and four defects in Lab. Does he have a chance to pass the course?
+a) Yes
+b) No
+b
+
+471 AM
+Disruptive behavior in class includes all the following, except
+a) class conversations run by the instructor
+b) sleeping or eating
+c) working on material for other courses
+d) failure to appropriately respond to the " focus on facilitator" signal
+a
+
+471 AM
+If a student accumulates a total of exactly three defects in the two sessions put together (One possibility is: 1 defect in Concepts plus 2 defects in Laboratory), this means that the (unordered) set of his session grades is
+a) { A, C }, or { B, C }
+b) { A, D }, { B, D }, or { C, C }
+c) { C, D }, { F, B }, or { A, F }
+d) { A, F }, { B, F }, { C, F }, or { D, D }
+c
+
+471 AM
+If you obtain a grade of A in GE 211, this means
+a) you have zero defects in both sessions of the course
+b) you have a grade of A in both sessions of the course
+c) your Concepts grade is either B or A
+d) a and b
+e) a and c
+e
+
+471 AM
+If you are assigned a grade of NCE (No Credible Effort) repeatedly on the first and second submissions of a work product, then
+a) your final grade for this work product is NI
+b) your final grade for this work product is NCE
+c) you are automatically expelled from the course and awarded a course grade of Denial (DN)
+d) you have only two more chances to attempt to change this grade to either a Meet (M) or to an Exceed (E)
+b
+
+471 AM
+The grading system of GE 211 is very generous and lenient indeed. Each of the following statements is 'TRUE' statement supporting and manifesting this fact , except
+a) There is no harm if you accumulate up to seven lapses in any session
+b) There is no harm if you accumulate up to three and half lapses in any session
+c) Two identical grades of B in both sessions lead to a slightly better grade of B+ in the course
+d) There is a possibility of obtaining a passing grade in the course despite failing one of its sessions
+a
+
+471 AM
+Which of the following is not true for late work
+a) Permitted for resubmission Lab work
+b) Associated with issuing 1 laps
+c) Permitted for Original Lab/concepts work
+d) Lateness is one week from the original time
+c
+
+471 AM
+The grading system of GE 211 is very generous and lenient indeed. A true statement supporting and manifesting this fact is
+a) The facilitators and graders do not care if you cheat provided your work is technically correct and well presented
+b) A student can remove one defect in the laboratory session
+c) A student can't remove any defect in the lab session
+d) A single final grade of NCE is forgiven
+e) There is no harm if you accumulate up to three defects in any session
+c
+
+471 AM
+Two (2) or more final assessments of NS (No Submittal) or NCE (No Credible Effort) result in
+a) 0 defects
+b) 1 defect
+c) 2 defects
+d) 3 defects
+d
+
+471 AM
+If you obtain a grade of A in GE 211, this means
+a) you have zero defects in both sessions of the course
+b) you have a grade of A in both sessions of the course
+c) your Concepts grade is either B or A
+d) a and c
+e) b and c
+d
+
+471 AM
+Which of the following is NOT TRUE for an Engineering Journal
+a) "If accepted, it may result in an extra credit on the corresponding quiz."
+b) "It can be resubmitted if it is assessed as NI."
+c) "It must be submitted with a completed self-assessed Engineering Journal Checklist."
+d) "It must contain reflective writing."
+b
+
+471 AM
+All the following statements about 'defects' are 'TRUE' except
+a) A single final defect does not affect your session grade
+b) Defects may accumulate due to cognitive problems
+c) Defects may accumulate due to affective problems (Self-Regulation issues)
+d) Defects are usually more serious than lapses
+a
+
+471 AM
+In any of the two course sessions session: If a student, finally, has one (1) final assessment of NS (No Submittal), two (2) final assessments of NI (Needs Improvement), and six (6) Self-Regulation Lapses, then the student
+a) Fails in this session
+b) The student needs to have makeup
+c) Fails the course
+d) All of the listed answers
+a
+
+471 AM
+Which of the following is not applied for a hospital/medical statement (or any out of class official activity)
+a) The approval does not affect any other penalty associated with late submission, class activity, and/or team uncompleted work.
+b) The approval removes the NS penalty (for quiz only not any other work) if scheduled on the absent day.
+c) Up to 3 chances are given to a student per semester.
+d) The approval removes the absence penalty (1 lapse).
+e) The approval does not allow the student to get "E": in a specific quiz or work.
+c
+
+471 AM
+In the concepts session: Defects are cumulative. They may accumulate due to _________ problems or due to _________ problems (Self-Regulation issues). Only a single defect is _________ . (select the best fit statement)
+a) cognitive; affective; harmful
+b) cognitive; affective; removable
+c) affective; cognitive; bountiful
+d) affective; cognitive; un-removable
+b
+
+471 AM
+Each of the following is an explicit purpose for the Quizzes in GE 211, except
+a) to accustom you to refrain from cheating since your instructor is always there to catch you
+b) to encourage you to complete the assigned reading before class
+c) to enable you and the instructor to evaluate your knowledge of the important concepts before they are presented in class
+d) to focus your attention on, as well as refresh your recollection of, the topics to be presented in the class
+a
+
+471 AM
+If you obtain a grade of B+ in GE 211, this means
+a) you have zero defects in one session and one defect of the other
+b) you have a grade of B in both sessions of the course
+c) your Concepts grade is either C, B or A
+d) All of the listed answers
+b
+
+471 AM
+The course FDM consists of ....... parts in which the fourth part represents the course ......., select the best fitted combination
+a) Three, calendar
+b) Four, calendar
+c) Five, blue sheets
+d) Three, signoff sheet
+a
+
+471 AM
+The Final Exam for GE 211 is called:
+a) The End
+b) The Celebration
+c) The Completion
+d) The Festival
+b
+
+471 AM
+Each of the following is a valid assessment of a work product in GE 211, EXCEPT
+a) Exceeding Expectations
+b) Denied
+c) No Credible Effort
+d) No Submittal (Not Submitted)
+b
+
+471 AM
+The lapses having the most serious impact on your session grade are the lapses numbered
+a) 4, 5.5, and 7.5
+b) 1, 3, and 5.5
+c) 1, 2, and 3
+d) 1, 5.5, and 9
+a
+
+471 AM
+In any of the two course sessions session: If a student, finally, has one (1) final assessment of NS (No Submittal), two (2) final assessments of NI (Needs Improvement), and six (6) Self-Regulation Lapses, then the number of defects he accumulates in that session is
+a) 2 defects
+b) 3 defects
+c) 4 defects
+d) 5 defects
+d
+
+471 AM
+A student obtains NCE on the first submission of a work product, and M on the second submission. As a result, he accumulates
+a) 0 lapse
+b) 1 lapse
+c) 1 laps
+d) 2 lapses
+b
+
+471 AM
+The grading system of GE 211 is very generous and lenient indeed. Each of the following statements is a 'TRUE' statement supporting and manifesting this fact , except
+a) A single final grade of NCE is forgiven
+b) A single final grade of NI is forgiven
+c) A student can remove one defect in the concepts session
+d) There is a possibility of obtaining a passing grade in the course despite failing one of its sessions
+a
+
+471 AM
+Which of the following is not applied for a Hospital/medical statement (or any out of class official activity)
+a) Only one chance is given to a student per semester.
+b) The approval does not affect any other penalty associated with late submission, class activity, and/or team uncompleted work.
+c) The NS penalty is conserved and does not affect by the approval (for quiz only not any other work) if scheduled on the absent day.
+d) The approval removes the absence penalty (1 lapse).
+e) The approval does not allow the student to get "E": in a specific quiz or work
+c
+
+471 AM
+Which term of the FDM has the same meaning as ( is synonymous with) slip, slight error, little mistake, fault, oversight, omission, or a trifling offense ?
+a) concepts
+b) laboratory
+c) lapse
+d) active learning
+c
+
+471 AM
+Which of the following cases may end to a grade of D in GE 211;
+a) the student fails in only one of the two course sessions
+b) the student received F in both sessions of the course
+c) the student's combinations of grades is {A,F}
+d) None of the listed answers
+a
+
+471 AM
+A student was granted NCE in one of his PTW-checklist, which of the following is true
+a) This will be reflected in the original work-checklist
+b) The student gets one defect
+c) The student gets one lapse
+d) No such grade in PTW
+c
+
+471 AM
+A student obtains a final grade of F in GE 211 if he has
+a) a grade of F in both sessions of the course
+b) five or more defects in any of the course sessions
+c) if he did not attend the celebration
+d) any of the listed answers
+d
+
+471 AM
+A student who accumulates zero defects in both sessions (Concepts and laboratory) gets a minimum course grade of
+a) A+
+b) A
+c) B+
+d) B
+e) C+
+c
+
+471 AM
+A student obtains NI on the first submission of a work product, and M on the second submission. As a result, he accumulates
+a) 0 lapses
+b) 1 lapse
+c) 2 lapses
+d) 3 lapses
+a
+
+471 AM
+In the LAB session: Defects are cumulative. They may accumulate due to _________ problems (Self-Regulation issues), or due to _________ problems. _________ single defect is removable. (select the best fit statement)
+a) affective; cognitive; no
+b) cognitive; affective; one
+c) cognitive; affective; bountiful
+d) affective; cognitive; un-removable
+a
+
+471 PM
+In the concepts session: Defects are cumulative. They may accumulate due to _________ problems, or due to _________ problems (Self-Regulation issues). Only a single defect is _________ . (select the best fit statement)
+a) cognitive; affective; removable
+b) cognitive; affective; harmful
+c) affective; cognitive; un-removable
+d) affective; cognitive; bountiful
+a
+
+471 PM
+Each of the following is an explicit purpose for the Quizzes in GE 211, except
+a) to accustom you to refrain from cheating since your instructor is always there to catch you
+b) to encourage you to complete the assigned reading before class
+c) to have you ready to solve the problem of the QU's Air Conditioning Division
+d) a and c
+e) b and c
+d
+
+471 PM
+If you obtain a grade of B+ in GE 211, this means
+a) you have zero defects in one session and one defect of the other
+b) you have a grade of B in both sessions of the course
+c) your Concepts grade is either C, B or A
+d) all of the listed above answer
+e) None of the listed answers
+d
+
+471 PM
+The course FDM consists of ........ parts in which the fourth part represents the course ......., select the best fitted combination
+a) Three, calendar
+b) Four, calendar
+c) Five, blue sheets
+d) Three, signoff sheet
+b
+
+471 PM
+The lapses having the most serious impact on your session grade are the lapses numbered
+a) 1, 2, and 3
+b) 1, 3, and 5.5
+c) 1, 5.5, and 9
+d) 4, 5.5, and 7.5
+e) 9, 10, and 11
+d
+
+471 PM
+In any of the two course sessions session: If a student, finally, has one (1) final assessment of NS (No Submittal), two (2) final assessments of NI (Needs Improvement), and six (6) Self-Regulation Lapses, then the number of defects he accumulates in that session is
+a) 2 defects
+b) 3 defects
+c) 4 defects
+d) Not listed here
+d
+
+471 PM
+A student obtains NCE on the first submission of a work product, and M on the second submission. As a result, he accumulates
+a) 0 lapse
+b) 1 lapse
+c) 1 laps
+d) 2 lapses
+b
+
+471 PM
+The Final Exam for GE 211 is called:
+a) The Termination
+b) The Festival
+c) The Celebration
+d) The Dedication
+c
+
+471 PM
+Each of the following is a valid assessment of a work product in GE 211, EXCEPT
+a) Exceeding Expectations
+b) Meeting Expectations
+c) Needing Improvement
+d) Celebrating
+e) No Submittal (Not Submitted)
+d
+
+471 PM
+The grading system of GE 211 is very generous and lenient indeed. A true statement supporting and manifesting this fact is
+a) Plagiarizing your colleague's work is tolerated and even encouraged
+b) A student can remove one defect in the concepts session
+c) The facilitators and graders do not care if you cheat provided your work is technically correct and well presented
+d) Two identical grades of F in both sessions lead to a passing grade of D in the course
+b
+
+471 PM
+Each of the following is a valid assessment of a work product in GE 211, EXCEPT
+a) Exceeding Expectations
+b) Meeting Expectations
+c) Celebrating
+d) No Credible Effort
+e) No Submittal (Not Submitted)
+c
+
+471 PM
+Two (2) or more final assessments of NS (No Submittal) or NCE (No Credible Effort) result in
+a) 4 defects
+b) 3 defects
+c) 2 defects
+d) 1 defect
+c
+
+471 PM
+Which term of the FDM has the same meaning as ( is synonymous with) slip, slight error, little mistake, fault, oversight, omission, or a trifling offense ?
+a) lapse
+b) laboratory
+c) engineering journal
+d) problem solving
+e) laps
+a
+
+471 PM
+A student was granted NCE in one of his PTW-checklist, which of the following is true
+a) The student gets one defect
+b) The student gets one lapse
+c) This will be reflected in the original work-checklist
+d) No such grade in PTW
+b
+
+471 PM
+A student obtains a final grade of F in GE 211 if he has
+a) if he did not attend the celebration
+b) five or more defects in any of the course sessions
+c) a grade of F in both sessions of the course
+d) any of the listed answers
+d
+
+471 PM
+A student who accumulates zero defects in both sessions (Concepts and laboratory) gets a minimum course grade of
+a) A+
+b) A
+c) B+
+d) B
+e) C+
+a
+
+471 PM
+A student obtains NI on the first submission of a work product, and M on the second submission. As a result, he accumulates
+a) 0 lapses
+b) 1 lapse
+c) 2 lapses
+d) 3 lapses
+a
+
+471 PM
+The Final Exam for GE 211 is called:
+a) The End
+b) The Completion
+c) The Termination
+d) The Festival
+e) None of the listed items
+e
+
+471 PM
+Which of the following is not applied for a Hospital/medical statement (or any out of class official activity)
+a) Only one chance is given to a student per semester.
+b) The approval does not affect any other penalty associated with late submission, class activity, and/or team uncompleted work.
+c) The approval removes the NS penalty (for quiz only not any other work) if scheduled on the absent day.
+d) The approval removes the absence penalty (1 lapse).
+e) The approval does not allow the student to get "E": in a specific quiz or work
+d
+
+471 PM
+Which of the following cases may end to a grade of D in GE 211;
+a) the student's combinations of grades is (A,F)
+b) the student received F in both sessions of the course
+c) the student fails in only one of the two course sessions
+d) None of the listed answers
+c
+
+471 PM
+A student accumulates three defects (before taking the defect removal) in concepts and four defects in Lab. Does he have a chance to pass the course?
+a) Yes
+b) No
+b
+
+471 PM
+In GE211; the impact of violating the attendance ratio (according to the college and/or the university policies) on the student is:
+a) He fails the course
+b) He will be granted a total of 2.5 denials
+c) Has nothing to do as GE211 has its own grading system
+d) None of the listed answers
+a
+
+471 PM
+Which of the following is not applied for a Hospital/medical statement (or any out of class official activity)
+a) The approval KEEPS the absence penalty (1 lapse) as is.
+b) The approval does not affect any other penalty associated with late submission, class activity, and/or team uncompleted work.
+c) The approval removes the NS penalty (for quiz only not any other work) if scheduled on the absent day.
+d) Only one chance is given to a student per semester.
+e) The approval does not allow the student to get "E": in a specific quiz or work
+a
+
+471 PM
+If you are assigned a grade of NCE (No Credible Effort) repeatedly on the first and second submissions of a work product, then
+a) you are automatically expelled from the course and awarded a course grade of Denial (DN)
+b) you have only a single chance remaining to attempt to change this grade to a Meet (M)
+c) your final grade for this work product is NCE
+d) you have only two more chances to attempt to change this grade to either a Meet (M) or to an Exceed (E)
+c
+
+471 PM
+The grading system of GE 211 is very generous and lenient indeed. A true statement supporting and manifesting this fact is
+a) Plagiarizing your colleague's work is tolerated and even encouraged
+b) A student can remove one defect in the laboratory session
+c) A student can't remove any defect in the lab session
+d) There is no harm if you accumulate up to three defects in any session
+e) Two identical grades of F in both sessions lead to a passing grade of D in the course
+e
+
+471 PM
+Each of the following is a valid assessment of a work product in GE 211, EXCEPT
+a) Exceeding Expectations
+b) Meeting Expectations
+c) Needing Improvement
+d) Excellent
+d
+
+471 PM
+Disruptive behavior in class includes all the following except
+a) working on GE 211 material assigned by the facilitator
+b) sleeping or eating
+c) team discussions run without facilitator consent
+d) failure to appropriately respond to the " focus on facilitator" signal
+b
+
+471 PM
+In the LAB session: If a student, finally, has one (1) final assessment of NS (No Submittal), one (1) final assessments of NI (Needs Improvement), and six (6) Self-Regulation Lapses, then the number of defects he accumulates in that session is
+a) 7 defects
+b) 5 defects
+c) 3 defects
+d) 0 defects
+b
+
+471 PM
+The grading system of GE 211 is very generous and lenient indeed. Each of the following statements is a 'TRUE' statement supporting and manifesting this fact , except
+a) A single final grade of NCE is forgiven
+b) Two identical grades of C in both sessions lead to a slightly better grade of C+ in the course
+c) Two identical grades of D in both sessions lead to a slightly better grade of D+ in the course
+d) There is a possibility of obtaining a passing grade in the course despite failing one of its sessions
+a
+
+471 PM
+If a student accumulates a total of exactly three defects in the two sessions put together (One possibility is: 1 defect in Concepts plus 2 defects in Laboratory), this means that the (unordered) set of his session grades is
+a) { A, A }, { A, B }, or { B, B }
+b) { A, D }, { B, D }, or { C, C }
+c) { C, D }, { F, B }, or { A, F }
+d) { A, F }, { B, F }, { C, F }, or { D, F }
+c
+
+471 PM
+Two (2) or more final assessments of NS (No Submittal) or NCE (No Credible Effort) result in
+a) 1 defect
+b) 2 defects
+c) 3 defects
+d) 4 defects
+c
+
+471 PM
+Select the possible final grade of GE211, If a student has a final total of exactly FIVE defects in the two sessions put together (one example is: 1 defect in Concepts plus 4 defects in Laboratory).
+a) A, C or F
+b) B, C or F
+c) D+, D or F
+d) None of the listed answers
+c
+
+471 PM
+Each of the following is an explicit purpose for the Quizzes in GE 211, except
+a) to accustom you to refrain from cheating since your instructor is always there to catch you
+b) to encourage you to complete the assigned reading before class
+c) to focus your attention on, as well as refresh your recollection of, the topics to be presented in the class
+d) to provide an opportunity for you to reflect on what you have learned
+a
+
+471 PM
+If you obtain a grade of B+ in GE 211, this means
+a) you have zero defects in one session and one defect of the other
+b) you have a grade of C in both sessions of the course
+c) your Concepts grade is either C, B or A
+d) a and b
+e) a and c
+d
+
+471 PM
+Which of the following cases may end to a grade of D in GE 211;
+a) the student fails in only one of the two course sessions
+b) the student received F in both sessions of the course
+c) the student's combinations of grades is (A,F)
+d) None of the listed answers
+b
+
+471 PM
+Which of the following session-grade unordered-combinations lead to grade C+ in GE211;
+a) { C, C }, { D, B }, or { A, F }
+b) { A, A }, { A, B }, or { B, B }
+c) { A, C }, or { B, C }
+d) { A, D }, { B, D }, or { C, C }
+d
+
+471 PM
+A student accumulates three defects (before taking the defect removal) in concepts and four defects in Lab. Does he have a chance to pass the course?
+a) No
+b) Yes
+b
+
+471 PM
+Which of the following is NOT TRUE for an Engineering Journal
+a) "If accepted, it may result in an extra credit on the corresponding quiz."
+b) "It can be resubmitted if it is assessed as NI."
+c) "It must be submitted with a completed self-assessed Engineering Journal Checklist."
+d) "It must contain reflective writing."
+b
+
+471 PM
+In any of the two course sessions session: If a student, finally, has one (1) final assessment of NS (No Submittal), two (2) final assessments of NI (Needs Improvement), and six (6) Self-Regulation Lapses, then the number of defects he accumulates in that session is
+a) 2 defects
+b) 3 defects
+c) 5 defects
+d) 6 defects
+c
+
+471 PM
+The Final Exam for GE 211 is called:
+a) The Finale
+b) The Termination
+c) The Festival
+d) The Celebration
+e) The Dedication
+d
+
+471 PM
+No re-submission is accepted for a work product in the LAB session after
+a) three days of its due date
+b) one week of its due date
+c) two weeks of its due date
+d) one month of its due date
+e) three months of its due date
+b
+
+471 PM
+In the concepts session: Defects are cumulative. They may accumulate due to _________ problems, or due to _________ problems (Self-Regulation issues). Only a single defect is _________ . (select the best fit statement)
+a) cognitive; affective; harmful
+b) affective; cognitive; bountiful
+c) affective; cognitive; un-removable
+d) cognitive; affective; removable
+d
+
+471 PM
+If a student accumulates a total of exactly three defects in the two sessions put together (One possibility is: 1 defect in Concepts plus 2 defects in Laboratory), this means that the (unordered) set of his session grades is
+a) { C, D }, { F, B }, or { A, F }
+b) { A, A }, { A, B }, or { B, B }
+c) { A, F }, { B, F }, { C, F }, or { D, D }
+d) { A, F }, { B, F }, { C, F }, or { D, F }
+c
+
+471 PM
+Which term of the FDM has the same meaning as ( is synonymous with) slip, slight error, little mistake, fault, oversight, omission, or a trifling offense ?
+a) concepts
+b) engineering journal
+c) laboratory
+d) lapse
+e) labs
+d
+
+471 PM
+All of the following statements are TRUE for the GE 211 course, except
+a) "It develops knowledge that is useful for latter courses."
+b) "It focuses on the process of how to solve problems."
+c) "It requires no out-of-class work as all work is done in class under facilitator supervision."
+d) "Its main goal is to introduce students to the Engineering Method."
+c
+
+471 PM
+If you obtain a grade of B+ in GE 211, this means
+a) you have a grade of B in both sessions of the course
+b) you have zero defects in one session and one defect of the other
+c) your Concepts grade is either C, B or A
+d) b and c
+e) a, b, and c
+e
+
+471 PM
+Which of the following session-grade unordered-combinations lead to grade C+ in GE211;
+a) { A, A }, { A, B }, or { B, B }
+b) { A, C }, or { B, C }
+c) { A, D }, { B, D }, or { C, C }
+d) { C, C }, { D, B }, or { A, F }
+c
+
+471 PM
+If you are assigned a grade of NCE (No Credible Effort) repeatedly on the first and second submissions of a work product, then
+a) your final grade for this work product is NI
+b) your final grade for this work product is NCE
+c) you are automatically expelled from the course and awarded a course grade of Denial (DN)
+d) you have only two more chances to attempt to change this grade to either a Meet (M) or to an Exceed (E)
+b
+
+471 PM
+A student accumulates one final assessment of NI in each of the course session. This will result in
+a) He can get A+ in the course
+b) He is granted one defect in each session
+c) He is granted one defect in the concepts session only
+d) He is granted one defect in the lab session only
+b
+
+471 PM
+The course FDM consists of ........ parts in which the fourth part represents the course ......., select the best fitted combination
+a) Three, calendar
+b) Four, calendar
+c) Five, blue sheets
+d) Three, signoff sheet
+b
+
+471 PM
+A student obtains a final grade of F in GE 211 if he has
+a) a grade of F in both sessions of the course
+b) five or more defects in the Concepts session
+c) five or more defects in the Laboratory session
+d) any of the above
+d
+
+471 PM
+If you are assigned a grade of M (Meet expectations) on the first submission of a work product, then you
+a) are not allowed to improve this grade
+b) can change this grade to an Exceed (E)
+c) obtain a Self-Regulation Lapse
+d) none of the above
+a
+
+471 PM
+All the following statements about 'defects' are 'TRUE' except:
+a) Defects are cumulative
+b) All defects are removable
+c) Defects may accumulate due to cognitive problems
+d) Defects may accumulate due to affective problems (Self-Regulation issues)
+b
+
+471 PM
+A student obtains NCE on the first submission of a work product, and M on the second submission. As a result, he accumulates
+a) 0 lapses
+b) 1 lapse
+c) 2 lapses
+d) 3 lapses
+b
+
+471 PM
+If you obtain a final grade of B in GE 211 course, this means
+a) you have zero defects in one session of the course, and one or two defects in the other
+b) you have a grade of B in both sessions of the course
+c) you have a grade of B in the concept session and a grade of C in the laboratory session
+d) none of the above
+c
+
+471 PM
+The grading system of GE 211 is very generous and lenient indeed. Each of the following statements is a 'TRUE' statement supporting and manifesting this fact, except
+a) A single final grade of NS is forgiven
+b) Two identical grades of C in both sessions lead to a slightly better grade of C+ in the course
+c) Two identical grades of D in both sessions lead to a slightly better grade of D+ in the course
+d) There is a possibility of obtaining a passing grade in the course despite failing one of its sessions
+a
+
+471 PM
+Disruptive behavior in class includes all the following except
+a) Side conversations
+b) sleeping
+c) working on material for other courses
+d) working on GE 211 material assigned by the facilitator
+d
+
+471 PM
+If you are assigned a grade of NI (Needing improvement) repeatedly on the first and second submissions of a work product, then you
+a) your final grade for this work product is No Credible Effort (NCE)
+b) you have only a single chance remaining to attempt to change this grade to a Meet (M)
+c) your final grade for this work product is meet expectations (M)
+d) none of the above
+d
+
+471 PM
+In the LAB session: If a student, finally, has two (2) final assessments of NS (No Submittal), two (2) final assessments of NI (Needs Improvement), then the number of defects he accumulates in that session is:
+a) 2 defects
+b) 4 defects
+c) 6 defects
+d) 0 defects
+b
+
+471 PM
+The grading system of GE 211 is very generous and lenient indeed. A true statement supporting and manifesting this fact is
+a) Plagiarizing your colleague's work is tolerated and even encouraged
+b) A student can remove two defects in the laboratory session
+c) A student can't remove any defect in the laboratory session
+d) Two identical grades of F in both sessions lead to a passing grade of D in the course
+d
+
+471 PM
+If you are assigned a grade of M (Meet expectations) on the first submission of a work product, then you
+a) are not allowed to improve this grade
+b) can change this grade to an Exceed (E)
+c) obtain a Self-Regulation Lapse
+d) none of the above
+a
+
+471 PM
+All the following statements about 'defects' are 'TRUE' except:
+a) Defects are cumulative
+b) Defects have no impact on a session grade
+c) Defects may accumulate due to cognitive problems
+d) Defects may accumulate due to affective problems (Self-Regulation issues)
+b
+
+471 PM
+The grading system of GE 211 is very generous and lenient indeed. A true statement supporting and manifesting this fact is
+a) There is no harm if you accumulate up to three defects in any session
+b) A student can remove one defect in the concepts session
+c) A student can't remove any defect in the laboratory session
+d) Two identical grades of F in both sessions lead to a passing grade of D in the course
+b
+
+471 PM
+If you are assigned a grade of NI (Needing improvement) repeatedly on the first and second submissions of a work product, then you
+a) your final grade for this work product is No Credible Effort (NCE)
+b) you have only a single chance remaining to attempt to change this grade to a Meet (M)
+c) your final grade for this work product is meet expectations (M)
+d) none of the above
+d
+
+471 PM
+Disruptive behavior in class includes all the following except
+a) team discussions run upon facilitator request
+b) sleeping or eating
+c) team discussions run without facilitator consent
+d) failure to appropriately respond to the "focus on facilitator" signal
+a
+
+471 PM
+In the LAB session: If a student, finally, has two (2) final assessments of NS (No Submittal), two (2) final assessments of NI (Needs Improvement), then the number of defects he accumulates in that session is:
+a) 2 defects
+b) 4 defects
+c) 6 defects
+d) 0 defects
+b
+
+471 PM
+A student obtains a final grade of F in GE 211 if he has
+a) a grade of F in both sessions of the course
+b) five or more defects in the Concepts session
+c) five or more defects in the Laboratory session
+d) any of the above
+d
+
+471 PM
+The grading system of GE 211 is very generous and lenient indeed. Each of the following statements is a 'TRUE' statement supporting and manifesting this fact, except
+a) A single final grade of NS is forgiven
+b) Two identical grades of C in both sessions lead to a slightly better grade of C+ in the course
+c) Two identical grades of D in both sessions lead to a slightly better grade of D+ in the course
+d) There is a possibility of obtaining a passing grade in the course despite failing one of its sessions
+a
+
+471 PM
+A student obtains NCE on the first submission of a work product, and M on the second submission. As a result, he accumulates
+a) 0 lapses
+b) 1 lapse
+c) 2 lapses
+d) 3 lapses
+b
+
+471 PM
+If you obtain a final grade of B in GE 211 course, this means
+a) you have zero defects in one session of the course, and one or two defects in the other
+b) you have a grade of B in both sessions of the course
+c) you have a grade of B in the concept session and a grade of C in the laboratory session
+d) none of the above
+c
+
+462
+One of the following is not from the course objectives in GE 211:
 A) Problem Solving.
 B) Teach you mechanical, civil, and electrical engineering subject.
 C) Self-Regulation.
@@ -6,14 +1321,16 @@ D) Communication.
 E) Working Cooperatively and Collaboratively.
 B
 
-2. If you got an NI grade in the quiz, you should do:
+462
+If you got an NI grade in the quiz, you should do:
 A) Quiz correction assignment.
 B) Retake the quiz back every time.
 C) Submitted journal that meet expectation.
 D) Quiz Make-up assignment.
 A
 
-3. Which term of the First-Day Material has the same meaning as (is synonymous with) slip, slight error, little mistake, fault, oversight, omission, or a trifling offense?
+462
+Which term of the First-Day Material has the same meaning as ( is synonymous with) slip, slight error, little mistake, fault, oversight, omission, or a trifling offense?
 A) laboratory
 B) active learning
 C) lapse
@@ -21,12 +1338,14 @@ D) concept
 E) engineering journal
 C
 
-4. The Quizzes in GE 211 require you to recall material from the assigned reading and define technical terms and list criteria.
+462
+The Quizzes in GE 211 require you to recall material from the assigned reading and define technical terms and list criteria.
 A) True
 B) False
 A
 
-5. All of the following is TRUE for the GE 211 course, except:
+462
+All of the following is TRUE for the GE 211 course, except:
 A) It focuses on the process of how to solve problems.
 B) It is an introductory engineering course, required by all engineering students
 C) Its main goal is to introduce students to the Engineering Method.
@@ -34,7 +1353,8 @@ D) It consists of two parts or sessions: Concepts and Modeling.
 E) It develops knowledge that is useful for latter courses.
 D
 
-6. One of the valid assessments of a work product in GE 211 is:
+462
+One of the valid assessments of a work product in GE 211 is:
 A) Extremely Weak.
 B) Good.
 C) Submit work.
@@ -42,20 +1362,23 @@ D) No Significant Expectations.
 E) No Submittal (Not Submitted).
 E
 
-7. Your grade in concepts is a function of the number of exceeds you get, the number of NI’s, NCE’s, or NS’s around at the end of the semester, as well as the number of Self-Regulation Lapses you have accumulated during the semester.
+462
+Your grade in concepts is a function of the number of exceeds you get, the number of NI’s, NCE’s, or NS’s around at the end of the semester, as well as the number of Self- Regulation Lapses you have accumulated during the semester.
 A) True
 B) False
 A
 
-8. A student who accumulates zero defects in both sessions (concepts and laboratory) gets a minimum course grade of:
+462
+A student who accumulates zero defects in both sessions (concepts and laboratory) gets a minimum course grade of:
 A) B
 B) C+
 C) B+
 D) A+
 E) A
-C
+E
 
-9. A student who accumulates zero defects in one session (concepts or laboratory) and one defect in the other session gets a course grade of:
+462
+A student who accumulates zero defects in one session (concepts or laboratory) and one defect in the other session gets a course grade of:
 A) B or B+
 B) B+ or A
 C) C or C+
@@ -63,7 +1386,8 @@ D) A or A+
 E) C+ or B
 A
 
-10. The situations that a student may fail in the course include but are not limited, except one statement:
+462
+The situations that a student may fail in the course include but are not limited, except one statement:
 A) Accumulates FIVE defects or more in one of the course sessions (whatever the grade of the other course session).
 B) Violation of QU-Academic-Integrity policy (with a recommendation from the course professors’ council).
 C) Not attending and practicing the celebration on its scheduled and announced time.
@@ -71,7 +1395,8 @@ D) Having a grade of F in both sessions of the course.
 E) Eating in the classroom or not attending a lecture.
 E
 
-11. All the following statements about 'defects' are 'TRUE' except one statement:
+462
+All the following statements about ‘defects’ are ‘TRUE’ except one statement:
 A) Defects have no impact on a session grade.
 B) Defects may accumulate due to affective problems (Self-Regulation issues).
 C) Defects have no impact session grade.
@@ -79,12 +1404,14 @@ D) Defects may accumulate due to cognitive problems.
 E) Defects are cumulative.
 A
 
-12. All written material (Journals, Quiz Make-ups, Quiz Corrections, Tutorial Materials, and Defect Removal) will be every time assessed using checklists.
+462
+All written material (Journals, Quiz Make-ups, Quiz Corrections, Tutorial Materials, and Defect Removal) will be every time assessed using checklists.
 A) True
 B) False
 A
 
-13. Which of the following are NOT TRUE for an Engineering Journal?
+462
+Which of the following are NOT TRUE for an Engineering Journal?
 A) It must reveal your understanding and thinking.
 B) It helps you reflect on the concepts in each assigned reading.
 C) It usually helps you to get more Exs and fewer NIs.
@@ -92,15 +1419,17 @@ D) It can be resubmitted if it is assessed as NI.
 E) It is mandatory if you receive a quiz grade of NCE.
 D
 
-14. Which of the following is not considered as Disruptive behavior in class?
+462
+Which of the following is not considered as Disruptive behavior in class?
 A) side conversations.
 B) working on material for other courses.
-C) failure to appropriately respond to the " focus on facilitator" signal.
+C) failure to appropriately respond to the “focus on facilitator” signal.
 D) sleeping.
 E) team presentation.
 E
 
-15. There are two types of work assessed in concepts in GE 211; your quizzes and your written material and your work will be assessed as, except:
+462
+There are two types of work assessed in concepts in GE 211; your quizzes and your written material and your work will be assessed as, except:
 A) Exceeding Expectations.
 B) No Credible Effort, or Not Submitted.
 C) good.
@@ -108,7 +1437,8 @@ D) Meeting Expectations.
 E) Needing Improvement.
 C
 
-16. Learning to select the best answer to a question of a quiz in GE 211 enhances your ability to select the best solution to a problem. This is an aspect of the course objective of:
+462
+Learning to select the best answer to a question of a quiz in GE 211 enhances your ability to select the best solution to a problem. This is an aspect of the course objective of:
 A) demonstrating a working knowledge of the role of the customer in defining quality.
 B) developing and exhibiting self-regulation.
 C) demonstrating the fundamentals of organizing and presenting technical work.
@@ -116,184 +1446,154 @@ D) demonstrating the ability to work cooperatively and collaboratively.
 E) developing and demonstrating the behaviors of effective problem solvers.
 E
 
-17. The possible way to get exceed in quizzes is to:
+461
+The possible way to get exceed in quizzes is to:
 a) Submit journal if you answered 70 to < 80% correctly.
 b) If you answered 90 or 100% correctly.
-c) You answered > 80% correctly and submitted a journal that meet expectation.
+c) You answered >= 80% correctly and submitted a journal that meet expectation.
 d) Submit Quiz only.
 e) b and c.
-B
+b
 
-18. The grading system of GE 211 is very generous and lenient indeed. A true statement supporting and manifesting this fact is:
-a) Plagiarizing your colleague's work is tolerated and even encouraged
-b) A student can remove one defect in the concepts session
-c) A student can remove one defect in the laboratory session
-d) A single final grade of NCE is forgiven
-e) Two identical grades of F in both sessions lead to a passing grade of D in the course
-B
+461
+One of the valid assessments of a work product in GE 211 is:
+a) Extremely Weak.
+b) Excellent and very good.
+c) No Submittal (Not Submitted).
+d) Submit work.
+e) No Significant Expectations.
+c
 
-19. Which of the following is not true for late work?
-a) Permitted for resubmission Lab work
-b) Associated with issuing 1 laps
-c) Permitted for Original Lab/concepts work
-d) Lateness is one week from the original time
-C
+461
+If you got an NI grade in the quiz, you should do:
+a) Quiz correction assignment.
+b) Quiz Make-up assignment.
+c) Retake the quiz back.
+d) Submitted journal that meet expectation.
+e) b and c.
+a
 
-20. In the LAB session: If a student, finally, has one (1) final assessment of NS (No Submittal), two (2) final assessments of NI (Needs Improvement), and six (6) Self-Regulation Lapses, then the number of defects he accumulates in that session is:
-a) 7 defects
-b) 5 defects
-c) 3 defects
-d) 0 defects
-B
+461
+Which term of the First-Day Material has the same meaning as (is synonymous with) slip, slight error, little mistake, fault, oversight, omission, or a trifling offense?
+a) Concept
+b) Laboratory
+c) Lapse
+d) Engineering Journal
+e) Active learning
+c
 
-21. A student accumulates three defects (before taking the defect removal) in concepts and four defects in Lab. Does he have a chance to pass the course?
-a) Yes
-b) No
-B
+461
+There are two types of work assessed in Concepts in GE 211; your quizzes and your written material and your work will be assessed as, except:
+a) Exceeding Expectations.
+b) Meeting Expectations.
+c) Needing Improvement.
+d) No Credible Effort, or Not Submitted.
+e) Excellent and very good.
+e
 
-22. The Final Exam for GE 211 is called:
-a) The End
-b) The Termination
-c) The Festival
-d) The Celebration
-D
+461
+One of the following is not from the course objectives in GE 211:
+a) Teach you math and science engineering.
+b) Self-Regulation.
+c) Communication.
+d) Working Cooperatively and Collaboratively.
+e) Problem Solving.
+a
 
-23. No re-submission is accepted for a work product in the LAB session after:
-a) 24 hours of its due date
-b) three days of its due date
-c) one week of its due date
-d) two weeks of its due date
-C
+461
+The situations that a student may fail in the course include but are not limited, except one statement:
+a) Having a grade of F in both sessions of the course.
+b) Accumulates FIVE defects or more in one of the course sessions (whatever the grade of the other course session).
+c) Not attending and practicing the celebration at its scheduled and announced time.
+d) Violation of QU-Academic-Integrity policy (with a recommendation from the course professors’ council).
+e) Eating in the classroom.
+e
 
-24. Which of the following session-grade unordered-combinations lead to grade C+ in GE211;
-a) {A, A}, {A, B}, or {B, B}
-b) {A, C}, or {B, C}
-c) {A, D}, {B, D}, or {C, C}
-d) {C, C}, {D, B}, or {A, F}
-D
+461
+Which of the following is not considered disruptive behavior in class?
+a) Side conversations.
+b) Sleeping.
+c) Working on material for other courses.
+d) Team presentation.
+e) Failure to appropriately respond to the " focus on facilitator" signal.
+d
 
-25. A student did not attend the celebration, then:
-a) Another celebration day must be arranged for him
-b) The student fails the course
-B (ملاحظة: هذا الخيار مستنتج بناءً على قواعد المادة، حيث أن عدم حضور الاحتفال يؤدي للرسوب)
+461
+If you are assigned a grade of NCE (No Credible Effort) on the second submission of one work product in one session, which of the following is true?
+a) You are automatically expelled from Qassim University and denied readmission for one full year.
+b) You are denied the right to make a resubmission for the next work product.
+c) Your maximum final session grade is D.
+d) You are automatically expelled from the course.
+e) Your maximum final session grade is C.
+c
 
-26. In GE211; the impact of violating the attendance ratio (according to the college and/or the university policies) on the student is:
-a) Has nothing to do as GE211 has its own grading system
-b) He fails the course
-c) He will be granted a total of 2.5 denials
-d) None of the listed answers
-B
+461
+A student who accumulates zero defects in one session (Concepts or laboratory) and one defect in the other session gets a course grade of:
+a) B or B+
+b) A or A+
+c) B+ or A
+d) C+ or B
+e) C or C+
+a
 
-27. Two (2) or more final assessments of NS (No Submittal) or NCE (No Credible Effort) result in:
-a) 4 defects
-b) 3 defects
-c) 2 defects
-d) 1 defect
-B
+461
+A student who accumulates zero defects in both sessions (concepts and laboratory) gets a minimum course grade of:
+a) B+
+b) B
+c) C+
+d) A
+e) A+
+a
 
-28. If a student accumulates a total of exactly three defects in the two sessions put together (One possibility is: 1 defect in Concepts plus 2 defects in Laboratory), this means that the (unordered) set of his session grades is:
-a) {A, C}, or {B, C}
-b) {A, D}, {B, D}, or {C, C}
-c) {C, D}, {F, B}, or {A, F}
-d) {A, F}, {B, F}, {C, F}, or {D, D}
-C
+461
+All the following statements about 'defects' are 'TRUE' except one statement:
+a) Defects are cumulative.
+b) Defects have no impact on a session grade.
+c) Defects may accumulate due to cognitive problems.
+d) Defects may accumulate due to affective problems (Self-Regulation issues).
+b
 
-29. If you obtain a grade of A in GE 211, this means
-a) you have zero defects in both sessions of the course
-b) you have a grade of A in both sessions of the course
-c) your Concepts grade is either B or A
-d) a and b
-e) a and c
-C
+461
+All written material (Journals, Quiz Make-ups, Quiz Corrections, Tutorial Materials, and Defect Removal) will be evry time assessed using checklists.
+a) True
+b) False
+a
 
-30. If you are assigned a grade of NCE (No Credible Effort) repeatedly on the first and second submissions of a work product, then
-a) your final grade for this work product is NI
-b) your final grade for this work product is NCE
-c) you are automatically expelled from the course...
-d) you have only two more chances...
-B
+461
+Which of the following are NOT TRUE for an Engineering Journal?
+a) It must reveal your understanding and thinking.
+b) It helps you reflect on the concepts in each assigned reading.
+c) It usually helps you to get more Exs and fewer NIs.
+d) It can be resubmitted if it is assessed as NI.
+e) It is mandatory if you receive a quiz grade of NCE.
+d
 
-31. Select the possible final grade of GE211, If a student has a final total of exactly FIVE defects in the two sessions put together (one example is: 1 defect in Concepts plus 4 defects in Laboratory).
-a) A, C or F
-b) B, C or F
-c) D+, D or F
-C (ملاحظة: الإجابة الصحيحة هي D+ أو D حسب الجدول، في الصورة المرفقة كتب الطالب D+ بجانب الخيارات)
+461
+All of the following is TRUE for the GE 211 course, except:
+a) It focuses on the process of how to solve problems.
+b) It is an introductory engineering course, required by all engineering students
+c) Its main goal is to introduce students to the Engineering Method.
+d) It consists of two parts or sessions: Concepts and Modeling.
+e) It develops knowledge that is useful for latter courses.
+d
 
-32. Which of the following is not applied for a Hospital/medical statement (or any out of class official activity)?
-a) Only one chance is given to a student per semester.
-b) The approval does not affect any other penalty associated with late submission...
-c) The NS penalty is conserved and does not affected by the approval...
-d) The approval removes the absence penalty (1 lapse).
-e) The approval does not allow the student to get "E": in a specific quiz or work
-C
+461
+Learning to select the best answer to a question of a quiz in GE 211 enhances your ability to select the best solution to a problem. This is an aspect of the course objective of:
+a) demonstrating a working knowledge of the role of the customer in defining quality.
+b) developing and exhibiting self-regulation.
+c) demonstrating the fundamentals of organizing and presenting technical work.
+d) demonstrating the ability to work cooperatively and collaboratively.
+e) developing and demonstrating the behaviors of effective problem solvers.
+e
 
-33. A student was granted NCE in one of his PTW-checklist, which of the following is true
-a) The student gets one defect
-b) The student gets one lapse
-c) This will be reflected in the original work-checklist
-d) No such grade in PTW
-B
+461
+Your grade in concepts is a function of the number of exceeds you get, the number of NI’s, NCE’s, or NS’s around at the end of the semester, as well as the number of Self- Regulation Lapses you have accumulated during the semester.
+a) True
+b) False
+a
 
-34. A student obtains a final grade of F in GE 211 if he has
-a) a grade of F in both sessions of the course
-b) five or more defects in the Concepts session
-c) five or more defects in the Laboratory session
-d) any of the listed answers
-D
-
-35. If you are assigned a grade of M (Meet expectations) on the first submission of a work product, then you
-a) are not allowed to improve this grade
-b) can change this grade to an Exceed (E)
-c) obtain a Self-Regulation Lapse
-d) none of the above
-A
-
-36. If you obtain a final grade of B in GE 211 course, this means
-a) you have zero defects in one session of the course, and one or two defects in the other
-b) you have a grade of B in both sessions of the course
-c) you have a grade of B in the concept session and a grade of C in the laboratory session
-d) none of the above
-C
-
-37. The course FDM consists of ........ parts in which the fourth part represents the course ......., select the best fitted combination
-a) Three, calendar
-b) Four, calendar
-c) Five, blue sheets
-d) Three, signoff sheet
-B (ملاحظة: الطالب في أحد النماذج اختار Four وتم تصحيحها صح، وفي نموذج آخر اختار Three وتم تصحيحها صح. الأرجح Four إذا احتسبنا التقويم كجزء)
-
-38. The lapses having the most serious impact on your session grade are the lapses numbered
-a) 4, 5.5, and 7.5
-b) 1, 3, and 5.5
-c) 1, 2, and 3
-d) 1, 5.5, and 9
-A
-
-39. A student obtains NCE on the first submission of a work product, and M on the second submission. As a result, he accumulates
-a) 0 lapses
-b) 1 lapse
-c) 2 lapses
-d) 3 lapses
-B
-
-40. If you obtain a grade of B+ in GE 211, this means
-a) you have zero defects in one session and one defect of the other
-b) you have a grade of B in both sessions of the course
-c) your Concepts grade is either C, B or A
-d) all of the listed answers
-D (أو C إذا كان السؤال يتطلب الشرط اللازم فقط)
-
-41. Which of the following cases may end to a grade of D in GE 211;
-a) the student’s combinations of grades is (A,F)
-b) the student received F in both sessions of the course
-c) the student fails in only one of the two course sessions
-d) None of the listed answers
-C
-
-42. Each of the following is an explicit purpose for the Quizzes in GE 211, except
-a) to accustom you to refrain from cheating since your instructor is always there to catch you
-b) to encourage you to complete the assigned reading before class
-c) to have you ready to solve the problem of the QU’s Air Conditioning Division
-d) a and c
-e) b and c
-D
+461
+The Quizzes in GE 211 require you to recall material from the assigned reading and define technical terms and list criteria.
+a) True
+b) False
+a
