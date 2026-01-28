@@ -597,68 +597,63 @@
             const [autoAdvance, setAutoAdvance] = useState(false);
 
             useEffect(() => {
-                const handleData = (text) => {
-                    const lines = text.split('\n');
-                    const parsed = [];
-                    const foundGroups = new Set();
-                    let currentGroup = "General";
-                    let q = null;
-                    lines.forEach(rawLine => {
-                        const line = rawLine.trim();
-                        if (!line) return;
-                        if (/^[A-E]$/i.test(line)) {
-                            if(q) {
-                                q.answer = line.toUpperCase();
-                                q.group = currentGroup;
-                                parsed.push(q);
-                                foundGroups.add(currentGroup);
-                                q = null;
-                            }
-                            return;
-                        }
-                        const optMatch = line.match(/^([A-E])\)\s*(.+)/i);
-                        if (optMatch) {
-                            if (q) q.options.push({ letter: optMatch[1].toUpperCase(), text: optMatch[2] });
-                            return;
-                        }
-                        if (!q) {
-                            const isGroupHeader = /^\d{3}(\s+(AM|PM))?$/i.test(line) || (line.length < 15 && /^[A-Z0-9]+$/i.test(line));
-                            if (isGroupHeader) {
-                                currentGroup = line;
-                            } else {
-                                q = { id: parsed.length + 1, text: line, options: [], answer: null, group: currentGroup };
-                            }
-                        } else {
-                            if(q.options.length === 0) q.text += " " + line;
-                        }
-                    });
-                    if(q && q.answer) {
-                        q.group = currentGroup;
-                        parsed.push(q);
-                        foundGroups.add(currentGroup);
-                    }
-                    setAllQuestions(parsed);
-                    setGroups(Array.from(foundGroups));
-                    setLoading(false);
-                };
+                fetch(url)
+                    .then(r => r.text())
+                    .then(text => {
+                        const lines = text.split('\n');
+                        const parsed = [];
+                        const foundGroups = new Set();
+                        
+                        let currentGroup = "General";
+                        let q = null;
 
-                if (url === 'local_q1_data') {
-                    handleData(`AI
-Which learning level involves "Using a concept without being told to"?
-a) Comprehension
-b) Application
-c) Analysis
-d) Knowledge
-b`);
-                } else {
-                    fetch(url)
-                        .then(r => r.text())
-                        .then(text => handleData(text))
-                        .catch(e => {
-                            console.error(e);
-                            setLoading(false);
+                        lines.forEach(rawLine => {
+                            const line = rawLine.trim();
+                            if (!line) return;
+
+                            if (/^[A-E]$/i.test(line)) {
+                                if(q) {
+                                    q.answer = line.toUpperCase();
+                                    q.group = currentGroup;
+                                    parsed.push(q);
+                                    foundGroups.add(currentGroup);
+                                    q = null;
+                                }
+                                return;
+                            }
+
+                            const optMatch = line.match(/^([A-E])\)\s*(.+)/i);
+                            if (optMatch) {
+                                if (q) q.options.push({ letter: optMatch[1].toUpperCase(), text: optMatch[2] });
+                                return;
+                            }
+
+                            if (!q) {
+                                const isGroupHeader = /^(AI|4\d{2}|General|[A-Z0-9]{2,10})$/i.test(line) && !line.includes(')');
+                                
+                                if (isGroupHeader) {
+                                    currentGroup = line;
+                                } else {
+                                    q = { id: parsed.length + 1, text: line, options: [], answer: null, group: currentGroup };
+                                }
+                            } else {
+                                if(q.options.length === 0) q.text += " " + line;
+                            }
                         });
-                }
+                        if(q && q.answer) {
+                            q.group = currentGroup;
+                            parsed.push(q);
+                            foundGroups.add(currentGroup);
+                        }
+                        
+                        setAllQuestions(parsed);
+                        setGroups(Array.from(foundGroups));
+                        setLoading(false);
+                    })
+                    .catch(e => {
+                        console.error(e);
+                        setLoading(false);
+                    });
             }, [url]);
 
             const startQuiz = (groupName) => {
@@ -818,7 +813,7 @@ b`);
                     type: 'quiz',
                     links: [
                         { name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1IsNjNLcEwMpi9PnjCcotHVZI8ExCi2bX/view?usp=sharing', type: 'link' },
-                        { name: 'بدء الكويز', url: 'local_q1_data', type: 'interactive' }
+                        { name: 'بدء الكويز', url: 'https://mutlaq001.github.io/GE211/Q/Q1.txt', type: 'interactive' }
                     ]
                 }
             ];
@@ -1210,7 +1205,7 @@ b`);
                     title: {en: 'Quiz #5', ar: 'كويز 5'},
                     desc: {
                         en: 'Quiz #5: More about problem definition: SCPS Chapter 3 (from 3.2D to end of chapter).',
-                        ar: 'كويز 5: تعريف المشكلة: الفصل 3 (من 3.2D للنهاية) في SCPS.'
+                        ar: 'تعريف المشكلة: الفصل 3 (من 3.2D للنهاية) في SCPS.'
                     } 
                 },
                 'C4-3': { 
