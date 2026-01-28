@@ -613,7 +613,7 @@
                         const parsed = [];
                         const foundGroups = new Set();
                         
-                        let currentGroup = "General";
+                        let currentGroup = "471";
                         let q = null;
 
                         lines.forEach(rawLine => {
@@ -638,10 +638,14 @@
                             }
 
                             if (!q) {
-                                const isGroupHeader = /^(AI|4\d{2}|General|[A-Z0-9]{2,10})$/i.test(line) && !line.includes(')');
+                                const isGroupHeader = /^(AI|4\d{2}(\s?(AM|PM))?|General|Journal|[A-Z0-9\s]{2,15})$/i.test(line) && !line.includes(')');
                                 
                                 if (isGroupHeader) {
-                                    currentGroup = line;
+                                    let cleanName = line.toUpperCase().trim();
+                                    if(cleanName === 'GENERAL' || cleanName === 'JOURNAL') cleanName = '471';
+                                    if(cleanName === '461') cleanName = '471 AM';
+                                    if(cleanName === '462') cleanName = '471 PM';
+                                    currentGroup = cleanName;
                                 } else {
                                     q = { id: parsed.length + 1, text: line, options: [], answer: null, group: currentGroup };
                                 }
