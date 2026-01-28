@@ -34,7 +34,7 @@
         
         @keyframes fadeIn { from {opacity: 0; transform: translateY(10px);} to {opacity: 1; transform: translateY(0);} }
         @keyframes pulse-border { 0% {border-color: rgba(255,255,255,0.2);} 50% {border-color: rgba(255,255,255,0.8);} 100% {border-color: rgba(255,255,255,0.2);} }
-        @keyframes shimmer { 100% { transform: translateX(100%); } }
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
 		body{
             font-family:var(--font-body);
@@ -159,7 +159,6 @@
         }
         .type-files .resource-icon-box { color: var(--color-lab); }
         .type-quizzes .resource-icon-box { color: var(--color-concept); }
-        .type-recordings .resource-icon-box { color: var(--color-record); }
         .resource-info h3 { margin: 0; font-size: 1.1rem; font-weight: 700; color: #fff; }
         .resource-info p { margin: 3px 0 0; font-size: 0.85rem; color: #888; }
         
@@ -173,28 +172,38 @@
         .res-link-btn:hover { background: rgba(255,255,255,0.1); color: #fff; transform: translateY(-2px); }
         .res-link-btn.primary { border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); }
 
-        .audio-wrapper-styled {
-            width: 100%;
-            margin-top: 15px;
-            background: rgba(0, 0, 0, 0.4);
-            border-radius: 12px;
-            padding: 8px 12px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .beautiful-player-card {
+            background: linear-gradient(135deg, rgba(20, 20, 25, 0.95), rgba(30, 30, 40, 0.8));
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            transition: 0.3s;
+            position: relative;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .beautiful-player-card:hover { border-color: var(--color-record); box-shadow: 0 15px 50px rgba(255, 62, 77, 0.15); }
+
+        .player-info-section {
+            display: flex; align-items: center; gap: 15px; margin-bottom: 12px;
+        }
+        .vinyl-icon {
+            font-size: 1.6rem; color: var(--color-record); width: 45px; height: 45px;
+            background: rgba(255, 62, 77, 0.1); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 0 15px rgba(255, 62, 77, 0.2);
+            animation: pulse-border 2s infinite;
+        }
+        .player-text h3 { font-size: 1.1rem; color: #fff; margin: 0; }
+        .player-text span { font-size: 0.8rem; color: #888; }
+        
+        .custom-html5-audio {
+            width: 100%; height: 35px; outline: none; margin-top: 5px;
+            filter: invert(1) hue-rotate(180deg) grayscale(20%);
+            opacity: 0.9;
         }
 
-        audio {
-            width: 100%;
-            height: 32px;
-            outline: none;
-            filter: invert(1) hue-rotate(180deg) grayscale(20%); 
-            opacity: 0.85;
-            transition: opacity 0.3s;
-        }
-        audio:hover { opacity: 1; }
-        
         .empty-state-box {
             text-align: center; padding: 60px 20px;
             background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
@@ -206,20 +215,13 @@
         .empty-desc { color: #666; font-size: 0.9rem; }
 
         .timeline-container { padding-bottom: 50px; }
-        
         .session-card {
             display: flex; align-items: stretch;
-            margin-bottom: 10px;
-            position: relative;
-            overflow: hidden;
-            transition: var(--transition);
-            backdrop-filter: blur(12px);
-            border-radius: 16px;
-            border: 1px solid rgba(255,255,255,0.05);
-            background: rgba(30,30,35,0.6);
-            animation: fadeIn 0.5s ease both;
-            cursor: pointer;
-            flex-wrap: wrap;
+            margin-bottom: 10px; position: relative; overflow: hidden;
+            transition: var(--transition); backdrop-filter: blur(12px);
+            border-radius: 16px; border: 1px solid rgba(255,255,255,0.05);
+            background: rgba(30,30,35,0.6); animation: fadeIn 0.5s ease both;
+            cursor: pointer; flex-wrap: wrap;
         }
         
         .session-card.current-day {
@@ -229,17 +231,10 @@
         }
         
         .session-card.is-past {
-            opacity: 0.6;
-            filter: grayscale(0.9);
-            border-color: #222;
+            opacity: 0.6; filter: grayscale(0.9); border-color: #222;
         }
-        .session-card.is-past .session-topic {
-            text-decoration: line-through;
-            color: #666;
-        }
-        .session-card.is-past:hover {
-            opacity: 1; filter: grayscale(0);
-        }
+        .session-card.is-past .session-topic { text-decoration: line-through; color: #666; }
+        .session-card.is-past:hover { opacity: 1; filter: grayscale(0); }
 
         .past-badge {
             position: absolute; top: 10px; left: 10px;
@@ -256,8 +251,7 @@
         
         .date-box {
             display: flex; flex-direction: column; align-items: center; justify-content: center;
-            padding: 15px; min-width: 85px;
-            background: rgba(0,0,0,0.2);
+            padding: 15px; min-width: 85px; background: rgba(0,0,0,0.2);
             border-left: 1px solid rgba(255,255,255,0.05);
         }
         .date-day-name { font-size: 0.8rem; color: #aaa; margin-bottom: 2px; }
@@ -266,11 +260,7 @@
 
         .card-content { flex: 1; padding: 15px; display: flex; flex-direction: column; justify-content: center; position: relative; }
         .session-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
-        
-        .session-id { 
-            font-family: var(--font-nums); font-size: 1.3rem; font-weight: 700; 
-            display: flex; align-items: center; gap: 8px; letter-spacing: 0.5px;
-        }
+        .session-id { font-family: var(--font-nums); font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 8px; letter-spacing: 0.5px; }
         .session-card.concept .session-id { color: var(--color-concept); text-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
         .session-card.lab .session-id { color: var(--color-lab); text-shadow: 0 0 10px rgba(0, 242, 255, 0.3); }
         
@@ -283,44 +273,16 @@
         }
 
         .external-file-btn {
-            display: flex; align-items: center; justify-content: center; gap: 10px;
-            width: 100%;
-            padding: 12px;
-            margin-top: 5px;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: 700;
-            background: rgba(0,0,0,0.4);
-            border: 1px solid rgba(255,255,255,0.1);
-            transition: var(--transition);
-            animation: fadeIn 0.5s ease both;
+            display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 12px; margin-top: 5px; margin-bottom: 25px; border-radius: 12px; text-decoration: none; font-weight: 700;
+            background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.1); transition: var(--transition); animation: fadeIn 0.5s ease both;
         }
         .external-file-btn.concept { color: var(--color-concept); border-color: rgba(255, 215, 0, 0.2); }
         .external-file-btn.lab { color: var(--color-lab); border-color: rgba(0, 242, 255, 0.2); }
-
         .external-file-btn:hover { background: rgba(255,255,255,0.1); transform: translateY(-2px); }
 
-        .block-divider {
-            height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
-            margin: 25px 0; width: 70%; margin-left: auto; margin-right: auto;
-        }
-
-        .completed-block-card {
-            display: flex; align-items: center; justify-content: space-between;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px dashed rgba(255, 255, 255, 0.2);
-            padding: 15px 20px;
-            border-radius: 16px;
-            cursor: pointer;
-            margin-bottom: 25px;
-            transition: all 0.3s ease;
-        }
-        .completed-block-card:hover {
-            background: rgba(255, 255, 255, 0.06);
-            border-color: rgba(255, 255, 255, 0.4);
-            transform: translateY(-2px);
-        }
+        .block-divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent); margin: 25px 0; width: 70%; margin-left: auto; margin-right: auto; }
+        .completed-block-card { display: flex; align-items: center; justify-content: space-between; background: rgba(255, 255, 255, 0.03); border: 1px dashed rgba(255, 255, 255, 0.2); padding: 15px 20px; border-radius: 16px; cursor: pointer; margin-bottom: 25px; transition: all 0.3s ease; }
+        .completed-block-card:hover { background: rgba(255, 255, 255, 0.06); border-color: rgba(255, 255, 255, 0.4); transform: translateY(-2px); }
         .block-info { display: flex; align-items: center; gap: 12px; font-weight: 700; color: #aaa; }
         .block-status { font-size: 0.8rem; color: #666; display: flex; align-items: center; gap: 5px; }
 
@@ -422,15 +384,26 @@
             'FDM': 'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgCEkYAUr-F-TLUsEgwkrnb0AeUxpPv7XtflM9LuOicGtzA?e=acJxqo'
         };
 
-        const AudioPlayer = ({ fileId }) => {
-            const audioSrc = `https://docs.google.com/uc?export=download&id=${fileId}`;
+        const AudioPlayer = ({ fileName, title }) => {
+            const audioSrc = `https://mutlaq001.github.io/GE211/audio/${fileName}.m4a`;
             
             return (
-                <div className="audio-wrapper-styled">
-                    <audio controls controlsList="nodownload">
-                        <source src={audioSrc} type="audio/mp3" />
-                        المتصفح لا يدعم تشغيل الصوت.
-                    </audio>
+                <div className="beautiful-player-card">
+                    <div className="player-info-section">
+                        <div className="vinyl-icon">
+                            <Icons.Mic />
+                        </div>
+                        <div className="player-text">
+                            <h3>{title}</h3>
+                            <span>تسجيل مباشر • Direct Audio</span>
+                        </div>
+                    </div>
+                    <div>
+                        <audio controls className="custom-html5-audio" controlsList="nodownload">
+                            <source src={audioSrc} type="audio/mp4" />
+                            المتصفح لا يدعم تشغيل هذا الملف.
+                        </audio>
+                    </div>
                 </div>
             );
         };
@@ -449,7 +422,7 @@
                     title: 'Quiz #1',
                     type: 'quiz',
                     links: [
-                        { name: 'ملف الكويز ', url: 'https://drive.google.com/file/d/1IsNjNLcEwMpi9PnjCcotHVZI8ExCi2bX/view?usp=sharing' }
+                        { name: 'ملف الكويز (Drive)', url: 'https://drive.google.com/file/d/1IsNjNLcEwMpi9PnjCcotHVZI8ExCi2bX/view?usp=sharing' }
                     ]
                 }
             ];
@@ -489,11 +462,11 @@
             const recordings = [
                 {
                     title: 'Quiz #1 Recording',
-                    id: '1uEov8JUytS0413fgCIZVM0KMoLp7-TQb'
+                    file: 'Q1'
                 },
                 {
                     title: 'C1 Concept Session',
-                    id: '1w7VRYalrK7mQH8FkmlBsHBTmHXtRSe2r'
+                    file: 'C1'
                 }
             ];
 
@@ -560,17 +533,8 @@
                         return (
                             <div className="content-area">
                                 {recordings.map((rec, i) => (
-                                    <div key={i} className="pro-resource-card type-recordings" style={{animationDelay: `${i * 0.1}s`}}>
-                                        <div className="resource-header">
-                                            <div className="resource-icon-box">
-                                                <Icons.Mic />
-                                            </div>
-                                            <div className="resource-info">
-                                                <h3>{rec.title}</h3>
-                                                <p>تسجيل صوتي</p>
-                                            </div>
-                                        </div>
-                                        <AudioPlayer fileId={rec.id} />
+                                    <div key={i} style={{marginBottom: '20px', animationDelay: `${i * 0.1}s`}}>
+                                        <AudioPlayer fileName={rec.file} title={rec.title} />
                                     </div>
                                 ))}
                             </div>
