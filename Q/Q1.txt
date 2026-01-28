@@ -1597,3 +1597,835 @@ The Quizzes in GE 211 require you to recall material from the assigned reading a
 a) True
 b) False
 a
+
+AI
+Which university college is this course material for?
+a) College of Medicine
+b) College of Science
+c) College of Engineering
+d) College of Arts
+c
+
+AI
+What is the course code for Introduction to Engineering Design-I?
+a) GE 101
+b) GE 211
+c) GE 202
+d) ENG 211
+b
+
+AI
+What color is the starting material packet for the "Concepts" section?
+a) White
+b) Orange
+c) Yellow
+d) Pink
+c
+
+AI
+What color is the starting material packet for the "Laboratory" section?
+a) White
+b) Orange
+c) Yellow
+d) Pink
+b
+
+AI
+How many contact hours per week will a student spend in the Concepts session when it is that session's week?
+a) 2 hours
+b) 4 hours
+c) 6 hours
+d) 8 hours
+c
+
+AI
+Which of the following is NOT one of the five Course Objectives?
+a) Self-Regulation
+b) Communication
+c) Individual Competition
+d) Problem Solving
+c
+
+AI
+The course uses which learning procedure?
+a) Passive Listening
+b) Active Learning
+c) Rote Memorization
+d) Distance Learning only
+b
+
+AI
+According to Classroom Expectations, students should expect to:
+a) Sit silently
+b) Do a lot of talking
+c) Work alone only
+d) Listen to lectures 100% of the time
+b
+
+AI
+Which of the following constitutes a violation of Academic Integrity?
+a) Using a solution manual during a test
+b) Asking the professor for help
+c) Working with a team on a team project
+d) Reading the textbook
+a
+
+AI
+If a student engages in plagiarism, the accepted ratio will be set by:
+a) The student
+b) The University President
+c) The Instructors
+d) The Team Leader
+c
+
+AI
+What is the consequence of using inappropriate language (written or oral)?
+a) A warning
+b) Issuance of a Self-Regulation Lapse
+c) Immediate expulsion
+d) Extra homework
+b
+
+AI
+Repeated use of inappropriate language will result in:
+a) A bad grade
+b) Withdrawal from the class
+c) A letter to parents
+d) Detention
+b
+
+AI
+What is the policy regarding food and drink in QU classrooms?
+a) Snacks are allowed
+b) Only coffee is allowed
+c) No food or drink except water
+d) Full meals are allowed
+c
+
+AI
+Lateness to class results in:
+a) 1 Lapse
+b) 1/2 Lapse
+c) 2 Lapses
+d) No penalty
+b
+
+AI
+Absence from class results in:
+a) 1 Lapse
+b) 1/2 Lapse
+c) 2 Lapses
+d) 3 Lapses
+a
+
+AI
+Using a mobile phone during class results in:
+a) 1 Lapse
+b) 1/2 Lapse
+c) Confiscation of the phone
+d) Expulsion
+a
+
+AI
+If a student misses a quiz due to a medical excuse approved by QEC, what happens?
+a) They get a zero
+b) They get an automatic "E"
+c) The quiz-NS penalty is removed, and they take it for correction time only
+d) They must take a makeup quiz later for full credit
+c
+
+AI
+What is the maximum grade assessment a student can get on a missed quiz that was excused and taken later?
+a) Exceeds (E)
+b) Meets (M)
+c) Needs Improvement (NI)
+d) No Credible Effort (NCE)
+b
+
+AI
+The Final Exam in GE 211 is called:
+a) The Final Test
+b) The Celebration
+c) The Evaluation
+d) The Conclusion
+b
+
+AI
+If a student misses the "Celebration" without a replacement agreed upon:
+a) They can retake it later
+b) They get a zero on the exam
+c) They fail the course
+d) Their grade is lowered by one letter
+c
+
+AI
+How is work usually submitted in this course?
+a) E-mail
+b) Uploaded to Black Board or submitted as hardcopy in class
+c) Left in the professor's office
+d) Verbally
+b
+
+AI
+Work that meets all expectations on a checklist receives a grade of:
+a) Exceeds (E)
+b) Meets (M)
+c) Needs Improvement (NI)
+d) No Credible Effort (NCE)
+b
+
+AI
+To receive an "Exceeds" (E) assessment, the work must:
+a) Meet expectations and exhibit relevant work beyond what was requested
+b) Be typed perfectly
+c) Be submitted early
+d) Be done by the team leader
+a
+
+AI
+Work that does not demonstrate at least a credible effort is assessed as:
+a) NI
+b) M
+c) NCE
+d) E
+c
+
+AI
+What is recorded if work is not submitted (NS)?
+a) A Self-Regulation Lapse
+b) A warning
+c) Nothing happens
+d) A bonus
+a
+
+AI
+Independent of work quality, what also impacts your GE 211 grade?
+a) Your handwriting
+b) Your affective behavior (Self-Regulation)
+c) Your major
+d) Your age
+b
+
+AI
+To get an 'A' in a session, how many Defects are allowed?
+a) 0
+b) 1
+c) 2
+d) 3
+a
+
+AI
+To get a 'B' in a session, all assignments must at least:
+a) Exceed Expectations
+b) Meet Expectations
+c) Be Submitted
+d) Be Needs Improvement
+b
+
+AI
+How many "Exceeds" are required in the Concepts session to get an 'A' (assuming no defects)?
+a) 2 or more
+b) 3 or more
+c) 4 or more
+d) 5 or more
+c
+
+AI
+How many "Exceeds" are required in the Lab session to get an 'A' (assuming no defects)?
+a) 3 or more
+b) 4 or more
+c) 5 or more
+d) 6 or more
+c
+
+AI
+If a student gets 5 defects in the Concept session, what is their course grade?
+a) D
+b) C
+c) F
+d) Incomplete
+c
+
+AI
+If a student gets 4 defects in a session, what is the maximum course grade they can receive?
+a) A
+b) B
+c) C
+d) D
+d
+
+AI
+Which of the following is a "Course Fail Situation"?
+a) Getting a C in both sessions
+b) Accumulating 5 defects in one session
+c) Being late twice
+d) Getting one NI grade
+b
+
+AI
+What happens if a student violates the QU-Academic-Integrity policy?
+a) A warning is issued
+b) Recommendation for failure/sanctions from the professor council
+c) One defect is added
+d) They must apologize
+b
+
+AI
+Before printing course materials, students should ask themselves:
+a) "Is this paper expensive?"
+b) "Why do I need a hard copy of this document?"
+c) "Can I borrow this?"
+d) "Is the printer working?"
+b
+
+AI
+Who must sign the Student Sign Off form?
+a) The Professor
+b) The Dean
+c) The Student
+d) The Parents
+c
+
+AI
+The Concepts section focuses on:
+a) Building prototypes
+b) Introduction to major ideas practiced in Lab
+c) Advanced Calculus
+d) Chemical Analysis
+b
+
+AI
+When must Concepts work products generally be submitted?
+a) By midnight
+b) During the first 10 minutes of the due session
+c) At the end of class
+d) Anytime during the week
+b
+
+AI
+What document must be included with written assignments?
+a) A cover letter
+b) A receipt
+c) The appropriate Checklist
+d) A photo of the student
+c
+
+AI
+If a student gets an NI on a quiz, what should they do?
+a) Quiz Make-up
+b) Quiz Correction
+c) Retake the course
+d) Nothing
+b
+
+AI
+If a student gets an NCE/NS on a quiz, what should they do?
+a) Quiz Make-up
+b) Quiz Correction
+c) Drop the class
+d) Write an apology
+a
+
+AI
+Why are quizzes given in the Concepts section?
+a) To punish students
+b) To encourage completing assigned reading before class
+c) To fill class time
+d) To take attendance
+b
+
+AI
+In a quiz, to get an "Exceeds" (E), what percentage of correct answers is needed?
+a) 100%
+b) 90% < % < 100%
+c) 80% < % < 90%
+d) 70% < % < 80%
+b
+
+AI
+In a quiz, to get "Meets" (M), what percentage range is required?
+a) 60% - 80%
+b) 70% < % < 90%
+c) 50% - 70%
+d) 90% - 100%
+b
+
+AI
+What is the grade for a quiz if the score is between 40% and 70%?
+a) M
+b) NI
+c) NCE
+d) E
+b
+
+AI
+If a quiz is not taken, what is the assessment?
+a) NCE
+b) NS
+c) NI
+d) F
+b
+
+AI
+Can a student get an "E" on a Quiz Correction or Make-up?
+a) Yes
+b) No
+c) Only if the professor agrees
+d) Only in the first week
+b
+
+AI
+What is the time limit for a typical in-class quiz?
+a) 5 minutes
+b) 10 minutes
+c) 20 minutes
+d) 30 minutes
+b
+
+AI
+Are pencils allowed in quizzes?
+a) Yes
+b) No, pens only
+c) Only for drawing
+d) Yes, if HB
+b
+
+AI
+Are mobiles allowed in class?
+a) Yes, on silent
+b) Yes, for research
+c) No, not by any means
+d) Only for quizzes
+c
+
+AI
+How long does a student have to initiate a quiz grade appeal?
+a) 24 hours
+b) One week
+c) Two weeks
+d) One month
+b
+
+AI
+What is an Engineering Journal in this course?
+a) A diary of personal feelings
+b) A reflection on the concepts in the assigned reading
+c) A summary of the lecture
+d) A list of homework answers
+b
+
+AI
+Submitting a successful Journal entry can offset how many incorrect quiz answers?
+a) 1
+b) 2
+c) 3
+d) 5
+c
+
+AI
+If a Journal entry does not meet expectations, is there a penalty?
+a) Yes, a grade reduction
+b) No, other than lost 'extra credit'
+c) Yes, a Defect
+d) Yes, a Lapse
+b
+
+AI
+Can Engineering Journals be resubmitted if assessed as NI?
+a) Yes
+b) No
+c) Only once
+d) Only if typed
+b
+
+AI
+How many "Defects" result in a Concepts grade of 'F'?
+a) 1
+b) 2
+c) 3 or 4
+d) 5 or more
+c
+
+AI
+What assignment is optional and can remove ONE defect?
+a) Final Project
+b) Defect Removal
+c) Extra Homework
+d) Class Presentation
+b
+
+AI
+How many Self-Regulation Lapses result in ONE Defect?
+a) 1 to 2
+b) 2 to 3
+c) 4 to 5
+d) 10
+c
+
+AI
+Getting one assessment of "No Submittal" (NS) results in how many Defects?
+a) 0
+b) 1
+c) 2
+d) 3
+c
+
+AI
+Getting five assessments of "Needs Improvement" (NI) results in how many Defects?
+a) 1
+b) 2
+c) 3
+d) 4
+c
+
+AI
+In the Lab section, learning moves from Knowledge to what level?
+a) Comprehension
+b) Application
+c) Analysis
+d) Evaluation
+b
+
+AI
+Which of the following is a Lab Session Expectation?
+a) Work individually only
+b) Treat teammates with respect
+c) Skip team meetings
+d) Do not sign attendance sheets
+b
+
+AI
+What must a team develop and bring to each Lab class?
+a) A laptop
+b) A Design Notebook
+c) A textbook
+d) A camera
+b
+
+AI
+Lab work products are primarily:
+a) Individual-generated
+b) Team-generated
+c) Instructor-generated
+d) Computer-generated
+b
+
+AI
+If a student consistently fails to be a productive team member, they receive:
+a) A gold star
+b) Team Dynamics Warnings
+c) Extra credit
+d) A free pass
+b
+
+AI
+Assignment L1 is called:
+a) Teammate Interview
+b) Setting Team Norms
+c) The Project
+d) Design Notebook
+a
+
+AI
+Assignment L3-0th is:
+a) The Final Project
+b) Team's Design Notebook (Zeroth)
+c) Team Process Checks
+d) Teammate Interview
+b
+
+AI
+What does "NWD" stand for in the assignment schedule?
+a) No Work Done
+b) Next Working Day
+c) New Work Due
+d) Not With Design
+b
+
+AI
+Is reusing another team's work from a previous semester allowed?
+a) Yes, it's efficient
+b) No, it is considered cheating
+c) Yes, if you change the font
+d) Only if you ask them
+b
+
+AI
+To get a 'C' in the Laboratory section, how many defects are allowed?
+a) 0
+b) 1
+c) 2
+d) 3
+b
+
+AI
+According to Bloom's Taxonomy in Appendix A, "Recall information" belongs to:
+a) Knowledge
+b) Comprehension
+c) Application
+d) Analysis
+a
+
+AI
+According to Appendix A, "Solve textbook problems" is a typical way to demonstrate:
+a) Knowledge
+b) Comprehension
+c) Analysis
+d) Synthesis
+b
+
+AI
+"Solve problems independently in new situations" describes which level of learning?
+a) Knowledge
+b) Comprehension
+c) Application
+d) Evaluation
+c
+
+AI
+"Break down ideas into component parts" describes which level of learning?
+a) Application
+b) Analysis
+c) Synthesis
+d) Evaluation
+b
+
+AI
+"Judge the value of ideas using appropriate criteria" describes which level of learning?
+a) Analysis
+b) Synthesis
+c) Evaluation
+d) Comprehension
+c
+
+AI
+The verb "Define" is associated with which level of learning?
+a) Knowledge
+b) Application
+c) Analysis
+d) Evaluation
+a
+
+AI
+The verb "Calculate" is associated with which level of learning?
+a) Knowledge
+b) Comprehension
+c) Analysis
+d) Evaluation
+c
+
+AI
+The verb "Judge" is associated with which level of learning?
+a) Knowledge
+b) Application
+c) Evaluation
+d) Comprehension
+c
+
+AI
+What happens if a student accumulates more than 7 Self-Regulation Lapses?
+a) 1 Defect
+b) 2 Defects
+c) 3 Defects
+d) No Defects
+c
+
+AI
+How many bonuses can a student be granted per class?
+a) Unlimited
+b) Two
+c) One
+d) None
+c
+
+AI
+A single bonus can remove the effect of:
+a) One full lapse
+b) Half a lapse
+c) One defect
+d) A missed quiz
+b
+
+AI
+If a quiz appeal finds a grader mistake, what does the student get?
+a) A bonus
+b) An automatic A
+c) A new quiz
+d) An apology letter
+a
+
+AI
+Is the Lab Celebration grade subject to improvement or replacement?
+a) Yes
+b) No
+c) Only if failed
+d) Only for seniors
+b
+
+AI
+For Assignment L-4 (Project Presentation), assessment is done using:
+a) A written exam
+b) The corresponding DNB assessment checklist
+c) A verbal interview only
+d) Peer review only
+b
+
+AI
+If a student gets a 'D' in one session and a 'B' in the other, what is the Course Grade?
+a) B
+b) C+
+c) C
+d) D
+b
+
+AI
+If a student gets 'A' in Concepts and 'A' in Lab, the Course Grade is:
+a) A
+b) A+
+c) B+
+d) B
+b
+
+AI
+If a student gets 'B' in Concepts and 'D' in Lab, the Course Grade is:
+a) B
+b) C+
+c) C
+d) D+
+b
+
+AI
+If a student gets 'F' in one session and 'B' in the other, the Course Grade is:
+a) D
+b) C
+c) F
+d) C+
+b
+
+AI
+The "Blue Workbook" refers to:
+a) Strategies for Creative Problem Solving
+b) Introduction to Engineering Design Workbook
+c) The Lab Manual
+d) The University Catalog
+b
+
+AI
+Which packet contains the "Sign Off form"?
+a) The Yellow Packet
+b) The Orange Packet
+c) The Blue Packet (or part of white materials)
+d) The Pink Packet
+c
+
+AI
+Who reviews and updates the course material?
+a) The Student Council
+b) The Engineering Design Professors Council
+c) The Ministry of Education
+d) The IT Department
+b
+
+AI
+What is the issue date of this document?
+a) January 2024
+b) January 2025
+c) January 2026
+d) January 2027
+c
+
+AI
+Which semester is this material for?
+a) Semester 471
+b) Semester 472
+c) Semester 481
+d) Semester 482
+b
+
+AI
+How many rounds has this course been taught (including this one)?
+a) 10
+b) 25
+c) 38
+d) 50
+c
+
+AI
+What is the primary method of communication for online class submissions?
+a) Fax
+b) Mail (or Blackboard as instructed)
+c) Phone call
+d) Text message
+b
+
+AI
+If a team member asks you to modify your behavior, you should:
+a) Ignore them
+b) Argue
+c) Modify the way you behave
+d) Quit the team
+c
+
+AI
+Rough treatment of furniture (putting feet on tables) can result in:
+a) A high grade
+b) University-level sanctions or prosecution
+c) A compliment
+d) A bonus
+b
+
+AI
+If a student is found to have violated the Academic Integrity Policy, sanctions are set by:
+a) The Student Union
+b) The Engineering College Policy
+c) The Course Coordinator only
+d) The Teaching Assistant
+b
+
+AI
+Which assignment involves "Setting Team Norms"?
+a) C1
+b) L1
+c) L2
+d) L5
+c
+
+AI
+What happens if a student does not sign the Concepts attendance sheet?
+a) They are marked present
+b) It counts as a lapse (absence/lateness logic applies)
+c) Nothing
+d) They get extra credit
+b
+
+AI
+What stands for "DNB"?
+a) Do Not Bother
+b) Design Notebook
+c) Daily News Board
+d) Design New Building
+b
+
+AI
+If a student receives 4 defects in a session, what is the maximum course grade possible?
+a) A
+b) B
+c) C
+d) D
+d
+
+AI
+Which learning level involves "Restating an idea in your own words"?
+a) Knowledge
+b) Comprehension
+c) Application
+d) Evaluation
+b
+
+AI
+Which learning level involves "Using a concept without being told to"?
+a) Comprehension
+b) Application
+c) Analysis
+d) Knowledge
+b
