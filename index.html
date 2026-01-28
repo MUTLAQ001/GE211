@@ -34,7 +34,6 @@
         
         @keyframes fadeIn { from {opacity: 0; transform: translateY(10px);} to {opacity: 1; transform: translateY(0);} }
         @keyframes pulse-border { 0% {border-color: rgba(255,255,255,0.2);} 50% {border-color: rgba(255,255,255,0.8);} 100% {border-color: rgba(255,255,255,0.2);} }
-        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
 		body{
             font-family:var(--font-body);
@@ -167,10 +166,109 @@
             flex: 1; text-align: center; padding: 12px; font-size: 0.9rem;
             background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1);
             color: #ccc; border-radius: 10px; text-decoration: none; transition: 0.2s;
-            display: flex; align-items: center; justify-content: center; gap: 8px; min-width: 140px;
+            display: flex; align-items: center; justify-content: center; gap: 8px; min-width: 140px; cursor: pointer;
         }
         .res-link-btn:hover { background: rgba(255,255,255,0.1); color: #fff; transform: translateY(-2px); }
         .res-link-btn.primary { border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); }
+
+        .quiz-active-container {
+            background: #121215; border: 1px solid rgba(255,255,255,0.1); border-radius: 20px;
+            padding: 24px; animation: fadeIn 0.5s ease; position: relative;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+        }
+        .quiz-top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        
+        .quiz-progress-bar {
+            width: 100%; height: 6px; background: rgba(255,255,255,0.1); border-radius: 10px;
+            margin-bottom: 25px; overflow: hidden;
+        }
+        .quiz-progress-fill {
+            height: 100%; background: linear-gradient(90deg, var(--color-concept), var(--color-lab));
+            border-radius: 10px; transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .auto-advance-wrapper {
+            display: flex; align-items: center; gap: 10px;
+            background: rgba(255,255,255,0.05); padding: 5px 10px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1);
+        }
+        .toggle-switch {
+            width: 36px; height: 20px; background: #333; border-radius: 20px; position: relative; cursor: pointer; transition: 0.3s;
+        }
+        .toggle-switch.on { background: var(--color-success); }
+        .toggle-knob {
+            width: 16px; height: 16px; background: #fff; border-radius: 50%; position: absolute;
+            top: 2px; left: 2px; transition: 0.3s;
+        }
+        .toggle-switch.on .toggle-knob { transform: translateX(16px); }
+
+        .quiz-q-counter { color: #888; font-size: 0.85rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        
+        .quiz-question-text { 
+            font-size: 1.25rem; line-height: 1.6; margin-bottom: 30px; color: #fff; font-weight: 700; 
+            border-left: 3px solid var(--color-concept); padding-left: 15px;
+        }
+        
+        .quiz-options-grid { display: grid; gap: 12px; }
+        .quiz-option-btn {
+            padding: 18px 20px; border-radius: 14px; 
+            background: linear-gradient(145deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+            border: 1px solid rgba(255,255,255,0.08);
+            color: #ccc; text-align: left; cursor: pointer; transition: all 0.2s; 
+            font-family: var(--font-body); font-size: 1.05rem;
+            display: flex; gap: 12px; align-items: center;
+            position: relative; overflow: hidden;
+        }
+        .quiz-option-btn:hover:not(:disabled) { 
+            background: rgba(255,255,255,0.08); transform: translateX(5px); border-color: rgba(255,255,255,0.2); 
+        }
+        .quiz-option-btn.selected { border-color: #fff; background: rgba(255,255,255,0.1); color: #fff; }
+        .quiz-option-btn.correct { 
+            background: rgba(0, 230, 118, 0.15); border-color: #00e676; color: #00e676; 
+            box-shadow: 0 0 15px rgba(0, 230, 118, 0.1);
+        }
+        .quiz-option-btn.wrong { 
+            background: rgba(255, 71, 87, 0.15); border-color: #ff4757; color: #ff4757; 
+            opacity: 0.7;
+        }
+        
+        .option-letter {
+            font-weight: 900; font-family: var(--font-nums);
+            width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;
+            background: rgba(0,0,0,0.3); border-radius: 8px; font-size: 0.9rem;
+        }
+        .quiz-option-btn.correct .option-letter { background: #00e676; color: #000; }
+        .quiz-option-btn.wrong .option-letter { background: #ff4757; color: #fff; }
+
+        .quiz-nav-actions { display: flex; justify-content: space-between; margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); }
+        .quiz-nav-btn {
+            padding: 12px 25px; border-radius: 12px; border: none; font-weight: 800; cursor: pointer;
+            background: #fff; color: #000; display: flex; align-items: center; gap: 8px; transition: 0.3s;
+        }
+        .quiz-nav-btn:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(255,255,255,0.2); }
+        .quiz-nav-btn.secondary { background: transparent; color: #888; border: 1px solid rgba(255,255,255,0.1); }
+        .quiz-nav-btn.secondary:hover { color: #fff; border-color: #fff; background: transparent; }
+
+        .group-select-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 10px; margin-bottom: 20px;
+        }
+        .group-btn {
+            padding: 15px 10px;
+            background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+            color: #fff; border-radius: 12px; font-weight: 700; cursor: pointer;
+            transition: var(--transition); text-align: center;
+        }
+        .group-btn:hover {
+            background: var(--color-lab); color: #000; border-color: var(--color-lab);
+            box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+        }
+        .group-btn.all-btn {
+            grid-column: 1 / -1;
+            background: linear-gradient(90deg, var(--color-concept), var(--color-lab));
+            color: #000; border: none;
+        }
+        .group-title {
+            text-align: center; margin-bottom: 20px; color: #ccc;
+        }
 
         .beautiful-player-card {
             background: linear-gradient(135deg, rgba(20, 20, 25, 0.95), rgba(30, 30, 40, 0.8));
@@ -407,8 +505,220 @@
             );
         };
 
+        const InteractiveQuiz = ({ url, onClose }) => {
+            const [allQuestions, setAllQuestions] = useState([]);
+            const [groups, setGroups] = useState([]);
+            const [selectedGroup, setSelectedGroup] = useState(null);
+            
+            const [questions, setQuestions] = useState([]);
+            const [loading, setLoading] = useState(true);
+            const [currentQ, setCurrentQ] = useState(0);
+            const [score, setScore] = useState(0);
+            const [showScore, setShowScore] = useState(false);
+            const [selectedOption, setSelectedOption] = useState(null);
+            const [autoAdvance, setAutoAdvance] = useState(false);
+
+            useEffect(() => {
+                fetch(url)
+                    .then(r => r.text())
+                    .then(text => {
+                        const lines = text.split('\n');
+                        const parsed = [];
+                        const foundGroups = new Set();
+                        
+                        let currentGroup = "General";
+                        let q = null;
+
+                        lines.forEach(rawLine => {
+                            const line = rawLine.trim();
+                            if (!line) return;
+
+                            if (/^[A-E]$/i.test(line)) {
+                                if(q) {
+                                    q.answer = line.toUpperCase();
+                                    q.group = currentGroup;
+                                    parsed.push(q);
+                                    foundGroups.add(currentGroup);
+                                    q = null;
+                                }
+                                return;
+                            }
+
+                            const optMatch = line.match(/^([A-E])\)\s*(.+)/i);
+                            if (optMatch) {
+                                if (q) q.options.push({ letter: optMatch[1].toUpperCase(), text: optMatch[2] });
+                                return;
+                            }
+
+                            if (!q) {
+                                const isGroupHeader = /^\d{3}(\s+(AM|PM))?$/i.test(line) || (line.length < 15 && /\d/.test(line));
+                                
+                                if (isGroupHeader) {
+                                    currentGroup = line;
+                                } else {
+                                    q = { id: parsed.length + 1, text: line, options: [], answer: null, group: currentGroup };
+                                }
+                            } else {
+                                if(q.options.length === 0) q.text += " " + line;
+                            }
+                        });
+                        if(q && q.answer) {
+                            q.group = currentGroup;
+                            parsed.push(q);
+                            foundGroups.add(currentGroup);
+                        }
+                        
+                        setAllQuestions(parsed);
+                        setGroups(Array.from(foundGroups));
+                        setLoading(false);
+                    })
+                    .catch(e => {
+                        console.error(e);
+                        setLoading(false);
+                    });
+            }, [url]);
+
+            const startQuiz = (groupName) => {
+                if (groupName === 'ALL') {
+                    setQuestions(allQuestions);
+                } else {
+                    setQuestions(allQuestions.filter(q => q.group === groupName));
+                }
+                setSelectedGroup(groupName);
+                setCurrentQ(0);
+                setScore(0);
+                setShowScore(false);
+            };
+
+            const next = () => {
+                if (currentQ < questions.length - 1) {
+                    setCurrentQ(c => c + 1);
+                    setSelectedOption(null);
+                } else {
+                    setShowScore(true);
+                }
+            };
+
+            const handleAnswer = (letter) => {
+                if (selectedOption) return;
+                setSelectedOption(letter);
+                
+                const isCorrect = letter === questions[currentQ].answer;
+                if (isCorrect) setScore(s => s + 1);
+
+                if (autoAdvance) {
+                    setTimeout(() => {
+                        next();
+                    }, 1000); 
+                }
+            };
+
+            if (loading) return <div className="quiz-active-container" style={{textAlign:'center', color:'#888'}}>جاري تحميل الاختبار...</div>;
+
+            if (!selectedGroup) {
+                return (
+                    <div className="quiz-active-container">
+                        <div className="quiz-top-bar">
+                            <h2 style={{margin:0, fontSize:'1.2rem'}}>اختر المجموعة</h2>
+                            <button className="quiz-nav-btn secondary" onClick={onClose} style={{padding:'5px 10px'}}>إغلاق</button>
+                        </div>
+                        
+                        <div className="group-title">حدد القسم الذي تريد اختباره</div>
+                        
+                        <div className="group-select-grid">
+                            <button className="group-btn all-btn" onClick={() => startQuiz('ALL')}>
+                                اختبار الكل ({allQuestions.length} سؤال)
+                            </button>
+                            {groups.map((g, i) => (
+                                <button key={i} className="group-btn" onClick={() => startQuiz(g)}>
+                                    {g}
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+                );
+            }
+
+            if (showScore) {
+                return (
+                    <div className="quiz-active-container" style={{textAlign:'center'}}>
+                        <h2 style={{fontSize:'2rem', marginBottom:'10px'}}>النتيجة النهائية</h2>
+                        <div style={{fontSize:'0.9rem', color:'#888', marginBottom:'20px'}}>المجموعة: {selectedGroup === 'ALL' ? 'الكل' : selectedGroup}</div>
+                        <div style={{fontSize:'3rem', fontWeight:'bold', color: score >= questions.length/2 ? '#00e676' : '#ff4757', marginBottom:'20px'}}>
+                            {score} / {questions.length}
+                        </div>
+                        <button className="save-btn-new" onClick={() => setSelectedGroup(null)}>اختيار مجموعة أخرى</button>
+                        <button className="quiz-nav-btn secondary" onClick={onClose} style={{marginTop:'10px', width:'100%', justifyContent:'center'}}>خروج</button>
+                    </div>
+                );
+            }
+
+            if (questions.length === 0) return <div className="quiz-active-container">لا توجد أسئلة في هذه المجموعة.</div>;
+
+            const q = questions[currentQ];
+            const progress = ((currentQ + 1) / questions.length) * 100;
+
+            return (
+                <div className="quiz-active-container">
+                    <div className="quiz-top-bar">
+                        <div className="quiz-q-counter">
+                             {selectedGroup} | سؤال {currentQ + 1} من {questions.length}
+                        </div>
+                        <div className="auto-advance-wrapper">
+                            <span style={{fontSize:'0.8rem', color:'#888'}}>انتقال تلقائي</span>
+                            <div 
+                                className={`toggle-switch ${autoAdvance ? 'on' : ''}`} 
+                                onClick={() => setAutoAdvance(!autoAdvance)}
+                            >
+                                <div className="toggle-knob"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div className="quiz-progress-bar">
+                        <div className="quiz-progress-fill" style={{width: `${progress}%`}}></div>
+                    </div>
+
+                    <div className="quiz-question-text" dir="ltr">{q.text}</div>
+                    
+                    <div className="quiz-options-grid">
+                        {q.options.map((opt, i) => {
+                            let statusClass = '';
+                            if (selectedOption) {
+                                if (opt.letter === q.answer) statusClass = 'correct';
+                                else if (opt.letter === selectedOption) statusClass = 'wrong';
+                            }
+                            return (
+                                <button 
+                                    key={i} 
+                                    className={`quiz-option-btn ${statusClass} ${selectedOption === opt.letter ? 'selected' : ''}`}
+                                    onClick={() => handleAnswer(opt.letter)}
+                                    disabled={!!selectedOption}
+                                    dir="ltr"
+                                >
+                                    <div className="option-letter">{opt.letter}</div>
+                                    <div className="option-text">{opt.text}</div>
+                                </button>
+                            );
+                        })}
+                    </div>
+                    
+                    <div className="quiz-nav-actions">
+                        <button className="quiz-nav-btn secondary" onClick={() => setSelectedGroup(null)}>رجوع</button>
+                        {selectedOption && !autoAdvance && (
+                            <button className="quiz-nav-btn" onClick={next}>
+                                {currentQ === questions.length - 1 ? "إنهاء" : "التالي"}
+                                <Icons.ChevronDown style={{transform: 'rotate(90deg)'}} />
+                            </button>
+                        )}
+                    </div>
+                </div>
+            );
+        };
+
         const ContentView = () => {
-            const [activeIdx, setActiveIdx] = useState(1); 
+            const [activeIdx, setActiveIdx] = useState(0); 
+            const [activeQuizUrl, setActiveQuizUrl] = useState(null);
 
             const tabs = [
                 { id: 'quizzes', label: 'الكويزات', icon: <Icons.Edit/> },
@@ -421,7 +731,8 @@
                     title: 'Quiz #1',
                     type: 'quiz',
                     links: [
-                        { name: 'ملف الكويز (Drive)', url: 'https://drive.google.com/file/d/1IsNjNLcEwMpi9PnjCcotHVZI8ExCi2bX/view?usp=sharing' }
+                        { name: 'ملف الكويز (Drive)', url: 'https://drive.google.com/file/d/1IsNjNLcEwMpi9PnjCcotHVZI8ExCi2bX/view?usp=sharing', type: 'link' },
+                        { name: 'بدء الاختبار (تفاعلي)', url: 'https://mutlaq001.github.io/GE211/Q/Q1.txt', type: 'interactive' }
                     ]
                 }
             ];
@@ -468,6 +779,10 @@
                 const currentType = typeMap[activeIdx];
 
                 if (currentType === 'quizzes') {
+                    if (activeQuizUrl) {
+                        return <InteractiveQuiz url={activeQuizUrl} onClose={() => setActiveQuizUrl(null)} />;
+                    }
+
                     if (quizzes.length > 0) {
                         return (
                             <div className="content-area">
@@ -483,9 +798,20 @@
                                         </div>
                                         <div className="resource-links">
                                             {q.links.map((link, idx) => (
-                                                <a key={idx} href={link.url} target="_blank" className="res-link-btn">
-                                                    <Icons.File/> {link.name}
-                                                </a>
+                                                link.type === 'interactive' ? (
+                                                    <button 
+                                                        key={idx} 
+                                                        onClick={() => setActiveQuizUrl(link.url)} 
+                                                        className="res-link-btn primary"
+                                                        style={{cursor:'pointer'}}
+                                                    >
+                                                        <Icons.Check/> {link.name}
+                                                    </button>
+                                                ) : (
+                                                    <a key={idx} href={link.url} target="_blank" className="res-link-btn">
+                                                        <Icons.File/> {link.name}
+                                                    </a>
+                                                )
                                             ))}
                                         </div>
                                     </div>
@@ -582,18 +908,20 @@
 
             return (
                 <div>
-                    <div className="sub-nav-wrapper" data-active={activeIdx}>
-                        <div className="sub-nav-glider" style={{ transform: `translateX(${-activeIdx * 100}%)` }}></div>
-                        {tabs.map((t, i) => (
-                            <button 
-                                key={t.id} 
-                                className={`sub-tab-item ${activeIdx === i ? 'active' : ''}`} 
-                                onClick={() => setActiveIdx(i)}
-                            >
-                                {t.icon} <span>{t.label}</span>
-                            </button>
-                        ))}
-                    </div>
+                    {!activeQuizUrl && (
+                        <div className="sub-nav-wrapper" data-active={activeIdx}>
+                            <div className="sub-nav-glider" style={{ transform: `translateX(${-activeIdx * 100}%)` }}></div>
+                            {tabs.map((t, i) => (
+                                <button 
+                                    key={t.id} 
+                                    className={`sub-tab-item ${activeIdx === i ? 'active' : ''}`} 
+                                    onClick={() => setActiveIdx(i)}
+                                >
+                                    {t.icon} <span>{t.label}</span>
+                                </button>
+                            ))}
+                        </div>
+                    )}
 
                     {renderContent()}
                 </div>
