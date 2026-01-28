@@ -1166,186 +1166,256 @@
         const ScheduleView = ({ openTeamSettings, teamMembers, settings }) => {
             
             const sessionDetails = {
-                'C2-1': { 
-                    title: {en: 'Quiz #1', ar: 'كويز 1'},
+                'C1-1': {
+                    title: {en: 'Intro to GE211', ar: 'مقدمة في GE211'},
                     desc: {
-                        en: 'Quiz #1: First Day materials (white, orange, yellow packets) + Blue Workbook (J49-J56) - Various Levels of Learning.',
-                        ar: 'كويز 1: مواد اليوم الأول (الرزم البيضاء، البرتقالية، الصفراء) + كتاب العمل الأزرق (J49-J56).'
+                        en: 'Class Activity: Introduction to GE211 course structure and requirements.',
+                        ar: 'نشاط الفصل: مقدمة تعريفية عن المقرر وهيكل المادة والمتطلبات.'
+                    }
+                },
+                'C1-2': {
+                    title: {en: 'Active Learning', ar: 'التعلم النشط'},
+                    desc: {
+                        en: 'Class Activity: Active learning exercises and concepts.',
+                        ar: 'نشاط الفصل: تمارين ومفاهيم التعلم النشط.'
+                    }
+                },
+                'C1-3': {
+                    title: {en: 'Concept Intro', ar: 'مقدمة الكونسبت'},
+                    desc: {
+                        en: 'Class Activity: Introduction to Concept session + Video Announcement “private universe”.',
+                        ar: 'نشاط الفصل: مقدمة لجلسة المفاهيم (Concept) + فيديو إعلاني "Private Universe".'
+                    }
+                },
+                'L1-1': {
+                    title: {en: 'Lab Intro', ar: 'مقدمة اللاب'},
+                    desc: {
+                        en: 'Class Activity: Introduction to LAB session and safety procedures.',
+                        ar: 'نشاط الفصل: مقدمة لجلسة المعمل (Lab) وإجراءات السلامة.'
+                    }
+                },
+                'L1-2': {
+                    title: {en: 'Air Volume', ar: 'حجم الهواء'},
+                    desc: {
+                        en: 'Class Activity: Air volume exercise.',
+                        ar: 'نشاط الفصل: تمرين حجم الهواء.'
+                    }
+                },
+                'L1-3': {
+                    title: {en: 'Teammate Interview', ar: 'مقابلة الزملاء'},
+                    desc: {
+                        en: 'Class Activity: Introduction (continued). \nSubmission: L-1 Teammate Interview (Hard copy).',
+                        ar: 'نشاط الفصل: استكمال المقدمة. \nتسليم: L-1 Teammate Interview (ورقي بالكامل).'
+                    }
+                },
+                'C2-1': { 
+                    title: {en: 'Quiz #1 | LoL', ar: 'كويز 1 | LoL'},
+                    desc: {
+                        en: 'Class Activity: Quiz# 1, LoL (Levels of Learning). \nQuiz Coverage: First Day materials (white, orange, yellow packets) + Blue Workbook (J49-J56).',
+                        ar: 'نشاط الفصل: كويز 1، ومناقشة مستويات التعلم (LoL). \nتغطية الكويز: مواد اليوم الأول (الرزم البيضاء، البرتقالية، الصفراء) + كتاب العمل الأزرق (J49-J56).'
                     } 
                 },
                 'C2-2': {
                     title: {en: 'Submit C1', ar: 'تسليم C1'},
                     desc: {
-                        en: 'Assignment C1 Due: Engineering the Profession.',
-                        ar: 'تسليم واجب C1: مهنة الهندسة.'
+                        en: 'Class Activity: Assignment C1 discussion. \nDue: Assignment C1 (Engineering the Profession).',
+                        ar: 'نشاط الفصل: مناقشة الواجب C1. \nتسليم: واجب C1 (مهنة الهندسة).'
                     }
                 },
                 'C2-3': { 
-                    title: {en: 'Quiz #2', ar: 'كويز 2'},
+                    title: {en: 'Quiz #2 | Registration', ar: 'كويز 2 | التسجيل'},
                     desc: {
-                        en: 'Quiz #2: SCPS Chapter 1 (Pages 1-3) + Blue Workbook Sections B (B5-B10) and E (E1-E12).',
-                        ar: 'كويز 2: الفصل 1 من كتاب SCPS (ص 1-3) + الأقسام B و E من كتاب العمل الأزرق.'
+                        en: 'Class Activity: Quiz# 2, registration process. \nQuiz Coverage: SCPS Chapter 1 (Pages 1-3) + Blue Workbook Sections B (B5-B10) and E (E1-E12).',
+                        ar: 'نشاط الفصل: كويز 2، وعملية التسجيل. \nتغطية الكويز: الفصل 1 من كتاب SCPS (ص 1-3) + الأقسام B و E من كتاب العمل الأزرق.'
                     } 
-                },
-                'C3-1': { 
-                    title: {en: 'Quiz #3', ar: 'كويز 3'},
-                    desc: {
-                        en: 'Quiz #3: SCPS Chapter 2 (Sections 2.3, 2.5 on Page 12) + Chapter 3 (Page 29 to end of 3.2C).',
-                        ar: 'كويز 3: الفصل 2 (أقسام محددة) + الفصل 3 (من ص 29 إلى نهاية 3.2C) من SCPS.'
-                    } 
-                },
-                'C3-3': { 
-                    title: {en: 'Quiz #4', ar: 'كويز 4'},
-                    desc: {
-                        en: 'Quiz #4: SCPS Chapter 4 (Page 61 to end of Sec 4.3B).',
-                        ar: 'كويز 4: الفصل 4 من صفحة 61 حتى نهاية القسم 4.3B في كتاب SCPS.'
-                    } 
-                },
-                'C4-1': { 
-                    title: {en: 'Quiz #5', ar: 'كويز 5'},
-                    desc: {
-                        en: 'Quiz #5: More about problem definition: SCPS Chapter 3 (from 3.2D to end of chapter).',
-                        ar: 'كويز 5: تعريف المشكلة: الفصل 3 (من 3.2D للنهاية) في SCPS.'
-                    } 
-                },
-                'C4-3': { 
-                    title: {en: 'Quiz #6', ar: 'كويز 6'},
-                    desc: {
-                        en: 'Quiz #6: SCPS Chapter 5 until end of Page 102.',
-                        ar: 'كويز 6: الفصل 5 حتى نهاية الصفحة 102 في كتاب SCPS.'
-                    } 
-                },
-                'C5-1': { 
-                    title: {en: 'Quiz #7', ar: 'كويز 7'},
-                    desc: {
-                        en: 'Quiz #7: SCPS Chapter 5 (Page 103 to end) + Exxon Valdez problem (handouts).',
-                        ar: 'كويز 7: الفصل 5 (من ص 103 للنهاية) + مشكلة Exxon Valdez.'
-                    } 
-                },
-                'C5-3': { 
-                    title: {en: 'Quiz #8', ar: 'كويز 8'},
-                    desc: {
-                        en: 'Quiz #8: SCPS Chapter 6 until end of section 6.4.',
-                        ar: 'كويز 8: الفصل 6 حتى نهاية القسم 6.4 من الفصل 6 في كتاب SCPS.'
-                    } 
-                },
-                'C6-1': { 
-                    title: {en: 'Quiz #9', ar: 'كويز 9'},
-                    desc: {
-                        en: 'Quiz #9: SCPS Chapter 6 (from section 6.5 to end).',
-                        ar: 'كويز 9: الفصل 6 من القسم 6.5 حتى نهاية الفصل 6 في SCPS.'
-                    } 
-                },
-                'C6-2': {
-                    title: {en: 'Makeup Q6+Q7', ar: 'إعادة كويز 6+7'},
-                    desc: {
-                        en: 'Correction/Makeup for Quiz 6 and Quiz 7.',
-                        ar: 'فرصة إعادة أو تصحيح للكويز رقم 6 و 7.'
-                    }
-                },
-                'C6-3': { 
-                    title: {en: 'Quiz #10', ar: 'كويز 10'},
-                    desc: {
-                        en: 'Quiz #10: All of SCPS Chapter 7.',
-                        ar: 'كويز 10: كامل الفصل 7 في كتاب SCPS.'
-                    } 
-                },
-                'L1-3': {
-                    title: {en: 'Teammate Interview', ar: 'مقابلة الزملاء'},
-                    desc: {
-                        en: 'Submission: L-1 Teammate Interview (Hard copy).',
-                        ar: 'تسليم L-1 Teammate Interview (ورقي بالكامل).'
-                    }
                 },
                 'L2-1': {
-                    title: {en: 'L2 Draft', ar: 'مسودة L2'},
+                    title: {en: 'L2 Draft | Bloody Meetings', ar: 'مسودة L2 | فيديو'},
                     desc: {
-                        en: 'L-2 Setting Team Norms (Step 1) - Draft only.',
-                        ar: 'تسليم L-2 Setting Team Norms (Step 1) - مسودة فقط.'
+                        en: 'Class Activity: Team work + Watching video “The bloody meetings”. \nDue: L-2 Setting Team Norms (Step 1) - Draft only.',
+                        ar: 'نشاط الفصل: عمل جماعي + مشاهدة فيديو "الاجتماعات الدموية". \nتسليم: L-2 Setting Team Norms (Step 1) - مسودة فقط.'
                     }
                 },
                 'L2-2': {
-                    title: {en: 'L5 Checks', ar: 'فحص L5'},
+                    title: {en: 'L5 Checks | Team Work', ar: 'فحص L5 | عمل جماعي'},
                     desc: {
-                        en: 'L-5 Team Process Checks (Checklist + forms).',
-                        ar: 'L-5 Team Process Checks (Checklist + forms).'
+                        en: 'Class Activity: Team work session. \nDue: L-5 Team Process Checks (Checklist + forms).',
+                        ar: 'نشاط الفصل: جلسة عمل جماعي. \nتسليم: L-5 Team Process Checks (Checklist + forms).'
                     }
                 },
                 'L2-3': { 
-                    title: {en: 'Zeroth Notebook', ar: 'دفتر Zeroth'}, 
+                    title: {en: 'Zeroth Notebook | Road Blocks', ar: 'دفتر Zeroth | عوائق'}, 
                     desc: {
-                        en: 'Submission: L-3-0th Team’s Design Notebook (Zeroth) (Hard copy).',
-                        ar: 'تسليم L-3-0th Team’s Design Notebook (Zeroth) (ورقي بالكامل).'
+                        en: 'Class Activity: Road Blocks discussion + Watching video “Team player”. \nSubmission: L-3-0th Team’s Design Notebook (Zeroth) (Hard copy).',
+                        ar: 'نشاط الفصل: مناقشة العقبات (Road Blocks) + فيديو "Team player". \nتسليم: L-3-0th Team’s Design Notebook (Zeroth) (ورقي بالكامل).'
+                    } 
+                },
+                'C3-1': { 
+                    title: {en: 'Quiz #3 | Paradigm', ar: 'كويز 3 | النموذج'},
+                    desc: {
+                        en: 'Class Activity: Quiz# 3, Paradigm + Watching video “Discovering the future”. \nQuiz Coverage: SCPS Chapter 2 (Sections 2.3, 2.5 on Page 12) + Chapter 3 (Page 29 to end of 3.2C).',
+                        ar: 'نشاط الفصل: كويز 3، النموذج الفكري (Paradigm) + فيديو "اكتشاف المستقبل". \nتغطية الكويز: الفصل 2 (أقسام محددة) + الفصل 3 (من ص 29 إلى نهاية 3.2C) من SCPS.'
+                    } 
+                },
+                'C3-2': {
+                    title: {en: 'Tomato Problem', ar: 'مشكلة الطماطم'},
+                    desc: {
+                        en: 'Class Activity: Present state - desired state analysis (Tomato problem).',
+                        ar: 'نشاط الفصل: تحليل الحالة الحالية والحالة المرجوة (مشكلة الطماطم).'
+                    }
+                },
+                'C3-3': { 
+                    title: {en: 'Quiz #4 | Brainstorming', ar: 'كويز 4 | العصف الذهني'},
+                    desc: {
+                        en: 'Class Activity: Quiz# 4, Brainstorming (recycle). \nQuiz Coverage: SCPS Chapter 4 (Page 61 to end of Sec 4.3B).',
+                        ar: 'نشاط الفصل: كويز 4، العصف الذهني (إعادة التدوير). \nتغطية الكويز: الفصل 4 من صفحة 61 حتى نهاية القسم 4.3B في كتاب SCPS.'
                     } 
                 },
                 'L3-1': { 
-                    title: {en: 'Submit L1+L2 | Makeup Q1', ar: 'تسليم L1+L2 | إعادة Q1'}, 
+                    title: {en: 'Submit L1+L2 | Norms', ar: 'تسليم L1+L2 | المعايير'}, 
                     desc: {
-                        en: 'Final submission for L-1 & L-2. Makeup Quiz 1 in first 10 mins.',
-                        ar: 'تسليم نهائي لـ L-1 و L-2. إعادة كويز 1 في أول 10 دقائق.'
+                        en: 'Class Activity: Developing Team Norms. \nDue: Final submission for L-1 & L-2. Makeup Quiz 1 in first 10 mins.',
+                        ar: 'نشاط الفصل: تطوير معايير الفريق (Team Norms). \nتسليم: نهائي لـ L-1 و L-2. إعادة كويز 1 في أول 10 دقائق.'
                     } 
                 },
                 'L3-2': { 
-                    title: {en: 'Makeup Q2', ar: 'إعادة Q2'}, 
+                    title: {en: 'L-3 Zeroth | Makeup Q2', ar: 'L-3 Zeroth | إعادة Q2'}, 
                     desc: {
-                        en: 'Makeup Quiz 2 in first 10 mins.',
-                        ar: 'إعادة كويز 2 في أول 10 دقائق.'
+                        en: 'Class Activity: L-3-zeroth work. \nNote: Makeup Quiz 2 in first 10 mins.',
+                        ar: 'نشاط الفصل: العمل على L-3-zeroth. \nملاحظة: إعادة كويز 2 في أول 10 دقائق.'
+                    } 
+                },
+                'L3-3': { 
+                    title: {en: 'L-4 Intro', ar: 'مقدمة L-4'}, 
+                    desc: {
+                        en: 'Class Activity: L-4 Introduction.',
+                        ar: 'نشاط الفصل: مقدمة للمشروع L-4.'
+                    } 
+                },
+                'C4-1': { 
+                    title: {en: 'Quiz #5 | Dunker Diagram', ar: 'كويز 5 | مخطط دنكر'},
+                    desc: {
+                        en: 'Class Activity: Quiz# 5, Dunker Diagram and Statement & restatement. \nQuiz Coverage: More about problem definition: SCPS Chapter 3 (from 3.2D to end of chapter).',
+                        ar: 'نشاط الفصل: كويز 5، مخطط دنكر (Dunker Diagram) وصياغة المشكلة. \nتغطية الكويز: تعريف المشكلة: الفصل 3 (من 3.2D للنهاية) في SCPS.'
+                    } 
+                },
+                'C4-2': { 
+                    title: {en: 'Osborn & Beans', ar: 'أوزبورن والفاصوليا'},
+                    desc: {
+                        en: 'Class Activity: O’Sborn and random stimulation (Beans exercise).',
+                        ar: 'نشاط الفصل: طريقة أوزبورن والتحفيز العشوائي (تمرين الفاصوليا).'
+                    } 
+                },
+                'C4-3': { 
+                    title: {en: 'Quiz #6 | Decision Analysis', ar: 'كويز 6 | تحليل القرار'},
+                    desc: {
+                        en: 'Class Activity: Quiz# 6, Decision Analysis, your 1st car. \nQuiz Coverage: SCPS Chapter 5 until end of Page 102.',
+                        ar: 'نشاط الفصل: كويز 6، تحليل القرار (شراء سيارتك الأولى). \nتغطية الكويز: الفصل 5 حتى نهاية الصفحة 102 في كتاب SCPS.'
                     } 
                 },
                 'L4-1': { 
-                    title: {en: 'L4-a + L2 Final', ar: 'L4-a + L2 تسليم'}, 
+                    title: {en: 'L4-a | L2 Final', ar: 'L4-a | L2 تسليم'}, 
                     desc: {
-                        en: 'Presentation of Project Phase (a) + DNB 1st assessment. L-2 Final Submission.',
-                        ar: 'عرض تقديمي للمشروع L-4-a + التقييم الأول لدفتر التصميم (DNB). تسليم نهائي لـ L-2.'
+                        en: 'Class Activity: Developing L4-context & start L-4-a. \nDue: Presentation of Project Phase (a) + DNB 1st assessment. L-2 Final Submission.',
+                        ar: 'نشاط الفصل: تطوير سياق L4 والبدء في L-4-a. \nتسليم: عرض L-4-a + التقييم الأول للدفتر + تسليم نهائي لـ L-2.'
                     } 
                 },
                 'L4-2': { 
-                    title: {en: 'Submit L4-b | Makeup Q3', ar: 'تسليم L4-b | إعادة Q3'}, 
+                    title: {en: 'L4-b Start | Makeup Q3', ar: 'بدء L4-b | إعادة Q3'}, 
                     desc: {
-                        en: 'Presentation of Project Phase (b) + DNB 2nd assessment. Makeup Quiz 3 in first 10 mins.',
-                        ar: 'عرض تقديمي للمشروع L-4-b + التقييم الثاني لدفتر التصميم. إعادة كويز 3 in first 10 mins.'
+                        en: 'Class Activity: Discussion of L-4-a & start L-4-b work. \nNote: Makeup Quiz 3 in first 10 mins.',
+                        ar: 'نشاط الفصل: مناقشة L-4-a والبدء في العمل على L-4-b. \nملاحظة: إعادة كويز 3 في أول 10 دقائق.'
                     } 
                 },
                 'L4-3': { 
-                    title: {en: 'Makeup Q4', ar: 'إعادة Q4'}, 
+                    title: {en: 'L4-a Pres | Makeup Q4', ar: 'عرض L4-a | إعادة Q4'}, 
                     desc: {
-                        en: 'Makeup Quiz 4 in first 10 mins.',
-                        ar: 'إعادة كويز 4 في أول 10 دقائق.'
+                        en: 'Class Activity: L-4-a presentation and 1st DNB assessment. \nNote: Makeup Quiz 4 in first 10 mins.',
+                        ar: 'نشاط الفصل: تقديم عرض L-4-a وتقييم الدفتر الأول. \nملاحظة: إعادة كويز 4 في أول 10 دقائق.'
+                    } 
+                },
+                'C5-1': { 
+                    title: {en: 'Quiz #7 | Consequences', ar: 'كويز 7 | العواقب'},
+                    desc: {
+                        en: 'Class Activity: Quiz# 7, Adverse consequences. \nQuiz Coverage: SCPS Chapter 5 (Page 103 to end) + Exxon Valdez problem (handouts).',
+                        ar: 'نشاط الفصل: كويز 7، العواقب السلبية (Adverse consequences). \nتغطية الكويز: الفصل 5 (من ص 103 للنهاية) + مشكلة Exxon Valdez.'
+                    } 
+                },
+                'C5-2': { 
+                    title: {en: 'Exxon Valdez', ar: 'إكسون فالديز'},
+                    desc: {
+                        en: 'Class Activity: The Exxon Valdez case study.',
+                        ar: 'نشاط الفصل: دراسة حالة إكسون فالديز.'
+                    } 
+                },
+                'C5-3': { 
+                    title: {en: 'Quiz #8 | Solar car', ar: 'كويز 8 | السيارة الشمسية'},
+                    desc: {
+                        en: 'Class Activity: Quiz# 8, Solar car. \nQuiz Coverage: SCPS Chapter 6 until end of section 6.4.',
+                        ar: 'نشاط الفصل: كويز 8، السيارة الشمسية. \nتغطية الكويز: الفصل 6 حتى نهاية القسم 6.4 من الفصل 6 في كتاب SCPS.'
+                    } 
+                },
+                'L5-1': { 
+                    title: {en: 'L4-b Pres', ar: 'عرض L4-b'}, 
+                    desc: {
+                        en: 'Class Activity: L-4-b presentation and 2nd DNB assessment.',
+                        ar: 'نشاط الفصل: تقديم عرض L-4-b والتقييم الثاني للدفتر.'
                     } 
                 },
                 'L5-2': { 
-                    title: {en: 'Submit L4-c | Makeup Q5', ar: 'تسليم L4-c | إعادة Q5'}, 
+                    title: {en: 'Work on L4-c | Makeup Q5', ar: 'عمل L4-c | إعادة Q5'}, 
                     desc: {
-                        en: 'Presentation of Project Phase (c) + DNB 3rd assessment. Makeup Quiz 5 in first 10 mins.',
-                        ar: 'عرض تقديمي للمشروع L-4-c + التقييم الثالث لدفتر التصميم. إعادة كويز 5 في أول 10 دقائق.'
+                        en: 'Class Activity: Work on L-4-c. \nNote: Makeup Quiz 5 in first 10 mins.',
+                        ar: 'نشاط الفصل: العمل على L-4-c. \nملاحظة: إعادة كويز 5 في أول 10 دقائق.'
                     } 
                 },
                 'L5-3': { 
-                    title: {en: 'Final Checks', ar: 'فحص نهائي'}, 
+                    title: {en: 'L4-c Pres | Final Checks', ar: 'عرض L4-c | فحص نهائي'}, 
                     desc: {
-                        en: 'Submission: L-4-d (Presentation) + DNB 4th Assessment.',
-                        ar: 'تسليم L-4-d (عرض تقديمي) + التقييم الرابع لدفتر التصميم.'
+                        en: 'Class Activity: L-4-c presentation and 3rd DNB assessment. \nSubmission: L-4-d (Presentation) + DNB 4th Assessment.',
+                        ar: 'نشاط الفصل: تقديم عرض L-4-c وتقييم الدفتر الثالث. \nتسليم: L-4-d.'
+                    } 
+                },
+                'C6-1': { 
+                    title: {en: 'Quiz #9 | Food for thought', ar: 'كويز 9 | غذاء للفكر'},
+                    desc: {
+                        en: 'Class Activity: Quiz#9, Food for thought. \nQuiz Coverage: SCPS Chapter 6 (from section 6.5 to end).',
+                        ar: 'نشاط الفصل: كويز 9، غذاء للفكر (Food for thought). \nتغطية الكويز: الفصل 6 من القسم 6.5 حتى نهاية الفصل 6 في SCPS.'
+                    } 
+                },
+                'C6-2': {
+                    title: {en: 'Work L4-d', ar: 'عمل L4-d'},
+                    desc: {
+                        en: 'Class Activity: Work for L-4-d. \nNote: Correction/Makeup for Quiz 6 and Quiz 7 available.',
+                        ar: 'نشاط الفصل: العمل على L-4-d. \nملاحظة: فرصة إعادة أو تصحيح للكويز رقم 6 و 7.'
+                    }
+                },
+                'C6-3': { 
+                    title: {en: 'Quiz #10 | Ethics', ar: 'كويز 10 | الأخلاقيات'},
+                    desc: {
+                        en: 'Class Activity: Quiz#10, Ethics problem. \nQuiz Coverage: All of SCPS Chapter 7.',
+                        ar: 'نشاط الفصل: كويز 10، مشكلة الأخلاقيات. \nتغطية الكويز: كامل الفصل 7 في كتاب SCPS.'
                     } 
                 },
                 'L6-1': { 
-                    title: {en: 'Submit L4-d | Makeup Q8', ar: 'تسليم L4-d | إعادة Q8'}, 
+                    title: {en: 'L4-d Pres | Makeup Q8', ar: 'عرض L4-d | إعادة Q8'}, 
                     desc: {
-                        en: 'Submission: L-4-e (Presentation) + DNB 5th Assessment. Makeup Quiz 8 in first 10 mins.',
-                        ar: 'تسليم L-4-e (عرض تقديمي) + التقييم الخامس لدفتر التصميم. إعادة كويز 8 in first 10 mins.'
+                        en: 'Class Activity: L-4-d presentation and 4th DNB assessment. \nNote: Makeup Quiz 8 in first 10 mins.',
+                        ar: 'نشاط الفصل: تقديم عرض L-4-d وتقييم الدفتر الرابع. \nملاحظة: إعادة كويز 8 في أول 10 دقائق.'
                     } 
                 },
                 'L6-2': { 
-                    title: {en: 'Makeup Q9', ar: 'إعادة Q9'}, 
+                    title: {en: 'Reverse Eng | Makeup Q9', ar: 'هندسة عكسية | إعادة Q9'}, 
                     desc: {
-                        en: 'Makeup Quiz 9.',
-                        ar: 'إعادة كويز 9.'
+                        en: 'Class Activity: Reverse Engineering. \nNote: Makeup Quiz 9.',
+                        ar: 'نشاط الفصل: الهندسة العكسية. \nملاحظة: إعادة كويز 9.'
                     } 
                 },
                 'L6-3': { 
-                    title: {en: 'Submit L4-e | Makeup Q10', ar: 'تسليم L4-e | إعادة Q10'}, 
+                    title: {en: 'L4-e Pres | Makeup Q10', ar: 'عرض L4-e | إعادة Q10'}, 
                     desc: {
-                        en: 'Final Submission: L-3-final (Celebration) + DNB. Makeup Quiz 10.',
-                        ar: 'تسليم نهائي للمشروع L-3-final (Celebration) وملفات الدفتر. إعادة كويز 10.'
+                        en: 'Class Activity: L-4-e presentation and 5th DNB assessment. \nNote: Final Submission: L-3-final (Celebration) + DNB. Makeup Quiz 10.',
+                        ar: 'نشاط الفصل: تقديم عرض L-4-e وتقييم الدفتر الخامس. \nتسليم نهائي: L-3-final وملفات الدفتر. إعادة كويز 10.'
                     } 
                 }
             };
