@@ -24,8 +24,6 @@
             --font-body: "Cairo", sans-serif;
             --font-nums: "Outfit", sans-serif;
             --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            --glass: rgba(255, 255, 255, 0.05);
-            --glass-border: rgba(255, 255, 255, 0.1);
         }
 		
         * {margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color: transparent;}
@@ -33,7 +31,18 @@
 		::-webkit-scrollbar {display: none;}
         
         @keyframes fadeIn { from {opacity: 0; transform: translateY(10px);} to {opacity: 1; transform: translateY(0);} }
-        @keyframes pulse-gold { 0% {box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.4);} 70% {box-shadow: 0 0 0 10px rgba(255, 215, 0, 0);} 100% {box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);} }
+        
+        @keyframes pulse-gold { 
+            0% {box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.4);} 
+            70% {box-shadow: 0 0 0 10px rgba(255, 215, 0, 0);} 
+            100% {box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);} 
+        }
+
+        @keyframes pulse-cyan-calm { 
+            0% {box-shadow: 0 0 0 0 rgba(0, 242, 255, 0.4); border-color: rgba(0, 242, 255, 0.5);} 
+            70% {box-shadow: 0 0 0 10px rgba(0, 242, 255, 0); border-color: rgba(0, 242, 255, 0.3);} 
+            100% {box-shadow: 0 0 0 0 rgba(0, 242, 255, 0); border-color: rgba(0, 242, 255, 0.5);} 
+        }
 
 		body{
             font-family:var(--font-body);
@@ -371,9 +380,10 @@
         }
         
         .session-card.current-day {
-            border: 2px solid rgba(255,255,255,0.5);
-            box-shadow: 0 0 20px rgba(255,255,255,0.1);
-            animation: pulse-border 2s infinite;
+            border: 1px solid rgba(0, 242, 255, 0.5);
+            background: linear-gradient(145deg, rgba(0, 242, 255, 0.1), rgba(20, 20, 25, 0.9));
+            animation: pulse-cyan-calm 3s infinite;
+            z-index: 5;
         }
         
         .session-card.is-past {
@@ -953,6 +963,7 @@
                 if (currentType === 'files') {
                     const currentBlockId = getCurrentBlock();
                     const pinnedFiles = [];
+                    const fdmFiles = [];
                     const currentBlockFiles = [];
                     const upcomingFiles = [];
                     const archivedFiles = [];
@@ -960,6 +971,8 @@
                     files.forEach(f => {
                         if (f.title === 'Checklist') {
                             pinnedFiles.push(f);
+                        } else if (f.title === 'First Day Material (FDM)') {
+                            fdmFiles.push(f);
                         } else if (f.sessionId === currentBlockId) {
                             currentBlockFiles.push(f);
                         } else if (isSessionPast(f.sessionId)) {
@@ -986,6 +999,26 @@
                                         {f.links.map((link, idx) => (
                                             <a key={idx} href={link.url} target="_blank" className="res-link-btn primary" style={{borderColor:'rgba(255,215,0,0.4)'}}>
                                                 <Icons.Star/> {link.name}
+                                            </a>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+
+                            {fdmFiles.map((f, i) => (
+                                <div key={`fdm-${i}`} className="pro-resource-card type-files" style={{animationDelay: '0.1s'}}>
+                                    <div className="resource-header">
+                                        <div className="resource-icon-box">
+                                            <Icons.Folder />
+                                        </div>
+                                        <div className="resource-info">
+                                            <h3>{f.title}</h3>
+                                        </div>
+                                    </div>
+                                    <div className="resource-links">
+                                        {f.links.map((link, idx) => (
+                                            <a key={idx} href={link.url} target="_blank" className="res-link-btn">
+                                                <Icons.File/> {link.name}
                                             </a>
                                         ))}
                                     </div>
@@ -1417,9 +1450,29 @@
                 return { data: g, keys: order };
             }, [sessions]);
 
+            const { activeKeys, archivedKeys } = useMemo(() => {
+                const active = [];
+                const archived = [];
+                
+                groups.keys.forEach(key => {
+                    const blockSessions = groups.data[key];
+                    const isAllPast = blockSessions.every(s => {
+                        let d = new Date(s.date); d.setHours(0,0,0,0);
+                        return d.getTime() < today.getTime();
+                    });
+                    
+                    if (isAllPast) archived.push(key);
+                    else active.push(key);
+                });
+
+                return { activeKeys: active, archivedKeys: archived };
+            }, [groups, today]);
+
+            const displayKeys = [...activeKeys, ...archivedKeys];
+
             return (
                 <div className="timeline-container">
-                    {groups.keys.map((prefix, groupIndex) => {
+                    {displayKeys.map((prefix, groupIndex) => {
                         const blockSessions = groups.data[prefix];
                         const isHoliday = prefix.startsWith('HOL');
                         
@@ -1452,7 +1505,7 @@
                         if (isAllPast && !isExpanded) {
                             return (
                                 <React.Fragment key={prefix}>
-                                    {groupIndex > 0 && <div className="block-divider"></div>}
+                                    <div className="block-divider"></div>
                                     <div className="completed-block-card" onClick={() => toggleBlock(prefix)}>
                                         <div className="block-info">
                                             <Icons.Folder /> <span>تم الانتهاء من {prefix}</span>
