@@ -390,7 +390,7 @@
             opacity: 0.6; filter: grayscale(0.9); border-color: #222;
         }
         .session-card.is-past .session-topic { text-decoration: line-through; color: #666; }
-        .session-card.is-past:hover { opacity: 1; filter: grayscale(0); }
+        .session-card.is-past:hover { opacity: 0.8; }
 
         .past-badge {
             position: absolute; top: 10px; left: 10px;
@@ -503,6 +503,12 @@
         
         .save-btn-new { width: 100%; padding: 16px; background: linear-gradient(90deg, var(--color-lab), #00d2ff); color: #000; font-weight: 800; font-size: 1rem; border: none; border-radius: 14px; margin-top: 20px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; justify-content: center; gap: 8px; }
         .save-btn-new:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0, 242, 255, 0.2); }
+
+        .rec-group-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; margin-bottom: 15px; overflow: hidden; transition: 0.3s; }
+        .rec-group-header { padding: 15px 20px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; background: rgba(255,255,255,0.02); }
+        .rec-group-header:hover { background: rgba(255,255,255,0.05); }
+        .rec-group-title { font-weight: 700; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 1.1rem; }
+        .rec-list-container { padding: 15px; animation: fadeIn 0.3s ease; border-top: 1px solid rgba(255,255,255,0.05); }
 
 	</style>
 </head>
@@ -808,6 +814,7 @@
             const [activeIdx, setActiveIdx] = useState(1); 
             const [activeQuizUrl, setActiveQuizUrl] = useState(null);
             const [showArchived, setShowArchived] = useState(false);
+            const [expandedRecs, setExpandedRecs] = useState({});
 
             const generatedSessions = useMemo(() => generateAllSessions(), []);
 
@@ -889,11 +896,11 @@
 
             const recordings = [
                 { title: 'Quiz 1', file: 'Q1', category: 'Q' },
-                { title: 'C1', file: 'C1', category: 'C' },
-                { title: 'C2', file: 'C2', category: 'C' },
-                { title: 'C3', file: 'C3', category: 'C' },
-                { title: 'L1', file: 'L1', category: 'L' },
-                { title: 'L2', file: 'L2', category: 'L' }
+                { title: 'Concept 1', file: 'C1', category: 'C' },
+                { title: 'Concept 2', file: 'C2', category: 'C' },
+                { title: 'Concept 3', file: 'C3', category: 'C' },
+                { title: 'Lab 1', file: 'L1', category: 'L' },
+                { title: 'Lab 2', file: 'L2', category: 'L' }
             ];
 
             const isSessionPast = (sessionId) => {
@@ -915,6 +922,10 @@
                 const nextSession = generatedSessions.find(s => s.type !== 'holiday' && s.date >= today);
                 if (!nextSession) return null;
                 return nextSession.id.split('-')[0];
+            };
+
+            const toggleRecGroup = (key) => {
+                setExpandedRecs(prev => ({...prev, [key]: !prev[key]}));
             };
 
             const renderContent = () => {
@@ -1134,25 +1145,27 @@
                                 {['Q', 'C', 'L'].map(key => {
                                     const group = groups[key];
                                     if (group.list.length === 0) return null;
+                                    const isExpanded = expandedRecs[key];
+
                                     return (
-                                        <div key={key} style={{marginBottom: '25px'}}>
-                                            <h3 style={{
-                                                color: '#fff', 
-                                                marginBottom: '10px', 
-                                                display: 'flex', 
-                                                alignItems: 'center', 
-                                                gap: '8px',
-                                                fontSize: '1.1rem',
-                                                borderBottom: '1px solid rgba(255,255,255,0.1)',
-                                                paddingBottom: '5px'
-                                            }}>
-                                                {group.icon} {group.title}
-                                            </h3>
-                                            {group.list.map((rec, i) => (
-                                                <div key={i}>
-                                                    <AudioPlayer fileName={rec.file} title={rec.title} />
+                                        <div key={key} className="rec-group-card">
+                                            <div className="rec-group-header" onClick={() => toggleRecGroup(key)}>
+                                                <div className="rec-group-title">
+                                                    {group.icon} {group.title}
                                                 </div>
-                                            ))}
+                                                <div style={{color:'#888'}}>
+                                                    {isExpanded ? <Icons.ChevronUp/> : <Icons.ChevronDown/>}
+                                                </div>
+                                            </div>
+                                            {isExpanded && (
+                                                <div className="rec-list-container">
+                                                    {group.list.map((rec, i) => (
+                                                        <div key={i}>
+                                                            <AudioPlayer fileName={rec.file} title={rec.title} />
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            )}
                                         </div>
                                     );
                                 })}
