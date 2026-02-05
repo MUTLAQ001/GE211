@@ -113,7 +113,7 @@ a
 A student accumulates three defects (before taking the defect removal) in concepts and four defects in Lab. Does he have a chance to pass the course?
 a) Yes
 b) No
-b
+a
 
 471 AM
 Disruptive behavior in class includes all the following, except
