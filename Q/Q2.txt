@@ -1,0 +1,533 @@
+471 AM
+Each of the following is an explicit course objective for GE211, EXCEPT
+{لأن أهداف الدورة المذكورة في الصفحات 7 و 8 تشمل العمل التعاوني وحل المشكلات والتواصل، ولا يوجد أي ذكر للعلوم السياسية (Political Sciences) ضمن أهداف الدورة الهندسية.}
+a) Demonstrating the fundamentals of organizing and presenting technical work
+b) Demonstrating the ability to work cooperatively and collaboratively
+c) Developing and demonstrating the behaviors of effective problem solvers
+d) Demonstrating a profound understanding of the political sciences
+d
+
+471 AM
+Exciting requirements are
+{في الصفحة 12 تحت قسم "Exciting Requirements"، تم تعريفها صراحة بأنها الخصائص التي تدفع العميل لقول "WOW!".}
+a) those characteristics that customers discuss when describing the features that would improve a product or a service
+b) those basic characteristics that customers assume are present in generically similar products or services
+c) those characteristics that cause a customer to say WOW
+d) none of the above
+c
+
+471 AM
+To produce a dissatisfied customer,
+{حسب الجدول رقم 1 (Table 1) في الصفحة 13، فإن غياب أو حذف المتطلبات المتوقعة (Expected) يؤدي مباشرة إلى عدم الرضا (Dissatisfaction).}
+a) omit expected requirements
+b) include all revealed requirements
+c) omit exciting requirements
+d) Include exciting requirements
+a
+
+471 AM
+Each of the following is a feature of both Re-engineering and Continuous Improvement, except
+{كلا الطريقتين تهدفان لتحسين الجودة. الشكل رقم 2 في الصفحة 15 يوضح أن الخصائص المشتركة تشمل العمل الجماعي والتركيز على العميل. أما "تدهور الجودة" فيحدث عند غياب جهود التحسين (كما يظهر في الشكل 3).}
+a) Teamwork
+b) Customer focused
+c) Push down decision making
+d) Quality decline
+d
+
+471 AM
+Problem definition is a difficult task because
+{ذكر في الصفحة 1 أن المشاكل الحقيقية غالباً ما تكون متخفية، ويتطلب الأمر مهارة لاستخراج المشكلة الحقيقية من "بحر من المعلومات" (sea of information).}
+a) true problems are often clear to everyone
+b) the symptoms of the problem are always easy to identify
+c) skills and strict discipline are often needed for analyzing a situation and extracting the real problem from a sea of information
+d) None of the above
+c
+
+471 AM
+The checklists used to evaluate your work products in GE211 explicitly specify customer requirements
+{قوائم التحقق (Checklists) تمثل عادةً المعايير الأساسية أو الحد الأدنى الذي يجب توفره، وغياب أي عنصر فيها يؤدي إلى نقص في الدرجات (عدم رضا)، مما يطابق تعريف المتطلبات المتوقعة (Expected) في الصفحة 11.}
+a) expected
+b) revealed
+c) exciting
+d) predictable
+a
+
+471 AM
+Fogler & LeBlanc introduced the topic of real problem definition by studying the case of a student and his professor being chased by
+{القصة المذكورة في الصفحة 1 كمدخل لتعريف المشكلة هي "THE CASE OF THE HUNGRY GRIZZLY BEAR" (قضية الدب الرمادي الجائع).}
+a) a funny pink panther
+b) a haughty yellow nightingale
+c) a hungry grizzly bear
+d) a wild red lion
+c
+
+471 AM
+Which of the following statements are TRUE about quality?
+{جميع العبارات صحيحة بناءً على الصفحة 10؛ الجودة صعبة التعريف، والمهندسون مطالبون باستخدام عمليات الجودة، والتعريفات العامة تتطلب فهم احتياجات العميل.}
+a) definitions of quality that are of a general nature require a deep understanding of customer implied or stated needs
+b) quality is not easy to define
+c) engineers are expected to use quality processes to create quality products
+d) all of the above
+d
+
+471 AM
+_______ requirements are those basic characteristics that customers assume are present in generically similar products or services and are so basic that the customer seldom mentions them, and all similar products do in fact include them.
+{هذا هو التعريف الحرفي للمتطلبات المتوقعة (Expected Requirements) كما ورد في الصفحة 11.}
+a) Expected
+b) Revealed
+c) Exciting
+d) Exceptional
+a
+
+471 AM
+Continuous improvement cycles are often called:
+{في الصفحة 18 مكتوب أن دورات التحسين المستمر تسمى غالباً دورات PDCA (Plan Do Check Act).}
+a) PCDA: Plan Check Do Act
+b) PDAC: Plan Do Act Check
+c) PACD: Plan Act Check Do
+d) PDCA: Plan Do Check Act
+d
+
+471 AM
+Which of the following is TRUE for Re-engineering (Ishinsuru)?
+{في الصفحة 15 (الشكل 2 والنص)، تم تعريف إعادة الهندسة بأنها تتضمن تغييرات كبيرة (Major changes) وقفزات نوعية (Quantum leaps).}
+a) “Typically, no shift of paradigm is involved.”
+b) “It involves conventional non-revolutionary thinking.”
+c) “It involves major changes (quantum leaps, radical new designs).”
+d) “It reverses the trend of natural quality decay by continually improving the quality.”
+c
+
+471 AM
+Which of the following is not true for Self-Regulated Learners?
+{في صفحة 7، المتعلمون ذاتيو التنظيم يعتمدون على أنفسهم (Self-reliance) وهم مبادرون (pro-active)، ولا يعتمدون كلياً على الآخرين للحصول على التوجيه والدافع كما يقول الخيار d.}
+a) They are capable of executing learning responses by themselves
+b) They depend on themselves for controlling their acquisition of knowledge and skill
+c) They never give up, even when they encounter severe obstacles such as poor study conditions, confusing teachers, or abstruse textbooks
+d) They stand on the shoulders of great masters and rely entirely on them for obtaining all the direction and motivation they need
+d
+
+471 AM
+Which of the following is not a feature of the Engineering Method?
+{في الصفحة 5، يذكر النص صراحة أنه في الممارسة الهندسية "there are never ‘right’ answers" (لا توجد إجابات صحيحة مطلقة)، مما يجعل البحث عن إجابة دقيقة ووحيدة ليس من خصائص الطريقة الهندسية.}
+a) It makes use of heuristics
+b) It seeks exact and unique right answers
+c) It attempts to cause the best change
+d) It handles poorly understood or uncertain situations
+b
+
+471 AM
+Revealed requirements are
+{التعريف موجود حرفياً في الصفحة 12 تحت بند "Revealed Requirements"، وهي الخصائص التي يناقشها العملاء لتحسين المنتج.}
+a) those characteristics that customers discuss when describing the features that would improve a product or a service
+b) those basic characteristics that customers assume are present in generically similar products or services
+c) those characteristics that cause a customer to say WOW
+d) so basic that the customer seldom mentions them, and all similar products do in fact include them
+a
+
+471 AM
+All the following statements about quality are TRUE, except
+{النص في الصفحة 10 يقول بوضوح "quality is not easy to define" (الجودة ليس من السهل تعريفها)، مما يجعل عبارة أنها "سهلة جداً للتعريف" خاطئة.}
+a) Quality is a characteristic of thought and statement that is recognized by a nonthinking process
+b) Quality is extremely easy to define
+c) The most useful definitions for quality are probably those that equate quality to a product attribute, but there is no set of unique attributes that applies to all products
+d) Definitions of quality that are of a general nature require a deep understanding of customer implied or stated needs
+b
+
+471 AM
+A deployment flowchart is a process flowchart that also includes:
+{في الصفحة 19، ينص التعريف على أن مخطط النشر (deployment flowchart) يشمل الأشخاص، والوقت، وقضايا الجودة بالإضافة لخطوات العملية.}
+a) the people responsible for completing the tasks and making the decisions,
+b) the time required to complete each task,
+c) the quality issues associated with each task.
+d) all of the above
+d
+
+471 AM
+An explicit course objective for GE211 is
+{في الصفحة 8، تحت بند Communication، يتم ذكر أهمية تنظيم وتقديم العمل التقني كهدف، بينما الخيارات الأخرى ليست أهدافاً صريحة للدورة.}
+a) Demonstrating the fundamentals of organizing and presenting technical work
+b) Demonstrating a profound understanding of politics, criminology and secrets of industrial espionage
+c) Developing and exhibiting mathematical maturity with a special stress on the skills of modeling artifacts and processes
+d) Demonstrating a profound comprehension of the fundamental laws of physics and chemistry
+a
+
+471 AM
+Which of the following is not true for heuristics?
+{في الصفحة 4، تعريف الاستدلال (Heuristic) ينص على أنه "غير مبرر... وقابل للخطأ (fallible)". الاستدلال لا يضمن إجابة صحيحة دقيقة ووحيدة، بل يقدم حلاً معقولاً فقط.}
+a) They are an important element of the Engineering Method
+b) They may be unjustified and fallible
+c) They seek exact and unique right answers
+d) They are used to guide, discover and reveal
+c
+
+471 AM
+Which of the following is TRUE for Continuous Improvement of quality (Kaizen)?
+{في الصفحة 15 (الشكل 2)، التحسين المستمر (Kaizen) يوصف بأنه خطوات صغيرة (Small steps) وإعادة هيكلة، وليس قفزات نوعية.}
+a) “It leads to a quantum leap or step increase in quality.”
+b) “It consists of small steps or restructuring.”
+c) “It often leads to radical new ideas.”
+d) “It is sometimes defined by its three R’s: Rethink, Redesign, and Retool.”
+b
+
+471 AM
+To synergize means all of the following, except
+{أخذ المبادرة (Taking the initiative) هو تعريف العادة الأولى (Be Proactive)، وليس التآزر (Synergize) الذي يعني التعاون الخلاق وتقدير الاختلافات (العادة السادسة).}
+a) to take the initiative and make things happen.
+b) to make the whole greater than the sum of its parts.
+c) to value the differences in the people you work with.
+d) to foster open and honest communication.
+e) to help everyone bring out the best in everyone else.
+a
+
+471 AM
+People caught in paradigm paralysis are
+{شلل النموذج (Paradigm Paralysis) يعني التمسك بالطريقة القديمة ورفض التغيير بحجة أن الوضع الحالي جيد، وهو ما يصفه الخيار b بدقة.}
+a) people who boldly go where no one else has gone before
+b) people who obstinately question the wisdom of changing what is being done while arguing that everything seems to be going along OK
+c) people who fail to adopt a new technology
+d) a and b
+e) b and c
+b
+
+471 AM
+The McMaster Five-point strategy employed by Fogler & LeBlanc consists of five blocks given by the ordered sequence
+{هذه هي المنهجية القياسية لحل المشكلات (Heuristic) المعتمدة في كتاب Fogler & LeBlanc والمشار إليها في الصفحة 14 (هامش 8).}
+a) Derive, Generate, Divide, Implement, and Enumerate.
+b) Derive, Estimate, Divide, Implement, and Evaluate.
+c) Define, Generate, Divide, Supplement, and Enumerate.
+d) Define, Generate, Decide, Implement, and Evaluate.
+e) Derive, Estimate, Decide, Supplement, and Evaluate.
+d
+
+471 AM
+The four renewable dimensions of your nature are
+{وفقاً للعادة السابعة لستيفن كوفي (تشحذ المنشار)، الأبعاد الأربعة للتجديد هي: الجسدي، العقلي، الروحي، والاجتماعي/العاطفي.}
+a) the mental, intellectual, mathematical, and logical/reasoning dimensions.
+b) the physical, chemical, biological, and social/psychological dimensions.
+c) the historical, geographical, political, and emotional/psychological dimensions.
+d) the physical, mental, spiritual, and social/emotional dimensions.
+d
+
+471 AM
+Which habit of highly effective people you demonstrate when you value the differences in the people you work with?
+{تقدير الاختلافات (Valuing differences) هو جوهر العادة السادسة "التآزر" (Synergize).}
+a) Be Proactive
+b) Put First Things First
+c) Seek First to Understand, Then to Be Understood
+d) Renew the four dimensions of your nature
+e) Synergize
+e
+
+471 AM
+To increase the satisfaction of your customer,
+{حسب جدول نموذج كانو (الصفحة 13)، زيادة المتطلبات المعلنة (Revealed) تؤدي إلى زيادة الرضا، بينما زيادة المتطلبات المتوقعة لا تؤثر (No effect).}
+a) include more expected requirements
+b) exclude some expected requirements
+c) exclude some exciting requirements
+d) include more revealed requirements
+d
+
+471 AM
+Which of the following is NOT TRUE for Re-engineering?
+{في الصفحة 15، عملية "عكس اتجاه تدهور الجودة عن طريق التحسين المستمر" هي تعريف الـ Kaizen (التحسين المستمر) وليست إعادة الهندسة. إعادة الهندسة تعتمد على القفزات النوعية.}
+a) “It reverses the trend of natural quality decay by continually improving the quality.”
+b) “It involves major changes (quantum leaps, radical new designs).”
+c) “It is sometimes defined by its three R’s: Rethink, Redesign, and Retool.”
+d) “It involves revolutionary thinking.”
+a
+
+471 PM
+Which of the following is TRUE for Re-engineering?
+{في الصفحة 15 (الشكل 2 والنص)، تم تعريف إعادة الهندسة بأنها تتضمن تغييرات كبيرة (Major changes) وقفزات نوعية (Quantum leaps)، وتصاميم جذرية جديدة.}
+a) “It involves major changes (quantum leaps, radical new designs).”
+b) “Typically, no shift of paradigm is involved.”
+c) “It involves conventional non-revolutionary thinking.”
+d) “It seldom leads to radical new ideas.”
+a
+
+471 PM
+According to Kano, customer desires or requirements can be categorized as:
+{في الصفحة 11، يصنف نموذج كانو متطلبات العملاء إلى ثلاثة أصناف: المتوقعة (Expected)، والمعلنة (Revealed)، والمثيرة (Exciting).}
+a) Expected, Revealed, or Stimulating
+b) Expected, Revealed, or Exciting
+c) Anticipated, Displayed, or Stimulating
+d) Anticipated, Displayed, or Exciting
+b
+
+471 PM
+To produce a dissatisfied customer
+{حسب الجدول رقم 1 (Table 1) في الصفحة 13، هناك طريقتان لجعل العميل غير راضٍ: حذف المتطلبات المتوقعة (Expected) أو تقديم الحد الأدنى من المتطلبات المعلنة (Revealed).}
+a) omit expected requirements
+b) include a minimum number of revealed requirements
+c) omit exciting requirements
+d) a and b
+e) a and c
+f) a, b, and c
+d
+
+471 PM
+In the case of the light-oil reservoir (Fogler & LeBlanc), the reservoir was located in
+{في الصفحة 3 من النص الأصلي، يذكر المثال "Canadian light-oil reservoir"، أي أن الخزان كان يقع في كندا.}
+a) Saudi Arabia
+b) The North Sea
+c) Canada
+d) Venezuela
+e) The former Soviet Union
+c
+
+471 PM
+The Engineering Method
+{في الصفحة 5، تعريف الطريقة الهندسية هو "استخدام الاستدلال لإحداث أفضل تغيير (Best change) في وضع غير مفهوم جيداً". الخيار الصحيح موجود هنا.}
+a) seeks exact and unique right answers
+b) use of heuristics to cause the best change in a POORLY UNDERSTOOD situation with the available resources.
+c) attempts to cause the least change in a given situation
+d) utilizes all resources that are expected to be developed anywhere in the world within the lifetime of the pertinent project
+b
+
+471 PM
+The Engineering Method
+{في هذه النسخة من السؤال (كما في الصفحة 1 سؤال 5)، التعريف الصحيح (Best change) غير موجود ضمن الخيارات، والخيارات الموجودة (Exact answers, Least change, All resources) كلها خاطئة.}
+a) seeks exact and unique right answers
+b) attempts to cause the least change in a given situation
+c) utilizes all resources that are expected to be developed anywhere in the world within the lifetime of the pertinent project
+d) none of the above
+d
+
+471 PM
+_______ requirements are those characteristics that customers discuss when describing the features that would improve a product or a service, and are generally related to the performance of a product or a service.
+{هذا هو التعريف الحرفي للمتطلبات المعلنة (Revealed Requirements) كما ورد في الصفحة 12.}
+a) Expected
+b) Excepted
+c) Reveled
+d) Revealed
+e) Exciting
+d
+
+471 PM
+Problem definition is a difficult task because
+{في الصفحة 1، يذكر النص أن تعريف المشكلة صعب لأن المشاكل الحقيقية غالباً ما تكون "متخفية" (Disguised) بطرق متعددة. الخيار الصحيح موجود هنا.}
+a) an engineer cannot always feel the pressure of time constraints
+b) true problems are often disguised in a variety of ways.
+c) an engineer cannot deliberately fall into the trap of perceiving the problem wrongly
+d) the symptoms of the problem are not always easy to identify
+e) none of the above
+b
+
+471 PM
+Problem definition is a difficult task because
+{في هذه النسخة من السؤال (كما في الصفحة 3 سؤال 10)، الخيار الصحيح (Disguised) غير موجود، والخيارات الأخرى (Time constraints, Trap, Symptoms difficulty) ليست السبب الرئيسي المذكور في النص لتعريف المشكلة الحقيقية.}
+a) an engineer cannot always feel the pressure of time constraints
+b) an engineer cannot deliberately fall into the trap of perceiving the problem wrongly
+c) the symptoms of the problem are not always easy to identify
+d) none of the above
+d
+
+471 PM
+_______ points are the Deming's Quality Points
+{في الصفحة 14، العنوان هو "Deming's Fourteen Points"، أي نقاط ديمنج الأربعة عشر.}
+a) Thirteen
+b) Fifteen
+c) Fourteen
+d) Sixteen
+e) none of the above
+c
+
+471 PM
+An explicit course objective for GE-211 is
+{الأهداف المذكورة في النص (صفحة 7 و 10) تركز على الجودة ودور العميل. الخيار الصحيح هو "Working knowledge of the role of the customer". الخيارات الأخرى مثل التجسس أو اللغة الإنجليزية غير صحيحة.}
+a) Demonstrating a profound understanding of politics, criminology and secrets of industrial espionage
+b) Demonstrating a strong mastery of American English
+c) Developing and exhibiting mathematical maturity with a special stress on the skills of modeling artifacts and processes
+d) Demonstrating a working knowledge of the role of the customer in defining quality
+d
+
+471 PM
+Which of the following is TRUE for Continuous Improvement of quality?
+{في الصفحة 15 (الشكل 2)، يوصف التحسين المستمر (Kaizen) بأنه يتكون من خطوات صغيرة (Small steps) أو إعادة هيكلة (Restructuring).}
+a) “It leads to a quantum leap or step increase in quality.”
+b) “Paradigm shifts are involved.”
+c) “It often leads to radical new ideas.”
+d) “It often leads to revolutionary thinking.”
+e) “It consists of small steps or restructuring.”
+e
+
+462
+Which of the following is NOT TRUE for the quality of a product?
+{في الصفحة 10، يتم تعريف الجودة بأنها مرتبطة بشكل وثيق برضا العملاء (Customer Satisfaction)، لذا القول بأنها "غير مرتبطة" هو قول خاطئ.}
+a) Its most useful definitions are those that equate it to a product attribute
+b) It is not related to customer satisfaction
+c) Its achievement is possible through the use of quality processes
+d) All of the above
+b
+
+462
+Each of the following is an explicit course objective for GE211, EXCEPT
+{الأهداف المذكورة في نص المقرر تشمل العمل التعاوني وحل المشكلات، ولا يوجد ذكر للعلوم السياسية.}
+a) Demonstrating the fundamentals of organizing and presenting technical work
+b) Demonstrating the ability to work cooperatively and collaboratively
+c) Developing and demonstrating the behaviors of effective problem solvers
+d) Demonstrating a profound comprehension of the fundamental laws of physics and chemistry
+d
+
+462
+Which of the following is not true for Self-Regulated Learners?
+{في الصفحة 7، المتعلمون ذاتيو التنظيم يعتمدون على أنفسهم (Self-reliance) ولا يعتمدون كلياً على المعلمين، كما أنهم لا يستسلمون للعقبات.}
+a) They are capable of executing learning responses by themselves
+b) They depend on their teachers for controlling their acquisition of knowledge and skill
+c) They are not only self-directed but self-motivated as well
+d) None of the above
+b
+
+462
+All of the following is true for flowcharts except:
+{في الصفحة 19، يذكر النص أن "الرموز" (Symbols) تستخدم لوصف المهام، بينما "الخطوط" (Lines) تستخدم لوصف العلاقات المتبادلة (Interrelationships). لذا القول بأن الرموز تصف العلاقات هو الخطأ.}
+a) It helps visualize complex process
+b) uses symbols to describe the interrelationships among the tasks and decisions
+c) It shows the various tasks and the relationships among the tasks
+d) There are two general types of flowcharts, process flowcharts and deployment flowcharts
+b
+
+462
+Which of the following is NOT TRUE for Re-engineering?
+{في الصفحة 15، عملية "عكس اتجاه تدهور الجودة" هي وظيفة التحسين المستمر (Kaizen) وليست إعادة الهندسة.}
+a) “It reverses the trend of natural quality decay by continually improving the quality.”
+b) “It involves major changes (quantum leaps, radical new designs).”
+c) “A shift of paradigm is often involved.”
+d) “It involves revolutionary thinking.”
+a
+
+462
+Expected requirements are
+{في الصفحة 11، المتطلبات المتوقعة هي الخصائص الأساسية التي يفترض العميل وجودها.}
+a) those characteristics that customers discuss when describing the features that would improve a product or a service
+b) generally related to the performance of a product or a service
+c) those basic characteristics that customers assume are present in generically similar products or services
+d) those characteristics that cause a customer to say WOW
+c
+
+462
+All the following statements are TRUE except
+{في الصفحة 1 (والممارسة الهندسية العامة)، يجب تعريف المشكلة الحقيقية *قبل* البدء في الحل. تأجيل تعريف المشكلة حتى إيجاد حل هو تصرف خاطئ تماماً.}
+a) Defining the real problem must be postponed until finding a workable solution
+b) An engineer can be tricked into treating the symptoms instead of solving the root problem
+c) A lot of money, effort, and time can be wasted by poor problem definition and solution
+d) An engineer should avoid being pressured into accepting a less desirable quick fix solution because of time constraints
+a
+
+462
+In the case of the hungry grizzly bear (FL), the student defined his own real problem as that of
+{في القصة المذكورة في الصفحة 1، أدرك الطالب أن مشكلته الحقيقية هي سباق الأستاذ وليس الدب.}
+a) outrunning the bear
+b) observing his moral and ethical obligations towards his professor
+c) saving his own life as well as that of the professor
+d) outrunning the professor
+d
+
+462
+In the case of the Canadian light-oil reservoir (Fogler & LeBlanc), the real problem was to learn
+{في الصفحة 3، المشكلة الحقيقية كانت معرفة "لماذا" لا ينتج البئر كما هو متوقع، بدلاً من مجرد البحث عن طرق للتحسين.}
+a) how to find ways to improve the efficiency of oil recovery
+b) how to improve water flooding techniques
+c) which chemicals to be injected along with the water
+d) why the well was not producing as expected
+d
+
+462
+Which of the following abbreviation refers to the continuous improvement cycle:
+{في الصفحة 18، دورة التحسين المستمر تسمى PDCA.}
+a) PDCA
+b) APCD
+c) PCDA
+d) ABCD
+a
+
+462
+The term "Act" in the continuous improvement cycle means
+{في الصفحة 18، مرحلة "Act" تتضمن مأسسة التغيير وتوثيقه (Standardizing and documenting).}
+a) involving the collection of data to support the selection of the problem and is generally the most time consuming
+b) involving the generation and implementation of a solution, and is generally less time consuming
+c) a critical step; where; it is required that the solution be evaluated, using collected data, to determine if the process, product or service was actually improved.
+d) involving institutionalizing (standardizing) and documenting the change, and actually, one quarter of the effort goes into this step
+d
+
+462
+To increase the satisfaction of your customer,
+{وفقاً لنموذج كانو (الصفحة 13)، زيادة المتطلبات المعلنة (Revealed) والمثيرة (Exciting) تزيد الرضا، بينما المتطلبات المتوقعة لا تزيد الرضا بزيادتها.}
+a) include a maximum number of expected and revealed requirements
+b) include a maximum number of revealed and exciting requirements
+c) include a maximum number of expected and exciting requirements
+d) all of the above
+b
+
+462
+In the case of the renovated high-rise hotel (Fogler & LeBlanc), the real problem was that
+{في الصفحة 2، المشكلة الحقيقية لم تكن في المصاعد نفسها بل في "إشغال ذهن الضيوف" أثناء الانتظار.}
+a) nothing was there to take the guest's minds off their wait
+b) the guests were in a real hurry
+c) the elevators were too slow
+d) the elevators were too few
+a
+
+462
+Which of the following is NOT TRUE for heuristics?
+{في الصفحة 5، النص يذكر صراحة أن في الهندسة "there are never right answers"، والاستدلال لا يضمن إجابة دقيقة وصحيحة وحيدة.}
+a) They provide a plausible aid or direction for the solution of a problem
+b) They seek exact and unique right answers
+c) They are important element of the Engineering Method
+d) They are used to guide, discover and reveal
+b
+
+462
+Which of the following is NOT TRUE for the quality of a product?
+{في الصفحة 10، النص يذكر بوضوح أن الجودة "not easy to define" (ليست سهلة التعريف)، لذا القول بأنها سهلة التعريف هو الخطأ.}
+a) It can be easily and readily defined
+b) Its achievement is possible through the use of quality processes
+c) It is related to customer satisfaction
+d) Its most useful definitions are those that equate it to a product attribute
+a
+
+462
+Which of the following is NOT TRUE for Re-engineering?
+{في الصفحة 15، إعادة الهندسة تتضمن دائماً "Shift of paradigm" (تغيير في النموذج الفكري/البارادايم). القول بأنه "لا يتضمن أبداً" هو القول الخاطئ.}
+a) “A shift of paradigm is never involved.”
+b) “It involves major changes (quantum leaps, radical new designs).”
+c) “It involves revolutionary thinking.”
+d) All of the above
+a
+
+462
+Out of the following attributes in employees, the least important for most employers is
+{بناءً على صفحة 6 (ما يطلبه أرباب العمل) وصفحة 15 (إعادة الهندسة تتطلب تفكيراً ثورياً)، التفكير التقليدي (Traditional thinking) هو الأقل أهمية أو المرغوب عنه في بيئات العمل الحديثة التي تركز على التكيف وحل المشكلات.}
+a) strong interpersonal skills and teamwork
+b) traditional thinking
+c) listening and oral communication
+d) all of the above
+b
+
+462
+Out of the following attributes in employees, the least important for most employers is:
+{في الصفحة 6، يركز النص على حل المشكلات "غير المعرفة جيداً" (Ill-defined) والقدرة على التكيف. المرونة مع المشاكل "المعرفة بوضوح" (Textbook problems) أقل أهمية في الواقع العملي لأنها نادرة.}
+a) flexibility with clearly-defined and well-posed problems.
+b) learning to learn
+c) competence in reading, writing, and computation
+d) group effectiveness
+a
+
+462
+The term "Plan" in the continuous improvement cycle means
+{في الصفحة 18، خطوة "Plan" تتضمن جمع البيانات لدعم اختيار المشكلة.}
+a) involving the collection of data to support the selection of the problem and is generally the most time consuming
+b) involving the generation and implementation of a solution, and is generally less time consuming
+c) a critical step; where; it is required that the solution be evaluated, using collected data, to determine if the process, product or service was actually improved.
+d) involving institutionalizing (standardizing) and documenting the change, and actually, one quarter of the effort goes into this step
+a
+
+462
+Which of the following is not true for Self-Regulated Learners?
+{في الصفحة 7، المتعلمون ذاتيو التنظيم يتميزون بالمثابرة (Diligence) ولا يستسلمون عند مواجهة العقبات.}
+a) They monitor their strategies and modify as appropriate
+b) They give up only when they encounter severe obstacles such as poor study conditions, confusing teachers, or abstruse textbooks
+c) They practically seek out information when needed and take steps to master it
+d) They plan, set goals, organize, self-monitor and self-evaluate
+b
+
