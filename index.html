@@ -329,7 +329,7 @@ const generatedSessions = useMemo(generateAllSessions, []), isPast = (id) => { i
 const tabs = [{id:'q',label:'الكويزات',icon:<Icons.Edit/>},{id:'f',label:'الملفات',icon:<Icons.File/>},{id:'r',label:'التسجيلات',icon:<Icons.Mic/>}];
 const quizzes = [{title:'Quiz #1',links:[{name:'ملف الكويز',url:'https://drive.google.com/file/d/1EcZ616WFuW4JZ8m8CzGSnghMflKT9Wkr/view?usp=sharing'},{name:'بدء الكويز',url:'https://mutlaq001.github.io/GE211/Q/Q1.txt',interactive:true}]}];
 const files = [
-{title:'Checklist',links:[{name:'Checklist',url:fileResources['Checklist'],imp:true},{name:'PTW',url:fileResources['PTW'],imp:true}]},
+{title:'تقيم',links:[{name:'Checklist',url:fileResources['Checklist'],imp:true},{name:'PTW',url:fileResources['PTW'],imp:true}]},
 {title:'First Day Material (FDM)',sessionId:'C1',links:[{name:'فتح المجلد',url:fileResources['FDM']}]},
 {title:'C1 Concept Session',sessionId:'C1',links:[{name:'ملفات الجلسة',url:fileResources['C1']},{name:'تسليم ورقي',url:'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgA3a2WpU-uXTrOKBYRswqBeAWfVih3Z_XzIqH0UBUO0Y4M?e=lnLaDi',imp:true}]},
 {title:'C2 Concept Session',sessionId:'C2',links:[{name:'فتح المجلد',url:fileResources['C2']}]},
@@ -346,7 +346,7 @@ return <div className="content-area">{quizzes.map((q,i)=><div key={i} className=
 if(activeIdx===1) {
 const currBlk = (() => { const s = generatedSessions.find(s=>s.type!=='holiday'&&s.date>=new Date().setHours(0,0,0,0)); return s?s.id.split('-')[0]:null; })();
 const groups = { pinned:[], fdm:[], curr:[], up:[], arch:[] };
-files.forEach(f => { if(f.title==='Checklist')groups.pinned.push(f); else if(f.title.includes('FDM'))groups.fdm.push(f); else if(f.sessionId===currBlk)groups.curr.push(f); else if(isPast(f.sessionId))groups.arch.push(f); else groups.up.push(f); });
+files.forEach(f => { if(f.title==='تقيم')groups.pinned.push(f); else if(f.title.includes('FDM'))groups.fdm.push(f); else if(f.sessionId===currBlk)groups.curr.push(f); else if(isPast(f.sessionId))groups.arch.push(f); else groups.up.push(f); });
 return (
 <div className="content-area">
 {groups.pinned.map((f,i)=><div key={i} className="pro-resource-card pinned-file"><div className="resource-header"><div className="resource-icon-box"><Icons.Check/></div><div className="resource-info"><h3 style={{color:'var(--color-concept)'}}>{f.title}</h3><p>مهم جداً</p></div></div><div className="resource-links">{f.links.map((l,x)=><a key={x} href={l.url} className="res-link-btn primary" target="_blank"><Icons.Star/> {l.name}</a>)}</div></div>)}
