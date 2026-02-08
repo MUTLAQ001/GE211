@@ -56,6 +56,8 @@ body{font-family:var(--font-body);background-color:var(--bg-dark);color:#fff;dir
 .res-link-btn{flex:1;text-align:center;padding:12px;font-size:0.9rem;background:rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.1);color:#ccc;border-radius:10px;text-decoration:none;transition:0.2s;display:flex;align-items:center;justify-content:center;gap:8px;min-width:140px;cursor:pointer}
 .res-link-btn:hover{background:rgba(255,255,255,0.1);color:#fff;transform:translateY(-2px)}
 .res-link-btn.primary{border-color:rgba(255,255,255,0.2);background:rgba(255,255,255,0.05)}
+.res-link-btn.mistake-btn{border-color:rgba(255,71,87,0.3);background:rgba(255,71,87,0.1);color:#ff6b81}
+.res-link-btn.mistake-btn:hover{background:rgba(255,71,87,0.2);border-color:#ff4757}
 .week-header{display:flex;align-items:center;justify-content:center;gap:15px;margin:25px 0 15px;color:var(--color-lab);font-weight:700;font-size:0.95rem}
 .week-header::before,.week-header::after{content:'';height:1px;flex:1;background:linear-gradient(90deg,transparent,rgba(0,242,255,0.3),transparent)}
 .section-separator{margin:20px 0 10px;padding-left:10px;color:#888;font-size:0.9rem;font-weight:700;display:flex;align-items:center;gap:10px}
@@ -99,7 +101,8 @@ body{font-family:var(--font-body);background-color:var(--bg-dark);color:#fff;dir
 .custom-html5-audio{width:100%;height:35px;outline:none;margin-top:5px;filter:invert(1) hue-rotate(180deg) grayscale(20%);opacity:0.9}
 .timeline-container{padding-bottom:50px}
 .session-card{display:flex;align-items:stretch;margin-bottom:10px;position:relative;overflow:hidden;transition:var(--transition);backdrop-filter:blur(12px);border-radius:16px;border:1px solid rgba(255,255,255,0.05);background:rgba(30,30,35,0.6);animation:fadeIn 0.5s ease both;cursor:pointer;flex-wrap:wrap}
-.session-card.current-day{border:1px solid rgba(0,242,255,0.5);background:linear-gradient(145deg,rgba(0,242,255,0.1),rgba(20,20,25,0.9));animation:pulse-cyan-calm 3s infinite;z-index:5}
+.session-card.current-day{background:linear-gradient(145deg,rgba(40,40,30,0.8),rgba(20,20,25,0.9));border:2px solid var(--color-concept);animation:pulse-gold 3s infinite;z-index:10;transform:scale(1.02);box-shadow:0 0 20px rgba(255,215,0,0.2)}
+.session-card.current-day .session-id{color:var(--color-concept);text-shadow:0 0 15px rgba(255,215,0,0.5)}
 .session-card.is-past{opacity:0.6;filter:grayscale(0.9);border-color:#222}
 .session-card.is-past .session-topic{text-decoration:line-through;color:#666}
 .session-card.is-past:hover{opacity:0.8}
@@ -185,6 +188,12 @@ body{font-family:var(--font-body);background-color:var(--bg-dark);color:#fff;dir
 .rec-group-header:hover{background:rgba(255,255,255,0.05)}
 .rec-group-title{font-weight:700;color:#fff;display:flex;align-items:center;gap:10px;font-size:1.1rem}
 .rec-list-container{padding:15px;animation:fadeIn 0.3s ease;border-top:1px solid rgba(255,255,255,0.05)}
+.review-card {background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); padding: 15px; margin-bottom: 15px; border-radius: 12px;}
+.q-text {font-weight: bold; margin-bottom: 10px; color: #fff; direction: ltr;}
+.ans-row {padding: 8px; border-radius: 6px; margin-bottom: 5px; font-size: 0.9rem; display: flex; align-items: center; gap: 8px;}
+.ans-row.wrong {background: rgba(255,71,87,0.15); color: #ff6b81; border: 1px solid rgba(255,71,87,0.3);}
+.ans-row.correct {background: rgba(0,230,118,0.15); color: #00e676; border: 1px solid rgba(0,230,118,0.3);}
+.explanation-box {margin-top: 10px; padding: 10px; background: rgba(255,215,0,0.1); border-right: 3px solid var(--color-concept); color: #ddd; font-size: 0.9rem; line-height: 1.5;}
 </style>
 </head>
 <body>
@@ -273,16 +282,20 @@ const AudioPlayer = ({ fileName, title }) => (
 <audio controls className="custom-html5-audio" controlsList="nodownload"><source src={`https://mutlaq001.github.io/GE211/audio/${fileName}.m4a`} type="audio/mp4"/></audio>
 </div>
 );
-const InteractiveQuiz = ({ url, onClose }) => {
+const InteractiveQuiz = ({ url, onClose, onFinish, reviewData }) => {
 const [questions, setQuestions] = useState([]), [currentQ, setCurrentQ] = useState(0), [score, setScore] = useState(0);
 const [showScore, setShowScore] = useState(false), [selectedOption, setSelectedOption] = useState(null), [autoAdvance, setAutoAdvance] = useState(false);
 const [allQ, setAllQ] = useState([]), [groups, setGroups] = useState([]), [selectedGroup, setSelectedGroup] = useState(null), [loading, setLoading] = useState(true);
+const [userAnswers, setUserAnswers] = useState({});
+const [isReview, setIsReview] = useState(false);
+
 useEffect(() => {
 fetch(url).then(r=>r.text()).then(text => {
 const parsed = [], lines = text.split('\n');
 let grp="General", q=null;
 lines.forEach(l => {
 l=l.trim(); if(!l) return;
+if(l.startsWith('{') && l.endsWith('}')) { if(q) q.explanation = l.slice(1, -1); return; }
 if(/^[A-E]$/i.test(l)) { if(q){q.answer=l.toUpperCase();q.group=grp;parsed.push(q);q=null;} return; }
 const opt = l.match(/^([A-E])\)\s*(.+)/i);
 if(opt) { if(q) q.options.push({letter:opt[1].toUpperCase(),text:opt[2]}); return; }
@@ -293,12 +306,31 @@ else q={id:parsed.length,text:l,options:[],answer:null,group:grp};
 });
 if(q&&q.answer){q.group=grp;parsed.push(q);}
 setAllQ(parsed); setGroups([...new Set(parsed.map(i=>i.group))]); setLoading(false);
+if(reviewData) {
+    const wrongQs = parsed.filter(q => reviewData[q.id] && reviewData[q.id] !== q.answer);
+    setQuestions(wrongQs); setUserAnswers(reviewData); setIsReview(true);
+}
 });
-}, [url]);
-const start = (g) => { setQuestions(g==='ALL'?allQ:allQ.filter(x=>x.group===g)); setSelectedGroup(g); setCurrentQ(0); setScore(0); setShowScore(false); };
-const next = () => { if(currentQ<questions.length-1){setCurrentQ(c=>c+1);setSelectedOption(null);}else setShowScore(true); };
-const handle = (l) => { if(selectedOption)return; setSelectedOption(l); if(l===questions[currentQ].answer)setScore(s=>s+1); if(autoAdvance)setTimeout(next,1000); };
+}, [url, reviewData]);
+
+const start = (g) => { setQuestions(g==='ALL'?allQ:allQ.filter(x=>x.group===g)); setSelectedGroup(g); setCurrentQ(0); setScore(0); setShowScore(false); setUserAnswers({}); setIsReview(false); };
+const next = () => { if(currentQ<questions.length-1){setCurrentQ(c=>c+1);setSelectedOption(null);}else { setShowScore(true); if(onFinish) onFinish(userAnswers); } };
+const handle = (l) => { if(selectedOption)return; setSelectedOption(l); const newAns = {...userAnswers, [questions[currentQ].id]: l}; setUserAnswers(newAns); if(l===questions[currentQ].answer)setScore(s=>s+1); if(autoAdvance)setTimeout(next,1000); };
 if(loading) return <div className="quiz-active-container" style={{textAlign:'center'}}>جاري التحميل...</div>;
+if(isReview) return (
+<div className="quiz-active-container">
+<h3 style={{marginBottom:'15px', color:'#ff4757', textAlign:'center'}}>مراجعة الأخطاء ({questions.length})</h3>
+{questions.map((q, i) => (
+<div key={i} className="review-card">
+<div className="q-text">{q.text}</div>
+<div className="ans-row wrong"><Icons.Check style={{transform:'rotate(45deg)'}}/> إجابتك: {q.options.find(o=>o.letter===userAnswers[q.id])?.text}</div>
+<div className="ans-row correct"><Icons.Check/> الصحيح: {q.options.find(o=>o.letter===q.answer)?.text}</div>
+{q.explanation && <div className="explanation-box">💡 {q.explanation}</div>}
+</div>
+))}
+<button className="quiz-nav-btn secondary" onClick={onClose} style={{width:'100%',justifyContent:'center'}}>إغلاق المراجعة</button>
+</div>
+);
 if(!selectedGroup) return (
 <div className="quiz-active-container">
 <div className="quiz-top-bar"><h2 style={{margin:0,fontSize:'1.2rem'}}>اختر المجموعة</h2><button className="quiz-nav-btn secondary" onClick={onClose} style={{padding:'5px 10px'}}>إغلاق</button></div>
@@ -308,7 +340,7 @@ if(!selectedGroup) return (
 if(showScore) return (
 <div className="quiz-active-container" style={{textAlign:'center'}}>
 <h2 style={{fontSize:'2rem'}}>النتيجة</h2><div style={{fontSize:'3rem',color:score>=questions.length/2?'#00e676':'#ff4757'}}>{score}/{questions.length}</div>
-<button className="save-btn-new" onClick={()=>setSelectedGroup(null)}>مجموعة أخرى</button><button className="quiz-nav-btn secondary" onClick={onClose} style={{marginTop:'10px',width:'100%',justifyContent:'center'}}>خروج</button>
+<button className="save-btn-new" onClick={()=>{ onFinish(userAnswers); onClose(); }}>إنهاء وحفظ النتيجة</button>
 </div>
 );
 const q=questions[currentQ];
@@ -325,6 +357,9 @@ return (
 };
 const ContentView = () => {
 const [activeIdx, setActiveIdx] = useState(1), [activeQuizUrl, setActiveQuizUrl] = useState(null), [showArchived, setShowArchived] = useState(false), [expandedRecs, setExpandedRecs] = useState({});
+const [quizHistory, setQuizHistory] = useState({});
+const [reviewUrl, setReviewUrl] = useState(null);
+
 const generatedSessions = useMemo(generateAllSessions, []), isPast = (id) => { if(!id)return false; const ss=generatedSessions.filter(s=>s.id.startsWith(id)); if(!ss.length)return false; return ss[ss.length-1].date.getTime() < new Date().setHours(0,0,0,0); };
 const tabs = [{id:'q',label:'الكويزات',icon:<Icons.Edit/>},{id:'f',label:'الملفات',icon:<Icons.File/>},{id:'r',label:'التسجيلات',icon:<Icons.Mic/>}];
 const quizzes = [
@@ -338,7 +373,8 @@ links: [
 {
 title: 'Quiz #2',
 links: [
-{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1JAcDiYJk31kubIPmANB3skVZj6SOqQm6/view?usp=sharing' }
+{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1JAcDiYJk31kubIPmANB3skVZj6SOqQm6/view?usp=sharing' },
+{ name: 'بدء الكويز', url: 'https://mutlaq001.github.io/GE211/Q/Q2.txt', interactive: true }
 ]
 }
 ];
@@ -354,8 +390,9 @@ const files = [
 const recordings = [{t:'Quiz 1',f:'Q1',c:'Q'},{t:'Concept 1',f:'C1',c:'C'},{t:'Concept 2',f:'C2',c:'C'},{t:'Concept 3',f:'C3',c:'C'},{t:'Lab 1',f:'L1',c:'L'},{t:'Lab 2',f:'L2',c:'L'}];
 const render = () => {
 if(activeIdx===0) {
-if(activeQuizUrl) return <InteractiveQuiz url={activeQuizUrl} onClose={()=>setActiveQuizUrl(null)}/>;
-return <div className="content-area">{quizzes.map((q,i)=><div key={i} className="pro-resource-card type-quizzes"><div className="resource-header"><div className="resource-icon-box"><Icons.Edit/></div><div className="resource-info"><h3>{q.title}</h3></div></div><div className="resource-links">{q.links.map((l,x)=>l.interactive?<button key={x} onClick={()=>setActiveQuizUrl(l.url)} className="res-link-btn primary"><Icons.Check/> {l.name}</button>:<a key={x} href={l.url} target="_blank" className="res-link-btn"><Icons.File/> {l.name}</a>)}</div></div>)}</div>;
+if(activeQuizUrl) return <InteractiveQuiz url={activeQuizUrl} onClose={()=>setActiveQuizUrl(null)} onFinish={(ans)=>setQuizHistory(p=>({...p, [activeQuizUrl]: ans}))}/>;
+if(reviewUrl) return <InteractiveQuiz url={reviewUrl} reviewData={quizHistory[reviewUrl]} onClose={()=>setReviewUrl(null)}/>;
+return <div className="content-area">{quizzes.map((q,i)=><div key={i} className="pro-resource-card type-quizzes"><div className="resource-header"><div className="resource-icon-box"><Icons.Edit/></div><div className="resource-info"><h3>{q.title}</h3></div></div><div className="resource-links">{q.links.map((l,x)=>l.interactive?<button key={x} onClick={()=>setActiveQuizUrl(l.url)} className="res-link-btn primary"><Icons.Check/> {l.name}</button>:<a key={x} href={l.url} target="_blank" className="res-link-btn"><Icons.File/> {l.name}</a>)}{q.links.find(l=>l.interactive && quizHistory[l.url]) && <button className="res-link-btn mistake-btn" onClick={()=>setReviewUrl(q.links.find(l=>l.interactive).url)}><Icons.Info/> مراجعة الأخطاء</button>}</div></div>)}</div>;
 }
 if(activeIdx===1) {
 const currBlk = (() => { const s = generatedSessions.find(s=>s.type!=='holiday'&&s.date>=new Date().setHours(0,0,0,0)); return s?s.id.split('-')[0]:null; })();
@@ -377,17 +414,18 @@ recordings.forEach(r => grps[r.c].l.push(r));
 return <div className="content-area">{Object.keys(grps).map(k=>{ const g=grps[k]; if(!g.l.length)return null; return <div key={k} className="rec-group-card"><div className="rec-group-header" onClick={()=>setExpandedRecs(p=>({...p,[k]:!p[k]}))}><div className="rec-group-title">{g.i} {g.t}</div><div>{expandedRecs[k]?<Icons.ChevronUp/>:<Icons.ChevronDown/>}</div></div>{expandedRecs[k]&&<div className="rec-list-container">{g.l.map((r,i)=><AudioPlayer key={i} fileName={r.f} title={r.t}/>)}</div>}</div>})}</div>;
 }
 };
-return <div>{!activeQuizUrl&&<div className="sub-nav-wrapper" data-active={activeIdx}><div className="sub-nav-glider"/>{tabs.map((t,i)=><button key={t.id} className={`sub-tab-item ${activeIdx===i?'active':''}`} onClick={()=>setActiveIdx(i)}>{t.icon}<span>{t.label}</span></button>)}</div>}{render()}</div>;
+return <div>{!activeQuizUrl&&!reviewUrl&&<div className="sub-nav-wrapper" data-active={activeIdx}><div className="sub-nav-glider"/>{tabs.map((t,i)=><button key={t.id} className={`sub-tab-item ${activeIdx===i?'active':''}`} onClick={()=>setActiveIdx(i)}>{t.icon}<span>{t.label}</span></button>)}</div>}{render()}</div>;
 };
 const ScheduleView = ({ openTeam, team, setts }) => {
 const [sel, setSel] = useState(null), [tm, setTm] = useState(false), [showArchived, setShowArchived] = useState(false);
 const [archivedTypes, setArchivedTypes] = useState({c:false,l:false}), [expandedPastBlocks, setExpandedPastBlocks] = useState({});
 const sessions = useMemo(()=>generateAllSessions().map((s,i)=>({...s,due:sessionDetails[s.id]?.title?.en,full:sessionDetails[s.id]?.desc,idx:i})),[]);
-const today = new Date().setHours(0,0,0,0);
+const today = new Date();
+const checkIsToday = (d) => d.getDate() === today.getDate() && d.getMonth() === today.getMonth();
 const allGroups = useMemo(()=>{const g={},k=[]; sessions.forEach(s=>{const p=s.type==='holiday'?`HOL-${s.date.getTime()}`:s.id.split('-')[0];if(!g[p]){g[p]=[];k.push(p);}g[p].push(s);}); return {d:g,k};},[sessions]);
 const getRoles = (i) => ({Leader:team[i%5],Timer:team[(i+1)%5],Writer:team[(i+2)%5]});
-const upcomingKeys = allGroups.k.filter(k => { const grp=allGroups.d[k]; if(k.startsWith('HOL')) return grp[0].date.getTime()>=today; return grp.some(s=>s.date.getTime()>=today); });
-const pastKeys = allGroups.k.filter(k => !k.startsWith('HOL') && allGroups.d[k].every(s=>s.date.getTime()<today));
+const upcomingKeys = allGroups.k.filter(k => { const grp=allGroups.d[k]; if(k.startsWith('HOL')) return grp[0].date.getTime()>=today.setHours(0,0,0,0); return grp.some(s=>s.date.getTime()>=today.setHours(0,0,0,0)); });
+const pastKeys = allGroups.k.filter(k => !k.startsWith('HOL') && allGroups.d[k].every(s=>s.date.getTime()<today.setHours(0,0,0,0)));
 const pastConcepts = pastKeys.filter(k=>k.startsWith('C')), pastLabs = pastKeys.filter(k=>k.startsWith('L'));
 const renderBlock = (k, isPast=false) => {
 const blk = allGroups.d[k], isHol = k.startsWith('HOL');
@@ -396,7 +434,7 @@ return (
 {isHol ? <div className="session-card holiday"><div className="date-box"><span className="date-day-num">{blk[0].date.getDate()}</span></div><div className="card-content"><div className="session-id"><Icons.Holiday/> OFF</div><div className="session-topic">{blk[0].topic}</div></div></div> :
 <React.Fragment>
 {blk.map((s,i)=>{
-const d=s.date.getTime(), isT=d===today, isP=d<today;
+const isT=checkIsToday(s.date), isP=s.date.getTime()<today.setHours(0,0,0,0);
 return <div key={i} className={`session-card ${s.type} ${isT?'current-day':''} ${isP?'is-past':''}`} onClick={()=>setSel({...s,roles:getRoles(s.idx)})}>
 {isP&&<div className="past-badge"><Icons.Check/> منتهية</div>}
 <div className="date-box"><span className="date-day-name">{s.date.toLocaleDateString('en-US',{weekday:'short'})}</span><span className="date-day-num">{s.date.getDate()}</span><span className="date-month">{s.date.toLocaleDateString('en-US',{month:'short'})}</span></div>
