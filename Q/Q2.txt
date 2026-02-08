@@ -362,7 +362,7 @@ b
 
 462
 Each of the following is an explicit course objective for GE211, EXCEPT
-{الأهداف المذكورة في نص المقرر تشمل العمل التعاوني وحل المشكلات، ولا يوجد ذكر للعلوم السياسية.}
+{الأهداف المذكورة في نص المقرر تشمل العمل التعاوني وحل المشكلات، ولا يوجد ذكر لقوانين الفيزياء والكيمياء كأهداف للدورة.}
 a) Demonstrating the fundamentals of organizing and presenting technical work
 b) Demonstrating the ability to work cooperatively and collaboratively
 c) Developing and demonstrating the behaviors of effective problem solvers
@@ -371,7 +371,7 @@ d
 
 462
 Which of the following is not true for Self-Regulated Learners?
-{في الصفحة 7، المتعلمون ذاتيو التنظيم يعتمدون على أنفسهم (Self-reliance) ولا يعتمدون كلياً على المعلمين، كما أنهم لا يستسلمون للعقبات.}
+{في الصفحة 7، المتعلمون ذاتيو التنظيم يعتمدون على أنفسهم (Self-reliance) ولا يعتمدون كلياً على المعلمين للتحكم في تعلمهم.}
 a) They are capable of executing learning responses by themselves
 b) They depend on their teachers for controlling their acquisition of knowledge and skill
 c) They are not only self-directed but self-motivated as well
@@ -398,7 +398,7 @@ a
 
 462
 Expected requirements are
-{في الصفحة 11، المتطلبات المتوقعة هي الخصائص الأساسية التي يفترض العميل وجودها.}
+{في الصفحة 11، المتطلبات المتوقعة هي الخصائص الأساسية التي يفترض العميل وجودها تلقائياً.}
 a) those characteristics that customers discuss when describing the features that would improve a product or a service
 b) generally related to the performance of a product or a service
 c) those basic characteristics that customers assume are present in generically similar products or services
@@ -407,7 +407,7 @@ c
 
 462
 All the following statements are TRUE except
-{في الصفحة 1 (والممارسة الهندسية العامة)، يجب تعريف المشكلة الحقيقية *قبل* البدء في الحل. تأجيل تعريف المشكلة حتى إيجاد حل هو تصرف خاطئ تماماً.}
+{في الصفحة 1 (والممارسة الهندسية العامة)، يجب تعريف المشكلة الحقيقية قبل البدء في الحل. تأجيل تعريف المشكلة حتى إيجاد حل هو تصرف خاطئ تماماً.}
 a) Defining the real problem must be postponed until finding a workable solution
 b) An engineer can be tricked into treating the symptoms instead of solving the root problem
 c) A lot of money, effort, and time can be wasted by poor problem definition and solution
@@ -497,7 +497,7 @@ a
 
 462
 Out of the following attributes in employees, the least important for most employers is
-{بناءً على صفحة 6 (ما يطلبه أرباب العمل) وصفحة 15 (إعادة الهندسة تتطلب تفكيراً ثورياً)، التفكير التقليدي (Traditional thinking) هو الأقل أهمية أو المرغوب عنه في بيئات العمل الحديثة التي تركز على التكيف وحل المشكلات.}
+{بناءً على صفحة 6 (ما يطلبه أرباب العمل) وصفحة 15، التفكير التقليدي (Traditional thinking) هو الأقل أهمية مقارنة بالمهارات الأخرى.}
 a) strong interpersonal skills and teamwork
 b) traditional thinking
 c) listening and oral communication
@@ -506,7 +506,7 @@ b
 
 462
 Out of the following attributes in employees, the least important for most employers is:
-{في الصفحة 6، يركز النص على حل المشكلات "غير المعرفة جيداً" (Ill-defined) والقدرة على التكيف. المرونة مع المشاكل "المعرفة بوضوح" (Textbook problems) أقل أهمية في الواقع العملي لأنها نادرة.}
+{في الصفحة 6، يركز النص على حل المشكلات "غير المعرفة جيداً" (Ill-defined). المرونة مع المشاكل "المعرفة بوضوح" (Textbook problems) أقل أهمية لأنها نادرة في الواقع.}
 a) flexibility with clearly-defined and well-posed problems.
 b) learning to learn
 c) competence in reading, writing, and computation
@@ -530,4 +530,3 @@ b) They give up only when they encounter severe obstacles such as poor study con
 c) They practically seek out information when needed and take steps to master it
 d) They plan, set goals, organize, self-monitor and self-evaluate
 b
-
