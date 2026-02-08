@@ -288,8 +288,8 @@ const [showScore, setShowScore] = useState(false), [selectedOption, setSelectedO
 const [allQ, setAllQ] = useState([]), [groups, setGroups] = useState([]), [selectedGroup, setSelectedGroup] = useState(null), [loading, setLoading] = useState(true);
 const [userAnswers, setUserAnswers] = useState({});
 const [isReview, setIsReview] = useState(false);
-
 useEffect(() => {
+if(!url) return;
 fetch(url).then(r=>r.text()).then(text => {
 const parsed = [], lines = text.split('\n');
 let grp="General", q=null;
@@ -312,7 +312,6 @@ if(reviewData) {
 }
 });
 }, [url, reviewData]);
-
 const start = (g) => { setQuestions(g==='ALL'?allQ:allQ.filter(x=>x.group===g)); setSelectedGroup(g); setCurrentQ(0); setScore(0); setShowScore(false); setUserAnswers({}); setIsReview(false); };
 const next = () => { if(currentQ<questions.length-1){setCurrentQ(c=>c+1);setSelectedOption(null);}else { setShowScore(true); if(onFinish) onFinish(userAnswers); } };
 const handle = (l) => { if(selectedOption)return; setSelectedOption(l); const newAns = {...userAnswers, [questions[currentQ].id]: l}; setUserAnswers(newAns); if(l===questions[currentQ].answer)setScore(s=>s+1); if(autoAdvance)setTimeout(next,1000); };
@@ -359,9 +358,8 @@ const ContentView = () => {
 const [activeIdx, setActiveIdx] = useState(1), [activeQuizUrl, setActiveQuizUrl] = useState(null), [showArchived, setShowArchived] = useState(false), [expandedRecs, setExpandedRecs] = useState({});
 const [quizHistory, setQuizHistory] = useState({});
 const [reviewUrl, setReviewUrl] = useState(null);
-
-const generatedSessions = useMemo(generateAllSessions, []), isPast = (id) => { if(!id)return false; const ss=generatedSessions.filter(s=>s.id.startsWith(id)); if(!ss.length)return false; return ss[ss.length-1].date.getTime() < new Date().setHours(0,0,0,0); };
-const tabs = [{id:'q',label:'الكويزات',icon:<Icons.Edit/>},{id:'f',label:'الملفات',icon:<Icons.File/>},{id:'r',label:'التسجيلات',icon:<Icons.Mic/>}];
+const generatedSessions = useMemo(generateAllSessions, []);
+const isPast = (id) => { if(!id)return false; const ss=generatedSessions.filter(s=>s.id.startsWith(id)); if(!ss.length)return false; return ss[ss.length-1].date.getTime() < new Date().setHours(0,0,0,0); };
 const quizzes = [
 {
 title: 'Quiz #1',
@@ -374,6 +372,8 @@ links: [
 title: 'Quiz #2',
 links: [
 { name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1JAcDiYJk31kubIPmANB3skVZj6SOqQm6/view?usp=sharing' },
+{ name: 'ملف الأسئلة', url: 'https://drive.google.com/file/d/1LgxUS7N4Z59frC7hj84k2hvhRPjsXvxr/view?usp=sharing' },
+{ name: 'السلايدات', url: 'https://drive.google.com/file/d/1nQbOjeagZvdI0uCUNt2sYG0vF-azqF4_/view?usp=sharing' },
 { name: 'بدء الكويز', url: 'https://mutlaq001.github.io/GE211/Q/Q2.txt', interactive: true }
 ]
 }
@@ -387,7 +387,15 @@ const files = [
 {title:'L1 Lab Session',sessionId:'L1',links:[{name:'فتح المجلد',url:fileResources['L1']}]},
 {title:'L2 Lab Session',sessionId:'L2',links:[{name:'فتح المجلد',url:fileResources['L2']}]}
 ];
-const recordings = [{t:'Quiz 1',f:'Q1',c:'Q'},{t:'Concept 1',f:'C1',c:'C'},{t:'Concept 2',f:'C2',c:'C'},{t:'Concept 3',f:'C3',c:'C'},{t:'Lab 1',f:'L1',c:'L'},{t:'Lab 2',f:'L2',c:'L'}];
+const recordings = [
+{t:'Quiz 1',f:'Q1',c:'Q'},
+{t:'Quiz 2',f:'Q2',c:'Q'},
+{t:'Concept 1',f:'C1',c:'C'},
+{t:'Concept 2',f:'C2',c:'C'},
+{t:'Concept 3',f:'C3',c:'C'},
+{t:'Lab 1',f:'L1',c:'L'},
+{t:'Lab 2',f:'L2',c:'L'}
+];
 const render = () => {
 if(activeIdx===0) {
 if(activeQuizUrl) return <InteractiveQuiz url={activeQuizUrl} onClose={()=>setActiveQuizUrl(null)} onFinish={(ans)=>setQuizHistory(p=>({...p, [activeQuizUrl]: ans}))}/>;
@@ -414,7 +422,17 @@ recordings.forEach(r => grps[r.c].l.push(r));
 return <div className="content-area">{Object.keys(grps).map(k=>{ const g=grps[k]; if(!g.l.length)return null; return <div key={k} className="rec-group-card"><div className="rec-group-header" onClick={()=>setExpandedRecs(p=>({...p,[k]:!p[k]}))}><div className="rec-group-title">{g.i} {g.t}</div><div>{expandedRecs[k]?<Icons.ChevronUp/>:<Icons.ChevronDown/>}</div></div>{expandedRecs[k]&&<div className="rec-list-container">{g.l.map((r,i)=><AudioPlayer key={i} fileName={r.f} title={r.t}/>)}</div>}</div>})}</div>;
 }
 };
-return <div>{!activeQuizUrl&&!reviewUrl&&<div className="sub-nav-wrapper" data-active={activeIdx}><div className="sub-nav-glider"/>{tabs.map((t,i)=><button key={t.id} className={`sub-tab-item ${activeIdx===i?'active':''}`} onClick={()=>setActiveIdx(i)}>{t.icon}<span>{t.label}</span></button>)}</div>}{render()}</div>;
+return (
+<div style={{animation:'fadeIn 0.3s ease'}}>
+<div className="sub-nav-wrapper" data-active={activeIdx}>
+<div className="sub-nav-glider"></div>
+<button className={`sub-tab-item ${activeIdx===0?'active':''}`} onClick={()=>setActiveIdx(0)}><Icons.Edit/> الكويزات</button>
+<button className={`sub-tab-item ${activeIdx===1?'active':''}`} onClick={()=>setActiveIdx(1)}><Icons.File/> الملفات</button>
+<button className={`sub-tab-item ${activeIdx===2?'active':''}`} onClick={()=>setActiveIdx(2)}><Icons.Mic/> التسجيلات</button>
+</div>
+{render()}
+</div>
+);
 };
 const ScheduleView = ({ openTeam, team, setts }) => {
 const [sel, setSel] = useState(null), [tm, setTm] = useState(false), [showArchived, setShowArchived] = useState(false);
@@ -468,7 +486,10 @@ return (
 };
 const Counter = ({ l, v, fn }) => <div className="input-row"><label>{l}</label><div className="counter-control"><button className="counter-btn" onClick={()=>fn(Math.max(0,v-1))}>-</button><div className="counter-val">{v}</div><button className="counter-btn" onClick={()=>fn(v+1)}>+</button></div></div>;
 const GradeView = () => {
-const [st, setSt] = useState(()=>JSON.parse(localStorage.getItem('ge211_data'))||{cE:0,cNI:0,cNCE:0,cLapses:0,lE:0,lNI:0,lNCE:0,lLapses:0,missed:false});
+const [st, setSt] = useState(()=>{
+try { return JSON.parse(localStorage.getItem('ge211_data'))||{cE:0,cNI:0,cNCE:0,cLapses:0,lE:0,lNI:0,lNCE:0,lLapses:0,missed:false} }
+catch(e){ return {cE:0,cNI:0,cNCE:0,cLapses:0,lE:0,lNI:0,lNCE:0,lLapses:0,missed:false} }
+});
 useEffect(()=>localStorage.setItem('ge211_data',JSON.stringify(st)),[st]);
 const up = (k,v)=>setSt(p=>({...p,[k]:v})), calc = () => {
 const gd = (nce,ni,lap) => { let d=(nce===1?2:(nce>1?3:0))+(ni===2?1:(ni>2&&ni<=5?2:(ni>5?3:0))), l=lap>3?(lap>5?(lap>7?3:2):1):0; return {t:d+l}; };
@@ -490,8 +511,12 @@ return (
 };
 function App() {
 const [tab, setTab] = useState('schedule'), [modal, setModal] = useState(false);
-const [mems, setMems] = useState(()=>JSON.parse(localStorage.getItem('ge211_team'))||["عضو 1","عضو 2","عضو 3","عضو 4","عضو 5"]);
-const [setts, setSetts] = useState(()=>JSON.parse(localStorage.getItem('ge211_settings'))||{timer:true});
+const [mems, setMems] = useState(()=>{
+try{ return JSON.parse(localStorage.getItem('ge211_team'))||["عضو 1","عضو 2","عضو 3","عضو 4","عضو 5"] } catch(e){ return ["عضو 1","عضو 2","عضو 3","عضو 4","عضو 5"] }
+});
+const [setts, setSetts] = useState(()=>{
+try{ return JSON.parse(localStorage.getItem('ge211_settings'))||{timer:true} } catch(e){ return {timer:true} }
+});
 useEffect(()=>localStorage.setItem('ge211_team',JSON.stringify(mems)),[mems]);
 useEffect(()=>localStorage.setItem('ge211_settings',JSON.stringify(setts)),[setts]);
 return (
