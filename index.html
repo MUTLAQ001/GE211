@@ -181,7 +181,7 @@ body{font-family:var(--font-body);background-color:var(--bg-dark);color:#fff;dir
 .member-icon{color:#666;font-size:1.1rem}
 .team-input-clean{background:transparent;border:none;color:#fff;width:100%;outline:none;font-family:var(--font-body);font-size:0.95rem;padding:5px 0}
 .team-input-clean::placeholder{color:#444}
-.save-btn-new{width:100%;padding:16px;background:linear-gradient(90deg,var(--color-lab),#00d2ff);color:#000;font-weight:800;font-size:1rem;border:none;border-radius:14px;margin-top:20px;cursor:pointer;transition:0.3s;display:flex;align-items:center;justify-content:center;gap:8px}
+.save-btn-new{width:100%;padding:16px;background:linear-gradient(90deg,var(--color-lab),#00d2ff);color:#00e676;font-weight:800;font-size:1rem;border:none;border-radius:14px;margin-top:20px;cursor:pointer;transition:0.3s;display:flex;align-items:center;justify-content:center;gap:8px}
 .save-btn-new:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(0,242,255,0.2)}
 .rec-group-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.05);border-radius:16px;margin-bottom:15px;overflow:hidden;transition:0.3s}
 .rec-group-header{padding:15px 20px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;background:rgba(255,255,255,0.02)}
@@ -356,6 +356,7 @@ return (
 };
 const ContentView = () => {
 const [activeIdx, setActiveIdx] = useState(1), [activeQuizUrl, setActiveQuizUrl] = useState(null), [showArchived, setShowArchived] = useState(false), [expandedRecs, setExpandedRecs] = useState({});
+const [expandedArchives, setExpandedArchives] = useState({});
 const [quizHistory, setQuizHistory] = useState({});
 const [showCompletedQuizzes, setShowCompletedQuizzes] = useState(false);
 const [reviewUrl, setReviewUrl] = useState(null);
@@ -399,13 +400,21 @@ const files = [
 {title:'L2 Lab Session',sessionId:'L2',links:[{name:'فتح المجلد',url:fileResources['L2']}]}
 ];
 const recordings = [
-{t:'Quiz 1',f:'Q1',c:'Q'},
-{t:'Quiz 2',f:'Q2',c:'Q'},
-{t:'Concept 1',f:'C1',c:'C'},
-{t:'Concept 2',f:'C2',c:'C'},
-{t:'Concept 3',f:'C3',c:'C'},
-{t:'Lab 1',f:'L1',c:'L'},
-{t:'Lab 2',f:'L2',c:'L'}
+{t:'Quiz 1',f:'Q1',ref:'C2-1',c:'Q'},
+{t:'Quiz 2',f:'Q2',ref:'C2-3',c:'Q'},
+{t:'Quiz 3',f:'Q3',ref:'C3-1',c:'Q'},
+{t:'Quiz 4',f:'Q4',ref:'C3-3',c:'Q'},
+{t:'Quiz 5',f:'Q5',ref:'C4-1',c:'Q'},
+{t:'Quiz 6',f:'Q6',ref:'C4-3',c:'Q'},
+{t:'Quiz 7',f:'Q7',ref:'C5-1',c:'Q'},
+{t:'Quiz 8',f:'Q8',ref:'C5-3',c:'Q'},
+{t:'Quiz 9',f:'Q9',ref:'C6-1',c:'Q'},
+{t:'Quiz 10',f:'Q10',ref:'C6-3',c:'Q'},
+{t:'Concept 1',f:'C1',ref:'C1-1',c:'C'},
+{t:'Concept 2',f:'C2',ref:'C2-1',c:'C'},
+{t:'Concept 3',f:'C3',ref:'C3-1',c:'C'},
+{t:'Lab 1',f:'L1',ref:'L1-1',c:'L'},
+{t:'Lab 2',f:'L2',ref:'L2-1',c:'L'}
 ];
 const render = () => {
 if(activeIdx===0) {
@@ -438,9 +447,39 @@ return (
 );
 }
 if(activeIdx===2) {
-const grps = { 'Q':{t:'Quizzes',i:<Icons.Edit/>,l:[]}, 'C':{t:'Concepts',i:<Icons.Concept/>,l:[]}, 'L':{t:'Labs',i:<Icons.Lab/>,l:[]} };
-recordings.forEach(r => grps[r.c].l.push(r));
-return <div className="content-area">{Object.keys(grps).map(k=>{ const g=grps[k]; if(!g.l.length)return null; return <div key={k} className="rec-group-card"><div className="rec-group-header" onClick={()=>setExpandedRecs(p=>({...p,[k]:!p[k]}))}><div className="rec-group-title">{g.i} {g.t}</div><div>{expandedRecs[k]?<Icons.ChevronUp/>:<Icons.ChevronDown/>}</div></div>{expandedRecs[k]&&<div className="rec-list-container">{g.l.map((r,i)=><AudioPlayer key={i} fileName={r.f} title={r.t}/>)}</div>}</div>})}</div>;
+const today = new Date().setHours(0,0,0,0);
+const getGroupData = (type) => {
+const items = recordings.filter(r => r.c === type);
+const past = [], future = [];
+const currBlk = (() => { const s = generatedSessions.find(s=>s.type!=='holiday'&&s.date>=new Date().setHours(0,0,0,0)); return s?s.id.split('-')[0]:'END'; })();
+items.forEach(r => {
+const s = generatedSessions.find(x => x.id === r.ref || x.id.startsWith(r.ref));
+if(s && s.date.getTime() < today) past.push(r); else future.push(r);
+});
+return { past, current: future.length > 0 ? future[0] : null, upcoming: future.length > 1 ? future.slice(1) : [] };
+};
+const RenderGroup = ({ title, icon, typeChar }) => {
+const data = getGroupData(typeChar);
+if (!data.past.length && !data.current && !data.upcoming.length) return null;
+const isExpanded = expandedRecs[typeChar];
+return (
+<div className="rec-group-card" style={{marginBottom:'15px'}}>
+<div className="rec-group-header" onClick={() => setExpandedRecs(p => ({...p, [typeChar]: !p[typeChar]}))}><div className="rec-group-title">{icon} {title}</div><div>{isExpanded ? <Icons.ChevronUp/> : <Icons.ChevronDown/>}</div></div>
+{isExpanded && (<div className="rec-list-container">
+{data.current && <><div className="week-header" style={{marginTop:'0'}}>الحالي</div><AudioPlayer fileName={data.current.f} title={data.current.t}/></>}
+{data.upcoming.length > 0 && <><div className="section-separator">قادمة</div>{data.upcoming.map((r, i) => <AudioPlayer key={i} fileName={r.f} title={r.t}/>)}</>}
+{data.past.length > 0 && <><div className="block-divider"/><div className="completed-block-card" onClick={(e)=>{e.stopPropagation();setExpandedArchives(p=>({...p,[typeChar]:!p[typeChar]}))}}><div className="block-info"><Icons.Check/> تم الانتهاء منه ({data.past.length})</div><div className="block-status">{expandedArchives[typeChar]?<Icons.ChevronUp/>:<Icons.ChevronDown/>}</div></div>{expandedArchives[typeChar] && data.past.map((r, i) => <AudioPlayer key={i} fileName={r.f} title={r.t}/>)}</>}
+</div>)}
+</div>
+);
+};
+return (
+<div className="content-area">
+<RenderGroup title="Quizzes" icon={<Icons.Edit/>} typeChar="Q"/>
+<RenderGroup title="Concepts" icon={<Icons.Concept/>} typeChar="C"/>
+<RenderGroup title="Labs" icon={<Icons.Lab/>} typeChar="L"/>
+</div>
+);
 }
 };
 return (
