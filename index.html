@@ -259,6 +259,7 @@ const sessionDetails = {
 };
 const generateAllSessions = () => {
 const startDate = new Date('2026-01-22'), holidays = [{ start: '2026-03-22', end: '2026-03-26', name: "إجازة عيد الفطر" }];
+const overrides = {'2026-02-10':{id:'L2-1',type:'lab'},'2026-02-12':{id:'L2-3',type:'lab'},'2026-02-15':{id:'C2-3',type:'concept'},'2026-02-17':{id:'L2-2',type:'lab'},'2026-02-19':{id:'C3-1',type:'concept'}};
 let list = [], curr = new Date(startDate), type='concept', count=0, cycles={concept:1, lab:1}, safety=0;
 while(cycles.concept <= 10 && safety < 150) {
 let d = curr.getDay();
@@ -267,7 +268,9 @@ let dateStr = curr.toISOString().split('T')[0], isHol = holidays.find(h => dateS
 if(isHol) list.push({type:'holiday', date:new Date(curr), id:'OFF', topic:isHol.name});
 else {
 if(cycles[type]>6) break;
-list.push({ type, date:new Date(curr), id: `${type==='concept'?'C':'L'}${cycles[type]}-${count+1}` });
+let cId = `${type==='concept'?'C':'L'}${cycles[type]}-${count+1}`, cType = type;
+if(overrides[dateStr]){ cId = overrides[dateStr].id; cType = overrides[dateStr].type; }
+list.push({ type: cType, date:new Date(curr), id: cId });
 count++;
 if(count>=3) { cycles[type]++; count=0; type = type==='concept'?'lab':'concept'; }
 }
