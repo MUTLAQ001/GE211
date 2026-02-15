@@ -504,7 +504,7 @@ const sessions = useMemo(()=>generateAllSessions().map((s,i)=>({...s,due:session
 const today = new Date();
 const checkIsToday = (d) => d.getDate() === today.getDate() && d.getMonth() === today.getMonth();
 const allGroups = useMemo(()=>{const g={},k=[]; sessions.forEach(s=>{const p=s.type==='holiday'?`HOL-${s.date.getTime()}`:s.id.split('-')[0];if(!g[p]){g[p]=[];k.push(p);}g[p].push(s);}); return {d:g,k};},[sessions]);
-const getRoles = (i) => ({Leader:team[i%5],Timer:team[(i+1)%5],Writer:team[(i+2)%5]});
+const getRoles = (i) => ({Leader:team[i%5],Writer:team[(i+1)%5],Timer:team[(i+2)%5]});
 const upcomingKeys = allGroups.k.filter(k => { const grp=allGroups.d[k]; if(k.startsWith('HOL')) return grp[0].date.getTime()>=today.setHours(0,0,0,0); return grp.some(s=>s.date.getTime()>=today.setHours(0,0,0,0)); });
 const pastKeys = allGroups.k.filter(k => !k.startsWith('HOL') && allGroups.d[k].every(s=>s.date.getTime()<today.setHours(0,0,0,0)));
 const pastConcepts = pastKeys.filter(k=>k.startsWith('C')), pastLabs = pastKeys.filter(k=>k.startsWith('L'));
@@ -541,7 +541,7 @@ return (
 </div>}
 </>}
 {sel && <div className="modal-overlay" onClick={()=>setSel(null)}><div className="modal-content" onClick={e=>e.stopPropagation()}><button className="modal-close" onClick={()=>setSel(null)}>×</button><h2 className="modal-title">{sel.id}</h2>
-<div style={{marginBottom:'20px'}}><div className="role-row"><span className="role-label"><Icons.Star/> Leader</span><span className="role-value">{sel.roles.Leader}</span></div>{setts.timer&&<div className="role-row"><span className="role-label"><Icons.Clock/> Timer</span><span className="role-value">{sel.roles.Timer}</span></div>}<div className="role-row"><span className="role-label"><Icons.Edit/> Writer</span><span className="role-value">{sel.roles.Writer}</span></div></div>
+<div style={{marginBottom:'20px'}}><div className="role-row"><span className="role-label"><Icons.Star/> Leader</span><span className="role-value">{sel.roles.Leader}</span></div><div className="role-row"><span className="role-label"><Icons.Edit/> Writer</span><span className="role-value">{sel.roles.Writer}</span></div>{setts.timer&&<div className="role-row"><span className="role-label"><Icons.Clock/> Timer</span><span className="role-value">{sel.roles.Timer}</span></div>}</div>
 {sel.full&&<div className="desc-box"><div className="desc-header"><div className="desc-title"><Icons.Info/> التفاصيل</div><div className={`lang-switch ${tm?'active':''}`} onClick={()=>setTm(!tm)}><div className="lang-active-bg"/><div className="lang-option">EN</div><div className="lang-option">AR</div></div></div><div className={`desc-content ${tm?'rtl':''}`}>{sel.full[tm?'ar':'en']}</div></div>}
 </div></div>}
 </div>
