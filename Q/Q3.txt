@@ -1,0 +1,492 @@
+471 AM
+Based on Albert Einstein: The mere formulation of a …… is far more often essential than its …….
+{حسب الصفحة 29 (بداية الفصل 3): الاقتباس الموجود في أعلى الصفحة هو: "The mere formulation of a problem is far more often essential than its solution".}
+a) problem, angle
+b) possibilities, solution
+c) mere, solution
+d) problem, solution
+d
+
+471 AM
+What characteristic best describes George in an organization?
+{حسب الصفحة 32 (Box: Go Talk to George): "George is that individual who has years of experience... and also has street smarts."}
+a) A new hire learning the ropes
+b) An individual with years of experience and street smarts
+c) A consultant from an external agency
+d) A junior technician assigned to basic tasks
+b
+
+471 AM
+In “Confirm all Allegations”, what did Boxright discover after analyzing the article presented by Courtland?
+{حسب الصفحة 33 (Box: Confirm All Allegations): في نهاية القصة، اكتشفوا أن البيانات المقدمة "would not be expected to apply to industrial-size equipment"، مما يعني أنها غير ذات صلة (irrelevant) بالحالة الحالية.}
+a) The data would be applicable to industrial-sized equipment or processes
+b) The data was irrelevant to the case
+c) The data would not be applicable to industrial-sized equipment or processes
+d) The article was incomplete and needed further analysis
+b
+
+471 AM
+When a paradigm shift occurs, which of the following takes place?
+{حسب الصفحة 15: عند حدوث Paradigm Shift، يتم استبدال النموذج القديم بقواعد جديدة، ويعود الجميع إلى نقطة الصفر (Ground zero).}
+a) More successful practitioners of the old paradigm retain their edge over other practitioners
+b) A new model based on a new set of rules replaces the old model
+c) All practitioners of the old paradigm are returned to "ground zero" and are again on equal footing
+d) a and c
+e) b and c
+e
+
+471 AM
+After gathering significant information about a problem, you can proceed to
+{حسب الصفحة 18 (تحت عنوان Generate): "After gathering significant information about the problem [Define], you can proceed to the next step... which is to generate alternative solutions... One of the most popular techniques... is brainstorming."}
+a) analyze and study the logic of each solution
+b) carry out the solution
+c) use brainstorming to obtain a set of alternative solutions
+d) make sure that the problem has been really solved
+c
+
+471 AM
+All of the following are TRUE for a problem-solving heuristic, EXCEPT
+{حسب الصفحة 17: الـ Heuristic هي دليل (road map) وتساعد في تجنب الأخطاء، لكنها لا تضمن (guaranteed) الوصول للحل، عكس الخوارزمية.}
+a) It may help avoid the pitfall of ill-defining and incorrectly solving a problem
+b) It is analogous to a road map
+c) It is a set of rules which, when followed, are guaranteed to attain the solution
+d) It can be useful even with a problem having no feasible solution as posed
+c
+
+471 AM
+........................ is an effective technique when the problem being solved is complex, ill defined, open ended, poorly understood, incorrectly stated, or dealing with an uncertain situation
+{حسب الصفحة 17: تعريف الـ Heuristic.}
+a) experiment
+b) heuristic
+c) experience
+d) algorithm
+b
+
+471 AM
+The McMaster Five-point Strategy employed by Fogler & LeBlanc consists of five blocks given by the ordered sequence
+{حسب الشكل 2-1 في الصفحة 17: الترتيب هو Define, Generate, Decide, Implement, Evaluate.}
+a) Decide, Implement, Evaluate, Define, and Generate
+b) Implement, Evaluate, Define, Generate, and Decide
+c) Generate, Decide, Implement, Evaluate, and Define
+d) Define, Generate, Decide, Implement, and Evaluate
+e) None of the above
+d
+
+471 AM
+People caught in paradigm paralysis are
+{حسب الصفحة 15 و 16: "Paradigm Paralysis" هم من يرفضون تبني التكنولوجيا الجديدة أو يتجمدون عند فكرة أن ما نجح في الماضي سينجح مستقبلاً.}
+a) people who obstinately question the wisdom of changing what is being done while arguing that everything seems to be going along OK
+b) people frozen with the idea that what was successful in the past will continue to be successful in the future
+c) people who boldly go where no one else has gone before
+d) people who success to adopt a new technology
+e) a and b
+e
+
+471 AM
+One of the following is not a proper description for paradigm pioneers
+{حسب الصفحة 15: الرواد (Pioneers) يكسرون القواعد الحالية (break existing rules) ولا يستخدمون الطرق التقليدية (standard and conventional methods) لحل المشاكل الجديدة.}
+a) "They break existing rules when success is not guaranteed."
+b) "They have the courage to move forward in the face of a great risk."
+c) "They use standard and conventional methods to handle existing problems"
+d) "They cut new pathways, making it safe for others to follow"
+c
+
+471 AM
+During the Evaluate Phase of the five step Problem Solving Heuristic
+{حسب الصفحة 18 (Evaluate Phase): الهدف هو التأكد من أن المشكلة قد حُلت فعلاً (Has the problem really been solved?).}
+a) many alternative solutions are created
+b) work is done to ensure that the problem has really been solved
+c) an alternative is chosen
+d) the real problem is defined
+b
+
+471 AM
+In the fifth (5th) block of the McMaster Five-Point Strategy employed by Fogler & LeBlanc, you
+{حسب الصفحة 17 و 18: الخطوة الخامسة هي التقييم (Evaluate)، حيث تتأكد من استيفاء جميع المعايير وحل المشكلة.}
+a) analyze and study the logic of each solution
+b) carry out the solution
+c) decide which alternative solution to choose
+d) generate alternative solutions
+e) make sure that all the criteria in the problem statement were fulfilled
+e471 PM
+When a paradigm shift occurs, which of the following takes place?
+{المرجع صفحة 15: عند حدوث تحول في النموذج، تتغير القواعد والحدود ويعود الجميع لنقطة الصفر.}
+a) A new model based on a new set of rules replaces the old model
+b) More successful practitioners of the old paradigm retain their edge over other practitioners
+c) New boundaries are established
+d) a and c
+d
+471 PM
+In the fifth (5th) block of the McMaster Five-Point Strategy employed by Fogler & LeBlanc, you
+{المرجع صفحة 17 و 18: الخطوة الخامسة هي Evaluate، وهدفها التأكد من أن المشكلة قد حُلت فعلاً.}
+a) analyze and study the logic of each solution
+b) make sure that the problem has been really solved
+c) decide which alternative solution to choose
+d) generate alternative solutions
+b
+471 PM
+After you obtain a number of solution alternatives for your problem, you can proceed to
+{المرجع صفحة 18: بعد خطوة Generate تأتي خطوة Decide، والتي تتضمن تحليل منطق كل حل.}
+a) analyze and study the logic of each solution
+b) check to see whether the problem has been solved
+c) ensure success of the solution selected by identifying potential problems, their causes, preventive actions, and steps of last resort
+d) a and c
+a
+471 PM
+The McMaster Five-Point Strategy employed by Fogler & LeBlanc consists of five blocks given by the ordered sequence
+{المرجع الشكل 2-1 صفحة 17: الترتيب هو Define -> Generate -> Decide -> Implement -> Evaluate.}
+a) Define, Create, Select, Accomplish and Assess
+b) Delineate, Create, Select, Execute and Appraise
+c) Define, Generate, Decide, Implement, and Evaluate
+d) Delineate, Generate, Choose, Execute and Evaluate
+c
+471 PM
+People who break existing rules when success is not guaranteed and who have the courage to move forward in the face of a great risk are
+{المرجع صفحة 15: هذا هو تعريف "Paradigm Pioneers".}
+a) problem initiators
+b) religion innovators
+c) artifact inventors
+d) paradigm pioneers
+d
+471 PM
+Joel Barker, in his work ___________ speaks of the concepts of paradigm shifts, paradigm paralysis, and paradigm pioneers
+{المرجع صفحة 15: اسم كتاب جويل باركر هو "Discovering the Future".}
+a) The 7 Habits of Highly Effective People
+b) Discovering the Future
+c) Handbook of Parapsychology and Paralysis
+d) How to Paraphrase Prominent Proverbs
+b
+471 PM
+A(n) ___________ is an effective technique when the problem being solved is complex, ill defined, open ended, poorly understood, incorrectly stated, or dealing with an uncertain situation
+{المرجع صفحة 17: تعريف الـ Heuristic.}
+a) heuristic
+b) higgledy-piggledy
+c) theory
+d) concept
+a
+471 PM
+When a paradigm shift occurs,
+{المرجع صفحة 15: القواعد القديمة تسقط، ويعود الجميع للمساواة (Ground zero)، وتُحل مشاكل كانت مستحيلة.}
+a) Solutions to previously unsolvable problems are allowed
+b) All practitioners of the old paradigm are returned to 'ground zero' and are again on equal footing
+c) The old rules no longer apply
+d) a, b, and c
+d
+471 PM
+A problem-solving heuristic
+{المرجع صفحة 17: الـ Heuristic مفيدة حتى لو لم يكن للمشكلة حل واضح في البداية، وهي ليست خوارزمية مضمونة.}
+a) can be useful even with a problem having no feasible solution as posed
+b) is an attempt to proceed to a solution by trial and error
+c) is an algorithm for finding the solution of a problem in a pre-determined number of steps
+d) a and b
+d
+471 PM
+All of the following are people caught in paradigm paralysis EXCEPT
+{المرجع صفحة 15 و 16: الاستثناء هم الأشخاص الذين يذهبون بجرأة لأماكن جديدة (Pioneers)، عكس المصابين بالشلل الفكري.}
+a) people frozen with the idea that what was successful in the past will continue to be successful in the future
+b) people who boldly go where no one else has gone before
+c) people who obstinately question the wisdom of changing what is being done while everything seems to be going along OK
+d) people who fail to adopt a new technology
+b
+471 PM
+All of the following are proper descriptions for paradigm pioneers EXCEPT
+{المرجع صفحة 15: الرواد (Pioneers) يكسرون القواعد، لذا فهم ليسوا "الأكثر نجاحاً ضمن الحدود الحالية".}
+a) "They are the most successful people at and within the existing boundaries."
+b) "They have the intuition and revolutionary thinking needed to recognize a big idea."
+c) "They generate alternative solutions to a problem."
+d) "They search for opportunities to initiate a paradigm shift."
+a
+471 PM
+All of the following are TRUE for a problem-solving heuristic, EXCEPT:
+{المرجع صفحة 17: الـ Heuristic لا تضمن (guaranteed) الوصول للحل، هذا فرقها عن الـ Algorithm.}
+a) It may help avoid the pitfall of ill-defining and incorrectly solving a problem
+b) It is analogous to a road map
+c) It is a set of rules which, when followed, are guaranteed to attain the solution
+d) It can be useful even with a problem having no feasible solution as posed
+c
+471 PM
+After gathering significant information about a problem, you can proceed to
+{المرجع صفحة 18: بعد جمع المعلومات (Define)، ننتقل لخطوة (Generate) واستخدام العصف الذهني (Brainstorming).}
+a) analyze and study the logic of each solution
+b) carry out the solution
+c) use brainstorming to obtain a set of alternative solutions
+d) make sure that the problem has been really solved
+c
+
+462
+All of the following are TRUE for a problem-solving heuristic, EXCEPT
+{حسب الصفحة 17: الـ Heuristic هي دليل (road map) وليست مجموعة قواعد تضمن (guaranteed) الحل.}
+a) It may help avoid the pitfall of ill-defining and incorrectly solving a problem.
+b) It is analogous to a road map.
+c) It is a set of rules which, when followed, are guaranteed to attain the solution.
+d) It can be useful even with a problem having no feasible solution as posed.
+c
+
+462
+All of the following are proper descriptions for paradigm pioneers EXCEPT
+{حسب الصفحة 15: الرواد يكسرون الحدود، لذا فهم ليسوا "الأكثر نجاحاً ضمن الحدود الحالية".}
+a) “They have the courage to escape paradigm paralysis.”
+b) “They realize that there are no easy roads when traveling in uncharted countries.”
+c) “They have the intuition and revolutionary thinking needed to recognize a big idea.”
+d) “They are the most successful people at and within the existing boundaries.”
+d
+
+462
+After gathering significant information about a problem, you can proceed to
+{حسب الصفحة 18: بعد جمع المعلومات (Define)، تأتي خطوة توليد الحلول (Generate) باستخدام العصف الذهني.}
+a) analyze and study the logic of each solution.
+b) carry out the solution.
+c) use brainstorming to obtain a set of alternative solutions.
+d) make sure that the problem has been really solved.
+c
+
+462
+When a paradigm shift occurs, which of the following takes place?
+{حسب الصفحة 15: يحل نموذج جديد محل القديم، ويعود الجميع لنقطة الصفر.}
+a) More successful practitioners of the old paradigm retain their edge over other practitioners.
+b) A new model based on a new set of rules replaces the old model.
+c) All practitioners of the old paradigm are returned to "ground zero" and are again on equal footing.
+d) A new model based on the old set of rules.
+e) a and c
+f) b and c
+f
+
+462
+The McMaster Five-Point Strategy employed by Fogler & LeBlanc consists of five blocks given by the ordered sequence
+{حسب الصفحة 17: الترتيب هو Define, Generate, Decide, Implement, Evaluate.}
+a) Derive, Generate, Divide, Implement, and Enumerate.
+b) Derive, Estimate, Divide, Implement, and Evaluate.
+c) Define, Generate, Decide, Implement, and Enumerate.
+d) Define, Generate, Decide, Implement, and Evaluate.
+e) Derive, Estimate, Decide, Supplement, and Evaluate.
+d
+
+462
+People caught in paradigm paralysis are
+{حسب الصفحة 15 و 16: "Paradigm Paralysis" هم من يتجمدون عند الماضي، أو يقاومون التغيير ويجادلون بأن الأمور جيدة (obstinately question the wisdom of changing).}
+a) people frozen with the idea that what was successful in the past will continue to be successful in the future
+b) people who obstinately question the wisdom of changing what is being done while arguing that everything seems to be going along OK
+c) people who boldly go where no one else has gone before
+d) a and b
+e) a and c
+f) b and c
+d
+
+462
+A proper description for paradigm pioneers is
+{حسب الصفحة 15: الرواد لديهم الحدس (intuition) والمثابرة (perseverance) والشجاعة.}
+a) “They do not have the intuition and revolutionary thinking needed to recognize a big idea.”
+b) “They do not have the perseverance needed to bring it to fruition.”
+c) “They use standard and conventional methods to handle existing problems, and therefore, they are the most successful people at and within the existing boundaries.”
+d) None of the above
+e) a and b
+d
+
+*ملاحظة: في الملف، السؤال كان بصيغة النفي (do not have)، والإجابة الصحيحة كانت (None of the above) أو (a and b) إذا كانت الخيارات إيجابية. في نسخة أخرى من السؤال (Member 3, page 5) كانت الخيارات إيجابية:*
+a) "They do not have..." (False)
+b) "They do not have..." (False)
+*سأضع لك الصيغة الإيجابية التي وردت في صفحة 8 (Member 4) لتكون أوضح:*
+
+462
+A proper description for paradigm pioneers is
+{حسب الصفحة 15.}
+a) “They break existing rules when success is not guaranteed.”
+b) “They generate alternative solutions to a problem, and they have the courage to move forward in the face of a great risk.”
+c) “They have the courage to escape paradigm paralysis and they constantly search for opportunities to initiate a paradigm shift.”
+d) All of the above
+e) a, b, and c
+d
+
+462
+During the Evaluate Phase of the five step Problem Solving Heuristic
+{حسب الصفحة 18: في مرحلة التقييم يتم التأكد من حل المشكلة فعلياً.}
+a) many alternative solutions are created
+b) work is done to ensure that the problem has really been solved
+c) an alternative is chosen
+d) the real problem is defined
+e) activities to solve the problem are planned
+b
+
+462
+Which of the following is a consequence of a paradigm shift?
+{حسب الصفحة 15: القواعد القديمة لا تنطبق، العودة لنقطة الصفر، حل مشاكل كانت مستحيلة.}
+a) the old rules no longer apply
+b) everyone goes back to “ground zero”
+c) new rules allow solutions to problems previously unsolvable
+d) All of the above
+e) None of the above
+d
+
+462
+A problem-solving heuristic is
+{حسب الصفحة 17 (بناءً على مفتاح الإجابة في الكويز): يُعتبر الـ Heuristic مشابهاً للخريطة ومحاولة للوصول للحل عبر التجربة والخطأ (Trial and error) في سياق هذا المقرر.}
+a) a recipe for finding a unique solution
+b) a set of rules which, when directly followed, are guaranteed to attain the solution
+c) analogous to a road map since It attempts to proceed to a solution by trial and error
+d) not an effective technique when the problem being solved is open ended, poorly understood or dealing with an uncertain situation
+e) an algorithm for finding the solution of a problem in a pre-determined number of steps
+c
+
+462
+After you obtain a number of solution alternatives for your problem, you can proceed to do all of the following except
+{حسب الصفحة 18: بعد التوليد (Generate) تأتي (Decide). الخيار المستبعد هو (Check to see...) لأنه يخص مرحلة (Evaluate) اللاحقة.}
+a) decide which alternative solution to choose
+b) analyze and study the logic of each solution
+c) check to see whether the problem has been solved
+d) ensure success of the solution selected by identifying potential problems, their causes, preventive actions, and steps of last resort
+c
+
+462
+Which of the following is TRUE for a problem-solving heuristic
+{حسب الصفحة 17: تشمل المساعدة والتوجيه، التجربة والخطأ، وفعالية في المشاكل المعقدة.}
+a) It is a procedure that provides aid or direction in the solution of a problem
+b) It is an attempt to proceed to a solution by trial and error
+c) It is an effective technique when the problem being solved is complex, ill defined, open ended, poorly understood or dealing with an uncertain situation
+d) All of the above
+e) None of the above
+d
+
+462
+One of the following is not a proper description for paradigm pioneers
+{حسب الصفحة 15: الرواد لا يستخدمون الطرق التقليدية (conventional methods) للمشاكل الحالية.}
+a) “They break existing rules when success is not guaranteed.”
+b) “They have the courage to move forward in the face of a great risk.”
+c) “They use standard and conventional methods to handle existing problems.”
+d) “They cut new pathways, making it safe for others to follow.”
+c
+
+462
+TWO of the following statements are not TRUE for a problem-solving heuristic
+{حسب الصفحة 17: الـ Heuristic ليس وصفة (Recipe) وليس خوارزمية (Algorithm).}
+a) It is a recipe for finding a unique solution
+b) It is an algorithm for finding the solution of a problem in a pre-determined number of steps
+c) It is an attempt to proceed to a solution by trial and error
+d) a and b
+e) b and c
+d
+
+461
+All of the following are TRUE for a problem-solving heuristic, EXCEPT
+{حسب الصفحة 17: الـ Heuristic هي دليل (road map) وتساعد في تجنب الأخطاء، لكنها ليست قواعد تضمن (guaranteed) الوصول للحل، فهذا تعريف الخوارزمية.}
+a) It may help avoid the pitfall of ill-defining and incorrectly solving a problem.
+b) It is analogous to a road map.
+c) It is a set of rules which, when followed, are guaranteed to attain the solution.
+d) It can be useful even with a problem having no feasible solution as posed.
+c
+
+461
+All of the following are proper descriptions for paradigm pioneers EXCEPT
+{حسب الصفحة 15: رواد النماذج (Pioneers) هم من يكسرون القواعد الحالية، لذا فهم ليسوا "الأكثر نجاحاً ضمن الحدود الحالية" (most successful... within existing boundaries) لأن النجاح ضمن الحدود الحالية هو سمة ممارسي النموذج القديم.}
+a) “They have the courage to escape paradigm paralysis.”
+b) “They realize that there are no easy roads when traveling in uncharted countries.”
+c) “They have the intuition and revolutionary thinking needed to recognize a big idea.”
+d) “They are the most successful people at and within the existing boundaries.”
+d
+
+461
+After gathering significant information about a problem, you can proceed to
+{حسب الصفحة 18: بعد خطوة جمع المعلومات (Define)، تأتي خطوة توليد الحلول (Generate) باستخدام العصف الذهني (Brainstorming).}
+a) analyze and study the logic of each solution.
+b) carry out the solution.
+c) use brainstorming to obtain a set of alternative solutions.
+d) make sure that the problem has been really solved.
+c
+
+461
+When a paradigm shift occurs, which of the following takes place?
+{حسب الصفحة 15: عند حدوث تحول في النموذج، يظهر نموذج جديد بقواعد جديدة (New model... new set of rules)، ويعود الجميع إلى نقطة الصفر.}
+a) More successful practitioners of the old paradigm retain their edge over other practitioners.
+b) A new model based on a new set of rules replaces the old model.
+c) All practitioners of the old paradigm are returned to "ground zero" and are again on equal footing.
+d) A new model based on the old set of rules.
+e) a and c
+f) b and c
+f
+
+461
+The McMaster Five-Point Strategy employed by Fogler & LeBlanc consists of five blocks given by the ordered sequence
+{حسب الصفحة 17: الترتيب الصحيح هو: Define, Generate, Decide, Implement, Evaluate.}
+a) Derive, Generate, Divide, Implement, and Enumerate.
+b) Derive, Estimate, Divide, Implement, and Evaluate.
+c) Define, Generate, Decide, Implement, and Enumerate.
+d) Define, Generate, Decide, Implement, and Evaluate.
+e) Derive, Estimate, Decide, Supplement, and Evaluate.
+d
+
+461
+All of the following are people caught in paradigm paralysis EXCEPT
+{حسب الصفحة 15: "Paradigm Paralysis" هم من يقاومون التغيير أو يفشلون في تبني الجديد. الاستثناء هنا هم من يجرؤون على الذهاب لأماكن جديدة (boldly go where no one else has gone before).}
+a) people frozen with the idea that what was successful in the past will continue to be successful in the future.
+b) people who boldly go where no one else has gone before.
+c) people who obstinately question the wisdom of changing what is being done while arguing that everything seems to be going along OK.
+d) people who fail to adopt a new technology.
+e) a and b
+f) b and c
+b
+
+461
+People who fail to adopt a new technology and who never capitalize on new ideas are
+{حسب الصفحة 16 (مثال الساعات السويسرية): الفشل في تبني التكنولوجيا الجديدة هو علامة على "Paradigm Paralysis" (شلل النموذج).}
+a) paradigm pioneers.
+b) paradigm paralyzed.
+c) paradigm activists.
+d) paradigm proactivists.
+b
+
+461
+One of the following is not a proper description for paradigm pioneers
+{حسب الصفحة 15: الرواد لا يستخدمون الطرق التقليدية والقياسية (standard and conventional methods) للتعامل مع المشاكل الحالية، بل يبتكرون طرقاً جديدة.}
+a) “They break existing rules when success is not guaranteed.”
+b) “They have the courage to move forward in the face of a great risk.”
+c) “They use standard and conventional methods to handle existing problems.”
+d) “They cut new pathways, making it safe for others to follow.”
+c
+
+461
+In the fifth (5th) block of the McMaster Five-Point Strategy employed by Fogler & LeBlanc, you
+{حسب الصفحة 17 و 18: الخطوة الخامسة هي Evaluate، وهدفها التأكد من استيفاء المعايير وحل المشكلة.}
+a) analyze and study the logic of each solution
+b) carry out the solution
+c) decide which alternative solution to choose
+d) generate alternative solutions
+e) make sure that all the criteria in the problem statement were fulfilled
+e
+
+461
+When a paradigm shift occurs,
+{حسب الصفحة 15: القواعد القديمة لم تعد تنطبق (no longer apply)، ويُعاد الجميع لنقطة الصفر، وتصبح الحلول لمشاكل كانت مستحيلة متاحة.}
+a) Solutions to previously unsolvable problems are allowed.
+b) All practitioners of the old paradigm are returned to 'ground zero' and are again on equal footing.
+c) The old rules no longer apply.
+d) All of the above.
+e) a and b only.
+d
+
+461
+A problem-solving heuristic is
+{حسب الصفحة 17: الـ Heuristic تشبه الخريطة (Road map) وتوفر التوجيه، وهي ليست وصفة مضمونة (Recipe) ولا خوارزمية (Algorithm).}
+a) a recipe for finding a unique solution
+b) a set of rules which, when directly followed, are guaranteed to attain the solution
+c) analogous to a road map since It attempts to proceed to a solution by trial and error
+d) not an effective technique when the problem being solved is open ended, poorly understood or dealing with an uncertain situation
+e) an algorithm for finding the solution of a problem in a pre-determined number of steps
+c
+
+461
+After you obtain a number of solution alternatives for your problem, you can proceed to do all of the following except
+{حسب الصفحة 18: بعد توليد الحلول (Generate)، تأتي خطوة اتخاذ القرار (Decide) والتي تتضمن التحليل (Analyze) والتأكد من النجاح (Ensure success). الخيار المستبعد هو "check to see whether the problem has been solved" لأن هذه خطوة الـ Evaluate التي تأتي في النهاية، وليس فوراً بعد توليد الحلول.}
+a) decide which alternative solution to choose
+b) analyze and study the logic of each solution
+c) check to see whether the problem has been solved
+d) ensure success of the solution selected by identifying potential problems, their causes, preventive actions, and steps of last resort
+c
+
+461
+TWO of the following statements are not TRUE for a problem-solving heuristic,
+{حسب الصفحة 17: الـ Heuristic ليست وصفة لحل وحيد (Recipe) وليست خوارزمية (Algorithm). هي دليل استراتيجي.}
+a) It is a recipe for finding a unique solution
+b) It is an algorithm for finding the solution of a problem in a pre-determined number of steps
+c) It is an attempt to proceed to a solution by trial and error
+d) a and b
+e) b and c
+d
