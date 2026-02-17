@@ -116,6 +116,52 @@ b) More successful practitioners of the old paradigm retain their edge over othe
 c) New boundaries are established
 d) a and c
 d
+
+471 AM
+Based on Albert Einstein: The mere formulation of a …… is far more often essential than its …….
+{مقولة أينشتاين الشهيرة في أدبيات حل المشكلات هي: "The mere formulation of a problem is far often more essential than its solution" أي أن صياغة المشكلة أهم من حلها.}
+a) problem, angle
+b) possibilities, solution
+c) mere, solution
+d) problem, solution
+d
+
+471 AM
+What characteristic best describes George in an organization?
+{في منهجية Fogler & LeBlanc، استراتيجية "Go Talk to George" تشير إلى التحدث مع الفرد الذي يمتلك الخبرة العملية والمعرفة الميدانية العميقة (street smarts) وليس المستشارين أو الموظفين الجدد.}
+a) A new hire learning the ropes
+b) An individual with years of experience and street smarts
+c) A consultant from an external agency
+d) A junior technician assigned to basic tasks
+b
+
+471 AM
+The technique that focuses on finding out who initiated the problem and ascertaining the validity of the reasoning used to arrive at the problem statement, is called.
+{التقنية المعنية تسمى "Find out where the problem statement came from". الخيار (a) يشير إلى التحدث للخبير الميداني، والخيارين (b) و(c) جمل وصفية وليست أسماء تقنيات. الطالب أجاب (a) وكانت إجابته خاطئة (عليها علامة X)، لذا الإجابة الصحيحة هي لا شيء مما سبق.}
+a) go talk to George
+b) Two years after the installation, the process had yet to operate correctly.
+c) They analyzed the procedure from every point of view on paper.
+d) None of the above
+d
+
+471 AM
+In “Confirm all Allegations”, what did Boxright discover after analyzing the article presented by Courtland?
+{في دراسة الحالة هذه، تبين أن البيانات المقدمة كانت تنطبق فقط على التجارب المعملية ولا يمكن تطبيقها على المعدات الصناعية الكبيرة. الطالب اختار (b) وكانت خاطئة (عليها علامة X).}
+a) The data would be applicable to industrial-sized equipment or processes
+b) The data was irrelevant to the case
+c) The data would not be applicable to industrial-sized equipment or processes
+d) The article was incomplete and needed further analysis
+c
+
+471 AM
+What technique is used to analyze and break down the problem further in the diagram?
+{تحليل كيبنر-تريجو (K.T. Problem Analysis) هو الأداة المستخدمة "لتحليل وتفكيك المشكلة" وتحديد أبعادها (ماذا، أين، متى، الحجم)، بينما مخطط دنكر (الخيار d) يُستخدم لتفكيك الحلول. الطالب اختار (d) وكانت خاطئة.}
+a) Statement restatement
+b) K.T. Problem analysis
+c) Exploring the problem
+d) Present state desired state & Duncker diagram
+b
+
 471 PM
 In the fifth (5th) block of the McMaster Five-Point Strategy employed by Fogler & LeBlanc, you
 {المرجع صفحة 17 و 18: الخطوة الخامسة هي Evaluate، وهدفها التأكد من أن المشكلة قد حُلت فعلاً.}
@@ -207,6 +253,50 @@ c
 471 PM
 After gathering significant information about a problem, you can proceed to
 {المرجع صفحة 18: بعد جمع المعلومات (Define)، ننتقل لخطوة (Generate) واستخدام العصف الذهني (Brainstorming).}
+a) analyze and study the logic of each solution
+b) carry out the solution
+c) use brainstorming to obtain a set of alternative solutions
+d) make sure that the problem has been really solved
+c
+471 PM
+Which habit of highly effective people you demonstrate when you aggressively seek new ideas and innovations?
+{العادة الأولى (كن مبادراً - Be Proactive) تتضمن أخذ المبادرة والسعي بقوة خلف الأفكار والابتكارات الجديدة، بينما الطالب اختار (Think Win/Win) وهي إجابة خاطئة لأنها تتعلق بالمنفعة المتبادلة.}
+a) Be Proactive
+b) Begin with the End in Mind
+c) Put First Things First
+d) Think Win/Win
+a
+
+471 PM
+All of the following are TRUE for a problem-solving heuristic, EXCEPT:
+{الهيوريستك (Heuristic) هو دليل أو خريطة طريق للمساعدة في الحل، لكنه يختلف عن "الخوارزمية" بأنه لا يضمن الوصول للحل (guaranteed to attain the solution). السؤال يبحث عن الجملة الخاطئة (EXCEPT)، والجملة الخاطئة هي ادعاء أن الهيوريستك يضمن الحل.}
+a) It may help avoid the pitfall of ill-defining and incorrectly solving a problem
+b) It is analogous to a road map
+c) It is a set of rules which, when followed, are guaranteed to attain the solution
+d) It can be useful even with a problem having no feasible solution as posed
+c
+
+471 PM
+The four renewable dimensions of your nature are
+{العادة السابعة (شحذ المنشار) تركز على التجديد في أربعة أبعاد رئيسية: الجسدية (Physical)، العقلية (Mental)، الروحية (Spiritual)، والاجتماعية/العاطفية (Social/Emotional).}
+a) the mental, intellectual, mathematical, and logical/reasoning dimensions
+b) the physical, chemical, biological, and social/psychological dimensions
+c) the historical, geographical, political, and emotional/psychological dimensions
+d) the physical, mental, spiritual, and social/emotional dimensions
+d
+
+471 PM
+The McMaster Five-Point Strategy employed by Fogler & LeBlanc consists of five blocks given by the ordered sequence
+{استراتيجية مكماستر الخماسية لحل المشكلات حسب منهج Fogler & LeBlanc تسير بالترتيب التالي: تعريف (Define) -> توليد (Generate) -> قرار (Decide) -> تنفيذ (Implement) -> تقييم (Evaluate).}
+a) Derive, Generate, Divide, Implement, and Enumerate
+b) Define, Generate, Decide, Implement, and Evaluate
+c) Derive, Estimate, Decide, Supplement, and Evaluate
+d) Define, Estimate, Decide, Supplement, and Enumerate
+b
+
+471 PM
+After gathering significant information about a problem, you can proceed to
+{بعد جمع المعلومات (وهي مرحلة تعريف المشكلة)، الخطوة التالية في منهجية حل المشكلات هي توليد الحلول (Generate)، وأحد أهم طرق التوليد هو العصف الذهني (Brainstorming).}
 a) analyze and study the logic of each solution
 b) carry out the solution
 c) use brainstorming to obtain a set of alternative solutions
@@ -365,6 +455,53 @@ d) a and b
 e) b and c
 d
 
+462
+Which of the following is TRUE for a problem-solving heuristic,
+{الهيوريستك (Heuristic) هو أسلوب لحل المشكلات يوفر المساعدة والتوجيه، وقد يتضمن المحاولة والخطأ، وهو أداة فعالة جداً عندما تكون المشكلة معقدة أو غير محددة بدقة (ill defined)، وبالتالي فإن جميع الخيارات المذكورة صحيحة.}
+a) It is a procedure that provides aid or direction in the solution of a problem
+b) It is an attempt to proceed to a solution by trial and error
+c) It is an effective technique when the problem being solved is complex, ill defined, open ended, poorly understood or dealing with an uncertain situation
+d) All of the above
+e) None of the above
+d
+
+462
+One of the following is not a proper description for paradigm pioneers
+{رواد النماذج (Paradigm Pioneers) يتميزون بالشجاعة لكسر القواعد القديمة (break existing rules) وشق طرق جديدة، ولا يستخدمون الطرق التقليدية والقياسية (standard and conventional methods) لأنها تابعة للنموذج القديم، لذا الخيار (c) هو الوصف الخاطئ.}
+a) "They break existing rules when success is not guaranteed."
+b) "They have the courage to move forward in the face of a great risk."
+c) "They use standard and conventional methods to handle existing problems."
+d) "They cut new pathways, making it safe for others to follow."
+c
+
+462
+People who fail to adopt a new technology and who never capitalize on new ideas are
+{الأشخاص الذين يفشلون في تبني التكنولوجيا الجديدة ولا يستفيدون من الأفكار الجديدة يعانون من "شلل النموذج" (Paradigm Paralysis)، حيث يتمسكون بالقديم ويرفضون التغيير.}
+a) paradigm pioneers
+b) paradigm paralyzed
+c) paradigm activists
+d) paradigm proactivists
+b
+
+462
+A problem-solving heuristic is
+{الهيوريستك ليس خوارزمية تضمن الحل (guaranteed) ولا وصفة لحل وحيد، بل هو تقنية فعالة تُستخدم خصيصاً عندما تكون المشكلة معقدة أو غير محددة بوضوح (ill defined, open ended).}
+a) a recipe for finding a unique solution
+b) a set of rules which, when directly followed, are guaranteed to attain the solution
+c) an effective technique when the problem being solved is complex, ill defined, incorrectly stated, or having no feasible solution as posed
+d) an algorithm for finding the solution of a problem in a pre-determined number of steps
+c
+
+462
+Which habit of highly effective people you demonstrate when you make the whole greater than the sum of its parts?
+{العادة السادسة "التكاتف" (Synergize) تعريفها الأساسي هو أن الكل أكبر من مجموع الأجزاء (1 + 1 = 3 أو أكثر)، وهي نتاج التعاون الإبداعي.}
+a) Synergize
+b) Be Proactive
+c) Put First Things First
+d) Think Win/Win
+e) Seek First to Understand, Then to Be Understood
+a
+
 461
 All of the following are TRUE for a problem-solving heuristic, EXCEPT
 {حسب الصفحة 17: الـ Heuristic هي دليل (road map) وتساعد في تجنب الأخطاء، لكنها ليست قواعد تضمن (guaranteed) الوصول للحل، فهذا تعريف الخوارزمية.}
@@ -489,4 +626,53 @@ b) It is an algorithm for finding the solution of a problem in a pre-determined 
 c) It is an attempt to proceed to a solution by trial and error
 d) a and b
 e) b and c
+d
+
+461
+TWO of the following statements are not TRUE for a problem-solving heuristic,
+{الهيوريستك (Heuristic) هو دليل إرشادي مرن وليس "وصفة" (recipe) لحل وحيد، كما أنه ليس "خوارزمية" (algorithm) بخطوات محددة مسبقاً تضمن الحل. لذلك العبارتين a و b غير صحيحتين.}
+a) It is a recipe for finding a unique solution
+b) It is an algorithm for finding the solution of a problem in a pre-determined number of steps
+c) It is an attempt to proceed to a solution by trial and error
+d) a and b
+e) b and c
+d
+
+461
+To be proactive means all of the following, except
+{أن تكون مبادراً (Be Proactive) يعني تحمل المسؤولية وأخذ الزمام. أما خيار "تقدير الاختلافات بين الناس" (value the differences) فهو التعريف الأساسي للعادة السادسة "التكاتف" (Synergize)، وليس المبادرة.}
+a) to aggressively seek new ideas and innovations
+b) to take the initiative and make things happen
+c) to value the differences in the people you work with
+d) not to let a negative environment affect your behavior and decisions
+e) to acknowledge mistakes and learn from them
+c
+
+461
+All of the following are proper descriptions for paradigm pioneers EXCEPT
+{رواد النموذج (Pioneers) هم من يغامرون في المجهول. أما الأشخاص "الأكثر نجاحاً داخل الحدود الحالية" (most successful... within existing boundaries) فهم المستوطنون أو الناجحون في النموذج القديم، وليس الرواد.}
+a) “They have the courage to escape paradigm paralysis.”
+b) “They realize that there are no easy roads when traveling in uncharted countries.”
+c) “They have the intuition and revolutionary thinking needed to recognize a big idea.”
+d) “They are the most successful people at and within the existing boundaries.”
+d
+
+461
+Which habit of highly effective people you demonstrate when you list your top priorities and focus on the important tasks?
+{ترتيب الأولويات والتركيز على المهام المهمة (جدولة الأولويات) هو جوهر العادة الثالثة "الأهم قبل المهم" (Put First Things First).}
+a) Be Proactive
+b) Put First Things First
+c) Seek First to Understand, Then to Be Understood
+d) Synergize
+b
+
+461
+When a paradigm shift occurs,
+{عند حدوث تحول في النموذج (Paradigm Shift)، تتغير القواعد القديمة (c)، ويعود الجميع لنقطة الصفر (b)، وتظهر حلول لمشاكل كانت مستحيلة سابقاً (a). لذلك كل ما سبق صحيح.}
+a) Solutions to previously unsolvable problems are allowed
+b) All practitioners of the old paradigm are returned to 'ground zero' and are again on equal footing
+c) The old rules no longer apply
+d) All of the above
+e) a and b only
+f) a and c only
 d
