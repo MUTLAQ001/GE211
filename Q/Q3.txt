@@ -1,7 +1,3 @@
-إليك الملف بعد إزالة الأسئلة المكررة لكل قسم (471 AM, 471 PM, 462, 461) مع الحفاظ على التنسيق الأصلي والملاحظات:
-
---- START OF FILE Paste February 17, 2026 - 6:35AM ---
-
 471 AM
 Based on Albert Einstein: The mere formulation of a …… is far more often essential than its …….
 {حسب الصفحة 29 (بداية الفصل 3): الاقتباس الموجود في أعلى الصفحة هو: "The mere formulation of a problem is far more often essential than its solution".}
