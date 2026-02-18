@@ -128,6 +128,185 @@ c) Exploring the problem
 d) Present state desired state & Duncker diagram
 b
 
+471 AM
+According to the passage, what can seemingly “naive” or “dumb” questions achieve?
+{حسب الصفحة 31: "Our experience shows that seemingly naive questions (often perceived as "dumb" questions) can produce profound results by challenging established thinking patterns."}
+a) They usually waste time
+b) They produce profound results by challenging thinking patterns
+c) They confuse experts
+d) They discourage creativity
+b
+
+471 AM
+Which is NOT part of evaluating the problem definition?
+{حسب الصفحة 33 (Step 4: Confirm all key findings): النص ينصح بـ "Distinguish between fact and opinion" و "Challenge assumptions". بالتالي "Confusing facts with opinion" هو التصرف الخاطئ الذي لا يعد جزءاً من التقييم السليم. كما أن الصفحة 18 تذكر "constraints".}
+a) Identifying constraints
+b) Confusing facts with opinion
+c) Challenging assumptions
+d) Adding extraneous facts to problem definition
+b
+
+471 AM
+What does the Present State/Desired State technique help verbalize?
+{حسب الصفحة 41: "The Present State/Desired State technique helps us verbalize where we are and where we want to go..."}
+a) To evaluate solution feasibility
+b) To locate errors in data
+c) To clarify where we are and where we want to go
+d) To calculate costs
+c
+
+471 AM
+The ambiguous and vague words should be avoided upon writing the Desired State statement
+{حسب الصفحة 41: "When writing the Desired State statement, avoid using ambiguous and vague words or phrases like 'best', 'minimal', 'cheapest'..."}
+a) False
+b) True
+c) Has no relation
+b
+
+471 AM
+Based on Albert Einstein: creative imagination is required for all of the following except
+{حسب الصفحة 29: الاقتباس يقول: "To raise new questions, new possibilities, to regard old problems from a new angle requires creative imagination and marks real advances in science." الجملة التي لم تذكر هي صياغة المشكلة فقط، بل بالعكس قال في بداية الاقتباس "The mere formulation of a problem is far more often essential than its solution".}
+a) To raise new questions
+b) new possibilities
+c) to regard old problems from a new angle
+d) to make the mere formulation of a problem
+d
+
+471 AM
+Which of the following is not included in the first four steps used by experienced problem solvers ?
+{حسب الصفحة 29 (Table 3-1): الخطوات الأربع هي: 1. Collect and analyze info, 2. Talk with people familiar, 3. View problem first hand, 4. Confirm all findings. الخيار (a) يقول Talk with people "unfamiliar"، وهذا عكس الخطوة 2.}
+a) Talk with people unfamiliar with the problem
+b) If at all possible, view the problem firsthand
+c) Collect and analyze information and data
+d) Confirm all findings
+a
+
+471 AM
+Many times you will be given a problem by someone else rather than discovering it yourself. Under these circumstances, it is very important to:
+{حسب الصفحة 35: تحت عنوان "Find out where the problem statement came from"، النقاط تشمل "Are the reasoning and assumptions valid?". الخيار (a) مذكور أيضاً في الصفحة 34 "make sure that the problem you were given reflects the true situation". لكن في سياق الخيارات المتاحة في الكويز، الخيار d هو الأقرب للنصيحة المباشرة في القائمة "Challenge assumptions and assertions" (صفحة 33 و 35).}
+a) make sure that the problem you were given reflects the true situation.
+b) check and cross reference data, facts, and figures
+c) write down all important pieces of information and spot check others
+d) check assumptions and assertions
+d
+
+471 AM
+Which of the following is not part of the Problem Definition Techniques?
+{حسب الصفحة 34 (الرسم التوضيحي): التقنيات المذكورة هي: Finding out where the problem came from, Exploring the problem, Statement restatement, Present State/Desired State, Duncker Diagram. الخيار (c) "Designing a solution" ليس من تقنيات "تعريف" المشكلة.}
+a) Finding out where the problem came from
+b) Exploring the problem
+c) Designing a solution
+d) Statement restatement
+c
+
+471 AM
+What was the main issue in the situation described, “Exploring the Problem-The Case of the Dead Fish”?
+{حسب الصفحة 39: في النقطة رقم 9: "it was discovered that the fungus was indeed the cause of death".}
+a) The gas well was not producing any gas
+b) The wrong type of piping system was installed
+c) The fish were dying due to a fungal infection
+d) Toxic chemical discharge from the plant was the cause
+c
+
+471 AM
+Talk with people familiar with the problem, does not include
+{حسب الصفحة 31: النص يقول: "When equipment malfunctions, it is a must to talk to the operators because they know the 'personality' of the equipment better than anyone." الخيار (a) ينصح بعكس ذلك تماماً.}
+a) When equipment malfunctions, never talk to the operators because they know nothing about it.
+b) Find out who knows about the problem.
+c) Ask penetrating questions by Looking past the obvious
+d) Try to find out who the experts in the field are and talk to them.
+a
+
+471 AM
+Based on Albert Einstein: The mere formulation of a …… is far more often essential than its …….
+{حسب الصفحة 29: الاقتباس هو: "The mere formulation of a problem is far more often essential than its solution".}
+a) problem, solution
+b) problem, angle
+c) mere, solution
+d) possibilities, solution
+a
+
+471 AM
+When discussing a problem with people familiar with the problem, what should you do if you do not understand something?
+{حسب الصفحة 31: "Asking for clarification when you do not understand something".}
+a) Ignore it and move on
+b) Challenge the person
+c) Ask for clarification
+d) Make an assumption
+c
+
+471 AM
+Which of the following did not contribute to the problem in the heat exchanger system?
+{حسب الصفحة 40 (De-bottlenecking a Process): المشكلة كانت "Heat exchanger in the hot liquid stream was cooled by...". الصفحة 41 توضح "The scale on the pipe wall must be removed". الخيارات a, b, c تصف أعراض المشكلة (تبريد غير كافٍ)، بينما الخيار (d) يقترح أن المبادل الحراري كان "صغيراً جداً". الحل المقترح في البداية كان "Design and install a larger unit" ولكن التحليل أظهر أن الوحدة الحالية كافية لولا الترسبات (Page 40 point 4: "The new unit need be no larger than the old one"). إذن الحجم الصغير لم يكن هو سبب المشكلة الحقيقي.}
+a) The cold liquid stream was not cooling the hot product stream
+b) The warm product stream was too hot
+c) The refrigeration unit was not cooling the hot liquid stream enough
+d) The heat exchanger was too small for the cold liquid stream
+d
+
+471 AM
+Which of the following should be avoided upon writing the Desired State statement?
+{حسب الصفحة 41: "avoid using ambiguous and vague words or phrases like 'best', 'minimal', 'cheapest', 'within a reasonable time', 'most efficient'".}
+a) ambiguous and vague words
+b) phrases like "best", "minimal", "cheapest", "within a reasonable time", "most efficient"
+c) words that mean different things to different people
+d) All of the listed answer
+d
+
+471 AM
+What important lesson does the story “Seeking Device” highlight?
+{حسب الصفحة 31 (Seeking Advice): القصة تتحدث عن "hotel elevator" واقتراح البواب (doorman) بتركيب مصعد خارجي. الدرس هو أن الأفكار الجيدة تأتي من أي شخص وليس فقط الخبراء. الخيار (b) "creativity and technical knowledge together can solve problems" (knowledge of design techniques + doorman's creativity).}
+a) only experts can solve complex problems
+b) creativity and technical knowledge together can solve problems
+c) hotels should always avoid construction changes
+d) external elevators are not practical solutions
+b
+
+471 AM
+What characteristic best describes George in an organization?
+{حسب الصفحة 32: "George is that individual who has years of experience to draw upon and also has street smarts."}
+a) A new hire learning the ropes
+b) An individual with years of experience and street smarts
+c) A consultant from an external agency
+d) A junior technician assigned to basic tasks
+b
+
+471 AM
+In “Confirm all Allegations”, what did Boxright discover after analyzing the article presented by Courtland?
+{حسب الصفحة 33: "found in the last few pages of the article it was stated that the data would not be expected to apply to industrial-size equipment or processes."}
+a) The data would be applicable to industrial-sized equipment or processes
+b) The data was irrelevant to the case
+c) The data would not be applicable to industrial-sized equipment or processes
+d) The article was incomplete and needed further analysis
+c
+
+471 AM
+What is important to verify when evaluating the reasoning behind a problem statement?
+{حسب الصفحة 35: القائمة تشمل "Are the reasoning and assumptions valid?".}
+a) Whether the person has experience with the issue
+b) Where did the solution originate
+c) Whether the reasoning and assumptions are valid
+d) Whether the problem can be solved quickly
+c
+
+471 AM
+According to Step 4: Confirm all key findings, which of the following is NOT recommended?
+{حسب الصفحة 33: يجب "Challenge assumptions and assertions". الخيار (d) يقترح "Ignore assumptions and accept assertions without question" وهذا عكس المطلوب.}
+a) Verify the correctness of collected information
+b) Cross-check and cross-reference data, facts, and figures
+c) Distinguish between fact and opinion
+d) Ignore assumptions and accept assertions without question
+d
+
+471 AM
+Talk with people familiar with the problem, does not include
+{حسب الصفحة 31: لا يوجد نص ينصح بعدم التحدث للخبراء، بل العكس "Try to find out who the experts in the field are and talk to them". الخيار الذي "لا يتضمنه" المفهوم الصحيح (بناءً على الأسئلة السابقة المشابهة) عادة ما يكون تجاهل المشغلين، ولكن هنا الخيار (a) في هذا النموذج يقول "Find out who knows about the problem" وهذا صحيح. الخيار (b) "When equipment malfunctions, never talk to..." هذا هو التصرف الخاطئ (الذي لا يجب أن نفعله)، وبالتالي هو الجواب للمقصود بـ "does not include" (أي: أي من التصرفات التالية خاطئ).}
+a) Find out who knows about the problem.
+b) When equipment malfunctions, never talk to the operators because they know nothing about it.
+c) Ask penetrating questions by Looking past the obvious
+d) Ask penetrating questions by Challenging the basic premise
+b
+
 471 PM
 In the fifth (5th) block of the McMaster Five-Point Strategy employed by Fogler & LeBlanc, you
 {المرجع صفحة 17 و 18: الخطوة الخامسة هي Evaluate، وهدفها التأكد من أن المشكلة قد حُلت فعلاً.}
@@ -253,6 +432,336 @@ b) the physical, chemical, biological, and social/psychological dimensions
 c) the historical, geographical, political, and emotional/psychological dimensions
 d) the physical, mental, spiritual, and social/emotional dimensions
 d
+
+471 PM
+Based on Albert Einstein: “creative imagination” is required for all of the following except
+{حسب الصفحة 29: الاقتباس يذكر "raise new questions, new possibilities, regard old problems from a new angle". ولا يذكر "mere formulation" كشيء يتطلب خيالاً إبداعياً، بل يقول إن صياغة المشكلة أهم من حلها.}
+a) To raise new questions
+b) new possibilities
+c) to regard old problems from a new angle
+d) to make mere formulation of a problem
+d
+
+471 PM
+What Experienced Problem Solvers DO NOT Say
+{حسب الصفحة 29 (Table 3-1) والشريط الجانبي: هم يقومون بـ "Collect info", "Talk with people", "View problem firsthand". لكنهم لا يتجاهلون الصورة الكبيرة "Look at the big picture".}
+a) Collect and analyze information and data.
+b) Talk with people familiar with the problem.
+c) If at all possible, view the problem first hand.
+d) Do not consider any big picture
+d
+
+471 PM
+View the problem first hand, does not include
+{حسب الصفحة 29 (Table 3-1): "Talk with people" (الخبراء) هي الخطوة 2، بينما "View the problem first hand" هي الخطوة 3. لذلك، الاعتماد على الخبراء لا يندرج تحت المعاينة المباشرة.}
+a) should not rely solely on people interpretations of the situation and problem.
+b) If at all possible, go inspect the problem yourself.
+c) experts are also a rich source
+d) None of the listed answers
+c
+
+471 PM
+Many times you will be given a problem by someone else rather than discovering it yourself. Under these circumstances, it is very important to
+{حسب الصفحة 34: "it is very important that you make sure that the problem you were given reflects the true situation."}
+a) make sure that the problem you were given reflects the true situation.
+b) check and cross reference data, facts, and figures
+c) write down all important pieces of information and spot check others
+d) check assumptions and assertions
+a
+
+471 PM
+Which of the following is not related to “Find out where the problem statement came from”.
+{حسب الصفحة 35: القائمة تشمل الأسئلة في الخيارات a و b و c. الخيار d هو الجواب لأنه ينفي وجود إجابة خاطئة.}
+a) where did the problem originate?
+b) who posed the problem statement in the first place, your supervisor, his/her supervisor, a colleague in your project group, or someone else?
+c) can that person explain the reasoning as to how they arrived at that particular problem statement?
+d) None of the listed answers
+d
+
+471 PM
+The Case of the Dead Fish in the river; (is an example of a case where giving directions to treat the real case rather than discovering the symptoms of the problem could have lead to a costly, unnecessary solution)
+{حسب الصفحة 35: النص الأصلي يقول "treat the symptoms rather than discovering the real cause". العبارة في السؤال معكوسة بشكل غريب، لكن الطالب أجاب "True" وتم احتسابها صحيحة، ربما لوجود خطأ مطبعي في السؤال يقصد به نفس المعنى.}
+a) True
+b) False
+a
+
+471 PM
+Which of the following is related to “Exploring the Problem”
+{حسب الصفحة 38 (Table 3-2): كل الخيارات المذكورة هي خطوات ضمن استكشاف المشكلة.}
+a) identify all available information.
+b) recall or learn pertinent theories and fundamentals.
+c) collect missing information.
+d) all of the listed answers
+d
+
+471 PM
+To be quantitative where possible should not be avoided upon writing the Desired State statement
+{حسب الصفحة 41: "Be quantitative where possible". العبارة "should not be avoided" تعني "should be done" (نفي النفي إثبات)، وهي عبارة صحيحة.}
+a) True
+b) False
+c) Has no relation
+a
+
+471 PM
+What is not true about Duncker Diagram
+{حسب الصفحة 42: الحلول الوظيفية (Functional) والعامة (General) مذكورة، لكن لا يوجد تصنيف يسمى "affordable solutions" في النص.}
+a) its solutions can be classified as general solutions, affordable solutions, and specific solutions
+b) it helps obtain solutions that satisfy the criteria set up by the present state/desired state statements.
+c) general solutions on the left side of it that move from the present state to the desired state
+d) general solutions on the right side that show how to modify the desired state until it corresponds with the present state
+a
+
+471 PM
+What of the following does not match with “evaluating the problem definition”?
+{بناءً على الأسئلة السابقة والسياق: الخيار d يعتبر وصفاً لعملية التقييم، بينما الخيارات الأخرى قد تكون خطوات محددة.}
+a) It satisfies the need to check to make sure the right direction is followed.
+b) It must be done before proceeding further than defining the problem
+c) there is a checklist that can help performing this evaluation
+d) It helps evaluating the goodness of the problem
+d
+
+471 PM
+Based on Albert Einstein: The mere formulation of a …… is far more often essential than its …….
+{حسب الصفحة 29: "The mere formulation of a problem is far more often essential than its solution".}
+a) problem, solution
+b) problem, angle
+c) mere, solution
+d) possibilities, solution
+a
+
+471 PM
+Collect and analyze information and data; does not mean to
+{حسب الصفحة 29: الخيارات a و b و c كلها تعليمات صحيحة ضمن هذه الخطوة، لذا الجواب هو "None of the listed answers".}
+a) learn as much as you can about the problem.
+b) write down or list everything you can think of to describe the problem.
+c) until the problem is well defined, anything might be important.
+d) None of the listed answers
+d
+
+471 PM
+Talk with people familiar with the problem, does not include
+{حسب الصفحة 31: لا يجب أبداً تجاهل المشغلين (operators). النصيحة هي "it is a must to talk to the operators".}
+a) Find out who knows about the problem.
+b) Ask penetrating questions by Looking past the obvious
+c) Ask penetrating questions by Challenging the basic premise
+d) When equipment malfunctions, never talk to the operators because they know nothing about it.
+d
+
+471 PM
+All of the following are related to “confirm all key findings” except
+{حسب الصفحة 33: يجب "Challenge assumptions" وليس افتراض أنها صحيحة (Assume... correct).}
+a) Verify that the information that you collected is correct
+b) Assume that the information that you collected is correct
+c) Cross check and cross reference data, facts, and figures
+d) Search for biases or misrepresentation of facts
+b
+
+471 PM
+Which of the following is not among the problem definition techniques?
+{حسب الصفحة 34: تقنية PERT ليست من تقنيات تعريف المشكلة المذكورة في الفصل.}
+a) Find out where the problem came from
+b) PERT technique
+c) Explore the problem
+d) Present state / desired state and Dunker Diagram
+b
+
+471 PM
+"You can't get there from here?", this statement match with the concept of
+{حسب الصفحة 41: "The Present State/Desired State technique helps us verbalize where we are and where we want to go... How many times have you heard the statement 'You can't get there from here'?"}
+a) the Present State/Desired State Technique
+b) The Pariato principles
+c) The KT analysis
+d) None of the above
+a
+
+471 PM
+“Doing a bit of research into the background of the problem may save you hours”, This can be classified as
+{حسب الصفحة 18: جمع المعلومات وقراءة الأدبيات (literature) جزء أساسي.}
+a) Determine if the problem should be solved.
+b) Continue to gather information and search the literature.
+c) Form simple hypotheses and quickly test them.
+d) Brainstorm potential causes and solution alternatives.
+b
+
+471 PM
+Referring to Duncker Diagram; which of the following match this statement, “do not take into account the feasibility of the solution“?
+{حسب الصفحة 42: الحلول الوظيفية (Functional) تركز على "ما يجب فعله" دون الدخول في تفاصيل التنفيذ المحددة (Specific) التي تراعي الجدوى.}
+a) the general solutions
+b) the functional solutions
+c) the specific solutions
+d) none of the listed answers
+b
+
+471 PM
+Have you distinguished fact from opinion? Who/when this question must be asked
+{حسب الصفحة 33 (Step 4): التمييز بين الحقائق والآراء جزء من تقييم تعريف المشكلة (Confirm findings).}
+a) evaluating the problem
+b) evaluating the problem definition
+c) evaluating the problem solutions
+d) none of the sated answers
+b
+
+471 PM
+Based on Albert Einstein: The solution may be merely a matter of …… or …… skill.
+{حسب الصفحة 29: "...solution, which may be merely a matter of mathematical or experimental skill."}
+a) Mathematical, experimental
+b) Problem, experimental
+c) possibilities, experimental
+d) None of the given answers
+a
+
+471 PM
+The technique that focuses on finding out who initiated the problem and ascertaining the validity of the reasoning used to arrive at the problem statement; is called.
+{حسب الصفحة 34: التقنية تسمى "Finding Out Where the Problem Came From". "Go talk to George" هو عنوان جانبي لقصة، وليس اسم التقنية الرسمي.}
+a) go talk to George
+b) two years after the installation, the process had yet to operate correctly.
+c) they analyzed the procedure from every point of view on paper.
+d) None of the above
+d
+
+471 PM
+The Present State/Desired State technique helps to learn whether the solution goals are consistent with the needs. The best match with underlined words is
+{حسب الصفحة 41: "learn whether the solution goals (Desired State) are consistent with our needs (Present State)."}
+a) desired state , present state.
+b) present state , desired state.
+c) kepener, torege
+d) yesterday, tomorrow
+b
+
+471 PM
+Upon writing the Desired State statement; phrases like "best," "minimal," "cheapest," "within a reasonable time," "most efficient" should be avoided. Why?
+{حسب الصفحة 41: "avoid using ambiguous... words... because these words mean different things to different people."}
+a) because these words mean different things to different people.
+b) because these words have the same impact to all people.
+c) To be quantitative where possible
+d) All of the listed choices
+a
+
+471 PM
+Wait is not true about Duncker Diagram
+{حسب الصفحة 42: "representing the problem on a duncker diagram is a routine..." هي عبارة خاطئة لأنها أداة إبداعية.}
+a) its unique feature is that it points out ways to solve the problem by making it ok not to reach the desired solution.
+b) representing the problem on a duncker diagram is a routine and predictability activity
+c) general solutions on the left side of it that move from the present state to the desired state
+d) general solutions on the right side that show how to modify the desired state until it corresponds with the present state
+b
+
+471 PM
+Establish criteria to Judge the Solution is an activity of .....
+{الخيار الصحيح بناءً على الاختبارات السابقة (رغم عدم وضوح النص المباشر) هو تحديد ما إذا كانت المشكلة تستحق الحل أو تحديد المعايير.}
+a) Determine if the problem should be solved.
+b) Continue to gather information and search the literature.
+c) Form simple hypotheses and quickly test them.
+d) Brainstorm potential causes and solution alternatives.
+a
+
+471 PM
+This last "first step" that closes the first phase of the creative problem-solving process and is really the first step of the second phase of the process is:
+{حسب منهجية الكتاب: الخطوة الانتقالية بين تعريف المشكلة وحلها هي توليد الحلول.}
+a) Determine if the problem should be solved.
+b) Continue to gather information and search the literature.
+c) Form simple hypotheses and quickly test them.
+d) Generating Solutions to Problems
+d
+
+471 PM
+The statement: “the underlying or root problem”; means
+{حسب الصفحة 29: "defining the real problem (sometimes also referred to as the underlying or root problem)".}
+a) understanding and defining the real problem
+b) to make mere formulation of a problem
+c) the first four steps
+d) the information should be properly organized
+a
+
+471 PM
+All of the following are related to “confirm all key findings” except
+{حسب الصفحة 33: يجب التمييز (Distinguish) بين الحقائق والآراء وليس خلطها (Combine).}
+a) Confirm all important pieces of information and spot check others
+b) Distinguish between fact and opinion
+c) Combine facts and opinions
+d) Challenge assumptions and assertions
+c
+
+471 PM
+Which of the following is not among the problem definition techniques?
+{حسب الصفحة 34: التعليمات المعطاة من المشرف هي جزء من دراسة الحالة وليست اسم تقنية.}
+a) Present state / desired state and Dunker Diagram
+b) The instructions given by Stan’s supervisor to solve the perceived problem:
+c) Statement restatement
+d) K.T. Problem analysis
+b
+
+471 PM
+Referring to Duncker Diagram : “Do not worry about speed limit” is stated as one of the
+{حسب الصفحة 42 (الشكل 3-1): هذا مثال على General Solution (جعل عدم الوصول للحالة المطلوبة أمراً مقبولاً).}
+a) the general solutions
+b) the functional solutions
+c) the specific solutions
+d) none of the listed answers
+a
+
+471 PM
+George Quarderer of Dow Chemical Company describes the idea of reinventing the wheel by his statement, "Four to six weeks in the laboratory can save you an hour in the library. ". This can be classified as ………
+{حسب سياق الكتاب: هذا الاقتباس يحث على البحث في المصادر (Literature Search).}
+a) Determine if the problem should be solved.
+b) Form simple hypotheses and quickly test them.
+c) Brainstorm potential causes and solution alternatives
+d) Continue to gather information and search the literature.
+d
+
+471 PM
+The first part of the heuristic of the problem solving is
+{حسب الصفحة 18: المرحلة الأولى هي Define.}
+a) problem definition.
+b) problem generate
+c) decide the course of action
+d) evaluate the solution
+a
+
+471 PM
+Which of the following is related to “Exploring the Problem”
+{حسب الصفحة 38 (Table 3-2): حل نسخة مبسطة (Ballpark) هو الخطوة 4.}
+a) solve a simplified version of the problem to obtain a "ballpark" answer.
+b) brainstorm to guess the answer.
+c) describe or sketch the solution in a qualitative manner or sketch out a pathway that will lead to the solution.
+d) all of the listed answers
+d
+
+471 PM
+Reworking the Present State and Desired State statements until they match …….
+{حسب الصفحة 41: "Reworking... is a technique that increases the probability of arriving at the true problem statement."}
+a) is a technique that increases the probability of arriving at the true problem statement.
+b) wastes time.
+c) strongly recommended by the team sponsor
+d) Is related to Steven Coveys
+a
+
+471 PM
+“Have all the pieces of the problem been identified?” Is a question that must be asked in ….
+{حسب سياق الكتاب: هذا السؤال يطرح عند تقييم تعريف المشكلة.}
+a) evaluating the problem
+b) evaluating the problem definition
+c) evaluating the problem solutions
+d) none of the stated answers
+b
+
+471 PM
+What Experienced Problem Solvers DO NOT Say
+{حسب الصفحة 29 (اقتباس): "Start with an open mind" هو ما يقولونه. العكس "Start with closed mind" هو الخطأ.}
+a) Collect and analyze information and data.
+b) If at all possible, view the problem first hand.
+c) Confirm all findings
+d) Start with closed mind
+d
+
+471 PM
+According to the reading materials, what can seemingly “naive” or “dumb” questions achieve?
+{حسب الصفحة 31: "seemingly naive questions... can produce profound results by challenging established thinking patterns."}
+a) they usually waste time
+b) they can produce profound results by challenging thinking patterns
+c) they confuse experts
+d) they discourage creativity
+b
 
 462
 All of the following are TRUE for a problem-solving heuristic, EXCEPT
@@ -429,6 +938,94 @@ d) Think Win/Win
 e) Seek First to Understand, Then to Be Understood
 a
 
+462
+The problem definition techniques include various aspects as listed below (EXCEPT choose one)
+{حسب الصفحة 34: تقنيات تعريف المشكلة تشمل "Find out where the problem came from", "Explore the problem", "Present State/Desired State", "Duncker Diagram". العصف الذهني (Brainstorming) هو لتوليد الحلول (Chapter 4) وليس لتعريف المشكلة.}
+a) Brainstorm to generate alternative solutions
+b) Find out where the problem came from
+c) Explore the problem
+d) Construct a Duncker Diagram
+e) Use the Present State/Desired State technique
+a
+
+462
+In a Duncker Diagram all the following are true EXCEPT
+{حسب الصفحة 42: مخطط دنكر يسمح بالحلول الوسط (Compromise solutions). العبارة التي تقول "There is no possibility" هي العبارة الخاطئة.}
+a) General solutions are either solutions that move from the Present State to the Desired State or solutions that modify the Desired State until it corresponds to the Current State
+b) Functional solutions do not take into account the feasibility of the solution
+c) Specific solutions are feasible implementations of the functional solutions
+d) Functional solutions deal with what to do, while specific solutions deal with how to do it
+e) There is no possibility for a compromise solution in which both the Present State and the Desired State are moved toward each other until there is a correspondence
+e
+
+462
+A technique used by Experienced Problem Solvers to define the real problem is to rework the Present State and the Desired State statements until
+{حسب الصفحة 41: التقنية تتطلب معالجة كل المخاوف، وجود تطابق بين الحالتين، إزالة الكلمات الغامضة، واستخدام لغة كمية.}
+a) every concern in the Present State statement is addressed in the Desired State statement, and the Desired State statement does not contain solutions to problems that are not in the Present State statement
+b) there is a match between the two statements that gets to the heart of the problem
+c) there is a sharp distinction between the two statements that opens up a variety of solution avenues or alternatives
+d) all ambiguous and vague words or phrases in the Desired State statement are omitted, and, when possible, replaced by quantitatively precise ones
+e) all of the above
+e
+
+462
+Usually, there exist various aspect of problem solving, however, the most difficult aspect of problem solving is
+{حسب الصفحة 29: "Often, the most difficult aspect of problem solving is understanding and defining the real problem".}
+a) becoming aware of the existence of the problem
+b) generating a multitude of alternative solutions
+c) selecting the best alternative solution
+d) understanding and defining the real problem
+e) implementing the chosen solution
+d
+
+462
+In evaluating your problem definition, you must exclude what is extraneous to the definition. The word "extraneous" is essentially similar in meaning to (or indistinguishable in meaning from)
+{حسب سياق تعريف المشكلة (صفحة 29): يجب تحديد ما هو "extraneous" (خارجي/غير ضروري). المرادفات الصحيحة هي external, irrelevant, etc.}
+a) external, irrelevant, unrelated, inessential, superfluous, impertinent, or inappropriate
+b) intrinsic, inherent, essential, basic, fundamental, innate, or built-in
+c) complicated, complex, convoluted, obscure, perplexing, puzzling, or mystifying
+d) amazing, surprising, astonishing, astounding, fabulous, miraculous, or incredible
+e) interior, internal, inner, inside, inward, innermost, or indigenous
+a
+
+462
+There are many steps for exploring the problem include all of the following EXCEPT (choose one)
+{حسب الصفحة 38 (Table 3-2): الخطوات تتضمن Recall theories, Collect information, Solve simplified version, Brainstorm to guess answer. إعداد "Deployment flowchart" ليس من ضمن خطوات استكشاف المشكلة المذكورة في الجدول.}
+a) Brainstorm to guess the answer
+b) Identify all available information
+c) Recall or learn pertinent theories and fundamentals
+d) Prepare a deployment flowchart
+e) Solve a simplified version of the problem
+d
+
+462
+In the case of the Dead Fish (Fogler & LeBlanc), which of the following was TRUE?
+{حسب الصفحة 39: السبب الحقيقي كان الفطريات (fungus) وليس المواد الكيميائية السامة. ارتفاع درجة الحرارة وانخفاض الأكسجين جعل السمك أكثر عرضة للإصابة.}
+a) The toxic discharge from the plant into the river is drifting upstream
+b) It was necessary to design a new waste treatment plant to reduce the toxic waste from the chemical plant
+c) Because of the drought, the water in the river was too low to dilute the chemical waste, which caused the unusual number of dead fish
+d) The water temperature was high, and hence the level of oxygen dissolved in water was low, which made the fish more susceptible to infection by the fungus
+e) The company announced the planning of a new waste treatment facility out of their sincere belief in biodiversity and their genuine respect for wild life
+d
+
+462
+To view the problem firsthand, means
+{حسب الصفحة 32 (Step 3): "Viewing the Problem Firsthand" تعني الذهاب وتفحص المشكلة بنفسك (inspect yourself) وعدم الاعتماد فقط على تفسيرات الآخرين.}
+a) to talk to competent experts who are highly knowledgeable about the problem
+b) to inspect the problem yourself, and to look into its original source directly
+c) to review your design by reworking and refining your model and calculations
+d) none of the above
+b
+
+462
+Out of the various steps used by Experienced Problem Solvers to understand and define the real problem, one step is implied, supported and endorsed by the common saying 'Go Talk to George', namely
+{حسب الصفحة 32: الصندوق الجانبي بعنوان "Go Talk to George" يندرج تحت خطوة التحدث مع الناس الملمين بالمشكلة.}
+a) Collect and analyze information and data
+b) Talk with people familiar with the problem
+c) If at all possible, view the problem firsthand
+d) Determine if the problem should be solved
+b
+
 461
 All of the following are TRUE for a problem-solving heuristic, EXCEPT
 {حسب الصفحة 17: الـ Heuristic هي دليل (road map) وتساعد في تجنب الأخطاء، لكنها ليست قواعد تضمن (guaranteed) الوصول للحل، فهذا تعريف الخوارزمية.}
@@ -572,4 +1169,143 @@ a) Be Proactive
 b) Put First Things First
 c) Seek First to Understand, Then to Be Understood
 d) Synergize
+b
+461
+In the case of the leaking flowmeter, if immediately upon replacement, the flowmeter began to leak again, then whom you would talk to first?
+{حسب الصفحة 32 (Go Talk to George): "The solution that the company adopted was to replace the flowmeter... immediately upon replacement, the flowmeter began to leak. List in order four people you would talk to: the person who installed the meter..."}
+a) Your immediate boss, supervisor, superintendent, or manager
+b) The person who installed the flowmeter
+c) The manufacturer's representative who sold you the flowmeter
+d) The technician who monitors the flowmeter
+b
+
+461
+Which of the following is not one of the first four steps used by experienced problem solvers in defining the problem
+{حسب الصفحة 29 (Table 3-1): الخطوات هي Collect info, Talk with people, View firsthand, Confirm findings. تحديد ما إذا كانت المشكلة يجب حلها (Determine if...) يأتي لاحقاً في Building Blocks.}
+a) collect and analyze information and data
+b) determine if the problem should be solved
+c) if at all possible view the problem first hand
+d) confirm all findings
+b
+
+461
+The First Four Steps of Experienced Problem Solvers include
+{حسب الصفحة 29 (Table 3-1): "Talk with people familiar with the problem" هي الخطوة الثانية.}
+a) Determine if the problem should be solved
+b) Continue to gather information and search the literature
+c) Talk with people familiar with the problem
+c
+
+461
+There are various techniques for defining the real problem discussed in the book include all of the following EXCEPT
+{حسب الصفحة 34: التقنيات تشمل Finding out where problem came from, Exploring, Present/Desired State, Duncker Diagram. مخطط غانت (Gantt Chart) يستخدم في التنفيذ (Implementation).}
+a) Use Gantt Chart and Critical Path Analysis
+b) Construct a Duncker Diagram
+c) Find out where the problem came from
+d) Explore the problem
+a
+
+461
+Often, the most difficult aspect of problem solving is
+{حسب الصفحة 29: "Often, the most difficult aspect of problem solving is understanding and defining the real problem".}
+a) selecting the best alternative solution
+b) understanding and defining the real problem
+c) implementing the chosen solution
+d) becoming aware of the existence of the problem
+b
+
+461
+When Evaluating the Problem Definition you have created you should check that
+{حسب الصفحة 33 و 18: قوائم التقييم تتضمن التأكد من جمع المعلومات، تحديد القيود، وتمييز الحقائق عن الآراء.}
+a) you have distinguished fact from opinion
+b) all the pieces of the problem have been identified
+c) All answers listed here
+d) all the constraints have been identified
+c
+
+461
+It is advisable to treat the symptoms if
+{حسب الصفحة 35: القاعدة هي معالجة الأعراض فقط إذا كان حل المشكلة الحقيقية مستحيلاً. ومع ذلك، في سياق الخيارات المتاحة، الخيار (b) يمثل حالة منطقية لإدارة المخاطر (حل مؤقت أثناء البحث عن الحل الدائم).}
+a) it is possible to save some time and energy by dealing with the symptoms
+b) we need a short-term temporary fix to keep the process operating, while seeking a long-term permanent solution to the real problem
+c) Nothing like that in the reading materials
+b
+
+461
+In a Duncker Diagram all the following are true EXCEPT
+{حسب الصفحة 42: العبارة الخاطئة هنا هي تعريف الحلول المحددة (Specific) بأنها تلك التي تحقق الحالة المطلوبة أو تجعل عدم تحقيقها مقبولاً، لأن هذا التعريف يخص الحلول العامة (General Solutions).}
+a) Functional solutions deal with what to do, while specific solutions deal with how to do it
+b) Specific solutions are either solutions that achieve the Desired State or solutions that make it OK NOT to achieve the Desired State
+c) Functional solutions deal with what to do, while specific solutions deal with how to do it
+d) General solutions are either solutions that move from the Present State to the Desired State or solutions that modify the Desired State until it corresponds to the Current State
+b
+
+461
+Steps for exploring the problem include all of the following EXCEPT
+{حسب الصفحة 38 (Table 3-2): إعداد Deployment flowchart ليس من ضمن خطوات استكشاف المشكلة.}
+a) Identify all available information
+b) Recall or learn pertinent theories and fundamentals
+c) Brainstorm to guess the answer
+d) Prepare a deployment flowchart
+d
+
+461
+Techniques of problem definition include all of the following EXCEPT
+{حسب الصفحة 34: التعرف على العوائق الذهنية (Mental Blocks) هو جزء من توليد الحلول (Chapter 4) وليس تعريف المشكلة.}
+a) Find out where the problem came from
+b) Construct a Duncker Diagram
+c) Recognize Mental Blocks when they appear
+d) Use the Present State/Desired State technique
+c
+
+461
+It is important that the Present State match the Desired State; what does this mean?
+{حسب الصفحة 41: "every concern in the Present State should be addressed in the Desired State... In addition, the Desired State should not contain solutions to problems that are not in the Present State."}
+a) every concern in the Present State is addressed in the Desired State
+b) every concern in the Present State is not addressed in the Desired State (Typo in option b context, usually refers to 'no extra solutions')
+c) Both a and b
+c
+
+461
+In the case of the Dead Fish (Fogler & LeBlanc), all of the following were true EXCEPT
+{حسب الصفحة 39: الافتراض الخاطئ كان ضرورة بناء محطة معالجة جديدة، بينما السبب الحقيقي كان الفطريات.}
+a) The water temperature was high, and hence the level of oxygen dissolved in water was low, which made the fish susceptible to disease
+b) It was necessary to design a new waste treatment plant to reduce the toxic waste from the chemical plant
+c) The toxic waste from the plant was discharged into the river
+d) The company announced the planning of a new waste treatment facility to deflect the negative press and avoid possible lawsuits
+b
+
+461
+The word ""Opinion"" is essentially similar in meaning to (or indistinguishable in meaning from) each of the following words, except
+{في سياق "Distinguish between fact and opinion" (صفحة 33): الكلمة التي لا تشبه الرأي هي الحقيقة (fact).}
+a) fact
+b) Belief
+c) View
+d) Thought
+a
+
+461
+In Duncker diagram; There is no possibility for a compromise solution in which both the Present State and the Desired State are moved toward each other until there is a correspondence
+{حسب الصفحة 42: المخطط يسمح بالحلول الوسط (Compromise).}
+a) Not listed in the reading materials
+b) True
+c) False
+c
+
+461
+Steps for exploring the problem include all of the following EXCEPT
+{حسب الصفحة 38: مراقبة المهام الحرجة (Monitor the progress...) هي خطوة تنفيذية وليست استكشافية.}
+a) Brainstorm to guess the answer
+b) Identify all available information
+c) Monitor the progress of the critical tasks closely
+d) Solve a simplified version of the problem
+c
+
+461
+In a Duncker Diagram all the following are true EXCEPT
+{حسب الصفحة 42: العبارة الخاطئة هي القائلة بعدم وجود إمكانية لحل وسط.}
+a) General solutions are either solutions that move from the Present State to the Desired State or solutions that modify the Desired State until it corresponds to the Current State
+b) There is no possibility for a compromise solution in which both the Present State and the Desired State are moved toward each other until there is a correspondence
+c) Functional solutions do not take into account the feasibility of the solution
+d) Specific solutions are feasible implementations of the functional solutions
 b
