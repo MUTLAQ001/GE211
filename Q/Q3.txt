@@ -1,6 +1,3 @@
-
-Section: 471 AM
-
 471 AM
 Based on Albert Einstein: The mere formulation of a …… is far more often essential than its …….
 {حسب الصفحة 29 (بداية الفصل 3): الاقتباس الموجود في أعلى الصفحة هو: "The mere formulation of a problem is far more often essential than its solution".}
@@ -272,8 +269,6 @@ b) Cross-check and cross-reference data, facts, and figures
 c) Distinguish between fact and opinion
 d) Ignore assumptions and accept assertions without question
 d
-
-Section: 471 PM
 
 471 PM
 In the fifth (5th) block of the McMaster Five-Point Strategy employed by Fogler & LeBlanc, you
@@ -704,8 +699,6 @@ c) evaluating the problem solutions
 d) none of the stated answers
 b
 
-Section: 462
-
 462
 All of the following are TRUE for a problem-solving heuristic, EXCEPT
 {حسب الصفحة 17: الـ Heuristic هي دليل (road map) وليست مجموعة قواعد تضمن (guaranteed) الحل.}
@@ -965,8 +958,6 @@ b) Talk with people familiar with the problem
 c) If at all possible, view the problem firsthand
 d) Determine if the problem should be solved
 b
-
-Section: 461
 
 461
 All of the following are TRUE for a problem-solving heuristic, EXCEPT
