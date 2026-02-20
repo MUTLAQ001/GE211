@@ -11,13 +11,15 @@
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
-:root{--bg-dark:#050505;--color-concept:#ffd700;--color-lab:#00f2ff;--color-record:#ff3e4d;--color-holiday:#ff4757;--color-success:#00e676;--font-body:"Cairo",sans-serif;--font-nums:"Outfit",sans-serif;--transition:0.3s cubic-bezier(0.4, 0, 0.2, 1)}
+:root{--bg-dark:#050505;--color-concept:#ffd700;--color-lab:#00f2ff;--color-record:#ff3e4d;--color-holiday:#ff4757;--color-success:#00e676;--color-purple:#9c27b0;--font-body:"Cairo",sans-serif;--font-nums:"Outfit",sans-serif;--transition:0.3s cubic-bezier(0.4, 0, 0.2, 1)}
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth;scrollbar-width:none}
 ::-webkit-scrollbar{display:none}
 @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 @keyframes pulse-gold{0%{box-shadow:0 0 0 0 rgba(255,215,0,0.4)}70%{box-shadow:0 0 0 10px rgba(255,215,0,0)}100%{box-shadow:0 0 0 0 rgba(255,215,0,0)}}
 @keyframes pulse-cyan-calm{0%{box-shadow:0 0 0 0 rgba(0,242,255,0.4);border-color:rgba(0,242,255,0.5)}70%{box-shadow:0 0 0 10px rgba(0,242,255,0);border-color:rgba(0,242,255,0.3)}100%{box-shadow:0 0 0 0 rgba(0,242,255,0);border-color:rgba(0,242,255,0.5)}}
+@keyframes pulse-orange{0%{box-shadow:0 0 0 0 rgba(255,152,0,0.5)}70%{box-shadow:0 0 0 15px rgba(255,152,0,0)}100%{box-shadow:0 0 0 0 rgba(255,152,0,0)}}
+@keyframes popIn {0% {transform: scale(0.8); opacity: 0;} 100% {transform: scale(1); opacity: 1;}}
 body{font-family:var(--font-body);background-color:var(--bg-dark);color:#fff;direction:rtl;overflow-x:hidden}
 .cosmic-bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-2;background:radial-gradient(circle at 50% 10%,#1a1a2e 0%,#000 100%)}
 .stars{position:absolute;width:100%;height:100%;background-image:radial-gradient(white 1px,transparent 1px);background-size:50px 50px;opacity:0.1}
@@ -42,6 +44,7 @@ body{font-family:var(--font-body);background-color:var(--bg-dark);color:#fff;dir
 .sub-tab-item.active{color:#fff;text-shadow:0 2px 10px rgba(0,0,0,0.5)}
 .sub-tab-item svg{font-size:1.1rem;margin-bottom:-2px}
 .content-area{animation:fadeIn 0.4s ease-out}
+
 .pro-resource-card{display:flex;flex-direction:column;padding:20px;margin-bottom:15px;background:linear-gradient(145deg,rgba(30,30,35,0.6),rgba(20,20,25,0.8));border:1px solid rgba(255,255,255,0.06);border-radius:16px;transition:var(--transition);backdrop-filter:blur(10px);position:relative;overflow:hidden}
 .pro-resource-card:hover{transform:translateY(-3px);box-shadow:0 15px 30px rgba(0,0,0,0.3);border-color:rgba(255,255,255,0.15)}
 .pro-resource-card.pinned-file{background:linear-gradient(145deg,rgba(40,40,30,0.8),rgba(20,20,25,0.9));border:1px solid rgba(255,215,0,0.3);animation:pulse-gold 3s infinite}
@@ -62,10 +65,15 @@ body{font-family:var(--font-body);background-color:var(--bg-dark);color:#fff;dir
 .week-header::before,.week-header::after{content:'';height:1px;flex:1;background:linear-gradient(90deg,transparent,rgba(0,242,255,0.3),transparent)}
 .section-separator{margin:20px 0 10px;padding-left:10px;color:#888;font-size:0.9rem;font-weight:700;display:flex;align-items:center;gap:10px}
 .section-separator::after{content:'';flex:1;height:1px;background:rgba(255,255,255,0.1)}
+
 .quiz-active-container{background:#121215;border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:24px;animation:fadeIn 0.5s ease;position:relative;box-shadow:0 20px 50px rgba(0,0,0,0.4)}
-.quiz-top-bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.quiz-top-bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px; flex-wrap: wrap; gap: 10px;}
 .quiz-progress-bar{width:100%;height:6px;background:rgba(255,255,255,0.1);border-radius:10px;margin-bottom:25px;overflow:hidden}
 .quiz-progress-fill{height:100%;background:linear-gradient(90deg,var(--color-concept),var(--color-lab));border-radius:10px;transition:width 0.4s cubic-bezier(0.4, 0, 0.2, 1)}
+
+.exam-timer { background: rgba(255,71,87,0.1); border: 1px solid rgba(255,71,87,0.3); color: #ff6b81; padding: 5px 12px; border-radius: 20px; font-family: var(--font-nums); font-weight: bold; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; animation: pulse-border 2s infinite; }
+.exam-timer.warning { background: rgba(255,71,87,0.8); color: #fff; animation: pulse-gold 1s infinite; }
+
 .auto-advance-wrapper{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.05);padding:5px 10px;border-radius:20px;border:1px solid rgba(255,255,255,0.1)}
 .toggle-switch{width:36px;height:20px;background:#333;border-radius:20px;position:relative;cursor:pointer;transition:0.3s}
 .toggle-switch.on{background:var(--color-success)}
@@ -87,11 +95,14 @@ body{font-family:var(--font-body);background-color:var(--bg-dark);color:#fff;dir
 .quiz-nav-btn:hover{transform:translateY(-2px);box-shadow:0 5px 15px rgba(255,255,255,0.2)}
 .quiz-nav-btn.secondary{background:transparent;color:#888;border:1px solid rgba(255,255,255,0.1)}
 .quiz-nav-btn.secondary:hover{color:#fff;border-color:#fff;background:transparent}
-.group-select-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:10px;margin-bottom:20px}
-.group-btn{padding:15px 10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;border-radius:12px;font-weight:700;cursor:pointer;transition:var(--transition);text-align:center}
+
+.group-select-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;margin-bottom:20px}
+.group-btn{padding:15px 10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;border-radius:12px;font-weight:700;cursor:pointer;transition:var(--transition);text-align:center; display:flex; flex-direction:column; align-items:center; gap:5px;}
 .group-btn:hover{background:var(--color-lab);color:#000;border-color:var(--color-lab);box-shadow:0 0 15px rgba(0,242,255,0.3)}
-.group-btn.all-btn{grid-column:1/-1;background:linear-gradient(90deg,var(--color-concept),var(--color-lab));color:#000;border:none}
-.group-title{text-align:center;margin-bottom:20px;color:#ccc}
+.group-btn.all-btn{grid-column:1/-1;background:linear-gradient(90deg,var(--color-concept),var(--color-lab));color:#000;border:none; flex-direction: row; justify-content: center;}
+.group-btn.random-btn{grid-column:1/-1;background:linear-gradient(135deg, #ff9800, #f44336);color:#fff;border:none; animation:pulse-orange 3s infinite; flex-direction: row; justify-content: center;}
+.group-btn.random-btn:hover{transform: scale(1.02); box-shadow: 0 10px 25px rgba(255,152,0,0.4);}
+
 .beautiful-player-card{background:linear-gradient(135deg,rgba(20,20,25,0.95),rgba(30,30,40,0.8));border:1px solid rgba(255,255,255,0.08);border-radius:18px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,0.5);transition:0.3s;position:relative;padding:15px;margin-bottom:15px}
 .beautiful-player-card:hover{border-color:var(--color-record);box-shadow:0 15px 50px rgba(255,62,77,0.15)}
 .player-info-section{display:flex;align-items:center;gap:15px;margin-bottom:12px}
@@ -155,7 +166,7 @@ body{font-family:var(--font-body);background-color:var(--bg-dark);color:#fff;dir
 .missed-sub{font-size:0.8rem;color:#666;margin-top:3px}
 .missed-btn.active .missed-title{color:#ff4757}
 .modal-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);backdrop-filter:blur(8px);z-index:1000;display:flex;justify-content:center;align-items:center;padding:20px}
-.modal-content{background:#121215;width:100%;max-width:400px;border-radius:24px;border:1px solid rgba(255,255,255,0.1);padding:30px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.6);animation:fadeIn 0.3s ease}
+.modal-content{background:#121215;width:100%;max-width:400px;border-radius:24px;border:1px solid rgba(255,255,255,0.1);padding:30px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.6);animation:fadeIn 0.3s ease; max-height: 90vh; overflow-y: auto;}
 .modal-title{text-align:center;font-size:1.3rem;margin-bottom:25px;font-weight:800;color:#fff}
 .modal-close{position:absolute;top:15px;left:15px;background:none;border:none;color:#888;font-size:1.5rem;cursor:pointer}
 .role-row{display:flex;align-items:center;justify-content:space-between;padding:12px;background:rgba(255,255,255,0.03);border-radius:10px;margin-bottom:8px}
@@ -194,13 +205,15 @@ body{font-family:var(--font-body);background-color:var(--bg-dark);color:#fff;dir
 .ans-row.wrong {background: rgba(255,71,87,0.15); color: #ff6b81; border: 1px solid rgba(255,71,87,0.3);}
 .ans-row.correct {background: rgba(0,230,118,0.15); color: #00e676; border: 1px solid rgba(0,230,118,0.3);}
 .explanation-box {margin-top: 10px; padding: 10px; background: rgba(255,215,0,0.1); border-right: 3px solid var(--color-concept); color: #ddd; font-size: 0.9rem; line-height: 1.5;}
+
+.trophy-icon {font-size: 4rem; margin-bottom: 10px; animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;}
 </style>
 </head>
 <body>
 <div class="cosmic-bg"><div class="stars"></div></div>
 <div id="root"></div>
 <script type="text/babel">
-const { useState, useEffect, useMemo } = React;
+const { useState, useEffect, useMemo, useRef } = React;
 const Icons = {
 Concept: ()=><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>,
 Lab: ()=><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M10 2v7.31"/><path d="M14 2v7.31"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/></svg>,
@@ -217,37 +230,42 @@ Info: ()=><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="
 User: ()=><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>,
 ChevronDown: ()=><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="6 9 12 15 18 9"/></svg>,
 ChevronUp: ()=><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="18 15 12 9 6 15"/></svg>,
-Mic: ()=><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+Mic: ()=><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>,
+Shuffle: ()=><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>,
+Trophy: ()=><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
 };
+
 const fileResources = {
 'C1':'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgBsZMm8IgCRTqhDX_ANa2pmAckD8u73ILSfXhTbOFK5WPE?e=ZCzoK2',
 'C2':'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgDn7UcbYTPtRpkJNVFch1yeAT37pqOezgtg554yCLiHyLM?e=pIf5yU',
 'C3':'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgCdZ7NzomSyS5Ln0n7uXkYWAfOukPzN3C6CyznIYP1DiL0?e=3H9PoD',
 'L1':'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgDL-fpADYWmSaQESGlldC7WAZc9DHkFJus3G_DSoGF5J88?e=lwgE7y',
 'L2':'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgDZbZacOjuLTKee1FHuo14WAb0xq1DGJbTPUe4Qs_DCzCY?e=VGKNzC',
+'L3':'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgCyjHZA6hLHToQraLPdLicNAVrGekTk211W5xMrSfa5vjw?e=Zrro6Y',
 'FDM':'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgCEkYAUr-F-TLUsEgwkrnb0AeUxpPv7XtflM9LuOicGtzA?e=acJxqo',
 'Checklist':'https://quedusa-my.sharepoint.com/:b:/g/personal/aahmad_qu_edu_sa/IQB3UVfE4DSRSa2bQK5VDpFEAdASYot8Je77AvHZBfEz7E8?e=yUp8LN',
 'PTW':'https://drive.google.com/file/d/1_6Rjs49XUgO-s8Fa94hldFsi03XyBL3j/view?usp=drivesdk'
 };
+
 const sessionDetails = {
 'C2-1':{title:{en:'Quiz #1',ar:'كويز 1'},desc:{en:'Quiz #1: First Day materials + Blue Workbook (J49-J56).',ar:'كويز 1: مواد اليوم الأول + كتاب العمل الأزرق (J49-J56).'}},
 'C2-2':{title:{en:'Submit C1',ar:'تسليم C1'},desc:{en:'Assignment C1 Due: Engineering the Profession.',ar:'تسليم واجب C1: مهنة الهندسة.'}},
 'C2-3':{title:{en:'Quiz #2',ar:'كويز 2'},desc:{en:'Quiz #2: SCPS Ch1 (p1-3) + Workbook B (B5-B10) & E (E1-E12).',ar:'كويز 2: الفصل 1 (ص 1-3) + الأقسام B و E من كتاب العمل.'}},
 'C3-1':{title:{en:'Quiz #3',ar:'كويز 3'},desc:{en:'Quiz #3: SCPS Ch2 (2.3, 2.5) + Ch3 (p29 to 3.2C).',ar:'كويز 3: الفصل 2 + الفصل 3 (من ص 29 إلى نهاية 3.2C).'}},
 'C3-3':{title:{en:'Quiz #4',ar:'كويز 4'},desc:{en:'Quiz #4: SCPS Ch4 (p61 to end of 4.3B).',ar:'كويز 4: الفصل 4 (ص 61 إلى نهاية 4.3B).'}},
-'C4-1':{title:{en:'Quiz #5',ar:'كويز 5'},desc:{en:'Quiz #5: SCPS Ch3 (3.2D to end).',ar:'كويز 5: الفصل 3 (من 3.2D للنهاية).'}},
+'L3-1':{title:{en:'Q1 Makeup + L1 & L2',ar:'إعادة Q1 + تسليم L1, L2'},desc:{en:'Quiz-1 (correction/makeup first 10 minutes) + Assigs L-1 + L-2 (post card)',ar:'إعادة وتصحيح كويز 1 (أول 10 دقائق) + تسليم L-1 و L-2'}},
+'L3-3':{title:{en:'Midterms / L3-3',ar:'أسبوع الميدتيرم / L3-3'},desc:{en:'Will be announced based on the MT-timetable',ar:'حسب ما يقرره جدول الاختبارات النصفية'}},
+'L3-2':{title:{en:'With all associative',ar:'مع جميع المتعلقات (عودة)'},desc:{en:'First meeting after Ramadan (With all associative)',ar:'أول لقاء بعد رمضان'}},
+'C4-1':{title:{en:'With all associative',ar:'مع جميع المتعلقات'},desc:{en:'Second meeting after Ramadan',ar:'اللقاء الثاني بعد رمضان'}},
 'C4-3':{title:{en:'Quiz #6',ar:'كويز 6'},desc:{en:'Quiz #6: SCPS Ch5 until end of p102.',ar:'كويز 6: الفصل 5 حتى نهاية ص 102.'}},
 'C5-1':{title:{en:'Quiz #7',ar:'كويز 7'},desc:{en:'Quiz #7: SCPS Ch5 (p103 to end) + Exxon Valdez.',ar:'كويز 7: الفصل 5 (ص 103 للنهاية) + مشكلة Exxon Valdez.'}},
 'C5-3':{title:{en:'Quiz #8',ar:'كويز 8'},desc:{en:'Quiz #8: SCPS Ch6 until end of 6.4.',ar:'كويز 8: الفصل 6 حتى نهاية 6.4.'}},
 'C6-1':{title:{en:'Quiz #9',ar:'كويز 9'},desc:{en:'Quiz #9: SCPS Ch6 (6.5 to end).',ar:'كويز 9: الفصل 6 (من 6.5 للنهاية).'}},
 'C6-2':{title:{en:'Makeup Q6+Q7',ar:'إعادة كويز 6+7'},desc:{en:'Correction/Makeup for Quiz 6 and Quiz 7.',ar:'فرصة إعادة أو تصحيح للكويز رقم 6 و 7.'}},
 'C6-3':{title:{en:'Quiz #10',ar:'كويز 10'},desc:{en:'Quiz #10: All of SCPS Ch7.',ar:'كويز 10: كامل الفصل 7.'}},
-'L1-3':{title:{en:'Teammate Interview',ar:'مقابلة الزملاء'},desc:{en:'Submission: L-1 Teammate Interview (Hard copy).',ar:'تسليم L-1 Teammate Interview (ورقي).'}},
 'L2-1':{title:{en:'L2 Draft',ar:'مسودة L2'},desc:{en:'L-2 Setting Team Norms (Step 1) - Draft only.',ar:'تسليم L-2 Setting Team Norms (Step 1) - مسودة.'}},
 'L2-2':{title:{en:'L5 Checks',ar:'فحص L5'},desc:{en:'L-5 Team Process Checks (Checklist + forms).',ar:'L-5 Team Process Checks (Checklist + forms).'}},
 'L2-3':{title:{en:'Zeroth Notebook',ar:'دفتر Zeroth'},desc:{en:'Submission: L-3-0th Team’s Design Notebook (Zeroth).',ar:'تسليم L-3-0th Team’s Design Notebook (ورقي).'}},
-'L3-1':{title:{en:'Submit L1+L2 | Makeup Q1',ar:'تسليم L1+L2 | إعادة Q1'},desc:{en:'Final submission for L-1 & L-2. Makeup Quiz 1.',ar:'تسليم نهائي L-1 و L-2. إعادة كويز 1.'}},
-'L3-2':{title:{en:'Makeup Q2',ar:'إعادة Q2'},desc:{en:'Makeup Quiz 2.',ar:'إعادة كويز 2.'}},
 'L4-1':{title:{en:'L4-a + L2 Final',ar:'L4-a + L2 تسليم'},desc:{en:'Presentation (a) + DNB 1st assessment. L-2 Final.',ar:'عرض (a) + التقييم الأول للدفتر. تسليم نهائي L-2.'}},
 'L4-2':{title:{en:'Submit L4-b | Makeup Q3',ar:'تسليم L4-b | إعادة Q3'},desc:{en:'Presentation (b) + DNB 2nd assessment. Makeup Quiz 3.',ar:'عرض (b) + التقييم الثاني للدفتر. إعادة كويز 3.'}},
 'L4-3':{title:{en:'Makeup Q4',ar:'إعادة Q4'},desc:{en:'Makeup Quiz 4.',ar:'إعادة كويز 4.'}},
@@ -257,40 +275,70 @@ const sessionDetails = {
 'L6-2':{title:{en:'Makeup Q9',ar:'إعادة Q9'},desc:{en:'Makeup Quiz 9.',ar:'إعادة كويز 9.'}},
 'L6-3':{title:{en:'Submit L4-e | Makeup Q10',ar:'تسليم L4-e | إعادة Q10'},desc:{en:'Final Submission: L-3-final + DNB. Makeup Quiz 10.',ar:'تسليم نهائي للمشروع والملفات. إعادة كويز 10.'}}
 };
+
 const generateAllSessions = () => {
-const startDate = new Date('2026-01-22'), holidays = [{ start: '2026-03-22', end: '2026-03-26', name: "إجازة عيد الفطر" }];
-const overrides = {'2026-02-10':{id:'L2-1',type:'lab'},'2026-02-12':{id:'L2-3',type:'lab'},'2026-02-15':{id:'C2-3',type:'concept'},'2026-02-17':{id:'L2-2',type:'lab'},'2026-02-19':{id:'C3-1',type:'concept'}};
-let list = [], curr = new Date(startDate), type='concept', count=0, cycles={concept:1, lab:1}, safety=0;
-while(cycles.concept <= 10 && safety < 150) {
-let d = curr.getDay();
-if(d===0||d===2||d===4) {
-let dateStr = curr.toISOString().split('T')[0], isHol = holidays.find(h => dateStr >= h.start && dateStr <= h.end);
-if(isHol) list.push({type:'holiday', date:new Date(curr), id:'OFF', topic:isHol.name});
-else {
-if(cycles[type]>6) break;
-let cId = `${type==='concept'?'C':'L'}${cycles[type]}-${count+1}`, cType = type;
-if(overrides[dateStr]){ cId = overrides[dateStr].id; cType = overrides[dateStr].type; }
-list.push({ type: cType, date:new Date(curr), id: cId });
-count++;
-if(count>=3) { cycles[type]++; count=0; type = type==='concept'?'lab':'concept'; }
-}
-}
-curr.setDate(curr.getDate()+1); safety++;
-}
-return list;
+    const explicitSchedule = [
+        { date: '2026-01-22', id: 'C1-1', type: 'concept' },
+        { date: '2026-01-25', id: 'C1-2', type: 'concept' },
+        { date: '2026-01-27', id: 'C1-3', type: 'concept' },
+        { date: '2026-01-29', id: 'L1-1', type: 'lab' },
+        { date: '2026-02-01', id: 'L1-2', type: 'lab' },
+        { date: '2026-02-03', id: 'L1-3', type: 'lab' },
+        { date: '2026-02-05', id: 'C2-1', type: 'concept' },
+        { date: '2026-02-08', id: 'C2-2', type: 'concept' },
+        { date: '2026-02-10', id: 'L2-1', type: 'lab' },
+        { date: '2026-02-12', id: 'L2-3', type: 'lab' },
+        { date: '2026-02-15', id: 'C2-3', type: 'concept' },
+        { date: '2026-02-17', id: 'L2-2', type: 'lab' },
+        { date: '2026-02-19', id: 'C3-1', type: 'concept' },
+        { date: '2026-02-22', id: 'OFF', type: 'holiday', topic: 'محاضرة ملغية (C-3-2 Canceled)' },
+        { date: '2026-02-24', id: 'C3-3', type: 'concept' },
+        { date: '2026-02-26', id: 'L3-1', type: 'lab' },
+        { date: '2026-03-05', id: 'L3-3', type: 'lab', multiDates: ['2026-03-01', '2026-03-03', '2026-03-05'] },
+        { date: '2026-03-08', id: 'OFF', type: 'holiday', topic: 'إجازة رمضان وعيد الفطر (تستمر حتى 26 مارس)' },
+        { date: '2026-03-29', id: 'L3-2', type: 'lab' },
+        { date: '2026-03-31', id: 'C4-1', type: 'concept' },
+        { date: '2026-04-02', id: 'C4-2', type: 'concept' },
+        { date: '2026-04-05', id: 'C4-3', type: 'concept' },
+        { date: '2026-04-07', id: 'L4-1', type: 'lab' },
+        { date: '2026-04-09', id: 'L4-2', type: 'lab' },
+        { date: '2026-04-12', id: 'L4-3', type: 'lab' },
+        { date: '2026-04-14', id: 'C5-1', type: 'concept' },
+        { date: '2026-04-16', id: 'C5-2', type: 'concept' },
+        { date: '2026-04-19', id: 'C5-3', type: 'concept' },
+        { date: '2026-04-21', id: 'L5-1', type: 'lab' },
+        { date: '2026-04-23', id: 'L5-2', type: 'lab' },
+        { date: '2026-04-26', id: 'L5-3', type: 'lab' },
+        { date: '2026-04-28', id: 'C6-1', type: 'concept' },
+        { date: '2026-04-30', id: 'C6-2', type: 'concept' },
+        { date: '2026-05-03', id: 'C6-3', type: 'concept' },
+        { date: '2026-05-05', id: 'L6-1', type: 'lab' },
+        { date: '2026-05-07', id: 'L6-2', type: 'lab' },
+        { date: '2026-05-10', id: 'L6-3', type: 'lab' }
+    ];
+    return explicitSchedule.map((s, i) => ({ 
+        ...s, 
+        date: new Date(s.date), 
+        multiDatesObj: s.multiDates ? s.multiDates.map(d => new Date(d)) : null,
+        idx: i 
+    }));
 };
+
 const AudioPlayer = ({ fileName, title }) => (
 <div className="beautiful-player-card">
 <div className="player-info-section"><div className="vinyl-icon"><Icons.Mic/></div><div className="player-text"><h3>{title}</h3></div></div>
 <audio controls className="custom-html5-audio" controlsList="nodownload"><source src={`https://mutlaq001.github.io/GE211/audio/${fileName}.m4a`} type="audio/mp4"/></audio>
 </div>
 );
+
 const InteractiveQuiz = ({ url, onClose, onFinish, reviewData }) => {
 const [questions, setQuestions] = useState([]), [currentQ, setCurrentQ] = useState(0), [score, setScore] = useState(0);
 const [showScore, setShowScore] = useState(false), [selectedOption, setSelectedOption] = useState(null), [autoAdvance, setAutoAdvance] = useState(false);
 const [allQ, setAllQ] = useState([]), [groups, setGroups] = useState([]), [selectedGroup, setSelectedGroup] = useState(null), [loading, setLoading] = useState(true);
 const [userAnswers, setUserAnswers] = useState({});
 const [isReview, setIsReview] = useState(false);
+const [timeLeft, setTimeLeft] = useState(null);
+
 useEffect(() => {
 if(!url) return;
 fetch(url).then(r=>r.text()).then(text => {
@@ -315,9 +363,42 @@ if(reviewData) {
 }
 });
 }, [url, reviewData]);
-const start = (g) => { setQuestions(g==='ALL'?allQ:allQ.filter(x=>x.group===g)); setSelectedGroup(g); setCurrentQ(0); setScore(0); setShowScore(false); setUserAnswers({}); setIsReview(false); };
+
+useEffect(() => {
+    if (timeLeft === null || showScore || selectedGroup === null) return;
+    if (timeLeft === 0) {
+        setShowScore(true);
+        if (onFinish) onFinish(userAnswers);
+        return;
+    }
+    const timerId = setInterval(() => setTimeLeft(t => t - 1), 1000);
+    return () => clearInterval(timerId);
+}, [timeLeft, showScore, selectedGroup]);
+
+const formatTime = (seconds) => {
+    const m = Math.floor(seconds / 60).toString().padStart(2, '0');
+    const s = (seconds % 60).toString().padStart(2, '0');
+    return `${m}:${s}`;
+};
+
+const start = (g) => { 
+    setQuestions(g==='ALL'?allQ:allQ.filter(x=>x.group===g)); 
+    setSelectedGroup(g); setCurrentQ(0); setScore(0); setShowScore(false); setUserAnswers({}); setIsReview(false); 
+    setTimeLeft(null);
+};
+
+const startRandomQuiz = () => {
+    const shuffled = [...allQ].sort(() => 0.5 - Math.random());
+    const selected = shuffled.slice(0, Math.min(10, shuffled.length));
+    setQuestions(selected);
+    setSelectedGroup('اختبار سريع (10 أسئلة)');
+    setCurrentQ(0); setScore(0); setShowScore(false); setUserAnswers({}); setIsReview(false);
+    setTimeLeft(10 * 60);
+};
+
 const next = () => { if(currentQ<questions.length-1){setCurrentQ(c=>c+1);setSelectedOption(null);}else { setShowScore(true); if(onFinish) onFinish(userAnswers); } };
 const handle = (l) => { if(selectedOption)return; setSelectedOption(l); const newAns = {...userAnswers, [questions[currentQ].id]: l}; setUserAnswers(newAns); if(l===questions[currentQ].answer)setScore(s=>s+1); if(autoAdvance)setTimeout(next,1000); };
+
 if(loading) return <div className="quiz-active-container" style={{textAlign:'center'}}>جاري التحميل...</div>;
 if(isReview) return (
 <div className="quiz-active-container">
@@ -333,23 +414,39 @@ if(isReview) return (
 <button className="quiz-nav-btn secondary" onClick={onClose} style={{width:'100%',justifyContent:'center'}}>إغلاق المراجعة</button>
 </div>
 );
+
 if(!selectedGroup) return (
 <div className="quiz-active-container">
-<div className="quiz-top-bar"><h2 style={{margin:0,fontSize:'1.2rem'}}>اختر المجموعة</h2><button className="quiz-nav-btn secondary" onClick={onClose} style={{padding:'5px 10px'}}>إغلاق</button></div>
-<div className="group-select-grid"><button className="group-btn all-btn" onClick={()=>start('ALL')}>الكل ({allQ.length})</button>{groups.map((g,i)=><button key={i} className="group-btn" onClick={()=>start(g)}>{g}</button>)}</div>
+<div className="quiz-top-bar"><h2 style={{margin:0,fontSize:'1.2rem'}}>اختر المجموعة أو ابدأ تحدياً</h2><button className="quiz-nav-btn secondary" onClick={onClose} style={{padding:'5px 10px'}}>إغلاق</button></div>
+<div className="group-select-grid">
+    <button className="group-btn random-btn" onClick={startRandomQuiz}><Icons.Shuffle style={{fontSize:'1.3rem'}}/> اختبار سريع عشوائي (10 أسئلة)</button>
+    <button className="group-btn all-btn" onClick={()=>start('ALL')}>الكل ({allQ.length})</button>
+    {groups.map((g,i)=><button key={i} className="group-btn" onClick={()=>start(g)}><span>{g}</span></button>)}
+</div>
 </div>
 );
-if(showScore) return (
-<div className="quiz-active-container" style={{textAlign:'center'}}>
-<h2 style={{fontSize:'2rem'}}>النتيجة</h2><div style={{fontSize:'3rem',color:score>=questions.length/2?'#00e676':'#ff4757'}}>{score}/{questions.length}</div>
-<button className="save-btn-new" onClick={()=>{ onFinish(userAnswers); onClose(); }}>إنهاء وحفظ النتيجة</button>
-</div>
-);
+
+if(showScore) {
+    const isPerfect = score === questions.length;
+    return (
+    <div className="quiz-active-container" style={{textAlign:'center'}}>
+    {isPerfect && <div className="trophy-icon"><Icons.Trophy style={{color:'var(--color-concept)'}}/></div>}
+    <h2 style={{fontSize:'2rem', margin:'10px 0'}}>النتيجة</h2>
+    <div style={{fontSize:'3.5rem',color:isPerfect?'#ffd700':(score>=questions.length/2?'#00e676':'#ff4757'), fontWeight:'900', fontFamily:'var(--font-nums)'}}>{score}/{questions.length}</div>
+    {isPerfect && <p style={{color:'#ffd700', marginBottom:'20px'}}>عمل رائع! أداء مثالي 🌟</p>}
+    <button className="save-btn-new" onClick={()=>{ onFinish(userAnswers); onClose(); }} style={{marginTop: '20px'}}>إنهاء وحفظ النتيجة</button>
+    </div>
+    );
+}
+
 const q=questions[currentQ];
 return (
 <div className="quiz-active-container">
-<div className="quiz-top-bar"><div className="quiz-q-counter">{selectedGroup} | {currentQ+1}/{questions.length}</div>
-<div className="auto-advance-wrapper" onClick={()=>setAutoAdvance(!autoAdvance)}><span style={{fontSize:'0.8rem'}}>تلقائي</span><div className={`toggle-switch ${autoAdvance?'on':''}`}><div className="toggle-knob"/></div></div></div>
+<div className="quiz-top-bar">
+    <div className="quiz-q-counter">{selectedGroup} | {currentQ+1}/{questions.length}</div>
+    {timeLeft !== null && <div className={`exam-timer ${timeLeft < 60 ? 'warning' : ''}`}><Icons.Clock/> {formatTime(timeLeft)}</div>}
+    <div className="auto-advance-wrapper" onClick={()=>setAutoAdvance(!autoAdvance)}><span style={{fontSize:'0.8rem'}}>تلقائي</span><div className={`toggle-switch ${autoAdvance?'on':''}`}><div className="toggle-knob"/></div></div>
+</div>
 <div className="quiz-progress-bar"><div className="quiz-progress-fill" style={{width:`${((currentQ+1)/questions.length)*100}%`}}/></div>
 <div className="quiz-question-text" dir="ltr">{q.text}</div>
 <div className="quiz-options-grid">{q.options.map((o,i)=><button key={i} className={`quiz-option-btn ${selectedOption?(o.letter===q.answer?'correct':(o.letter===selectedOption?'wrong':'')):''} ${selectedOption===o.letter?'selected':''}`} onClick={()=>handle(o.letter)} disabled={!!selectedOption} dir="ltr"><div className="option-letter">{o.letter}</div><div className="option-text">{o.text}</div></button>)}</div>
@@ -357,51 +454,37 @@ return (
 </div>
 );
 };
+
 const ContentView = () => {
 const [activeIdx, setActiveIdx] = useState(1), [activeQuizUrl, setActiveQuizUrl] = useState(null), [showArchived, setShowArchived] = useState(false), [expandedRecs, setExpandedRecs] = useState({});
 const [expandedArchives, setExpandedArchives] = useState({});
 const [quizHistory, setQuizHistory] = useState({});
 const [showCompletedQuizzes, setShowCompletedQuizzes] = useState(false);
 const [reviewUrl, setReviewUrl] = useState(null);
+
 const generatedSessions = useMemo(generateAllSessions, []);
 const isPast = (id) => { if(!id)return false; const ss=generatedSessions.filter(s=>s.id.startsWith(id)); if(!ss.length)return false; return ss[ss.length-1].date.getTime() < new Date().setHours(0,0,0,0); };
-const quizzesCompleted = [
-{
-title: 'Quiz #1',
-links: [
-{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1EcZ616WFuW4JZ8m8CzGSnghMflKT9Wkr/view?usp=sharing' },
-{ name: 'بدء الكويز', url: 'https://mutlaq001.github.io/GE211/Q/Q1.txt', interactive: true }
-]
-},
-{
-title: 'Quiz #2',
-links: [
-{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1JAcDiYJk31kubIPmANB3skVZj6SOqQm6/view?usp=sharing' },
-{ name: 'ملف الأسئلة', url: 'https://drive.google.com/file/d/1LgxUS7N4Z59frC7hj84k2hvhRPjsXvxr/view?usp=sharing' },
-{ name: 'السلايدات', url: 'https://drive.google.com/file/d/1nQbOjeagZvdI0uCUNt2sYG0vF-azqF4_/view?usp=sharing' },
-{ name: 'بدء الكويز', url: 'https://mutlaq001.github.io/GE211/Q/Q2.txt', interactive: true }
-]
-}
+
+const allQuizzesData = [
+    { sessionId: 'C2-1', title: 'Quiz #1', links: [{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1EcZ616WFuW4JZ8m8CzGSnghMflKT9Wkr/view?usp=sharing' }, { name: 'بدء الكويز', url: 'https://mutlaq001.github.io/GE211/Q/Q1.txt', interactive: true }] },
+    { sessionId: 'C2-3', title: 'Quiz #2', links: [{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1JAcDiYJk31kubIPmANB3skVZj6SOqQm6/view?usp=sharing' }, { name: 'ملف الأسئلة', url: 'https://drive.google.com/file/d/1LgxUS7N4Z59frC7hj84k2hvhRPjsXvxr/view?usp=sharing' }, { name: 'السلايدات', url: 'https://drive.google.com/file/d/1nQbOjeagZvdI0uCUNt2sYG0vF-azqF4_/view?usp=sharing' }, { name: 'بدء الكويز', url: 'https://mutlaq001.github.io/GE211/Q/Q2.txt', interactive: true }] },
+    { sessionId: 'C3-1', title: 'Quiz #3', links: [{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1MW4Dc0Mp_M7U0YZ9aAV95a4w5GfT8uTH/view?usp=drivesdk' }, { name: 'ملف الأسئلة', url: 'https://drive.google.com/file/d/1N7ZXuC7Vb2mUjoEIpxRK31XPRVQv-ECL/view?usp=sharing' }, { name: 'السلايدات', url: 'https://drive.google.com/file/d/19_EJAKf4FLjqyheDHaMCo7JFcOS5gL1_/view?usp=sharing' }, { name: 'التجميعات', url: 'https://drive.google.com/file/d/1BmHRYKIs9QzQcNEM29tXbtF3ncwL5xdH/view?usp=sharing' }, { name: 'بدء الكويز', url: 'https://mutlaq001.github.io/GE211/Q/Q3.txt', interactive: true }] },
+    { sessionId: 'C3-3', title: 'Quiz #4', links: [
+        { name: 'ملف الكويز', url: 'https://drive.google.com/file/d/11S14VVqqInQ8Ry2lzjYam7DVdMT4Df6G/view?usp=drivesdk' },
+        { name: 'السلايدات', url: 'https://drive.google.com/file/d/1_Ckf7Qicsf0hwyFPfglBicGm_xvzZ1ZU/view?usp=sharing' },
+        { name: 'ملف الأسئلة', url: 'https://drive.google.com/file/d/1XDcFLere-67l_EZvb-DkOmtzbYrm2Xlg/view?usp=sharing' },
+        { name: 'التجميعات', url: 'https://drive.google.com/file/d/14ycWZDq1Ouqo3xhv0HxNj6TMfEoM1ESM/view?usp=sharing' },
+        { name: 'منوع', url: 'https://drive.google.com/drive/folders/1StvHLT99C3xcwegqK7aqdZYj_ru8A5bg?usp=sharing' },
+        { name: 'بدء الكويز', url: 'https://mutlaq001.github.io/GE211/Q/Q4.txt', interactive: true }
+    ] },
+    { sessionId: 'C4-1', title: 'Quiz #5', links: [{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1o45Y1SI7JmiDhAERUxDCjqmCNNk68GWj/view?usp=drivesdk' }] },
+    { sessionId: 'C4-3', title: 'Quiz #6', links: [{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1Mm-IH2YIF5TUZkl2LpMaqJengSBxhfBI/view?usp=drivesdk' }] },
+    { sessionId: 'C5-1', title: 'Quiz #7', links: [{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1OTqIq7NcdH2btxOYWLV5WEPzX9J3DBO_/view?usp=drivesdk' }] },
+    { sessionId: 'C5-3', title: 'Quiz #8', links: [{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1AifhpqhiMoOpNK2t0vbikEy2UcqBc9Wb/view?usp=drivesdk' }] },
+    { sessionId: 'C6-1', title: 'Quiz #9', links: [{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1vZybOe-D2lY01-k26EBOkvs9KrG3UILf/view?usp=drivesdk' }] },
+    { sessionId: 'C6-3', title: 'Quiz #10', links: [{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/13mm6JTsy9OM6Mn5h-J-X58J4Srvurpu_/view?usp=drivesdk' }] }
 ];
-const quizCurrent = {
-title: 'Quiz #3',
-links: [
-{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1MW4Dc0Mp_M7U0YZ9aAV95a4w5GfT8uTH/view?usp=drivesdk' },
-{ name: 'ملف الأسئلة', url: 'https://drive.google.com/file/d/1N7ZXuC7Vb2mUjoEIpxRK31XPRVQv-ECL/view?usp=sharing' },
-{ name: 'السلايدات', url: 'https://drive.google.com/file/d/19_EJAKf4FLjqyheDHaMCo7JFcOS5gL1_/view?usp=sharing' },
-{ name: 'التجميعات', url: 'https://drive.google.com/file/d/1BmHRYKIs9QzQcNEM29tXbtF3ncwL5xdH/view?usp=sharing' },
-{ name: 'بدء الكويز', url: 'https://mutlaq001.github.io/GE211/Q/Q3.txt', interactive: true }
-]
-};
-const quizzesUpcoming = [
-{title:'Quiz #4',url:'https://drive.google.com/file/d/11S14VVqqInQ8Ry2lzjYam7DVdMT4Df6G/view?usp=drivesdk'},
-{title:'Quiz #5',url:'https://drive.google.com/file/d/1o45Y1SI7JmiDhAERUxDCjqmCNNk68GWj/view?usp=drivesdk'},
-{title:'Quiz #6',url:'https://drive.google.com/file/d/1Mm-IH2YIF5TUZkl2LpMaqJengSBxhfBI/view?usp=drivesdk'},
-{title:'Quiz #7',url:'https://drive.google.com/file/d/1OTqIq7NcdH2btxOYWLV5WEPzX9J3DBO_/view?usp=drivesdk'},
-{title:'Quiz #8',url:'https://drive.google.com/file/d/1AifhpqhiMoOpNK2t0vbikEy2UcqBc9Wb/view?usp=drivesdk'},
-{title:'Quiz #9',url:'https://drive.google.com/file/d/1vZybOe-D2lY01-k26EBOkvs9KrG3UILf/view?usp=drivesdk'},
-{title:'Quiz #10',url:'https://drive.google.com/file/d/13mm6JTsy9OM6Mn5h-J-X58J4Srvurpu_/view?usp=drivesdk'}
-];
+
 const files = [
 {title:'تقيم',links:[{name:'Checklist',url:fileResources['Checklist'],imp:true},{name:'PTW',url:fileResources['PTW'],imp:true}]},
 {title:'First Day Material (FDM)',sessionId:'C1',links:[{name:'فتح المجلد',url:fileResources['FDM']}]},
@@ -409,8 +492,10 @@ const files = [
 {title:'C2 Concept Session',sessionId:'C2',links:[{name:'فتح المجلد',url:fileResources['C2']}]},
 {title:'C3 Concept Session',sessionId:'C3',links:[{name:'فتح المجلد',url:fileResources['C3']}]},
 {title:'L1 Lab Session',sessionId:'L1',links:[{name:'فتح المجلد',url:fileResources['L1']}]},
-{title:'L2 Lab Session',sessionId:'L2',links:[{name:'فتح المجلد',url:fileResources['L2']}]}
+{title:'L2 Lab Session',sessionId:'L2',links:[{name:'فتح المجلد',url:fileResources['L2']}]},
+{title:'L3 Lab Session',sessionId:'L3',links:[{name:'فتح المجلد',url:fileResources['L3']}]}
 ];
+
 const recordings = [
 {t:'Quiz 1',f:'Q1',ref:'C2-1',c:'Q'},
 {t:'Quiz 2',f:'Q2',ref:'C2-3',c:'Q'},
@@ -428,33 +513,127 @@ const recordings = [
 {t:'Lab 1',f:'L1',ref:'L1-1',c:'L'},
 {t:'Lab 2',f:'L2',ref:'L2-1',c:'L'}
 ];
+
 const render = () => {
 if(activeIdx===0) {
-if(activeQuizUrl) return <InteractiveQuiz url={activeQuizUrl} onClose={()=>setActiveQuizUrl(null)} onFinish={(ans)=>setQuizHistory(p=>({...p, [activeQuizUrl]: ans}))}/>;
-if(reviewUrl) return <InteractiveQuiz url={reviewUrl} reviewData={quizHistory[reviewUrl]} onClose={()=>setReviewUrl(null)}/>;
-return (
-<div className="content-area">
-<div className="section-separator" style={{color:'var(--color-concept)'}}>الكويز الحالي</div>
-<div className="pro-resource-card type-quizzes"><div className="resource-header"><div className="resource-icon-box"><Icons.Edit/></div><div className="resource-info"><h3>{quizCurrent.title}</h3></div></div><div className="resource-links">{quizCurrent.links.map((l,x)=>l.interactive?<button key={x} onClick={()=>setActiveQuizUrl(l.url)} className="res-link-btn primary"><Icons.Check/> {l.name}</button>:<a key={x} href={l.url} target="_blank" className="res-link-btn primary"><Icons.File/> {l.name}</a>)}{quizCurrent.links.find(l=>l.interactive && quizHistory[l.url]) && <button className="res-link-btn mistake-btn" onClick={()=>setReviewUrl(quizCurrent.links.find(l=>l.interactive).url)}><Icons.Info/> مراجعة الأخطاء</button>}</div></div>
-<div className="section-separator">الكويزات القادمة</div>
-{quizzesUpcoming.map((q,i)=><div key={i} className="pro-resource-card type-quizzes" style={{opacity:0.9}}><div className="resource-header"><div className="resource-icon-box"><Icons.Edit/></div><div className="resource-info"><h3>{q.title}</h3></div></div><div className="resource-links"><a href={q.url} target="_blank" className="res-link-btn"><Icons.File/> ملف الكويز</a></div></div>)}
-<div className="block-divider"/>
-<div className="completed-block-card" onClick={()=>setShowCompletedQuizzes(!showCompletedQuizzes)}><div className="block-info"><Icons.Check/> الكويزات السابقة ({quizzesCompleted.length})</div><div className="block-status">{showCompletedQuizzes?<Icons.ChevronUp/>:<Icons.ChevronDown/>}</div></div>
-{showCompletedQuizzes&&quizzesCompleted.map((q,i)=><div key={i} className="pro-resource-card type-quizzes" style={{opacity:0.8}}><div className="resource-header"><div className="resource-icon-box" style={{filter:'grayscale(1)'}}><Icons.Check/></div><div className="resource-info"><h3>{q.title}</h3></div></div><div className="resource-links">{q.links.map((l,x)=>l.interactive?<button key={x} onClick={()=>setActiveQuizUrl(l.url)} className="res-link-btn primary"><Icons.Check/> {l.name}</button>:<a key={x} href={l.url} target="_blank" className="res-link-btn"><Icons.File/> {l.name}</a>)}{q.links.find(l=>l.interactive && quizHistory[l.url]) && <button className="res-link-btn mistake-btn" onClick={()=>setReviewUrl(q.links.find(l=>l.interactive).url)}><Icons.Info/> مراجعة الأخطاء</button>}</div></div>)}
-</div>
-);
+    if(activeQuizUrl) return <InteractiveQuiz url={activeQuizUrl} onClose={()=>setActiveQuizUrl(null)} onFinish={(ans)=>setQuizHistory(p=>({...p, [activeQuizUrl]: ans}))}/>;
+    if(reviewUrl) return <InteractiveQuiz url={reviewUrl} reviewData={quizHistory[reviewUrl]} onClose={()=>setReviewUrl(null)}/>;
+    
+    let completedQs = [];
+    let currentQObj = null;
+    let upcomingQs = [];
+
+    allQuizzesData.forEach(q => {
+        if (isPast(q.sessionId)) {
+            completedQs.push(q);
+        } else if (!currentQObj) {
+            currentQObj = q;
+        } else {
+            upcomingQs.push(q);
+        }
+    });
+
+    return (
+    <div className="content-area">
+    {currentQObj && (
+        <>
+            <div className="section-separator" style={{color:'var(--color-concept)'}}>الكويز الحالي</div>
+            <div className="pro-resource-card type-quizzes">
+                <div className="resource-header">
+                    <div className="resource-icon-box"><Icons.Edit/></div>
+                    <div className="resource-info"><h3>{currentQObj.title}</h3></div>
+                </div>
+                <div className="resource-links">
+                    {currentQObj.links.map((l,x)=>l.interactive?
+                        <button key={x} onClick={()=>setActiveQuizUrl(l.url)} className="res-link-btn primary"><Icons.Check/> {l.name}</button>
+                        :<a key={x} href={l.url} target="_blank" className="res-link-btn primary"><Icons.File/> {l.name}</a>
+                    )}
+                    {currentQObj.links.find(l=>l.interactive && quizHistory[l.url]) && 
+                        <button className="res-link-btn mistake-btn" onClick={()=>setReviewUrl(currentQObj.links.find(l=>l.interactive).url)}><Icons.Info/> مراجعة الأخطاء</button>
+                    }
+                </div>
+            </div>
+        </>
+    )}
+    
+    {upcomingQs.length > 0 && (
+        <>
+            <div className="section-separator">الكويزات القادمة</div>
+            {upcomingQs.map((q,i)=>(
+                <div key={i} className="pro-resource-card type-quizzes" style={{opacity:0.9}}>
+                    <div className="resource-header">
+                        <div className="resource-icon-box"><Icons.Edit/></div>
+                        <div className="resource-info"><h3>{q.title}</h3></div>
+                    </div>
+                    <div className="resource-links">
+                        {q.links.map((l,x)=><a key={x} href={l.url} target="_blank" className="res-link-btn"><Icons.File/> {l.name}</a>)}
+                    </div>
+                </div>
+            ))}
+        </>
+    )}
+
+    {completedQs.length > 0 && (
+        <>
+            <div className="block-divider"/>
+            <div className="completed-block-card" onClick={()=>setShowCompletedQuizzes(!showCompletedQuizzes)}>
+                <div className="block-info"><Icons.Check/> الكويزات السابقة ({completedQs.length})</div>
+                <div className="block-status">{showCompletedQuizzes?<Icons.ChevronUp/>:<Icons.ChevronDown/>}</div>
+            </div>
+            {showCompletedQuizzes && completedQs.map((q,i)=>(
+                <div key={i} className="pro-resource-card type-quizzes" style={{opacity:0.8}}>
+                    <div className="resource-header">
+                        <div className="resource-icon-box" style={{filter:'grayscale(1)'}}><Icons.Check/></div>
+                        <div className="resource-info"><h3>{q.title}</h3></div>
+                    </div>
+                    <div className="resource-links">
+                        {q.links.map((l,x)=>l.interactive?
+                            <button key={x} onClick={()=>setActiveQuizUrl(l.url)} className="res-link-btn primary"><Icons.Check/> {l.name}</button>
+                            :<a key={x} href={l.url} target="_blank" className="res-link-btn"><Icons.File/> {l.name}</a>
+                        )}
+                        {q.links.find(l=>l.interactive && quizHistory[l.url]) && 
+                            <button className="res-link-btn mistake-btn" onClick={()=>setReviewUrl(q.links.find(l=>l.interactive).url)}><Icons.Info/> مراجعة الأخطاء</button>
+                        }
+                    </div>
+                </div>
+            ))}
+        </>
+    )}
+    </div>
+    );
 }
+
 if(activeIdx===1) {
 const currBlk = (() => { const s = generatedSessions.find(s=>s.type!=='holiday'&&s.date>=new Date().setHours(0,0,0,0)); return s?s.id.split('-')[0]:null; })();
 const groups = { pinned:[], fdm:[], curr:[], up:[], arch:[] };
-files.forEach(f => { if(f.title==='تقيم')groups.pinned.push(f); else if(f.title.includes('FDM'))groups.fdm.push(f); else if(f.sessionId===currBlk)groups.curr.push(f); else if(isPast(f.sessionId))groups.arch.push(f); else groups.up.push(f); });
+
+files.forEach(f => { 
+    if(f.title==='تقيم')groups.pinned.push(f); 
+    else if(f.title.includes('FDM'))groups.fdm.push(f); 
+    else if(f.sessionId===currBlk)groups.curr.push(f); 
+    else if(isPast(f.sessionId))groups.arch.push(f); 
+    else groups.up.push(f); 
+});
+
+const FileCard = ({f, isPinned}) => (
+    <div className={`pro-resource-card ${isPinned ? 'pinned-file' : 'type-files'}`} style={!isPinned ? {opacity: f.isPast ? 0.8 : 0.9} : {}}>
+        <div className="resource-header">
+            <div className="resource-icon-box" style={f.isPast ? {filter:'grayscale(1)'} : {}}>{isPinned ? <Icons.Check/> : <Icons.Folder/>}</div>
+            <div className="resource-info"><h3 style={isPinned ? {color:'var(--color-concept)'} : {}}>{f.title}</h3>{isPinned && <p>مهم جداً</p>}</div>
+        </div>
+        <div className="resource-links">
+            {f.links.map((l,x)=><a key={x} href={l.url} className={`res-link-btn ${l.imp||isPinned ? 'primary' : ''}`} target="_blank">{l.imp||isPinned ? <Icons.Star/> : <Icons.File/>} {l.name}</a>)}
+        </div>
+    </div>
+);
+
 return (
 <div className="content-area">
-{groups.pinned.map((f,i)=><div key={i} className="pro-resource-card pinned-file"><div className="resource-header"><div className="resource-icon-box"><Icons.Check/></div><div className="resource-info"><h3 style={{color:'var(--color-concept)'}}>{f.title}</h3><p>مهم جداً</p></div></div><div className="resource-links">{f.links.map((l,x)=><a key={x} href={l.url} className="res-link-btn primary" target="_blank"><Icons.Star/> {l.name}</a>)}</div></div>)}
-{groups.fdm.map((f,i)=><div key={i} className="pro-resource-card type-files"><div className="resource-header"><div className="resource-icon-box"><Icons.Folder/></div><h3>{f.title}</h3></div><div className="resource-links">{f.links.map((l,x)=><a key={x} href={l.url} className="res-link-btn" target="_blank"><Icons.File/> {l.name}</a>)}</div></div>)}
-{groups.curr.length>0&&<><div className="week-header">ملفات الأسبوع: {currBlk}</div>{groups.curr.map((f,i)=><div key={i} className="pro-resource-card type-files"><div className="resource-header"><div className="resource-icon-box"><Icons.Folder/></div><h3>{f.title}</h3></div><div className="resource-links">{f.links.map((l,x)=><a key={x} href={l.url} className={`res-link-btn ${l.imp?'primary':''}`} target="_blank">{l.imp?<Icons.Star/>:<Icons.File/>} {l.name}</a>)}</div></div>)}</>}
-{groups.up.length>0&&<><div className="section-separator">قادمة</div>{groups.up.map((f,i)=><div key={i} className="pro-resource-card type-files" style={{opacity:0.9}}><div className="resource-header"><div className="resource-icon-box"><Icons.Folder/></div><h3>{f.title}</h3></div><div className="resource-links">{f.links.map((l,x)=><a key={x} href={l.url} className="res-link-btn" target="_blank"><Icons.File/> {l.name}</a>)}</div></div>)}</>}
-{groups.arch.length>0&&<><div className="block-divider"/><div className="completed-block-card" onClick={()=>setShowArchived(!showArchived)}><div className="block-info"><Icons.Folder/> أرشيف ({groups.arch.length})</div><div className="block-status">{showArchived?<Icons.ChevronUp/>:<Icons.ChevronDown/>}</div></div>{showArchived&&groups.arch.map((f,i)=><div key={i} className="pro-resource-card type-files" style={{opacity:0.8}}><div className="resource-header"><div className="resource-icon-box" style={{filter:'grayscale(1)'}}><Icons.Folder/></div><h3>{f.title}</h3></div><div className="resource-links">{f.links.map((l,x)=><a key={x} href={l.url} className="res-link-btn" target="_blank"><Icons.File/> {l.name}</a>)}</div></div>)}</>}
+{groups.pinned.map((f,i)=><FileCard key={`p-${i}`} f={f} isPinned={true}/>)}
+{groups.fdm.map((f,i)=><FileCard key={`f-${i}`} f={f}/>)}
+{groups.curr.length>0&&<><div className="week-header">ملفات الأسبوع: {currBlk}</div>{groups.curr.map((f,i)=><FileCard key={`c-${i}`} f={f}/>)}</>}
+{groups.up.length>0&&<><div className="section-separator">قادمة</div>{groups.up.map((f,i)=><FileCard key={`u-${i}`} f={f}/>)}</>}
+{groups.arch.length>0&&<><div className="block-divider"/><div className="completed-block-card" onClick={()=>setShowArchived(!showArchived)}><div className="block-info"><Icons.Folder/> أرشيف ({groups.arch.length})</div><div className="block-status">{(showArchived)?<Icons.ChevronUp/>:<Icons.ChevronDown/>}</div></div>{(showArchived)&&groups.arch.map((f,i)=><FileCard key={`a-${i}`} f={{...f, isPast:true}}/>)}</>}
 </div>
 );
 }
@@ -506,36 +685,100 @@ return (
 </div>
 );
 };
+
 const ScheduleView = ({ openTeam, team, setts }) => {
 const [sel, setSel] = useState(null), [tm, setTm] = useState(false), [showArchived, setShowArchived] = useState(false);
 const [archivedTypes, setArchivedTypes] = useState({c:false,l:false}), [expandedPastBlocks, setExpandedPastBlocks] = useState({});
-const sessions = useMemo(()=>generateAllSessions().map((s,i)=>({...s,due:sessionDetails[s.id]?.title?.en,full:sessionDetails[s.id]?.desc,idx:i})),[]);
-const today = new Date();
-const checkIsToday = (d) => d.getDate() === today.getDate() && d.getMonth() === today.getMonth();
-const allGroups = useMemo(()=>{const g={},k=[]; sessions.forEach(s=>{const p=s.type==='holiday'?`HOL-${s.date.getTime()}`:s.id.split('-')[0];if(!g[p]){g[p]=[];k.push(p);}g[p].push(s);}); return {d:g,k};},[sessions]);
+const sessions = useMemo(()=>generateAllSessions().map(s=>({...s,due:sessionDetails[s.id]?.title?.en,full:sessionDetails[s.id]?.desc})),[]);
+const checkIsToday = (d) => d.getDate() === new Date().getDate() && d.getMonth() === new Date().getMonth();
+
+const allGroups = useMemo(()=>{
+    const g={}, k=[]; 
+    let lastBase = null;
+    let currentGroupKey = null;
+    sessions.forEach(s=>{
+        if (s.type === 'holiday') {
+            currentGroupKey = `HOL-${s.date.getTime()}`;
+            lastBase = null;
+        } else {
+            const base = s.id.split('-')[0];
+            if (base !== lastBase) {
+                currentGroupKey = `${base}-${s.date.getTime()}`;
+                lastBase = base;
+            }
+        }
+        if(!g[currentGroupKey]){g[currentGroupKey]=[];k.push(currentGroupKey);}
+        g[currentGroupKey].push(s);
+    }); 
+    return {d:g,k};
+},[sessions]);
+
 const getRoles = (i) => ({Leader:team[i%5],Timer:team[(i+1)%5],Writer:team[(i+2)%5]});
-const upcomingKeys = allGroups.k.filter(k => { const grp=allGroups.d[k]; if(k.startsWith('HOL')) return grp[0].date.getTime()>=today.setHours(0,0,0,0); return grp.some(s=>s.date.getTime()>=today.setHours(0,0,0,0)); });
-const pastKeys = allGroups.k.filter(k => !k.startsWith('HOL') && allGroups.d[k].every(s=>s.date.getTime()<today.setHours(0,0,0,0)));
-const pastConcepts = pastKeys.filter(k=>k.startsWith('C')), pastLabs = pastKeys.filter(k=>k.startsWith('L'));
+const todayTime = new Date().setHours(0,0,0,0);
+
+const upcomingKeys = allGroups.k.filter(k => { 
+    const grp=allGroups.d[k]; 
+    if(k.startsWith('HOL')) return grp[0].date.getTime() >= todayTime; 
+    return grp.some(s=>s.date.getTime() >= todayTime); 
+});
+const pastKeys = allGroups.k.filter(k => !k.startsWith('HOL') && allGroups.d[k].every(s=>s.date.getTime() < todayTime));
+const pastConcepts = pastKeys.filter(k=>k.startsWith('C'));
+const pastLabs = pastKeys.filter(k=>k.startsWith('L'));
+
 const renderBlock = (k, isPast=false) => {
 const blk = allGroups.d[k], isHol = k.startsWith('HOL');
+const baseP = isHol ? 'HOL' : k.split('-')[0];
 return (
 <React.Fragment key={k}>
 {isHol ? <div className="session-card holiday"><div className="date-box"><span className="date-day-num">{blk[0].date.getDate()}</span></div><div className="card-content"><div className="session-id"><Icons.Holiday/> OFF</div><div className="session-topic">{blk[0].topic}</div></div></div> :
 <React.Fragment>
-{blk.map((s,i)=>{
-const isT=checkIsToday(s.date), isP=s.date.getTime()<today.setHours(0,0,0,0);
-return <div key={i} className={`session-card ${s.type} ${isT?'current-day':''} ${isP?'is-past':''}`} onClick={()=>setSel({...s,roles:getRoles(s.idx)})}>
+{blk.map((s)=>{
+const isT = s.multiDatesObj ? s.multiDatesObj.some(d => checkIsToday(d)) : checkIsToday(s.date);
+const isP = s.date.getTime() < todayTime;
+
+return <div key={s.idx} className={`session-card ${s.type} ${isT?'current-day':''} ${isP?'is-past':''}`} onClick={()=>setSel({...s,roles:getRoles(s.idx)})}>
 {isP&&<div className="past-badge"><Icons.Check/> منتهية</div>}
-<div className="date-box"><span className="date-day-name">{s.date.toLocaleDateString('en-US',{weekday:'short'})}</span><span className="date-day-num">{s.date.getDate()}</span><span className="date-month">{s.date.toLocaleDateString('en-US',{month:'short'})}</span></div>
+
+{s.multiDatesObj ? (
+    <div className="date-box" style={{ minWidth: '115px', padding: '10px 8px', background:'rgba(0,0,0,0.4)' }}>
+        <div style={{display:'flex', flexDirection:'column', width:'100%', gap:'4px'}}>
+            <div style={{fontSize:'0.65rem', color:'var(--color-lab)', textAlign:'center', letterSpacing:'1px', marginBottom:'2px', fontWeight:'900'}}>MIDTERMS</div>
+            {s.multiDatesObj.map((d, di) => {
+                const isTodayD = checkIsToday(d);
+                const pastD = d.getTime() < todayTime;
+                return (
+                    <div key={di} style={{
+                        background: isTodayD ? 'rgba(255,215,0,0.15)' : 'rgba(0,0,0,0.3)',
+                        border: `1px solid ${isTodayD ? 'rgba(255,215,0,0.5)' : 'rgba(255,255,255,0.05)'}`,
+                        color: isTodayD ? '#ffd700' : (pastD ? '#666' : '#eee'),
+                        textDecoration: pastD && !isTodayD ? 'line-through' : 'none',
+                        padding:'4px 8px', borderRadius:'6px', fontSize:'0.75rem', 
+                        fontFamily:'var(--font-nums)', display:'flex', justifyContent:'space-between', gap:'5px'
+                    }}>
+                        <span style={{opacity:0.8}}>{d.toLocaleDateString('en-US',{weekday:'short'})}</span>
+                        <span style={{fontWeight:'bold'}}>{d.getDate()} {d.toLocaleDateString('en-US',{month:'short'})}</span>
+                    </div>
+                )
+            })}
+        </div>
+    </div>
+) : (
+    <div className="date-box">
+        <span className="date-day-name">{s.date.toLocaleDateString('en-US',{weekday:'short'})}</span>
+        <span className="date-day-num">{s.date.getDate()}</span>
+        <span className="date-month">{s.date.toLocaleDateString('en-US',{month:'short'})}</span>
+    </div>
+)}
+
 <div className="card-content"><div className="session-header"><div className="session-id">{s.type==='concept'?<Icons.Concept/>:<Icons.Lab/>} <span style={{margin:'0 8px'}}>{s.id}</span></div></div>{s.due&&<div className="due-tag"><Icons.Alert/> {s.due}</div>}</div>
 </div>;
 })}
-{fileResources[k.split('-')[0]]&&<a href={fileResources[k.split('-')[0]]} target="_blank" className={`external-file-btn ${blk[0].type}`}><Icons.Folder/> فتح ملفات {k}</a>}
+{fileResources[baseP]&&<a href={fileResources[baseP]} target="_blank" className={`external-file-btn ${blk[0].type}`}><Icons.Folder/> فتح ملفات {baseP}</a>}
 </React.Fragment>}
 </React.Fragment>
 );
 };
+
 return (
 <div className="timeline-container">
 {upcomingKeys.map((k,i)=><React.Fragment key={k}>{i>0&&<div className="block-divider"/>}{renderBlock(k)}</React.Fragment>)}
@@ -544,9 +787,9 @@ return (
 <div className="completed-block-card" onClick={()=>setShowArchived(!showArchived)}><div className="block-info"><Icons.Check/> تم الانتهاء منه</div>{showArchived?<Icons.ChevronUp/>:<Icons.ChevronDown/>}</div>
 {showArchived && <div style={{animation:'fadeIn 0.3s ease'}}>
 <div className="rec-group-card"><div className="rec-group-header" onClick={()=>setArchivedTypes(p=>({...p,c:!p.c}))}><div className="rec-group-title"><Icons.Concept/> Concepts</div><div>{archivedTypes.c?<Icons.ChevronUp/>:<Icons.ChevronDown/>}</div></div>
-{archivedTypes.c && <div className="rec-list-container">{pastConcepts.map(k=><div key={k} style={{marginBottom:'10px'}}><div className="completed-block-card" style={{marginBottom:'5px',padding:'10px 15px',background:'rgba(255,255,255,0.05)'}} onClick={()=>setExpandedPastBlocks(p=>({...p,[k]:!p[k]}))}><div className="block-info" style={{color:'#fff',fontSize:'0.9rem'}}>{k}</div>{expandedPastBlocks[k]?<Icons.ChevronUp/>:<Icons.ChevronDown/>}</div>{expandedPastBlocks[k]&&renderBlock(k,true)}</div>)}</div>}</div>
+{archivedTypes.c && <div className="rec-list-container">{pastConcepts.map(k=><div key={k} style={{marginBottom:'10px'}}><div className="completed-block-card" style={{marginBottom:'5px',padding:'10px 15px',background:'rgba(255,255,255,0.05)'}} onClick={()=>setExpandedPastBlocks(p=>({...p,[k]:!p[k]}))}><div className="block-info" style={{color:'#fff',fontSize:'0.9rem'}}>{k.split('-')[0]}</div>{expandedPastBlocks[k]?<Icons.ChevronUp/>:<Icons.ChevronDown/>}</div>{expandedPastBlocks[k]&&renderBlock(k,true)}</div>)}</div>}</div>
 <div className="rec-group-card"><div className="rec-group-header" onClick={()=>setArchivedTypes(p=>({...p,l:!p.l}))}><div className="rec-group-title"><Icons.Lab/> Labs</div><div>{archivedTypes.l?<Icons.ChevronUp/>:<Icons.ChevronDown/>}</div></div>
-{archivedTypes.l && <div className="rec-list-container">{pastLabs.map(k=><div key={k} style={{marginBottom:'10px'}}><div className="completed-block-card" style={{marginBottom:'5px',padding:'10px 15px',background:'rgba(255,255,255,0.05)'}} onClick={()=>setExpandedPastBlocks(p=>({...p,[k]:!p[k]}))}><div className="block-info" style={{color:'#fff',fontSize:'0.9rem'}}>{k}</div>{expandedPastBlocks[k]?<Icons.ChevronUp/>:<Icons.ChevronDown/>}</div>{expandedPastBlocks[k]&&renderBlock(k,true)}</div>)}</div>}</div>
+{archivedTypes.l && <div className="rec-list-container">{pastLabs.map(k=><div key={k} style={{marginBottom:'10px'}}><div className="completed-block-card" style={{marginBottom:'5px',padding:'10px 15px',background:'rgba(255,255,255,0.05)'}} onClick={()=>setExpandedPastBlocks(p=>({...p,[k]:!p[k]}))}><div className="block-info" style={{color:'#fff',fontSize:'0.9rem'}}>{k.split('-')[0]}</div>{expandedPastBlocks[k]?<Icons.ChevronUp/>:<Icons.ChevronDown/>}</div>{expandedPastBlocks[k]&&renderBlock(k,true)}</div>)}</div>}</div>
 </div>}
 </>}
 {sel && <div className="modal-overlay" onClick={()=>setSel(null)}><div className="modal-content" onClick={e=>e.stopPropagation()}><button className="modal-close" onClick={()=>setSel(null)}>×</button><h2 className="modal-title">{sel.id}</h2>
@@ -556,6 +799,7 @@ return (
 </div>
 );
 };
+
 const Counter = ({ l, v, fn }) => <div className="input-row"><label>{l}</label><div className="counter-control"><button className="counter-btn" onClick={()=>fn(Math.max(0,v-1))}>-</button><div className="counter-val">{v}</div><button className="counter-btn" onClick={()=>fn(v+1)}>+</button></div></div>;
 const GradeView = () => {
 const [st, setSt] = useState(()=>{
@@ -581,6 +825,7 @@ return (
 <div className="grade-result"><div style={{color:'#888'}}>الدرجة</div><div className={`grade-big grade-${res.g[0]}`}>{res.g}</div><div className="defects-text">العيوب: C({res.cd}) | L({res.ld})</div><button className="reset-btn" onClick={()=>confirm('?')&&setSt({cE:0,cNI:0,cNCE:0,cLapses:0,lE:0,lNI:0,lNCE:0,lLapses:0,missed:false})}>تصفير</button></div></div>
 );
 };
+
 function App() {
 const [tab, setTab] = useState('schedule'), [modal, setModal] = useState(false);
 const [mems, setMems] = useState(()=>{
