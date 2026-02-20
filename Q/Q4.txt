@@ -105,3 +105,549 @@ b) to show that putting too many constraints (either consciously or unconsciousl
 c) to demonstrate how difficult it is to create conceptual blocks to a problem
 d) a and b
 b
+
+471 PM
+Which of the Osborn's Checklist for Adding New Ideas does match this statement: "How can this (product, idea, plan, etc.) be used as is? What are other uses it could be adapted to?"
+{حسب الصفحة 69: في جدول أوزبورن، هذا الوصف يتطابق تماماً مع التكييف (Adapt).}
+a) Adopt
+b) Adapt
+c) Modify
+d) Magnify
+e) Minify
+b
+
+471 PM
+"Rearrange" in Osborn's Checklist for Adding New Ideas means all of the following, except
+{حسب الصفحة 69: إعادة الترتيب (Rearrange) تعني تبديل الأجزاء، عكس الأدوار، والقلب رأساً على عقب. أما "تغيير المعنى أو المادة أو اللون أو الشكل" فهي تابعة لقسم التعديل (Modify).}
+a) Interchange parts?
+b) Change the meaning, material, color, shape or odor?
+c) Turn it backward or upside down?
+d) Change positives to negatives?
+b
+
+471 PM
+All of the following is TRUE about Random Stimulation, EXCEPT
+{حسب الصفحة 69 و 70: التحفيز العشوائي يستخدم لتوليد أفكار "مختلفة كلياً". بينما الأفكار "المرتبطة بالتي تم الحصول عليها مسبقاً" (related to those previously obtained) يتم توليدها باستخدام قائمة أوزبورن (Osborn's Checklist). لذا الخيار b هو العبارة الخاطئة.}
+a) It introduces a random piece of information that acts as a trigger or switch to change the patterns of thought.
+b) It is used to generate additional alternatives that are related to those previously obtained.
+c) It can "jump start" the brainstorming activity to get it out of whatever current rut it may be in.
+d) It allows the generation of reasonable alternatives that may not have been considered before.
+b
+
+471 PM
+All of the following comments reduce Brainstorming to Brain drizzling, EXCEPT
+{حسب الصفحة 68: التعليقات السلبية تدمر العصف الذهني، بينما "البناء على أفكار بعضهم البعض" (Build upon each other's ideas) هو من أساسيات النجاح في العصف الذهني.}
+a) It's not our job.
+b) That is too radical.
+c) That won't work.
+d) Build upon each other's ideas or suggestions.
+d
+
+471 PM
+Which of the following can narrow the range of possible solutions:
+{حسب الصفحة 62: وضع قيود كثيرة (بوعي أو بدون وعي) على المشكلة يُضيق نطاق الحلول الممكنة (putting too many constraints... narrows the range of possible solutions).}
+a) Putting too many constraints
+b) Removing too many constraints
+c) Hypothec too many constraints
+d) Releasing too many constraints
+a
+
+471 PM
+To generate additional alternative ideas that are related to those previously considered, an effective problem solver uses
+{حسب الصفحة 69: قائمة أوزبورن (Osborn's Checklist) تُستخدم لتوليد بدائل إضافية "مرتبطة" (related) بالأفكار التي تم الحصول عليها مسبقاً.}
+a) Random Stimulation
+b) Random Simulation
+c) Osborn's Checklist
+d) Osborn's Brain drizzling
+c
+
+471 PM
+To generate ideas that are totally different from those previously obtained, effective problem solvers use
+{حسب الصفحة 70: التحفيز العشوائي (Random Stimulation) هي التقنية المُستخدمة لتوليد أفكار مختلفة كلياً (totally different) للنهوض من ركود التفكير.}
+a) Random Checklist
+b) Random Similitude
+c) Random Simulation
+d) Random Stimulation
+d
+
+471 PM
+The purpose of the nine-dot exercise (Fogler & LeBlanc) is
+{حسب الصفحة 62: الغرض من تمرين النقاط التسع هو إظهار أن وضع قيود كثيرة (بوعي أو بدون وعي) على المشكلة يُضيق نطاق الحلول الممكنة.}
+a) to warn a problem solver against "playing" with the problem
+b) to demonstrate how difficult it is to create conceptual blocks to a problem
+c) to show that putting too many constraints (either consciously or unconsciously) on the problem statement narrows the range of possible solutions
+d) none of the above
+c
+
+471 PM
+Osborn's Checklist
+{حسب الصفحة 69: تُستخدم هذه القائمة عندما تتباطأ الأفكار، وتساعد أفراد المجموعة على البناء على أفكار بعضهم البعض (piggyback)، لذا الخيارين a و c صحيحان.}
+a) is effective once the process of brainstorming slows down and hits a roadblock
+b) is used to generate totally different ideas than previously obtained
+c) helps a group build on one another's ideas (i.e., piggyback)
+d) a and c
+d
+
+471 PM
+The wisdom behind Brainstorming is well illustrated by the saying
+{حسب الصفحة 68: يوجد مربع يسار الصفحة فيه اقتباس يعبر عن فكرة العصف الذهني: "ما يستطيع شخص واحد تخيله، يستطيع الآخرون تحقيقه".}
+a) What one man is capable of conceiving, other men will be able to achieve
+b) There is no pillow as soft as a clear conscience
+c) If you don't know how to do it, but it is important to do it, go ahead and do it anyway
+d) When you hear hoofbeats, don't think zebras
+a
+
+471 PM
+The only explicit requirement of the nine-dot problem (Fogler & LeBlanc) is to draw four or fewer straight lines that will cross all nine dots
+{حسب الصفحة 61: المتطلب الواضح والمكتوب نصاً في المشكلة هو رسم الخطوط "دون رفع القلم عن الورقة" (without lifting the pencil from the paper).}
+a) without lifting the pencil from the paper
+b) going through the centers of the dots
+c) without photo reducing the nine-dot figure
+d) without crossing the imaginary boundary created by the eight outer dots
+a
+
+471 PM
+Normally, novice problem solvers ..................... cross a perceived imaginary limit
+{حسب الصفحة 62: المبتدئون في حل المشاكل عادة "لن" يتجاوزوا الحدود الوهمية (will not cross a perceived imaginary limit).}
+a) Will
+b) Will not
+c) Can not
+d) Can
+b
+
+471 PM
+Each of the following statements about Brainstorming is TRUE EXCEPT
+{حسب الصفحة 70: العبارة الخاطئة هي d، لأن إدخال الأفكار الغريبة والمجنونة يجب "ألا يتم تجنبه بل تشجيعه" (should not be shunned but instead should be encouraged).}
+a) Brainstorming is routinely used in both informal and formal settings.
+b) Brainstorming is one of the oldest techniques to stimulate creativity.
+c) The only guideline in Brainstorming is to generate as many ideas as possible.
+d) The introduction of strange or weird ideas during Brainstorming should be shunned and discouraged.
+d
+
+471 PM
+All of the following is TRUE about Random Stimulation, EXCEPT
+{حسب الصفحة 70: العبارة الخاطئة هي c، لأن التحفيز العشوائي هو الأداة الفعالة التي "تُستخدم تحديداً" عندما يتباطأ العصف الذهني ويصطدم بعائق (hits a roadblock).}
+a) It produces a random word that can be used to trigger other words that can stimulate the flow of ideas.
+b) Its use complements that of Osborn's Checklist.
+c) It cannot be used once the process of brainstorming slows down and hits a roadblock
+d) It is used to generate totally different ideas than previously obtained.
+c
+
+471 PM
+Achieving the best solution is
+{حسب الصفحة 68: الهدف الأساسي في البداية هو توليد أكبر عدد ممكن من الأفكار غير المقيدة، لذا الوصول للحل الأفضل يسهل (facilitated) باكتساب أفكار غير مقيدة (unrestricted).}
+a) hindered by the use of blockbusting techniques
+b) facilitated by acquiring as many unrestricted ideas as possible
+c) facilitated by acquiring as many restricted ideas as possible
+d) accelerated and facilitated by environmental, intellectual, or expressive blocks
+b
+
+471 PM
+Each of the following statements about Brainstorming is TRUE EXCEPT
+{حسب الصفحة 68: العصف الذهني يبدأ بارتباط "غير منظم" وحر للأفكار (unstructured)، لذا القول بأنه "منظم ومتحكم به بشكل مثالي - perfectly structured" هي العبارة الخاطئة.}
+a) "Brainstorming is routinely used in both informal and formal settings."
+b) "Brainstorming is a familiar and effective technique for generating solutions."
+c) "Brainstorming is a perfectly structured controlled association of ideas to solve a problem."
+d) "The only guideline in Brainstorming is to generate as many ideas as possible."
+c
+
+471 PM
+"Modify" in Osborn's Checklist means
+{حسب الصفحة 69: في جدول أوزبورن، التعديل (Modify) يعني تغيير المعنى، المادة، اللون، الشكل، أو الرائحة (Change the meaning, material, color, shape, odor).}
+a) How can this be used as is? What are other uses it could be adapted to?
+b) Change the meaning, material, color, shape or odor?
+c) Add new ingredients? Make longer, stronger, thicker, or higher?
+d) Who else? Where else? What else? Other ingredient, material, or approach?
+b
+
+471 PM
+"Minify" in Osborn's Checklist means
+{حسب الصفحة 69: في جدول أوزبورن، التصغير (Minify) يعني التقسيم، أخذ جزء، أو جعله أخف، أطول، أو أقصر (Split up. Take something out. Make lighter, lower, or shorter).}
+a) Change the meaning, material, colour, shape.
+b) Add new ingredients. Make longer, stronger, thicker, or higher.
+c) Split up. Take something out. Make lighter, lower, or shorter.
+d) Who else? Where else? What else? Other ingredient, material, or approach.
+c
+
+471 PM
+The characteristic of successful problem solvers that is perhaps the most notable one (according to Fogler & LeBlanc) is perseverance. Therefore, you should avoid
+{حسب الصفحة 61: تم ذكر "المثابرة" كأهم صفة، وفي نفس الصفحة ضمن مسببات العوائق الذهنية ذُكر: الإحباط، القلق من عدم الإنهاء بسرعة، وغيرها. لذا يجب تجنب كل ذلك.}
+a) being too anxious to finish quickly
+b) getting frustrated by lack of success
+c) becoming discouraged when solutions are not immediately evident
+d) All of the above
+d
+
+471 PM
+The term "unstructured free association of ideas to solve the problem" stands for
+{حسب الصفحة 68: هذا هو التعريف الحرفي الموجود في الكتاب لمرحلة (العصف الذهني - Brainstorming).}
+a) Brainstorming
+b) Osborn's check list
+c) Problem implementation
+d) Random stimulation
+a
+
+471 PM
+All of the following are common causes of mental blocks, EXCEPT
+{حسب الصفحة 61: يوجد جدول يوضح مسببات العوائق الذهنية. "الاستعداد لتغيير ما يتم فعله" ليس من ضمنها، بل هو شيء إيجابي، أما البقية فمذكورة نصاً كعوائق.}
+a) Defining the problem too narrowly
+b) Assuming there is only one right answer
+c) Willingness to change what is being done while everything seems to be going along OK
+d) Attacking the symptoms and not the real problem
+c
+
+471 PM
+One of the following items are not in Osborn's Checklist for Adding New Ideas
+{حسب الصفحة 69: جدول أوزبورن يحتوي على التكييف والتعديل والتكبير وغيرها. الكلمة Trigger (محفز) ليست من ضمنها.}
+a) Adapt
+b) Modify
+c) Trigger
+d) Magnify
+c
+
+471 PM
+LeBlank, in chapter 4 of his book, stated that: Do not be afraid to "……." With the problem.
+{حسب الصفحة 61: العبارة المذكورة نصاً هي: "Don't be afraid to 'play' with the problem" (لا تخف من "اللعب" بالمشكلة).}
+a) Glue
+b) Define
+c) Play
+d) Solve
+c
+
+471 PM
+A common assumption that is not part of the problem statement of the nine-dots-puzzle is that the lines must go through the .. of the dots.
+{حسب الصفحة 62: افتراض شائع وغير موجود في نص المشكلة هو أن الخطوط يجب أن تمر عبر "مراكز" النقاط (centers of the dots).}
+a) Corners
+b) Edges
+c) Centers
+d) None of the above
+c
+
+471 PM
+The effect of comments like We don't have enough time, that s too much hassle or we haven't done it that way before is:
+{حسب الصفحة 68: هذه التعليقات موجودة في الجدول تحت عنوان "التعليقات التي تحول العصف الذهني إلى رذاذ ذهني/Braindrizzling".}
+a) changing Brain-drizzling to Brainstorming
+b) Improving Brainstorming to Brain-drizzling
+c) reducing Brainstorming to Brain-drizzling
+d) None of the above
+c
+
+471 PM
+The characteristic of successful problem solvers that is perhaps the most notable one (according to Fogler & LeBlanc) is
+{حسب الصفحة 61: تم ذكر أن السمة الأكثر بروزاً لحلالي المشاكل الناجحين هي "المثابرة" (Perseverance).}
+a) being proactive
+b) maturity
+c) perseverance
+d) courage
+c
+
+462
+Each of the following statements about Brainstorming is TRUE EXCEPT
+{حسب الصفحة 70: إدخال الأفكار الغريبة والمجنونة يجب "ألا يتم تجنبه بل تشجيعه" (should not be shunned but instead should be encouraged)، لذا الخيار الذي يقول العكس هو الخاطئ.}
+a) Brainstorming is routinely used in both informal and formal settings.
+b) Brainstorming is one of the oldest techniques to stimulate creativity.
+c) The only guideline in Brainstorming is to generate as many ideas as possible.
+d) The introduction of strange or weird ideas during Brainstorming should be shunned and discouraged.
+d
+
+462
+All of the following is TRUE about Random Stimulation, EXCEPT
+{حسب الصفحة 70: العبارة الخاطئة هي أنه "لا يمكن استخدامه عندما يتباطأ العصف الذهني"، بل على العكس، هو الأداة الفعالة التي تُستخدم تحديداً عندما يصطدم التفكير بعائق (hits a roadblock).}
+a) It produces a random word that can be used to trigger other words that can stimulate the flow of ideas.
+b) Its use complements that of Osborn's Checklist.
+c) It cannot be used once the process of brainstorming slows down and hits a roadblock
+d) It is used to generate totally different ideas than previously obtained.
+c
+
+462
+Which of the Osborn's Checklist for Adding New Ideas does match this statement: "How can this (product, idea, plan, etc.) be used as is? What are other uses it could be adapted to?"
+{حسب الصفحة 69: في جدول أوزبورن، هذا الوصف والمصطلح يتطابق تماماً مع التكييف (Adapt).}
+a) Adopt
+b) Adapt
+c) Modify
+d) Magnify
+e) Minify
+b
+
+462
+"Rearrange" in Osborn's Checklist for Adding New Ideas means all of the following, except
+{حسب الصفحة 69: إعادة الترتيب (Rearrange) تعني تبديل الأجزاء، عكس الأدوار، والقلب رأساً على عقب. أما "تغيير المعنى أو المادة أو اللون أو الشكل" فهي تابعة لقسم التعديل (Modify).}
+a) Interchange parts?
+b) Change the meaning, material, color, shape or odor?
+c) Turn it backward or upside down?
+d) Change positives to negatives?
+b
+
+462
+All of the following is TRUE about Random Stimulation, EXCEPT
+{حسب الصفحة 69 و 70: التحفيز العشوائي يستخدم لتوليد أفكار "مختلفة كلياً". بينما الأفكار "المرتبطة بالتي تم الحصول عليها مسبقاً" (related to those previously obtained) يتم توليدها باستخدام قائمة أوزبورن وليس التحفيز العشوائي.}
+a) It introduces a random piece of information that acts as a trigger or switch to change the patterns of thought.
+b) It is used to generate additional alternatives that are related to those previously obtained.
+c) It can "jump start" the brainstorming activity to get it out of whatever current rut it may be in.
+d) It allows the generation of reasonable alternatives that may not have been considered before.
+b
+
+462
+All of the following comments reduce Brainstorming to Brain drizzling, EXCEPT
+{حسب الصفحة 68: التعليقات السلبية تدمر العصف الذهني، بينما "البناء على أفكار بعضهم البعض" (Build upon each other's ideas) هو من أساسيات النجاح في العصف الذهني.}
+a) It's not our job.
+b) That is too radical.
+c) That won't work.
+d) Build upon each other's ideas or suggestions.
+d
+
+462
+Which of the following can narrow the range of possible solutions:
+{حسب الصفحة 62: وضع قيود كثيرة (بوعي أو بدون وعي) على المشكلة يُضيق نطاق الحلول الممكنة (putting too many constraints... narrows the range of possible solutions).}
+a) Putting too many constraints
+b) Removing too many constraints
+c) Hypothec too many constraints
+d) Releasing too many constraints
+a
+
+462
+The only explicit requirement of the nine-dot problem (Fogler & LeBlanc) is to draw four or fewer straight lines that will cross all nine dots
+{حسب الصفحة 61: المتطلب الواضح والمكتوب نصاً في المشكلة هو رسم الخطوط "دون رفع القلم عن الورقة" (without lifting the pencil from the paper).}
+a) without lifting the pencil from the paper
+b) going through the centers of the dots
+c) without photo reducing the nine-dot figure
+d) without crossing the imaginary boundary created by the eight outer dots
+a
+
+462
+Normally, novice problem solvers ..................... cross a perceived imaginary limit
+{حسب الصفحة 62: المبتدئون في حل المشاكل عادة "لن" يتجاوزوا الحدود الوهمية (will not cross a perceived imaginary limit).}
+a) Will
+b) Will not
+c) Can not
+d) Can
+b
+
+462
+The purpose of the nine-dot exercise (Fogler & LeBlanc) is
+{حسب الصفحة 62: الغرض من تمرين النقاط التسع هو إظهار أن وضع قيود كثيرة على المشكلة يُضيق نطاق الحلول الممكنة.}
+a) to list a set of alternative solutions
+b) to demonstrate how difficult it is to create conceptual blocks to a problem
+c) to warn a problem solver against "playing" with the problem
+d) to show that putting too many constraints (either consciously or unconsciously) on the problem statement narrows the range of possible solutions
+d
+
+462
+To generate totally different ideas than previously considered, an effective problem solver uses
+{حسب الصفحة 70: التحفيز العشوائي (Random Stimulation) هي التقنية المُستخدمة لتوليد أفكار مختلفة كلياً (totally different) للنهوض من ركود التفكير.}
+a) Random Simulation
+b) Osborn's Brain drizzling
+c) Osborn's Checklist
+d) Random Stimulation
+d
+
+462
+To generate additional alternative ideas that are related to those previously considered, an effective problem solver uses
+{حسب الصفحة 69: قائمة أوزبورن (Osborn's Checklist) تُستخدم لتوليد بدائل إضافية "مرتبطة" (related) بالأفكار التي تم الحصول عليها مسبقاً.}
+a) Random Stimulation
+b) Random Simulation
+c) Osborn's Checklist
+d) Osborn's Brain drizzling
+c
+
+462
+The definition of a perceived imaginary limit is:
+{حسب الصفحة 62: يُعرّف بأنه قيد يتشكل لا إرادياً (unconsciously) في ذهن (in the mind) الشخص، على الرغم من أنه ليس جزءاً من بيان المشكلة.}
+a) a constraint that is formed unconsciously
+b) a constraint that is formed in the mind of the problem solver.
+c) a constraint that is not part of the problem statement.
+d) All of the above
+d
+
+462
+A common assumption that is not part of the problem statement of the nine-dots-puzzle is that the lines must go through the ........... of the dots.
+{حسب الصفحة 62: افتراض شائع وغير موجود في نص المشكلة هو أن الخطوط يجب أن تمر عبر "مراكز" النقاط (centers of the dots).}
+a) Corners
+b) Centers
+c) Edges
+d) None of the above
+b
+
+462
+The term "unstructured free association of ideas to solve the problem" stands for
+{حسب الصفحة 68: هذا هو التعريف الحرفي الموجود في الكتاب لمرحلة العصف الذهني الأولية (Brainstorming).}
+a) Brainstorming
+b) Osborn's check list
+c) Problem implementation
+d) Random stimulation
+a
+
+462
+All of the following are common causes of mental blocks, EXCEPT
+{حسب الصفحة 61: يوجد جدول يوضح مسببات العوائق الذهنية. "الاستعداد لتغيير ما يتم فعله" ليس من ضمنها، أما البقية فمذكورة كنقاط في الجدول.}
+a) Defining the problem too narrowly
+b) Assuming there is only one right answer
+c) Willingness to change what is being done while everything seems to be going along OK
+d) Attacking the symptoms and not the real problem
+c
+
+462
+One of the following items are not in Osborn's Checklist for Adding New Ideas
+{حسب الصفحة 69: جدول أوزبورن يحتوي على كلمات مثل التكييف والتعديل والتكبير. الكلمة Trigger (محفز) ليست من ضمنها.}
+a) Adapt
+b) Modify
+c) Trigger
+d) Magnify
+c
+
+462
+LeBlank, in chapter 4 of his book, stated that: Do not be afraid to "……." With the problem.
+{حسب الصفحة 61: العبارة المذكورة نصاً في الكتاب هي: "Don't be afraid to 'play' with the problem" (لا تخف من اللعب بالمشكلة).}
+a) Glue
+b) Define
+c) Play
+d) Solve
+c
+
+461
+All of the following are in mental blocks by generation solutions, except:
+{حسب الصفحة 61: يوجد جدول يوضح مسببات العوائق الذهنية (Common Causes of Mental Blocks). الخيارات b, c, d, e كلها مذكورة نصاً في الجدول. بينما "Being solving the problem" ليس عائقاً بل هو الهدف.}
+a) Being solving the problem.
+b) Defining the problem too narrowly.
+c) Being too anxious to finish.
+d) Assuming there is only one right answer.
+e) Getting hooked on the first solution that comes to the mind.
+a
+
+461
+The first step to overcome mental blocks is to:
+{حسب الصفحة 61: مذكور في السطر السادس من الفقرة الثانية نصاً: "The first step to overcoming these blocks is to recognize them" (الخطوة الأولى للتغلب على هذه العوائق هي التعرف عليها).}
+a) recognize them.
+b) use blockbusting techniques.
+c) become a better problem solver.
+d) correctly perceive the problem.
+e) conceive the solution of the problem.
+a
+
+461
+The necessary step to overcome mental blocks immediately after recognizing them is to:
+{حسب الصفحة 61: بعد التعرف عليها مباشرة، الخطوة التالية هي استخدام تقنيات كسر العوائق للتقدم: "and then use blockbusting techniques to move forward".}
+a) become aware of them.
+b) use blockbusting techniques.
+c) become a better problem solver.
+d) correctly perceive the problem.
+e) conceive the solution of the problem.
+b
+
+461
+The purpose of the nine-dot exercise (Fogler & LeBlanc) is:
+{حسب الصفحة 62: الفقرة الثالثة تذكر نصاً: "The purpose of this exercise is to show that putting too many constraints... narrows the range of possible solutions."}
+a) to show that putting too many constraints (either consciously or unconsciously) on the problem statement narrows the range of possible solutions.
+b) to deny any correlation between the time people spend playing with a problem and the diversity of solutions generated.
+c) to list a set of alternative solutions.
+d) to warn a problem solver against "playing" with the problem.
+e) to demonstrate how difficult, it is to create conceptual blocks to a problem.
+a
+
+461
+Each of the following statements about Brainstorming is true except:
+{حسب الصفحة 70: إدخال الأفكار الغريبة يجب ألا يتم تجنبه بل تشجيعه "should not be shunned but instead should be encouraged". لذا الخيار a هو العبارة الخاطئة.}
+a) The introduction of strange or weird ideas during Brainstorming should be shunned and discouraged.
+b) Brainstorming is one of the oldest techniques to stimulate creativity.
+c) Brainstorming is routinely used in both informal and formal settings.
+d) The only guideline in Brainstorming is to generate as many ideas as possible.
+a
+
+461
+"Magnify" in Osborn's Checklist means:
+{حسب الصفحة 69: في جدول أوزبورن، التكبير (Magnify) يعني إضافة مكونات جديدة، جعله أطول، أقوى، أسمك، أو أعلى.}
+a) How can this be used as is? What are other uses it could be adapted to?
+b) Change the meaning, material, color, shape or odor?
+c) Add new ingredients? Make longer, stronger, thicker, or higher?
+d) Split up? Take something out? Make lighter, lower, or shorter?
+e) Who else? Where else? What else? Other ingredient, material, or approach?
+c
+
+461
+"Substitute" in Osborn's Checklist means:
+{حسب الصفحة 69: في جدول أوزبورن، التبديل (Substitute) يعني مَن غيره؟ أين غيره؟ ماذا غيره؟ مكون آخر، مادة أو نهج آخر.}
+a) How can this be used as is? What are other uses it could be adapted to?
+b) Change the meaning, material, color, shape or odor?
+c) Add new ingredients? Make longer, stronger, thicker, or higher?
+d) Split up? Take something out? Make lighter, lower, or shorter?
+e) Who else? Where else? What else? Other ingredient, material, or approach etc.?
+e
+
+461
+"Rearrange" in Osborn's Checklist means:
+{حسب الصفحة 69: في جدول أوزبورن، إعادة الترتيب (Rearrange) تعني تبديل الأجزاء، تغيير الإيجابيات لسلبيات، عكس الأدوار والقلب رأساً على عقب.}
+a) How can this be used as is? What are other uses it could be adapted to etc.?
+b) Change the meaning, material, color, shape or odor etc.?
+c) Add new ingredients? Make longer, stronger, thicker, or higher etc.?
+d) Who else? Where else? What else? Other ingredient, material, or approach?
+e) Interchange parts? Employ other patters or layouts? Transpose cause and effect? Change positives to negatives? Sort? Turn it backward or upside down? Reverse roles etc.?
+e
+
+461
+All of these statements are comments that reduce barnstorming [brainstorming] to brain drizzling, except:
+{حسب الصفحة 68: التعليقات السلبية تحول العصف الذهني إلى رذاذ ذهني (Braindrizzling). العبارة "إنها فكرة جيدة جداً" هي عبارة إيجابية داعمة وليست سلبية، لذا هي الاستثناء.}
+a) That's too much hassle.
+b) That won't work.
+c) It's very good idea.
+d) It's not our job.
+e) We cannot solve this problem.
+c
+
+461
+To generate ideas that are totally different from those previously obtained, effective problem solvers use:
+{حسب الصفحة 70: التحفيز العشوائي (Random Stimulation) هي التقنية المُستخدمة لتوليد أفكار مختلفة كلياً (totally different).}
+a) Random Stimulation.
+b) Random Simulation.
+c) Osborn's checklist technique.
+d) Use the Boggle method.
+a
+
+461
+Out of the following lists of example words, the best one for use in Random Stimulation is:
+{حسب الصفحة 70: يوجد جدول بعنوان (Examples of Random Stimulation Words). الكلمات الموجودة في الخيار b موجودة نصاً داخل هذا الجدول.}
+a) desirable, wanted, coveted, commendable, sought-after, looked-for, and longed-for.
+b) airplane, eavesdrop, jealous, kitchen, Scrooge, volume, and zone.
+c) fat, fate, father, fatigue, fatwa, faucet, and fault.
+d) scrip, script, scripture, scroll, Scrooge, scruff, and scrutiny.
+e) one, two, three, four, five, six, and seven.
+b
+
+461
+How could the rules of basketball be changed so that short players might be more competitive as it is written in the chapter 4 in strategies for creative problem solving, except:
+{حسب الصفحة 69: في جدول الأفكار المولدة للعبة كرة السلة، تم ذكر جميع الخيارات ما عدا "عد الأهداف مرتين - Counting the goals twice" (الموجود في الكتاب هو أن أهداف اللاعبين القصار تحسب بنقاط أكثر، ولكن ليس صياغة "عدها مرتين").}
+a) Lower the height of the basket.
+b) Counting the goals twice.
+c) Play in zero gravity.
+d) Short and tall teams, short teams have more players.
+e) Short player wear spikes.
+b
+
+461
+Fogler & LeBlanc applied the Osborn's technique Adapt? to the existing rules of basketball to propose the new rule:
+{حسب الصفحة 70: في جدول تكملة مثال كرة السلة، تم تطبيق التكييف (Adapt) لينتج عنه: اللاعبون القصار يمكنهم ارتكاب أخطاء (foul) كما يشاؤون.}
+a) Smaller players can foul as many times as they want.
+b) Raise basket for taller players.
+c) Short player's baskets worth 4 points.
+d) Tall player's shots worth 1 point.
+e) Separate leagues for taller and shorter players.
+a
+
+461
+Fogler & LeBlanc applied the Osborn's technique Modify? to the existing rules of basketball to propose the new rule:
+{حسب الصفحة 70: في جدول تكملة مثال كرة السلة، تطبيق التعديل (Modify) نتج عنه: رفع سلة اللاعبين الطوال (Raise baskets for taller players).}
+a) Smaller players can foul as many times as they want.
+b) Raise basket for taller players.
+c) Short player's baskets worth 4 points.
+d) Tall player's shots worth 1 point.
+e) Separate leagues for taller and shorter players.
+b
+
+461
+Fogler & LeBlanc applied the Osborn's technique Magnify? to the existing rules of basketball to propose the new rule:
+{حسب الصفحة 70: في جدول تكملة مثال كرة السلة، تطبيق التكبير (Magnify) نتج عنه: سلة اللاعبين القصار تحسب بـ 4 نقاط (Short player's baskets worth 4 points).}
+a) Smaller players can foul as many times as they want.
+b) Raise basket for taller players.
+c) Short player's baskets worth 4 points.
+d) Tall player's shots worth 1 point.
+e) Separate leagues for taller and shorter players.
+c
