@@ -1045,5 +1045,3 @@ b) fix things that aren't problems.
 c) limit the problem unnecessarily to solve it faster.
 d) look at a situation from many different viewpoints.
 d
-e) Separate leagues for taller and shorter players.
-c
