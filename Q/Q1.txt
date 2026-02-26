@@ -1,3 +1,443 @@
+472 PM
+All of the following statements are TRUE for the GE 211 course, except
+{بناءً على مادة اليوم الأول (MDF)، يعتمد المقرر بشكل كبير على العمل خارج الفصل الدراسي مثل إكمال القراءات المخصصة قبل الفصل، وتسليم الواجبات، وإعداد اليوميات؛ لذلك العبارة الأولى خاطئة.}
+a) ”It requires no out-of-class work as all work is done in class under facilitator supervision.”
+b) ”It develops knowledge that is useful for latter courses.”
+c) ”It focuses on the process of how to solve problems.”
+d) ”Its main goal is to introduce students to the Engineering Method.”
+a
+
+472 PM
+Which of the following is required before reaching the Application LoL?
+{وفقًا للملحق أ (صفحة J-35)، يتطلب مستوى التطبيق (Application) إتقان مستويي المعرفة (Knowledge) والفهم (Comprehension).}
+a) Knowledge
+b) Knowledge and Comprehension
+c) Knowledge, Comprehension, Application, and Analysis
+d) Analysis
+b
+
+472 PM
+A student did not attend the celebration, then
+{وفقًا للصفحة 7 من مادة اليوم الأول: "يجب حضور الاحتفال (The Celebration) والمشاركة فيه من قبل كل طالب... وإلا سيرسب الطالب في المقرر."}
+a) Another celebration day must be arranged for him
+b) He fails the course
+c) He fails in the lab session (only)
+d) any of the listed answers
+b
+
+472 PM
+In the concepts session: If a student, finally, has one (1) final NS, one (1) final NCE and two Self-Regulation Lapses, then the number of defects he accumulates in that session is
+{وفقًا للجدول 3 (صفحة 42)، الحصول على "تقييمين نهائيين لعدم التسليم (NS) أو عدم وجود جهد موثوق (NCE)" يؤدي إلى تسجيل 3 عيوب (defects). أما زلتا التنظيم الذاتي فهما لا تصلان للحد الأدنى (وهو 4 زلات) لتسجيل عيب إضافي.}
+a) 2 defects
+b) 3 defects
+c) 4 defects
+d) 5 defects
+b
+
+472 PM
+The Final Exam for GE 211 is called:
+{وفقًا للصفحة 7 من مادة اليوم الأول: "يوجد اختبار نهائي في مقرر EG 112، ويُسمى الاحتفال (The Celebration)."}
+a) The End
+b) The Termination
+c) The Festival
+d) The Celebration
+d
+
+472 PM
+Which of the following is true for late work
+{وفقًا للصفحة 9 بخصوص زلات التنظيم الذاتي: "في حالة إعادة التسليم المسموح بها؛ التسليم المتأخر (بعد الموافقة) يؤدي إلى زلة واحدة (1 Lapse) إذا تم التسليم متأخراً خلال الأسبوع الأول."}
+a) Permitted for Original Lab/concepts work
+b) Permitted for resubmission Concepts work
+c) Associated with issuing 1 fault
+d) Associated with issuing 1 laps
+d
+
+472 PM
+Which of the following is not true for late work
+{يُسمح بالتسليم المتأخر (مع تسجيل زلة) للأعمال المُعاد تسليمها فقط، أما الأعمال الأصلية (Original Lab/concepts work) فلا يُسمح بتسليمها متأخراً.}
+a) Permitted for resubmission Lab work
+b) Permitted for Original Lab/concepts work
+c) Lateness is one week from the original time
+d) Associated with issuing 1 laps
+b
+
+472 PM
+Which of the following is not true for late work
+{يُسمح بالتسليم المتأخر للأعمال المعادة، لكن الاختبارات القصيرة البديلة (making up quizzes) تخضع لضوابط صارمة تُعقد في وقت محدد داخل القاعة أو على النظام، ولا يوجد فيها مفهوم "التسليم المتأخر" للواجب.}
+a) Permitted for resubmission Lab work
+b) Permitted for making up quizzes
+c) Lateness is one week from the original time
+d) Associated with issuing 1 laps
+b
+
+472 PM
+The grading system of GE 211 is very generous and lenient indeed. A true statement supporting and manifesting this fact is
+{وفقًا للملاحظة السفلية رقم 6 في الصفحة 9: "...يُمنح الطلاب فرصة لإزالة عيب واحد (ONE Defect) في جلسة المفاهيم (Concepts) حصراً."}
+a) Plagiarizing your colleague’s work is tolerated and even encouraged
+b) A student can remove one defect in the concepts session
+c) A student can remove one defect in the laboratory session
+d) A single final grade of NCE is forgiven
+e) Two identical grades of F in both sessions lead to a passing grade of D in the course
+b
+
+472 PM
+The grading system of GE 211 is very generous and lenient indeed. A true statement supporting and manifesting this fact is
+{بالرغم من صياغة السؤال التي تبدو وكأنها تبحث عن الجانب المرن، إلا أن إزالة العيوب مسموحة فقط في جلسة المفاهيم، وبالتالي من الصحيح كمعلومة أن الطالب "لا يمكنه إزالة أي عيب في جلسة المعمل".}
+a) The facilitators and graders do not care if you cheat provided your work is technically correct and well presented
+b) A student can remove one defect in the laboratory session
+c) A student can’t remove any defect in the lab session
+d) A single final grade of NCE is forgiven
+c
+
+472 PM
+The grading system of GE 211 is very generous and lenient indeed. Each of the following statements is a ’TRUE’ statement supporting and manifesting this fact , except
+{وفقًا للصفحة 9، واجب إزالة العيب (defect removal) مخصص صراحةً لجلسة المفاهيم (Concepts) فقط، ولا يحق للطالب اختياره في "أي جلسة".}
+a) Two identical grades of D in both sessions lead to a slightly better grade of D+ in the course
+b) There is a possibility of obtaining a passing grade in the course despite failing one of its sessions
+c) Attending the celebration is necessary to pass the course
+d) A student can remove one defect in any session based on his choice
+d
+
+472 PM
+The verb ”employ” is a descriptive verb of the process of
+{وفقًا للملحق أ (صفحة J-35)، يُدرج الفعل "employ" ضمن الأفعال الوصفية لمستوى التطبيق (Application).}
+a) Evaluation
+b) Comprehension
+c) Application
+d) Analysis
+c
+
+472 PM
+No re-submission is accepted for a work product in the LAB session after
+{وفقًا للصفحة 9 من مادة اليوم الأول: "لا يُقبل أي إعادة تسليم (re-submission) بعد مرور أسبوع واحد من تاريخ الاستحقاق".}
+a) 24 hours of its due date
+b) three days of its due date
+c) one week of its due date
+d) two weeks of its due date
+c
+
+472 PM
+Which condition must be met before a work can Exceed Expectations?
+{وفقًا للصفحة 8 من مادة اليوم الأول: "لتجاوز التوقعات (Exceed Expectations)، يجب أن يلبي العمل التوقعات أولاً (meet expectations)، ثم يُظهر عملاً إضافياً ذا صلة..."}
+a) Extra pages must be added
+b) The work must meet expectations
+c) Instructor approval is required
+d) It must be submitted early
+b
+
+472 PM
+When a journal may be submitted?
+{وفقًا للصفحة 18 من مادة اليوم الأول: "يجب تسليم اليومية (journal) وفقاً للمواصفات وقبل وقت بدء الاختبار القصير (makeup quiz) المرتبط بها."}
+a) With the correction quiz
+b) Before the start of the make-up quiz
+c) At the end of the semester
+d) After the quiz
+b
+
+472 PM
+Which of the following cases may end to a grade of D in GE 211;
+{وفقًا للجدول 1 (صفحة 10)، الحصول على التقييم (D, F) والذي يمثل الرسوب في جلسة واحدة فقط (F) مع النجاح بدرجة D في الأخرى، يؤدي إلى الحصول على درجة D في المقرر ككل.}
+a) the student fails in only one of the two course sessions
+b) the student received F in both sessions of the course
+c) the student’s combinations of grades is (A,F)
+d) None of the listed answers
+a
+
+472 PM
+A student was granted NCE in one of his PTW-checklist, which of the following is true
+{العمل الذي يحصل على تقييم "لا يوجد جهد موثوق" (NCE) ينعكس مباشرة ويُسجل في قائمة التحقق الأصلية الخاصة بالعمل.}
+a) This will be reflected in the original work-checklist
+b) The student gets one defect
+c) The student gets one lapse
+d) The student fails the celebration
+a
+
+472 PM
+Which level of learning concentrate on having the ability to judge and appreciate the value of ideas, concepts, principles, theories, or general solution methods using appropriate criteria?
+{وفقًا للملحق أ (صفحة J-65)، هذا هو التعريف الدقيق لمستوى التقييم / التقدير (Evaluation/Appreciation).}
+a) Synthesis
+b) Evaluation
+c) Comprehension
+d) Analysis
+b
+
+472 PM
+How many LoL are required before reaching the Knowledge LoL?
+{وفقًا للملحق أ (صفحة J-15)، مستوى المعرفة (Knowledge) هو المستوى الأول والأساسي، ولا يتطلب اجتياز أي مستويات قبله (صفر).}
+a) 0
+b) 1
+c) 2
+d) 3
+a
+
+472 PM
+Making value judgments based on certain criteria demonstrates ........ LoL?
+{وفقًا للملحق أ (صفحة J-65)، إصدار أحكام قيمية بناءً على معايير معينة يندرج تحت مستوى التقييم (Evaluation).}
+a) Comprehension
+b) Application
+c) Synthesis
+d) Evaluation
+d
+
+472 PM
+Which of the following pairs represents alternative names of a certain Level of Learning
+{وفقًا للملحق أ، مستوى التقييم (Evaluation) يسمى أيضاً (Appreciation). بقية الخيارات مدموجة بشكل خاطئ.}
+a) Knowledge : Understanding
+b) Evaluation : Appreciation
+c) Comprehension : Independent Problem Solving
+d) Application : Information
+b
+
+472 PM
+Each of the following pairs represents alternative names of a certain LoL, EXCEPT
+{وفقًا للملحق أ، يُعرف مستوى التطبيق (Application) بـ "حل المشكلات المستقل"، بينما مصطلح "Attending" لا علاقة له به.}
+a) Knowledge : Information
+b) Comprehension : Understanding
+c) Application : Attending
+d) Evaluation : Appreciation
+c
+
+472 PM
+Each of the following pairs represents alternative names of a certain Level of Learning, EXCEPT
+{وفقًا للملحق أ، يُعرف التطبيق (Application) بـ "حل المشكلات المستقل" وليس "الإنشاء والإبداع" (Creation يُطلق على Synthesis). لذلك الربط هو الخاطئ.}
+a) Knowledge : Information
+b) Evaluation : Appreciation
+c) Comprehension : Understanding
+d) Application : Creation
+d
+
+472 PM
+The verb ”assess” is a descriptive verb of the process of
+{وفقًا للملحق أ (صفحة J-65)، يُدرج الفعل "assess" ضمن الأفعال الوصفية لمستوى التقييم (Evaluation).}
+a) Application
+b) Analysis
+c) Synthesis
+d) Evaluation
+d
+
+472 PM
+A student obtains a final grade of F in GE 211 if he has
+{وفقًا للصفحة 10 تحت "حالات الرسوب في المقرر"، الحصول على درجة F في كلتا الجلستين، أو تجميع 5 عيوب في أي جلسة، أو عدم حضور الاحتفال، جميعها خيارات تؤدي للرسوب التلقائي في المقرر.}
+a) a grade of F in both sessions of the course
+b) five or more defects in any of the course sessions
+c) if he did not attend the celebration
+d) any of the listed answers
+d
+
+472 PM
+Each of the following is a valid assessment of a work product in GE 211, EXCEPT
+{وفقًا للصفحة 8 من مادة اليوم الأول، درجات التقييم هي (SN ,ECN ,IN ,M ,E). عبارة "ضعيف جداً - Extremely Weak" ليست من ضمن درجات التقييم المعتمدة.}
+a) Exceeding Expectations
+b) Meeting Expectations
+c) Extremely Weak
+d) No Credible Effort
+c
+
+472 PM
+A student obtains NCE on the first submission of a work product, and M on the second submission. As a result, he accumulates
+{وفقًا للصفحة 9 من مادة اليوم الأول: الحصول على (NCE) في التسليم الأول ثم تعديله ليصبح ملبياً للتوقعات لاحقاً، ينتج عنه تسجيل زلة واحدة (1 lapse).}
+a) 0 lapse
+b) 1 lapse
+c) 1 laps
+d) 2 lapses
+b
+
+472 PM
+Which level of learning concentrate on having the ability to assemble parts and elements into a unified organization or whole that requires original or creative thinking?
+{وفقًا للملحق أ (صفحة J-55)، القدرة على تجميع الأجزاء والعناصر في تنظيم موحد يتطلب تفكيراً إبداعياً، هو التعريف الدقيق لمستوى التركيب / الإبداع (Synthesis).}
+a) Application
+b) Analysis
+c) Synthesis
+d) Evaluation
+c
+
+472 PM
+If you obtain a grade of B+ in GE 211, this means
+{وفقًا للجدول 1 (صفحة 10)، يتم الحصول على B+ إما عن طريق الحصول على (A, C) في الجلستين (أي 0 عيوب في جلسة وعيب واحد في الأخرى)، أو (B, B) في كلتا الجلستين. وفي جميع الحالات المذكورة، درجة المفاهيم ستكون C أو B أو A.}
+a) you have zero defects in one session and one defect of the other
+b) you have a grade of B in both sessions of the course
+c) your Concepts grade is either C, B or A
+d) All of the listed answers
+d
+
+472 PM
+The verb ”appraise” is a descriptive verb of the process of
+{وفقًا للملحق أ (صفحة J-65)، يُدرج الفعل "appraise" (يُقيّم) ضمن الأفعال الوصفية لمستوى التقييم (Evaluation).}
+a) Knowledge
+b) Application
+c) Synthesis
+d) Evaluation
+d
+
+472 PM
+The lapses having the most serious impact on your session grade are the lapses numbered
+{وفقًا للجدول 3 (صفحة 42)، الزلات ذات التأثير الأكبر (والتي تترجم إلى عيوب defects) تكون عند الوصول إلى 4 زلات (عيب 1)، أو 5.5 زلة (عيبين)، أو 7.5 زلة (3 عيوب).}
+a) 4, 5.5, and 7.5
+b) 1, 3, and 5.5
+c) 1, 2, and 3
+d) 1, 5.5, and 9
+a
+
+472 PM
+In any of the two course sessions: If a student, finally, has one (1) final assessment of NS, two (2) final assessments of NI, and six (6) Self-Regulation Lapses, then the number of defects he accumulates in that session is:
+{حسب الجدول 3: تقييم 1 SN يساوي عيبين (2 defects). وتقييمان 2 IN يساويان عيباً واحداً (1 defect). و 6 زلات تنظيم ذاتي تساوي عيبين (2 defects). المجموع النهائي = 2 + 1 + 2 = 5 عيوب.}
+a) 2 defects
+b) 3 defects
+c) 4 defects
+d) 5 defects
+d
+
+472 PM
+In the concepts session: Defects are cumulative. They may accumulate due to ______ problems, or due to ______ problems (Self-Regulation issues). Only a single defect is ______.
+{وفقًا للجدول 3 (صفحة 42) والصفحة 9، العيوب تتراكم بسبب مشاكل إدراكية (cognitive) أو مشاكل سلوكية وتنظيم ذاتي (affective)، ويمكن للطالب إزالة عيب واحد فقط (removable) في جلسة المفاهيم.}
+a) cognitive; affective; harmful
+b) affective; cognitive; bountiful
+c) cognitive; affective; removable
+d) affective; cognitive; un-removable
+c
+
+472 PM
+Each of the following is an explicit purpose for the Quizzes in GE 211, except
+{وفقًا للصفحة 14، تهدف الاختبارات القصيرة (Quizzes) لتشجيع القراءة، وتقييم المعرفة، وتركيز الانتباه، والمراجعة. عبارة "تعويد الطلاب على الامتناع عن الغش لأن المعلم موجود لالتقاطهم" ليست من الأهداف المذكورة صراحةً.}
+a) to encourage you to complete the assigned reading before class
+b) to enable you and the instructor to evaluate your knowledge of the important concepts before they are presented in class
+c) to accustom you to refrain from cheating since your instructor is always there to catch you
+d) to focus your attention on, as well as refresh your recollection of, the topics to be presented in the class
+c
+
+472 PM
+”The case that someone can recognize the need to use an idea, concept, principle, theory, or general solution methods without being told” demonstrates the LoL of ............................................
+{وفقًا للملحق أ (صفحة J-35)، القدرة على إدراك الحاجة لاستخدام فكرة أو مفهوم دون أن يُطلب منك ذلك صراحةً، هو التعريف الخاص بمستوى التطبيق (Application).}
+a) Comprehension
+b) Application
+c) Synthesis
+d) Knowledge
+b
+
+472 PM
+Which of the following is NOT TRUE for an Engineering Journal
+{وفقًا للصفحة 12 من مادة اليوم الأول: "لا يمكن إعادة تسليم اليوميات الهندسية (Engineering Journals) إذا تم تقييمها كـ تحتاج إلى تحسين (IN)."}
+a) ”It must contain reflective writing.”
+b) ”It must be submitted with a completed self-assessed Engineering Journal Checklist.”
+c) ”It can be resubmitted if it is assessed as NI.”
+d) ”If accepted, it may result in an extra credit on the corresponding quiz.”
+c
+
+472 PM
+All the following statements about ’defects’ are ’TRUE’ except
+{وفقًا للجدول 3 (صفحة 42)، وجود عيب واحد (1 defect) يضمن انخفاض درجة الجلسة (الحد الأقصى للدرجة يصبح C)، لذا فالعبارة التي تدعي أن العيب الواحد لا يؤثر هي عبارة خاطئة.}
+a) A single final defect does not affect your session grade
+b) Defects may accumulate due to cognitive problems
+c) Defects may accumulate due to affective problems (Self-Regulation issues)
+d) Defects are usually more serious than lapses
+a
+
+472 PM
+What is the maximum number of times a quiz can be corrected or made up?
+{وفقًا للصفحة 18 من مادة اليوم الأول، يُعتبر التصحيح (correction) أو الاختبار البديل (make-up) "فرصة ثانية" لإثبات الإتقان، مما يعني أنه متاح لمرة واحدة فقط.}
+a) Depends on instructor preference
+b) Once
+c) Twice
+d) Unlimited
+b
+
+472 PM
+Two (2) or more final assessments of NS or (NCE) result in
+{وفقًا للجدول 3 (صفحة 42)، الحصول على "تقييمين نهائيين أو أكثر لـ عدم التسليم (NS) أو عدم وجود جهد موثوق (NCE)" يُعادل تراكم 3 عيوب.}
+a) 0 defects
+b) 1 defect
+c) 2 defects
+d) 3 defects
+d
+
+472 PM
+In any of the two course sessions: If a student, finally, has one (1) NS, two (2) NI, and six (6) Self-Regulation Lapses, then the student
+{حسب الجدول 3: (1 SN) = عيبين، (2 IN) = عيب واحد، (6 زلات تنظيم ذاتي) = عيبين. المجموع الكلي 5 عيوب. الحصول على 5 عيوب في أي جلسة يؤدي إلى الرسوب في المقرر (FAIL) بالكامل.}
+a) Fails in this session
+b) The student needs to have makeup
+c) Fails the course
+d) All of the listed answers
+c
+
+472 PM
+Which of the following is required before reaching the Synthesis LoL?
+{وفقًا للملحق أ (صفحة J-55)، يتطلب مستوى التركيب (Synthesis) إتقان جميع المستويات السابقة وهي: المعرفة، الفهم، التطبيق، والتحليل.}
+a) Knowledge only
+b) Knowledge and Comprehension
+c) Knowledge, Comprehension, Application, and Analysis
+d) Analysis only
+c
+
+472 PM
+The verb ”contrast” is a descriptive verb of the process of
+{وفقًا للملحق أ (صفحة J-45)، يُدرج الفعل "contrast" (يقارن أو يُباين) ضمن الأفعال الوصفية لمستوى التحليل (Analysis).}
+a) Knowledge
+b) Comprehension
+c) Application
+d) Analysis
+d
+
+472 PM
+In the LAB session: If a student, finally, has one (1) NI and (1) NS, and (3.5) Self-Regulation Lapses, then the number of defects he accumulates in that session is
+{حسب الجدول 2 الخاص بجلسة المعمل (صفحة 29): (1 SN) = عيبين؛ (1 IN) = عيب واحد؛ و (3.5 زلات) = 0 عيوب (لأنه يتطلب الوصول لـ 4 زلات لتسجيل عيب). المجموع النهائي = 3 عيوب.}
+a) 3 defects
+b) 4 defects
+c) 5 defects
+d) 6 defects
+a
+
+472 PM
+Which of the following assessment levels is given when work is not submitted at all?
+{وفقًا للصفحة 8 من مادة اليوم الأول: "عند عدم تسليم العمل، يتم إصدار تقييم عدم التسليم (No Submittal - NS)."}
+a) Meeting Expectations
+b) Needing Improvement
+c) Excellent
+d) No Submittal
+d
+
+472 PM
+A student accumulates four defects (before taking the defect removal) in concepts and three defects in the laboratory session; does he have a chance to pass the course?
+{بعد استخدام فرصة إزالة العيب الواحد في جلسة المفاهيم، سيتبقى للطالب 3 عيوب في المفاهيم (رسوب في الجلسة = F)، ولديه 3 عيوب في المعمل (رسوب في المعمل = F). الرسوب التام في كلتا الجلستين يؤدي إلى الرسوب التلقائي في المقرر (صفحة 10)، لذا لا يوجد لديه فرصة للنجاح.}
+a) Yes
+b) No
+b
+
+472 PM
+Disruptive behavior in class includes all the following except
+{وفقًا لمادة اليوم الأول (صفحة 6 و 9)، السلوكيات التخريبية تشمل النوم، الأكل، العمل على مقررات أخرى، والمحادثات الجانبية الفردية، لكن "المحادثات التي تتم إدارتها من قبل المعلم" هي جزء من بيئة التعلم النشط.}
+a) class conversations run by the instructor
+b) sleeping or eating
+c) working on material for other courses
+d) failure to appropriately respond to the ”focus on facilitator” signal
+a
+
+472 PM
+Which LoL is achieved when someone successfully solved textbook problems using appropriate techniques and procedures based on where the problem is located in the book?
+{وفقًا للملحق أ (صفحة J-25)، حل المشكلات باستخدام التقنيات المناسبة بناءً على "موقع المشكلة في الكتاب" يتوافق مع مستوى الفهم (Comprehension).}
+a) Comprehension
+b) Application
+c) Synthesis
+d) Knowledge
+a
+
+472 PM
+If you are assigned a grade of NCE repeatedly on the first and second submissions of a work product, then
+{وفقًا للصفحة 8 من مادة اليوم الأول: العمل الذي لم يتم تحسينه ويظل محتفظاً بتقييم (ECN) أو (SN) يكون له تأثير سلبي شديد. ولا تتغير الدرجة تلقائياً بل تبقى ECN كما هي.}
+a) your final grade for this work product is NI
+b) your final grade for this work product is NCE
+c) you are automatically expelled from the course and awarded a course grade of Denial (DN)
+d) you have only two more chances to attempt to change this grade to either a Meet (M) or to an Exceed (E)
+b
+
+472 PM
+The verb ”memorize” is a descriptive verb of the process of
+{وفقًا للملحق أ (صفحة J-15)، يُدرج الفعل "memorize" (يحفظ) ضمن الأفعال الوصفية لمستوى المعرفة (Knowledge).}
+a) Knowledge
+b) Comprehension
+c) Application
+d) Analysis
+a
+
 471 AM
 In the concepts session: If a student, finally, has one (1) final assessment of NS (No Submittal), one (1) final assessments of NI (Needs Improvement), and six (6) Self-Regulation Lapses, then the number of defects he accumulates in that session is
 a) 2 defects
