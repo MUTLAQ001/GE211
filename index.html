@@ -25,13 +25,18 @@ body{font-family:var(--font-body);background-color:var(--bg-dark);color:#fff;dir
 .stars{position:absolute;width:100%;height:100%;background-image:radial-gradient(white 1px,transparent 1px);background-size:50px 50px;opacity:0.1}
 .app{min-height:100vh;position:relative;padding:20px 15px}
 .container{width:100%;max-width:700px;margin:0 auto}
-.header{text-align:center;margin-bottom:30px;animation:fadeIn 0.8s ease;position:relative}
+.header{text-align:center;margin-bottom:20px;animation:fadeIn 0.8s ease;position:relative}
 .title{font-family:var(--font-nums);font-weight:700;font-size:3rem;margin:0;background:linear-gradient(to right,#fff,#aaa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-1px}
 .subtitle{color:#888;font-size:1rem;margin-top:-5px}
 .team-settings-btn{position:absolute;top:10px;left:0;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:#fff;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--transition);z-index:10}
 .team-settings-btn:hover{background:rgba(255,255,255,0.2);transform:scale(1.1)}
 .author-link{position:absolute;top:10px;right:0;text-decoration:none;color:#888;font-size:0.8rem;font-weight:700;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:8px 15px;border-radius:20px;transition:var(--transition);display:flex;align-items:center;gap:5px;z-index:10}
 .author-link:hover{background:rgba(255,255,255,0.15);color:#fff;border-color:rgba(255,255,255,0.3);transform:translateY(-2px)}
+
+/* New Updates Banner Button */
+.updates-banner-btn { background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 152, 0, 0.15)); border: 1px solid rgba(255, 215, 0, 0.4); color: var(--color-concept); width: 100%; padding: 12px; border-radius: 14px; margin-bottom: 25px; font-family: var(--font-body); font-weight: 800; font-size: 1.05rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; animation: pulse-gold 2s infinite; transition: var(--transition); box-shadow: 0 5px 15px rgba(255, 215, 0, 0.1); }
+.updates-banner-btn:hover { transform: translateY(-2px); background: linear-gradient(135deg, rgba(255, 215, 0, 0.25), rgba(255, 152, 0, 0.25)); box-shadow: 0 8px 25px rgba(255, 215, 0, 0.2); }
+
 .nav-tabs{background:rgba(255,255,255,0.05);padding:5px;border-radius:15px;display:flex;justify-content:space-between;margin-bottom:25px;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1)}
 .tab-btn{flex:1;text-align:center;padding:12px;background:transparent;border:none;color:#888;font-family:var(--font-body);font-weight:700;cursor:pointer;border-radius:12px;transition:var(--transition)}
 .tab-btn.active{background:rgba(255,255,255,0.1);color:#fff;box-shadow:0 4px 15px rgba(0,0,0,0.2)}
@@ -205,7 +210,6 @@ body{font-family:var(--font-body);background-color:var(--bg-dark);color:#fff;dir
 .ans-row.wrong {background: rgba(255,71,87,0.15); color: #ff6b81; border: 1px solid rgba(255,71,87,0.3);}
 .ans-row.correct {background: rgba(0,230,118,0.15); color: #00e676; border: 1px solid rgba(0,230,118,0.3);}
 .explanation-box {margin-top: 10px; padding: 10px; background: rgba(255,215,0,0.1); border-right: 3px solid var(--color-concept); color: #ddd; font-size: 0.9rem; line-height: 1.5;}
-
 .trophy-icon {font-size: 4rem; margin-bottom: 10px; animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;}
 </style>
 </head>
@@ -267,11 +271,11 @@ const sessionDetails = {
 'C4-3':{title:{en:'Quiz #6',ar:'كويز 6'},desc:{en:'Quiz #6: Decision Analysis, your 1st car. (SCPS Ch5 until p102)',ar:'كويز 6: Decision Analysis, your 1st car. (الفصل 5 حتى ص102)'}},
 
 'C5-1':{title:{en:'Quiz #7',ar:'كويز 7'},desc:{en:'Quiz# 7: Adverse consequences. (SCPS Ch5 p103 to end)',ar:'كويز 7: Adverse consequences. (الفصل 5 ص103 للنهاية)'}},
-'L4-3':{title:{en:'1st DNB | Re Q4',ar:'تقييم 1st DNB | إعادة Q4'},desc:{en:'L-4-a presentation and 1st DNB assessment (Re quiz# 4)',ar:'عرض L-4-a وتقييم 1st DNB. إعادة كويز 4.'}},
+'L4-3':{title:{en:'1st DNB (M) | Re Q4',ar:'تقييم 1st DNB (M) | إعادة Q4'},desc:{en:'L-4-a presentation. 1st DNB assessment is considered M. (Re quiz# 4)',ar:'عرض L-4-a وتقييم 1st DNB يعتبر "M". إعادة كويز 4.'}},
 'C5-2':{title:{en:'Quiz #8 (Opt)',ar:'كويز 8 (اختياري)'},desc:{en:'Quiz# 8 (Optional): Exxon Valdez. (SCPS Ch6 until 6.4)',ar:'كويز 8 (اختياري): Exxon Valdez. (الفصل 6 حتى نهاية 6.4)'}},
-'L5-1':{title:{en:'2nd DNB | Re Q5',ar:'تقييم 2nd DNB'},desc:{en:'L-4-b presentation and 2nd DNB assessment',ar:'عرض L-4-b وتقييم 2nd DNB.'}},
+'L5-1':{title:{en:'Discuss L-4-b | Re Q5 (M)',ar:'مناقشة L-4-b | إعادة Q5 (M)'},desc:{en:'Discuss L-4-b (No grading, 1 lapse if not ready). Re Q5 considered M. (2nd DNB Canceled)',ar:'مناقشة L-4-b (بدون تقييم، تسجيل Lapse إذا لم تكن جاهزاً). إعادة كويز 5 تعتبر M. (تم إلغاء 2nd DNB).'}},
 'L5-2':{title:{en:'Re Q5',ar:'إعادة Q5'},desc:{en:'Work on L-4-c (Re quiz# 5)',ar:'العمل على L-4-c. إعادة كويز 5.'}},
-'L5-3':{title:{en:'3rd DNB | Re Q6',ar:'تقييم 3rd DNB | إعادة Q6'},desc:{en:'L-4-c presentation and 3rd DNB assessment (Re quiz# 6)',ar:'عرض L-4-c وتقييم 3rd DNB. إعادة كويز 6.'}},
+'L5-3':{title:{en:'Discuss L-4-c | Re Q6 (M)',ar:'مناقشة L-4-c | إعادة Q6 (M)'},desc:{en:'Discuss L-4-c (No grading, 1 lapse if not ready). Re Q6 considered M. (3rd DNB & L-5 Canceled)',ar:'مناقشة L-4-c (بدون تقييم، تسجيل Lapse إذا لم تكن جاهزاً). إعادة كويز 6 تعتبر M. (تم إلغاء 3rd DNB وتسليم L-5).'}},
 'C5-3':{title:{en:'2nd Midterm',ar:'الميدتيرم الثاني'},desc:{en:'The Solar car + Introducing the Work for L-4-d. 2nd MT – full week',ar:'السيارة الشمسية + مقدمة L-4-d. (أسبوع الميدتيرم الثاني)'}},
 'C6-1':{title:{en:'Quiz #9',ar:'كويز 9'},desc:{en:'Quiz# 9: Food for thought. (SCPS Ch6 6.5 to end)',ar:'كويز 9: Food for thought. (الفصل 6 من 6.5 للنهاية)'}},
 'C6-3':{title:{en:'Quiz #10 (Opt) | Re Q7',ar:'كويز 10 (اختياري) | إعادة Q7'},desc:{en:'(Re quiz# 7), Quiz#10 (optional**), Ethics information. (All of SCPS Ch7)',ar:'إعادة كويز 7، كويز 10 (اختياري)، معلومات الأخلاقيات. (كامل الفصل 7)'}},
@@ -286,10 +290,10 @@ const sessionDetails = {
 'CEL-4':{title:{en:'',ar:''},desc:{en:'Reserved for Celebration: to be set by each group as one unit',ar:'وقت مخصص للاحتفال (يحدد بواسطة المجموعة)'}},
 
 'L2-1':{title:{en:'L2 Draft',ar:'مسودة L2'},desc:{en:'L-2 Setting Team Norms (Step 1) - Draft only.',ar:'تسليم L-2 Setting Team Norms (Step 1) - مسودة.'}},
-'L2-2':{title:{en:'L5 Checks',ar:'فحص L5'},desc:{en:'L-5 Team Process Checks (Checklist + forms).',ar:'L-5 Team Process Checks (Checklist + forms).'}},
+'L2-2':{title:{en:'L5 Checks',ar:'فحص L5'},desc:{en:'L-5 Team Process Checks (Checklist + forms). (Final L-5 submission dropped)',ar:'L-5 Team Process Checks (Checklist + forms). (تم إلغاء التسليم النهائي لـ L-5).'}},
 'L2-3':{title:{en:'Zeroth Notebook',ar:'دفتر Zeroth'},desc:{en:'Submission: L-3-0th Team’s Design Notebook (Zeroth).',ar:'تسليم L-3-0th Team’s Design Notebook (ورقي).'}},
 
-'L4-1':{title:{en:'Start L-4-a | L2 Final',ar:'البدء بـ L-4-a | تسليم L2'},desc:{en:'Developing L4-context & start L-4-a. L-2 Final.',ar:'تطوير سياق L4 والبدء بـ L-4-a. تسليم نهائي L-2.'}},
+'L4-1':{title:{en:'Start L-4-a | L2 Final (M)',ar:'البدء بـ L-4-a | تسليم L2 (M)'},desc:{en:'Developing L4-context & start L-4-a. L-2 Final is considered M.',ar:'تطوير سياق L4 والبدء بـ L-4-a. تسليم نهائي L-2 يعتبر "M".'}},
 'L4-2':{title:{en:'Start L-4-b | Makeup Q3',ar:'البدء بـ L-4-b | إعادة Q3'},desc:{en:'Discussion of L-4-a & start L-4-b work. Makeup Quiz 3.',ar:'مناقشة L-4-a والبدء بـ L-4-b. إعادة كويز 3.'}}
 };
 
@@ -319,15 +323,12 @@ const generateAllSessions = () => {
         { date: '2026-04-05', id: 'C4-3', type: 'concept' },
         { date: '2026-04-07', id: 'L4-1', type: 'lab' },
         { date: '2026-04-09', id: 'L4-2', type: 'lab' },
-        
-        // التعديلات الجديدة هنا للتواريخ وتغيير الأماكن:
         { date: '2026-04-12', id: 'C5-1', type: 'concept' },
         { date: '2026-04-14', id: 'L4-3', type: 'lab' },
-        { date: '2026-04-16', id: 'L5-2', type: 'lab' }, // L5-2 أخذ مكان C5-2 يوم الخميس
-        { date: '2026-04-19', id: 'C5-2', type: 'concept' }, // C5-2 صار الأحد
-        { date: '2026-04-21', id: 'L5-1', type: 'lab' }, // L5-1 صار الثلوث
-        { date: '2026-04-23', id: 'L5-3', type: 'lab' }, // L5-3 بقي في مكانه بعده يوم الخميس
-        
+        { date: '2026-04-16', id: 'L5-2', type: 'lab' }, 
+        { date: '2026-04-19', id: 'C5-2', type: 'concept' }, 
+        { date: '2026-04-21', id: 'L5-1', type: 'lab' }, 
+        { date: '2026-04-23', id: 'L5-3', type: 'lab' }, 
         { date: '2026-04-26', id: 'C5-3', type: 'concept', multiDates: ['2026-04-26', '2026-04-28', '2026-04-30'] },
         { date: '2026-05-03', id: 'C6-1', type: 'concept' },
         { date: '2026-05-05', id: 'C6-3', type: 'concept' },
@@ -841,7 +842,7 @@ const up = (k,v)=>setSt(p=>({...p,[k]:v})), calc = () => {
 const gd = (nce,ni,lap) => { let d=(nce===1?2:(nce>1?3:0))+(ni===2?1:(ni>2&&ni<=5?2:(ni>5?3:0))), l=lap>3?(lap>5?(lap>7?3:2):1):0; return {t:d+l}; };
 let c=gd(st.cNCE,st.cNI,st.cLapses), l=gd(st.lNCE,st.lNI,st.lLapses);
 if(st.missed||c.t>=5||l.t>=5) return {g:'F',cd:c.t,ld:l.t};
-const cg=(c.t===0?(st.cE>=4?'A':'B'):(c.t===1?'C':(c.t===2?'D':'F'))), lg=(l.t===0?(st.lE>=5?'A':'B'):(l.t===1?'C':(l.t===2?'D':'F')));
+const cg=(c.t===0?(st.cE>=4?'A':'B'):(c.t===1?'C':(c.t===2?'D':'F'))), lg=(l.t===0?(st.lE>=3?'A':'B'):(l.t===1?'C':(l.t===2?'D':'F')));
 const map={'AA':'A+','AB':'A','AC':'B+','AD':'B','AF':'C+','BB':'B+','BC':'B','BD':'C+','BF':'C','CC':'C+','CD':'C','CF':'D+','DD':'D+','DF':'D','FF':'F'};
 return {g:map[[cg,lg].sort().join('')]||'F',cd:c.t,ld:l.t};
 };
@@ -849,7 +850,7 @@ const res = calc();
 return (
 <div className="calc-container"><div className="calc-grid">
 <div className="calc-section"><h3 className="calc-section-title" style={{color:'var(--color-concept)'}}><Icons.Concept/> Concepts</h3><Counter l="Exceeds (E)" v={st.cE} fn={v=>up('cE',v)}/><Counter l="Needs Imp (NI)" v={st.cNI} fn={v=>up('cNI',v)}/><Counter l="No Credit" v={st.cNCE} fn={v=>up('cNCE',v)}/><Counter l="Lapses" v={st.cLapses} fn={v=>up('cLapses',v)}/></div>
-<div className="calc-section"><h3 className="calc-section-title" style={{color:'var(--color-lab)'}}><Icons.Lab/> Lab</h3><Counter l="Exceeds (E)" v={st.lE} fn={v=>up('lE',v)}/><Counter l="Needs Imp (NI)" v={st.lNI} fn={v=>up('lNI',v)}/><Counter l="No Credit" v={st.lNCE} fn={v=>up('lNCE',v)}/><Counter l="Lapses" v={st.lLapses} fn={v=>up('lLapses',v)}/></div>
+<div className="calc-section"><h3 className="calc-section-title" style={{color:'var(--color-lab)'}}><Icons.Lab/> Lab (A = 3 Exceeds)</h3><Counter l="Exceeds (E)" v={st.lE} fn={v=>up('lE',v)}/><Counter l="Needs Imp (NI)" v={st.lNI} fn={v=>up('lNI',v)}/><Counter l="No Credit" v={st.lNCE} fn={v=>up('lNCE',v)}/><Counter l="Lapses" v={st.lLapses} fn={v=>up('lLapses',v)}/></div>
 </div>
 <div className={`missed-btn ${st.missed?'active':''}`} onClick={()=>up('missed',!st.missed)}><div className="missed-info"><span className="missed-title">{st.missed?"فاتني الاختبار (رسوب)":"حضور النهائي"}</span></div></div>
 <div className="grade-result"><div style={{color:'#888'}}>الدرجة</div><div className={`grade-big grade-${res.g[0]}`}>{res.g}</div><div className="defects-text">العيوب: C({res.cd}) | L({res.ld})</div><button className="reset-btn" onClick={()=>confirm('?')&&setSt({cE:0,cNI:0,cNCE:0,cLapses:0,lE:0,lNI:0,lNCE:0,lLapses:0,missed:false})}>تصفير</button></div></div>
@@ -857,7 +858,7 @@ return (
 };
 
 function App() {
-const [tab, setTab] = useState('schedule'), [modal, setModal] = useState(false);
+const [tab, setTab] = useState('schedule'), [modal, setModal] = useState(false), [updatesModal, setUpdatesModal] = useState(false);
 const [mems, setMems] = useState(()=>{
 try{ return JSON.parse(localStorage.getItem('ge211_team'))||["عضو 1","عضو 2","عضو 3","عضو 4","عضو 5"] } catch(e){ return ["عضو 1","عضو 2","عضو 3","عضو 4","عضو 5"] }
 });
@@ -866,15 +867,38 @@ try{ return JSON.parse(localStorage.getItem('ge211_settings'))||{timer:true} } c
 });
 useEffect(()=>localStorage.setItem('ge211_team',JSON.stringify(mems)),[mems]);
 useEffect(()=>localStorage.setItem('ge211_settings',JSON.stringify(setts)),[setts]);
+
 return (
 <div className="app"><div className="container">
 <header className="header"><button className="team-settings-btn" onClick={()=>setModal(true)}><Icons.Users/></button><a href="https://t.me/MUTLAQ1" className="author-link">إعداد: مطلق</a><h1 className="title">GE 211</h1><p className="subtitle">Introduction to Engineering Design</p></header>
+
+<button className="updates-banner-btn" onClick={() => setUpdatesModal(true)}>
+    <Icons.Alert/> التفاصيل والتحديثات الجديدة (بدءاً من 21 أبريل)
+</button>
+
 <div className="nav-tabs"><button className={`tab-btn ${tab==='schedule'?'active':''}`} onClick={()=>setTab('schedule')}>الجدول</button><button className={`tab-btn ${tab==='resources'?'active':''}`} onClick={()=>setTab('resources')}>المحتوى</button><button className={`tab-btn ${tab==='grades'?'active':''}`} onClick={()=>setTab('grades')}>الحاسبة</button></div>
 {tab==='schedule'&&<ScheduleView openTeam={()=>setModal(true)} team={mems} setts={setts}/>}{tab==='resources'&&<ContentView/>}{tab==='grades'&&<GradeView/>}
+
 {modal&&<div className="modal-overlay" onClick={()=>setModal(false)}><div className="modal-content" onClick={e=>e.stopPropagation()}><button className="modal-close" onClick={()=>setModal(false)}>×</button><h2 className="modal-title">الفريق</h2>
 <button className={`timer-toggle-btn ${setts.timer?'active':''}`} onClick={()=>setSetts({...setts,timer:!setts.timer})}><div><Icons.Clock/> المؤقت</div><span>{setts.timer?'مفعل':'غير مفعل'}</span></button>
 <div className="members-grid">{mems.map((m,i)=><div key={i} className="team-member-row"><span className="member-icon"><Icons.User/></span><input type="text" className="team-input-clean" value={m} onChange={e=>{const n=[...mems];n[i]=e.target.value;setMems(n)}}/></div>)}</div>
 <button className="save-btn-new" onClick={()=>setModal(false)}><Icons.Check/> حفظ</button></div></div>}
+
+{updatesModal&&<div className="modal-overlay" onClick={()=>setUpdatesModal(false)}><div className="modal-content" onClick={e=>e.stopPropagation()} style={{maxWidth: '600px'}}><button className="modal-close" onClick={()=>setUpdatesModal(false)}>×</button>
+<h2 className="modal-title" style={{color: 'var(--color-concept)', display:'flex', alignItems:'center', justifyContent:'center', gap:'10px'}}><Icons.Alert/> التحديثات الجديدة</h2>
+<div style={{maxHeight: '60vh', overflowY: 'auto', paddingRight: '5px'}}>
+    <ul style={{lineHeight: '1.9', color: '#ddd', paddingLeft: '20px', direction: 'rtl', fontFamily: 'var(--font-body)', fontSize: '0.95rem'}}>
+        <li style={{marginBottom: '10px'}}><strong style={{color:'#ff4757'}}>إلغاء تام (Canceled):</strong> تم إلغاء تقييم 2nd DNB وتقييم 3rd DNB، وإلغاء تسليم L-5 بالكامل.</li>
+        <li style={{marginBottom: '10px'}}><strong style={{color:'#00f2ff'}}>درجة الـ A في المعمل:</strong> تم تخفيض المتطلب ليصبح 3 Exceeds بدلاً من 5 (تم تحديث حاسبة الدرجات لتتوافق مع هذا التعديل).</li>
+        <li style={{marginBottom: '10px'}}><strong>بخصوص L-4-b و L-4-c:</strong> ستتم مناقشتها في L-5-1 و L-5-3 بدون أي تقييم (ولكن سيُسجل Lapse على الفريق بأكمله إذا لم يكن جاهزاً لعرض عمله).</li>
+        <li style={{marginBottom: '10px'}}><strong>اعتمادات (يعتبر M):</strong> تسليم L-2، تقييم 1st DNB، وتصحيح وإعادة كويز 5 و كويز 6، جميعها سيتم اعتبارها كأنها مصححة بـ "M".</li>
+        <li style={{marginBottom: '10px'}}><strong>إعادة كويزات أخرى:</strong> قد يتم التجاوز عنها فقط إذا لم يُعطَ الطالب فرصة مشابهة في كويز 5 أو 6.</li>
+        <li style={{marginBottom: '10px'}}><strong>المهام القادمة:</strong> التصحيحات، عرض L-4-d و L-4-e، ومشاريع الحفلة (Celebration) مستمرة كما خُطط لها مسبقاً في الجدول.</li>
+    </ul>
+</div>
+<button className="save-btn-new" onClick={()=>setUpdatesModal(false)} style={{marginTop:'25px'}}><Icons.Check/> حسناً، فهمت</button>
+</div></div>}
+
 </div></div>
 );
 }
