@@ -32,11 +32,8 @@ body{font-family:var(--font-body);background-color:var(--bg-dark);color:#fff;dir
 .team-settings-btn:hover{background:rgba(255,255,255,0.2);transform:scale(1.1)}
 .author-link{position:absolute;top:10px;right:0;text-decoration:none;color:#888;font-size:0.8rem;font-weight:700;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:8px 15px;border-radius:20px;transition:var(--transition);display:flex;align-items:center;gap:5px;z-index:10}
 .author-link:hover{background:rgba(255,255,255,0.15);color:#fff;border-color:rgba(255,255,255,0.3);transform:translateY(-2px)}
-
-/* New Updates Banner Button */
 .updates-banner-btn { background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 152, 0, 0.15)); border: 1px solid rgba(255, 215, 0, 0.4); color: var(--color-concept); width: 100%; padding: 12px; border-radius: 14px; margin-bottom: 25px; font-family: var(--font-body); font-weight: 800; font-size: 1.05rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; animation: pulse-gold 2s infinite; transition: var(--transition); box-shadow: 0 5px 15px rgba(255, 215, 0, 0.1); }
 .updates-banner-btn:hover { transform: translateY(-2px); background: linear-gradient(135deg, rgba(255, 215, 0, 0.25), rgba(255, 152, 0, 0.25)); box-shadow: 0 8px 25px rgba(255, 215, 0, 0.2); }
-
 .nav-tabs{background:rgba(255,255,255,0.05);padding:5px;border-radius:15px;display:flex;justify-content:space-between;margin-bottom:25px;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1)}
 .tab-btn{flex:1;text-align:center;padding:12px;background:transparent;border:none;color:#888;font-family:var(--font-body);font-weight:700;cursor:pointer;border-radius:12px;transition:var(--transition)}
 .tab-btn.active{background:rgba(255,255,255,0.1);color:#fff;box-shadow:0 4px 15px rgba(0,0,0,0.2)}
@@ -49,7 +46,6 @@ body{font-family:var(--font-body);background-color:var(--bg-dark);color:#fff;dir
 .sub-tab-item.active{color:#fff;text-shadow:0 2px 10px rgba(0,0,0,0.5)}
 .sub-tab-item svg{font-size:1.1rem;margin-bottom:-2px}
 .content-area{animation:fadeIn 0.4s ease-out}
-
 .pro-resource-card{display:flex;flex-direction:column;padding:20px;margin-bottom:15px;background:linear-gradient(145deg,rgba(30,30,35,0.6),rgba(20,20,25,0.8));border:1px solid rgba(255,255,255,0.06);border-radius:16px;transition:var(--transition);backdrop-filter:blur(10px);position:relative;overflow:hidden}
 .pro-resource-card:hover{transform:translateY(-3px);box-shadow:0 15px 30px rgba(0,0,0,0.3);border-color:rgba(255,255,255,0.15)}
 .pro-resource-card.pinned-file{background:linear-gradient(145deg,rgba(40,40,30,0.8),rgba(20,20,25,0.9));border:1px solid rgba(255,215,0,0.3);animation:pulse-gold 3s infinite}
@@ -70,15 +66,12 @@ body{font-family:var(--font-body);background-color:var(--bg-dark);color:#fff;dir
 .week-header::before,.week-header::after{content:'';height:1px;flex:1;background:linear-gradient(90deg,transparent,rgba(0,242,255,0.3),transparent)}
 .section-separator{margin:20px 0 10px;padding-left:10px;color:#888;font-size:0.9rem;font-weight:700;display:flex;align-items:center;gap:10px}
 .section-separator::after{content:'';flex:1;height:1px;background:rgba(255,255,255,0.1)}
-
 .quiz-active-container{background:#121215;border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:24px;animation:fadeIn 0.5s ease;position:relative;box-shadow:0 20px 50px rgba(0,0,0,0.4)}
 .quiz-top-bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px; flex-wrap: wrap; gap: 10px;}
 .quiz-progress-bar{width:100%;height:6px;background:rgba(255,255,255,0.1);border-radius:10px;margin-bottom:25px;overflow:hidden}
 .quiz-progress-fill{height:100%;background:linear-gradient(90deg,var(--color-concept),var(--color-lab));border-radius:10px;transition:width 0.4s cubic-bezier(0.4, 0, 0.2, 1)}
-
 .exam-timer { background: rgba(255,71,87,0.1); border: 1px solid rgba(255,71,87,0.3); color: #ff6b81; padding: 5px 12px; border-radius: 20px; font-family: var(--font-nums); font-weight: bold; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; animation: pulse-border 2s infinite; }
 .exam-timer.warning { background: rgba(255,71,87,0.8); color: #fff; animation: pulse-gold 1s infinite; }
-
 .auto-advance-wrapper{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.05);padding:5px 10px;border-radius:20px;border:1px solid rgba(255,255,255,0.1)}
 .toggle-switch{width:36px;height:20px;background:#333;border-radius:20px;position:relative;cursor:pointer;transition:0.3s}
 .toggle-switch.on{background:var(--color-success)}
@@ -100,14 +93,12 @@ body{font-family:var(--font-body);background-color:var(--bg-dark);color:#fff;dir
 .quiz-nav-btn:hover{transform:translateY(-2px);box-shadow:0 5px 15px rgba(255,255,255,0.2)}
 .quiz-nav-btn.secondary{background:transparent;color:#888;border:1px solid rgba(255,255,255,0.1)}
 .quiz-nav-btn.secondary:hover{color:#fff;border-color:#fff;background:transparent}
-
 .group-select-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;margin-bottom:20px}
 .group-btn{padding:15px 10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;border-radius:12px;font-weight:700;cursor:pointer;transition:var(--transition);text-align:center; display:flex; flex-direction:column; align-items:center; gap:5px;}
 .group-btn:hover{background:var(--color-lab);color:#000;border-color:var(--color-lab);box-shadow:0 0 15px rgba(0,242,255,0.3)}
 .group-btn.all-btn{grid-column:1/-1;background:linear-gradient(90deg,var(--color-concept),var(--color-lab));color:#000;border:none; flex-direction: row; justify-content: center;}
 .group-btn.random-btn{grid-column:1/-1;background:linear-gradient(135deg, #ff9800, #f44336);color:#fff;border:none; animation:pulse-orange 3s infinite; flex-direction: row; justify-content: center;}
 .group-btn.random-btn:hover{transform: scale(1.02); box-shadow: 0 10px 25px rgba(255,152,0,0.4);}
-
 .beautiful-player-card{background:linear-gradient(135deg,rgba(20,20,25,0.95),rgba(30,30,40,0.8));border:1px solid rgba(255,255,255,0.08);border-radius:18px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,0.5);transition:0.3s;position:relative;padding:15px;margin-bottom:15px}
 .beautiful-player-card:hover{border-color:var(--color-record);box-shadow:0 15px 50px rgba(255,62,77,0.15)}
 .player-info-section{display:flex;align-items:center;gap:15px;margin-bottom:12px}
@@ -251,6 +242,7 @@ const fileResources = {
 'L3':'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgCyjHZA6hLHToQraLPdLicNAVrGekTk211W5xMrSfa5vjw?e=Zrro6Y',
 'L4':'https://quedusa-my.sharepoint.com/:b:/r/personal/aahmad_qu_edu_sa/Documents/GE211%20sem%20472%202026%20documents/STUDENT%20PACKAGE/L4%20student%20package.pdf?csf=1&web=1&e=qfShdt',
 'L5':'https://drive.google.com/file/d/15POQLBqq9YgFLlGb16ygYRf3t-2KQnTh/view?usp=drivesdk',
+'L6':'https://drive.google.com/file/d/1OgsiLm_a4Zxy-sO2-zMmBy03_OZHFuD2/view?usp=drivesdk',
 'FDM':'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgCEkYAUr-F-TLUsEgwkrnb0AeUxpPv7XtflM9LuOicGtzA?e=acJxqo',
 'Checklist':'https://quedusa-my.sharepoint.com/:b:/g/personal/aahmad_qu_edu_sa/IQB3UVfE4DSRSa2bQK5VDpFEAdASYot8Je77AvHZBfEz7E8?e=yUp8LN',
 'PTW':'https://drive.google.com/file/d/1_6Rjs49XUgO-s8Fa94hldFsi03XyBL3j/view?usp=drivesdk'
@@ -264,12 +256,9 @@ const sessionDetails = {
 'C3-3':{title:{en:'Quiz #4',ar:'كويز 4'},desc:{en:'Quiz #4: SCPS Ch4 (p61 to end of 4.3B).',ar:'كويز 4: الفصل 4 (ص 61 إلى نهاية 4.3B).'}},
 'L3-1':{title:{en:'Q1 Makeup + L1 & L2',ar:'إعادة Q1 + تسليم L1, L2'},desc:{en:'Quiz-1 (correction/makeup first 10 minutes) + Assigs L-1 + L-2 (post card)',ar:'إعادة وتصحيح كويز 1 (أول 10 دقائق) + تسليم L-1 و L-2'}},
 'L3-3':{title:{en:'Midterms / L3-3',ar:'أسبوع الميدتيرم / L3-3'},desc:{en:'Will be announced based on the MT-timetable',ar:'حسب ما يقرره جدول الاختبارات النصفية'}},
-
 'L3-2':{title:{en:'L-3-zeroth | Makeup Q2',ar:'تسليم L-3-zeroth | إعادة Q2'},desc:{en:'Submission: L-3-zeroth. Makeup Quiz 2.',ar:'تسليم L-3-zeroth. إعادة كويز 2.'}},
-
 'C4-1':{title:{en:'Quiz #5',ar:'كويز 5'},desc:{en:'Quiz #5: Dunker Diagram and Statement & restatement. (SCPS Ch3 3.2D to end)',ar:'كويز 5: Dunker Diagram and Statement & restatement. (الفصل 3 من 3.2D)'}},
 'C4-3':{title:{en:'Quiz #6',ar:'كويز 6'},desc:{en:'Quiz #6: Decision Analysis, your 1st car. (SCPS Ch5 until p102)',ar:'كويز 6: Decision Analysis, your 1st car. (الفصل 5 حتى ص102)'}},
-
 'C5-1':{title:{en:'Quiz #7',ar:'كويز 7'},desc:{en:'Quiz# 7: Adverse consequences. (SCPS Ch5 p103 to end)',ar:'كويز 7: Adverse consequences. (الفصل 5 ص103 للنهاية)'}},
 'L4-3':{title:{en:'1st DNB (M) | Re Q4',ar:'تقييم 1st DNB (M) | إعادة Q4'},desc:{en:'L-4-a presentation. 1st DNB assessment is considered M. (Re quiz# 4)',ar:'عرض L-4-a وتقييم 1st DNB يعتبر "M". إعادة كويز 4.'}},
 'C5-2':{title:{en:'Quiz #8 (Opt)',ar:'كويز 8 (اختياري)'},desc:{en:'Quiz# 8 (Optional): Exxon Valdez. (SCPS Ch6 until 6.4)',ar:'كويز 8 (اختياري): Exxon Valdez. (الفصل 6 حتى نهاية 6.4)'}},
@@ -288,17 +277,15 @@ const sessionDetails = {
 'CEL-2':{title:{en:'',ar:''},desc:{en:'Reserved for Celebration: to be set by each group as one unit',ar:'وقت مخصص للاحتفال (يحدد بواسطة المجموعة)'}},
 'CEL-3':{title:{en:'',ar:''},desc:{en:'Reserved for Celebration: to be set by each group as one unit',ar:'وقت مخصص للاحتفال (يحدد بواسطة المجموعة)'}},
 'CEL-4':{title:{en:'',ar:''},desc:{en:'Reserved for Celebration: to be set by each group as one unit',ar:'وقت مخصص للاحتفال (يحدد بواسطة المجموعة)'}},
-
 'L2-1':{title:{en:'L2 Draft',ar:'مسودة L2'},desc:{en:'L-2 Setting Team Norms (Step 1) - Draft only.',ar:'تسليم L-2 Setting Team Norms (Step 1) - مسودة.'}},
 'L2-2':{title:{en:'L5 Checks',ar:'فحص L5'},desc:{en:'L-5 Team Process Checks (Checklist + forms). (Final L-5 submission dropped)',ar:'L-5 Team Process Checks (Checklist + forms). (تم إلغاء التسليم النهائي لـ L-5).'}},
 'L2-3':{title:{en:'Zeroth Notebook',ar:'دفتر Zeroth'},desc:{en:'Submission: L-3-0th Team’s Design Notebook (Zeroth).',ar:'تسليم L-3-0th Team’s Design Notebook (ورقي).'}},
-
 'L4-1':{title:{en:'Start L-4-a | L2 Final (M)',ar:'البدء بـ L-4-a | تسليم L2 (M)'},desc:{en:'Developing L4-context & start L-4-a. L-2 Final is considered M.',ar:'تطوير سياق L4 والبدء بـ L-4-a. تسليم نهائي L-2 يعتبر "M".'}},
 'L4-2':{title:{en:'Start L-4-b | Makeup Q3',ar:'البدء بـ L-4-b | إعادة Q3'},desc:{en:'Discussion of L-4-a & start L-4-b work. Makeup Quiz 3.',ar:'مناقشة L-4-a والبدء بـ L-4-b. إعادة كويز 3.'}}
 };
 
 const generateAllSessions = () => {
-    const explicitSchedule = [
+    const explicitSchedule =[
         { date: '2026-01-22', id: 'C1-1', type: 'concept' },
         { date: '2026-01-25', id: 'C1-2', type: 'concept' },
         { date: '2026-01-27', id: 'C1-3', type: 'concept' },
@@ -315,7 +302,7 @@ const generateAllSessions = () => {
         { date: '2026-02-22', id: 'OFF', type: 'holiday', topic: 'محاضرة ملغية (C-3-2 Canceled)' },
         { date: '2026-02-24', id: 'C3-3', type: 'concept' },
         { date: '2026-02-26', id: 'L3-1', type: 'lab' },
-        { date: '2026-03-05', id: 'L3-3', type: 'lab', multiDates: ['2026-03-01', '2026-03-03', '2026-03-05'] },
+        { date: '2026-03-05', id: 'L3-3', type: 'lab', multiDates:['2026-03-01', '2026-03-03', '2026-03-05'] },
         { date: '2026-03-08', id: 'OFF', type: 'holiday', topic: 'إجازة رمضان وعيد الفطر (تستمر حتى 26 مارس)' },
         { date: '2026-03-29', id: 'L3-2', type: 'lab' },
         { date: '2026-03-31', id: 'C4-1', type: 'concept' },
@@ -329,7 +316,7 @@ const generateAllSessions = () => {
         { date: '2026-04-19', id: 'C5-2', type: 'concept' }, 
         { date: '2026-04-21', id: 'L5-1', type: 'lab' }, 
         { date: '2026-04-23', id: 'L5-3', type: 'lab' }, 
-        { date: '2026-04-26', id: 'C5-3', type: 'concept', multiDates: ['2026-04-26', '2026-04-28', '2026-04-30'] },
+        { date: '2026-04-26', id: 'C5-3', type: 'concept', multiDates:['2026-04-26', '2026-04-28', '2026-04-30'] },
         { date: '2026-05-03', id: 'C6-1', type: 'concept' },
         { date: '2026-05-05', id: 'C6-3', type: 'concept' },
         { date: '2026-05-07', id: 'C6-2', type: 'concept' },
@@ -358,17 +345,17 @@ const AudioPlayer = ({ fileName, title }) => (
 );
 
 const InteractiveQuiz = ({ url, onClose, onFinish, reviewData }) => {
-const [questions, setQuestions] = useState([]), [currentQ, setCurrentQ] = useState(0), [score, setScore] = useState(0);
-const [showScore, setShowScore] = useState(false), [selectedOption, setSelectedOption] = useState(null), [autoAdvance, setAutoAdvance] = useState(false);
-const [allQ, setAllQ] = useState([]), [groups, setGroups] = useState([]), [selectedGroup, setSelectedGroup] = useState(null), [loading, setLoading] = useState(true);
-const [userAnswers, setUserAnswers] = useState({});
+const[questions, setQuestions] = useState([]), [currentQ, setCurrentQ] = useState(0),[score, setScore] = useState(0);
+const [showScore, setShowScore] = useState(false),[selectedOption, setSelectedOption] = useState(null), [autoAdvance, setAutoAdvance] = useState(false);
+const[allQ, setAllQ] = useState([]), [groups, setGroups] = useState([]),[selectedGroup, setSelectedGroup] = useState(null), [loading, setLoading] = useState(true);
+const[userAnswers, setUserAnswers] = useState({});
 const [isReview, setIsReview] = useState(false);
-const [timeLeft, setTimeLeft] = useState(null);
+const[timeLeft, setTimeLeft] = useState(null);
 
 useEffect(() => {
 if(!url) return;
 fetch(url).then(r=>r.text()).then(text => {
-const parsed = [], lines = text.split('\n');
+const parsed =[], lines = text.split('\n');
 let grp="General", q=null;
 lines.forEach(l => {
 l=l.trim(); if(!l) return;
@@ -482,20 +469,20 @@ return (
 };
 
 const ContentView = () => {
-const [activeIdx, setActiveIdx] = useState(1), [activeQuizUrl, setActiveQuizUrl] = useState(null), [showArchived, setShowArchived] = useState(false), [expandedRecs, setExpandedRecs] = useState({});
+const[activeIdx, setActiveIdx] = useState(1), [activeQuizUrl, setActiveQuizUrl] = useState(null), [showArchived, setShowArchived] = useState(false), [expandedRecs, setExpandedRecs] = useState({});
 const [expandedArchives, setExpandedArchives] = useState({});
-const [quizHistory, setQuizHistory] = useState({});
+const[quizHistory, setQuizHistory] = useState({});
 const [showCompletedQuizzes, setShowCompletedQuizzes] = useState(false);
 const [reviewUrl, setReviewUrl] = useState(null);
 
-const generatedSessions = useMemo(generateAllSessions, []);
+const generatedSessions = useMemo(generateAllSessions,[]);
 const isPast = (id) => { if(!id)return false; const ss=generatedSessions.filter(s=>s.id.startsWith(id)); if(!ss.length)return false; return ss[ss.length-1].date.getTime() < new Date().setHours(0,0,0,0); };
 
-const allQuizzesData = [
-    { sessionId: 'C2-1', title: 'Quiz #1', links: [{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1EcZ616WFuW4JZ8m8CzGSnghMflKT9Wkr/view?usp=sharing' }, { name: 'بدء الكويز', url: 'https://mutlaq001.github.io/GE211/Q/Q1.txt', interactive: true }] },
-    { sessionId: 'C2-3', title: 'Quiz #2', links: [{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1JAcDiYJk31kubIPmANB3skVZj6SOqQm6/view?usp=sharing' }, { name: 'ملف الأسئلة', url: 'https://drive.google.com/file/d/1LgxUS7N4Z59frC7hj84k2hvhRPjsXvxr/view?usp=sharing' }, { name: 'السلايدات', url: 'https://drive.google.com/file/d/1nQbOjeagZvdI0uCUNt2sYG0vF-azqF4_/view?usp=sharing' }, { name: 'بدء الكويز', url: 'https://mutlaq001.github.io/GE211/Q/Q2.txt', interactive: true }] },
-    { sessionId: 'C3-1', title: 'Quiz #3', links: [{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1MW4Dc0Mp_M7U0YZ9aAV95a4w5GfT8uTH/view?usp=drivesdk' }, { name: 'ملف الأسئلة', url: 'https://drive.google.com/file/d/1N7ZXuC7Vb2mUjoEIpxRK31XPRVQv-ECL/view?usp=sharing' }, { name: 'السلايدات', url: 'https://drive.google.com/file/d/19_EJAKf4FLjqyheDHaMCo7JFcOS5gL1_/view?usp=sharing' }, { name: 'التجميعات', url: 'https://drive.google.com/file/d/1BmHRYKIs9QzQcNEM29tXbtF3ncwL5xdH/view?usp=sharing' }, { name: 'بدء الكويز', url: 'https://mutlaq001.github.io/GE211/Q/Q3.txt', interactive: true }] },
-    { sessionId: 'C3-3', title: 'Quiz #4', links: [
+const allQuizzesData =[
+    { sessionId: 'C2-1', title: 'Quiz #1', links:[{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1EcZ616WFuW4JZ8m8CzGSnghMflKT9Wkr/view?usp=sharing' }, { name: 'بدء الكويز', url: 'https://mutlaq001.github.io/GE211/Q/Q1.txt', interactive: true }] },
+    { sessionId: 'C2-3', title: 'Quiz #2', links:[{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1JAcDiYJk31kubIPmANB3skVZj6SOqQm6/view?usp=sharing' }, { name: 'ملف الأسئلة', url: 'https://drive.google.com/file/d/1LgxUS7N4Z59frC7hj84k2hvhRPjsXvxr/view?usp=sharing' }, { name: 'السلايدات', url: 'https://drive.google.com/file/d/1nQbOjeagZvdI0uCUNt2sYG0vF-azqF4_/view?usp=sharing' }, { name: 'بدء الكويز', url: 'https://mutlaq001.github.io/GE211/Q/Q2.txt', interactive: true }] },
+    { sessionId: 'C3-1', title: 'Quiz #3', links:[{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1MW4Dc0Mp_M7U0YZ9aAV95a4w5GfT8uTH/view?usp=drivesdk' }, { name: 'ملف الأسئلة', url: 'https://drive.google.com/file/d/1N7ZXuC7Vb2mUjoEIpxRK31XPRVQv-ECL/view?usp=sharing' }, { name: 'السلايدات', url: 'https://drive.google.com/file/d/19_EJAKf4FLjqyheDHaMCo7JFcOS5gL1_/view?usp=sharing' }, { name: 'التجميعات', url: 'https://drive.google.com/file/d/1BmHRYKIs9QzQcNEM29tXbtF3ncwL5xdH/view?usp=sharing' }, { name: 'بدء الكويز', url: 'https://mutlaq001.github.io/GE211/Q/Q3.txt', interactive: true }] },
+    { sessionId: 'C3-3', title: 'Quiz #4', links:[
         { name: 'ملف الكويز', url: 'https://drive.google.com/file/d/11S14VVqqInQ8Ry2lzjYam7DVdMT4Df6G/view?usp=drivesdk' },
         { name: 'السلايدات', url: 'https://drive.google.com/file/d/1_Ckf7Qicsf0hwyFPfglBicGm_xvzZ1ZU/view?usp=sharing' },
         { name: 'ملف الأسئلة', url: 'https://drive.google.com/file/d/1XDcFLere-67l_EZvb-DkOmtzbYrm2Xlg/view?usp=sharing' },
@@ -503,12 +490,12 @@ const allQuizzesData = [
         { name: 'منوع', url: 'https://drive.google.com/drive/folders/1StvHLT99C3xcwegqK7aqdZYj_ru8A5bg?usp=sharing' },
         { name: 'بدء الكويز', url: 'https://mutlaq001.github.io/GE211/Q/Q4.txt', interactive: true }
     ] },
-    { sessionId: 'C4-1', title: 'Quiz #5', links: [{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1o45Y1SI7JmiDhAERUxDCjqmCNNk68GWj/view?usp=drivesdk' }, { name: 'السلايدات', url: 'https://drive.google.com/file/d/1pGy2ELvmf5LxdiTdv-I5kc3WfVBbF1qW/view?usp=drive_link' }, { name: 'التجميعات', url: 'https://drive.google.com/file/d/1xEKjZ6q5YY1TTzPgBOLP_vI0AVHd3dig/view?usp=drive_link' }, { name: 'ملف الأسئلة', url: 'https://drive.google.com/file/d/19aQHldyQDeRWZlUdYO1DqounZKUksVkF/view?usp=drivesdk' }, { name: 'منوع', url: 'https://drive.google.com/drive/folders/1iSICf9FDKGB0-TiqPyjIZmT-AjVRENxp?usp=drive_link' }, { name: 'بدء الكويز', url: 'https://mutlaq001.github.io/GE211/Q/Q5.txt', interactive: true }] },
-    { sessionId: 'C4-3', title: 'Quiz #6', links: [{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1Mm-IH2YIF5TUZkl2LpMaqJengSBxhfBI/view?usp=drivesdk' }] },
-    { sessionId: 'C5-1', title: 'Quiz #7', links: [{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1TThG_xJc1_6QjLt3yfZqP_ryZEVR1TDS/view?usp=drivesdk' }] },
-    { sessionId: 'C5-2', title: 'Quiz #8 (اختياري)', links: [{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1AifhpqhiMoOpNK2t0vbikEy2UcqBc9Wb/view?usp=drivesdk' }] },
-    { sessionId: 'C6-1', title: 'Quiz #9', links: [{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1vZybOe-D2lY01-k26EBOkvs9KrG3UILf/view?usp=drivesdk' }] },
-    { sessionId: 'C6-3', title: 'Quiz #10', links: [{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/13mm6JTsy9OM6Mn5h-J-X58J4Srvurpu_/view?usp=drivesdk' }] }
+    { sessionId: 'C4-1', title: 'Quiz #5', links:[{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1o45Y1SI7JmiDhAERUxDCjqmCNNk68GWj/view?usp=drivesdk' }, { name: 'السلايدات', url: 'https://drive.google.com/file/d/1pGy2ELvmf5LxdiTdv-I5kc3WfVBbF1qW/view?usp=drive_link' }, { name: 'التجميعات', url: 'https://drive.google.com/file/d/1xEKjZ6q5YY1TTzPgBOLP_vI0AVHd3dig/view?usp=drive_link' }, { name: 'ملف الأسئلة', url: 'https://drive.google.com/file/d/19aQHldyQDeRWZlUdYO1DqounZKUksVkF/view?usp=drivesdk' }, { name: 'منوع', url: 'https://drive.google.com/drive/folders/1iSICf9FDKGB0-TiqPyjIZmT-AjVRENxp?usp=drive_link' }, { name: 'بدء الكويز', url: 'https://mutlaq001.github.io/GE211/Q/Q5.txt', interactive: true }] },
+    { sessionId: 'C4-3', title: 'Quiz #6', links:[{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1Mm-IH2YIF5TUZkl2LpMaqJengSBxhfBI/view?usp=drivesdk' }] },
+    { sessionId: 'C5-1', title: 'Quiz #7', links:[{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1TThG_xJc1_6QjLt3yfZqP_ryZEVR1TDS/view?usp=drivesdk' }] },
+    { sessionId: 'C5-2', title: 'Quiz #8 (اختياري)', links:[{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1AifhpqhiMoOpNK2t0vbikEy2UcqBc9Wb/view?usp=drivesdk' }] },
+    { sessionId: 'C6-1', title: 'Quiz #9', links:[{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/1vZybOe-D2lY01-k26EBOkvs9KrG3UILf/view?usp=drivesdk' }] },
+    { sessionId: 'C6-3', title: 'Quiz #10', links:[{ name: 'ملف الكويز', url: 'https://drive.google.com/file/d/13mm6JTsy9OM6Mn5h-J-X58J4Srvurpu_/view?usp=drivesdk' }] }
 ];
 
 const files = [
@@ -524,10 +511,11 @@ const files = [
 {title:'L2 Lab Session',sessionId:'L2',links:[{name:'فتح المجلد',url:fileResources['L2']}]},
 {title:'L3 Lab Session',sessionId:'L3',links:[{name:'فتح المجلد',url:fileResources['L3']}]},
 {title:'L4 Lab Session',sessionId:'L4',links:[{name:'فتح الملف',url:fileResources['L4']}]},
-{title:'L5 Lab Session',sessionId:'L5',links:[{name:'فتح الملف',url:fileResources['L5']}]}
+{title:'L5 Lab Session',sessionId:'L5',links:[{name:'فتح الملف',url:fileResources['L5']}]},
+{title:'L6 Lab Session',sessionId:'L6',links:[{name:'فتح الملف',url:fileResources['L6']}]}
 ];
 
-const recordings = [
+const recordings =[
 {t:'Quiz 1',f:'Q1',ref:'C2-1',c:'Q'},
 {t:'Quiz 2',f:'Q2',ref:'C2-3',c:'Q'},
 {t:'Quiz 3',f:'Q3',ref:'C3-1',c:'Q'},
@@ -552,7 +540,7 @@ if(activeIdx===0) {
     
     let completedQs = [];
     let currentQObj = null;
-    let upcomingQs = [];
+    let upcomingQs =[];
 
     allQuizzesData.forEach(q => {
         if (isPast(q.sessionId)) {
@@ -672,13 +660,13 @@ if(activeIdx===2) {
 const today = new Date().setHours(0,0,0,0);
 const getGroupData = (type) => {
 const items = recordings.filter(r => r.c === type);
-const past = [], future = [];
+const past = [], future =[];
 const currBlk = (() => { const s = generatedSessions.find(s=>s.type!=='holiday'&&s.date>=new Date().setHours(0,0,0,0)); return s?s.id.split('-')[0]:'END'; })();
 items.forEach(r => {
 const s = generatedSessions.find(x => x.id === r.ref || x.id.startsWith(r.ref));
 if(s && s.date.getTime() < today) past.push(r); else future.push(r);
 });
-return { past, current: future.length > 0 ? future[0] : null, upcoming: future.length > 1 ? future.slice(1) : [] };
+return { past, current: future.length > 0 ? future[0] : null, upcoming: future.length > 1 ? future.slice(1) :[] };
 };
 const RenderGroup = ({ title, icon, typeChar }) => {
 const data = getGroupData(typeChar);
@@ -860,9 +848,9 @@ return (
 function App() {
 const [tab, setTab] = useState('schedule'), [modal, setModal] = useState(false), [updatesModal, setUpdatesModal] = useState(false);
 const [mems, setMems] = useState(()=>{
-try{ return JSON.parse(localStorage.getItem('ge211_team'))||["عضو 1","عضو 2","عضو 3","عضو 4","عضو 5"] } catch(e){ return ["عضو 1","عضو 2","عضو 3","عضو 4","عضو 5"] }
+try{ return JSON.parse(localStorage.getItem('ge211_team'))||["عضو 1","عضو 2","عضو 3","عضو 4","عضو 5"] } catch(e){ return["عضو 1","عضو 2","عضو 3","عضو 4","عضو 5"] }
 });
-const [setts, setSetts] = useState(()=>{
+const[setts, setSetts] = useState(()=>{
 try{ return JSON.parse(localStorage.getItem('ge211_settings'))||{timer:true} } catch(e){ return {timer:true} }
 });
 useEffect(()=>localStorage.setItem('ge211_team',JSON.stringify(mems)),[mems]);
@@ -889,11 +877,11 @@ return (
 <div style={{maxHeight: '60vh', overflowY: 'auto', paddingRight: '5px'}}>
     <ul style={{lineHeight: '1.9', color: '#ddd', paddingLeft: '20px', direction: 'rtl', fontFamily: 'var(--font-body)', fontSize: '0.95rem'}}>
         <li style={{marginBottom: '10px'}}><strong style={{color:'#ff4757'}}>إلغاء تام (Canceled):</strong> تم إلغاء تقييم 2nd DNB وتقييم 3rd DNB، وإلغاء تسليم L-5 بالكامل.</li>
-        <li style={{marginBottom: '10px'}}><strong style={{color:'#00f2ff'}}>درجة الـ A في المعمل:</strong> تم تخفيض المتطلب ليصبح 3 Exceeds بدلاً من 5 (تم تحديث حاسبة الدرجات لتتوافق مع هذا التعديل).</li>
-        <li style={{marginBottom: '10px'}}><strong>بخصوص L-4-b و L-4-c:</strong> ستتم مناقشتها في L-5-1 و L-5-3 بدون أي تقييم (ولكن سيُسجل Lapse على الفريق بأكمله إذا لم يكن جاهزاً لعرض عمله).</li>
-        <li style={{marginBottom: '10px'}}><strong>اعتمادات (يعتبر M):</strong> تسليم L-2، تقييم 1st DNB، وتصحيح وإعادة كويز 5 و كويز 6، جميعها سيتم اعتبارها كأنها مصححة بـ "M".</li>
+        <li style={{marginBottom: '10px'}}><strong style={{color:'#00f2ff'}}>درجة الـ A في المعمل:</strong> تم تخفيض المتطلب ليصبح 3 Exceeds بدلاً من 5.</li>
+        <li style={{marginBottom: '10px'}}><strong>بخصوص L-4-b و L-4-c:</strong> ستتم مناقشتها في L-5-1 و L-5-3 بدون أي تقييم.</li>
+        <li style={{marginBottom: '10px'}}><strong>اعتمادات:</strong> تسليم L-2، تقييم 1st DNB، وتصحيح وإعادة كويز 5 و كويز 6، جميعها سيتم اعتبارها كأنها مصححة بـ "M".</li>
         <li style={{marginBottom: '10px'}}><strong>إعادة كويزات أخرى:</strong> قد يتم التجاوز عنها فقط إذا لم يُعطَ الطالب فرصة مشابهة في كويز 5 أو 6.</li>
-        <li style={{marginBottom: '10px'}}><strong>المهام القادمة:</strong> التصحيحات، عرض L-4-d و L-4-e، ومشاريع الحفلة (Celebration) مستمرة كما خُطط لها مسبقاً في الجدول.</li>
+        <li style={{marginBottom: '10px'}}><strong>المهام القادمة:</strong> التصحيحات، عرض L-4-d و L-4-e، ومشاريع الحفلة مستمرة كما خُطط لها مسبقاً في الجدول.</li>
     </ul>
 </div>
 <button className="save-btn-new" onClick={()=>setUpdatesModal(false)} style={{marginTop:'25px'}}><Icons.Check/> حسناً، فهمت</button>
