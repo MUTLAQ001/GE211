@@ -32,8 +32,6 @@ body{font-family:var(--font-body);background-color:var(--bg-dark);color:#fff;dir
 .team-settings-btn:hover{background:rgba(255,255,255,0.2);transform:scale(1.1)}
 .author-link{position:absolute;top:10px;right:0;text-decoration:none;color:#888;font-size:0.8rem;font-weight:700;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:8px 15px;border-radius:20px;transition:var(--transition);display:flex;align-items:center;gap:5px;z-index:10}
 .author-link:hover{background:rgba(255,255,255,0.15);color:#fff;border-color:rgba(255,255,255,0.3);transform:translateY(-2px)}
-.updates-banner-btn { background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 152, 0, 0.15)); border: 1px solid rgba(255, 215, 0, 0.4); color: var(--color-concept); width: 100%; padding: 12px; border-radius: 14px; margin-bottom: 25px; font-family: var(--font-body); font-weight: 800; font-size: 1.05rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; animation: pulse-gold 2s infinite; transition: var(--transition); box-shadow: 0 5px 15px rgba(255, 215, 0, 0.1); }
-.updates-banner-btn:hover { transform: translateY(-2px); background: linear-gradient(135deg, rgba(255, 215, 0, 0.25), rgba(255, 152, 0, 0.25)); box-shadow: 0 8px 25px rgba(255, 215, 0, 0.2); }
 .nav-tabs{background:rgba(255,255,255,0.05);padding:5px;border-radius:15px;display:flex;justify-content:space-between;margin-bottom:25px;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1)}
 .tab-btn{flex:1;text-align:center;padding:12px;background:transparent;border:none;color:#888;font-family:var(--font-body);font-weight:700;cursor:pointer;border-radius:12px;transition:var(--transition)}
 .tab-btn.active{background:rgba(255,255,255,0.1);color:#fff;box-shadow:0 4px 15px rgba(0,0,0,0.2)}
@@ -827,18 +825,28 @@ catch(e){ return {cE:0,cNI:0,cNCE:0,cLapses:0,lE:0,lNI:0,lNCE:0,lLapses:0,missed
 });
 useEffect(()=>localStorage.setItem('ge211_data',JSON.stringify(st)),[st]);
 const up = (k,v)=>setSt(p=>({...p,[k]:v})), calc = () => {
-const gd = (nce,ni,lap) => { let d=(nce===1?2:(nce>1?3:0))+(ni===2?1:(ni>2&&ni<=5?2:(ni>5?3:0))), l=lap>3?(lap>5?(lap>7?3:2):1):0; return {t:d+l}; };
-let c=gd(st.cNCE,st.cNI,st.cLapses), l=gd(st.lNCE,st.lNI,st.lLapses);
-if(st.missed||c.t>=5||l.t>=5) return {g:'F',cd:c.t,ld:l.t};
-const cg=(c.t===0?(st.cE>=4?'A':'B'):(c.t===1?'C':(c.t===2?'D':'F'))), lg=(l.t===0?(st.lE>=3?'A':'B'):(l.t===1?'C':(l.t===2?'D':'F')));
-const map={'AA':'A+','AB':'A','AC':'B+','AD':'B','AF':'C+','BB':'B+','BC':'B','BD':'C+','BF':'C','CC':'C+','CD':'C','CF':'D+','DD':'D+','DF':'D','FF':'F'};
-return {g:map[[cg,lg].sort().join('')]||'F',cd:c.t,ld:l.t};
+const cL=st.cLapses>=8?3:(st.cLapses>=6?2:(st.cLapses>=4?1:0));
+const cNI=st.cNI>=5?3:(st.cNI>=3?2:(st.cNI===2?1:0));
+const cNCE=st.cNCE>=2?3:(st.cNCE===1?2:0);
+const cT=cL+cNI+cNCE;
+const lL=st.lLapses>=8?3:(st.lLapses>=6?2:(st.lLapses>=4?1:0));
+const lNI=st.lNI>=5?3:(st.lNI>=3?2:(st.lNI>=1?1:0));
+const lNCE=st.lNCE>=2?3:(st.lNCE===1?2:0);
+const lT=lL+lNI+lNCE;
+const t=cT+lT;
+if(st.missed||t>=5||cT>=3||lT>=3)return{g:'F',cd:cT,ld:lT};
+const cg=cT===0?(st.cE>=4?'A':'B'):(cT===1?'C':'D');
+const lg=lT===0?(st.lE>=3?'A':'B'):(lT===1?'C':'D');
+const map={'AA':'A+','AB':'A','AC':'B+','AD':'B','BB':'B+','BC':'B','BD':'C+','CC':'C+','CD':'C','DD':'D'};
+let finalG=map[[cg,lg].sort().join('')]||'F';
+if(t===4)finalG='D';
+return{g:finalG,cd:cT,ld:lT};
 };
 const res = calc();
 return (
 <div className="calc-container"><div className="calc-grid">
-<div className="calc-section"><h3 className="calc-section-title" style={{color:'var(--color-concept)'}}><Icons.Concept/> Concepts</h3><Counter l="Exceeds (E)" v={st.cE} fn={v=>up('cE',v)}/><Counter l="Needs Imp (NI)" v={st.cNI} fn={v=>up('cNI',v)}/><Counter l="No Credit" v={st.cNCE} fn={v=>up('cNCE',v)}/><Counter l="Lapses" v={st.cLapses} fn={v=>up('cLapses',v)}/></div>
-<div className="calc-section"><h3 className="calc-section-title" style={{color:'var(--color-lab)'}}><Icons.Lab/> Lab (A = 3 Exceeds)</h3><Counter l="Exceeds (E)" v={st.lE} fn={v=>up('lE',v)}/><Counter l="Needs Imp (NI)" v={st.lNI} fn={v=>up('lNI',v)}/><Counter l="No Credit" v={st.lNCE} fn={v=>up('lNCE',v)}/><Counter l="Lapses" v={st.lLapses} fn={v=>up('lLapses',v)}/></div>
+<div className="calc-section"><h3 className="calc-section-title" style={{color:'var(--color-concept)'}}><Icons.Concept/> Concepts</h3><Counter l="Exceeds (E)" v={st.cE} fn={v=>up('cE',v)}/><Counter l="Needs Imp (NI)" v={st.cNI} fn={v=>up('cNI',v)}/><Counter l="No Credit (NCE)" v={st.cNCE} fn={v=>up('cNCE',v)}/><Counter l="Lapses" v={st.cLapses} fn={v=>up('cLapses',v)}/></div>
+<div className="calc-section"><h3 className="calc-section-title" style={{color:'var(--color-lab)'}}><Icons.Lab/> Lab (A = 3 Exceeds)</h3><Counter l="Exceeds (E)" v={st.lE} fn={v=>up('lE',v)}/><Counter l="Needs Imp (NI)" v={st.lNI} fn={v=>up('lNI',v)}/><Counter l="No Credit (NCE)" v={st.lNCE} fn={v=>up('lNCE',v)}/><Counter l="Lapses" v={st.lLapses} fn={v=>up('lLapses',v)}/></div>
 </div>
 <div className={`missed-btn ${st.missed?'active':''}`} onClick={()=>up('missed',!st.missed)}><div className="missed-info"><span className="missed-title">{st.missed?"فاتني الاختبار (رسوب)":"حضور النهائي"}</span></div></div>
 <div className="grade-result"><div style={{color:'#888'}}>الدرجة</div><div className={`grade-big grade-${res.g[0]}`}>{res.g}</div><div className="defects-text">العيوب: C({res.cd}) | L({res.ld})</div><button className="reset-btn" onClick={()=>confirm('?')&&setSt({cE:0,cNI:0,cNCE:0,cLapses:0,lE:0,lNI:0,lNCE:0,lLapses:0,missed:false})}>تصفير</button></div></div>
@@ -846,7 +854,7 @@ return (
 };
 
 function App() {
-const [tab, setTab] = useState('schedule'), [modal, setModal] = useState(false), [updatesModal, setUpdatesModal] = useState(false);
+const [tab, setTab] = useState('schedule'), [modal, setModal] = useState(false);
 const [mems, setMems] = useState(()=>{
 try{ return JSON.parse(localStorage.getItem('ge211_team'))||["عضو 1","عضو 2","عضو 3","عضو 4","عضو 5"] } catch(e){ return["عضو 1","عضو 2","عضو 3","عضو 4","عضو 5"] }
 });
@@ -860,10 +868,6 @@ return (
 <div className="app"><div className="container">
 <header className="header"><button className="team-settings-btn" onClick={()=>setModal(true)}><Icons.Users/></button><a href="https://t.me/MUTLAQ1" className="author-link">إعداد: مطلق</a><h1 className="title">GE 211</h1><p className="subtitle">Introduction to Engineering Design</p></header>
 
-<button className="updates-banner-btn" onClick={() => setUpdatesModal(true)}>
-    <Icons.Alert/> التفاصيل والتحديثات الجديدة
-</button>
-
 <div className="nav-tabs"><button className={`tab-btn ${tab==='schedule'?'active':''}`} onClick={()=>setTab('schedule')}>الجدول</button><button className={`tab-btn ${tab==='resources'?'active':''}`} onClick={()=>setTab('resources')}>المحتوى</button><button className={`tab-btn ${tab==='grades'?'active':''}`} onClick={()=>setTab('grades')}>الحاسبة</button></div>
 {tab==='schedule'&&<ScheduleView openTeam={()=>setModal(true)} team={mems} setts={setts}/>}{tab==='resources'&&<ContentView/>}{tab==='grades'&&<GradeView/>}
 
@@ -871,21 +875,6 @@ return (
 <button className={`timer-toggle-btn ${setts.timer?'active':''}`} onClick={()=>setSetts({...setts,timer:!setts.timer})}><div><Icons.Clock/> المؤقت</div><span>{setts.timer?'مفعل':'غير مفعل'}</span></button>
 <div className="members-grid">{mems.map((m,i)=><div key={i} className="team-member-row"><span className="member-icon"><Icons.User/></span><input type="text" className="team-input-clean" value={m} onChange={e=>{const n=[...mems];n[i]=e.target.value;setMems(n)}}/></div>)}</div>
 <button className="save-btn-new" onClick={()=>setModal(false)}><Icons.Check/> حفظ</button></div></div>}
-
-{updatesModal&&<div className="modal-overlay" onClick={()=>setUpdatesModal(false)}><div className="modal-content" onClick={e=>e.stopPropagation()} style={{maxWidth: '600px'}}><button className="modal-close" onClick={()=>setUpdatesModal(false)}>×</button>
-<h2 className="modal-title" style={{color: 'var(--color-concept)', display:'flex', alignItems:'center', justifyContent:'center', gap:'10px'}}><Icons.Alert/> التحديثات الجديدة</h2>
-<div style={{maxHeight: '60vh', overflowY: 'auto', paddingRight: '5px'}}>
-    <ul style={{lineHeight: '1.9', color: '#ddd', paddingLeft: '20px', direction: 'rtl', fontFamily: 'var(--font-body)', fontSize: '0.95rem'}}>
-        <li style={{marginBottom: '10px'}}><strong style={{color:'#ff4757'}}>إلغاء تام (Canceled):</strong> تم إلغاء تقييم 2nd DNB وتقييم 3rd DNB، وإلغاء تسليم L-5 بالكامل.</li>
-        <li style={{marginBottom: '10px'}}><strong style={{color:'#00f2ff'}}>درجة الـ A في المعمل:</strong> تم تخفيض المتطلب ليصبح 3 Exceeds بدلاً من 5.</li>
-        <li style={{marginBottom: '10px'}}><strong>بخصوص L-4-b و L-4-c:</strong> ستتم مناقشتها في L-5-1 و L-5-3 بدون أي تقييم.</li>
-        <li style={{marginBottom: '10px'}}><strong>اعتمادات:</strong> تسليم L-2، تقييم 1st DNB، وتصحيح وإعادة كويز 5 و كويز 6، جميعها سيتم اعتبارها كأنها مصححة بـ "M".</li>
-        <li style={{marginBottom: '10px'}}><strong>إعادة كويزات أخرى:</strong> قد يتم التجاوز عنها فقط إذا لم يُعطَ الطالب فرصة مشابهة في كويز 5 أو 6.</li>
-        <li style={{marginBottom: '10px'}}><strong>المهام القادمة:</strong> التصحيحات، عرض L-4-d و L-4-e، ومشاريع الحفلة مستمرة كما خُطط لها مسبقاً في الجدول.</li>
-    </ul>
-</div>
-<button className="save-btn-new" onClick={()=>setUpdatesModal(false)} style={{marginTop:'25px'}}><Icons.Check/> حسناً، فهمت</button>
-</div></div>}
 
 </div></div>
 );
