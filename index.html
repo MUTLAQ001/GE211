@@ -172,41 +172,80 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .modal-title{text-align:center;font-size:1.3rem;margin-bottom:25px;font-weight:800;color:var(--text);font-family:var(--font-display)}
 .modal-close{position:absolute;top:15px;left:15px;background:none;border:none;color:var(--text-dim);font-size:1.5rem;cursor:pointer;transition:0.2s}
 .modal-close:hover{color:var(--text)}
-.explain-modal{max-width:460px}
-.modal-subtitle{text-align:center;font-family:var(--font-nums);font-size:0.72rem;font-weight:700;letter-spacing:2px;color:var(--gold);margin:-20px 0 22px}
+.explain-modal{max-width:520px;padding:28px 24px 24px}
+.explain-modal>*{animation:fadeIn 0.5s ease both}
+.explain-modal>*:nth-child(2){animation-delay:0.04s}
+.explain-modal>*:nth-child(3){animation-delay:0.08s}
+.explain-modal>*:nth-child(4){animation-delay:0.12s}
+.explain-modal>*:nth-child(5){animation-delay:0.16s}
+.explain-modal>*:nth-child(6){animation-delay:0.2s}
+.explain-modal>*:nth-child(7){animation-delay:0.24s}
+.explain-modal>*:nth-child(8){animation-delay:0.28s}
+.explain-modal>*:nth-child(9){animation-delay:0.32s}
+.explain-modal>*:nth-child(10){animation-delay:0.36s}
+.explain-modal>*:nth-child(11){animation-delay:0.4s}
+.explain-modal>*:nth-child(12){animation-delay:0.44s}
+.explain-hero{text-align:center;margin-bottom:22px;position:relative}
+.explain-hero::before{content:'';position:absolute;top:-28px;right:-24px;left:-24px;height:120px;background:radial-gradient(ellipse 70% 100% at 50% 0%,rgba(242,193,78,0.12),transparent 75%);pointer-events:none}
+.explain-hero-icon{width:52px;height:52px;margin:0 auto 12px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:var(--gold);background:rgba(242,193,78,0.1);border:1px solid rgba(242,193,78,0.35);box-shadow:0 0 30px rgba(242,193,78,0.15);position:relative}
+.explain-hero h2{font-family:var(--font-display);font-size:1.35rem;font-weight:800;color:var(--text);margin:0}
+.explain-hero-chip{display:inline-block;margin-top:8px;font-family:var(--font-nums);font-size:0.68rem;font-weight:700;letter-spacing:2px;color:var(--gold);background:rgba(242,193,78,0.08);border:1px solid rgba(242,193,78,0.25);padding:4px 14px;border-radius:20px}
 .explain-intro{display:flex;gap:12px;align-items:flex-start;background:rgba(255,159,67,0.07);border:1px solid rgba(255,159,67,0.28);border-radius:14px;padding:14px 16px}
 .explain-intro svg{color:var(--orange);font-size:1.15rem;flex-shrink:0;margin-top:4px}
 .explain-intro p{font-size:0.87rem;color:#e2e1da;line-height:1.75;margin:0}
 .explain-intro strong{color:var(--orange)}
-.explain-label{display:flex;align-items:center;gap:8px;font-size:0.78rem;font-weight:800;letter-spacing:0.3px;color:var(--text-dim);margin:22px 0 10px}
+.explain-label{display:flex;align-items:center;gap:8px;font-size:0.78rem;font-weight:800;letter-spacing:0.3px;color:var(--text-dim);margin:24px 0 12px}
 .explain-label svg{font-size:0.95rem}
 .explain-label::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
-.explain-track{border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,0.03);padding:14px 16px;margin-bottom:10px}
-.explain-track.gold{border-color:rgba(242,193,78,0.25);background:rgba(242,193,78,0.05)}
-.explain-track.cyan{border-color:rgba(67,220,245,0.25);background:rgba(67,220,245,0.05)}
-.explain-track-head{display:flex;align-items:center;gap:9px;font-weight:800;font-family:var(--font-display);font-size:0.96rem;margin-bottom:6px}
+.explain-tracks{display:grid;grid-template-columns:1fr;gap:10px}
+@media(min-width:520px){.explain-tracks{grid-template-columns:1fr 1fr}}
+.explain-track{border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,0.03);padding:16px;position:relative;overflow:hidden;transition:var(--transition)}
+.explain-track::before{content:'';position:absolute;top:0;right:0;left:0;height:2px}
+.explain-track.gold{border-color:rgba(242,193,78,0.25);background:linear-gradient(170deg,rgba(242,193,78,0.07),rgba(242,193,78,0.015))}
+.explain-track.gold::before{background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.6}
+.explain-track.cyan{border-color:rgba(67,220,245,0.25);background:linear-gradient(170deg,rgba(67,220,245,0.07),rgba(67,220,245,0.015))}
+.explain-track.cyan::before{background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:0.6}
+.explain-track:hover{transform:translateY(-2px)}
+.track-icon{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:10px;border:1px solid}
+.explain-track.gold .track-icon{color:var(--gold);background:rgba(242,193,78,0.1);border-color:rgba(242,193,78,0.3)}
+.explain-track.cyan .track-icon{color:var(--cyan);background:rgba(67,220,245,0.1);border-color:rgba(67,220,245,0.3)}
+.explain-track-head{font-weight:800;font-family:var(--font-display);font-size:0.96rem;margin-bottom:5px}
 .explain-track.gold .explain-track-head{color:var(--gold)}
 .explain-track.cyan .explain-track-head{color:var(--cyan)}
-.explain-track p{font-size:0.84rem;color:#cfced8;line-height:1.75;margin:0}
-.explain-note{display:flex;gap:10px;align-items:flex-start;font-size:0.81rem;color:var(--text-dim);line-height:1.7;padding:11px 13px;background:rgba(255,255,255,0.025);border-radius:11px;border:1px dashed var(--line-strong)}
+.explain-track p{font-size:0.83rem;color:#cfced8;line-height:1.75;margin:0}
+.explain-note{display:flex;gap:10px;align-items:flex-start;font-size:0.81rem;color:var(--text-dim);line-height:1.7;padding:12px 14px;background:rgba(255,255,255,0.025);border-radius:12px;border:1px dashed var(--line-strong);margin-top:10px}
 .explain-note svg{flex-shrink:0;margin-top:3px;font-size:1rem;color:var(--text-dim)}
-.week-flow{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;padding:15px 12px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,0.02)}
-.week-chip{font-size:0.78rem;font-weight:700;padding:6px 13px;border-radius:20px;border:1px solid;white-space:nowrap}
-.week-chip.gold{color:var(--gold);background:rgba(242,193,78,0.08);border-color:rgba(242,193,78,0.3)}
-.week-chip.cyan{color:var(--cyan);background:rgba(67,220,245,0.08);border-color:rgba(67,220,245,0.3)}
-.week-chip.faint{color:var(--text-faint);background:transparent;border-color:var(--line)}
-.week-arrow{color:var(--text-faint);font-size:0.85rem}
-.a-row{display:flex;align-items:center;gap:13px;padding:12px 14px;border-radius:13px;background:rgba(0,0,0,0.25);border:1px solid var(--line);margin-bottom:9px}
-.a-count{font-family:var(--font-nums);font-weight:800;font-size:1.4rem;width:46px;height:46px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border-radius:13px;border:1px solid}
-.a-row.gold .a-count{color:var(--gold);background:rgba(242,193,78,0.08);border-color:rgba(242,193,78,0.28)}
-.a-row.cyan .a-count{color:var(--cyan);background:rgba(67,220,245,0.08);border-color:rgba(67,220,245,0.28)}
+.explain-note b{color:var(--text)}
+.week-line{display:flex;align-items:flex-start;justify-content:center;padding:20px 14px 16px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,0.02)}
+.week-unit{display:flex;flex-direction:column;align-items:center;gap:7px;flex-shrink:0}
+.week-dot{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-nums);font-weight:800;font-size:0.85rem;border:1px solid}
+.week-unit.gold .week-dot{color:var(--gold);background:rgba(242,193,78,0.1);border-color:rgba(242,193,78,0.4);box-shadow:0 0 12px rgba(242,193,78,0.12)}
+.week-unit.cyan .week-dot{color:var(--cyan);background:rgba(67,220,245,0.1);border-color:rgba(67,220,245,0.4);box-shadow:0 0 12px rgba(67,220,245,0.12)}
+.week-unit.faint .week-dot{color:var(--text-faint);background:transparent;border-color:var(--line-strong);border-style:dashed;font-size:1rem;letter-spacing:1px}
+.week-unit span{font-size:0.66rem;font-weight:700;white-space:nowrap}
+.week-unit.gold span{color:var(--gold)}
+.week-unit.cyan span{color:var(--cyan)}
+.week-unit.faint span{color:var(--text-faint)}
+.week-join{flex:1;max-width:34px;height:1px;background:linear-gradient(90deg,var(--line-strong),var(--line));margin-top:17px}
+.a-row{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:14px;background:rgba(0,0,0,0.25);border:1px solid var(--line);margin-bottom:9px;transition:var(--transition)}
+.a-row:hover{border-color:var(--line-strong);transform:translateY(-2px)}
+.a-count{font-family:var(--font-nums);font-weight:800;font-size:1.45rem;width:48px;height:48px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border-radius:14px;border:1px solid}
+.a-row.gold .a-count{color:var(--gold);background:rgba(242,193,78,0.08);border-color:rgba(242,193,78,0.28);box-shadow:0 0 16px rgba(242,193,78,0.1)}
+.a-row.cyan .a-count{color:var(--cyan);background:rgba(67,220,245,0.08);border-color:rgba(67,220,245,0.28);box-shadow:0 0 16px rgba(67,220,245,0.1)}
+.a-text{flex:1}
 .a-text strong{display:block;font-size:0.9rem;color:var(--text);font-weight:700}
-.a-text span{font-size:0.77rem;color:var(--text-dim)}
-.explain-tip{display:flex;gap:12px;align-items:flex-start;background:rgba(46,224,138,0.07);border:1px solid rgba(46,224,138,0.28);border-radius:14px;padding:14px 16px;margin-top:20px}
+.a-text span{font-size:0.77rem;color:var(--text-dim);display:block;margin-top:2px}
+.a-pips{display:flex;gap:5px;margin-top:8px}
+.a-pip{width:22px;height:5px;border-radius:3px}
+.a-row.gold .a-pip{background:linear-gradient(90deg,rgba(242,193,78,0.9),rgba(242,193,78,0.5))}
+.a-row.cyan .a-pip{background:linear-gradient(90deg,rgba(67,220,245,0.9),rgba(67,220,245,0.5))}
+.a-grade{font-family:var(--font-nums);font-weight:800;font-size:1.3rem;color:var(--green);text-shadow:0 0 14px rgba(46,224,138,0.4);flex-shrink:0}
+.explain-tip{display:flex;gap:12px;align-items:flex-start;background:rgba(46,224,138,0.07);border:1px solid rgba(46,224,138,0.28);border-radius:14px;padding:14px 16px;margin-top:22px}
 .explain-tip svg{color:var(--green);font-size:1.1rem;flex-shrink:0;margin-top:4px}
 .explain-tip p{font-size:0.85rem;color:#e2e1da;line-height:1.75;margin:0}
 .explain-tip strong{color:var(--green)}
-.explain-footer{text-align:center;font-size:0.75rem;color:var(--text-faint);margin-top:18px;line-height:1.6}
+.explain-footer{display:flex;align-items:center;justify-content:center;gap:7px;font-size:0.74rem;color:var(--text-faint);margin-top:18px;line-height:1.6;text-align:center}
+.explain-footer svg{font-size:0.85rem;flex-shrink:0}
 .save-btn-new{width:100%;padding:16px;background:linear-gradient(90deg,var(--cyan),#26b8f0);color:#000;font-weight:800;font-size:1rem;border:none;border-radius:14px;margin-top:20px;cursor:pointer;transition:0.3s;display:flex;align-items:center;justify-content:center;gap:8px}
 .save-btn-new:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(67,220,245,0.25)}
 .rec-group-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:var(--r-lg);margin-bottom:14px;overflow:hidden;transition:0.3s}
@@ -754,34 +793,42 @@ return (
 {tab==='grades'&&<GradeView/>}
 
 {modal&&<div className="modal-overlay" onClick={()=>setModal(false)}><div className="modal-content explain-modal" onClick={e=>e.stopPropagation()}><button className="modal-close" onClick={()=>setModal(false)}>×</button>
-<h2 className="modal-title">شرح المقرر</h2>
-<p className="modal-subtitle">GE 211 — اعرفه من أول يوم</p>
+
+<div className="explain-hero">
+<div className="explain-hero-icon"><Icons.Concept/></div>
+<h2>شرح المقرر</h2>
+<span className="explain-hero-chip">GE 211 — SEM 481</span>
+</div>
 
 <div className="explain-intro"><Icons.AlertFill/><p><strong>GE211 ما هو مقرر سهل بصراحة.</strong> لازم تعرفه من أول يوم وتكون مدرك لموضوعه — هذي أهم النقاط اللي تحتاجها.</p></div>
 
 <div className="explain-label"><Icons.Folder/> المقرر ينقسم لقسمين</div>
-<div className="explain-track gold"><div className="explain-track-head"><Icons.Concept/> قسم الـ Concept</div><p>عبارة عن أشياء تأخذونها في السلايدات وتختبرون فيها كويزات، وما فيه أي أشياء إضافية غير الكويزات.</p></div>
-<div className="explain-track cyan"><div className="explain-track-head"><Icons.Lab/> قسم الـ Lab</div><p>فيه تسليمات، ومشاريع، وشغل تيم (Teamwork).</p></div>
+<div className="explain-tracks">
+<div className="explain-track gold"><div className="track-icon"><Icons.Concept/></div><div className="explain-track-head">قسم الـ Concept</div><p>أشياء تأخذونها في السلايدات وتختبرون فيها كويزات — ما فيه أي شيء إضافي غير الكويزات.</p></div>
+<div className="explain-track cyan"><div className="track-icon"><Icons.Lab/></div><div className="explain-track-head">قسم الـ Lab</div><p>فيه تسليمات، ومشاريع، وشغل تيم (Teamwork).</p></div>
+</div>
 <div className="explain-note"><Icons.InfoFill/><span>كل قسم <b>مفصول تماماً</b> عن الآخر — سواء في الـ Exceeds أو الـ Meets أو الـ NI؛ جميع التقييمات منفصلة بين القسمين.</span></div>
 
 <div className="explain-label"><Icons.Clock/> نظام الأسابيع بالتناوب</div>
-<div className="week-flow">
-<span className="week-chip gold">أسبوع Concept</span>
-<span className="week-arrow">←</span>
-<span className="week-chip cyan">أسبوع Lab</span>
-<span className="week-arrow">←</span>
-<span className="week-chip gold">Concept</span>
-<span className="week-arrow">←</span>
-<span className="week-chip faint">وهكذا لنهاية الترم</span>
+<div className="week-line">
+<div className="week-unit gold"><div className="week-dot">1</div><span>Concept</span></div>
+<div className="week-join"></div>
+<div className="week-unit cyan"><div className="week-dot">2</div><span>Lab</span></div>
+<div className="week-join"></div>
+<div className="week-unit gold"><div className="week-dot">3</div><span>Concept</span></div>
+<div className="week-join"></div>
+<div className="week-unit cyan"><div className="week-dot">4</div><span>Lab</span></div>
+<div className="week-join"></div>
+<div className="week-unit faint"><div className="week-dot">···</div><span>لنهاية الترم</span></div>
 </div>
 
 <div className="explain-label"><Icons.Trophy/> طريقك للحصول على A</div>
-<div className="a-row gold"><div className="a-count">5</div><div className="a-text"><strong>Exceeds في الـ Concept</strong><span>تحتاجها فقط لتضمن الـ A في القسم</span></div></div>
-<div className="a-row cyan"><div className="a-count">5</div><div className="a-text"><strong>Exceeds في تسليمات الـ Lab</strong><span>تحتاجها فقط لتضمن الـ A في القسم</span></div></div>
+<div className="a-row gold"><div className="a-count">5</div><div className="a-text"><strong>Exceeds في الـ Concept</strong><span>تحتاجها فقط لتضمن الـ A في القسم</span><div className="a-pips"><div className="a-pip"></div><div className="a-pip"></div><div className="a-pip"></div><div className="a-pip"></div><div className="a-pip"></div></div></div><div className="a-grade">A</div></div>
+<div className="a-row cyan"><div className="a-count">5</div><div className="a-text"><strong>Exceeds في تسليمات الـ Lab</strong><span>تحتاجها فقط لتضمن الـ A في القسم</span><div className="a-pips"><div className="a-pip"></div><div className="a-pip"></div><div className="a-pip"></div><div className="a-pip"></div><div className="a-pip"></div></div></div><div className="a-grade">A</div></div>
 
 <div className="explain-tip"><Icons.Star/><p><strong>نصيحة:</strong> حاولوا قدر المستطاع تخلصون الـ Exceeds من بدري عشان ما تنضغطون في النهاية.</p></div>
 
-<p className="explain-footer">إذا استجدت أي أشياء إضافية، إن شاء الله تُذكر هنا في نفس هذه الخانة.</p>
+<p className="explain-footer"><Icons.Edit/> إذا استجدت أي أشياء إضافية، إن شاء الله تُذكر هنا في نفس هذه الخانة.</p>
 </div></div>}
 
 </div></div>
