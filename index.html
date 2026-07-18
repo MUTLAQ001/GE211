@@ -39,7 +39,6 @@ html{scroll-behavior:smooth;scrollbar-width:none}
 @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 @keyframes popIn{0%{transform:scale(0.8);opacity:0}100%{transform:scale(1);opacity:1}}
 @keyframes pulse-gold{0%{box-shadow:0 0 0 0 rgba(242,193,78,0.35)}70%{box-shadow:0 0 0 10px rgba(242,193,78,0)}100%{box-shadow:0 0 0 0 rgba(242,193,78,0)}}
-@keyframes pulse-orange{0%{box-shadow:0 0 0 0 rgba(255,159,67,0.5)}70%{box-shadow:0 0 0 14px rgba(255,159,67,0)}100%{box-shadow:0 0 0 0 rgba(255,159,67,0)}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}}
 body{font-family:var(--font-body);background:var(--bg);color:var(--text);direction:rtl;overflow-x:hidden;line-height:1.6}
 button{font-family:var(--font-body)}
@@ -56,7 +55,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .meta-chip{font-family:var(--font-nums);font-size:0.72rem;font-weight:700;letter-spacing:1.5px;color:var(--gold);background:rgba(242,193,78,0.08);border:1px solid rgba(242,193,78,0.25);padding:5px 14px;border-radius:20px}
 .meta-chip.neutral{color:var(--text-dim);background:var(--surface);border-color:var(--line);letter-spacing:0.5px;font-family:var(--font-body)}
 .header-rule{width:120px;height:1px;margin:18px auto 0;background:linear-gradient(90deg,transparent,rgba(242,193,78,0.5),transparent)}
-.explain-btn{position:absolute;top:0;left:0;background:rgba(242,193,78,0.08);border:1px solid rgba(242,193,78,0.3);color:var(--gold);border-radius:12px;width:42px;height:42px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--transition);z-index:10;font-size:1.05rem;animation:pulse-gold 3s infinite}
+.explain-btn{position:absolute;top:0;left:0;background:rgba(242,193,78,0.08);border:1px solid rgba(242,193,78,0.3);color:var(--gold);border-radius:12px;width:42px;height:42px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--transition);z-index:10;font-size:1.05rem;box-shadow:0 0 14px rgba(242,193,78,0.18)}
 .explain-btn:hover{background:rgba(242,193,78,0.16);border-color:rgba(242,193,78,0.55);transform:translateY(-2px)}
 .author-link{position:absolute;top:0;right:0;text-decoration:none;background:linear-gradient(160deg,rgba(242,193,78,0.09),rgba(255,255,255,0.02));border:1px solid rgba(242,193,78,0.28);padding:6px 12px 6px 14px;border-radius:12px;transition:var(--transition);display:flex;align-items:center;gap:9px;z-index:10}
 .author-icon{width:26px;height:26px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--gold);background:rgba(242,193,78,0.12);border:1px solid rgba(242,193,78,0.3);font-size:0.85rem;flex-shrink:0;transition:var(--transition)}
@@ -66,7 +65,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .author-link:hover{border-color:rgba(242,193,78,0.55);box-shadow:0 6px 18px rgba(242,193,78,0.12);transform:translateY(-2px)}
 .author-link:hover .author-icon{background:rgba(242,193,78,0.2);transform:rotate(-8deg)}
 .author-link:hover .author-eyebrow{color:var(--gold)}
-.nav-tabs{background:var(--surface);padding:5px;border-radius:16px;display:grid;grid-template-columns:1fr 1fr 1fr;position:relative;margin-bottom:22px;backdrop-filter:blur(12px);border:1px solid var(--line);overflow:hidden}
+.nav-tabs{background:var(--surface);padding:5px;border-radius:16px;display:grid;grid-template-columns:1fr 1fr 1fr;position:relative;margin-bottom:22px;border:1px solid var(--line);overflow:hidden}
 .nav-glider{position:absolute;top:5px;bottom:5px;width:calc((100% - 10px)/3);right:5px;background:linear-gradient(160deg,rgba(255,255,255,0.12),rgba(255,255,255,0.05));border:1px solid var(--line-strong);border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.35);transition:transform 0.35s cubic-bezier(0.2,0,0,1);z-index:1}
 .nav-tabs[data-active="0"] .nav-glider{transform:translateX(0)}
 .nav-tabs[data-active="1"] .nav-glider{transform:translateX(-100%)}
@@ -82,9 +81,9 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .sub-tab-item.active{color:var(--text)}
 .sub-tab-item svg{font-size:1.05rem}
 .content-area{animation:fadeIn 0.4s ease-out}
-.pro-resource-card{display:flex;flex-direction:column;padding:20px;margin-bottom:14px;background:linear-gradient(160deg,rgba(255,255,255,0.05),rgba(255,255,255,0.015));border:1px solid var(--line);border-radius:var(--r-lg);transition:var(--transition);backdrop-filter:blur(10px);position:relative;overflow:hidden}
+.pro-resource-card{display:flex;flex-direction:column;padding:20px;margin-bottom:14px;background:linear-gradient(160deg,rgba(255,255,255,0.05),rgba(255,255,255,0.015));border:1px solid var(--line);border-radius:var(--r-lg);transition:var(--transition);position:relative;overflow:hidden}
 .pro-resource-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(0,0,0,0.35);border-color:var(--line-strong)}
-.pro-resource-card.pinned-file{background:linear-gradient(160deg,rgba(242,193,78,0.09),rgba(20,18,10,0.6));border:1px solid rgba(242,193,78,0.3);animation:pulse-gold 3s infinite}
+.pro-resource-card.pinned-file{background:linear-gradient(160deg,rgba(242,193,78,0.09),rgba(20,18,10,0.6));border:1px solid rgba(242,193,78,0.3);box-shadow:0 0 22px rgba(242,193,78,0.14)}
 .pro-resource-card.pinned-file .resource-icon-box{color:var(--gold);background:rgba(242,193,78,0.1);border-color:rgba(242,193,78,0.25)}
 .resource-header{display:flex;align-items:center;gap:14px;margin-bottom:15px}
 .resource-icon-box{width:46px;height:46px;flex-shrink:0;border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:1.35rem;background:var(--surface);border:1px solid var(--line)}
@@ -134,7 +133,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .group-btn{padding:15px 10px;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:12px;font-weight:700;cursor:pointer;transition:var(--transition);text-align:center;display:flex;flex-direction:column;align-items:center;gap:5px}
 .group-btn:hover{background:var(--cyan);color:#000;border-color:var(--cyan);box-shadow:0 0 15px rgba(67,220,245,0.3)}
 .group-btn.all-btn{grid-column:1/-1;background:linear-gradient(90deg,var(--gold),var(--cyan));color:#000;border:none;flex-direction:row;justify-content:center}
-.group-btn.random-btn{grid-column:1/-1;background:linear-gradient(135deg,var(--orange),#f4433f);color:#fff;border:none;animation:pulse-orange 3s infinite;flex-direction:row;justify-content:center}
+.group-btn.random-btn{grid-column:1/-1;background:linear-gradient(135deg,var(--orange),#f4433f);color:#fff;border:none;box-shadow:0 0 18px rgba(255,159,67,0.3);flex-direction:row;justify-content:center}
 .group-btn.random-btn:hover{transform:scale(1.02);box-shadow:0 10px 25px rgba(255,159,67,0.4)}
 .beautiful-player-card{background:linear-gradient(150deg,rgba(255,255,255,0.045),rgba(255,255,255,0.015));border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;transition:0.3s;position:relative;padding:15px;margin-bottom:12px}
 .beautiful-player-card:hover{border-color:rgba(255,77,94,0.4);box-shadow:0 12px 34px rgba(255,77,94,0.08)}
@@ -167,24 +166,12 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .missed-info{display:flex;flex-direction:column;align-items:center}
 .missed-title{font-weight:700;font-size:1rem;color:#cfced8;transition:0.3s}
 .missed-btn.active .missed-title{color:var(--red)}
-.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.75);backdrop-filter:blur(10px);z-index:1000;display:flex;justify-content:center;align-items:center;padding:20px}
-.modal-content{background:#111116;width:100%;max-width:400px;border-radius:24px;border:1px solid var(--line);padding:30px;position:relative;box-shadow:0 24px 60px rgba(0,0,0,0.6);animation:popIn 0.3s ease;max-height:90vh;overflow-y:auto}
+.modal-overlay{position:fixed;inset:0;background:rgba(4,4,9,0.9);z-index:1000;display:flex;justify-content:center;align-items:center;padding:20px}
+.modal-content{background:#111116;width:100%;max-width:400px;border-radius:24px;border:1px solid var(--line);padding:30px;position:relative;box-shadow:0 24px 60px rgba(0,0,0,0.6);animation:popIn 0.3s ease;max-height:90vh;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
 .modal-title{text-align:center;font-size:1.3rem;margin-bottom:25px;font-weight:800;color:var(--text);font-family:var(--font-display)}
 .modal-close{position:absolute;top:15px;left:15px;background:none;border:none;color:var(--text-dim);font-size:1.5rem;cursor:pointer;transition:0.2s}
 .modal-close:hover{color:var(--text)}
 .explain-modal{max-width:520px;padding:28px 24px 24px}
-.explain-modal>*{animation:fadeIn 0.5s ease both}
-.explain-modal>*:nth-child(2){animation-delay:0.04s}
-.explain-modal>*:nth-child(3){animation-delay:0.08s}
-.explain-modal>*:nth-child(4){animation-delay:0.12s}
-.explain-modal>*:nth-child(5){animation-delay:0.16s}
-.explain-modal>*:nth-child(6){animation-delay:0.2s}
-.explain-modal>*:nth-child(7){animation-delay:0.24s}
-.explain-modal>*:nth-child(8){animation-delay:0.28s}
-.explain-modal>*:nth-child(9){animation-delay:0.32s}
-.explain-modal>*:nth-child(10){animation-delay:0.36s}
-.explain-modal>*:nth-child(11){animation-delay:0.4s}
-.explain-modal>*:nth-child(12){animation-delay:0.44s}
 .explain-hero{text-align:center;margin-bottom:22px;position:relative}
 .explain-hero::before{content:'';position:absolute;top:-28px;right:-24px;left:-24px;height:120px;background:radial-gradient(ellipse 70% 100% at 50% 0%,rgba(242,193,78,0.12),transparent 75%);pointer-events:none}
 .explain-hero-icon{width:52px;height:52px;margin:0 auto 12px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:var(--gold);background:rgba(242,193,78,0.1);border:1px solid rgba(242,193,78,0.35);box-shadow:0 0 30px rgba(242,193,78,0.15);position:relative}
@@ -246,6 +233,42 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .explain-tip strong{color:var(--green)}
 .explain-footer{display:flex;align-items:center;justify-content:center;gap:7px;font-size:0.74rem;color:var(--text-faint);margin-top:18px;line-height:1.6;text-align:center}
 .explain-footer svg{font-size:0.85rem;flex-shrink:0}
+.ex-acc{border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,0.02);margin-bottom:9px;overflow:hidden;transition:var(--transition)}
+.ex-acc.open{border-color:var(--line-strong);background:rgba(255,255,255,0.03)}
+.ex-acc-head{display:flex;align-items:center;justify-content:space-between;padding:14px 15px;cursor:pointer;background:transparent;border:none;width:100%;color:var(--text);transition:0.2s}
+.ex-acc-head:hover{background:rgba(255,255,255,0.04)}
+.ex-acc-title{display:flex;align-items:center;gap:10px;font-weight:800;font-size:0.9rem;font-family:var(--font-body)}
+.ex-acc-title svg{font-size:1.05rem}
+.ex-acc-chev{color:var(--text-faint);display:flex}
+.ex-acc-body{padding:2px 15px 16px;animation:fadeIn 0.3s ease}
+.ex-sub{font-size:0.73rem;font-weight:800;color:var(--text-dim);margin:15px 0 8px;display:flex;gap:7px;align-items:center;letter-spacing:0.3px}
+.ex-sub::after{content:'';flex:1;height:1px;background:var(--line)}
+.ex-sub:first-child{margin-top:8px}
+.legend-row{display:flex;gap:11px;align-items:center;padding:9px 12px;background:rgba(0,0,0,0.2);border:1px solid var(--line);border-radius:11px;margin-bottom:7px}
+.legend-row p{font-size:0.79rem;color:#cfced8;margin:0;line-height:1.55}
+.g-badge{font-family:var(--font-nums);font-weight:800;min-width:42px;text-align:center;padding:5px 7px;border-radius:9px;font-size:0.75rem;border:1px solid;flex-shrink:0}
+.g-badge.E{color:var(--green);background:rgba(46,224,138,0.09);border-color:rgba(46,224,138,0.35)}
+.g-badge.M{color:var(--cyan);background:rgba(67,220,245,0.09);border-color:rgba(67,220,245,0.35)}
+.g-badge.NI{color:var(--orange);background:rgba(255,159,67,0.09);border-color:rgba(255,159,67,0.35)}
+.g-badge.NCE{color:var(--red);background:rgba(255,77,94,0.09);border-color:rgba(255,77,94,0.35)}
+.g-badge.NS{color:#ff8b96;background:rgba(255,77,94,0.14);border-color:rgba(255,77,94,0.45)}
+.ex-table{width:100%;border-collapse:separate;border-spacing:0;font-size:0.79rem;border:1px solid var(--line);border-radius:11px;overflow:hidden}
+.ex-table th{background:rgba(255,255,255,0.05);padding:8px 6px;color:var(--text-dim);font-size:0.7rem;font-weight:800;text-align:center}
+.ex-table td{padding:8px 6px;border-top:1px solid var(--line);text-align:center;color:#cfced8;font-family:var(--font-nums);font-weight:600}
+.ex-table td.ar{font-family:var(--font-body);font-weight:500}
+.lapse-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 12px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);border-radius:10px;margin-bottom:6px}
+.lapse-row span{font-size:0.8rem;color:#cfced8;line-height:1.5}
+.lapse-val{font-family:var(--font-nums);font-weight:800;font-size:0.78rem;color:var(--orange);background:rgba(255,159,67,0.09);border:1px solid rgba(255,159,67,0.3);padding:3px 10px;border-radius:16px;flex-shrink:0;white-space:nowrap}
+.lapse-val.green{color:var(--green);background:rgba(46,224,138,0.09);border-color:rgba(46,224,138,0.3)}
+.ex-danger{display:flex;gap:11px;align-items:flex-start;background:rgba(255,77,94,0.07);border:1px solid rgba(255,77,94,0.3);border-radius:12px;padding:12px 14px;margin-top:12px}
+.ex-danger svg{color:var(--red);font-size:1.05rem;flex-shrink:0;margin-top:3px}
+.ex-danger p{font-size:0.81rem;color:#f0cfd3;line-height:1.7;margin:0}
+.ex-danger strong{color:var(--red)}
+.fail-item{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;background:rgba(255,77,94,0.05);border:1px solid rgba(255,77,94,0.18);border-radius:10px;margin-bottom:6px}
+.fail-item svg{color:var(--red);font-size:0.9rem;flex-shrink:0;margin-top:4px}
+.fail-item span{font-size:0.8rem;color:#e2d5d7;line-height:1.6}
+.ex-hint{font-size:0.76rem;color:var(--text-dim);line-height:1.7;margin:8px 2px 0;display:flex;gap:8px;align-items:flex-start}
+.ex-hint svg{flex-shrink:0;margin-top:3px;font-size:0.9rem;color:var(--gold)}
 .save-btn-new{width:100%;padding:16px;background:linear-gradient(90deg,var(--cyan),#26b8f0);color:#000;font-weight:800;font-size:1rem;border:none;border-radius:14px;margin-top:20px;cursor:pointer;transition:0.3s;display:flex;align-items:center;justify-content:center;gap:8px}
 .save-btn-new:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(67,220,245,0.25)}
 .rec-group-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:var(--r-lg);margin-bottom:14px;overflow:hidden;transition:0.3s}
@@ -766,33 +789,26 @@ return (
 );
 };
 
-function App() {
-const [tab, setTab] = useState('deliverables'), [modal, setModal] = useState(false);
-const tabIdx = tab==='deliverables'?0:(tab==='resources'?1:2);
-
-return (
-<div className="app"><div className="container">
-<header className="header">
-<button className="explain-btn" onClick={()=>setModal(true)} aria-label="شرح المقرر"><Icons.Concept/></button>
-<a href="https://t.me/MUTLAQ1" className="author-link"><span className="author-icon"><Icons.Code/></span><span className="author-text"><span className="author-eyebrow">مطور الموقع</span><span className="author-name">مطلق</span></span></a>
-<h1 className="title">GE 211</h1>
-<p className="subtitle">Introduction to Engineering Design</p>
-<div className="header-meta"><span className="meta-chip">SEM 481</span><span className="meta-chip neutral">المرجع الكامل للمقرر</span></div>
-<div className="header-rule"></div>
-</header>
-
-<div className="nav-tabs" data-active={tabIdx}>
-    <div className="nav-glider"></div>
-    <button className={`tab-btn ${tab==='deliverables'?'active':''}`} onClick={()=>setTab('deliverables')}>التسليمات</button>
-    <button className={`tab-btn ${tab==='resources'?'active':''}`} onClick={()=>setTab('resources')}>المحتوى</button>
-    <button className={`tab-btn ${tab==='grades'?'active':''}`} onClick={()=>setTab('grades')}>الحاسبة</button>
+const ExAcc = ({ icon, title, color, id, open, toggle, children }) => (
+<div className={`ex-acc ${open===id?'open':''}`}>
+<button className="ex-acc-head" onClick={()=>toggle(id)}>
+<span className="ex-acc-title" style={{color:open===id?color:'var(--text)'}}><span style={{color:color,display:'flex'}}>{icon}</span>{title}</span>
+<span className="ex-acc-chev">{open===id?<Icons.ChevronUp/>:<Icons.ChevronDown/>}</span>
+</button>
+{open===id&&<div className="ex-acc-body">{children}</div>}
 </div>
+);
 
-{tab==='deliverables'&&<DeliverablesView/>}
-{tab==='resources'&&<ContentView/>}
-{tab==='grades'&&<GradeView/>}
-
-{modal&&<div className="modal-overlay" onClick={()=>setModal(false)}><div className="modal-content explain-modal" onClick={e=>e.stopPropagation()}><button className="modal-close" onClick={()=>setModal(false)}>×</button>
+const ExplainModal = ({ onClose }) => {
+const [open, setOpen] = useState(null);
+const toggle = (id)=>setOpen(o=>o===id?null:id);
+useEffect(()=>{
+const prev = document.body.style.overflow;
+document.body.style.overflow = 'hidden';
+return ()=>{ document.body.style.overflow = prev; };
+},[]);
+return (
+<div className="modal-overlay" onClick={onClose}><div className="modal-content explain-modal" onClick={e=>e.stopPropagation()}><button className="modal-close" onClick={onClose}>×</button>
 
 <div className="explain-hero">
 <div className="explain-hero-icon"><Icons.Concept/></div>
@@ -822,14 +838,162 @@ return (
 <div className="week-unit faint"><div className="week-dot">···</div><span>لنهاية الترم</span></div>
 </div>
 
-<div className="explain-label"><Icons.Trophy/> طريقك للحصول على A</div>
-<div className="a-row gold"><div className="a-count">5</div><div className="a-text"><strong>Exceeds في الـ Concept</strong><span>تحتاجها فقط لتضمن الـ A في القسم</span><div className="a-pips"><div className="a-pip"></div><div className="a-pip"></div><div className="a-pip"></div><div className="a-pip"></div><div className="a-pip"></div></div></div><div className="a-grade">A</div></div>
-<div className="a-row cyan"><div className="a-count">5</div><div className="a-text"><strong>Exceeds في تسليمات الـ Lab</strong><span>تحتاجها فقط لتضمن الـ A في القسم</span><div className="a-pips"><div className="a-pip"></div><div className="a-pip"></div><div className="a-pip"></div><div className="a-pip"></div><div className="a-pip"></div></div></div><div className="a-grade">A</div></div>
+<div className="explain-label"><Icons.Trophy/> طريقك للحصول على A+</div>
+<div className="a-row gold"><div className="a-count">4</div><div className="a-text"><strong>Exceeds في الـ Concept</strong><span>أربع Exceeds فأكثر وبدون أي Defect</span><div className="a-pips"><div className="a-pip"></div><div className="a-pip"></div><div className="a-pip"></div><div className="a-pip"></div></div></div><div className="a-grade">A</div></div>
+<div className="a-row cyan"><div className="a-count">5</div><div className="a-text"><strong>Exceeds في تسليمات الـ Lab</strong><span>خمس Exceeds فأكثر وبدون أي Defect</span><div className="a-pips"><div className="a-pip"></div><div className="a-pip"></div><div className="a-pip"></div><div className="a-pip"></div><div className="a-pip"></div></div></div><div className="a-grade">A</div></div>
+<p className="ex-hint"><Icons.InfoFill/>والـ B تحتاج إن كل أعمالك النهائية Meets على الأقل وبدون أي Defect — يعني القاعدة: حافظ على شغلك نظيف من الدفكتات أولاً، ثم اجمع الـ Exceeds.</p>
 
-<div className="explain-tip"><Icons.Star/><p><strong>نصيحة:</strong> حاولوا قدر المستطاع تخلصون الـ Exceeds من بدري عشان ما تنضغطون في النهاية.</p></div>
+<div className="explain-label"><Icons.File/> تفاصيل الـ FDM كاملة</div>
+
+<ExAcc icon={<Icons.Edit/>} title="سلم تقييم الأعمال" color="var(--cyan)" id="legend" open={open} toggle={toggle}>
+<div className="legend-row"><span className="g-badge E">E</span><p><b>Exceeds</b> — حققت كل المطلوب وزدت عليه شيء إضافي له علاقة. هذا اللي يوصلك للـ A.</p></div>
+<div className="legend-row"><span className="g-badge M">M</span><p><b>Meets</b> — حققت كل بنود التشك لست بدون استثناء. نقص بند واحد فقط ينزلك مباشرة لـ NI.</p></div>
+<div className="legend-row"><span className="g-badge NI">NI</span><p><b>Needs Improvement</b> — عندك فرصة تحسّنه بالتصحيح، وإذا تركته لنهاية الترم يتحول لدفكتات.</p></div>
+<div className="legend-row"><span className="g-badge NCE">NCE</span><p><b>No Credible Effort</b> — شغل بدون جهد حقيقي، وتنحسب عليك لابس فوراً.</p></div>
+<div className="legend-row"><span className="g-badge NS">NS</span><p><b>No Submission</b> — ما سلّمت أصلاً، ونفس الشي لابس فوراً. أخطر تقييمين هما NCE وNS.</p></div>
+</ExAcc>
+
+<ExAcc icon={<Icons.Check/>} title="نسب الكويزات (تحديد درجتك)" color="var(--gold)" id="quiz" open={open} toggle={toggle}>
+<div className="ex-sub">المحاولة الأولى</div>
+<table className="ex-table"><thead><tr><th>نسبتك</th><th>تقييمك</th></tr></thead><tbody>
+<tr><td>90% – 100%</td><td><span className="g-badge E">E</span></td></tr>
+<tr><td>70% – 80%</td><td><span className="g-badge M">M</span></td></tr>
+<tr><td>40% – 60%</td><td><span className="g-badge NI">NI</span></td></tr>
+<tr><td>0% – 30%</td><td><span className="g-badge NCE">NCE</span></td></tr>
+<tr><td className="ar">ما أخذت الكويز</td><td><span className="g-badge NS">NS</span></td></tr>
+</tbody></table>
+<div className="ex-sub">كويز التصحيح (إذا جبت NI)</div>
+<table className="ex-table"><thead><tr><th>نسبتك</th><th>تقييمك الجديد</th></tr></thead><tbody>
+<tr><td>60% فأكثر</td><td><span className="g-badge M">M</span></td></tr>
+<tr><td>أقل من 60%</td><td><span className="g-badge NI">NI</span></td></tr>
+</tbody></table>
+<p className="ex-hint"><Icons.InfoFill/>في التصحيح ما فيه E نهائياً، وما راح تنزل لـ NCE مهما صار.</p>
+<div className="ex-sub">الميك أب (إذا جبت NCE أو NS)</div>
+<table className="ex-table"><thead><tr><th>نسبتك</th><th>مع جورنال مقبول</th><th>بدون جورنال</th></tr></thead><tbody>
+<tr><td>90% – 100%</td><td><span className="g-badge M">M</span></td><td><span className="g-badge M">M</span></td></tr>
+<tr><td>60% – 80%</td><td><span className="g-badge M">M</span></td><td><span className="g-badge NI">NI</span></td></tr>
+<tr><td>40% – 50%</td><td><span className="g-badge NI">NI</span></td><td><span className="g-badge NI">NI</span></td></tr>
+<tr><td>أقل من 40%</td><td><span className="g-badge NCE">يظل</span></td><td><span className="g-badge NCE">يظل</span></td></tr>
+</tbody></table>
+<p className="ex-hint"><Icons.Star/>الجورنال ورقة تأمّل بسيطة تكتبها قبل الكويز: تعوّض لك حتى 3 إجابات خاطئة، وما عليك أي عقوبة لو ما انقبلت — دايماً اكتبها قبل الميك أب.</p>
+<p className="ex-hint"><Icons.AlertFill/>حتى لو تحسّن الكويز لـ M بالميك أب، اللابس المرتبط فيه يظل محسوب عليك.</p>
+</ExAcc>
+
+<ExAcc icon={<Icons.Alert/>} title="اللابسات (Lapses) — وش يحسبها عليك؟" color="var(--orange)" id="lapses" open={open} toggle={toggle}>
+<div className="lapse-row"><span>التأخر عن المحاضرة</span><span className="lapse-val">½ لابس</span></div>
+<div className="lapse-row"><span>الغياب عن المحاضرة</span><span className="lapse-val">1 لابس</span></div>
+<div className="lapse-row"><span>استخدام الجوال داخل القاعة</span><span className="lapse-val">1 لابس</span></div>
+<div className="lapse-row"><span>غير مستعد للمحاضرة (ما قريت أو ما جبت المطلوب)</span><span className="lapse-val">1 لابس</span></div>
+<div className="lapse-row"><span>عدم المشاركة أو سلوك مشتّت (سوالف جانبية، نوم، مذاكرة مادة ثانية)</span><span className="lapse-val">1 لابس</span></div>
+<div className="lapse-row"><span>الاستئذان للخروج بدون حاجة فعلية</span><span className="lapse-val">1 لابس</span></div>
+<div className="lapse-row"><span>سوء استخدام بسيط لممتلكات الجامعة</span><span className="lapse-val">½ لابس</span></div>
+<div className="lapse-row"><span>تسليم متأخر لإعادة مسموحة (خلال أسبوع من موعدها فقط، بعده ما ينقبل)</span><span className="lapse-val">1 لابس</span></div>
+<div className="lapse-row"><span>NCE أول مرة حتى لو تحوّل لاحقاً لـ M</span><span className="lapse-val">1 لابس</span></div>
+<div className="lapse-row"><span>البونص من الدكتور</span><span className="lapse-val green">يشيل ½ لابس</span></div>
+<p className="ex-hint"><Icons.InfoFill/>أول 3 لابسات ما تأثر عليك إطلاقاً — الخطر يبدأ من اللابس الرابع، شوف قسم الدفكتات.</p>
+</ExAcc>
+
+<ExAcc icon={<Icons.AlertFill/>} title="الدفكتات (Defects) — متى توصل لها؟" color="var(--red)" id="defects" open={open} toggle={toggle}>
+<div className="ex-sub">من اللابسات المتراكمة</div>
+<table className="ex-table"><thead><tr><th>عدد اللابسات</th><th>الدفكتات</th></tr></thead><tbody>
+<tr><td>0 – 3</td><td>0</td></tr>
+<tr><td>4 – 5</td><td>1</td></tr>
+<tr><td>6 – 7</td><td>2</td></tr>
+<tr><td>8 فأكثر</td><td>3</td></tr>
+</tbody></table>
+<div className="ex-sub">من الـ NI المتبقية بنهاية الترم (بدون تصحيح)</div>
+<table className="ex-table"><thead><tr><th>عدد NI</th><th>Concept</th><th>Lab</th></tr></thead><tbody>
+<tr><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>2</td><td>1</td><td>1</td></tr>
+<tr><td>3 – 4</td><td>2</td><td>2</td></tr>
+<tr><td>5 فأكثر</td><td>3</td><td>3</td></tr>
+</tbody></table>
+<div className="ex-sub">من NCE أو NS المتبقية بنهاية الترم</div>
+<table className="ex-table"><thead><tr><th>العدد</th><th>الدفكتات</th></tr></thead><tbody>
+<tr><td>1</td><td>2</td></tr>
+<tr><td>2 فأكثر</td><td>3</td></tr>
+</tbody></table>
+<p className="ex-hint"><Icons.Star/>فيه فرصة Defect Removal (اختيارية) بنهاية الترم في الـ Concept تشيل لك دفكت واحد فقط.</p>
+<p className="ex-hint"><Icons.InfoFill/>الدفكتات تتجمع من المصادر الثلاثة فوق — يعني NS وحدة + 6 لابسات = 4 دفكتات دفعة وحدة.</p>
+</ExAcc>
+
+<ExAcc icon={<Icons.Trophy/>} title="درجة القسم والدرجة النهائية" color="var(--green)" id="grades" open={open} toggle={toggle}>
+<div className="ex-sub">درجة كل قسم (Concept أو Lab)</div>
+<table className="ex-table"><thead><tr><th>الدفكتات</th><th>الشرط</th><th>الدرجة</th></tr></thead><tbody>
+<tr><td>0</td><td className="ar">4 Exceeds بالـ Concept أو 5 بالـ Lab</td><td>A</td></tr>
+<tr><td>0</td><td className="ar">أقل من ذلك (وكلها M على الأقل)</td><td>B</td></tr>
+<tr><td>1</td><td className="ar">أياً كان</td><td>C</td></tr>
+<tr><td>2</td><td className="ar">أياً كان</td><td>D</td></tr>
+<tr><td>3 – 4</td><td className="ar">أياً كان</td><td>F</td></tr>
+</tbody></table>
+<div className="ex-sub">دمج القسمين = درجتك النهائية</div>
+<table className="ex-table"><thead><tr><th>القسمان</th><th>النهائية</th><th>القسمان</th><th>النهائية</th></tr></thead><tbody>
+<tr><td>A , A</td><td>A+</td><td>B , D</td><td>C+</td></tr>
+<tr><td>A , B</td><td>A</td><td>B , F</td><td>C</td></tr>
+<tr><td>A , C</td><td>B+</td><td>C , C</td><td>C+</td></tr>
+<tr><td>A , D</td><td>B</td><td>C , D</td><td>C</td></tr>
+<tr><td>A , F</td><td>C+</td><td>C , F</td><td>D+</td></tr>
+<tr><td>B , B</td><td>B+</td><td>D , D</td><td>D+</td></tr>
+<tr><td>B , C</td><td>B</td><td>D , F</td><td>D</td></tr>
+</tbody></table>
+<div className="ex-danger"><Icons.AlertFill/><p><strong>انتبه:</strong> 4 دفكتات في قسم واحد = درجتك النهائية ما تتجاوز D مهما كان القسم الثاني. و<strong>5 دفكتات في أي قسم = F في المقرر كامل</strong>.</p></div>
+</ExAcc>
+
+<ExAcc icon={<Icons.Info/>} title="قوانين الكويز والأعذار" color="var(--cyan)" id="rules" open={open} toggle={toggle}>
+<div className="lapse-row"><span>الكويز أول نشاط بالمحاضرة — أول 10 دقايق فقط، فلا تتأخر أبداً</span><span className="lapse-val">مهم</span></div>
+<div className="lapse-row"><span>قلم حبر فقط — الرصاص ممنوع بالكويزات</span><span className="lapse-val">مهم</span></div>
+<div className="lapse-row"><span>كتاب مغلق، بدون زملاء، والجوال ممنوع نهائياً</span><span className="lapse-val">مهم</span></div>
+<div className="lapse-row"><span>القاموس الورقي مسموح (استخدم نسختك ولا تشاركها)</span><span className="lapse-val green">مسموح</span></div>
+<div className="lapse-row"><span>غالباً 10 أسئلة اختيار متعدد / صح وخطأ من مادة القراءة</span><span className="lapse-val green">معلومة</span></div>
+<div className="ex-sub">لو شفت سؤالك صح وانحسب غلط</div>
+<p className="ex-hint"><Icons.InfoFill/>لك حق الاعتراض (Appeal) خلال أسبوع واحد من إعلان الدرجة: تكتب اعتراض مختصر مع الدليل (رقم الصفحة والفقرة) وتسلمه لدكتور شعبتك — وإذا طلع خطأ من المصحح أو مصمم الكويز تنصلح درجتك وتاخذ بونص.</p>
+<div className="ex-sub">العذر الطبي / الرسمي (QEC)</div>
+<p className="ex-hint"><Icons.AlertFill/>فرصة وحدة فقط بالفصل كامل: تقرير من QEC (حصرياً) يتسلم لمجلس أساتذة المقرر خلال أسبوعين. العذر يشيل لابس الغياب ويسمح لك تاخذ الكويز بوقت كويز التصحيح، لكن بدون فرصة E وبدون تصحيح إضافي لنفس الكويز.</p>
+</ExAcc>
+
+<ExAcc icon={<Icons.Users/>} title="السلبريشن وحالات الرسوب" color="var(--red)" id="fail" open={open} toggle={toggle}>
+<p className="ex-hint" style={{marginBottom:'10px'}}><Icons.InfoFill/>السلبريشن (Celebration) هو الاختبار النهائي للمقرر: العرض النهائي للمشروع وتسليم الـ DNB. لازم تحضره أنت وكل طلاب قروبك مع بعض، وما له أي بديل أو تعويض إطلاقاً.</p>
+<div className="fail-item"><Icons.AlertFill/><span>عدم حضور أو ممارسة السلبريشن بوقته المعلن = رسوب مباشر بالمقرر</span></div>
+<div className="fail-item"><Icons.AlertFill/><span>5 دفكتات أو أكثر في قسم واحد فقط — مهما كانت درجة القسم الثاني</span></div>
+<div className="fail-item"><Icons.AlertFill/><span>الحصول على F في القسمين معاً</span></div>
+<div className="fail-item"><Icons.AlertFill/><span>مخالفة سياسة النزاهة الأكاديمية (الغش أو الانتحال) — تنطبق حتى على المخالفات البسيطة</span></div>
+<div className="fail-item"><Icons.AlertFill/><span>تجاوز نسبة الغياب المسموحة حسب لوائح الكلية والجامعة</span></div>
+</ExAcc>
+
+<div className="explain-tip"><Icons.Star/><p><strong>نصيحة:</strong> حاولوا قدر المستطاع تخلصون الـ Exceeds من بدري عشان ما تنضغطون في النهاية — وصحّحوا أي NI أول ما يطلع، لا تخلونه يتراكم لدفكتات.</p></div>
 
 <p className="explain-footer"><Icons.Edit/> إذا استجدت أي أشياء إضافية، إن شاء الله تُذكر هنا في نفس هذه الخانة.</p>
-</div></div>}
+</div></div>
+);
+};
+
+function App() {
+const [tab, setTab] = useState('deliverables'), [modal, setModal] = useState(false);
+const tabIdx = tab==='deliverables'?0:(tab==='resources'?1:2);
+
+return (
+<div className="app"><div className="container">
+<header className="header">
+<button className="explain-btn" onClick={()=>setModal(true)} aria-label="شرح المقرر"><Icons.Concept/></button>
+<a href="https://t.me/MUTLAQ1" className="author-link"><span className="author-icon"><Icons.Code/></span><span className="author-text"><span className="author-eyebrow">مطور الموقع</span><span className="author-name">مطلق</span></span></a>
+<h1 className="title">GE 211</h1>
+<p className="subtitle">Introduction to Engineering Design</p>
+<div className="header-meta"><span className="meta-chip">SEM 481</span><span className="meta-chip neutral">المرجع الكامل للمقرر</span></div>
+<div className="header-rule"></div>
+</header>
+
+<div className="nav-tabs" data-active={tabIdx}>
+    <div className="nav-glider"></div>
+    <button className={`tab-btn ${tab==='deliverables'?'active':''}`} onClick={()=>setTab('deliverables')}>التسليمات</button>
+    <button className={`tab-btn ${tab==='resources'?'active':''}`} onClick={()=>setTab('resources')}>المحتوى</button>
+    <button className={`tab-btn ${tab==='grades'?'active':''}`} onClick={()=>setTab('grades')}>الحاسبة</button>
+</div>
+
+{tab==='deliverables'&&<DeliverablesView/>}
+{tab==='resources'&&<ContentView/>}
+{tab==='grades'&&<GradeView/>}
+
+{modal&&<ExplainModal onClose={()=>setModal(false)}/>}
 
 </div></div>
 );
