@@ -860,7 +860,9 @@ return (
 <div className="legend-row"><span className="g-badge NS">NS</span><p><b>No Submission</b> — ما سلّمت أصلاً، ونفس الشي لابس فوراً. أخطر تقييمين هما NCE وNS.</p></div>
 </ExAcc>
 
-<ExAcc icon={<Icons.Check/>} title="نسب الكويزات (تحديد درجتك)" color="var(--gold)" id="quiz" open={open} toggle={toggle}>
+<ExAcc icon={<Icons.Check/>} title="الكويزات" color="var(--gold)" id="quiz" open={open} toggle={toggle}>
+<div className="lapse-row"><span>عدد الكويزات في الترم كامل</span><span className="lapse-val green">10 كويزات</span></div>
+<div className="lapse-row"><span>يتكون كل كويز من</span><span className="lapse-val green">10 أسئلة</span></div>
 <div className="ex-sub">المحاولة الأولى</div>
 <table className="ex-table"><thead><tr><th>نسبتك</th><th>تقييمك</th></tr></thead><tbody>
 <tr><td>90% – 100%</td><td><span className="g-badge E">E</span></td></tr>
@@ -951,7 +953,7 @@ return (
 <div className="lapse-row"><span>قلم حبر فقط — الرصاص ممنوع بالكويزات</span><span className="lapse-val">مهم</span></div>
 <div className="lapse-row"><span>كتاب مغلق، بدون زملاء، والجوال ممنوع نهائياً</span><span className="lapse-val">مهم</span></div>
 <div className="lapse-row"><span>القاموس الورقي مسموح (استخدم نسختك ولا تشاركها)</span><span className="lapse-val green">مسموح</span></div>
-<div className="lapse-row"><span>غالباً 10 أسئلة اختيار متعدد / صح وخطأ من مادة القراءة</span><span className="lapse-val green">معلومة</span></div>
+<div className="lapse-row"><span>الأسئلة اختيار متعدد / صح وخطأ من مادة القراءة</span><span className="lapse-val green">معلومة</span></div>
 <div className="ex-sub">لو شفت سؤالك صح وانحسب غلط</div>
 <p className="ex-hint"><Icons.InfoFill/>لك حق الاعتراض (Appeal) خلال أسبوع واحد من إعلان الدرجة: تكتب اعتراض مختصر مع الدليل (رقم الصفحة والفقرة) وتسلمه لدكتور شعبتك — وإذا طلع خطأ من المصحح أو مصمم الكويز تنصلح درجتك وتاخذ بونص.</p>
 <div className="ex-sub">العذر الطبي / الرسمي (QEC)</div>
