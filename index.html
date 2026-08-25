@@ -1060,9 +1060,17 @@ const ContentView = () => {
     url: 'https://drive.google.com/file/d/17eDjvWdQHsn0QXkFI7eFPyq-DiHfFbnX/view',
     scope: 'Adverse consequences. (SCPS Ch5 p103 to end)'
   }, {
+    name: 'Q8A_472.pdf',
+    url: null,
+    scope: null
+  }, {
     name: 'Q9A_472.pdf',
     url: 'https://drive.google.com/file/d/1BMTIRtY7XKYLNiGiadenRgZDNKAzwtbA/view',
     scope: 'Food for thought. (SCPS Ch6 6.5 to end)'
+  }, {
+    name: 'Q10A_472.pdf',
+    url: null,
+    scope: null
   }];
   const allQuizzesData = [{
     title: 'Quiz #1',
@@ -1388,7 +1396,7 @@ const ContentView = () => {
         className: "quiz-scope"
       }, q.scope))), React.createElement("div", {
         className: "resource-links"
-      }, React.createElement("a", {
+      }, q.url && React.createElement("a", {
         href: q.url,
         target: "_blank",
         rel: "noopener noreferrer",
@@ -1396,7 +1404,17 @@ const ContentView = () => {
         style: {
           width: '100%'
         }
-      }, React.createElement(Icons.File, null), " فتح الملف"))))) : React.createElement("div", {
+      }, React.createElement(Icons.File, null), " فتح الملف"), React.createElement("a", {
+        href: (allQuizzesData.find(a => a.title.replace(/\D+/g, '') === q.name.replace(/\D+/g, '').slice(0, -3)) || {
+          links: []
+        }).links.find(l => l.name === 'ملف الكويز')?.url || q.url,
+        target: "_blank",
+        rel: "noopener noreferrer",
+        className: `res-link-btn ${q.url ? '' : 'primary'}`,
+        style: {
+          width: '100%'
+        }
+      }, React.createElement(Icons.File, null), " ملف الكويز"))))) : React.createElement("div", {
         style: {
           animation: 'fadeIn 0.3s ease'
         }
