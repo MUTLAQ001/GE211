@@ -281,6 +281,16 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .fail-item{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;background:rgba(255,77,94,0.05);border:1px solid rgba(255,77,94,0.18);border-radius:10px;margin-bottom:6px}
 .fail-item svg{color:var(--red);font-size:0.9rem;flex-shrink:0;margin-top:4px}
 .fail-item span{font-size:0.8rem;color:#e2d5d7;line-height:1.6}
+.ex-bonus{display:block;font-family:var(--font-body);font-size:0.6rem;font-weight:700;color:var(--green);margin-top:3px}
+.ex-list{margin:8px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:7px}
+.ex-list li{display:flex;gap:9px;align-items:flex-start;font-size:0.79rem;color:#cfced8;line-height:1.65;padding:10px 12px;background:rgba(0,0,0,0.2);border:1px solid var(--line);border-radius:11px}
+.ex-list li b{color:var(--text)}
+.ex-num{flex-shrink:0;width:20px;height:20px;border-radius:6px;background:rgba(255,255,255,0.07);border:1px solid var(--line);color:var(--text-dim);font-family:var(--font-nums);font-size:0.67rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.ex-chip{display:inline-block;font-family:var(--font-nums);font-size:0.65rem;font-weight:700;color:var(--cyan);background:rgba(67,220,245,0.08);border:1px solid rgba(67,220,245,0.25);padding:3px 9px;border-radius:20px;margin:7px 0 0;margin-left:6px}
+.ex-chip.warn{color:var(--orange);background:rgba(255,159,67,0.08);border-color:rgba(255,159,67,0.25)}
+.plan-row{align-items:flex-start}
+.plan-row .g-badge{margin-top:2px}
+.ex-table td.start{text-align:right}
 .ex-hint{font-size:0.76rem;color:var(--text-dim);line-height:1.7;margin:8px 2px 0;display:flex;gap:8px;align-items:flex-start}
 .ex-hint svg{flex-shrink:0;margin-top:3px;font-size:0.9rem;color:var(--gold)}
 .save-btn-new{width:100%;padding:16px;background:linear-gradient(90deg,var(--cyan),#26b8f0);color:#000;font-weight:800;font-size:1rem;border:none;border-radius:14px;margin-top:20px;cursor:pointer;transition:0.3s;display:flex;align-items:center;justify-content:center;gap:8px}
@@ -391,6 +401,11 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .cal-add-btn{padding:14px;border-radius:12px;border:none;background:linear-gradient(90deg,var(--gold),var(--cyan));color:#000;font-weight:800;font-size:0.92rem;cursor:pointer;transition:0.25s;display:flex;align-items:center;justify-content:center;gap:8px}
 .cal-add-btn:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 10px 24px rgba(242,193,78,0.18)}
 .cal-add-btn:disabled{opacity:0.4;cursor:not-allowed}
+.cal-event-note{font-size:0.78rem;color:var(--text-dim);line-height:1.65;margin:7px 0 0;padding-top:7px;border-top:1px solid rgba(255,255,255,0.05)}
+.cal-badge.official{color:var(--gold);background:rgba(242,193,78,0.08);border-color:rgba(242,193,78,0.25)}
+.cal-badge.time{color:var(--cyan);background:rgba(67,220,245,0.08);border-color:rgba(67,220,245,0.25);font-family:var(--font-nums)}
+.cal-source{display:flex;gap:9px;align-items:flex-start;font-size:0.77rem;color:var(--text-dim);line-height:1.7;margin:14px 2px 0}
+.cal-source svg{flex-shrink:0;margin-top:3px;font-size:0.95rem;color:var(--gold)}
 .cal-date-preview{display:flex;align-items:center;gap:7px;font-size:0.78rem;color:var(--text-dim);padding:0 4px;margin-top:-2px}
 .cal-date-preview svg{color:var(--gold);font-size:0.9rem;flex-shrink:0}
 .cal-chips-label{font-size:0.76rem;color:var(--text-faint);font-weight:600;margin-top:6px;padding:0 4px}
@@ -1901,6 +1916,142 @@ const GradeView = () => {
     })
   }, "تصفير")));
 };
+const QUIZ_SCALE_481 = [{
+  p: '100%',
+  a: 'E',
+  b: 'E',
+  bonus: true
+}, {
+  p: '90%',
+  a: 'M',
+  b: 'E'
+}, {
+  p: '80%',
+  a: 'M',
+  b: 'M',
+  bonus: true
+}, {
+  p: '70%',
+  a: 'NI',
+  b: 'M'
+}, {
+  p: '60%',
+  a: 'NI',
+  b: 'M'
+}, {
+  p: '50% – 40%',
+  a: 'NI',
+  b: 'NI'
+}, {
+  p: '30% فأقل',
+  a: 'NCE',
+  b: 'NCE'
+}, {
+  p: 'ما أخذت الكويز',
+  ar: true,
+  a: 'NS',
+  b: 'NS'
+}];
+const QUIZ_PLAN_481 = [{
+  q: 'Quiz #1',
+  due: 'C2-1',
+  fix: 'L2-1',
+  s: 'First Day Materials كاملة (الأبيض والأصفر والبرتقالي) وبالذات الدرجات والتقييم + Blue Workbook صفحات J49–J56.'
+}, {
+  q: 'Quiz #2',
+  due: 'C2-3',
+  fix: 'C4-1',
+  s: 'SCPS الفصل 1 صفحات 1–3 + Blue Workbook قسم B (B5–B10) وقسم E (E1–E12).'
+}, {
+  q: 'Quiz #3',
+  due: 'C3-1',
+  fix: 'C5-1',
+  s: 'SCPS الفصل 2 صفحة 12 الأقسام (2.3 و2.5) + الفصل 3 من صفحة 29 حتى نهاية 3.2C.'
+}, {
+  q: 'Quiz #4',
+  due: 'C3-3',
+  fix: 'C5-1',
+  s: 'SCPS الفصل 4 من صفحة 61 حتى نهاية القسم 4.3B.'
+}, {
+  q: 'Quiz #5',
+  due: 'C4-1',
+  fix: 'C5-3',
+  s: 'SCPS الفصل 3 من 3.2D حتى نهاية الفصل.'
+}, {
+  q: 'Quiz #6',
+  due: 'C4-3',
+  fix: 'C5-3 / C6-3',
+  s: 'SCPS الفصل 5 حتى نهاية صفحة 102.'
+}, {
+  q: 'Quiz #7',
+  due: 'C5-1',
+  fix: null,
+  s: 'SCPS الفصل 5 من صفحة 103 حتى نهاية الفصل + مشكلة Exxon Valdez من الهاندأوت.'
+}, {
+  q: 'Quiz #8',
+  due: 'C5-3',
+  fix: 'C6-3',
+  s: 'SCPS الفصل 6 حتى نهاية القسم 6.4.'
+}, {
+  q: 'Quiz #9',
+  due: 'C6-1',
+  fix: 'L6-3',
+  s: 'SCPS الفصل 6 من القسم 6.5 حتى نهاية الفصل.'
+}, {
+  q: 'Quiz #10',
+  due: 'C6-3',
+  fix: 'L6-3',
+  s: 'SCPS الفصل 7 كامل.'
+}];
+const LAB_PLAN_481 = [{
+  a: 'L-1 — Teammate Interview',
+  due: 'L3-1',
+  re: '—'
+}, {
+  a: 'L-2 — Setting Team Norms (مسودة)',
+  due: 'L3-1',
+  re: '—'
+}, {
+  a: 'L-3-0 — الـ DNB (النسخة الصفرية)',
+  due: 'L3-2',
+  re: 'L5-1'
+}, {
+  a: 'L-2 — Team Norms النهائية',
+  due: 'L4-2',
+  re: 'L6-2'
+}, {
+  a: 'L-4-a — عرض المرحلة (a) + تقييم DNB الأول',
+  due: 'L4-3',
+  re: 'L5-1'
+}, {
+  a: 'L-4-b — عرض المرحلة (b) + تقييم DNB الثاني',
+  due: 'L5-1',
+  re: 'L5-3'
+}, {
+  a: 'L-4-c — عرض المرحلة (c) + تقييم DNB الثالث',
+  due: 'L5-3',
+  re: 'L6-1'
+}, {
+  a: 'L-5 — Team Process Checks',
+  due: 'L5-3',
+  re: 'L6-3'
+}, {
+  a: 'L-4-d — عرض المرحلة (d) + تقييم DNB الرابع',
+  due: 'L6-1',
+  re: '—'
+}, {
+  a: 'L-4-e — عرض المرحلة (e) + تقييم DNB الخامس',
+  due: 'L6-3',
+  re: '—'
+}, {
+  a: 'L-3-final — الـ DNB النهائي + تسليم المجسّم',
+  due: 'السلبريشن',
+  re: '—'
+}, {
+  a: 'L-4-final — العرض النهائي للمشروع',
+  due: 'السلبريشن',
+  re: '—'
+}];
 const ExAcc = ({
   icon,
   title,
@@ -2096,55 +2247,74 @@ const ExplainModal = ({
     className: "lapse-val green"
   }, "10 أسئلة")), React.createElement("div", {
     className: "ex-sub"
-  }, "المحاولة الأولى"), React.createElement("table", {
+  }, "تقييم المحاولة الأولى — جدول 481"), React.createElement("table", {
     className: "ex-table"
-  }, React.createElement("thead", null, React.createElement("tr", null, React.createElement("th", null, "نسبتك"), React.createElement("th", null, "تقييمك"))), React.createElement("tbody", null, React.createElement("tr", null, React.createElement("td", null, "90% – 100%"), React.createElement("td", null, React.createElement("span", {
-    className: "g-badge E"
-  }, "E"))), React.createElement("tr", null, React.createElement("td", null, "70% – 80%"), React.createElement("td", null, React.createElement("span", {
-    className: "g-badge M"
-  }, "M"))), React.createElement("tr", null, React.createElement("td", null, "40% – 60%"), React.createElement("td", null, React.createElement("span", {
-    className: "g-badge NI"
-  }, "NI"))), React.createElement("tr", null, React.createElement("td", null, "0% – 30%"), React.createElement("td", null, React.createElement("span", {
-    className: "g-badge NCE"
-  }, "NCE"))), React.createElement("tr", null, React.createElement("td", {
-    className: "ar"
-  }, "ما أخذت الكويز"), React.createElement("td", null, React.createElement("span", {
-    className: "g-badge NS"
-  }, "NS"))))), React.createElement("div", {
+  }, React.createElement("thead", null, React.createElement("tr", null, React.createElement("th", null, "نسبتك"), React.createElement("th", null, "بدون جورنال"), React.createElement("th", null, "مع جورنال مقبول"))), React.createElement("tbody", null, QUIZ_SCALE_481.map(r => React.createElement("tr", {
+    key: r.p
+  }, React.createElement("td", {
+    className: r.ar ? "ar" : ""
+  }, r.p), React.createElement("td", null, React.createElement("span", {
+    className: `g-badge ${r.a}`
+  }, r.a)), React.createElement("td", null, React.createElement("span", {
+    className: `g-badge ${r.b}`
+  }, r.b), r.bonus && React.createElement("span", {
+    className: "ex-bonus"
+  }, "+ بونص")))))), React.createElement("p", {
+    className: "ex-hint"
+  }, React.createElement(Icons.Star, null), "الجورنال ورقة تأمّل اختيارية تقدر تسلّمها مع أي كويز، ومعها تشك لست تعبّيها بنفسك. لو انقبل (Meets) يغطّي لك ثلاث إجابات غلط أو أقل، فيرفع تقييمك زي ما مبيّن بالعمود الثاني. ولو ما انقبل ما عليك أي عقوبة — بس تخسر التغطية، والجورنال ما ينعاد تسليمه."), React.createElement("p", {
+    className: "ex-hint"
+  }, React.createElement(Icons.InfoFill, null), "الجورنال يتكتب بخط اليد، عربي أو إنجليزي، ويُسلّم قبل توزيع أوراق الكويز."), React.createElement("div", {
     className: "ex-sub"
-  }, "كويز التصحيح (إذا جبت NI)"), React.createElement("table", {
-    className: "ex-table"
-  }, React.createElement("thead", null, React.createElement("tr", null, React.createElement("th", null, "نسبتك"), React.createElement("th", null, "تقييمك الجديد"))), React.createElement("tbody", null, React.createElement("tr", null, React.createElement("td", null, "60% فأكثر"), React.createElement("td", null, React.createElement("span", {
-    className: "g-badge M"
-  }, "M"))), React.createElement("tr", null, React.createElement("td", null, "أقل من 60%"), React.createElement("td", null, React.createElement("span", {
-    className: "g-badge NI"
-  }, "NI"))))), React.createElement("p", {
+  }, "كويز التصحيح — لو جبت NI"), React.createElement("ul", {
+    className: "ex-list"
+  }, React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "1"), "تشك لست التصحيح معبّاة بالكامل، وتكون أول ورقة بالباكج."), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "2"), "التصحيح نفسه بخط اليد وبهيكل الـ Presentation Sandwich — لكل سؤال غلطته اكتب فقرة قصيرة كاملة تذكر فيها الإجابة الصحيحة كجملة مثبتة."), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "3"), "نسخة من كويزك الأصلي مع تشك لسته.")), React.createElement("p", {
     className: "ex-hint"
-  }, React.createElement(Icons.InfoFill, null), "في التصحيح ما فيه E نهائياً، وما راح تنزل لـ NCE مهما صار."), React.createElement("div", {
+  }, React.createElement(Icons.InfoFill, null), "الباكج يترفع على رابط البلاك بورد (أو يتسلّم باليد لو سمح الدكتور). إذا استوفى المواصفات يتحوّل تقييمك لـ M — ما فيه E بهذي المرحلة، وما راح تنزل لـ NCE."), React.createElement("div", {
     className: "ex-sub"
-  }, "الميك أب (إذا جبت NCE أو NS)"), React.createElement("table", {
-    className: "ex-table"
-  }, React.createElement("thead", null, React.createElement("tr", null, React.createElement("th", null, "نسبتك"), React.createElement("th", null, "مع جورنال مقبول"), React.createElement("th", null, "بدون جورنال"))), React.createElement("tbody", null, React.createElement("tr", null, React.createElement("td", null, "90% – 100%"), React.createElement("td", null, React.createElement("span", {
-    className: "g-badge M"
-  }, "M")), React.createElement("td", null, React.createElement("span", {
-    className: "g-badge M"
-  }, "M"))), React.createElement("tr", null, React.createElement("td", null, "60% – 80%"), React.createElement("td", null, React.createElement("span", {
-    className: "g-badge M"
-  }, "M")), React.createElement("td", null, React.createElement("span", {
-    className: "g-badge NI"
-  }, "NI"))), React.createElement("tr", null, React.createElement("td", null, "40% – 50%"), React.createElement("td", null, React.createElement("span", {
-    className: "g-badge NI"
-  }, "NI")), React.createElement("td", null, React.createElement("span", {
-    className: "g-badge NI"
-  }, "NI"))), React.createElement("tr", null, React.createElement("td", null, "أقل من 40%"), React.createElement("td", null, React.createElement("span", {
-    className: "g-badge NCE"
-  }, "يظل")), React.createElement("td", null, React.createElement("span", {
-    className: "g-badge NCE"
-  }, "يظل"))))), React.createElement("p", {
+  }, "كويز الميك أب — لو جبت NCE أو NS"), React.createElement("ul", {
+    className: "ex-list"
+  }, React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "1"), "تشك لست الميك أب معبّاة بالكامل كغلاف."), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "2"), "الميك أب نفسه بخط اليد وبهيكل الـ Presentation Sandwich — لكل سؤال: أعد كتابة رأس السؤال، وحدد حرف الإجابة الصحيحة واكتبها كجملة مثبتة، ووثّق رقم الصفحة من الكتاب."), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "3"), "جورنال هندسي للفصل أو الموضوع + تشك لست الجورنال — إجباري هنا."), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "4"), "لا ترفق نسخة الكويز الأصلي.")), React.createElement("p", {
     className: "ex-hint"
-  }, React.createElement(Icons.Star, null), "الجورنال ورقة تأمّل بسيطة خاصة بالميك أب فقط (لمن جاب NCE أو NS): تسلّمها قبل بداية كويز الميك أب، ولو انقبلت (M) توصل لـ M بـ 60% بدل 90%. ما عليك أي عقوبة لو ما انقبلت — دايماً اكتبها."), React.createElement("p", {
+  }, React.createElement(Icons.AlertFill, null), "لو استوفى الميك أب المواصفات يتحوّل التقييم لـ M، لكن اللابس المرتبط بالكويز يظل محسوب عليك. وبقاء NCE أو NS لنهاية الترم أثره شديد على درجة القسم."), React.createElement("p", {
     className: "ex-hint"
-  }, React.createElement(Icons.AlertFill, null), "حتى لو تحسّن الكويز لـ M بالميك أب، اللابس المرتبط فيه يظل محسوب عليك.")), React.createElement(ExAcc, {
+  }, React.createElement(Icons.Alert, null), "أي إعادة تسليم مسموحة تنقبل متأخرة خلال أسبوع واحد من موعدها مقابل لابس — وبعد الأسبوع ما تنقبل نهائياً.")), React.createElement(ExAcc, {
+    icon: React.createElement(Icons.Clock, null),
+    title: "جدول الكويزات والقراءات",
+    color: "var(--cyan)",
+    id: "plan",
+    open: open,
+    toggle: toggle
+  }, QUIZ_PLAN_481.map(r => React.createElement("div", {
+    key: r.q,
+    className: "legend-row plan-row"
+  }, React.createElement("span", {
+    className: "g-badge M"
+  }, r.q.replace('Quiz #', 'Q')), React.createElement("div", null, React.createElement("p", null, r.s), React.createElement("span", {
+    className: "ex-chip"
+  }, "التسليم " + r.due), r.fix && React.createElement("span", {
+    className: "ex-chip warn"
+  }, "التصحيح " + r.fix)))), React.createElement("p", {
+    className: "ex-hint"
+  }, React.createElement(Icons.InfoFill, null), "Assignment C1 — Engineering the Profession: تسليمه جلسة C2-2، وتصحيحه جلسة C4-1."), React.createElement("p", {
+    className: "ex-hint"
+  }, React.createElement(Icons.Star, null), "الـ Defect Removal اختياري ويشيل لك دفكت واحد: يكون بأول 10 دقائق من أول جلسة بعد L6-3، ونتيجته ما تُعلن."), React.createElement("p", {
+    className: "ex-hint"
+  }, React.createElement(Icons.Alert, null), "رمز الجلسة: C أسبوع Concepts وL أسبوع Lab، والرقم الأخير رقم المحاضرة داخل الأسبوع. التواريخ الفعلية للأسابيع 1–6 تلقاها بتبويب التقويم.")),
+  React.createElement(ExAcc, {
     icon: React.createElement(Icons.Alert, null),
     title: "اللابسات (Lapses) — وش يحسبها عليك؟",
     color: "var(--orange)",
@@ -2271,14 +2441,112 @@ const ExplainModal = ({
   }, React.createElement("span", null, "الأسئلة اختيار متعدد / صح وخطأ من مادة القراءة"), React.createElement("span", {
     className: "lapse-val green"
   }, "معلومة")), React.createElement("div", {
+    className: "lapse-row"
+  }, React.createElement("span", null, "قواميس الجوال واللابتوب وأي جهاز"), React.createElement("span", {
+    className: "lapse-val"
+  }, "ممنوعة")), React.createElement("div", {
+    className: "ex-sub"
+  }, "كيف يمشي الكويز داخل القاعة"), React.createElement("ul", {
+    className: "ex-list"
+  }, React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "1"), "ظرف الكويز يكون على طاولة التيم أو يجيبه القائد من طاولة الدكتور، وما تفتحونه إلا بإذنه."), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "2"), "داخل الظرف خمسة نماذج مختلفة — كل عضو ياخذ النموذج اللي يوافق رقم عضويته بالتيم."), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "3"), "الجورنالات تنحط بالظرف قبل ما توزّع أوراق الكويز."), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "4"), "بعد ما تخلص رجّع ورقة الكويز مع تشك لستها بالظرف، وقائد التيم يسلّم الظرف خلال 30 ثانية من نهاية العشر دقائق.")), React.createElement("div", {
     className: "ex-sub"
   }, "لو شفت سؤالك صح وانحسب غلط"), React.createElement("p", {
     className: "ex-hint"
-  }, React.createElement(Icons.InfoFill, null), "لك حق الاعتراض (Appeal) خلال أسبوع واحد من إعلان الدرجة: تكتب اعتراض مختصر مع الدليل (رقم الصفحة والفقرة) وتسلمه لدكتور شعبتك — وإذا طلع خطأ من المصحح أو مصمم الكويز تنصلح درجتك وتاخذ بونص."), React.createElement("div", {
+  }, React.createElement(Icons.InfoFill, null), "لك حق الاعتراض (Appeal) خلال أسبوع واحد من إعلان الدرجة: راجع المصحّح أول، وإذا ما انحلّت اكتب اعتراض مختصر مع الدليل وسلّمه لدكتور شعبتك، وهو ينقله لمصمم الكويز — وإذا طلع خطأ من المصحح أو من التصميم تنصلح درجتك وتاخذ بونص."), React.createElement("p", {
+    className: "ex-hint"
+  }, React.createElement(Icons.Star, null), "الأسباب المقبولة للاعتراض ثلاثة: السؤال خارج مادة القراءة، أو ما فيه خيار صحيح بين الإجابات، أو إجابتك اللي انحسبت غلط مكتوبة نصاً بصفحة كذا فقرة كذا."), React.createElement("div", {
     className: "ex-sub"
   }, "العذر الطبي / الرسمي (QEC)"), React.createElement("p", {
     className: "ex-hint"
   }, React.createElement(Icons.AlertFill, null), "فرصة وحدة فقط بالفصل كامل: تقرير من QEC (حصرياً) يتسلم لمجلس أساتذة المقرر خلال أسبوعين. العذر يشيل لابس الغياب ويسمح لك تاخذ الكويز بوقت كويز التصحيح، لكن بدون فرصة E وبدون تصحيح إضافي لنفس الكويز.")), React.createElement(ExAcc, {
+    icon: React.createElement(Icons.Lab, null),
+    title: "قسم الـ Lab — المشروع والتسليمات",
+    color: "var(--cyan)",
+    id: "lab",
+    open: open,
+    toggle: toggle
+  }, React.createElement("p", {
+    className: "ex-hint"
+  }, React.createElement(Icons.InfoFill, null), "كل أعمال اللاب جماعية، ودرجتك الفردية = درجة تيمك طالما أنت مشارك ومنتج فعلياً. تحت الحالات اللي تنزل فيها درجتك عن درجة تيمك:"), React.createElement("div", {
+    className: "lapse-row"
+  }, React.createElement("span", null, "غياب متكرر عن اللاب"), React.createElement("span", {
+    className: "lapse-val"
+  }, "لابسات فردية بعد ثاني غياب")), React.createElement("div", {
+    className: "lapse-row"
+  }, React.createElement("span", null, "تحذيرين Team Dynamics أو أكثر"), React.createElement("span", {
+    className: "lapse-val"
+  }, "لابسات فردية")), React.createElement("div", {
+    className: "lapse-row"
+  }, React.createElement("span", null, "تقييم أقران غير أمين لشغل التيمات الثانية"), React.createElement("span", {
+    className: "lapse-val"
+  }, "لابس على التيم")), React.createElement("div", {
+    className: "ex-sub"
+  }, "جدول تسليمات اللاب"), React.createElement("table", {
+    className: "ex-table"
+  }, React.createElement("thead", null, React.createElement("tr", null, React.createElement("th", null, "التسليم"), React.createElement("th", null, "الجلسة"), React.createElement("th", null, "إعادة التسليم"))), React.createElement("tbody", null, LAB_PLAN_481.map(r => React.createElement("tr", {
+    key: r.a
+  }, React.createElement("td", {
+    className: "ar start"
+  }, r.a), React.createElement("td", null, r.due), React.createElement("td", null, r.re))))), React.createElement("div", {
+    className: "ex-danger"
+  }, React.createElement(Icons.AlertFill, null), React.createElement("p", null, React.createElement("strong", null, "ما فيه تصحيح ولا نقاش ولا إعادة تقييم"), " للعرض النهائي ولا للتقييم النهائي للـ DNB — درجتهم نهائية.")), React.createElement("p", {
+    className: "ex-hint"
+  }, React.createElement(Icons.Alert, null), "الاعتراض على أي درجة لاب يكون بالمحاضرة اللي بعد إعلانها مباشرة — بعدها ما فيه نقاش نهائياً."), React.createElement("p", {
+    className: "ex-hint"
+  }, React.createElement(Icons.Star, null), "الـ DNB دفتر التصميم الخاص بالتيم: تجيبونه كل محاضرة، والدكاترة يجمعونه ويقيّمونه خمس مرات خلال الترم قبل التقييم النهائي بالسلبريشن.")),
+  React.createElement(ExAcc, {
+    icon: React.createElement(Icons.File, null),
+    title: "التسليم والتشك لست",
+    color: "var(--green)",
+    id: "submit",
+    open: open,
+    toggle: toggle
+  }, React.createElement("ul", {
+    className: "ex-list"
+  }, React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "1"), "الأعمال المكتوبة بالأوفيس ترفعها على البلاك بورد، والرابط يسكّر مع بداية المحاضرة المستحقة — لا تأجلها لآخر دقيقة."), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "2"), "التشك لستات والأعمال اليدوية تُسلّم ورقياً داخل المحاضرة."), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "3"), "استخدم تشك لست الفصل الحالي فقط — التشك لست الغلط تُحسب كأنك ما سلّمت تشك لست أصلاً."), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "4"), "التشك لست تكون أول ورقة بالعمل، وتعبّيها بنفسك (Self-assessment) قبل التسليم."), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "5"), "كل الأعمال تُسلّم بأول 10 دقائق من المحاضرة المستحقة.")), React.createElement("p", {
+    className: "ex-hint"
+  }, React.createElement(Icons.AlertFill, null), "الانتحال يُفحص مع أعمال الفصل الحالي والفصول السابقة، وللدكتور حق يطلب من أي تيم يرفع أي عمل على البلاك بورد للفحص."), React.createElement("p", {
+    className: "ex-hint"
+  }, React.createElement(Icons.Star, null), "احتفظ بكل أعمالك الأصلية لين تنزل الدرجات النهائية، وسجّل لنفسك درجاتك ولابساتك — بها تقدر تحسب درجتك بنفسك من تبويب الحاسبة. ثلاثة أشياء فقط ما تُعلن: نتيجة الـ Defect Removal، والتقييم النهائي للـ DNB، ودرجة العرض النهائي.")),
+  React.createElement(ExAcc, {
+    icon: React.createElement(Icons.Folder, null),
+    title: "المواد المطلوبة",
+    color: "var(--gold)",
+    id: "mats",
+    open: open,
+    toggle: toggle
+  }, React.createElement("ul", {
+    className: "ex-list"
+  }, React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "1"), React.createElement("span", null, React.createElement("b", null, "The Blue Workbook"), " — Introduction to Engineering Design, The Workbook.")), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "2"), React.createElement("span", null, React.createElement("b", null, "SCPS"), " — Strategies For Creative Problem Solving، وهو مرجع أغلب الكويزات.")), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "3"), "ورق لاصق (Post-it) أو بطاقات مقاس 3×5."), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "4"), "ملف + فواصل + شفافيات.")), React.createElement("p", {
+    className: "ex-hint"
+  }, React.createElement(Icons.InfoFill, null), "كل ملفات المقرر تنزل على البلاك بورد قبل محاضرتها بوقت كافٍ — اطبع اللي تحتاجه قبل المحاضرة، وانتبه: بعض التشك لستات نسخة لكل طالب وبعضها نسخة وحدة للتيم.")),
+  React.createElement(ExAcc, {
     icon: React.createElement(Icons.Users, null),
     title: "السلبريشن وحالات الرسوب",
     color: "var(--red)",
@@ -2304,7 +2572,7 @@ const ExplainModal = ({
     className: "explain-tip"
   }, React.createElement(Icons.Star, null), React.createElement("p", null, React.createElement("strong", null, "نصيحة:"), " حاولوا قدر المستطاع تخلصون الـ Exceeds من بدري عشان ما تنضغطون في النهاية — وصحّحوا أي NI أول ما يطلع، لا تخلونه يتراكم لدفكتات.")), React.createElement("p", {
     className: "explain-footer"
-  }, React.createElement(Icons.Edit, null), " إذا استجدت أي أشياء إضافية، إن شاء الله تُذكر هنا في نفس هذه الخانة.")));
+  }, React.createElement(Icons.Edit, null), " هذا الشرح مبني على First Day Materials للفصل 481 (إصدار أغسطس 2026). وإذا استجدت أي أشياء إضافية، إن شاء الله تُذكر هنا في نفس هذه الخانة.")));
 };
 const CAL_MONTHS = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'];
 const CAL_DOW = ['الأحد', 'الاثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'];
@@ -2325,6 +2593,106 @@ const CAL_TYPES = [{
   k: 'other',
   l: 'أخرى'
 }];
+const CAL_OFFICIAL = [{
+  id: 'o-w0',
+  title: 'Structure Session — بداية المقرر',
+  date: '2026-08-27',
+  time: '12:40',
+  type: 'lecture',
+  note: 'Week 0 — أول جلسة في المقرر، ومنها يبدأ حساب الحضور واللابسات.'
+}, {
+  id: 'o-c1-1',
+  title: 'C1-1 — Introduction to GE211',
+  date: '2026-08-30',
+  type: 'lecture'
+}, {
+  id: 'o-c1-2',
+  title: 'C1-2 — Active Learning',
+  date: '2026-09-01',
+  type: 'lecture'
+}, {
+  id: 'o-c1-3',
+  title: 'C1-3 — تكملة التعريف بقسم الـ Concepts',
+  date: '2026-09-03',
+  type: 'lecture',
+  note: 'إعلان مشاهدة فيديو “A Private Universe”.'
+}, {
+  id: 'o-l1-1',
+  title: 'L1-1 — Introduction to LAB Session',
+  date: '2026-09-06',
+  type: 'lecture'
+}, {
+  id: 'o-l1-2',
+  title: 'L1-2 — Air Volume',
+  date: '2026-09-08',
+  type: 'lecture'
+}, {
+  id: 'o-l1-3',
+  title: 'L1-3 — تكملة التعريف بقسم الـ Lab',
+  date: '2026-09-10',
+  type: 'lecture'
+}, {
+  id: 'o-q1',
+  title: 'Quiz #1 — C2-1',
+  date: '2026-09-13',
+  type: 'quiz',
+  note: 'المادة: First Day Materials (الأبيض + الأصفر + البرتقالي) + Blue Workbook صفحات J49–J56. نشاط الجلسة: LoL.'
+}, {
+  id: 'o-a-c1',
+  title: 'تسليم Assignment C1 — C2-2',
+  date: '2026-09-15',
+  type: 'deliv',
+  note: 'Engineering the Profession — التصحيح/الميك أب موعده جلسة C4-1.'
+}, {
+  id: 'o-q2',
+  title: 'Quiz #2 — C2-3',
+  date: '2026-09-17',
+  type: 'quiz',
+  note: 'المادة: SCPS الفصل 1 صفحات 1–3 + Blue Workbook قسم B (B5–B10) وقسم E (E1–E12). نشاط الجلسة: Registration Process.'
+}, {
+  id: 'o-l2-1',
+  title: 'L2-1 — Team Work & Road Blocks',
+  date: '2026-09-20',
+  type: 'lecture',
+  note: 'إعلان مشاهدة فيديو “The Bloody Meetings” وفيديو “Team Player”.'
+}, {
+  id: 'o-q1-fix',
+  title: 'آخر موعد تصحيح / ميك أب Quiz #1',
+  date: '2026-09-20',
+  type: 'deliv',
+  note: 'لازم يكون مُصحّحاً قبل جلسة C3-1.'
+}, {
+  id: 'o-l2-2',
+  title: 'L2-2 — تكملة Team Work & Road Blocks',
+  date: '2026-09-22',
+  type: 'lecture'
+}, {
+  id: 'o-nat',
+  title: 'اليوم الوطني — إجازة',
+  date: '2026-09-24',
+  type: 'other',
+  note: 'ما فيه محاضرة حسب التقويم الرسمي للمقرر.'
+}, {
+  id: 'o-q3',
+  title: 'Quiz #3 — C3-1',
+  date: '2026-09-27',
+  type: 'quiz',
+  note: 'المادة: SCPS الفصل 2 (2.3 و2.5) + الفصل 3 من صفحة 29 حتى نهاية 3.2C. نشاط الجلسة: Paradigm + فيديو “Discovering the Future”.'
+}, {
+  id: 'o-c3-2',
+  title: 'C3-2 — Present State / Desired State',
+  date: '2026-09-29',
+  type: 'lecture',
+  note: 'تمرين Tomato Problem.'
+}, {
+  id: 'o-q4',
+  title: 'Quiz #4 — C3-3',
+  date: '2026-10-01',
+  type: 'quiz',
+  note: 'المادة: SCPS الفصل 4 من صفحة 61 حتى نهاية 4.3B. نشاط الجلسة: Brainstorming (Recycle).'
+}].map(e => Object.assign({
+  official: true
+}, e));
 const calPad = n => (n < 10 ? '0' : '') + n;
 const calKey = d => d.getFullYear() + '-' + calPad(d.getMonth() + 1) + '-' + calPad(d.getDate());
 const calParse = k => {
@@ -2413,11 +2781,12 @@ const CalendarView = () => {
     setSelected(todayKey);
     setDate(todayKey);
   };
+  const allEvents = CAL_OFFICIAL.concat(events);
   const byDay = {};
-  events.forEach(ev => {
+  allEvents.forEach(ev => {
     (byDay[ev.date] = byDay[ev.date] || []).push(ev);
   });
-  const sorted = events.slice().sort((a, b) => a.date < b.date ? -1 : a.date > b.date ? 1 : 0);
+  const sorted = allEvents.slice().sort((a, b) => a.date < b.date ? -1 : a.date > b.date ? 1 : 0);
   const upcoming = sorted.filter(e => diffDays(e.date) >= 0);
   const past = sorted.filter(e => diffDays(e.date) < 0).reverse();
   const next = upcoming[0];
@@ -2441,7 +2810,7 @@ const CalendarView = () => {
     t: 'العرض النهائي',
     ty: 'exam'
   });
-  const used = events.map(e => e.title);
+  const used = allEvents.map(e => e.title);
   const freePresets = presets.filter(p => used.indexOf(p.t) === -1);
   const addEvent = () => {
     const t = title.trim();
@@ -2477,10 +2846,16 @@ const CalendarView = () => {
       className: "cal-event-meta"
     }, React.createElement("span", {
       className: `cal-badge ${rel.c}`
-    }, rel.t), React.createElement("span", null, fullDate(ev.date)), React.createElement("span", {
+    }, rel.t), React.createElement("span", null, fullDate(ev.date)), ev.time && React.createElement("span", {
+      className: "cal-badge time"
+    }, ev.time), React.createElement("span", {
       className: "cal-badge type",
       "data-t": ev.type
-    }, calTypeLabel(ev.type)))), React.createElement("button", {
+    }, calTypeLabel(ev.type)), ev.official && React.createElement("span", {
+      className: "cal-badge official"
+    }, "التقويم الرسمي")), ev.note && React.createElement("p", {
+      className: "cal-event-note"
+    }, ev.note)), !ev.official && React.createElement("button", {
       className: "cal-del",
       onClick: () => delEvent(ev.id),
       "aria-label": "حذف الموعد"
@@ -2557,7 +2932,9 @@ const CalendarView = () => {
   }, React.createElement("span", {
     className: "cal-dot",
     "data-t": t.k
-  }), t.l)))), React.createElement("div", {
+  }), t.l)))), React.createElement("p", {
+    className: "cal-source"
+  }, React.createElement(Icons.InfoFill, null), "مواعيد الأسابيع 1–6 مأخوذة من التقويم الرسمي للمقرر (FDM 481 — الورقة الوردية)، وتقدر تضيف مواعيدك الخاصة من الأسفل."), React.createElement("div", {
     className: "section-separator",
     style: {
       color: 'var(--cyan)'
@@ -2567,7 +2944,7 @@ const CalendarView = () => {
     onClick: () => setSelected(null)
   }, "عرض الكل")), shown.length ? shown.map(renderEvent) : React.createElement("div", {
     className: "cal-empty"
-  }, selected ? 'ما فيه مواعيد في هذا اليوم.' : events.length ? 'خلصت كل المواعيد القادمة.' : 'ما سجّلت أي موعد بعد. أضف كويزاتك وتسليماتك من الأسفل وتطلع لك هنا مع العد التنازلي.', React.createElement("span", {
+  }, selected ? 'ما فيه مواعيد في هذا اليوم.' : allEvents.length ? 'خلصت كل المواعيد القادمة.' : 'ما سجّلت أي موعد بعد. أضف كويزاتك وتسليماتك من الأسفل وتطلع لك هنا مع العد التنازلي.', React.createElement("span", {
     className: "cal-empty-note"
   }, "المواعيد تُحفظ في متصفح جهازك فقط.")), past.length > 0 && !selected && React.createElement("button", {
     className: "cal-past-toggle",
