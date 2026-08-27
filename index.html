@@ -361,11 +361,6 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .cal-clear-btn:hover{color:var(--text);border-color:var(--line-strong);background:rgba(255,255,255,0.07)}
 .cal-event{display:flex;align-items:center;gap:12px;padding:13px 14px;border-radius:var(--r-md);background:rgba(0,0,0,0.22);border:1px solid var(--line);margin-bottom:9px;transition:0.2s}
 .cal-event:hover{border-color:var(--line-strong);background:rgba(255,255,255,0.04)}
-.cal-event-bar{width:4px;align-self:stretch;min-height:38px;border-radius:4px;background:var(--text-faint);flex-shrink:0}
-.cal-event-bar[data-t="quiz"]{background:var(--gold)}
-.cal-event-bar[data-t="deliv"]{background:var(--green)}
-.cal-event-bar[data-t="lecture"]{background:var(--cyan)}
-.cal-event-bar[data-t="exam"]{background:var(--red)}
 .cal-event-body{flex:1;min-width:0}
 .cal-event-title{font-family:var(--font-display);font-size:0.95rem;font-weight:700;color:var(--text);word-break:break-word;line-height:1.4}
 .cal-event-meta{display:flex;align-items:center;gap:8px;margin-top:5px;flex-wrap:wrap;font-size:0.76rem;color:var(--text-dim)}
@@ -402,6 +397,14 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .cal-add-btn:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 10px 24px rgba(242,193,78,0.18)}
 .cal-add-btn:disabled{opacity:0.4;cursor:not-allowed}
 .cal-event-note{font-size:0.78rem;color:var(--text-dim);line-height:1.65;margin:7px 0 0;padding-top:7px;border-top:1px solid rgba(255,255,255,0.05)}
+.cal-event-note.latin{direction:ltr;text-align:right;font-family:var(--font-nums);letter-spacing:0.2px}
+.cal-quiz-link{display:inline-flex;align-items:center;gap:8px;margin-top:10px;padding:9px 14px;border-radius:11px;background:rgba(242,193,78,0.09);border:1px solid rgba(242,193,78,0.3);color:var(--gold);font-family:var(--font-body);font-size:0.78rem;font-weight:800;cursor:pointer;transition:0.2s}
+.cal-quiz-link:hover{background:rgba(242,193,78,0.18);border-color:rgba(242,193,78,0.55);transform:translateY(-1px)}
+.cal-quiz-link svg{font-size:0.9rem;flex-shrink:0}
+.cal-quiz-link-arrow{font-family:var(--font-nums);font-weight:800;transition:transform 0.2s}
+.cal-quiz-link:hover .cal-quiz-link-arrow{transform:translateX(-3px)}
+@keyframes quizFlash{0%,100%{border-color:var(--line);box-shadow:0 0 0 0 rgba(242,193,78,0)}35%{border-color:rgba(242,193,78,0.75);box-shadow:0 0 26px rgba(242,193,78,0.3)}}
+.pro-resource-card.is-flash{animation:quizFlash 1.4s ease-in-out 2}
 .cal-badge.official{color:var(--gold);background:rgba(242,193,78,0.08);border-color:rgba(242,193,78,0.25)}
 .cal-badge.time{color:var(--cyan);background:rgba(67,220,245,0.08);border-color:rgba(67,220,245,0.25);font-family:var(--font-nums)}
 .cal-source{display:flex;gap:9px;align-items:flex-start;font-size:0.77rem;color:var(--text-dim);line-height:1.7;margin:14px 2px 0}
@@ -1204,6 +1207,37 @@ const ContentView = () => {
   const [quizHistory, setQuizHistory] = useState({});
   const [reviewUrl, setReviewUrl] = useState(null);
   const [quizEra, setQuizEra] = useState('472');
+  const [flashQuiz, setFlashQuiz] = useState(0);
+  useEffect(() => {
+    const jump = () => {
+      const req = window.__ge211QuizNav;
+      window.__ge211QuizNav = null;
+      setActiveQuizUrl(null);
+      setReviewUrl(null);
+      setActiveIdx(0);
+      setQuizEra('472');
+      const n = req && req.n;
+      setFlashQuiz(n || 0);
+      setTimeout(() => {
+        const el = document.getElementById(n ? 'q472-' + n : 'quiz-archive-472');
+        if (el) el.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        });else window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }, 140);
+    };
+    if (window.__ge211QuizNav) jump();
+    window.addEventListener(QUIZ_NAV_EVENT, jump);
+    return () => window.removeEventListener(QUIZ_NAV_EVENT, jump);
+  }, []);
+  useEffect(() => {
+    if (!flashQuiz) return;
+    const t = setTimeout(() => setFlashQuiz(0), 3000);
+    return () => clearTimeout(t);
+  }, [flashQuiz]);
   const quizzes472 = [{
     name: 'Q1A_472.pdf',
     url: 'https://drive.google.com/file/d/1xS0er6My6UV4Yc6ORrSBonWF1Y5TvN4W/view',
@@ -1245,6 +1279,7 @@ const ContentView = () => {
     url: null,
     scope: null
   }];
+  const q472Num = name => +(String(name).match(/^Q(\d+)/) || [])[1] || 0;
   const allQuizzesData = [{
     title: 'Quiz #1',
     links: [{
@@ -1553,10 +1588,12 @@ const ContentView = () => {
         className: "section-separator",
         style: {
           color: 'var(--gold)'
-        }
+        },
+        id: "quiz-archive-472"
       }, "تجميعات كويزات 472"), quizzes472.map((q, idx) => React.createElement("div", {
         key: idx,
-        className: "pro-resource-card type-quizzes"
+        id: 'q472-' + q472Num(q.name),
+        className: `pro-resource-card type-quizzes${flashQuiz === q472Num(q.name) ? ' is-flash' : ''}`
       }, React.createElement("div", {
         className: "resource-header"
       }, React.createElement("div", {
@@ -2636,7 +2673,7 @@ const CAL_OFFICIAL = [{
   title: 'Quiz #1 — C2-1',
   date: '2026-09-13',
   type: 'quiz',
-  note: 'المادة: First Day Materials (الأبيض + الأصفر + البرتقالي) + Blue Workbook صفحات J49–J56. نشاط الجلسة: LoL.'
+  note: 'Scope: First Day materials + Blue Workbook (J49-J56). Session activity: LoL.'
 }, {
   id: 'o-a-c1',
   title: 'تسليم Assignment C1 — C2-2',
@@ -2648,7 +2685,7 @@ const CAL_OFFICIAL = [{
   title: 'Quiz #2 — C2-3',
   date: '2026-09-17',
   type: 'quiz',
-  note: 'المادة: SCPS الفصل 1 صفحات 1–3 + Blue Workbook قسم B (B5–B10) وقسم E (E1–E12). نشاط الجلسة: Registration Process.'
+  note: 'Scope: SCPS Ch1 (p1-3) + Workbook B (B5-B10) & E (E1-E12). Session activity: Registration Process.'
 }, {
   id: 'o-l2-1',
   title: 'L2-1 — Team Work & Road Blocks',
@@ -2677,7 +2714,7 @@ const CAL_OFFICIAL = [{
   title: 'Quiz #3 — C3-1',
   date: '2026-09-27',
   type: 'quiz',
-  note: 'المادة: SCPS الفصل 2 (2.3 و2.5) + الفصل 3 من صفحة 29 حتى نهاية 3.2C. نشاط الجلسة: Paradigm + فيديو “Discovering the Future”.'
+  note: 'Scope: SCPS Ch2 (2.3, 2.5) + Ch3 (p29 to 3.2C). Session activity: Paradigm + “Discovering the Future” video.'
 }, {
   id: 'o-c3-2',
   title: 'C3-2 — Present State / Desired State',
@@ -2689,7 +2726,7 @@ const CAL_OFFICIAL = [{
   title: 'Quiz #4 — C3-3',
   date: '2026-10-01',
   type: 'quiz',
-  note: 'المادة: SCPS الفصل 4 من صفحة 61 حتى نهاية 4.3B. نشاط الجلسة: Brainstorming (Recycle).'
+  note: 'Scope: SCPS Ch4 (p61 to end of 4.3B). Session activity: Brainstorming (Recycle).'
 }].map(e => Object.assign({
   official: true
 }, e));
@@ -2701,6 +2738,18 @@ const calParse = k => {
 };
 const calTypeLabel = k => (CAL_TYPES.find(t => t.k === k) || CAL_TYPES[4]).l;
 const calDayWord = n => n <= 10 ? n + ' أيام' : n + ' يوم';
+const calIsArabic = t => /[\u0600-\u06FF]/.test(String(t || ''));
+const QUIZ_NAV_EVENT = 'ge211:goto-quizzes';
+const quizNumFromTitle = t => {
+  const m = String(t || '').match(/(?:quiz|كويز)\s*#?\s*(\d+)/i);
+  return m ? +m[1] : null;
+};
+const goToQuizArchive = n => {
+  window.__ge211QuizNav = {
+    n: n || null
+  };
+  window.dispatchEvent(new CustomEvent(QUIZ_NAV_EVENT));
+};
 const CalendarView = () => {
   const [events, setEvents] = useState(() => {
     try {
@@ -2836,9 +2885,6 @@ const CalendarView = () => {
       key: ev.id,
       className: "cal-event"
     }, React.createElement("div", {
-      className: "cal-event-bar",
-      "data-t": ev.type
-    }), React.createElement("div", {
       className: "cal-event-body"
     }, React.createElement("div", {
       className: "cal-event-title"
@@ -2854,8 +2900,14 @@ const CalendarView = () => {
     }, calTypeLabel(ev.type)), ev.official && React.createElement("span", {
       className: "cal-badge official"
     }, "التقويم الرسمي")), ev.note && React.createElement("p", {
-      className: "cal-event-note"
-    }, ev.note)), !ev.official && React.createElement("button", {
+      className: `cal-event-note${calIsArabic(ev.note) ? '' : ' latin'}`
+    }, ev.note), ev.type === 'quiz' && React.createElement("button", {
+      className: "cal-quiz-link",
+      type: "button",
+      onClick: () => goToQuizArchive(quizNumFromTitle(ev.title))
+    }, React.createElement(Icons.Edit, null), " انتقال لتجميعات الكويزات", React.createElement("span", {
+      className: "cal-quiz-link-arrow"
+    }, "←"))), !ev.official && React.createElement("button", {
       className: "cal-del",
       onClick: () => delEvent(ev.id),
       "aria-label": "حذف الموعد"
@@ -3004,6 +3056,11 @@ function App() {
   const [tab, setTab] = useState('deliverables'),
     [modal, setModal] = useState(false);
   const tabIdx = tab === 'calendar' ? 0 : tab === 'deliverables' ? 1 : tab === 'resources' ? 2 : 3;
+  useEffect(() => {
+    const toQuizzes = () => setTab('resources');
+    window.addEventListener(QUIZ_NAV_EVENT, toQuizzes);
+    return () => window.removeEventListener(QUIZ_NAV_EVENT, toQuizzes);
+  }, []);
   return React.createElement("div", {
     className: "app"
   }, React.createElement("div", {
