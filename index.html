@@ -328,41 +328,32 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .cal-next-count{flex-shrink:0;font-size:0.78rem;font-weight:800;color:var(--text-dim);background:rgba(0,0,0,0.28);border:1px solid var(--line);padding:7px 12px;border-radius:20px;white-space:nowrap}
 .cal-next-count.today{color:var(--gold);background:rgba(242,193,78,0.14);border-color:rgba(242,193,78,0.4)}
 .cal-next-count.soon{color:var(--orange);background:rgba(255,159,67,0.12);border-color:rgba(255,159,67,0.35)}
-.cal-panel{background:linear-gradient(160deg,rgba(255,255,255,0.05),rgba(255,255,255,0.015));border:1px solid var(--line);border-radius:var(--r-lg);padding:16px 14px 14px}
-.cal-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}
-.cal-month{font-family:var(--font-display);font-weight:800;font-size:1.08rem;color:var(--text);display:flex;align-items:baseline;gap:8px}
-.cal-month span{font-family:var(--font-nums);color:var(--text-dim);font-size:0.85rem;font-weight:600;letter-spacing:0.5px}
-.cal-nav{display:flex;gap:7px}
-.cal-nav-btn{height:36px;min-width:36px;border-radius:11px;background:rgba(0,0,0,0.25);border:1px solid var(--line);color:var(--text-dim);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:0.2s;font-size:1rem;padding:0}
-.cal-nav-btn:hover{background:rgba(255,255,255,0.08);color:var(--text);border-color:var(--line-strong)}
-.cal-nav-btn.prev svg{transform:rotate(-90deg)}
-.cal-nav-btn.next svg{transform:rotate(90deg)}
-.cal-today-btn{padding:0 14px;font-weight:700;font-size:0.8rem;color:var(--gold);background:rgba(242,193,78,0.08);border-color:rgba(242,193,78,0.28)}
-.cal-today-btn:hover{background:rgba(242,193,78,0.16);color:var(--gold);border-color:rgba(242,193,78,0.5)}
-.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
-.cal-dow{text-align:center;font-size:0.66rem;font-weight:700;color:var(--text-faint);padding-bottom:5px;letter-spacing:-0.2px}
-.cal-cell{position:relative;aspect-ratio:1/1;border-radius:11px;border:1px solid transparent;background:rgba(255,255,255,0.025);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer;transition:0.2s;padding:2px}
-.cal-cell.empty{background:transparent;cursor:default;pointer-events:none}
-.cal-cell:hover{background:rgba(255,255,255,0.08);border-color:var(--line-strong)}
-.cal-num{font-family:var(--font-nums);font-size:0.92rem;font-weight:600;color:#cfced8;line-height:1}
-.cal-cell.today{border-color:rgba(242,193,78,0.45);background:rgba(242,193,78,0.09)}
-.cal-cell.today .cal-num{color:var(--gold);font-weight:800}
-.cal-cell.selected{border-color:rgba(255,255,255,0.7);background:rgba(255,255,255,0.12)}
-.cal-cell.selected .cal-num{color:#fff;font-weight:800}
-.cal-dots{display:flex;gap:3px;height:5px;align-items:center;justify-content:center}
-.cal-dot{width:5px;height:5px;border-radius:50%;background:var(--text-dim);flex-shrink:0}
-.cal-dot[data-t="quiz"]{background:var(--gold)}
-.cal-dot[data-t="deliv"]{background:var(--green)}
-.cal-dot[data-t="lecture"]{background:var(--cyan)}
-.cal-dot[data-t="exam"]{background:var(--red)}
-.cal-legend{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.05)}
-.cal-legend-item{display:flex;align-items:center;gap:6px;font-size:0.74rem;color:var(--text-dim);font-weight:600}
-.cal-clear-btn{background:var(--surface);border:1px solid var(--line);color:var(--text-dim);font-size:0.7rem;font-weight:700;padding:4px 11px;border-radius:20px;cursor:pointer;transition:0.2s;letter-spacing:0}
-.cal-clear-btn:hover{color:var(--text);border-color:var(--line-strong);background:rgba(255,255,255,0.07)}
+.cal-week{border:1px solid var(--line);border-radius:var(--r-lg);background:linear-gradient(160deg,rgba(255,255,255,0.045),rgba(255,255,255,0.012));padding:14px 14px 12px;margin-bottom:14px;transition:0.25s}
+.cal-week[data-state="now"]{border-color:rgba(242,193,78,0.35);box-shadow:0 0 26px rgba(242,193,78,0.09)}
+.cal-week[data-state="done"]{opacity:0.6}
+.cal-week[data-state="done"]:hover{opacity:0.9}
+.cal-week-head{display:flex;align-items:center;gap:12px;padding-bottom:12px;margin-bottom:12px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.cal-week-code{flex-shrink:0;font-family:var(--font-nums);font-size:0.76rem;font-weight:800;letter-spacing:0.6px;color:var(--cyan);background:rgba(67,220,245,0.1);border:1px solid rgba(67,220,245,0.28);padding:7px 11px;border-radius:10px;white-space:nowrap}
+.cal-week[data-state="now"] .cal-week-code{color:var(--gold);background:rgba(242,193,78,0.12);border-color:rgba(242,193,78,0.42)}
+.cal-week-info{display:flex;flex-direction:column;gap:3px;flex:1;min-width:0}
+.cal-week-range{font-family:var(--font-display);font-size:0.92rem;font-weight:700;color:var(--text)}
+.cal-week-sub{font-size:0.71rem;color:var(--text-faint);font-weight:600}
+.cal-week-tag{flex-shrink:0;font-size:0.67rem;font-weight:800;color:#0b0b0f;background:linear-gradient(90deg,var(--gold),#ffd97a);padding:5px 10px;border-radius:20px;white-space:nowrap}
+.cal-week-body .cal-event:last-child{margin-bottom:0}
+.cal-event-top{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.cal-sess{flex-shrink:0;font-family:var(--font-nums);font-size:0.69rem;font-weight:800;letter-spacing:0.4px;color:var(--text-dim);background:rgba(255,255,255,0.05);border:1px solid var(--line-strong);padding:3px 8px;border-radius:7px;white-space:nowrap}
+.cal-event.is-today{border-color:rgba(242,193,78,0.42);background:rgba(242,193,78,0.06)}
+.cal-event.is-today .cal-sess{color:var(--gold);border-color:rgba(242,193,78,0.4);background:rgba(242,193,78,0.1)}
+.cal-event.is-done{opacity:0.62}
+.cal-event.is-done:hover{opacity:1}
+.cal-badge.mine{color:var(--cyan);background:rgba(67,220,245,0.08);border-color:rgba(67,220,245,0.25)}
+.cal-count-chip{font-family:var(--font-nums);font-size:0.7rem;font-weight:800;color:var(--gold);background:rgba(242,193,78,0.1);border:1px solid rgba(242,193,78,0.3);padding:2px 9px;border-radius:20px}
+.files-note{display:flex;gap:10px;align-items:flex-start;font-size:0.79rem;color:var(--text-dim);line-height:1.7;margin:2px 0;padding:13px 15px;border:1px solid var(--line);border-radius:var(--r-md);background:rgba(255,255,255,0.022)}
+.files-note svg{flex-shrink:0;margin-top:3px;font-size:0.98rem;color:var(--gold)}
 .cal-event{display:flex;align-items:center;gap:12px;padding:13px 14px;border-radius:var(--r-md);background:rgba(0,0,0,0.22);border:1px solid var(--line);margin-bottom:9px;transition:0.2s}
 .cal-event:hover{border-color:var(--line-strong);background:rgba(255,255,255,0.04)}
 .cal-event-body{flex:1;min-width:0}
-.cal-event-title{font-family:var(--font-display);font-size:0.95rem;font-weight:700;color:var(--text);word-break:break-word;line-height:1.4}
+.cal-event-title{flex:1;min-width:120px;font-family:var(--font-display);font-size:0.95rem;font-weight:700;color:var(--text);word-break:break-word;line-height:1.45}
 .cal-event-meta{display:flex;align-items:center;gap:8px;margin-top:5px;flex-wrap:wrap;font-size:0.76rem;color:var(--text-dim)}
 .cal-badge{font-size:0.7rem;font-weight:700;padding:3px 9px;border-radius:20px;background:var(--surface);border:1px solid var(--line);color:var(--text-dim);white-space:nowrap}
 .cal-badge.today{color:var(--gold);background:rgba(242,193,78,0.12);border-color:rgba(242,193,78,0.35)}
@@ -431,12 +422,11 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .res-link-btn{min-width:110px}
 .cal-next{gap:11px;padding:14px}
 .cal-next-count{padding:6px 9px;font-size:0.72rem}
-.cal-grid{gap:4px}
-.cal-cell{border-radius:9px}
-.cal-num{font-size:0.85rem}
-.cal-dow{font-size:0.6rem}
-.cal-legend{gap:9px}
-.cal-legend-item{font-size:0.7rem}
+.cal-week{padding:12px 11px 10px}
+.cal-week-head{gap:9px}
+.cal-week-code{font-size:0.7rem;padding:6px 9px}
+.cal-week-range{font-size:0.86rem}
+.cal-week-tag{font-size:0.62rem;padding:4px 8px}
 }
 </style>
 </head>
@@ -807,7 +797,7 @@ const Icons = {
   }))
 };
 const fileResources = {
-  'C1': 'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgBsZMm8IgCRTqhDX_ANa2pmAckD8u73ILSfXhTbOFK5WPE?e=ZCzoK2',
+  'C1': 'files/C1-481-Session-Package.pdf',
   'C2': 'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgDn7UcbYTPtRpkJNVFch1yeAT37pqOezgtg554yCLiHyLM?e=pIf5yU',
   'C3': 'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgCdZ7NzomSyS5Ln0n7uXkYWAfOukPzN3C6CyznIYP1DiL0?e=3H9PoD',
   'C4': 'https://quedusa-my.sharepoint.com/:b:/r/personal/aahmad_qu_edu_sa/Documents/GE211%20sem%20472%202026%20documents/STUDENT%20PACKAGE/C4%20student%20package.pdf?csf=1&web=1&e=OJE4Gl',
@@ -820,6 +810,13 @@ const fileResources = {
   'L5': 'https://drive.google.com/file/d/15POQLBqq9YgFLlGb16ygYRf3t-2KQnTh/view?usp=drivesdk',
   'L6': 'https://drive.google.com/file/d/1OgsiLm_a4Zxy-sO2-zMmBy03_OZHFuD2/view?usp=drivesdk',
   'FDM': 'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgCEkYAUr-F-TLUsEgwkrnb0AeUxpPv7XtflM9LuOicGtzA?e=acJxqo',
+  'FDM1': 'files/FDM-481-Part1-White-Course.pdf',
+  'FDM2': 'files/FDM-481-Part2-Yellow-Concepts.pdf',
+  'FDM3': 'files/FDM-481-Part3-Orange-Lab.pdf',
+  'FDM4': 'files/FDM-481-Part4-Pink-Calendar.pdf',
+  'ChecklistQuiz': 'files/Checklist-Quiz-481.pdf',
+  'ChecklistJournal': 'files/Checklist-Journal-481.pdf',
+  'ChecklistC1': 'files/Checklist-AssignmentC1-481.pdf',
   'Checklist': 'https://quedusa-my.sharepoint.com/:b:/g/personal/aahmad_qu_edu_sa/IQB3UVfE4DSRSa2bQK5VDpFEAdASYot8Je77AvHZBfEz7E8?e=yUp8LN',
   'PTW': 'https://drive.google.com/file/d/1_6Rjs49XUgO-s8Fa94hldFsi03XyBL3j/view?usp=drivesdk'
 };
@@ -1401,27 +1398,55 @@ const ContentView = () => {
     }]
   }];
   const files = [{
-    title: 'تقييم',
+    title: 'التشك لستات — 481',
+    sub: 'تعبّيها بنفسك وتكون أول ورقة بأي تسليم',
+    pin: true,
     links: [{
-      name: 'Checklist',
-      url: fileResources['Checklist'],
-      imp: true
+      name: 'تشك لست الكويز',
+      url: fileResources['ChecklistQuiz']
+    }, {
+      name: 'تشك لست الجورنال',
+      url: fileResources['ChecklistJournal']
+    }, {
+      name: 'تشك لست Assignment C1',
+      url: fileResources['ChecklistC1']
     }, {
       name: 'PTW',
-      url: fileResources['PTW'],
-      imp: true
+      url: fileResources['PTW']
+    }, {
+      name: 'مجلد كل التشك لستات',
+      url: fileResources['Checklist']
     }]
   }, {
-    title: 'First Day Material (FDM)',
+    title: 'First Day Material (FDM) — 481',
+    sub: 'حزمة اليوم الأول كاملة — إصدار أغسطس 2026',
     links: [{
-      name: 'فتح المجلد',
+      name: 'Part 1 — أبيض · المقرر',
+      url: fileResources['FDM1'],
+      imp: true
+    }, {
+      name: 'Part 2 — أصفر · Concepts',
+      url: fileResources['FDM2'],
+      imp: true
+    }, {
+      name: 'Part 3 — برتقالي · Lab',
+      url: fileResources['FDM3'],
+      imp: true
+    }, {
+      name: 'Part 4 — وردي · التقويم',
+      url: fileResources['FDM4'],
+      imp: true
+    }, {
+      name: 'مجلد المقرر',
       url: fileResources['FDM']
     }]
   }, {
     title: 'C1 Concept Session',
+    sub: 'الأكتف ليرننق + Assignment C1 + التشك لستات + ملخّص A Private Universe',
     links: [{
-      name: 'ملفات الجلسة',
-      url: fileResources['C1']
+      name: 'ملف الجلسة — 481',
+      url: fileResources['C1'],
+      imp: true
     }, {
       name: 'تسليم ورقي',
       url: 'https://quedusa-my.sharepoint.com/:f:/g/personal/aahmad_qu_edu_sa/IgA3a2WpU-uXTrOKBYRswqBeAWfVih3Z_XzIqH0UBUO0Y4M?e=lnLaDi',
@@ -1662,7 +1687,7 @@ const ContentView = () => {
       }, React.createElement(Icons.Info, null), " مراجعة الأخطاء"))))));
     }
     if (activeIdx === 1) {
-      const pinned = files.filter(f => f.title === 'تقييم');
+      const pinned = files.filter(f => f.pin);
       const fdm = files.filter(f => f.title.includes('FDM'));
       const concepts = files.filter(f => f.title.includes('Concept'));
       const labs = files.filter(f => f.title.includes('Lab'));
@@ -1681,7 +1706,7 @@ const ContentView = () => {
         style: isPinned ? {
           color: 'var(--gold)'
         } : {}
-      }, f.title), isPinned && React.createElement("p", null, "مهم جداً"))), React.createElement("div", {
+      }, f.title), (f.sub || isPinned) && React.createElement("p", null, f.sub || 'مهم جداً'))), React.createElement("div", {
         className: "resource-links"
       }, f.links.map((l, x) => React.createElement("a", {
         key: x,
@@ -1692,7 +1717,14 @@ const ContentView = () => {
       }, l.imp || isPinned ? React.createElement(Icons.Star, null) : React.createElement(Icons.File, null), " ", l.name))));
       return React.createElement("div", {
         className: "content-area"
-      }, pinned.map((f, i) => React.createElement(FileCard, {
+      }, React.createElement("p", {
+        className: "files-note"
+      }, React.createElement(Icons.InfoFill, null), React.createElement("span", null, "التشك لستات وحزمة الـ FDM وملف جلسة C1 محفوظة داخل الموقع نفسه — تفتح على طول وبدون تسجيل دخول.")), React.createElement("div", {
+        className: "section-separator",
+        style: {
+          color: 'var(--gold)'
+        }
+      }, "الأساسيات — التشك لستات و FDM"), pinned.map((f, i) => React.createElement(FileCard, {
         key: `p-${i}`,
         f: f,
         isPinned: true
@@ -2613,7 +2645,6 @@ const ExplainModal = ({
 };
 const CAL_MONTHS = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'];
 const CAL_DOW = ['الأحد', 'الاثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'];
-const CAL_DOW_SHORT = ['أحد', 'اثنين', 'ثلاثاء', 'أربعاء', 'خميس', 'جمعة', 'سبت'];
 const CAL_TYPES = [{
   k: 'quiz',
   l: 'كويز'
@@ -2630,103 +2661,171 @@ const CAL_TYPES = [{
   k: 'other',
   l: 'أخرى'
 }];
+const CAL_WEEKS = [{
+  k: 'W0',
+  code: 'Week 0',
+  sub: 'جلسة الهيكلة',
+  qec: 1,
+  from: '2026-08-27',
+  to: '2026-08-27'
+}, {
+  k: 'C1',
+  code: 'WEEK C1',
+  sub: 'أسبوع Concepts',
+  qec: 2,
+  from: '2026-08-30',
+  to: '2026-09-03'
+}, {
+  k: 'L1',
+  code: 'WEEK L1',
+  sub: 'أسبوع Lab',
+  qec: 3,
+  from: '2026-09-06',
+  to: '2026-09-10'
+}, {
+  k: 'C2',
+  code: 'WEEK C2',
+  sub: 'أسبوع Concepts',
+  qec: 4,
+  from: '2026-09-13',
+  to: '2026-09-17'
+}, {
+  k: 'L2',
+  code: 'WEEK L2',
+  sub: 'أسبوع Lab',
+  qec: 5,
+  from: '2026-09-20',
+  to: '2026-09-24'
+}, {
+  k: 'C3',
+  code: 'WEEK C3',
+  sub: 'أسبوع Concepts',
+  qec: 6,
+  from: '2026-09-27',
+  to: '2026-10-01'
+}];
 const CAL_OFFICIAL = [{
   id: 'o-w0',
+  w: 'W0',
   title: 'Structure Session — بداية المقرر',
   date: '2026-08-27',
   time: '12:40',
   type: 'lecture',
-  note: 'Week 0 — أول جلسة في المقرر، ومنها يبدأ حساب الحضور واللابسات.'
+  note: 'أول جلسة في المقرر، ومنها يبدأ حساب الحضور واللابسات.'
 }, {
   id: 'o-c1-1',
-  title: 'C1-1 — Introduction to GE211',
+  w: 'C1',
+  sess: 'C1-1',
+  title: 'Introduction to GE 211',
   date: '2026-08-30',
   type: 'lecture'
 }, {
   id: 'o-c1-2',
-  title: 'C1-2 — Active Learning',
+  w: 'C1',
+  sess: 'C1-2',
+  title: 'Active Learning',
   date: '2026-09-01',
   type: 'lecture'
 }, {
   id: 'o-c1-3',
-  title: 'C1-3 — تكملة التعريف بقسم الـ Concepts',
+  w: 'C1',
+  sess: 'C1-3',
+  title: 'Introduction to Concept Session (تكملة)',
   date: '2026-09-03',
   type: 'lecture',
-  note: 'إعلان مشاهدة فيديو “A Private Universe”.'
+  note: 'إعلان مشاهدة فيديو “A Private Universe” — ملخّصه بالعربي داخل ملف جلسة C1.'
 }, {
   id: 'o-l1-1',
-  title: 'L1-1 — Introduction to LAB Session',
+  w: 'L1',
+  sess: 'L1-1',
+  title: 'Introduction to LAB Session',
   date: '2026-09-06',
   type: 'lecture'
 }, {
   id: 'o-l1-2',
-  title: 'L1-2 — Air Volume',
+  w: 'L1',
+  sess: 'L1-2',
+  title: 'Air Volume',
   date: '2026-09-08',
   type: 'lecture'
 }, {
   id: 'o-l1-3',
-  title: 'L1-3 — تكملة التعريف بقسم الـ Lab',
+  w: 'L1',
+  sess: 'L1-3',
+  title: 'Introduction to LAB Session (تكملة)',
   date: '2026-09-10',
   type: 'lecture'
 }, {
   id: 'o-q1',
-  title: 'Quiz #1 — C2-1',
+  w: 'C2',
+  sess: 'C2-1',
+  title: 'Quiz #1',
   date: '2026-09-13',
   type: 'quiz',
-  note: 'Scope: First Day materials + Blue Workbook (J49-J56). Session activity: LoL.'
+  note: 'Scope: First Day Materials (الأبيض والأصفر والبرتقالي) + Blue Workbook (J49–J56). نشاط الجلسة: LoL.'
 }, {
   id: 'o-a-c1',
-  title: 'تسليم Assignment C1 — C2-2',
+  w: 'C2',
+  sess: 'C2-2',
+  title: 'تسليم Assignment C1 — Engineering the Profession',
   date: '2026-09-15',
   type: 'deliv',
-  note: 'Engineering the Profession — التصحيح/الميك أب موعده جلسة C4-1.'
+  note: 'التشك لست تكون أول ورقة بالباكج، وموعد التصحيح/الميك أب جلسة C4-1.'
 }, {
   id: 'o-q2',
-  title: 'Quiz #2 — C2-3',
+  w: 'C2',
+  sess: 'C2-3',
+  title: 'Quiz #2',
   date: '2026-09-17',
   type: 'quiz',
-  note: 'Scope: SCPS Ch1 (p1-3) + Workbook B (B5-B10) & E (E1-E12). Session activity: Registration Process.'
+  note: 'Scope: SCPS Ch1 (p1–3) + Blue Workbook B (B5–B10) و E (E1–E12). نشاط الجلسة: Registration Process.'
 }, {
   id: 'o-l2-1',
-  title: 'L2-1 — Team Work & Road Blocks',
+  w: 'L2',
+  sess: 'L2-1',
+  title: 'Team Work & Road Blocks',
   date: '2026-09-20',
   type: 'lecture',
   note: 'إعلان مشاهدة فيديو “The Bloody Meetings” وفيديو “Team Player”.'
 }, {
   id: 'o-q1-fix',
-  title: 'آخر موعد تصحيح / ميك أب Quiz #1',
+  w: 'L2',
+  sess: 'L2-1',
+  title: 'آخر موعد تسليم تصحيح / ميك أب Quiz #1',
   date: '2026-09-20',
   type: 'deliv',
-  note: 'لازم يكون مُصحّحاً قبل جلسة C3-1.'
-}, {
-  id: 'o-l2-2',
-  title: 'L2-2 — تكملة Team Work & Road Blocks',
-  date: '2026-09-22',
-  type: 'lecture'
+  note: 'حسب جدول الأصفر: التسليم بجلسة L2-1، ولازم يكون مُصحّحاً قبل جلسة C3-1.'
 }, {
   id: 'o-nat',
+  w: 'L2',
   title: 'اليوم الوطني — إجازة',
-  date: '2026-09-24',
+  date: '2026-09-22',
   type: 'other',
-  note: 'ما فيه محاضرة حسب التقويم الرسمي للمقرر.'
+  note: 'حسب التقويم الرسمي (الورقة الوردية) أسبوع L2 ما فيه إلا جلسة الأحد 20/9، وباقي الأسبوع إجازة اليوم الوطني.'
 }, {
   id: 'o-q3',
-  title: 'Quiz #3 — C3-1',
+  w: 'C3',
+  sess: 'C3-1',
+  title: 'Quiz #3',
   date: '2026-09-27',
   type: 'quiz',
-  note: 'Scope: SCPS Ch2 (2.3, 2.5) + Ch3 (p29 to 3.2C). Session activity: Paradigm + “Discovering the Future” video.'
+  note: 'Scope: SCPS Ch2 (2.3، 2.5) + Ch3 من صفحة 29 حتى نهاية 3.2C. نشاط الجلسة: Paradigm + فيديو “Discovering the Future”.'
 }, {
   id: 'o-c3-2',
-  title: 'C3-2 — Present State / Desired State',
+  w: 'C3',
+  sess: 'C3-2',
+  title: 'Present State — Desired State',
   date: '2026-09-29',
   type: 'lecture',
   note: 'تمرين Tomato Problem.'
 }, {
   id: 'o-q4',
-  title: 'Quiz #4 — C3-3',
+  w: 'C3',
+  sess: 'C3-3',
+  title: 'Quiz #4',
   date: '2026-10-01',
   type: 'quiz',
-  note: 'Scope: SCPS Ch4 (p61 to end of 4.3B). Session activity: Brainstorming (Recycle).'
+  note: 'Scope: SCPS Ch4 من صفحة 61 حتى نهاية 4.3B. نشاط الجلسة: Brainstorming (Recycle).'
 }].map(e => Object.assign({
   official: true
 }, e));
@@ -2739,6 +2838,7 @@ const calParse = k => {
 const calTypeLabel = k => (CAL_TYPES.find(t => t.k === k) || CAL_TYPES[4]).l;
 const calDayWord = n => n <= 10 ? n + ' أيام' : n + ' يوم';
 const calIsArabic = t => /[\u0600-\u06FF]/.test(String(t || ''));
+const calByDate = (a, b) => a.date < b.date ? -1 : a.date > b.date ? 1 : 0;
 const QUIZ_NAV_EVENT = 'ge211:goto-quizzes';
 const quizNumFromTitle = t => {
   const m = String(t || '').match(/(?:quiz|كويز)\s*#?\s*(\d+)/i);
@@ -2766,11 +2866,6 @@ const CalendarView = () => {
   }, [events]);
   const now = new Date();
   const todayKey = calKey(now);
-  const [view, setView] = useState({
-    y: now.getFullYear(),
-    m: now.getMonth()
-  });
-  const [selected, setSelected] = useState(null);
   const [title, setTitle] = useState('');
   const [date, setDate] = useState(todayKey);
   const [type, setType] = useState('quiz');
@@ -2815,37 +2910,17 @@ const CalendarView = () => {
     const d = calParse(k);
     return d.getDate() + ' ' + CAL_MONTHS[d.getMonth()];
   };
-  const shift = n => setView(p => {
-    const d = new Date(p.y, p.m + n, 1);
-    return {
-      y: d.getFullYear(),
-      m: d.getMonth()
-    };
-  });
-  const goToday = () => {
-    setView({
-      y: now.getFullYear(),
-      m: now.getMonth()
-    });
-    setSelected(todayKey);
-    setDate(todayKey);
-  };
+  const weekRange = w => w.from === w.to ? shortDate(w.from) : shortDate(w.from) + ' — ' + shortDate(w.to);
+  const weekState = w => diffDays(w.to) < 0 ? 'done' : diffDays(w.from) <= 0 ? 'now' : 'next';
+  const mine = events.slice().sort(calByDate);
   const allEvents = CAL_OFFICIAL.concat(events);
-  const byDay = {};
-  allEvents.forEach(ev => {
-    (byDay[ev.date] = byDay[ev.date] || []).push(ev);
-  });
-  const sorted = allEvents.slice().sort((a, b) => a.date < b.date ? -1 : a.date > b.date ? 1 : 0);
-  const upcoming = sorted.filter(e => diffDays(e.date) >= 0);
-  const past = sorted.filter(e => diffDays(e.date) < 0).reverse();
-  const next = upcoming[0];
-  const shown = selected ? (byDay[selected] || []) : upcoming;
-  const firstDow = new Date(view.y, view.m, 1).getDay();
-  const daysInMonth = new Date(view.y, view.m + 1, 0).getDate();
-  const cells = [];
-  for (let i = 0; i < firstDow; i++) cells.push(null);
-  for (let d = 1; d <= daysInMonth; d++) cells.push(d);
-  while (cells.length % 7 !== 0) cells.push(null);
+  const next = allEvents.slice().sort(calByDate).filter(e => diffDays(e.date) >= 0)[0];
+  const weeks = CAL_WEEKS.map(w => Object.assign({}, w, {
+    items: CAL_OFFICIAL.filter(e => e.w === w.k).sort(calByDate),
+    state: weekState(w)
+  }));
+  const pastWeeks = weeks.filter(w => w.state === 'done');
+  const liveWeeks = weeks.filter(w => w.state !== 'done');
   const presets = [];
   for (let i = 1; i <= 10; i++) presets.push({
     t: 'Quiz #' + i,
@@ -2871,24 +2946,23 @@ const CalendarView = () => {
       type: type
     }]));
     setTitle('');
-    const d = calParse(date);
-    setView({
-      y: d.getFullYear(),
-      m: d.getMonth()
-    });
-    setSelected(date);
   };
   const delEvent = id => setEvents(p => p.filter(e => e.id !== id));
   const renderEvent = ev => {
     const rel = relInfo(ev.date);
+    const d = diffDays(ev.date);
     return React.createElement("div", {
       key: ev.id,
-      className: "cal-event"
+      className: `cal-event${d < 0 ? ' is-done' : ''}${d === 0 ? ' is-today' : ''}`
     }, React.createElement("div", {
       className: "cal-event-body"
     }, React.createElement("div", {
+      className: "cal-event-top"
+    }, ev.sess && React.createElement("span", {
+      className: "cal-sess"
+    }, ev.sess), React.createElement("span", {
       className: "cal-event-title"
-    }, ev.title), React.createElement("div", {
+    }, ev.title)), React.createElement("div", {
       className: "cal-event-meta"
     }, React.createElement("span", {
       className: `cal-badge ${rel.c}`
@@ -2897,9 +2971,9 @@ const CalendarView = () => {
     }, ev.time), React.createElement("span", {
       className: "cal-badge type",
       "data-t": ev.type
-    }, calTypeLabel(ev.type)), ev.official && React.createElement("span", {
-      className: "cal-badge official"
-    }, "التقويم الرسمي")), ev.note && React.createElement("p", {
+    }, calTypeLabel(ev.type)), !ev.official && React.createElement("span", {
+      className: "cal-badge mine"
+    }, "موعدك")), ev.note && React.createElement("p", {
       className: `cal-event-note${calIsArabic(ev.note) ? '' : ' latin'}`
     }, ev.note), ev.type === 'quiz' && React.createElement("button", {
       className: "cal-quiz-link",
@@ -2913,6 +2987,25 @@ const CalendarView = () => {
       "aria-label": "حذف الموعد"
     }, React.createElement(Icons.Trash, null)));
   };
+  const renderWeek = w => React.createElement("div", {
+    key: w.k,
+    className: "cal-week",
+    "data-state": w.state
+  }, React.createElement("div", {
+    className: "cal-week-head"
+  }, React.createElement("span", {
+    className: "cal-week-code"
+  }, w.code), React.createElement("div", {
+    className: "cal-week-info"
+  }, React.createElement("span", {
+    className: "cal-week-range"
+  }, weekRange(w)), React.createElement("span", {
+    className: "cal-week-sub"
+  }, w.sub, " · أسبوع ", w.qec, " بتقويم الجامعة")), w.state === 'now' && React.createElement("span", {
+    className: "cal-week-tag"
+  }, "هذا الأسبوع")), React.createElement("div", {
+    className: "cal-week-body"
+  }, w.items.map(renderEvent)));
   return React.createElement("div", {
     className: "content-area"
   }, next && React.createElement("div", {
@@ -2929,81 +3022,34 @@ const CalendarView = () => {
     className: "cal-next-date"
   }, fullDate(next.date))), React.createElement("span", {
     className: `cal-next-count ${relInfo(next.date).c}`
-  }, relInfo(next.date).t)), React.createElement("div", {
-    className: "cal-panel"
-  }, React.createElement("div", {
-    className: "cal-head"
-  }, React.createElement("div", {
-    className: "cal-month"
-  }, CAL_MONTHS[view.m], React.createElement("span", null, view.y)), React.createElement("div", {
-    className: "cal-nav"
-  }, React.createElement("button", {
-    className: "cal-nav-btn prev",
-    onClick: () => shift(-1),
-    "aria-label": "الشهر السابق"
-  }, React.createElement(Icons.ChevronDown, null)), React.createElement("button", {
-    className: "cal-nav-btn cal-today-btn",
-    onClick: goToday
-  }, "اليوم"), React.createElement("button", {
-    className: "cal-nav-btn next",
-    onClick: () => shift(1),
-    "aria-label": "الشهر التالي"
-  }, React.createElement(Icons.ChevronDown, null)))), React.createElement("div", {
-    className: "cal-grid"
-  }, CAL_DOW_SHORT.map(d => React.createElement("div", {
-    key: d,
-    className: "cal-dow"
-  }, d)), cells.map((d, i) => {
-    if (!d) return React.createElement("div", {
-      key: 'p' + i,
-      className: "cal-cell empty"
-    });
-    const k = view.y + '-' + calPad(view.m + 1) + '-' + calPad(d);
-    const evs = byDay[k] || [];
-    return React.createElement("button", {
-      key: k,
-      className: `cal-cell${k === todayKey ? ' today' : ''}${k === selected ? ' selected' : ''}`,
-      onClick: () => {
-        setSelected(selected === k ? null : k);
-        setDate(k);
-      }
-    }, React.createElement("span", {
-      className: "cal-num"
-    }, d), React.createElement("span", {
-      className: "cal-dots"
-    }, evs.slice(0, 3).map((ev, j) => React.createElement("span", {
-      key: j,
-      className: "cal-dot",
-      "data-t": ev.type
-    }))));
-  })), React.createElement("div", {
-    className: "cal-legend"
-  }, CAL_TYPES.map(t => React.createElement("div", {
-    key: t.k,
-    className: "cal-legend-item"
-  }, React.createElement("span", {
-    className: "cal-dot",
-    "data-t": t.k
-  }), t.l)))), React.createElement("p", {
+  }, relInfo(next.date).t)), React.createElement("p", {
     className: "cal-source"
-  }, React.createElement(Icons.InfoFill, null), "مواعيد الأسابيع 1–6 مأخوذة من التقويم الرسمي للمقرر (FDM 481 — الورقة الوردية)، وتقدر تضيف مواعيدك الخاصة من الأسفل."), React.createElement("div", {
+  }, React.createElement(Icons.InfoFill, null), React.createElement("span", null, "الجدول أدناه منقول حرفياً من التقويم الرسمي للمقرر — ", React.createElement("b", null, "FDM 481، الورقة الوردية"), " (الأسابيع 1–6). تقدر تفتح الورقة نفسها من تبويب المحتوى ← الملفات، وتضيف مواعيدك الخاصة من آخر الصفحة.")), React.createElement("div", {
     className: "section-separator",
     style: {
       color: 'var(--cyan)'
     }
-  }, selected ? 'مواعيد ' + shortDate(selected) : 'المواعيد القادمة', selected && React.createElement("button", {
-    className: "cal-clear-btn",
-    onClick: () => setSelected(null)
-  }, "عرض الكل")), shown.length ? shown.map(renderEvent) : React.createElement("div", {
-    className: "cal-empty"
-  }, selected ? 'ما فيه مواعيد في هذا اليوم.' : allEvents.length ? 'خلصت كل المواعيد القادمة.' : 'ما سجّلت أي موعد بعد. أضف كويزاتك وتسليماتك من الأسفل وتطلع لك هنا مع العد التنازلي.', React.createElement("span", {
-    className: "cal-empty-note"
-  }, "المواعيد تُحفظ في متصفح جهازك فقط.")), past.length > 0 && !selected && React.createElement("button", {
+  }, "الجدول الرسمي — الأسابيع 1–6"), pastWeeks.length > 0 && React.createElement("button", {
     className: "cal-past-toggle",
     onClick: () => setShowPast(v => !v)
-  }, React.createElement(Icons.Clock, null), ` المواعيد السابقة (${past.length})`, React.createElement("span", {
+  }, React.createElement(Icons.Clock, null), ` الأسابيع اللي راحت (${pastWeeks.length})`, React.createElement("span", {
     className: `cal-caret${showPast ? ' up' : ''}`
-  }, React.createElement(Icons.ChevronDown, null))), showPast && !selected && past.map(renderEvent), React.createElement("div", {
+  }, React.createElement(Icons.ChevronDown, null))), showPast && pastWeeks.map(renderWeek), liveWeeks.length ? liveWeeks.map(renderWeek) : React.createElement("div", {
+    className: "cal-empty"
+  }, "خلصت أسابيع الجدول الرسمي الستة.", React.createElement("span", {
+    className: "cal-empty-note"
+  }, "باقي المقرر يتحدّث هنا أول ما ينزل التقويم الجديد.")), React.createElement("div", {
+    className: "section-separator",
+    style: {
+      color: 'var(--gold)'
+    }
+  }, "مواعيدك الخاصة", mine.length > 0 && React.createElement("span", {
+    className: "cal-count-chip"
+  }, mine.length)), mine.length ? mine.map(renderEvent) : React.createElement("div", {
+    className: "cal-empty"
+  }, "ما سجّلت أي موعد بعد. أضف كويزاتك وتسليماتك من تحت وتطلع لك هنا مع العد التنازلي.", React.createElement("span", {
+    className: "cal-empty-note"
+  }, "المواعيد تُحفظ في متصفح جهازك فقط.")), React.createElement("div", {
     className: "section-separator",
     style: {
       color: 'var(--gold)'
