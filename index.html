@@ -3053,7 +3053,7 @@ const CalendarView = () => {
   }, p.t)))));
 };
 function App() {
-  const [tab, setTab] = useState('deliverables'),
+  const [tab, setTab] = useState('calendar'),
     [modal, setModal] = useState(false);
   const tabIdx = tab === 'calendar' ? 0 : tab === 'deliverables' ? 1 : tab === 'resources' ? 2 : 3;
   useEffect(() => {
