@@ -1207,6 +1207,7 @@ const ContentView = () => {
   const [quizHistory, setQuizHistory] = useState({});
   const [reviewUrl, setReviewUrl] = useState(null);
   const [quizEra, setQuizEra] = useState('472');
+  const [fileEra, setFileEra] = useState('481');
   const [flashQuiz, setFlashQuiz] = useState(0);
   useEffect(() => {
     const jump = () => {
@@ -1494,6 +1495,78 @@ const ContentView = () => {
       url: fileResources['L6']
     }]
   }];
+  const F481 = 'files/481/';
+  const files481 = [{
+    title: 'تقييم',
+    note: 'تشك لستات 481 — كل وحدة بملف مستقل جاهز للطباعة',
+    links: [{
+      name: 'الكويز الأصلي',
+      url: F481 + 'checklists/Quiz-Original-Checklist-481.pdf'
+    }, {
+      name: 'التصحيح Correction',
+      url: F481 + 'checklists/Quiz-Correction-Checklist-481.pdf'
+    }, {
+      name: 'الميك أب Makeup',
+      url: F481 + 'checklists/Quiz-Makeup-Checklist-481.pdf'
+    }, {
+      name: 'الجورنال Journal',
+      url: F481 + 'checklists/Engineering-Journal-Checklist-481.pdf'
+    }, {
+      name: 'PTW',
+      url: F481 + 'checklists/PTW-Checklist-481.pdf'
+    }, {
+      name: 'Teammate Interview',
+      url: F481 + 'checklists/Teammate-Interview-Checklist-481.pdf'
+    }, {
+      name: 'Tutorial Materials (C-1)',
+      url: F481 + 'checklists/Tutorial-Materials-Checklist-481.pdf'
+    }]
+  }, {
+    title: 'First Day Material (FDM) — 481',
+    note: '1 أبيض: المقرر · 2 أصفر: Concepts · 3 برتقالي: Lab · 4 وردي: التقويم · 5 أزرق: Sign Off · 6 استبيان الدخول والخروج',
+    links: [{
+      name: 'الأبيض 1',
+      url: F481 + 'FDM-481-Part1-White-Course.pdf'
+    }, {
+      name: 'الأصفر 2',
+      url: F481 + 'FDM-481-Part2-Yellow-Concepts.pdf',
+      imp: true
+    }, {
+      name: 'البرتقالي 3',
+      url: F481 + 'FDM-481-Part3-Orange-Lab.pdf',
+      imp: true
+    }, {
+      name: 'الوردي 4',
+      url: F481 + 'FDM-481-Part4-Pink-Calendar.pdf'
+    }, {
+      name: 'الأزرق 5',
+      url: F481 + 'FDM-481-Part5-SignOff.pdf'
+    }, {
+      name: 'الاستبيان 6',
+      url: F481 + 'FDM-481-Part6-Entry-Exit-Survey.pdf'
+    }]
+  }, {
+    title: 'C1 Concept Session',
+    note: 'داخله: تشك لست الكويز الأصلي + تشك لست الجورنال + واجب C-1 + تشك لست التيوتوريال',
+    links: [{
+      name: 'باكج الطالب',
+      url: F481 + 'C1-481-Student-Package.pdf'
+    }]
+  }, {
+    title: 'C2 Concept Session',
+    note: 'داخله: تشك لست التصحيح + تشك لست الميك أب + Tutorial Peer Assessment + Process Check',
+    links: [{
+      name: 'باكج الطالب',
+      url: F481 + 'C2-481-Student-Package.pdf'
+    }]
+  }, {
+    title: 'L1 Lab Session',
+    note: 'داخله: واجب L-1 + تشك لست المقابلة (481) + PTW + نموذج كويز 1 بحلّه',
+    links: [{
+      name: 'باكج الطالب',
+      url: F481 + 'L1-481-Student-Package.pdf'
+    }]
+  }];
   const recordings = [{
     t: 'Quiz 1',
     f: 'Q1',
@@ -1662,10 +1735,11 @@ const ContentView = () => {
       }, React.createElement(Icons.Info, null), " مراجعة الأخطاء"))))));
     }
     if (activeIdx === 1) {
-      const pinned = files.filter(f => f.title === 'تقييم');
-      const fdm = files.filter(f => f.title.includes('FDM'));
-      const concepts = files.filter(f => f.title.includes('Concept'));
-      const labs = files.filter(f => f.title.includes('Lab'));
+      const eraFiles = fileEra === '481' ? files481 : files;
+      const pinned = eraFiles.filter(f => f.title === 'تقييم');
+      const fdm = eraFiles.filter(f => f.title.includes('FDM'));
+      const concepts = eraFiles.filter(f => f.title.includes('Concept'));
+      const labs = eraFiles.filter(f => f.title.includes('Lab'));
       const FileCard = ({
         f,
         isPinned
@@ -1681,7 +1755,7 @@ const ContentView = () => {
         style: isPinned ? {
           color: 'var(--gold)'
         } : {}
-      }, f.title), isPinned && React.createElement("p", null, "مهم جداً"))), React.createElement("div", {
+      }, f.title), (f.note || isPinned) && React.createElement("p", null, f.note || "مهم جداً"))), React.createElement("div", {
         className: "resource-links"
       }, f.links.map((l, x) => React.createElement("a", {
         key: x,
@@ -1692,7 +1766,28 @@ const ContentView = () => {
       }, l.imp || isPinned ? React.createElement(Icons.Star, null) : React.createElement(Icons.File, null), " ", l.name))));
       return React.createElement("div", {
         className: "content-area"
-      }, pinned.map((f, i) => React.createElement(FileCard, {
+      }, React.createElement("div", {
+        className: "era-tabs"
+      }, React.createElement("button", {
+        className: `era-btn ${fileEra === '481' ? 'active' : ''}`,
+        onClick: () => setFileEra('481')
+      }, "481"), React.createElement("button", {
+        className: `era-btn ${fileEra === '472' ? 'active' : ''}`,
+        onClick: () => setFileEra('472')
+      }, "472 وما قبله")), React.createElement("div", {
+        key: fileEra,
+        style: {
+          animation: 'fadeIn 0.3s ease'
+        }
+      }, React.createElement("div", {
+        className: "solo-notice"
+      }, React.createElement("div", {
+        className: "resource-icon-box"
+      }, React.createElement(Icons.InfoFill, null)), React.createElement("div", {
+        className: "solo-notice-text"
+      }, React.createElement("span", {
+        className: "solo-notice-eyebrow"
+      }, fileEra === '481' ? "ملفات فصل 481" : "أرشيف فصل 472"), React.createElement("span", null, fileEra === '481' ? "ملفات الفصل الحالي محفوظة داخل الموقع نفسه — تفتح مباشرة بدون تسجيل دخول. والتقييم كله من إصدار 481." : "ملفات الفصل الماضي على شير بوينت ودرايف الكلية، وبعضها يطلب تسجيل دخول بحساب الجامعة."))), pinned.map((f, i) => React.createElement(FileCard, {
         key: `p-${i}`,
         f: f,
         isPinned: true
@@ -1715,7 +1810,7 @@ const ContentView = () => {
       }, "جلسات المعمل — Labs"), labs.map((f, i) => React.createElement(FileCard, {
         key: `l-${i}`,
         f: f
-      })));
+      }))));
     }
     if (activeIdx === 2) {
       const RenderGroup = ({
@@ -2017,12 +2112,12 @@ const QUIZ_PLAN_481 = [{
 }, {
   q: 'Quiz #6',
   due: 'C4-3',
-  fix: 'C5-3 / C6-3',
+  fix: 'C5-3',
   s: 'SCPS الفصل 5 حتى نهاية صفحة 102.'
 }, {
   q: 'Quiz #7',
   due: 'C5-1',
-  fix: null,
+  fix: 'C6-3',
   s: 'SCPS الفصل 5 من صفحة 103 حتى نهاية الفصل + مشكلة Exxon Valdez من الهاندأوت.'
 }, {
   q: 'Quiz #8',
@@ -2298,9 +2393,37 @@ const ExplainModal = ({
     className: "ex-bonus"
   }, "+ بونص")))))), React.createElement("p", {
     className: "ex-hint"
+  }, React.createElement(Icons.AlertFill, null), "ما فيه E أبداً إذا عندك أي لابس على الكويز — ولو نسبتك 100%."), React.createElement("div", {
+    className: "ex-sub"
+  }, "تشك لست الكويز الأصلي — 481"), React.createElement("ul", {
+    className: "ex-list"
+  }, React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "1"), "أنت تعبّي أول 4 أسطر فقط (الاسم، التاريخ، رقم الكويز والقروب، التيم والعضو، والقراءة المطلوبة) — والباقي يعبّيه المصحّح."), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "2"), "التشك لست تحطها أنت فوق ورقة الكويز بالاتجاه الصحيح، ومكبّسة من اليسار."), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "3"), "التسليم في وقته — والكويز أول نشاط في المحاضرة ومدته 10 دقائق، وبالقلم الجاف فقط.")), React.createElement("p", {
+    className: "ex-hint"
+  }, React.createElement(Icons.Alert, null), "كل \"No\" في جدول الـ Self-Regulation بهذي التشك لست = نص لابس."), React.createElement("p", {
+    className: "ex-hint"
   }, React.createElement(Icons.Star, null), "الجورنال ورقة تأمّل اختيارية تقدر تسلّمها مع أي كويز، ومعها تشك لست تعبّيها بنفسك. لو انقبل (Meets) يغطّي لك ثلاث إجابات غلط أو أقل، فيرفع تقييمك زي ما مبيّن بالعمود الثاني. ولو ما انقبل ما عليك أي عقوبة — بس تخسر التغطية، والجورنال ما ينعاد تسليمه."), React.createElement("p", {
     className: "ex-hint"
-  }, React.createElement(Icons.InfoFill, null), "الجورنال يتكتب بخط اليد، عربي أو إنجليزي، ويُسلّم قبل توزيع أوراق الكويز."), React.createElement("div", {
+  }, React.createElement(Icons.InfoFill, null), "الجورنال يتكتب بخط اليد، عربي أو إنجليزي، ويُسلّم قبل توزيع أوراق الكويز، ويوضع في فولدر التيم قبل ما يبدأ الكويز."), React.createElement("div", {
+    className: "ex-sub"
+  }, "مواصفات الجورنال — تشك لست 481"), React.createElement("ul", {
+    className: "ex-list"
+  }, React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "1"), "تشك لست الجورنال معبّاة ومقيّمة ذاتياً وتكون أول ورقة، وبعدها مباشرة تشك لست الـ PTW ولازم تقييمها يطلع M."), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "2"), "الجورنال بخط اليد وصفحتين أو أقل، وفي أعلى كل صفحة اسمك ورقم التيم ورقم العضو مع تاريخ الكويز واسمه."), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "3"), "الشغل مرتب ومهني وبهيكل الـ Presentation Sandwich، ويغطي كل أجزاء القراءة المطلوبة."), React.createElement("li", null, React.createElement("span", {
+    className: "ex-num"
+  }, "4"), "الكتابة تأمّلية فعلاً وفيها اثنتان أو أكثر من: تلخيص بأسلوبك مع سبب الأهمية، أسئلة عن المفاهيم أو وش كان غامض، تطبيقات شخصية على حياتك، مقارنة بمواد ثانية، أو أي كتابة تأمّلية واضحة تسمّيها.")), React.createElement("p", {
+    className: "ex-hint"
+  }, React.createElement(Icons.Alert, null), "التقييم: M إذا كل البنود Yes، وNI إذا فيه No واحد، وNCE إذا أكثر من No — والجورنال ما ينعاد تسليمه. وانتبه: الجورنال اختياري مع الكويز الأصلي، لكنه إجباري داخل باكج الميك أب."), React.createElement("div", {
     className: "ex-sub"
   }, "كويز التصحيح — لو جبت NI"), React.createElement("ul", {
     className: "ex-list"
@@ -2312,7 +2435,7 @@ const ExplainModal = ({
     className: "ex-num"
   }, "3"), "نسخة من كويزك الأصلي مع تشك لسته.")), React.createElement("p", {
     className: "ex-hint"
-  }, React.createElement(Icons.InfoFill, null), "الباكج يترفع على رابط البلاك بورد (أو يتسلّم باليد لو سمح الدكتور). إذا استوفى المواصفات يتحوّل تقييمك لـ M — ما فيه E بهذي المرحلة، وما راح تنزل لـ NCE."), React.createElement("div", {
+  }, React.createElement(Icons.InfoFill, null), "الباكج يترفع على رابط البلاك بورد (أو يتسلّم باليد لو سمح الدكتور). إذا استوفى المواصفات يتحوّل تقييمك لـ M — ما فيه E بهذي المرحلة، وما راح تنزل لـ NCE. وكل \"No\" في جدول الـ Self-Regulation بتشك لست التصحيح = نص لابس، ومسموح تتأخر أسبوع واحد بلابس."), React.createElement("div", {
     className: "ex-sub"
   }, "كويز الميك أب — لو جبت NCE أو NS"), React.createElement("ul", {
     className: "ex-list"
@@ -2326,7 +2449,7 @@ const ExplainModal = ({
     className: "ex-num"
   }, "4"), "لا ترفق نسخة الكويز الأصلي.")), React.createElement("p", {
     className: "ex-hint"
-  }, React.createElement(Icons.AlertFill, null), "لو استوفى الميك أب المواصفات يتحوّل التقييم لـ M، لكن اللابس المرتبط بالكويز يظل محسوب عليك. وبقاء NCE أو NS لنهاية الترم أثره شديد على درجة القسم."), React.createElement("p", {
+  }, React.createElement(Icons.AlertFill, null), "لو استوفى الميك أب المواصفات يتحوّل التقييم لـ M، لكن اللابس المرتبط بالكويز يظل محسوب عليك. وبقاء NCE أو NS لنهاية الترم أثره شديد على درجة القسم. وانتبه: كل \"No\" في جدول الـ Self-Regulation بتشك لست الميك أب = لابس كامل، مو نص."), React.createElement("p", {
     className: "ex-hint"
   }, React.createElement(Icons.Alert, null), "أي إعادة تسليم مسموحة تنقبل متأخرة خلال أسبوع واحد من موعدها مقابل لابس — وبعد الأسبوع ما تنقبل نهائياً.")), React.createElement(ExAcc, {
     icon: React.createElement(Icons.Clock, null),
