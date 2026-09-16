@@ -108,6 +108,9 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .resource-info h3.latin{font-family:var(--font-nums);letter-spacing:0.2px}
 .resource-info p{margin:4px 0 0;font-size:0.82rem;color:var(--text-dim)}
 .resource-links{display:flex;gap:10px;flex-wrap:wrap}
+.res-group+.res-group{margin-top:16px}
+.res-group-label{display:flex;align-items:center;gap:10px;margin-bottom:9px;font-size:0.76rem;font-weight:700;color:var(--gold);letter-spacing:0.3px}
+.res-group-label::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(242,193,78,0.3),transparent)}
 .res-link-btn{flex:1;text-align:center;padding:12px;font-size:0.88rem;font-weight:600;background:rgba(0,0,0,0.25);border:1px solid var(--line);color:#cfced8;border-radius:var(--r-sm);text-decoration:none;transition:0.2s;display:flex;align-items:center;justify-content:center;gap:8px;min-width:135px;cursor:pointer}
 .res-link-btn:hover{background:rgba(255,255,255,0.09);color:var(--text);transform:translateY(-2px);border-color:var(--line-strong)}
 .res-link-btn.primary{border-color:var(--line-strong);background:rgba(255,255,255,0.06);color:var(--text)}
@@ -1499,36 +1502,48 @@ const ContentView = () => {
   const files481 = [{
     title: 'تقييم',
     note: 'تشك لستات 481 — كل وحدة بملف مستقل جاهز للطباعة',
-    links: [{
-      name: 'الكويز الأصلي',
-      url: F481 + 'checklists/Quiz-Original-Checklist-481.pdf'
+    groups: [{
+      label: 'الكويزات',
+      links: [{
+        name: 'الكويز الأصلي',
+        url: F481 + 'checklists/Quiz-Original-Checklist-481.pdf'
+      }, {
+        name: 'التصحيح Correction',
+        url: F481 + 'checklists/Quiz-Correction-Checklist-481.pdf'
+      }, {
+        name: 'الميك أب Makeup',
+        url: F481 + 'checklists/Quiz-Makeup-Checklist-481.pdf'
+      }, {
+        name: 'الجورنال Journal',
+        url: F481 + 'checklists/Engineering-Journal-Checklist-481.pdf'
+      }]
     }, {
-      name: 'التصحيح Correction',
-      url: F481 + 'checklists/Quiz-Correction-Checklist-481.pdf'
+      label: 'مع كل تسليم',
+      links: [{
+        name: 'PTW',
+        url: F481 + 'checklists/PTW-Checklist-481.pdf'
+      }]
     }, {
-      name: 'الميك أب Makeup',
-      url: F481 + 'checklists/Quiz-Makeup-Checklist-481.pdf'
+      label: 'الواجبات',
+      links: [{
+        name: 'Tutorial Materials (C-1)',
+        url: F481 + 'checklists/Tutorial-Materials-Checklist-481.pdf'
+      }, {
+        name: 'Teammate Interview (L-1)',
+        url: F481 + 'checklists/Teammate-Interview-Checklist-481.pdf'
+      }, {
+        name: 'Zeroth Notebook Assessment (L-3)',
+        url: F481 + 'checklists/Zeroth-Notebook-Assessment-Checklist-481.pdf'
+      }]
     }, {
-      name: 'الجورنال Journal',
-      url: F481 + 'checklists/Engineering-Journal-Checklist-481.pdf'
-    }, {
-      name: 'PTW',
-      url: F481 + 'checklists/PTW-Checklist-481.pdf'
-    }, {
-      name: 'Teammate Interview',
-      url: F481 + 'checklists/Teammate-Interview-Checklist-481.pdf'
-    }, {
-      name: 'Tutorial Materials (C-1)',
-      url: F481 + 'checklists/Tutorial-Materials-Checklist-481.pdf'
-    }, {
-      name: 'Tutorial Peer Assessment (C-2)',
-      url: F481 + 'checklists/Tutorial-Peer-Assessment-Checklist-481.pdf'
-    }, {
-      name: 'Process Check (C2-3)',
-      url: F481 + 'checklists/C2-Process-Check-481.pdf'
-    }, {
-      name: 'Zeroth Notebook Assessment (L-3)',
-      url: F481 + 'checklists/Zeroth-Notebook-Assessment-Checklist-481.pdf'
+      label: 'تقييم الأقران والجلسة',
+      links: [{
+        name: 'Tutorial Peer Assessment (C-2)',
+        url: F481 + 'checklists/Tutorial-Peer-Assessment-Checklist-481.pdf'
+      }, {
+        name: 'Process Check (C2-3)',
+        url: F481 + 'checklists/C2-Process-Check-481.pdf'
+      }]
     }]
   }, {
     title: 'First Day Material (FDM) — 481',
@@ -1759,27 +1774,37 @@ const ContentView = () => {
       const FileCard = ({
         f,
         isPinned
-      }) => React.createElement("div", {
-        className: `pro-resource-card ${isPinned ? 'pinned-file' : 'type-files'}`
-      }, React.createElement("div", {
-        className: "resource-header"
-      }, React.createElement("div", {
-        className: "resource-icon-box"
-      }, isPinned ? React.createElement(Icons.Check, null) : React.createElement(Icons.Folder, null)), React.createElement("div", {
-        className: "resource-info"
-      }, React.createElement("h3", {
-        style: isPinned ? {
-          color: 'var(--gold)'
-        } : {}
-      }, f.title), (f.note || isPinned) && React.createElement("p", null, f.note || "مهم جداً"))), React.createElement("div", {
-        className: "resource-links"
-      }, f.links.map((l, x) => React.createElement("a", {
-        key: x,
-        href: l.url,
-        className: `res-link-btn ${l.imp || isPinned ? 'primary' : ''}`,
-        target: "_blank",
-        rel: "noopener noreferrer"
-      }, l.imp || isPinned ? React.createElement(Icons.Star, null) : React.createElement(Icons.File, null), " ", l.name))));
+      }) => {
+        const renderLink = (l, x) => React.createElement("a", {
+          key: x,
+          href: l.url,
+          className: `res-link-btn ${l.imp || isPinned ? 'primary' : ''}`,
+          target: "_blank",
+          rel: "noopener noreferrer"
+        }, l.imp || isPinned ? React.createElement(Icons.Star, null) : React.createElement(Icons.File, null), " ", l.name);
+        return React.createElement("div", {
+          className: `pro-resource-card ${isPinned ? 'pinned-file' : 'type-files'}`
+        }, React.createElement("div", {
+          className: "resource-header"
+        }, React.createElement("div", {
+          className: "resource-icon-box"
+        }, isPinned ? React.createElement(Icons.Check, null) : React.createElement(Icons.Folder, null)), React.createElement("div", {
+          className: "resource-info"
+        }, React.createElement("h3", {
+          style: isPinned ? {
+            color: 'var(--gold)'
+          } : {}
+        }, f.title), (f.note || isPinned) && React.createElement("p", null, f.note || "مهم جداً"))), f.groups ? f.groups.map((g, gi) => React.createElement("div", {
+          key: gi,
+          className: "res-group"
+        }, React.createElement("div", {
+          className: "res-group-label"
+        }, g.label), React.createElement("div", {
+          className: "resource-links"
+        }, g.links.map(renderLink)))) : React.createElement("div", {
+          className: "resource-links"
+        }, f.links.map(renderLink)));
+      };
       return React.createElement("div", {
         className: "content-area"
       }, React.createElement("div", {
