@@ -133,7 +133,7 @@ svg{flex-shrink:0}
 /* ---------- App shell ---------- */
 .app{min-height:100vh;display:flex;flex-direction:column}
 .container{width:100%;max-width:var(--container);margin:0 auto;padding:0 16px}
-.page{flex:1;padding-bottom:48px}
+.page{flex:1;padding-top:6px;padding-bottom:48px}
 .topbar{position:relative;z-index:50}
 .topbar-inner{max-width:var(--container);margin:0 auto;padding:calc(14px + env(safe-area-inset-top)) 16px 14px;display:flex;align-items:center;gap:14px}
 .brand{display:flex;align-items:center;gap:10px;flex-shrink:0;min-width:0}
@@ -168,32 +168,6 @@ svg{flex-shrink:0}
 .tab-btn.active{color:var(--text)}
 .tab-btn.active svg{color:var(--gold);transform:translateY(-1px)}
 
-/* ---------- Hero ---------- */
-.hero{position:relative;overflow:hidden;margin:6px 0 26px;padding:44px 24px 40px;border-radius:var(--r-xl);text-align:center;background:radial-gradient(ellipse 70% 65% at 50% 0%,rgba(var(--gold-rgb),0.13),transparent 70%),radial-gradient(ellipse 60% 55% at 50% 100%,rgba(var(--cyan-rgb),0.09),transparent 70%),var(--surface);border:1px solid var(--line);box-shadow:var(--shadow-md);animation:fadeIn 0.6s ease}
-.hero::before{content:'';position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(var(--bg-grid) 1px,transparent 1px),linear-gradient(90deg,var(--bg-grid) 1px,transparent 1px);background-size:22px 22px;background-position:center;-webkit-mask-image:radial-gradient(ellipse 60% 70% at 50% 50%,#000,transparent 75%);mask-image:radial-gradient(ellipse 60% 70% at 50% 50%,#000,transparent 75%)}
-.hero::after{content:'';position:absolute;inset:14px;pointer-events:none;--hc:rgba(var(--cyan-rgb),0.5);background:linear-gradient(var(--hc),var(--hc)) top right/18px 1.5px no-repeat,linear-gradient(var(--hc),var(--hc)) top right/1.5px 18px no-repeat,linear-gradient(var(--hc),var(--hc)) top left/18px 1.5px no-repeat,linear-gradient(var(--hc),var(--hc)) top left/1.5px 18px no-repeat,linear-gradient(var(--hc),var(--hc)) bottom right/18px 1.5px no-repeat,linear-gradient(var(--hc),var(--hc)) bottom right/1.5px 18px no-repeat,linear-gradient(var(--hc),var(--hc)) bottom left/18px 1.5px no-repeat,linear-gradient(var(--hc),var(--hc)) bottom left/1.5px 18px no-repeat}
-.hero-text{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center}
-.hero-eyebrow{display:inline-flex;align-items:center;font-family:var(--font-nums);font-size:0.72rem;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--cyan);background:rgba(var(--cyan-rgb),0.08);border:1px solid rgba(var(--cyan-rgb),0.26);padding:6px 16px;border-radius:20px}
-.hero-title{font-family:var(--font-nums);font-weight:800;font-size:clamp(2.9rem,10vw,4.4rem);line-height:1;letter-spacing:-1.5px;margin:18px 0 24px;color:var(--text);direction:ltr}
-.hero-title span{color:var(--gold)}
-.hero-actions{display:flex;flex-wrap:wrap;align-items:stretch;justify-content:center;gap:10px}
-.btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:9px;height:48px;padding:0 24px;border-radius:14px;border:0;background:var(--grad-brand);color:var(--on-grad);font-weight:800;font-size:0.95rem;cursor:pointer;box-shadow:0 8px 22px rgba(var(--gold-rgb),0.22);transition:var(--transition)}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(var(--gold-rgb),0.3)}
-.btn-primary svg{font-size:1.1rem}
-.meta-chip{font-family:var(--font-nums);font-size:0.72rem;font-weight:700;letter-spacing:1.5px;color:var(--gold);background:rgba(var(--gold-rgb),0.08);border:1px solid rgba(var(--gold-rgb),0.28);padding:6px 14px;border-radius:20px}
-.meta-chip.neutral{color:var(--text-dim);background:var(--surface-2);border-color:var(--line);letter-spacing:0.3px;font-family:var(--font-body)}
-.hero-actions .meta-chip{display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 20px;border-radius:14px;font-size:0.82rem}
-.hero-art{position:absolute;left:50%;top:50%;width:340px;height:340px;transform:translate(-50%,-50%);opacity:0.16;pointer-events:none}
-.hero-art svg{width:100%;height:100%;overflow:visible}
-.hero-art svg *{fill:none;stroke-width:1.3}
-.hero-art .ha-faint{stroke:var(--line-strong);stroke-dasharray:3 5}
-.hero-art .ha-center{stroke:rgba(var(--cyan-rgb),0.6);stroke-dasharray:14 4 3 4}
-.hero-art .ha-cyan{stroke:var(--cyan)}
-.hero-art .ha-cyan-soft{stroke:rgba(var(--cyan-rgb),0.6)}
-.hero-art .ha-gold{stroke:var(--gold);stroke-width:2}
-.hero-art .ha-gold-soft{stroke:rgba(var(--gold-rgb),0.7)}
-.hero-art .ha-spin{transform-origin:120px 120px;animation:spinSlow 90s linear infinite}
-:root[data-theme="light"] .hero-art{opacity:0.22}
 
 /* ---------- Section structure ---------- */
 .content-area{animation:fadeIn 0.4s ease-out}
@@ -612,7 +586,7 @@ svg{flex-shrink:0}
 .topbar{position:sticky;top:0;background:var(--glass);-webkit-backdrop-filter:blur(16px) saturate(1.4);backdrop-filter:blur(16px) saturate(1.4);border-bottom:1px solid var(--line)}
 .topbar-inner{padding-top:12px;padding-bottom:12px}
 .nav-tabs{flex:0 1 540px;margin-inline:auto}
-.hero{margin-top:26px}
+.page{padding-top:26px}
 #main{scroll-margin-top:92px}
 }
 @media(max-width:859px){
@@ -624,13 +598,6 @@ svg{flex-shrink:0}
 #main{scroll-margin-top:12px}
 }
 @media(max-width:600px){
-.hero{padding:34px 16px 30px;margin-bottom:22px}
-.hero::after{inset:10px}
-.hero-eyebrow{font-size:0.6rem;letter-spacing:0.7px;padding:5px 12px}
-.hero-title{margin:16px 0 22px}
-.hero-art{width:270px;height:270px}
-.btn-primary,.hero-actions .meta-chip{height:46px}
-.btn-primary{padding:0 20px;font-size:0.9rem}
 .modal-overlay{align-items:flex-end;padding:0}
 .modal-content,.explain-modal{max-width:none;border-radius:24px 24px 0 0;max-height:92vh;padding-bottom:calc(24px + env(safe-area-inset-bottom));animation:sheetUp 0.38s cubic-bezier(0.2,0.8,0.2,1);border-bottom:0}
 .modal-content::before{content:'';display:block;width:40px;height:4px;border-radius:4px;background:var(--line-strong);margin:-14px auto 14px}
@@ -3873,35 +3840,6 @@ const APP_TABS = [{
   l: 'الحاسبة',
   icon: Icons.Calculator
 }];
-const HeroArt = () => React.createElement("svg", {
-  viewBox: "0 0 240 240"
-}, React.createElement("circle", {
-  className: "ha-faint",
-  cx: "120",
-  cy: "120",
-  r: "98"
-}), React.createElement("path", {
-  className: "ha-center",
-  d: "M120 6V234M6 120H234"
-}), React.createElement("g", {
-  className: "ha-spin"
-}, React.createElement("polygon", {
-  className: "ha-cyan",
-  points: "182,120 151,173.7 89,173.7 58,120 89,66.3 151,66.3"
-}), React.createElement("circle", {
-  className: "ha-cyan-soft",
-  cx: "120",
-  cy: "120",
-  r: "53.7"
-}), React.createElement("circle", {
-  className: "ha-gold",
-  cx: "120",
-  cy: "120",
-  r: "26"
-}), React.createElement("path", {
-  className: "ha-gold-soft",
-  d: "M151 120A31 31 0 1 1 120 89"
-})));
 function App() {
   const [tab, setTab] = useState('calendar'),
     [modal, setModal] = useState(false);
@@ -4008,25 +3946,7 @@ function App() {
     className: "author-name"
   }, "مطلق")))))), React.createElement("div", {
     className: "container page"
-  }, React.createElement("section", {
-    className: "hero"
-  }, React.createElement("div", {
-    className: "hero-art",
-    "aria-hidden": "true"
-  }, React.createElement(HeroArt, null)), React.createElement("div", {
-    className: "hero-text"
-  }, React.createElement("span", {
-    className: "hero-eyebrow"
-  }, "Introduction to Engineering Design"), React.createElement("h1", {
-    className: "hero-title"
-  }, "GE ", React.createElement("span", null, "211")), React.createElement("div", {
-    className: "hero-actions"
-  }, React.createElement("button", {
-    className: "btn-primary",
-    onClick: () => setModal(true)
-  }, React.createElement(Icons.Concept, null), " شرح المقرر"), React.createElement("span", {
-    className: "meta-chip"
-  }, "SEM 481")))), React.createElement("main", {
+  }, React.createElement("main", {
     id: "main"
   }, tab === 'calendar' && React.createElement(CalendarView, null), tab === 'deliverables' && React.createElement(DeliverablesView, null), tab === 'resources' && React.createElement(ContentView, null), tab === 'grades' && React.createElement(GradeView, null))), modal && React.createElement(ExplainModal, {
     onClose: () => setModal(false)
