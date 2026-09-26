@@ -1,0 +1,85 @@
+472
+Among top ten lists of effective written report is/are:
+{حسب الصفحة 146، من ضمن قائمة أفضل عشر نصائح لكتابة التقارير الفعالة (Top Ten List for Effective Written Reports): أن يكون مكتوباً بإيجاز (Concisely Written - رقم 4) وأن تكون الأفكار مدعومة بالأمثلة والبيانات والأدلة (Ideas Supported by Examples, Data, Evidence - رقم 6). لذلك الإجابة الصحيحة هي كلاهما.}
+a) Concisely written
+b) Ideas Supported by Examples, Data, Evidence.
+c) Both a) and b)
+d) None of the above
+c
+
+472
+Which of the following tells what you found:
+{حسب الصفحة 145 (القسم 6.6H Report)، قسم النتائج (Results) هو الجزء الذي يُخبر القارئ بما وجدته في دراستك أو تجربتك (This section tells what you found).}
+a) Results.
+b) Conclusion.
+c) Discussion.
+d) Materials and Methods.
+a
+
+472
+Which of the following defines the problem:
+{حسب الصفحة 145، قسم المقدمة (Introduction) هو الجزء الذي يعرّف المشكلة (defines the problem) ويشرح سبب أهمية دراستها، ويعطي معلومات عن الخلفية.}
+a) Introduction.
+b) Conclusion.
+c) Discussion.
+d) Materials and Methods.
+a
+
+472
+The abstract (not the context) is usually written:
+{حسب الصفحة 144 (القسم 6.6H Report)، الملخص (Abstract) وهو عبارة عن صفحة واحدة تلخص التقرير يُكتب عادةً في النهاية (usually written last) بعد الانتهاء من كتابة باقي أجزاء التقرير.}
+a) At the beginning of the work
+b) At the middle of the work
+c) Last
+c
+
+472
+The less precise the measurements means:
+{حسب الصفحة 141 (القسم 6.6F Performing the Experiment: How Many Times?)، القياسات الأقل دقة (less precise) تعني بالضرورة وجود خطأ أكبر (the more error that is present).}
+a) The more error that is present
+b) The less error that is present
+c) No error is present
+a
+
+472
+For an experiment having three independent variables each of them could have two possible levels, a full factorial design in this case means:
+{حسب الصفحة 138، إذا كان لدينا 3 متغيرات مستقلة (n = 3) ولكل منها مستويان (N = 2)، فإن التصميم العاملي الكامل (Full factorial design) يتطلب عدد تجارب يساوي Nⁿ = 2³ = 8 تجارب (Eight Experiments).}
+a) Eight Experiments.
+b) Four Experiments.
+c) Sixteen Experiments.
+d) Two Experiments.
+a
+
+472
+For Type II Error:
+{حسب الصفحة 137، خطأ النوع الثاني (Type II Error) يحدث عندما نفشل في اكتشاف تأثير حقيقي (fail to discover a real effect)، ويؤدي إلى فقدان المعلومات (results in lost information)، ويمكن تجنبه بجمع معلومات كافية والتخطيط الجيد. لذلك جميع الخيارات المذكورة صحيحة (All the above).}
+a) It occurs when we fail to discover a real effect.
+b) Results in lost information
+c) Can be avoided by gathering sufficient information
+d) All the above
+d
+
+472
+The response of a system is the:
+{حسب الصفحة 135 (القسم 6.6C Choose the Responses You Want to Measure)، استجابة النظام (The responses) تُعرف علمياً بأنها المتغيرات التابعة (dependent variables).}
+a) The dependent variable
+b) The independent variable
+c) The controlled variable.
+d) None of the above.
+a
+
+472
+A change in the problem statement could be the result of changing the market condition:
+{حسب الصفحة 132 (القسم 6.5 PROBLEM STATEMENTS THAT CHANGE WITH TIME)، العبارة صحيحة (True). يُذكر بوضوح أن التغيير في بيان المشكلة يمكن أن يكون نتيجة لتغير ظروف السوق (changing market conditions) أو ظهور منتجات منافسة وغيرها من العوامل.}
+a) True
+b) False
+c) Not related
+a
+
+472
+Define the objectives for the Experiment comes after identifying the important variables:
+{حسب الصفحة 134 (الشكل 6-3 Flow Chart for Experimental Projects)، المخطط يوضح الترتيب التالي: دراسة الحاجة ← تحديد الأهداف (Define Objectives) ← اختيار الاستجابات ← تحديد المتغيرات المهمة (Identify Important Variables). إذاً تحديد الأهداف يأتي قبل تحديد المتغيرات، وليس بعدها. لذا فالعبارة خاطئة (False).}
+a) True
+b) False
+c) Some Times
+b

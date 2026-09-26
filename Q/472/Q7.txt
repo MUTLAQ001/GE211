@@ -1,0 +1,242 @@
+472
+In the Exxon Valdez Problem, who objected to the use of chemical dispersants at the emergency meeting?
+{حسب صفحة 16 من الملحق (Exxon Valdez Problem): عالم الأحياء البحرية (marine biologist) هو من اعترض على استخدام المشتتات الكيميائية لأنها ستؤثر سلباً على الأسماك وتمتصها مما يضر بصناعة صيد الأسماك.}
+a) The Coast Guard
+b) The Alaskan governor’s office
+c) The marine biologist
+d) The Department of Wildlife
+c
+
+472
+In the Ragin’ Cajun Chicken case study, how long did Wes have until the new sandwich would be introduced?
+{حسب الصفحة 105: في مذكرة الشركة، تم تحديد أن الساندويتش الجديد سيتم طرحه في مطاعم Burgermeister خلال أسبوعين (Two weeks).}
+a) One week
+b) Two weeks
+c) One month
+d) Three months
+b
+
+472
+According to Section 5.3A (Cautions), what is one way the decision-making process can be sabotaged?
+{حسب الصفحة 103 (القسم 5.3A): إحدى طرق تخريب أو إعاقة اتخاذ القرار هي إدراج الكثير من التفاصيل غير المهمة التي تحجب وتشوش التحليل (obscure the analysis).}
+a) Using too many objective criteria
+b) Listing too many unimportant details which obscure the analysis
+c) Consulting the Kepner and Tregoe book
+d) Keeping an open mind during evaluation
+b
+
+472
+In the job offer scenario in Section 5.3B (Missing Information), what was the best-case job position John assumed for Dow Corning?
+{حسب الصفحة 104 (القسم 5.3B): عندما لم يكن جون متأكداً من طبيعة الوظيفة، افترض في أفضل سيناريو (best case) حصوله على وظيفته المرغوبة كمهندس عمليات (Process engineer).}
+a) Plant manager
+b) Traveling sales representative
+c) Process engineer
+d) Research assistant
+c
+
+472
+In the PPA table, what was the preventive action for “Customers don’t know about sandwich”?
+{حسب الصفحة 106 (الجدول): الإجراء الوقائي (Preventive Action) لمشكلة عدم معرفة العملاء بالساندويتش كان صنع لافتات خاصة بالمطعم (Make own signs for sandwich).}
+a) Run promotional specials
+b) Make own signs for sandwich
+c) Train employees
+d) Perform temperature checks
+b
+
+472
+In the Exxon Valdez Problem, the Department of Wildlife argued that the first priority for using the boom material was to protect what?
+{حسب صفحة 16 من الملحق: جادلت إدارة الحياة الفطرية بأن الأولوية الأولى للحماية باستخدام الحواجز الطافية هي المصايد الأربعة (four fisheries).}
+a) The Exxon Valdez
+b) The four fisheries
+c) The Bligh Reef
+d) The small village on a nearby island
+b
+
+472
+In the PPA table, what was listed as a potential cause for the problem “Bacteria in food”?
+{حسب الصفحة 106 (الجدول): من الأسباب المحتملة (Possible Causes) لتواجد البكتيريا في الطعام أن الفريزر ليس بارداً بما يكفي (Freezer not cold enough).}
+a) Sandwich sits too long under heat lamps
+b) Food is too spicy
+c) Freezer is not cold enough
+d) Customers don’t know about the sandwich
+c
+
+472
+The PPA Table includes columns for Potential Problem, Possible Causes, Preventive Action, and what other element?
+{حسب الصفحة 104 والجدول صفحة 105: أعمدة جدول تحليل المشاكل المحتملة (PPA) تتضمن 4 عناصر، آخرها الإجراءات الطارئة أو الاحتياطية (Contingent Actions).}
+a) Weighted Score
+b) Ethical Review
+c) Contingent Actions
+d) Implementation Date
+c
+
+472
+In the Ragin’ Cajun Chicken case study, what surprised Wes Thompson about the new product introduction?
+{حسب الصفحة 105: تفاجأ ويس بالأمر لأنه لم يسمع أي شيء مسبقاً عن الساندويتش الجديد من الشركة أو من الإعلانات (never heard anything about the new sandwich).}
+a) The sandwich was too expensive to make
+b) He had never heard anything about it from the company or from advertisements
+c) The shipment of chicken was delayed
+d) The new broiler was difficult to operate
+b
+
+472
+What is the primary purpose of the K.T. Potential Problem Analysis (PPA)?
+{حسب الصفحة 104: الهدف الأساسي لـ PPA هو النظر للمستقبل وتوقع ما قد يسير بشكل خاطئ، ووضع خطط لتجنب هذه المزالق (look into the future... make plans to avoid pitfalls).}
+a) To evaluate the ethical implications of a decision
+b) To assign weights and scores to different alternatives
+c) To look into the future to learn what could go wrong and make plans to avoid pitfalls
+d) To analyze the financial costs of a new project
+c
+
+472
+According to Section 5.4 (Potential Problem Analysis), when should you be especially alert for potential problems?
+{حسب الصفحة 105: يوصى بأن تكون في أقصى درجات الحذر للمشاكل المحتملة عندما تجرب شيئاً جديداً، أو معقداً، أو غير مألوف (new, complex, or unfamiliar).}
+a) When you have unlimited resources
+b) When you are trying something new, complex, or unfamiliar
+c) When the decision is routine
+d) When you have all the information
+b
+
+472
+How long is the preparation time for the Ragin’ Cajun Chicken?
+{حسب الصفحة 105: من المهم أن تعمل الشواية على 380 درجة لضمان طهي الدجاج بالكامل خلال وقت التحضير البالغ خمس دقائق (five-minute preparation time).}
+a) 15 minutes
+b) 10 minutes
+c) 5 minutes
+d) 2 minutes
+c
+
+472
+In the Exxon Valdez Problem, the Alaskan governor’s office suggested the available boom material should be used to protect what?
+{حسب صفحة 16 من الملحق: اقترح مكتب حاكم ألاسكا استخدام المواد المتاحة لإحاطة وحماية شاطئ قرية صغيرة على جزيرة قريبة (shore of a small village).}
+a) The Bligh Reef
+b) The shore of a small village on a nearby island
+c) The Exxon Valdez itself
+d) The four main fisheries
+b
+
+472
+According to Section 5.3A (Cautions), what is a significant caution when assigning weights and scores?
+{حسب الصفحة 103 (القسم 5.3A): عملية إسناد الأوزان والدرجات هي عملية تعتمد على الرأي الشخصي (very subjective) ويمكن إساءة استخدامها بسهولة لتوجيه القرار.}
+a) It requires complex mathematical formulas
+b) It is too time-consuming for most business decisions
+c) The process is very subjective and can be easily abused
+d) It must be done by a computer to be accurate
+c
+
+472
+In the Ragin’ Cajun Chicken case study, what specific tool was to be used to handle only uncooked chicken?
+{حسب الصفحة 105: لمنع انتقال بكتيريا السالمونيلا، سيتم استخدام ملاقط مميزة بعلامات خاصة (Specially marked tongs) للتعامل مع الدجاج النيئ فقط.}
+a) Special gloves
+b) Specially marked tongs
+c) Color-coded cutting boards
+d) Separate containers
+b
+
+472
+In Section 5.3B (Missing Information), what type of analysis does the author suggest when key information is missing?
+{حسب الصفحة 104 (القسم 5.3B): عندما تفتقر إلى المعلومات اللازمة، يُقترح إجراء تحليل "ماذا لو...؟" (What if...?) للنظر في أسوأ وأفضل الاحتمالات.}
+a) A cost-benefit analysis
+b) A “What if...?” analysis
+c) A statistical regression analysis
+d) A historical trend analysis
+b
+
+472
+In the PPA table, what was the contingent action for the problem “Wrong items on sandwich”?
+{حسب الصفحة 106 (الجدول): الإجراء الطارئ (Contingent Action) في حال وضع مكونات خاطئة هو توفير ساندويتشات بديلة مجانية للعملاء المتأثرين (Provide free remade sandwiches).}
+a) Inspect sandwiches before serving
+b) Have cashiers double-check accuracy
+c) Provide free remade sandwiches for affected customers
+d) Run promotional specials
+c
+
+472
+What is the shelf life of the frozen Ragin’ Cajun Chicken sandwiches?
+{حسب الصفحة 105: الدجاج المشحون مجمداً له فترة صلاحية (shelf life) تبلغ ثلاثة أشهر (three months) داخل الفريزر.}
+a) One week
+b) One month
+c) Three months
+d) Six months
+c
+
+472
+What should you NOT do when developing a PPA plan according to the text?
+{حسب الصفحة 105: يحذر الكتاب من التركيز على خطط الطوارئ وإهمال الإجراءات الوقائية. (Do not proceed with contingency plans rather than focusing on preventive actions).}
+a) Develop preventive actions for each cause
+b) Proceed with contingency plans rather than focusing on preventive actions
+c) Establish early warning signs
+d) Identify how serious each potential problem would be
+b
+
+472
+According to Section 5.3A (Cautions), what could “loaded” want objectives result in?
+{حسب الصفحة 103 (القسم 5.3A): استخدام رغبات "موجَّهة ومُحمّلة" (loaded) سيؤدي إلى ضمان قبول بديل معين (guarantee acceptance of a certain alternative) واستبعاد غيره بشكل غير عادل.}
+a) Guaranteed acceptance of a certain alternative
+b) A more ethical decision
+c) Better analysis of missing information
+d) Simplified decision-making tables
+a
+
+472
+In the Ragin’ Cajun Chicken case study, what problem did Wes notice regarding employee behavior after the special training session?
+{حسب الصفحة 107: من خلال الجولات التفتيشية لاحظ ويس أن الموظفين لم يكونوا يتبعون تعليماته (weren't following his instructions) بشأن استخدام الملاقط وغسل الأيدي بعد التعامل مع الدجاج النيئ.}
+a) They refused to work with the new chicken
+b) They weren’t following his instructions for handling raw chicken
+c) They couldn’t remember the price of the new sandwich
+d) They were spending too much time on breaks
+b
+
+472
+In the Exxon Valdez Problem, the Coast Guard argued that the slick was not moving in which direction?
+{حسب صفحة 16 من الملحق: بعد اقتراح الحاكم حماية القرية، جادل خفر السواحل بأن بقعة الزيت لا تتحرك في ذلك الاتجاه، أي باتجاه القرية الصغيرة (that direction).}
+a) Toward the open sea
+b) Toward the small village on a nearby island
+c) Toward the four fisheries
+d) Toward the Bligh Reef
+b
+
+472
+In the Ragin’ Cajun Chicken case study, after implementing his plan, what action did Wes take to address customers being unaware of the new sandwich?
+{حسب الصفحة 107: قام ويس بصنع لافتات تعلن عن الساندويتش وطلب من الصرافين اقتراحه للعملاء (made signs... and asked his cashiers to suggest).}
+a) He lowered the price of the sandwich
+b) He waited for the national advertising campaign
+c) He made his own signs and had cashiers suggest the sandwich
+d) He sent out a mailer to the local community
+c
+
+472
+In the Ragin’ Cajun Chicken case study, what was the consequence listed for the potential problem “Substandard sandwich quality”?
+{حسب الصفحة 106 (الجدول): العاقبة (Consequence) لجودة الساندويتش الرديئة هي شكوى العملاء وعدم عودتهم (Customers complain; no return business).}
+a) Restaurant loses money
+b) Illness, lawsuits
+c) Customers complain; no return business
+d) An explosion
+c
+
+472
+In the Exxon Valdez Problem, according to the passage, when were millions of fish scheduled to be released into the fjord?
+{حسب صفحة 16 وصفحة 17 من الملحق: من المقرر إطلاق ملايين الأسماك من المصايد إلى المضيق الملوث بالنفط بعد أسبوعين من الآن (Two weeks from now).}
+a) Immediately
+b) One week from the spill
+c) Two weeks from the spill
+d) One month from the spill
+c
+
+472
+In the Ragin’ Cajun Chicken case study, what dangerous event did Wes observe and prevent by monitoring employees operating the new broiler?
+{حسب الصفحة 107: بفضل المراقبة الميدانية، لاحظ ويس مشكلة وتمكن من تجنب وقوع انفجار (An explosion) كان يمكن أن يحدث بسبب الإشعال الخاطئ للشواية.}
+a) A minor fire from spilled grease
+b) An explosion that might have been caused by improper lighting
+c) Employees burning the chicken sandwiches
+d) The broiler failing to reach the correct temperature
+b
+
+472
+What bacteria was a concern with the raw Ragin’ Cajun Chicken?
+{حسب الصفحة 105: البكتيريا التي تشكل مصدر قلق في الدجاج النيئ والتي تم التحذير من خطر انتقالها هي بكتيريا السالمونيلا (Salmonella).}
+a) Ecoli
+b) Listeria
+c) Salmonella
+d) Botulism
+c

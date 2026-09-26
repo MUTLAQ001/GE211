@@ -1,0 +1,431 @@
+472
+According to the quote by Emile Chartier, when is an idea considered “dangerous”?
+{حسب الصفحة 61: الاقتباس المذكور لإميل شارتييه ينص على أنه "لا يوجد شيء أكثر خطورة من الفكرة، عندما تكون هي الفكرة الوحيدة التي تمتلكها" (Nothing is more dangerous than an idea, when it is the only one you have).}
+a) When it is shared before it is fully developed.
+b) When it is the only idea, you have.
+c) When it requires too many resources to implement.
+d) When it contradicts existing problem definitions.
+b
+
+472
+Why do many people struggle to solve the nine-dot problem?
+{حسب الصفحة 62: يُذكر أن هذا اللغز صعب جداً إذا لم يتم تجاوز "الحدود الوهمية" (imaginary boundary) التي تخلقها النقاط الثمانية الخارجية.}
+a) They assume the lines cannot cross the imaginary outer boundary.
+b) They believe the dots must be connected by a single curved line.
+c) They think the paper must be folded into a specific shape first.
+d) They are restricted by a time limit not mentioned in the rules.
+a
+
+472
+According to the text, how do air traffic controllers manage the challenge of “saturation or information overload”?
+{حسب الصفحة 63: مراقبو الحركة الجوية مدربون وماهرون في "فرز المعلومات الأساسية" (sorting out the essential information) من بين الكم الهائل من البيانات لضمان الهبوط والإقلاع الآمن.}
+a) By avoiding bad weather conditions entirely.
+b) By ignoring minute details to focus only on aircraft takeoffs.
+c) By developing skills to sort out essential information from a high volume of data.
+d) By limiting the number of aircraft they handle to a few dozen daily.
+c
+
+472
+According to the “Rescuing a Ping Pong Ball” scenario, why do many people fail to consider urinating in the pipe to float the ball to the top?
+{حسب الصفحة 64: كثير من الناس لا يفكرون في هذا الحل بسبب "عائق ثقافي" (cultural block)، حيث يُعتبر التبول نشاطاً "خاصاً" (private) في العديد من البلدان.}
+a) It is physically impossible due to the pipe’s diameter.
+b) It would damage the ball or the gymnasium floor.
+c) It is a cultural block because the act is considered a “private” activity.
+d) The participants do not have enough time to think of the solution.
+c
+
+472
+How should one implement an “Attitude Adjustment” to overcome the mental block of focusing on negative outcomes?
+{حسب الصفحة 65: في جدول (Goman's Blockbusters)، لتعديل الموقف (Attitude Adjustment) يجب سرد الجوانب الإيجابية وإدراك أن كل مشكلة لا تحمل خطر الفشل فقط بل "فرصة للنجاح" (opportunity for success).}
+a) Ignore the problem until a positive outcome occurs naturally.
+b) List positive aspects and realize every problem offers an opportunity for success.
+c) Focus solely on the dangers of failure to prepare for the worst.
+d) Relegate imagination to the background to stay realistic.
+b
+
+472
+How does the timeline for recording an idea impact your ability to remember it, according to the text?
+{حسب الصفحة 66: ضمن مبدأ "تتبع أفكارك دائماً"، ذُكر أنه إذا لم يتم تدوين الفكرة خلال 24 ساعة، فسيتم نسيانها غالباً (If an idea is not written down within 24 hours it will usually be forgotten).}
+a) If not recorded within 24 hours, the idea is usually forgotten.
+b) Ideas only need to be written down if they are “innovative.”
+c) Waiting 48 hours allows the mind to refine the idea naturally.
+d) Tracking ideas is only necessary during active working hours.
+a
+
+472
+Who is described as the international creativity authority and the father of lateral thinking?
+{حسب الصفحة 67: في السطر الأول، يُوصف الدكتور "إدوارد دي بونو" (Dr. Edward de Bono) بأنه المرجع الدولي في الإبداع وأب التفكير الجانبي (father of lateral thinking).}
+a) American industry managers.
+b) Dr. Edward de Bono.
+c) Japanese “problem fixers.”
+d) Experienced researchers.
+b
+
+472
+What is the primary purpose of brainstorming in both informal and formal settings?
+{حسب الصفحة 68: الغرض الأساسي من العصف الذهني هو توفير وسيلة فعالة "لتحفيز الأفكار الإبداعية وتوليد الحلول" (getting the creative juices flowing and generating solutions).}
+a) To enforce existing company policies and procedures.
+b) To provide an effective means of getting creative juices flowing and generating solutions.
+c) To allow a group leader to evaluate the feasibility of every new idea immediately.
+d) To ensure that only practical and inexpensive solutions are discussed.
+b
+
+472
+According to the “Problem Statement,” what specific goal is the brainstorming session trying to achieve?
+{حسب الصفحة 69: مربع المشكلة في أعلى الصفحة يطرح السؤال: "كيف يمكن تغيير قواعد كرة السلة بحيث يصبح اللاعبون الذين تقل أطوالهم عن 5 أقدام و 9 بوصات أكثر تنافسية؟" (players under 5'9" tall might be more competitive).}
+a) To increase the height of the basketball hoop for all professional players.
+b) To find ways to make players under 5’9” more competitive.
+c) To design platform shoes that allow shorter players to jump as high as taller players.
+d) To eliminate the three-point line to favor inside scoring.
+b
+
+472
+Within the basketball example provided for Osborn’s Checklist, which technique is applied when making a short player’s basket worth 4 points?
+{حسب الصفحة 70: في مربع تطبيق القائمة على مثال كرة السلة، فكرة جعل سلة اللاعب القصير بـ 4 نقاط تندرج تحت تقنية التكبير أو التضخيم (Magnify).}
+a) Adapt
+b) Modify
+c) Magnify
+d) Minify
+c
+
+472
+In the provided problem-solving cycle diagram, which specific step is highlighted/shaded to indicate its importance in the context of this page?
+{حسب الصفحة 61: في المخطط الانسيابي الموجود على يمين الصفحة، الخطوة المظللة أو المحددة باللون الغامق هي خطوة "توليد الحلول" (Generate).}
+a) Define
+b) Generate
+c) Decide
+d) Evaluate
+b
+
+472
+Which professional group is specifically cited as having mastered the ability to overcome “saturation or information overload”?
+{حسب الصفحة 63: الكتاب يذكر تحديداً "مراقبي الحركة الجوية" (Air traffic controllers) كمثال للأشخاص الذين تدربوا على التغلب على مشكلة التشبع المعرفي.}
+a) Desert survival specialists
+b) Air traffic controllers
+c) Emergency room doctors
+d) Civil engineers
+b
+
+472
+Which emotional block is described as stemming from childhood experiences where solving problems incorrectly was punished?
+{حسب الصفحة 63: هذا الوصف مرتبط بشكل مباشر بعائق "الخوف من المخاطرة" (Fear of risk taking)، والذي ينشأ عادة من مرحلة الطفولة بسبب معاقبة الأخطاء.}
+a) Inability to incubate.
+b) Lack of appetite for chaos.
+c) Judging rather than generating ideas.
+d) Fear of risk taking.
+d
+
+472
+What is identified as a block that inhibits deep prolonged concentration?
+{حسب الصفحة 64: تحت قسم العوائق البيئية (Environmental Blocks)، يُذكر أن "المشتتات مثل الهواتف" (Distractions like phones) هي عوائق تمنع التركيز العميق والمطول.}
+a) Lack of training
+b) Distractions such as phones
+c) Poor communication skills
+d) Limited problem-solving strategies
+b
+
+472
+According to the “Risk Taking” blockbuster, what specific steps should be taken to address the fear of failure?
+{حسب الصفحة 65: في جدول (Goman's Blockbusters)، يُنصح بتحديد ماهية الخطر، ولماذا هو مهم، وما هي أسوأ نتيجة محتملة، "وكيف ستتعامل مع هذا الفشل" (how you would deal with this failure).}
+a) Avoid any task where the “worst possible outcome” is known.
+b) Focus only on why the risk is important without considering failure.
+c) Outline the risk, the worst outcome, and how you would deal with that failure.
+d) Follow a step-by-step fashion to ensure no risks are taken.
+c
+
+472
+Why should a person actively learn about subjects and concepts outside of their own specialty?
+{حسب الصفحة 66: يُنصح بتعلم أشياء خارج تخصصك لاستخدام استراتيجية "التلقيح المتبادل" (cross-fertilization) وجلب الأفكار والمفاهيم من مجال إلى آخر.}
+a) To replace their current field of study entirely.
+b) To use “cross-fertilization” to bring new concepts from one field to another.
+c) To ensure they are only using “yesterday’s technology.”
+d) To avoid the need for self-confidence.
+b
+
+472
+What risk does de Bono identify regarding extensive information gathering at the start of a project?
+{حسب الصفحة 67: يُحذر دي بونو من أن القراءة المفرطة قد "تدمر فرصك في الحصول على حل أصلي وإبداعي" لأنها تعرضك للافتراضات والتحيزات الموجودة مسبقاً.}
+a) It leads to “reinventing the wheel.”
+b) It helps maintain objectivity and original innocence.
+c) It might destroy the chances of obtaining an original and creative solution by exposing the researcher to existing assumptions and prejudices.
+d) It is the only way to successfully familiarize oneself with a problem.
+c
+
+472
+During the initial stages of idea generation, what should be done regarding the feasibility of solutions?
+{حسب الصفحة 68: في بداية العصف الذهني، يجب أن تتضمن القوائم حلولاً جامحة أو غير عادية "دون اعتبار لمدى قابليتها للتنفيذ" (without regard to their feasibility).}
+a) Ideas should be filtered immediately to save time.
+b) Only solutions that have been done before should be listed.
+c) Lists should include wild or unusual solutions without regard to their feasibility.
+d) Solutions must be practical and align with the “braindrizzling” method.
+c
+
+472
+What happens to the flow of ideas during a typical brainstorming session before a “roadblock” is hit?
+{حسب الصفحة 69: في العادة، "تتدفق الأفكار بسرعة في البداية ثم تتباطأ فجأة بعد عدة دقائق" (flow quickly at first and then slow abruptly)، وهذا ما يُسمى بالاصطدام بعائق (roadblock).}
+a) The flow of ideas remains constant until the session timer ends.
+b) Ideas are generated slowly at first and then speed up as the group gets comfortable.
+c) Ideas flow quickly at first and then slow abruptly after several minutes.
+d) No ideas are generated until a blockbusting technique is applied.
+c
+
+472
+What is the primary purpose of the “Random Stimulation” technique according to the material provided?
+{حسب الصفحة 70: تقنية التحفيز العشوائي تُستخدم "لتنشيط أو إطلاق" (jump start) عملية توليد الأفكار لإخراجها من حالة الركود أو العائق الحالي.}
+a) To strictly enforce the existing rules of a game
+b) To “jump start” the idea generation process when stuck or in a rut
+c) To eliminate strange or “weird” ideas from a brainstorming session
+d) To limit the number of participants in a group session
+b
+
+472
+How is a “Conceptual Block” defined in the provided material?
+{حسب الصفحة 62: العائق المفاهيمي يُعرف بأنه "جدار عقلي" (mental wall) يمنع الشخص من إدراك المشكلة بشكل صحيح أو تصور حلها.}
+a) A physical barrier to completing a task.
+b) The final stage of the problem-solving flow chart.
+c) A mental wall that prevents correctly perceiving or conceiving a solution.
+d) The act of attacking symptoms instead of the real problem.
+c
+
+472
+Which method is identified as a “statistical approach” to connecting all nine dots?
+{حسب الصفحة 62: اقتراح "تجعيد الورقة وطعنها بقلم رصاص" يُوصف بأنه "نهج إحصائي" (statistical approach) لأنه قد يتطلب أكثر من محاولة لضرب كل النقاط.}
+a) Reducing the size of the dots through photocopying.
+b) Rolling the paper into a cylinder and drawing a single line.
+c) Crumpling the paper and stabbing it with a pencil.
+d) Using a thick felt pen to cover all dots simultaneously.
+c
+
+472
+What is a primary consequence of “Emotional Blocks” during the problem-solving process?
+{حسب الصفحة 63: العوائق العاطفية "تقلل من مقدار الحرية" (decrease the amount of freedom) التي يمكنك من خلالها استكشاف الأفكار والتلاعب بها.}
+a) They increase the speed at which a problem is solved.
+b) They decrease the freedom to explore and manipulate ideas.
+c) They help solvers gain immediate approval from others.
+d) They ensure that the most logical criteria are always met.
+b
+
+472
+Which type of block might occur if a person attempts to solve a complex satellite communications problem without sufficient background knowledge?
+{حسب الصفحة 64: محاولة حل مشكلة اتصالات معقدة بدون خلفية علمية كافية تؤدي إلى إعاقة التقدم، وهذا مثال واضح على "العائق الفكري" (Intellectual Block).}
+a) Intellectual Block.
+b) Expressive Block.
+c) Environmental Block.
+d) Cultural Block.
+a
+
+472
+What is recommended as a way to practice “Breaking the Rules” to foster innovation?
+{حسب الصفحة 65: في جدول كسر العوائق (Blockbusters)، يُنصح بكسر القواعد الروتينية من خلال "تجربة أشياء جديدة، مثل سلك طريق مختلف للعمل أو تجربة طعام جديد" (taking a different route... trying a new food).}
+a) Stopping at red lights more frequently.
+b) Trying new things, such as taking a different route to work or trying new food.
+c) Relying on internal logic to determine which rules are necessary.
+d) Asking “what if” questions only when rules are strictly followed.
+b
+
+472
+In what way does the text suggest a person can overcome rigid patterns and biases when solving problems?
+{حسب الصفحة 66: لتجنب الأنماط الصارمة والتحيزات، يُنصح بالنظر للمشكلة من وجهة نظر جديدة و "تطوير على الأقل حلين بديلين أو أكثر" (developing at least two or more alternative solutions).}
+a) By sticking to the first solution that seems practical.
+b) By avoiding “new questions” to stay on track.
+c) By developing at least two or more alternative solutions.
+d) Waiting for a solution to arrive in its complete form.
+c
+
+472
+According to the text, what approach did American managers historically take that de Bono claims led to the decline of American industry?
+{حسب الصفحة 67: المدراء الأمريكيون في السابق كانوا يعملون في "وضع تفاعلي صارم" (strictly reactive mode)، حيث كانوا يستجيبون للمشاكل فقط عند ظهورها.}
+a) Proactive thinking and fixing things that weren’t problems.
+b) A strictly reactive mode, merely responding to problems as they arose.
+c) Exhaustive reviews of international literature.
+d) Implementing the Six Thinking Hats technique too early.
+b
+
+472
+What is identified as a “key” factor for successful group brainstorming sessions?
+{حسب الصفحة 68: يُعتبر "إثارة الأفكار لدى الآخرين" (triggering of ideas in others) من خلال البناء على اقتراحاتهم هو العامل الرئيسي لنجاح العصف الذهني الجماعي.}
+a) Maintaining a strict, structured association of ideas.
+b) Using negative comments to prune impractical suggestions.
+c) The triggering of ideas in others by building upon their suggestions.
+d) Limiting the session to one or two individuals to avoid “braindrizzling.”
+c
+
+472
+What is the primary purpose of using “Osborn’s Checklist” as a blockbusting technique?
+{حسب الصفحة 69: تستخدم قائمة أوزبورن بشكل مفيد لمساعدة المجموعة على البناء على أفكار بعضهم البعض، وهو ما يُعرف في العصف الذهني بـ (piggyback).}
+a) To rank the generated ideas from most to least expensive.
+b) To help a group build on one another’s ideas through “piggybacking”.
+c) To determine which players should be allowed to use trampolines.
+d) To replace the group leader with a more creative facilitator.
+b
+
+472
+How should “weird” or strange ideas be treated during a session using Random Stimulation?
+{حسب الصفحة 70: يذكر الكتاب بوضوح أن إدخال الأفكار الغريبة أو العجيبة أثناء العصف الذهني يجب "ألا يُتجنب بل يجب تشجيعه" (should not be shunned but instead should be encouraged).}
+a) They should be shunned to avoid confusion
+b) They should be ignored in favor of traditional logic
+c) They should be encouraged and not shunned
+d) They should only be used if they come from a dictionary
+c
+
+472
+A problem solver who refuses to start a task because they feel the problem is too “trivial” or “unworthy of their efforts” is experiencing which block?
+{حسب الصفحة 63: الشعور بأن المشكلة تافهة ولا تستحق الجهد يُصنف تحت العائق العاطفي المُسمى "نقص التحدي" (Lack of challenge).}
+a) Lack of challenge.
+b) Saturation.
+c) Lack of appetite for chaos.
+d) Cultural blocks.
+a
+
+472
+What is suggested to help overcome expressive blocks?
+{حسب الصفحة 64: للتغلب على العوائق التعبيرية (Expressive Blocks)، يُنصح بـ "عمل رسومات تخطيطية" وعدم الخوف من أخذ الوقت لشرح المشكلة للآخرين (Make sketches, drawings...).}
+a) Ignore others
+b) Work alone
+c) Make sketches and drawings
+d) Avoid explaining the problem
+c
+
+472
+When an “Overreliance on Logic” hinders creativity, how can an “Internal Creative Climate” be established?
+{حسب الصفحة 65: في جدول كسر العوائق، يتم إرساء مناخ إبداعي داخلي (Internal Creative Climate) من خلال تحويل الموقف إلى "خيالك، ومشاعرك، وحسك الفكاهي" (imagination, feelings, sense of humor).}
+a) By proceeding in a strict step-by-step fashion.
+b) By turning the situation over to imagination, feelings, and a sense of humor.
+c) By focusing on unsatisfactory outcomes to stay grounded.
+d) By listing only the logical outcomes of a problem.
+b
+
+472
+What specific strategy is recommended to reduce the fear of failure when adopting a risk-taking attitude?
+{حسب الصفحة 66: تحت مبدأ تبني موقف المخاطرة، يُنصح بـ "تحديد الطرق التي قد تفشل بها وكيف ستتعامل مع هذه الإخفاقات" (Outlining the ways you could fail and how you would deal with these failures) للتقليل من الخوف.}
+a) Avoiding any solution that has a “small chance of succeeding.”
+b) Focusing only on the major impact of a success.
+c) Outlining potential failures and how you would deal with them.
+d) Reducing the number of creative hobbies you engage in.
+c
+
+472
+What is the primary purpose of the “Six Thinking Hats” technique mentioned in the text?
+{حسب الصفحة 67: أداة قبعات التفكير الست لدي بونو هي أداة تساعدك على "النظر إلى الموقف من وجهات نظر مختلفة عديدة" (look at a situation from many different viewpoints).}
+a) To replace random stimulation in business sessions.
+b) To help look at a situation from many different viewpoints.
+c) To summarize 25 years of research into historical industrial failures.
+d) To organize an exhaustive review of scientific literature.
+b
+
+472
+Which of the following is categorized as a comment that reduces brainstorming to “braindrizzling”?
+{حسب الصفحة 68: يوجد جدول بالتعليقات السلبية التي تدمر العصف الذهني، ومن ضمنها عبارة "لم نفعلها بهذه الطريقة من قبل" (We haven't done it that way before).}
+a) “Let’s build on that radical idea.”
+b) “We should reserve judgment until later.”
+c) “We haven’t done it that way before.”
+d) “Let’s generate as many ideas as possible.”
+c
+
+472
+Under the “Modify?” category of the checklist, which of the following is suggested to generate additional alternatives?
+{حسب الصفحة 69: في قائمة أوزبورن، فئة التعديل (Modify) تعني التفكير في "تغيير المعنى، المادة، اللون، الشكل، أو الرائحة" (Change the meaning, material, color, shape, odor).}
+a) Adding a new ingredient or making something longer, stronger, or thicker.
+b) Interchanging parts, reversing roles, or turning something upside down.
+c) Combining parts, units, or ideas from different categories.
+d) Changing the meaning, material, color, shape, or odor.
+d
+
+472
+In the process of Random Stimulation, a random piece of information acts as a to change patterns of thought.
+{حسب الصفحة 70: يتم استخدام المعلومات العشوائية كـ "محفز أو مفتاح تبديل" (trigger or switch) لتغيير أنماط التفكير عندما يحدث عائق ذهني.}
+a) Barrier or roadblock
+b) Trigger or switch
+c) Final finalized solution
+d) Group leader
+b
+
+472
+What does the “Nine Dot Problem” exercise demonstrate about problem-solving constraints?
+{حسب الصفحة 62: الغرض الأساسي من تمرين النقاط التسع هو إظهار أن وضع قيود كثيرة (بوعي أو بدون وعي) على المشكلة يُضيق نطاق الحلول الممكنة (narrows the range of possible solutions).}
+a) Constraints are always necessary for a valid solution.
+b) Imposing unnecessary constraints narrows the range of possible solutions.
+c) Lines must always go through the exact center of every dot.
+d) Problems can only be solved through a statistical approach.
+b
+
+472
+In the context of “Stereotyping,” what is described as the standard or expected use for a flashlight?
+{حسب الصفحة 62: الاستخدام النمطي أو المعتاد (stereotypical use) للمصباح اليدوي هو لل "الإشارة، أو إيجاد الأشياء في الظلام" (signaling, finding things in the dark).}
+a) Using the glass lens to focus sunlight and start a fire.
+b) Using the metal casing as a container for survival supplies.
+c) Using it for signaling or finding things in the dark.
+d) Using the batteries to create an electrical spark.
+c
+
+472
+How does the text define a “Cultural Block” in the context of problem-solving?
+{حسب الصفحة 63: يُعرّف العائق الثقافي بأنه الإخفاق في التفكير في فعل معين لمجرد أنه قد يتسبب في "الاستياء أو الاشمئزاز لأعضاء معينين في المجتمع" (displeasure or disgust to certain members of society).}
+a) A block imposed by the physical layout of a workspace.
+b) Inability to understand technical terminology from other cultures.
+c) The failure to consider an act because it might cause displeasure or disgust in society.
+d) A rush to solve a problem just to remove it from one’s mind.
+c
+
+472
+How is an “Expressive Block” defined in the material provided?
+{حسب الصفحة 64: العائق التعبيري هو عدم القدرة على "توصيل أو إيصال أفكارك للآخرين، سواء في شكل شفهي أو كتابي" (communicate your ideas to others, in either verbal or written form).}
+a) The lack of organizational support to bring ideas into action.
+b) Inadequate use of various problem-solving strategies.
+c) The inability to communicate ideas to others in verbal or written form.
+d) A failure to focus due to a noisy working environment.
+c
+
+472
+Why is the belief that “You Aren’t Creative” considered a serious hindrance to generating solutions?
+{حسب الصفحة 65: الاعتقاد بأنك لست مبدعاً أو لا تستطيع فعل شيء يُعتبر "نبوءة تتحقق ذاتياً" (self-fulfilling prophesy)، مما يمنعك من توليد الحلول الإبداعية فعلياً.}
+a) It encourages the use of too many metaphors and analogies.
+b) It leads to an overreliance on “daydreaming.”
+c) It becomes a self-fulfilling prophecy that blocks creative solutions.
+d) It forces a person to take too many risks.
+c
+
+472
+How does the text define the process of deepening your self-knowledge to improve creativity?
+{حسب الصفحة 66: تعميق معرفتك الذاتية يتم من خلال تعلم ومعرفة "نقاط قوتك الحقيقية، ومهاراتك، وضعفك، وتحيزاتك، ومخاوفك" (real strengths, skills, weaknesses, biases, expectations, fears).}
+a) By focusing only on your “real strengths” and ignoring weaknesses.
+b) By learning your real strengths, skills, weaknesses, biases, and fears.
+c) By strictly following the Kepner-Tregoe strategies.
+d) By assuming you already possess all the necessary skills.
+b
+
+472
+To best preserve opportunities for creativity and innovation when starting a new topic, what does the author suggest doing after getting a “feel” for the problem?
+{حسب الصفحة 67: بعد التعرف المبدئي على المشكلة، يُنصح بالتوقف و "تنظيم بعض أفكارك الخاصة" (stop and organize some of your own ideas) قبل الشروع في مراجعة شاملة للمؤلفات لمنع التحيز.}
+a) Reading all available information to avoid wasting time.
+b) Adopting the saying “If it ain’t broke, don’t fix it.”
+c) Stop and organize some of your own ideas before proceeding with an exhaustive literature review.
+d) Immediately applying lateral thinking techniques like random stimulation.
+c
+
+472
+In the brainstorming exercises conducted with students, what was the primary guideline used?
+{حسب الصفحة 68: في بعض التمارين غير المنظمة (unstructured) التي أجريت مع الطلاب، كانت القاعدة التوجيهية الوحيدة هي "توليد أكبر عدد ممكن من الأفكار" (generate as many ideas as possible).}
+a) To follow a highly structured and formal format.
+b) To generate as many ideas as possible in a free-format nature.
+c) To ensure every idea was compatible with current policies.
+d) To avoid unstructured sessions at all costs.
+b
+
+472
+Which category of the checklist is defined by asking how a product, idea, or plan could be used for other purposes as it currently exists?
+{حسب الصفحة 69: السؤال "كيف يمكن استخدام هذا كما هو؟ ما هي الاستخدامات الأخرى التي يمكن تكييفه معها؟" يندرج حرفياً تحت فئة التكييف (Adapt).}
+a) Adapt?
+b) Substitute?
+c) Magnify?
+d) Minify?
+a
+
+472
+In the specific example given, the random word “humbug” eventually led the group to which innovative idea for basketball?
+{حسب الصفحة 70: في مثال التحفيز العشوائي، الكلمة "humbug" أدت إلى ربطها بـ "scrooge" ثم "mean" ثم "rough"، مما أسفر في النهاية عن فكرة "قواعد أخطاء أكثر استرخاء للاعبين القصار" (more relaxed foul rules for short players).}
+a) Separate leagues for taller and shorter players
+b) Raising the baskets for all players
+c) More relaxed foul rules for short players
+d) Allowing assists to count as points
+c

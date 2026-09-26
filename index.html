@@ -232,50 +232,131 @@ svg{flex-shrink:0}
 .solo-notice-text span{color:var(--text-dim);font-size:0.86rem;line-height:1.7}
 
 /* ---------- Interactive quiz ---------- */
-.quiz-active-container{max-width:780px;margin:0 auto;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:24px;animation:fadeIn 0.5s ease;position:relative;box-shadow:var(--shadow-md)}
-.quiz-top-bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:10px}
-.quiz-progress-bar{width:100%;height:6px;background:var(--surface-3);border-radius:10px;margin-bottom:25px;overflow:hidden}
-.quiz-progress-fill{height:100%;background:var(--grad-brand);border-radius:10px;transition:width 0.4s cubic-bezier(0.4,0,0.2,1)}
-.exam-timer{background:rgba(var(--red-rgb),0.1);border:1px solid rgba(var(--red-rgb),0.3);color:var(--red-soft);padding:5px 12px;border-radius:20px;font-family:var(--font-nums);font-weight:700;font-size:0.9rem;display:flex;align-items:center;gap:5px}
+.quiz-active-container{max-width:780px;margin:0 auto;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:24px;animation:fadeIn 0.4s ease;position:relative;box-shadow:var(--shadow-md);overflow:hidden}
+.quiz-active-container::before{content:'';position:absolute;top:0;right:24px;left:24px;height:2px;border-radius:0 0 2px 2px;background:var(--grad-brand);opacity:0.75}
+.quiz-state{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;padding:48px 24px;color:var(--text-dim)}
+.quiz-spinner{width:34px;height:34px;border-radius:50%;border:3px solid var(--surface-3);border-top-color:var(--gold);animation:spinSlow 0.8s linear infinite}
+.quiz-state-icon{font-size:2rem;color:var(--orange);display:flex}
+.quiz-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:18px}
+.quiz-head-text{display:flex;flex-direction:column;gap:3px;min-width:0}
+.quiz-eyebrow{font-family:var(--font-nums);font-size:0.74rem;font-weight:700;letter-spacing:0.4px;color:var(--gold);unicode-bidi:plaintext}
+.quiz-head-title{margin:0;font-family:var(--font-display);font-size:1.25rem;font-weight:700;color:var(--text);line-height:1.45}
+.quiz-icon-btn{width:38px;height:38px;flex-shrink:0;border-radius:11px;display:inline-flex;align-items:center;justify-content:center;background:var(--surface-2);border:1px solid var(--line);color:var(--text-dim);cursor:pointer;transition:0.2s;font-size:1rem;padding:0}
+.quiz-icon-btn:hover{color:var(--text);border-color:var(--line-strong);background:var(--surface-3)}
+.quiz-stats{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:10px;margin-bottom:18px}
+.quiz-stat{background:var(--surface-2);border:1px solid var(--line);border-radius:var(--r-md);padding:12px 8px;display:flex;flex-direction:column;align-items:center;gap:1px}
+.quiz-stat b{font-family:var(--font-nums);font-size:1.4rem;font-weight:800;color:var(--text);line-height:1.25}
+.quiz-stat span{font-size:0.76rem;color:var(--text-dim);font-weight:600}
+.quiz-stat.is-good b{color:var(--green)}
+.quiz-stat.is-bad b{color:var(--red)}
+.quiz-mode-grid{display:grid;grid-template-columns:1fr;gap:10px}
+@media(min-width:560px){.quiz-mode-grid{grid-template-columns:1fr 1fr}}
+.quiz-mode{display:flex;align-items:center;gap:14px;padding:16px;border-radius:var(--r-md);border:1px solid rgba(var(--m-rgb),0.32);background:linear-gradient(160deg,rgba(var(--m-rgb),0.14),rgba(var(--m-rgb),0.03) 70%),var(--surface-2);color:var(--text);cursor:pointer;text-align:right;transition:var(--transition)}
+.quiz-mode:hover{transform:translateY(-2px);border-color:rgba(var(--m-rgb),0.6);box-shadow:0 10px 24px rgba(var(--m-rgb),0.16)}
+.quiz-mode.is-random{--m:var(--orange);--m-rgb:var(--orange-rgb)}
+.quiz-mode.is-all{--m:var(--gold);--m-rgb:var(--gold-rgb)}
+.quiz-mode-icon{width:44px;height:44px;flex-shrink:0;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.25rem;color:var(--m);background:rgba(var(--m-rgb),0.14);border:1px solid rgba(var(--m-rgb),0.3)}
+.quiz-mode-text{display:flex;flex-direction:column;gap:2px;min-width:0}
+.quiz-mode-text strong{font-family:var(--font-display);font-size:1rem;font-weight:700}
+.quiz-mode-text span{font-size:0.8rem;color:var(--text-dim)}
+.quiz-sub-label{display:flex;align-items:center;gap:10px;margin:22px 0 10px;font-size:0.78rem;font-weight:700;color:var(--text-dim);letter-spacing:0.3px}
+.quiz-sub-label::after{content:'';flex:1;height:1px;background:linear-gradient(to left,var(--line-strong),transparent)}
+.group-select-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}
+.group-btn{padding:13px 10px;background:var(--surface-2);border:1px solid var(--line);color:var(--text);border-radius:12px;cursor:pointer;transition:var(--transition);display:flex;flex-direction:column;align-items:center;gap:3px}
+.group-btn:hover{background:rgba(var(--cyan-rgb),0.09);border-color:rgba(var(--cyan-rgb),0.45);transform:translateY(-1px)}
+.group-name{font-family:var(--font-nums);font-weight:700;font-size:0.95rem;direction:ltr;transition:color 0.2s}
+.group-btn:hover .group-name{color:var(--cyan)}
+.group-count{font-size:0.74rem;color:var(--text-dim);font-weight:600}
+.quiz-hint{margin-top:18px;font-size:0.76rem;color:var(--text-faint);text-align:center}
+@media(hover:none){.quiz-hint{display:none}}
+.quiz-top-bar{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.quiz-top-title{display:flex;flex-direction:column;align-items:flex-start;gap:3px;min-width:0;flex:1}
+.quiz-chip{display:inline-flex;align-items:center;max-width:100%;padding:2px 10px;border-radius:20px;font-family:var(--font-nums);font-size:0.74rem;font-weight:700;color:var(--text-2);background:var(--surface-2);border:1px solid var(--line);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;unicode-bidi:plaintext}
+.quiz-top-tools{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.exam-timer{background:rgba(var(--red-rgb),0.1);border:1px solid rgba(var(--red-rgb),0.3);color:var(--red-soft);padding:5px 11px;border-radius:20px;font-family:var(--font-nums);font-weight:700;font-size:0.86rem;display:flex;align-items:center;gap:5px;direction:ltr}
 .exam-timer.warning{background:var(--red);border-color:var(--red);color:#fff;animation:pulse-red 1s infinite}
-.auto-advance-wrapper{display:flex;align-items:center;gap:10px;background:var(--surface-2);padding:5px 10px;border-radius:20px;border:1px solid var(--line);cursor:pointer;color:var(--text-dim)}
-.toggle-switch{width:36px;height:20px;background:var(--line-strong);border-radius:20px;position:relative;cursor:pointer;transition:0.3s}
+.auto-advance-wrapper{display:flex;align-items:center;gap:8px;background:var(--surface-2);padding:5px 10px 5px 6px;border-radius:20px;border:1px solid var(--line);cursor:pointer;color:var(--text-dim);font-size:0.78rem;font-weight:700;transition:0.2s}
+.auto-advance-wrapper:hover{border-color:var(--line-strong);color:var(--text)}
+.toggle-switch{display:inline-block;width:34px;height:20px;background:var(--line-strong);border-radius:20px;position:relative;transition:0.3s;flex-shrink:0}
 .toggle-switch.on{background:var(--green)}
-.toggle-knob{width:16px;height:16px;background:#fff;border-radius:50%;position:absolute;top:2px;left:2px;transition:0.3s;box-shadow:0 1px 3px rgba(0,0,0,0.3)}
-.toggle-switch.on .toggle-knob{transform:translateX(16px)}
-.quiz-q-counter{color:var(--text-dim);font-size:0.85rem;font-weight:700;letter-spacing:0.3px}
-.quiz-question-text{font-size:1.2rem;line-height:1.65;margin-bottom:28px;color:var(--text);font-weight:700;border-left:3px solid var(--gold);padding-left:15px}
-.quiz-options-grid{display:grid;gap:11px}
-.quiz-option-btn{padding:15px 18px;border-radius:var(--r-md);background:var(--surface-2);border:1px solid var(--line);color:var(--text-2);text-align:left;cursor:pointer;transition:all 0.2s;font-size:1rem;display:flex;gap:12px;align-items:center;position:relative;overflow:hidden;line-height:1.5}
-.quiz-option-btn:hover:not(:disabled){background:var(--surface-3);transform:translateX(4px);border-color:var(--line-strong);color:var(--text)}
+.toggle-knob{display:block;width:16px;height:16px;background:#fff;border-radius:50%;position:absolute;top:2px;left:2px;transition:0.3s;box-shadow:0 1px 3px rgba(0,0,0,0.3)}
+.toggle-switch.on .toggle-knob{transform:translateX(14px)}
+.quiz-progress-row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px}
+.quiz-q-counter{color:var(--text-dim);font-size:0.84rem;font-weight:600}
+.quiz-q-counter b{font-family:var(--font-nums);color:var(--text);font-weight:800}
+.quiz-live-score{display:flex;gap:6px;font-family:var(--font-nums);font-size:0.8rem;font-weight:700}
+.quiz-live-score span{display:inline-flex;align-items:center;gap:4px;padding:2px 9px;border-radius:20px}
+.quiz-live-score .is-good{color:var(--green);background:rgba(var(--green-rgb),0.1)}
+.quiz-live-score .is-bad{color:var(--red);background:rgba(var(--red-rgb),0.09)}
+.quiz-progress-bar{width:100%;height:6px;background:var(--surface-3);border-radius:10px;margin-bottom:22px;overflow:hidden}
+.quiz-progress-fill{height:100%;background:var(--grad-brand);border-radius:10px;transition:width 0.4s cubic-bezier(0.4,0,0.2,1)}
+.quiz-question-card{animation:fadeIn 0.35s ease}
+.quiz-question-text{font-size:1.12rem;line-height:1.75;margin-bottom:18px;color:var(--text);font-weight:600;padding:16px 18px;background:var(--well);border:1px solid var(--line);border-radius:var(--r-md);text-align:left}
+.quiz-options-grid{display:grid;gap:10px}
+.quiz-option-btn{width:100%;padding:13px 14px;border-radius:var(--r-md);background:var(--surface-2);border:1px solid var(--line);color:var(--text-2);text-align:left;cursor:pointer;transition:all 0.2s;font-size:0.98rem;display:flex;gap:12px;align-items:center;line-height:1.55}
+.quiz-option-btn:hover:not(:disabled){background:var(--surface-3);border-color:rgba(var(--gold-rgb),0.45);color:var(--text);transform:translateX(3px)}
+.quiz-option-btn:hover:not(:disabled) .option-letter{border-color:rgba(var(--gold-rgb),0.5);color:var(--gold)}
 .quiz-option-btn:disabled{cursor:default}
-.quiz-option-btn.selected{border-color:var(--text);background:var(--surface-3);color:var(--text)}
-.quiz-option-btn.correct{background:rgba(var(--green-rgb),0.12);border-color:var(--green);color:var(--green)}
-.quiz-option-btn.wrong{background:rgba(var(--red-rgb),0.1);border-color:var(--red);color:var(--red);opacity:0.8}
-.option-letter{font-weight:800;font-family:var(--font-nums);width:30px;height:30px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:var(--well);border:1px solid var(--line);border-radius:8px;font-size:0.9rem}
+.quiz-option-btn.correct{background:rgba(var(--green-rgb),0.12);border-color:var(--green);color:var(--text);animation:popIn 0.3s ease}
+.quiz-option-btn.wrong{background:rgba(var(--red-rgb),0.1);border-color:var(--red);color:var(--text)}
+.quiz-option-btn.dim{opacity:0.5}
+.option-letter{font-weight:800;font-family:var(--font-nums);width:30px;height:30px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:var(--well);border:1px solid var(--line);border-radius:9px;font-size:0.88rem;transition:0.2s}
 .quiz-option-btn.correct .option-letter{background:var(--green);border-color:var(--green);color:var(--on-accent)}
 .quiz-option-btn.wrong .option-letter{background:var(--red);border-color:var(--red);color:#fff}
-.quiz-nav-actions{display:flex;justify-content:space-between;margin-top:28px;padding-top:20px;border-top:1px solid var(--line)}
-.quiz-nav-btn{padding:12px 24px;border-radius:12px;border:1px solid transparent;font-weight:700;cursor:pointer;background:var(--ink);color:var(--on-ink);display:flex;align-items:center;gap:8px;transition:0.3s}
-.quiz-nav-btn:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.option-text{flex:1;min-width:0}
+.option-mark{display:flex;font-size:0.95rem;flex-shrink:0}
+.quiz-option-btn.correct .option-mark{color:var(--green)}
+.quiz-option-btn.wrong .option-mark{color:var(--red)}
+.quiz-feedback{margin-top:14px;padding:14px 16px;border-radius:var(--r-md);border:1px solid;animation:fadeIn 0.3s ease}
+.quiz-feedback.is-right{background:rgba(var(--green-rgb),0.07);border-color:rgba(var(--green-rgb),0.35)}
+.quiz-feedback.is-wrong{background:rgba(var(--red-rgb),0.06);border-color:rgba(var(--red-rgb),0.3)}
+.quiz-feedback-head{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-weight:700;font-size:0.92rem;line-height:1.6}
+.is-right .quiz-feedback-head{color:var(--green)}
+.is-wrong .quiz-feedback-head{color:var(--red-soft)}
+.quiz-feedback-icon{width:24px;height:24px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:0.72rem;flex-shrink:0}
+.is-right .quiz-feedback-icon{background:var(--green);color:var(--on-accent)}
+.is-wrong .quiz-feedback-icon{background:var(--red);color:#fff}
+.quiz-feedback-ans{color:var(--text);font-weight:600}
+.quiz-feedback-exp{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line-strong);color:var(--text-2);font-size:0.9rem;line-height:1.9}
+.quiz-nav-actions{display:flex;justify-content:space-between;gap:10px;margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+.quiz-nav-btn{padding:11px 20px;border-radius:12px;border:1px solid transparent;font-weight:700;font-size:0.92rem;cursor:pointer;background:var(--ink);color:var(--on-ink);display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:0.25s}
+.quiz-nav-btn:hover:not(:disabled){transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.quiz-nav-btn:disabled{opacity:0.35;cursor:not-allowed}
 .quiz-nav-btn.secondary{background:transparent;color:var(--text-dim);border-color:var(--line)}
-.quiz-nav-btn.secondary:hover{color:var(--text);border-color:var(--line-strong);background:var(--surface-2);box-shadow:none}
-.group-select-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;margin-bottom:8px}
-.group-btn{padding:15px 10px;background:var(--surface-2);border:1px solid var(--line);color:var(--text);border-radius:12px;font-weight:700;cursor:pointer;transition:var(--transition);text-align:center;display:flex;flex-direction:column;align-items:center;gap:5px}
-.group-btn:hover{background:rgba(var(--cyan-rgb),0.12);color:var(--cyan);border-color:rgba(var(--cyan-rgb),0.45)}
-.group-btn.all-btn{grid-column:1/-1;background:var(--grad-brand);color:var(--on-grad);border:none;flex-direction:row;justify-content:center}
-.group-btn.all-btn:hover{background:var(--grad-brand);color:var(--on-grad);transform:translateY(-1px);box-shadow:0 10px 24px rgba(var(--gold-rgb),0.22)}
-.group-btn.random-btn{grid-column:1/-1;background:linear-gradient(135deg,#ff9f43,#f4433f);color:#fff;border:none;box-shadow:0 8px 20px rgba(255,120,67,0.25);flex-direction:row;justify-content:center}
-.group-btn.random-btn:hover{background:linear-gradient(135deg,#ff9f43,#f4433f);color:#fff;transform:translateY(-1px);box-shadow:0 12px 26px rgba(255,120,67,0.35)}
-.review-card{background:var(--surface-2);border:1px solid var(--line);padding:15px;margin-bottom:14px;border-radius:12px}
-.q-text{font-weight:700;margin-bottom:10px;color:var(--text);direction:ltr}
-.ans-row{padding:8px 10px;border-radius:8px;margin-bottom:5px;font-size:0.9rem;display:flex;align-items:center;gap:8px}
-.ans-row.wrong{background:rgba(var(--red-rgb),0.1);color:var(--red-soft);border:1px solid rgba(var(--red-rgb),0.3)}
-.ans-row.correct{background:rgba(var(--green-rgb),0.1);color:var(--green);border:1px solid rgba(var(--green-rgb),0.3)}
-.explanation-box{margin-top:10px;padding:10px 12px;background:rgba(var(--gold-rgb),0.08);border-right:3px solid var(--gold);border-radius:8px;color:var(--text-2);font-size:0.9rem;line-height:1.7}
-.trophy-icon{font-size:4rem;margin-bottom:10px;animation:popIn 0.5s cubic-bezier(0.175,0.885,0.32,1.275) forwards}
-.save-btn-new{width:100%;padding:15px;background:var(--grad-brand);color:var(--on-grad);font-weight:800;font-size:1rem;border:none;border-radius:14px;margin-top:20px;cursor:pointer;transition:0.3s;display:flex;align-items:center;justify-content:center;gap:8px}
-.save-btn-new:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(var(--cyan-rgb),0.25)}
+.quiz-nav-btn.secondary:hover:not(:disabled){color:var(--text);border-color:var(--line-strong);background:var(--surface-2);box-shadow:none}
+.quiz-nav-btn.is-danger{color:var(--red-soft);border-color:rgba(var(--red-rgb),0.32);background:rgba(var(--red-rgb),0.06)}
+.quiz-nav-btn.is-danger:hover:not(:disabled),.quiz-nav-btn.is-danger.is-on{color:var(--red-soft);background:rgba(var(--red-rgb),0.14);border-color:var(--red)}
+.quiz-nav-btn.wide{width:100%;margin-top:8px}
+.score-hero{display:flex;flex-direction:column;align-items:center;gap:14px;padding:4px 0 20px}
+.score-hero.tone-gold{--tone:var(--gold)}
+.score-hero.tone-green{--tone:var(--green)}
+.score-hero.tone-cyan{--tone:var(--cyan)}
+.score-hero.tone-red{--tone:var(--red)}
+.score-ring{width:150px;height:150px;border-radius:50%;background:conic-gradient(var(--tone) calc(var(--p) * 1%),var(--surface-3) 0);display:flex;align-items:center;justify-content:center;animation:popIn 0.5s cubic-bezier(0.175,0.885,0.32,1.275)}
+.score-ring-inner{width:calc(100% - 22px);height:calc(100% - 22px);border-radius:50%;background:var(--surface);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:inset 0 0 0 1px var(--line)}
+.score-ring-inner b{font-family:var(--font-nums);font-size:2.3rem;font-weight:800;color:var(--tone);line-height:1.1;direction:ltr}
+.score-ring-inner span{font-family:var(--font-nums);font-size:0.9rem;color:var(--text-dim);font-weight:600;direction:ltr}
+.score-msg{font-family:var(--font-display);font-weight:600;font-size:1.02rem;color:var(--text);text-align:center}
+.result-actions{display:grid;grid-template-columns:1fr;gap:8px}
+@media(min-width:560px){.result-actions{grid-auto-flow:column;grid-auto-columns:minmax(0,1fr)}}
+.result-actions .quiz-nav-btn{width:100%;padding-inline:12px}
+.save-btn-new{width:100%;padding:15px;background:var(--grad-brand);color:var(--on-grad);font-weight:800;font-size:1rem;border:none;border-radius:14px;margin-top:18px;cursor:pointer;transition:0.3s;display:flex;align-items:center;justify-content:center;gap:8px}
+.save-btn-new:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(var(--gold-rgb),0.25)}
+.review-list{display:flex;flex-direction:column;gap:12px;margin:16px 0 4px}
+.review-card{background:var(--surface-2);border:1px solid var(--line);padding:16px;border-radius:var(--r-md);animation:fadeIn 0.3s ease}
+.review-card-head{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.review-num{min-width:28px;height:28px;padding:0 6px;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-nums);font-weight:800;font-size:0.82rem;color:var(--gold);background:rgba(var(--gold-rgb),0.1);border:1px solid rgba(var(--gold-rgb),0.3)}
+.q-text{font-weight:600;margin-bottom:12px;color:var(--text);text-align:left;line-height:1.7}
+.ans-row{padding:9px 11px;border-radius:10px;margin-bottom:6px;font-size:0.88rem;display:flex;align-items:flex-start;gap:10px;border:1px solid transparent;line-height:1.6}
+.ans-tag{display:inline-flex;align-items:center;gap:5px;flex-shrink:0;font-weight:700;font-size:0.78rem;white-space:nowrap;padding-top:1px}
+.ans-text{flex:1;min-width:0;text-align:left;color:var(--text-2)}
+.ans-row.wrong{background:rgba(var(--red-rgb),0.07);border-color:rgba(var(--red-rgb),0.28)}
+.ans-row.wrong .ans-tag{color:var(--red-soft)}
+.ans-row.correct{background:rgba(var(--green-rgb),0.08);border-color:rgba(var(--green-rgb),0.3)}
+.ans-row.correct .ans-tag{color:var(--green)}
+.explanation-box{margin-top:10px;padding:11px 13px;background:rgba(var(--gold-rgb),0.07);border-right:3px solid var(--gold);border-radius:10px;color:var(--text-2);font-size:0.88rem;line-height:1.85}
+.explanation-label{display:block;font-weight:700;color:var(--gold);font-size:0.78rem;margin-bottom:3px}
+.quiz-empty{padding:30px 10px;text-align:center;color:var(--text-dim);font-weight:600}
 
 /* ---------- Recordings ---------- */
 .rec-group-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);margin-bottom:14px;overflow:hidden;transition:0.3s;box-shadow:var(--shadow-sm)}
@@ -620,8 +701,14 @@ svg{flex-shrink:0}
 .author-name{font-size:0.74rem}
 .res-link-btn{min-width:110px}
 .pro-resource-card{padding:16px}
-.quiz-active-container{padding:18px}
-.quiz-question-text{font-size:1.08rem}
+.quiz-active-container{padding:18px 16px}
+.quiz-question-text{font-size:1.03rem;padding:14px}
+.quiz-option-btn{padding:12px}
+.quiz-head-title{font-size:1.12rem}
+.quiz-stat b{font-size:1.2rem}
+.score-ring{width:132px;height:132px}
+.score-ring-inner b{font-size:2rem}
+.quiz-top-title .quiz-eyebrow{display:none}
 .cal-next{gap:11px;padding:14px}
 .cal-next-count{padding:6px 9px;font-size:0.72rem}
 .cal-grid{gap:4px}
@@ -1113,6 +1200,55 @@ const Icons = {
   }), React.createElement("path", {
     d: "M8 11h.01M12 11h.01M16 11h.01M8 14.5h.01M12 14.5h.01M16 14.5h.01M8 18h.01M12 18h.01M16 18h.01",
     strokeWidth: "2.6"
+  })),
+  X: () => React.createElement("svg", {
+    width: "1em",
+    height: "1em",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2.6",
+    strokeLinecap: "round"
+  }, React.createElement("path", {
+    d: "M18 6 6 18M6 6l12 12"
+  })),
+  ArrowRight: () => React.createElement("svg", {
+    width: "1em",
+    height: "1em",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2.2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }, React.createElement("path", {
+    d: "M5 12h14M13 6l6 6-6 6"
+  })),
+  ArrowLeft: () => React.createElement("svg", {
+    width: "1em",
+    height: "1em",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2.2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }, React.createElement("path", {
+    d: "M19 12H5M11 6l-6 6 6 6"
+  })),
+  Retry: () => React.createElement("svg", {
+    width: "1em",
+    height: "1em",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2.2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }, React.createElement("path", {
+    d: "M3 12a9 9 0 1 0 3-6.7L3 8"
+  }), React.createElement("path", {
+    d: "M3 3v5h5"
   }))
 };
 const fileResources = {
@@ -1229,70 +1365,159 @@ const AudioPlayer = ({
     className: "ap-time"
   }, fmtTime(dur))));
 };
+const QUIZ_ALL = 'ALL',
+  QUIZ_RANDOM = 'RANDOM';
+const QUIZ_KEYS = {
+  a: 'A',
+  b: 'B',
+  c: 'C',
+  d: 'D',
+  e: 'E',
+  f: 'F',
+  '1': 'A',
+  '2': 'B',
+  '3': 'C',
+  '4': 'D',
+  '5': 'E',
+  '6': 'F'
+};
+const parseQuizText = text => {
+  const parsed = [];
+  let grp = "General",
+    q = null;
+  text.split('\n').forEach(l => {
+    l = l.trim();
+    if (!l) return;
+    if (l.startsWith('{') && l.endsWith('}')) {
+      if (q) q.explanation = l.slice(1, -1).trim();
+      return;
+    }
+    if (/^[A-H]$/i.test(l)) {
+      if (q && q.options.length) {
+        q.answer = l.toUpperCase();
+        parsed.push(q);
+        q = null;
+      }
+      return;
+    }
+    const opt = q && l.match(/^([A-H])\s*[).:-]\s*(.+)$/i);
+    if (opt) {
+      q.options.push({
+        letter: opt[1].toUpperCase(),
+        text: opt[2]
+      });
+      return;
+    }
+    if (!q) {
+      if (/^(\d{3}(\s+(AM|PM))?|General|Journal)$/i.test(l) || /^[A-Z0-9 ]{2,15}$/.test(l)) grp = l;else q = {
+        id: parsed.length,
+        text: l,
+        options: [],
+        answer: null,
+        group: grp
+      };
+    } else if (q.options.length) q.options[q.options.length - 1].text += " " + l;else q.text += " " + l;
+  });
+  return parsed;
+};
+const quizVerdict = pct => pct === 100 ? {
+  t: 'أداء مثالي! ما شاء الله 🌟',
+  c: 'gold'
+} : pct >= 80 ? {
+  t: 'ممتاز، قريب جداً من الكمال 👏',
+  c: 'green'
+} : pct >= 50 ? {
+  t: 'جيد، راجع أخطاءك وارجع جرّب',
+  c: 'cyan'
+} : {
+  t: 'تحتاج مراجعة أكثر، لا تستسلم 💪',
+  c: 'red'
+};
+const QuizHead = ({
+  eyebrow,
+  title,
+  onClose,
+  closeLabel
+}) => React.createElement("div", {
+  className: "quiz-head"
+}, React.createElement("div", {
+  className: "quiz-head-text"
+}, eyebrow && React.createElement("span", {
+  className: "quiz-eyebrow"
+}, eyebrow), React.createElement("h2", {
+  className: "quiz-head-title"
+}, title)), onClose && React.createElement("button", {
+  className: "quiz-icon-btn",
+  type: "button",
+  onClick: onClose,
+  "aria-label": closeLabel || 'إغلاق'
+}, React.createElement(Icons.X, null)));
+const QuizReviewList = ({
+  items,
+  answers
+}) => React.createElement("div", {
+  className: "review-list"
+}, items.map((q, i) => React.createElement("div", {
+  key: q.id,
+  className: "review-card"
+}, React.createElement("div", {
+  className: "review-card-head"
+}, React.createElement("span", {
+  className: "review-num"
+}, i + 1), q.group && q.group !== 'General' && React.createElement("span", {
+  className: "quiz-chip"
+}, q.group)), React.createElement("div", {
+  className: "q-text",
+  dir: "ltr"
+}, q.text), answers[q.id] && React.createElement("div", {
+  className: "ans-row wrong"
+}, React.createElement("span", {
+  className: "ans-tag"
+}, React.createElement(Icons.X, null), " إجابتك"), React.createElement("span", {
+  className: "ans-text",
+  dir: "ltr"
+}, answers[q.id], ") ", q.options.find(o => o.letter === answers[q.id])?.text)), React.createElement("div", {
+  className: "ans-row correct"
+}, React.createElement("span", {
+  className: "ans-tag"
+}, React.createElement(Icons.Check, null), " الصحيح"), React.createElement("span", {
+  className: "ans-text",
+  dir: "ltr"
+}, q.answer, ") ", q.options.find(o => o.letter === q.answer)?.text)), q.explanation && React.createElement("div", {
+  className: "explanation-box"
+}, React.createElement("span", {
+  className: "explanation-label"
+}, "💡 الشرح"), q.explanation))));
 const InteractiveQuiz = ({
   url,
+  title,
   onClose,
   onFinish,
   reviewData
 }) => {
   const [questions, setQuestions] = useState([]),
-    [currentQ, setCurrentQ] = useState(0),
-    [score, setScore] = useState(0);
+    [currentQ, setCurrentQ] = useState(0);
   const [showScore, setShowScore] = useState(false),
     [selectedOption, setSelectedOption] = useState(null),
     [autoAdvance, setAutoAdvance] = useState(false);
   const [allQ, setAllQ] = useState([]),
     [groups, setGroups] = useState([]),
     [selectedGroup, setSelectedGroup] = useState(null),
-    [loading, setLoading] = useState(true);
+    [loading, setLoading] = useState(true),
+    [failed, setFailed] = useState(false);
   const [userAnswers, setUserAnswers] = useState({});
   const [isReview, setIsReview] = useState(false);
   const [timeLeft, setTimeLeft] = useState(null);
+  const [showMistakes, setShowMistakes] = useState(false);
   useEffect(() => {
     if (!url) return;
-    fetch(url).then(r => r.text()).then(text => {
-      const parsed = [],
-        lines = text.split('\n');
-      let grp = "General",
-        q = null;
-      lines.forEach(l => {
-        l = l.trim();
-        if (!l) return;
-        if (l.startsWith('{') && l.endsWith('}')) {
-          if (q) q.explanation = l.slice(1, -1);
-          return;
-        }
-        if (/^[A-E]$/i.test(l)) {
-          if (q) {
-            q.answer = l.toUpperCase();
-            q.group = grp;
-            parsed.push(q);
-            q = null;
-          }
-          return;
-        }
-        const opt = l.match(/^([A-E])\s*(.+)/i);
-        if (opt) {
-          if (q) q.options.push({
-            letter: opt[1].toUpperCase(),
-            text: opt[2]
-          });
-          return;
-        }
-        if (!q) {
-          if (/^(AI|\d{3}(\s+(AM|PM))?|General|Journal|[A-Z0-9\s]{2,15})$/i.test(l) && !l.includes(')')) grp = l;else q = {
-            id: parsed.length,
-            text: l,
-            options: [],
-            answer: null,
-            group: grp
-          };
-        } else q.text += " " + l;
-      });
-      if (q && q.answer) {
-        q.group = grp;
-        parsed.push(q);
-      }
+    setLoading(true);
+    setFailed(false);
+    fetch(url).then(r => {
+      if (!r.ok) throw new Error(r.status);
+      return r.text();
+    }).then(text => {
+      const parsed = parseQuizText(text);
       setAllQ(parsed);
       setGroups([...new Set(parsed.map(i => i.group))]);
       setLoading(false);
@@ -1302,6 +1527,9 @@ const InteractiveQuiz = ({
         setUserAnswers(reviewData);
         setIsReview(true);
       }
+    }).catch(() => {
+      setFailed(true);
+      setLoading(false);
     });
   }, [url, reviewData]);
   useEffect(() => {
@@ -1319,27 +1547,28 @@ const InteractiveQuiz = ({
     const s = (seconds % 60).toString().padStart(2, '0');
     return `${m}:${s}`;
   };
-  const start = g => {
-    setQuestions(g === 'ALL' ? allQ : allQ.filter(x => x.group === g));
+  const begin = (list, g, secs) => {
+    setQuestions(list);
     setSelectedGroup(g);
     setCurrentQ(0);
-    setScore(0);
+    setSelectedOption(null);
     setShowScore(false);
+    setShowMistakes(false);
     setUserAnswers({});
     setIsReview(false);
-    setTimeLeft(null);
+    setTimeLeft(secs);
   };
+  const start = g => begin(g === QUIZ_ALL ? allQ : allQ.filter(x => x.group === g), g, null);
   const startRandomQuiz = () => {
     const shuffled = [...allQ].sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0, Math.min(10, shuffled.length));
-    setQuestions(selected);
-    setSelectedGroup('اختبار سريع (10 أسئلة)');
-    setCurrentQ(0);
-    setScore(0);
+    begin(shuffled.slice(0, Math.min(10, shuffled.length)), QUIZ_RANDOM, 10 * 60);
+  };
+  const restart = () => selectedGroup === QUIZ_RANDOM ? startRandomQuiz() : start(selectedGroup);
+  const toMenu = () => {
+    setSelectedGroup(null);
+    setSelectedOption(null);
     setShowScore(false);
-    setUserAnswers({});
-    setIsReview(false);
-    setTimeLeft(10 * 60);
+    setTimeLeft(null);
   };
   const next = () => {
     if (currentQ < questions.length - 1) {
@@ -1353,179 +1582,277 @@ const InteractiveQuiz = ({
   const handle = l => {
     if (selectedOption) return;
     setSelectedOption(l);
-    const newAns = {
-      ...userAnswers,
+    setUserAnswers(a => ({
+      ...a,
       [questions[currentQ].id]: l
-    };
-    setUserAnswers(newAns);
-    if (l === questions[currentQ].answer) setScore(s => s + 1);
-    if (autoAdvance) setTimeout(next, 1000);
+    }));
   };
+  const inQuestion = !loading && !failed && !isReview && selectedGroup !== null && !showScore && questions.length > 0;
+  useEffect(() => {
+    if (!inQuestion || !selectedOption || !autoAdvance) return;
+    const t = setTimeout(next, 1200);
+    return () => clearTimeout(t);
+  }, [inQuestion, selectedOption, autoAdvance, currentQ]);
+  useEffect(() => {
+    if (!inQuestion) return;
+    const onKey = e => {
+      if (e.ctrlKey || e.metaKey || e.altKey) return;
+      const q = questions[currentQ];
+      const l = QUIZ_KEYS[e.key.toLowerCase()];
+      if (l && !selectedOption && q.options.some(o => o.letter === l)) {
+        e.preventDefault();
+        handle(l);
+      } else if (e.key === 'Enter' && selectedOption && !autoAdvance) {
+        e.preventDefault();
+        next();
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  });
+  const groupLabel = g => g === QUIZ_ALL ? 'كل الأسئلة' : g === QUIZ_RANDOM ? 'اختبار سريع' : g;
+  const correctCount = questions.filter(q => userAnswers[q.id] === q.answer).length;
+  const answeredCount = questions.filter(q => userAnswers[q.id]).length;
   if (loading) return React.createElement("div", {
-    className: "quiz-active-container",
-    style: {
-      textAlign: 'center'
-    }
-  }, "جاري التحميل...");
+    className: "quiz-active-container quiz-state"
+  }, React.createElement("div", {
+    className: "quiz-spinner"
+  }), React.createElement("p", null, "جاري تحميل الأسئلة..."));
+  if (failed) return React.createElement("div", {
+    className: "quiz-active-container quiz-state"
+  }, React.createElement("div", {
+    className: "quiz-state-icon"
+  }, React.createElement(Icons.AlertFill, null)), React.createElement("p", null, "تعذّر تحميل الأسئلة، تأكد من الاتصال وحاول مرة ثانية."), React.createElement("button", {
+    className: "quiz-nav-btn secondary",
+    type: "button",
+    onClick: onClose
+  }, "رجوع"));
   if (isReview) return React.createElement("div", {
     className: "quiz-active-container"
-  }, React.createElement("h3", {
-    style: {
-      marginBottom: '15px',
-      color: 'var(--red)',
-      textAlign: 'center'
-    }
-  }, "مراجعة الأخطاء (", questions.length, ")"), questions.map((q, i) => React.createElement("div", {
-    key: i,
-    className: "review-card"
-  }, React.createElement("div", {
-    className: "q-text"
-  }, q.text), React.createElement("div", {
-    className: "ans-row wrong"
-  }, React.createElement(Icons.Check, {
-    style: {
-      transform: 'rotate(45deg)'
-    }
-  }), " إجابتك: ", q.options.find(o => o.letter === userAnswers[q.id])?.text), React.createElement("div", {
-    className: "ans-row correct"
-  }, React.createElement(Icons.Check, null), " الصحيح: ", q.options.find(o => o.letter === q.answer)?.text), q.explanation && React.createElement("div", {
-    className: "explanation-box"
-  }, "💡 ", q.explanation))), React.createElement("button", {
-    className: "quiz-nav-btn secondary",
-    onClick: onClose,
-    style: {
-      width: '100%',
-      justifyContent: 'center'
-    }
+  }, React.createElement(QuizHead, {
+    eyebrow: title,
+    title: `مراجعة الأخطاء (${questions.length})`,
+    onClose: onClose
+  }), questions.length ? React.createElement(QuizReviewList, {
+    items: questions,
+    answers: userAnswers
+  }) : React.createElement("div", {
+    className: "quiz-empty"
+  }, "ما عندك أخطاء في آخر محاولة 🎉"), React.createElement("button", {
+    className: "quiz-nav-btn secondary wide",
+    type: "button",
+    onClick: onClose
   }, "إغلاق المراجعة"));
-  if (!selectedGroup) return React.createElement("div", {
-    className: "quiz-active-container"
-  }, React.createElement("div", {
-    className: "quiz-top-bar"
-  }, React.createElement("h2", {
-    style: {
-      margin: 0,
-      fontSize: '1.2rem'
-    }
-  }, "اختر المجموعة أو ابدأ تحدياً"), React.createElement("button", {
-    className: "quiz-nav-btn secondary",
-    onClick: onClose,
-    style: {
-      padding: '5px 10px'
-    }
-  }, "إغلاق")), React.createElement("div", {
-    className: "group-select-grid"
-  }, React.createElement("button", {
-    className: "group-btn random-btn",
-    onClick: startRandomQuiz
-  }, React.createElement(Icons.Shuffle, {
-    style: {
-      fontSize: '1.3rem'
-    }
-  }), " اختبار سريع عشوائي (10 أسئلة)"), React.createElement("button", {
-    className: "group-btn all-btn",
-    onClick: () => start('ALL')
-  }, "الكل (", allQ.length, ")"), groups.map((g, i) => React.createElement("button", {
-    key: i,
-    className: "group-btn",
-    onClick: () => start(g)
-  }, React.createElement("span", null, g)))));
-  if (showScore) {
-    const isPerfect = score === questions.length;
+  if (!selectedGroup) {
+    const counts = {};
+    allQ.forEach(x => counts[x.group] = (counts[x.group] || 0) + 1);
     return React.createElement("div", {
-      className: "quiz-active-container",
+      className: "quiz-active-container"
+    }, React.createElement(QuizHead, {
+      eyebrow: title,
+      title: "اختر طريقة الحل",
+      onClose: onClose
+    }), React.createElement("div", {
+      className: "quiz-stats"
+    }, React.createElement("div", {
+      className: "quiz-stat"
+    }, React.createElement("b", null, allQ.length), React.createElement("span", null, "سؤال")), React.createElement("div", {
+      className: "quiz-stat"
+    }, React.createElement("b", null, groups.length), React.createElement("span", null, groups.length === 1 ? 'مجموعة' : 'مجموعات'))), React.createElement("div", {
+      className: "quiz-mode-grid"
+    }, React.createElement("button", {
+      className: "quiz-mode is-random",
+      type: "button",
+      onClick: startRandomQuiz
+    }, React.createElement("span", {
+      className: "quiz-mode-icon"
+    }, React.createElement(Icons.Shuffle, null)), React.createElement("span", {
+      className: "quiz-mode-text"
+    }, React.createElement("strong", null, "اختبار سريع"), React.createElement("span", null, Math.min(10, allQ.length), " أسئلة عشوائية · 10 دقائق"))), React.createElement("button", {
+      className: "quiz-mode is-all",
+      type: "button",
+      onClick: () => start(QUIZ_ALL)
+    }, React.createElement("span", {
+      className: "quiz-mode-icon"
+    }, React.createElement(Icons.Layers, null)), React.createElement("span", {
+      className: "quiz-mode-text"
+    }, React.createElement("strong", null, "كل الأسئلة"), React.createElement("span", null, allQ.length, " سؤال بالترتيب")))), groups.length > 1 && React.createElement(React.Fragment, null, React.createElement("div", {
+      className: "quiz-sub-label"
+    }, "حسب المجموعة"), React.createElement("div", {
+      className: "group-select-grid"
+    }, groups.map(g => React.createElement("button", {
+      key: g,
+      className: "group-btn",
+      type: "button",
+      onClick: () => start(g)
+    }, React.createElement("span", {
+      className: "group-name"
+    }, g), React.createElement("span", {
+      className: "group-count"
+    }, counts[g], " سؤال"))))), React.createElement("p", {
+      className: "quiz-hint"
+    }, "تقدر تجاوب من الكيبورد: A–D أو 1–4، و Enter للسؤال التالي."));
+  }
+  if (showScore) {
+    const total = questions.length;
+    const pct = total ? Math.round(correctCount / total * 100) : 0;
+    const v = quizVerdict(pct);
+    const wrongQs = questions.filter(q => userAnswers[q.id] && userAnswers[q.id] !== q.answer);
+    const skipped = total - answeredCount;
+    return React.createElement("div", {
+      className: "quiz-active-container"
+    }, React.createElement(QuizHead, {
+      eyebrow: title ? `${title} · ${groupLabel(selectedGroup)}` : groupLabel(selectedGroup),
+      title: timeLeft === 0 ? 'انتهى الوقت ⏰' : 'النتيجة',
+      onClose: onClose
+    }), React.createElement("div", {
+      className: `score-hero tone-${v.c}`
+    }, React.createElement("div", {
+      className: "score-ring",
       style: {
-        textAlign: 'center'
+        '--p': pct
       }
-    }, isPerfect && React.createElement("div", {
-      className: "trophy-icon"
-    }, React.createElement(Icons.Trophy, {
-      style: {
-        color: 'var(--gold)'
-      }
-    })), React.createElement("h2", {
-      style: {
-        fontSize: '2rem',
-        margin: '10px 0'
-      }
-    }, "النتيجة"), React.createElement("div", {
-      style: {
-        fontSize: '3.5rem',
-        color: isPerfect ? 'var(--gold)' : score >= questions.length / 2 ? 'var(--green)' : 'var(--red)',
-        fontWeight: '900',
-        fontFamily: 'var(--font-nums)'
-      }
-    }, score, "/", questions.length), isPerfect && React.createElement("p", {
-      style: {
-        color: 'var(--gold)',
-        marginBottom: '20px'
-      }
-    }, "عمل رائع! أداء مثالي 🌟"), React.createElement("button", {
+    }, React.createElement("div", {
+      className: "score-ring-inner"
+    }, React.createElement("b", null, pct, "%"), React.createElement("span", null, correctCount, " / ", total))), React.createElement("p", {
+      className: "score-msg"
+    }, v.t)), React.createElement("div", {
+      className: "quiz-stats"
+    }, React.createElement("div", {
+      className: "quiz-stat is-good"
+    }, React.createElement("b", null, correctCount), React.createElement("span", null, "صحيحة")), React.createElement("div", {
+      className: "quiz-stat is-bad"
+    }, React.createElement("b", null, wrongQs.length), React.createElement("span", null, "خاطئة")), React.createElement("div", {
+      className: "quiz-stat"
+    }, React.createElement("b", null, skipped), React.createElement("span", null, "بدون إجابة"))), React.createElement("div", {
+      className: "result-actions"
+    }, wrongQs.length > 0 && React.createElement("button", {
+      className: `quiz-nav-btn secondary is-danger${showMistakes ? ' is-on' : ''}`,
+      type: "button",
+      onClick: () => setShowMistakes(s => !s)
+    }, React.createElement(Icons.Info, null), showMistakes ? ' إخفاء الأخطاء' : ` مراجعة الأخطاء (${wrongQs.length})`), React.createElement("button", {
+      className: "quiz-nav-btn secondary",
+      type: "button",
+      onClick: restart
+    }, React.createElement(Icons.Retry, null), " إعادة المحاولة"), React.createElement("button", {
+      className: "quiz-nav-btn secondary",
+      type: "button",
+      onClick: toMenu
+    }, React.createElement(Icons.Layers, null), " اختيار مجموعة ثانية")), showMistakes && React.createElement(QuizReviewList, {
+      items: wrongQs,
+      answers: userAnswers
+    }), React.createElement("button", {
       className: "save-btn-new",
+      type: "button",
       onClick: () => {
-        onFinish(userAnswers);
+        if (onFinish) onFinish(userAnswers);
         onClose();
-      },
-      style: {
-        marginTop: '20px'
       }
-    }, "إنهاء وحفظ النتيجة"));
+    }, React.createElement(Icons.Check, null), " إنهاء وحفظ النتيجة"));
   }
   const q = questions[currentQ];
+  if (!q) return React.createElement("div", {
+    className: "quiz-active-container quiz-state"
+  }, React.createElement("p", null, "لا توجد أسئلة في هذا القسم."), React.createElement("button", {
+    className: "quiz-nav-btn secondary",
+    type: "button",
+    onClick: toMenu
+  }, "رجوع"));
+  const isRight = selectedOption && selectedOption === q.answer;
+  const correctOpt = q.options.find(o => o.letter === q.answer);
+  const isLast = currentQ === questions.length - 1;
   return React.createElement("div", {
     className: "quiz-active-container"
   }, React.createElement("div", {
     className: "quiz-top-bar"
-  }, React.createElement("div", {
-    className: "quiz-q-counter"
-  }, selectedGroup, " | ", currentQ + 1, "/", questions.length), timeLeft !== null && React.createElement("div", {
+  }, React.createElement("button", {
+    className: "quiz-icon-btn",
+    type: "button",
+    onClick: toMenu,
+    "aria-label": "رجوع للقائمة"
+  }, React.createElement(Icons.ArrowRight, null)), React.createElement("div", {
+    className: "quiz-top-title"
+  }, title && React.createElement("span", {
+    className: "quiz-eyebrow"
+  }, title), React.createElement("span", {
+    className: "quiz-chip"
+  }, groupLabel(selectedGroup))), React.createElement("div", {
+    className: "quiz-top-tools"
+  }, timeLeft !== null && React.createElement("div", {
     className: `exam-timer ${timeLeft < 60 ? 'warning' : ''}`
-  }, React.createElement(Icons.Clock, null), " ", formatTime(timeLeft)), React.createElement("div", {
+  }, React.createElement(Icons.Clock, null), " ", formatTime(timeLeft)), React.createElement("button", {
     className: "auto-advance-wrapper",
-    onClick: () => setAutoAdvance(!autoAdvance)
-  }, React.createElement("span", {
-    style: {
-      fontSize: '0.8rem'
-    }
-  }, "تلقائي"), React.createElement("div", {
+    type: "button",
+    onClick: () => setAutoAdvance(!autoAdvance),
+    "aria-pressed": autoAdvance
+  }, React.createElement("span", null, "تلقائي"), React.createElement("span", {
     className: `toggle-switch ${autoAdvance ? 'on' : ''}`
-  }, React.createElement("div", {
+  }, React.createElement("span", {
     className: "toggle-knob"
-  })))), React.createElement("div", {
+  }))))), React.createElement("div", {
+    className: "quiz-progress-row"
+  }, React.createElement("span", {
+    className: "quiz-q-counter"
+  }, "سؤال ", React.createElement("b", null, currentQ + 1), " من ", questions.length), React.createElement("span", {
+    className: "quiz-live-score"
+  }, React.createElement("span", {
+    className: "is-good"
+  }, React.createElement(Icons.Check, null), " ", correctCount), React.createElement("span", {
+    className: "is-bad"
+  }, React.createElement(Icons.X, null), " ", answeredCount - correctCount))), React.createElement("div", {
     className: "quiz-progress-bar"
   }, React.createElement("div", {
     className: "quiz-progress-fill",
     style: {
-      width: `${(currentQ + 1) / questions.length * 100}%`
+      width: `${(currentQ + (selectedOption ? 1 : 0)) / questions.length * 100}%`
     }
   })), React.createElement("div", {
+    className: "quiz-question-card",
+    key: 'q' + currentQ
+  }, React.createElement("div", {
     className: "quiz-question-text",
     dir: "ltr"
   }, q.text), React.createElement("div", {
     className: "quiz-options-grid"
-  }, q.options.map((o, i) => React.createElement("button", {
-    key: i,
-    className: `quiz-option-btn ${selectedOption ? o.letter === q.answer ? 'correct' : o.letter === selectedOption ? 'wrong' : '' : ''} ${selectedOption === o.letter ? 'selected' : ''}`,
-    onClick: () => handle(o.letter),
-    disabled: !!selectedOption,
-    dir: "ltr"
+  }, q.options.map(o => {
+    const state = selectedOption ? o.letter === q.answer ? 'correct' : o.letter === selectedOption ? 'wrong' : 'dim' : '';
+    return React.createElement("button", {
+      key: o.letter,
+      type: "button",
+      className: `quiz-option-btn ${state}`,
+      onClick: () => handle(o.letter),
+      disabled: !!selectedOption,
+      dir: "ltr"
+    }, React.createElement("span", {
+      className: "option-letter"
+    }, o.letter), React.createElement("span", {
+      className: "option-text"
+    }, o.text), (state === 'correct' || state === 'wrong') && React.createElement("span", {
+      className: "option-mark"
+    }, state === 'correct' ? React.createElement(Icons.Check, null) : React.createElement(Icons.X, null)));
+  })), selectedOption && React.createElement("div", {
+    className: `quiz-feedback ${isRight ? 'is-right' : 'is-wrong'}`
   }, React.createElement("div", {
-    className: "option-letter"
-  }, o.letter), React.createElement("div", {
-    className: "option-text"
-  }, o.text)))), React.createElement("div", {
+    className: "quiz-feedback-head"
+  }, React.createElement("span", {
+    className: "quiz-feedback-icon"
+  }, isRight ? React.createElement(Icons.Check, null) : React.createElement(Icons.X, null)), isRight ? 'إجابة صحيحة' : React.createElement(React.Fragment, null, "إجابة خاطئة — الصحيح: ", React.createElement("span", {
+    className: "quiz-feedback-ans",
+    dir: "ltr"
+  }, q.answer, ") ", correctOpt?.text))), q.explanation && React.createElement("p", {
+    className: "quiz-feedback-exp"
+  }, q.explanation))), React.createElement("div", {
     className: "quiz-nav-actions"
   }, React.createElement("button", {
     className: "quiz-nav-btn secondary",
-    onClick: () => setSelectedGroup(null)
-  }, "رجوع"), selectedOption && !autoAdvance && React.createElement("button", {
+    type: "button",
+    onClick: toMenu
+  }, React.createElement(Icons.ArrowRight, null), " القائمة"), React.createElement("button", {
     className: "quiz-nav-btn",
-    onClick: next
-  }, currentQ === questions.length - 1 ? "إنهاء" : "التالي", React.createElement(Icons.ChevronDown, {
-    style: {
-      transform: 'rotate(90deg)'
-    }
-  }))));
+    type: "button",
+    onClick: next,
+    disabled: !selectedOption || autoAdvance
+  }, isLast ? 'إنهاء' : 'التالي', React.createElement(Icons.ArrowLeft, null))));
 };
 const DeliverablesView = () => {
   const list = [{
@@ -1630,42 +1957,52 @@ const ContentView = () => {
   }, [flashQuiz]);
   const quizzes472 = [{
     name: 'Q1A_472.pdf',
+    quiz: 'Q/472/Q1.txt',
     url: 'https://drive.google.com/file/d/1xS0er6My6UV4Yc6ORrSBonWF1Y5TvN4W/view',
     scope: 'First Day materials + Blue Workbook (J49-J56).'
   }, {
     name: 'Q2A_472.pdf',
+    quiz: 'Q/472/Q2.txt',
     url: 'https://drive.google.com/file/d/1WIfkcv9kEGTEffqJxg69jVWlCmhmOr1b/view',
     scope: 'SCPS Ch1 (p1-3) + Workbook B (B5-B10) & E (E1-E12).'
   }, {
     name: 'Q3A_472.pdf',
+    quiz: 'Q/472/Q3.txt',
     url: 'https://drive.google.com/file/d/1vMMAISxW1W7v8Fk63F_c3OzRscQKWdEe/view',
     scope: 'SCPS Ch2 (2.3, 2.5) + Ch3 (p29 to 3.2C).'
   }, {
     name: 'Q4A_472.pdf',
+    quiz: 'Q/472/Q4.txt',
     url: 'https://drive.google.com/file/d/1qgQd3gXxcLnKVuSNFk1qRKKBLTiCVmck/view',
     scope: 'SCPS Ch4 (p61 to end of 4.3B).'
   }, {
     name: 'Q5A_472.pdf',
+    quiz: 'Q/472/Q5.txt',
     url: 'https://drive.google.com/file/d/1Lt_fSZ6Htn8T2Z2oMUDE1Eb9XD4wP5lG/view',
     scope: 'Dunker Diagram and Statement & restatement. (SCPS Ch3 3.2D to end)'
   }, {
     name: 'Q6A_472.pdf',
+    quiz: 'Q/472/Q6.txt',
     url: 'https://drive.google.com/file/d/1jEe1iwMIG65eLOUNAOYC4sN3I9vuzIqj/view',
     scope: 'Decision Analysis, your 1st car. (SCPS Ch5 until p102)'
   }, {
     name: 'Q7A_472.pdf',
+    quiz: 'Q/472/Q7.txt',
     url: 'https://drive.google.com/file/d/17eDjvWdQHsn0QXkFI7eFPyq-DiHfFbnX/view',
     scope: 'Adverse consequences. (SCPS Ch5 p103 to end)'
   }, {
     name: 'Q8A_472.pdf',
+    quiz: null,
     url: null,
     scope: null
   }, {
     name: 'Q9A_472.pdf',
+    quiz: 'Q/472/Q9.txt',
     url: 'https://drive.google.com/file/d/1BMTIRtY7XKYLNiGiadenRgZDNKAzwtbA/view',
     scope: 'Food for thought. (SCPS Ch6 6.5 to end)'
   }, {
     name: 'Q10A_472.pdf',
+    quiz: null,
     url: null,
     scope: null
   }];
@@ -1790,6 +2127,13 @@ const ContentView = () => {
       url: 'https://drive.google.com/file/d/13mm6JTsy9OM6Mn5h-J-X58J4Srvurpu_/view?usp=drivesdk'
     }]
   }];
+  const quizTitles = {};
+  allQuizzesData.forEach(q => q.links.forEach(l => {
+    if (l.interactive) quizTitles[l.url] = q.title;
+  }));
+  quizzes472.forEach(q => {
+    if (q.quiz) quizTitles[q.quiz] = `Quiz #${q472Num(q.name)} · 472`;
+  });
   const files = [{
     title: 'تقييم',
     links: [{
@@ -2119,6 +2463,7 @@ const ContentView = () => {
     if (activeIdx === 0) {
       if (activeQuizUrl) return React.createElement(InteractiveQuiz, {
         url: activeQuizUrl,
+        title: quizTitles[activeQuizUrl],
         onClose: () => setActiveQuizUrl(null),
         onFinish: ans => setQuizHistory(p => ({
           ...p,
@@ -2127,6 +2472,7 @@ const ContentView = () => {
       });
       if (reviewUrl) return React.createElement(InteractiveQuiz, {
         url: reviewUrl,
+        title: quizTitles[reviewUrl],
         reviewData: quizHistory[reviewUrl],
         onClose: () => setReviewUrl(null)
       });
@@ -2168,13 +2514,19 @@ const ContentView = () => {
         className: "quiz-scope"
       }, q.scope))), React.createElement("div", {
         className: "resource-links"
-      }, q.url && React.createElement("a", {
-        href: q.url,
-        target: "_blank",
-        rel: "noopener noreferrer",
+      }, q.quiz && React.createElement("button", {
+        onClick: () => setActiveQuizUrl(q.quiz),
         className: "res-link-btn primary",
         style: {
           width: '100%'
+        }
+      }, React.createElement(Icons.Check, null), " بدء الكويز"), q.url && React.createElement("a", {
+        href: q.url,
+        target: "_blank",
+        rel: "noopener noreferrer",
+        className: `res-link-btn ${q.quiz ? '' : 'primary'}`,
+        style: {
+          width: q.quiz ? undefined : '100%'
         }
       }, React.createElement(Icons.File, null), " فتح الملف"), React.createElement("a", {
         href: (allQuizzesData.find(a => a.title.replace(/\D+/g, '') === q.name.replace(/\D+/g, '').slice(0, -3)) || {
@@ -2182,11 +2534,17 @@ const ContentView = () => {
         }).links.find(l => l.name === 'ملف الكويز')?.url || q.url,
         target: "_blank",
         rel: "noopener noreferrer",
-        className: `res-link-btn ${q.url ? '' : 'primary'}`,
+        className: `res-link-btn ${q.url || q.quiz ? '' : 'primary'}`,
+        style: {
+          width: q.quiz ? undefined : '100%'
+        }
+      }, React.createElement(Icons.File, null), " ملف التحديد"), q.quiz && quizHistory[q.quiz] && React.createElement("button", {
+        className: "res-link-btn mistake-btn",
         style: {
           width: '100%'
-        }
-      }, React.createElement(Icons.File, null), " ملف التحديد")))))) : React.createElement("div", {
+        },
+        onClick: () => setReviewUrl(q.quiz)
+      }, React.createElement(Icons.Info, null), " مراجعة الأخطاء")))))) : React.createElement("div", {
         style: {
           animation: 'fadeIn 0.3s ease'
         }
