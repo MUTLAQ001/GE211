@@ -2514,13 +2514,7 @@ const ContentView = () => {
         className: "quiz-scope"
       }, q.scope))), React.createElement("div", {
         className: "resource-links"
-      }, q.quiz && React.createElement("button", {
-        onClick: () => setActiveQuizUrl(q.quiz),
-        className: "res-link-btn primary",
-        style: {
-          width: '100%'
-        }
-      }, React.createElement(Icons.Check, null), " بدء الكويز"), q.url && React.createElement("a", {
+      }, q.url && React.createElement("a", {
         href: q.url,
         target: "_blank",
         rel: "noopener noreferrer",
@@ -2538,10 +2532,16 @@ const ContentView = () => {
         style: {
           width: q.quiz ? undefined : '100%'
         }
-      }, React.createElement(Icons.File, null), " ملف التحديد"), q.quiz && quizHistory[q.quiz] && React.createElement("button", {
+      }, React.createElement(Icons.File, null), " ملف التحديد"), q.quiz && React.createElement("button", {
+        onClick: () => setActiveQuizUrl(q.quiz),
+        className: "res-link-btn primary",
+        style: {
+          flexBasis: '100%'
+        }
+      }, React.createElement(Icons.Check, null), " بدء الكويز"), q.quiz && quizHistory[q.quiz] && React.createElement("button", {
         className: "res-link-btn mistake-btn",
         style: {
-          width: '100%'
+          flexBasis: '100%'
         },
         onClick: () => setReviewUrl(q.quiz)
       }, React.createElement(Icons.Info, null), " مراجعة الأخطاء")))))) : React.createElement("div", {
