@@ -1,0 +1,468 @@
+472
+After a number of solutions have been generated, how must the solver proceed?
+{حسب الصفحة 87: بمجرد تحديد المشكلة الحقيقية وإنشاء حلول ممكنة، يحين الوقت لاتخاذ قرارات في عملية منطقية ومنظمة لاختيار أفضل بديل.}
+a) By implementing all solutions.
+b) By choosing the most creative one.
+c) In a logical manner to decide which solution is best to implement.
+d) By starting the process over.
+c
+
+472
+What is the first step in the “Deciding the Course of Action” process?
+{حسب الصفحة 87 (الشكل 5-1): تحليل الموقف (Situation Analysis) هو المربع الأول ونقطة الانطلاق للإجابة على سؤال "أين نحن؟".}
+a) Decision Analysis
+b) Potential Problem Analysis
+c) Situation Analysis
+d) Evaluation Criteria
+e) all the above
+c
+
+472
+What are the two types of evaluation criteria?
+{حسب الصفحة 99: في تحليل القرار (Decision Analysis)، نقوم بتحديد أهداف القرار وتقسيمها لفئتين: ال Musts وال Wants.}
+a) Primary and Secondary
+b) Internal and External
+c) Musts and Wants
+d) Mandatory and Optional
+c
+
+472
+What is the purpose of a Pareto Diagram?
+{حسب الصفحة 91: تحليل باريتو يوضح "الأهمية النسبية" (relative importance) لكل مشكلة مفردة ليساعد في ترتيبها وتصورها بصرياً.}
+a) To find the root cause of one problem
+b) To visualize the relative importance of different problems
+c) To brainstorm new ideas
+d) To assign weights to “Wants”
+b
+
+472
+What is the focus of K.T. Problem Analysis?
+{حسب الصفحة 87 والصفحة 94: تحليل المشكلة (Problem Analysis) يُستخدم عندما يكون سبب المشكلة مجهولاً والهدف العثور على السبب الجذري.}
+a) Choosing the best solution
+b) Finding the root cause of a failure or deviation
+c) Brainstorming new products
+d) Setting ethical standards
+b
+
+472
+Troubleshooting is described as a search for what?
+{حسب الصفحة 95: ال Troubleshooting هو مهارة البحث عن مسببات الخلل وإيجاد التفسيرات للأعطال (Cause of defect).}
+a) A new market for a product
+b) The cause of a specific defect or failure
+c) A more creative way to define a goal
+d) A higher budget for research
+e) None of the above
+b
+
+472
+What are the four dimensions used to describe a problem?
+{حسب الصفحة 93 (الجدول 5-1): الأبعاد الأربعة لمشكلة K.T. هي: ماذا (What)، أين (Where)، متى (When)، والمدى (Extent).}
+a) Who, What, Why, How
+b) What, Where, When, Extent
+c) Cost, Time, Quality, Safety
+d) Must, Want, Risk, Benefit
+b
+
+472
+What is the primary purpose of Decision Analysis?
+{حسب الصفحة 98: تحليل القرار (Decision Analysis) هو خوارزمية منطقية لاختيار أفضل البدائل (best alternative) المتاحة لحل المشكلة.}
+a) To find the root cause of a failure
+b) To select the best alternative from several options
+c) To identify potential future risks
+d) To prioritize multiple problems
+b
+
+472
+After satisfying the “Musts,” how are alternatives scored?
+{حسب الصفحة 99: بعد أن تتجاوز البدائل الشروط الإلزامية (Musts)، يتم تقييم كل بديل بإعطائه تقييماً يوضح مدى تلبيته لـ "الرغبات/Wants".}
+a) Based on their total cost
+b) Based on how well they satisfy the “Wants”
+c) By a random selection process
+d) Based on the time they take to implement
+b
+
+472
+What is the last step in the Decision Analysis process?
+{حسب الصفحة 101: "الخطوة الأخيرة هي استكشاف المخاطر (Explore the risks) المرتبطة بكل بديل." ولأن هذه الخطوة غير موجودة في الخيارات فإن الإجابة هي None of the above.}
+a) Based on their total cost
+b) Based on how well they satisfy the “Wants”
+c) By a random selection process
+d) Based on the time they take to implement
+e) None of the above
+e
+
+472
+Which is NOT a step mentioned for deciding the course of action?
+{حسب الصفحة 87 (الشكل 5-1): خطوات الكورس هي تحليل الموقف (SA)، تحليل القرار (DA)، وتحليل المشاكل المحتملة (PPA). العصف الذهني لا يُعتبر خطوة هنا.}
+a) Analyze the situation to prioritize problems.
+b) Perform a decision analysis.
+c) Assess potential problems.
+d) Perform a brainstorming session for new ideas.
+d
+
+472
+In Situation Analysis, what is the first sub-step?
+{حسب الصفحة 88: "نقوم أولاً بعمل قائمة بجميع المشاكل (Identify / make a list) ثم نحاول تقرير أي مشكلة تستحق الاهتمام أولاً".}
+a) Evaluate the problem
+b) Identify the problem(s)
+c) Set the priority
+d) Select a process
+b
+
+472
+How are “Musts” defined in the evaluation process?
+{حسب الصفحة 99: ال Musts هي شروط إلزامية وحتمية (Mandatory) لتحقيق الحل ويجب أن تستوفى تماماً.}
+a) Desirable features
+b) Mandatory requirements that must be met
+c) Future potential goals
+d) Optional alternatives
+b
+
+472
+What is the “80/20 rule” often associated with Pareto Analysis?
+{حسب الصفحة 91: مبدأ باريتو ينص على أن 80٪ من المتاعب والمشاكل تأتي من 20٪ من المشاكل الأساسية (80% of trouble comes from 20% of problems).}
+a) 80% of solutions are 20% effective
+b) 80% of the problems come from 20% of the causes
+c) 80% of people only solve 20% of problems
+d) 20% of the budget solves 80% of the problem
+b
+
+472
+K.T. Problem Analysis is most effective when what has happened?
+{حسب الصفحة 94: الفرضية الأساسية للتحليل هي "الأمور كانت على ما يرام، والآن لم تعد كذلك" (Things were OK, now they're not). أي نظام كان يعمل وتعطل.}
+a) No ideas have been generated
+b) A new product is being designed
+c) A system that previously worked is now failing
+d) A team cannot agree on a goal
+c
+
+472
+In the paint engineer example, what was the “deviation”?
+{بالرجوع لمثال مهندس الطلاء (الصفحة 98)، الانحراف (Deviation) والمشكلة الفنية هي حدوث عيوب طلاء على خط التجميع (paint defects/appearance).}
+a) The cost of the paint was too high
+b) The paint was the wrong color
+c) Paint defects were occurring as cars left the line
+d) The workers did not like the paint brand
+e) None of the above
+c
+
+472
+In the “What” dimension, what is the problem solver identifying?
+{حسب الصفحة 93 (الجدول 5-1): يُحدد بُعد "What" هوية المشكلة بذكر الكائن (Object) والانحراف (Deviation) الذي حدث له بدقة.}
+a) The location of the defect
+b) The time the defect started
+c) The specific object and the specific deviation
+d) The number of objects affected
+c
+
+472
+Decision Analysis is a logical process for what?
+{حسب الصفحة 98: تحليل القرار هو خوارزمية منطقية لاختيار أفضل البدائل المتوفرة بناء على مدى تحقيقها للأهداف والمعايير الموضوعة.}
+a) Brainstorming new ideas
+b) Defining the problem statement
+c) Selecting the alternative that best meets the criteria
+d) Implementing a final solution
+e) None of the above
+c
+
+472
+What is a “Satisfaction Score” (e.g., from 0 to 10)?
+{حسب الصفحة 99: التقييم (Rating) أو Satisfaction Score يُعطى لكل بديل لتحديد مدى كفاءته وتلبيته لرغبة معينة (specific Want).}
+a) The mandatory requirement level
+b) The weight of the criterion
+c) How well an alternative meets a specific “Want”
+d) The final ranking of the solution
+e) all the above
+c
+
+472
+Why should you evaluate risks even for the highest-scoring alternative?
+{حسب الصفحة 101: قد يكون للحل الأول الحائز على أعلى درجات عواقب سلبية خطيرة أو آثار جانبية غير مقبولة (unacceptable secondary effect).}
+a) To increase the project budget
+b) Because it may have an unacceptable secondary effect
+c) To find more “Wants” to add to the list
+d) To delay the implementation process
+e) none of the above
+b
+
+472
+What is the primary purpose of “Situation Analysis”?
+{حسب الصفحة 88: الغرض من SA هو تحديد الأولويات والمساعدة في اتخاذ قرار بشأن أي مشكلة يجب أن يبدأ العمل عليها أولاً.}
+a) To create a list of potential risks.
+b) To help decide which problem to work on first.
+c) To determine if a solution is ethical.
+d) To identify the root cause of a defect.
+b
+
+472
+When identifying a problem, what should you look for?
+{حسب الصفحات 88 و 93: عندما نحدد مشكلة، فنحن نبحث عن المخاوف (Concerns) أو الانحرافات عن الأداء القياسي المقبول.}
+a) Only internal issues
+b) Only external issues
+c) Concerns or deviations from the norm
+d) Potential future risks
+c
+
+472
+What happens if an alternative does not meet a “Must” criterion?
+{حسب الصفحة 99: البديل الذي لا يلبي شروط ال Musts يتم استبعاده فوراً ويعتبر No Go ولا يُؤخذ بعين الاعتبار لاحقاً.}
+a) It is given a lower score
+b) It is moved to the “Want” list
+c) It is immediately eliminated
+d) It is re-evaluated later
+e) all the above
+c
+
+472
+In a Pareto Diagram, what does the height of the bars usually represent?
+{حسب الصفحات 91 و 92: طول العمود يمثل التكرار (frequency) أو الخسارة المالية والتأثير (impact) لكل مشكلة.}
+a) The cost of the solution
+b) The time taken to solve
+c) The frequency or impact of the problem
+d) The ethical weight
+e) none of the above
+c
+
+472
+What is the first step in the K.T. Problem Analysis process?
+{حسب الصفحة 94: الخطوة الأولى في تحليل المشكلة هي صياغة تعريف دقيق للمشكلة (Problem Statement) قبل البدء في الأبعاد الأربعة.}
+a) Decision Analysis
+b) Problem Statement
+c) Potential Problem Analysis
+d) Weighting the “Wants”
+b
+
+472
+Technical troubleshooting often starts with which of the following?
+{حسب الصفحة 87 و 95: ال Troubleshooting لمعرفة سبب خلل مجهول يبدأ بتطبيق مهارات K.T. Problem Analysis.}
+a) Decision Analysis
+b) Problem Analysis
+c) Brainstorming
+d) Implementation
+b
+
+472
+What is the purpose of the “IS Not” column in problem analysis?
+{حسب الصفحة 94: عامود IS NOT مهم جداً لأنه يحدد الأشياء التي كان من الممكن أن تتأثر بالمشكلة ولكنها بقيت سليمة (could be but is not).}
+a) To list potential solutions
+b) To document what caused the problem
+c) To identify what the problem could be but is not
+d) To ignore irrelevant information
+e) None of the above
+c
+
+472
+What must be done before the alternatives are compared?
+{حسب الصفحة 99: "أولاً نحدد أهداف القرار ونقسمها إلى (Musts) و (Wants)" قبل أن نبدأ في تقييم البدائل ومقارنتها.}
+a) The solution must be implemented
+b) A root cause must be found
+c) Evaluation criteria (Musts/Wants) must be established
+d) Potential problems must be analyzed
+c
+
+472
+How is the “Weighted Score” for each “Want” calculated?
+{حسب الصفحة 99: يتم حسابه عن طريق ضرب وزن الرغبة (Weight) في تقييم البديل لها (Satisfaction Score / Rating).}
+a) Adding the weight and the satisfaction score
+b) Multiplying the weight by the satisfaction score
+c) Subtracting the satisfaction score from the weight
+d) Dividing the weight by the satisfaction score
+e) None of the above
+b
+
+472
+What are two factors considered when evaluating a risk?
+{حسب الصفحة 101: عند تقييم المخاطر في PPA نهتم بتقييم احتمالية حدوث المشكلة (Probability) ومدى خطورتها وعواقبها (Seriousness).}
+a) Cost and Time
+b) Quality and Safety
+c) Probability (P) and Seriousness (S)
+d) Weight and Satisfaction
+c
+
+472
+When should “Potential Problem Analysis” be performed?
+{حسب الصفحة 87 والصفحة 101: تحليل المشاكل المحتملة (PPA) يتم إجراؤه لضمان نجاح القرار الذي تم اتخاذه ولتجنب المخاطر، أي بعد اختيار الحل.}
+a) Before solutions are generated.
+b) After the “best” solution has been chosen.
+c) Only for hazardous chemical projects.
+d) During the initial definition stage.
+e) None of the above
+b
+
+472
+What is the second sub-step in Situation Analysis?
+{حسب الصفحة 88: بعد سرد المشاكل (الخطوة الأولى)، الخطوة الفرعية الثانية هي تحديد الأولوية وتقييم المشاكل (Set the priority).}
+a) Select a process
+b) Identify the problem
+c) Set the priority
+d) Find the root cause
+c
+
+472
+How are “Wants” used in the evaluation process?
+{حسب الصفحة 99: الرغبات (Wants) تستخدم لإعطاء صورة مقارنة تسمح لنا بالتمييز والمفاضلة بين البدائل المتبقية بعد ال Musts.}
+a) To eliminate alternatives
+b) To distinguish between the remaining alternatives
+c) As mandatory requirements
+d) Only for ethical considerations
+e) all the above
+b
+
+472
+How are the categories usually arranged on the horizontal axis of a Pareto chart?
+{حسب الصفحة 92: مخطط باريتو يتطلب ترتيب الأعمدة والترددات ترتيباً تنازلياً (descending order) من الأكبر إلى الأصغر.}
+a) Alphabetically
+b) In descending order of importance/frequency
+c) Chronologically
+d) Randomly
+b
+
+472
+How should the problem statement be written in K.T. analysis?
+{حسب الصفحة 94 و 97: يجب أن تكون المشكلة مُعرفة بشكل دقيق وموجز وتصف الانحراف المحدد (Specific deviation) بوضوح تام.}
+a) As a broad, general goal
+b) As a list of potential solutions
+c) Concisely, describing the specific deviation
+d) As a question about the budget
+e) None of the above
+c
+
+472
+Troubleshooting requires comparing the current performance to what?
+{حسب الصفحة 93: تُقارن مستويات الأداء الحالية التي بها خلل مع الأداء القياسي المقبول أو المفترض (Standard performance / Should).}
+a) Competitor performance
+b) The standard or “should” performance
+c) Future performance goals
+d) The performance of a different machine
+e) none of the above
+b
+
+472
+The “Where” dimension describes which of the following?
+{حسب الصفحة 93 (الجدول 5-1): بُعد المكان (Where) يصف أين وُجد العيب بالتحديد أو المكان الفيزيائي والجغرافي له.}
+a) The time the problem occurs
+b) The physical location of the defect on the object
+c) The size of the defect
+d) The reason the defect happened
+b
+
+472
+How is a Decision Analysis table usually organized?
+{حسب جداول الصفحات 100 و 102: يتم تنظيم الجداول بإدراج البدائل بشكل أفقي والمعايير الإلزامية والرغبات عمودياً للتقييم.}
+a) Chronologically by date
+b) By the cost of each alternative
+c) By listing alternatives against “Must” and “Want” criteria
+d) Alphabetically by the names of team members
+c
+
+472
+What is the “Total Weighted Score” for an alternative?
+{حسب الصفحة 99: الدرجة الكلية هي حاصل جمع (Sum) جميع درجات الرغبات الموزونة للبديل الواحد.}
+a) The weight of the most important “Want”
+b) The highest satisfaction score achieved
+c) The sum of all individual weighted scores
+d) The average weight of all “Musts”
+c
+
+472
+How is a “Risk Score” (or Threat) often calculated?
+{حسب الصفحة 101: يتم تقييم التهديد للمشروع عن طريق حساب حاصل ضرب الاحتمالية في الخطورة (Probability × Seriousness).}
+a) P + S
+b) P x S
+c) P - S
+d) P / S
+b
+
+472
+According to the content, what is the goal of “Decision Analysis”?
+{حسب الصفحة 98: الهدف هو استخدام خوارزمية منطقية للتمكن من اختيار أفضل بديل (choose the best solution) من بين الحلول المتاحة.}
+a) To generate alternative solutions.
+b) To analyze why a machine failed.
+c) To select the “best” solution from alternatives.
+d) To document the entire process.
+c
+
+472
+What is the final sub-step of the Situation Analysis process?
+{حسب الصفحة 88: الخطوة الأخيرة في تحليل الموقف هي أن نقرر أي نوع من تحليل K.T. سيتم تنفيذه أي اختيار العملية المناسبة.}
+a) Prioritize the problems
+b) Select the appropriate problem-solving process
+c) Analyze the data
+d) Implement the solution
+b
+
+472
+What is assigned to each “Want” criterion to show its relative importance?
+{حسب الصفحة 99: نقوم بتخصيص وزن (Weight) من 1 لـ 10 لكل رغبة لنبين مدى أهميتها وتأثيرها.}
+a) A letter grade
+b) A binary code
+c) A weight (e.g., from 1 to 10)
+d) A mandatory flag
+e) None of the above
+c
+
+472
+What does the cumulative line in a Pareto Diagram show?
+{في مخطط باريتو (Pareto Analysis)، يمثل الخط المنحني التراكمي النسبة المئوية المجمعة لتأثير المشاكل معاً.}
+a) The total cost of all solutions
+b) The average weight of “Wants”
+c) The combined percentage of the total effect
+d) The timeline of the project
+c
+
+472
+What does “K.T.” stand for in this problem-solving context?
+{حسب الصفحة 87: هذه الحروف هي اختصار لأسماء مبتكري هذا النهج: Kepner-Tregoe (K.T. Approach).}
+a) Knowledge Transition
+b) Key Techniques
+c) Kepner-Tregoe
+d) Known Trends
+e) None of the above
+c
+
+472
+What is a “deviation” in a technical troubleshooting context?
+{حسب الصفحة 93: الانحراف (Deviation) هو حدوث تغيير غير مرغوب فيه يختلف عن الأداء القياسي المقبول.}
+a) A new way of thinking
+b) An ethical dilemma
+c) A change from the expected performance
+d) A variety of different solutions
+e) all the above
+c
+
+472
+What does the “Extent” dimension measure?
+{حسب الصفحة 93 (جدول 5-1): بُعد "المدى / Extent" يحدد حجم وشدة المشكلة (Magnitude)، كم عدد الوحدات المتأثرة.}
+a) The location of the problem
+b) The time the problem started
+c) The magnitude or severity of the problem
+d) The specific object involved
+c
+
+472
+Decision Analysis helps a solver make a choice that is what?
+{حسب الصفحة 98: الهدف هو جعل عملية اتخاذ القرار منطقية وموضوعية (Objective and Logical) وبعيدة عن التحيز الشخصي.}
+a) The most creative
+b) The most objective and logical
+c) The cheapest possible
+d) The fastest to implement
+b
+
+472
+Comparing the total weighted scores helps the solver do what?
+{حسب الصفحة 99: مقارنة المجاميع تساعد على تحديد البديل الحاصل على أعلى مجموع ليكون الخيار الأفضل المبدئي.}
+a) Eliminate “Musts”
+b) Identify the top-performing alternatives
+c) Find the root cause of a defect
+d) Brainstorm more “Wants”
+e) None of the above
+b
+
+472
+What should a solver do if the risk of a top alternative is too high?
+{حسب الصفحة 101: إذا كان الخيار الفائز يحمل مخاطر كارثية، ينبغي التخلي عنه وإعادة التقييم لاختيار بديل آخر آمن.}
+a) Implement it anyway
+b) Ignore the risk
+c) Re-evaluate the choice or look for a different alternative
+d) Only implement the “Must” parts
+c

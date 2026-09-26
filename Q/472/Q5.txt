@@ -1,0 +1,94 @@
+472
+Which of the following is not one of the first steps used by experienced problem solvers in defining the problem?
+{حسب الصفحة 50 (الجدول 3-4): الخطوات الأربع الأولى التي يستخدمها الخبراء لحل المشكلات هي: 1- جمع وتحليل المعلومات، 2- التحدث مع أشخاص ملمين بالمشكلة، 3- رؤية المشكلة بشكل مباشر إن أمكن، 4- تأكيد جميع النتائج. خيار "اقتراح حلول ممكنة" (propose possible solutions) ليس من ضمن هذه الخطوات المبدئية.}
+a) Confirm all findings.
+b) Talk with people familiar with the problem.
+c) Propose possible solutions.
+d) If at all possible view the problem first hand.
+c
+
+472
+When Evaluating the Problem Definition you have created you should:
+{حسب الصفحة 50 (قسم 3.2F Evaluating the Problem Definition): القائمة المرجعية لتقييم تعريف المشكلة تتضمن سؤالاً صريحاً: "هل قمت بالتمييز بين الحقيقة والرأي؟" (Have you distinguished fact from opinion?). بقية الخيارات هي تقنيات للتعريف وليس التقييم.}
+a) Define the Present State
+b) Create a Duncker Diagram
+c) Define the Desired State
+d) Check that you have distinguished fact from opinion
+e) All the above
+d
+
+472
+Duncker Diagrams require generation of:
+{حسب الصفحة 42 (أسفل الصفحة): يُذكر بوضوح أنه يمكن تصنيف حلول مخطط دانكر (Duncker Diagram) إلى ثلاثة أقسام أساسية: حلول عامة (General Solutions)، حلول وظيفية (Functional Solutions)، وحلول محددة (Specific Solutions).}
+a) General solutions
+b) Functional solutions
+c) Specific solutions
+d) a, b, c
+e) a, b
+d
+
+472
+Deciding “if the problem should be solved” includes determining whether:
+{حسب الصفحة 51 (الشكل 3-3): المخطط الانسيابي (Flowchart) لقرار "تحديد ما إذا كان ينبغي حل المشكلة" يتضمن سلسلة من الأسئلة تبدأ ب: هل تستحق المشكلة الحل؟ هل يوجد حل مناسب مسبقاً؟ وهل يمكن تجميع الموارد اللازمة لحلها؟}
+a) The problem is worth solving.
+b) A suitable solution already exists.
+c) The necessary resources can be assembled.
+d) All of the above.
+e) None of the above.
+d
+
+472
+Charles F. Kettering stated that:
+{حسب الصفحة 46 (في الهامش الأيسر): المقولة الشهيرة لتشارلز كيترينج مكتوبة بوضوح في المربع الجانبي وهي: "المشكلة التي يتم صياغتها أو تعريفها بشكل جيد هي مشكلة محلولة نصفياً" (A problem well-stated is a problem half solved).}
+a) A problem well stated is a problem fully solved
+b) A problem well stated is a problem half solved
+c) A problem partially stated is a problem fully solved
+d) A problem partially stated is a problem half solved
+b
+
+472
+The problems statement triggers include the following:
+{حسب الصفحة 46 (الجدول 3-3): جدول محفزات إعادة صياغة المشكلة (Problem Statement Triggers) يتضمن صراحةً: تغيير نمط التركيز (رقم 1)، صياغة عبارة معاكسة (رقم 3)، والتعبير عن الكلمات في شكل معادلة أو صورة (رقم 6). لذا جميع الخيارات المذكورة صحيحة.}
+a) Vary the stress pattern
+b) Make an opposite statement
+c) Express words in the form of an equation or picture and vice versa
+d) All of the above
+e) None of the above
+d
+
+472
+Change positive to negative and vice versa helps in:
+{حسب الصفحة 48 (الفقرة الأولى): عند مناقشة المحفز رقم 3 (استخدام صياغة عكسية / من إيجابي لسلبي مثل "كيف نخسر" بدلاً من "كيف نربح")، يذكر الكتاب أن هذا المحفز يساعدنا في العثور على حساسية النظام (find the sensitivity of the system) والتركيز على المتغيرات المهيمنة (focus on those variables that dominate).}
+a) Find the sensitivity of the system
+b) Focus on those variable that dominate
+c) Both a and b
+d) Relax constraints
+c
+
+472
+Change “every” to “some”, “always” to “sometimes”, “sometimes” to “never”, and vice versa is helpful to:
+{حسب الصفحة 48 (الفقرة الثانية) والصفحة 46 (المحفز رقم 4): يذكر الكتاب أنه "غالباً ما يكون من المفيد تخفيف القيود (relax constraints) المفروضة على المشكلة، وتعديل المعايير.. (انظر المحفز 4)". المحفز 4 هو الذي يشمل تغيير الكلمات المطلقة مثل always و every لتقليل حدتها.}
+a) Relax constraints
+b) Find the sensitivity of the system
+c) Focus on those variables that dominate
+d) All the above
+a
+
+472
+Brainstorm potential causes and solution alternatives is:
+{حسب الصفحة 52 (شرح الخطوة رقم 8): يذكر النص حرفياً عن هذه الخطوة أنها: "آخر خطوة أولى" (last "first step") والتي تقودنا إلى "ختام المرحلة الأولى" (close of the first phase) وهي في الحقيقة "الخطوة الأولى للمرحلة الثانية" (first step of the second phase). لذلك جميع العبارات صحيحة.}
+a) The last “first step” of the creative problem-solving process
+b) The close of the first phase of the creative problem-solving process
+c) The first step of the second phase of the process: Generating Solutions to Problems
+d) All of the above
+d
+
+472
+In the cereals problem, “Hire faster trucks and former race car drivers” is a:
+{حسب الصفحة 45 (مخطط مشكلة الحبوب To Market, To Market): من خلال النظر إلى مخطط دانكر (Duncker Diagram) المرفق، ستجد أن خيار "توظيف شاحنات أسرع وسائقي سيارات سباق" (Hire faster trucks and former race car drivers) مكتوب داخل المربعات السفلية التي تندرج تحت فئة الحلول المحددة أو التفصيلية (Specific Solutions).}
+a) General solution
+b) Functional Solution
+c) Specific Solution
+d) All of the above
+e) None of the above
+c

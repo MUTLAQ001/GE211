@@ -1,0 +1,89 @@
+472
+Re-engineering is sometimes defined by its three R’s (which mean .... )
+{حسب الصفحة 16 (قسم E-7): يُعرّف مصطلح إعادة الهندسة (Re-engineering) أحياناً بكلماتها الثلاث (Three R's) وهي: إعادة التفكير (Rethink)، إعادة التصميم (Redesign)، وإعادة التجهيز (Retool).}
+a) Rethink, Redesign, Retool.
+b) Redesign, Re-document, Re-manufacture.
+c) Restudy, Report, React.
+d) None of the above.
+a
+
+472
+According to Kano, customer desires or requirements can be categorized as:
+{حسب الصفحة 11 (قسم E-2): وفقاً لنموذج كانو (Kano)، يمكن تصنيف رغبات ومتطلبات العميل إلى ثلاثة أصناف أساسية: متطلبات متوقعة/أساسية (Expected)، متطلبات معلنة/مكشوفة (Revealed)، ومتطلبات مثيرة (Exciting).}
+a) Expected, Revealed, or Stimulating
+b) Anticipated, Displayed, or Stimulating
+c) Expected, Revealed, or Exciting
+d) Anticipated, Displayed, or Exciting
+c
+
+472
+Which of the following is TRUE for Re-engineering?
+{حسب الصفحة 15 (الجدول 2 في قسم E-6): تتضمن إعادة الهندسة (Re-engineering) تغييرات كبرى وقفزات نوعية وتصاميم جذرية جديدة (Quantum leaps, Radical new designs)، كما أنها تتضمن تحولاً في النموذج (Paradigm shift). الخيار D ينطبق على التحسين المستمر (Kaizen) وليس إعادة الهندسة.}
+a) “Typically, no shift of paradigm is involved.”
+b) “It involves major changes (quantum leaps, radical new designs).”
+c) “It involves conventional non-revolutionary thinking.”
+d) “It reverses the trend of natural quality decay by continually improving the quality.”
+b
+
+472
+One of the causes of producing a dissatisfied customer,
+{حسب الصفحة 13 (قسم E-4، الجدول 1 والشرح أسفله): يوضح النص أن هناك طريقتين لجعل العميل غير راضٍ: إما إهمال المتطلبات المتوقعة (omitting expected requirements) أو توفير الحد الأدنى فقط من المتطلبات المعلنة (revealed requirements). عدم وجود المتطلبات المثيرة (exciting) لا يؤدي إلى عدم الرضا.}
+a) Include all the expected requirements
+b) omit expected requirements
+c) omit some exciting requirements
+d) None of the above
+b
+
+472
+All the following statements are TRUE except
+{حسب الصفحة 1 و 2: تعريف المشكلة الحقيقية (Defining the "real problem") هو أمر بالغ الأهمية وخطوة أولى حرجة لتجنب إضاعة الجهد والمال (كما في الخيارات A و C). الجملة D خاطئة تماماً، فلا يجب تأجيل تعريف المشكلة، بل يجب البدء به قبل محاولة إيجاد الحلول.}
+a) A lot of money, effort, and time can be wasted by poor problem definition and solution
+b) An engineer should avoid being pressured into accepting a less desirable quick fix solution because of time constraints
+c) An engineer can be tricked into treating the symptoms instead of solving the root problem
+d) Defining the real problem must be postponed until finding a workable solution
+d
+
+472
+The Engineering Method
+{حسب الصفحة 5 (قسم B-6): تعريف المنهج الهندسي (The Engineering Method) وفقاً لـ Koen هو: استخدام القواعد التجريبية (heuristics) لإحداث أفضل تغيير في موقف غير مفهوم جيداً أو غير مؤكد (POORLY UNDERSTOOD situation) باستخدام الموارد المتاحة.}
+a) seeks exact and unique right answers
+b) attempts to cause the least change in a given situation
+c) attempts to cause the best change in a poorly understood or uncertain situation
+d) utilizes all resources that are expected to be developed anywhere in the world within the lifetime of the pertinent project
+c
+
+472
+____________ requirements are those characteristics that customers discuss when describing the features that would improve a product or a service, and are generally related to the performance of a product or a service.
+{حسب الصفحة 12 (قسم E-3): المتطلبات المعلنة أو المكشوفة (Revealed requirements) هي بالضبط الخصائص التي يناقشها العملاء (discuss) عندما يصفون الميزات التي من شأنها تحسين المنتج، وترتبط عادة بمستوى الأداء (performance).}
+a) Expected
+b) Revealed
+c) Exciting
+d) Exiting
+b
+
+472
+Problem definition is a difficult task because
+{حسب الصفحة 1 (الفقرة الثالثة): يذكر النص صراحة أن تحديد المشكلة هو مهمة صعبة لأن المشاكل الحقيقية غالباً ما تكون مقنّعة وتتخفى بأشكال متنوعة (true problems are often disguised in a variety of ways) مما يتطلب شخصاً ماهراً لاستخراجها.}
+a) an engineer cannot always feel the pressure of time constraints
+b) true problems are often disguised in a variety of ways
+c) an engineer cannot deliberately fall into the trap of perceiving the problem wrongly
+d) the symptoms of the problem are not always easy to identify
+b
+
+472
+Which of the following is TRUE for Continuous Improvement of quality?
+{حسب الصفحة 15 (الجدول 2 في قسم E-6): التحسين المستمر (Continuous Improvement / Kaizen) يتميز بأنه يتكون من خطوات صغيرة وتدريجية (Small steps / restructuring)، على عكس الخيارات الأخرى التي تعبر عن صفات إعادة الهندسة (Ishinsuru).}
+a) “It leads to a quantum leap or step increase in quality.”
+b) “Paradigm shifts are involved.”
+c) “It consists of small steps or restructuring.”
+d) “It often leads to revolutionary thinking.”
+c
+
+472
+A typical continuous improvement cycle is
+{حسب الصفحة 17 و 18 (الأشكال 4 و 5 في قسم E-8 و E-9): دورة التحسين المستمر النموذجية تُعرف بدورة PDCA وهي مرتبة كالتالي: خطط (Plan)، نفذ (Do)، افحص/تحقق (Check)، تصرف/اعتمد التغيير (Act).}
+a) Act, Check, Plan, Do
+b) Do, Check, plan, Act
+c) Plan, Do, Check, Act
+d) Plan, Check, Do, Act
+c

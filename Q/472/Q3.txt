@@ -1,0 +1,350 @@
+472
+Which of the following is not an ambiguous and vague words/phrase that are not be used in writing a statement about the desired state:
+{حسب الصفحة 41: يجب تجنب استخدام الكلمات والعبارات الغامضة مثل (Best, Minimal, Cheapest, most efficient) لأنها تعني أشياء مختلفة باختلاف الأشخاص. جميع الخيارات (a, b, c) تعتبر غامضة، لذا الخيار الصحيح هو "ليس أياً من الإجابات المذكورة".}
+a) Best
+b) Minimal
+c) most efficient
+d) not in the listed answers
+d
+
+472
+Which of the following is an ambiguous and vague words/phrase that are not be used in writing a statement about the desired state:
+{حسب الصفحة 41: ذُكر نصاً في الكتاب: (avoid using ambiguous and vague words or phrases like "best," "minimal," "cheapest," "within a reasonable time," "most efficient," etc.) لذا جميع ما سبق هي كلمات غامضة يجب تجنبها.}
+a) Best or Minimal
+b) Cheapest
+c) within a reasonable time
+d) All of the listed answers
+d
+
+472
+The frame of mind that seeks mutual benefits for all people involved in solutions is known as:
+{حسب الصفحة 12: في جدول العادات السبع، العادة الرابعة (Think Win/Win) تُعرف نصاً بأنها العقلية التي تبحث عن الفوائد المتبادلة لجميع الأشخاص المعنيين في الحلول (frame of mind that seeks mutual benefits).}
+a) Synergizing
+b) Being Proactive
+c) Seeking to Understand
+d) Win/Win
+d
+
+472
+Which of the following is NOT one of the four dimensions of “Renewal” in Habit 7?
+{حسب الصفحة 12: العادة السابعة (Renewal) تحتوي على أربعة أبعاد هي: الجسدية (Physical)، العقلية (Mental)، الروحية (Spiritual)، والاجتماعية/العاطفية (Social/Emotional). البعد المالي (Financial) غير موجود.}
+a) Physical
+b) Financial
+c) Spiritual
+d) Social/Emotional
+b
+
+472
+During which phase of the heuristic should you check if the solution is “ethical, safe, and environmentally responsible”?
+{حسب الصفحة 18: في مرحلة التقييم (Evaluate phase)، تم ذكر أنه يجب تقييم الحل وطرح السؤال: هل الحل أخلاقي، آمن، ومسؤول بيئياً؟ (Is the solution ethical, safe, and environmentally responsible?).}
+a) Define
+b) Generate
+c) Implement
+d) Evaluate
+d
+
+472
+What is identified as the most difficult aspect of problem-solving?
+{حسب الصفحة 29: في الفقرة الثانية، ذُكر نصاً أن الجانب الأصعب غالباً في حل المشكلات هو فهم وتحديد المشكلة الحقيقية (understanding and defining the real problem).}
+a) Performing calculations
+b) Understanding and defining the real problem
+c) Gathering funding
+d) Managing a project team
+b
+
+472
+What is a “perceived problem” vs. a “real problem”?
+{حسب الصفحة 35 و 36: الكتاب يوضح في الأمثلة أن المشكلة المتصورة (perceived problem) تكون مجرد علاج للأعراض (treat the symptoms) بينما المشكلة الحقيقية تبحث عن السبب الجذري (root cause).}
+a) The perceived problem is the symptom; the real problem is the root cause.
+b) The real problem is always more expensive.
+c) The perceived problem is only found by experts.
+d) There is no difference between them.
+a
+
+472
+The statement “A valuable product was being sold as fast as it could be manufactured in a chemical plant” is written in the “De-bottlenecking a process” as
+{حسب الصفحة 40: في مثال (De-bottlenecking a Process)، كُتبت هذه العبارة حرفياً تحت بند "الموقف" (The situation).}
+a) The situation
+b) The present state
+c) The desired state
+d) Not among the listed answers
+a
+
+472
+What was the premise of the “Failure 101” course at the University of Michigan?
+{حسب الصفحة 15: تم ذكر الدورة "Failure 101" وأن فرضيتها الأساسية هي تشجيع المخاطرة من خلال تعليم الطلاب ألا يخافوا من الفشل في الأفكار التي يولدونها (not to be afraid to fail).}
+a) To punish students for making mistakes in marketing.
+b) To encourage risk-taking by teaching students not to be afraid to fail with the ideas they generated.
+c) To encourage risk-taking by teaching students to be afraid to fail with the ideas they generated.
+d) To provide a roadmap to avoid all errors in design.
+b
+
+472
+Which of the following is NOT one of the first four steps in problem definition?
+{حسب الصفحة 29: الخطوات الأربع الأولى هي (1. جمع البيانات، 2. التحدث مع الأشخاص المطلعين، 3. رؤية المشكلة مباشرة، 4. تأكيد النتائج). خيار "حل نسخة مبسطة" ليس من ضمنها.}
+a) Collect and analyze information
+b) Talk with people familiar with the problem
+c) View the problem first hand
+d) Solve a simplified version of the problem
+d
+
+472
+Which of the following does not match with the Present State/Desired State technique
+{حسب الصفحة 41: التقنية تساعدنا في معرفة "كيف نصل إلى هناك من هنا" (get there from here). لذا العبارة المعكوسة (get here from there) هي الخاطئة.}
+a) helps us verbalize where we are and where we want to go
+b) helps to know how one can get there from here
+c) helps to know how one can get here from there
+d) helps to learn whether the Desired State are consistent with the Present State.
+c
+
+472
+What is the primary focus of the “First Four Steps” used by experienced problem solvers?
+{حسب الصفحة 29: ذُكر نصاً أسفل جدول الخطوات الأربع أن التركيز الأساسي لها هو جمع المعلومات (focus on gathering information).}
+a) Brainstorming solutions
+b) Gathering information
+c) Hiring consultants
+d) Building prototypes
+b
+
+472
+The statement “Many bullets. projectiles penetrating aircraft” was the ......... in the case of Hitting ’Em Where They Aren’t
+{حسب الصفحة 42: في جدول تقنية (Present/Desired State)، أُدرجت هذه العبارة تحت عمود الوضع الحالي (Present State).}
+a) Present state
+b) Desired state
+c) Absolute state
+d) Ignorable state
+a
+
+472
+Habit 3, “Put First Things First,” suggests that effective problem solvers should:
+{حسب الصفحة 12: العادة الثالثة تنص على قول "لا" للمهام غير المهمة والتركيز على المهام المهمة وذات الأثر.}
+a) Listen to other perspectives first.
+b) Value differences in the people they work with.
+c) Say NO to doing unimportant tasks and focus on the impactful ones.
+d) Renew the four dimensions of their nature.
+c
+
+472
+In the “Case of the Dead Fish,” what was the initial perceived problem?
+{حسب الصفحة 36: التوجيهات الأولية لحل "المشكلة المتصورة" كانت تصميم محطة لمعالجة النفايات وتقليل "النفايات السامة" (reduce the toxic waste).}
+a) Low river levels
+b) Overfishing
+c) High water temperature
+d) Toxic waste discharge
+d
+
+472
+To increase the probability of arriving at the true problem statement: reworking the Present State and the Desired state statements until they ........
+{حسب الصفحة 41: ذُكر نصاً أن إعادة صياغة الوضع الحالي والمطلوب حتى يتطابقان (until they match) هي تقنية تزيد من احتمالية الوصول لبيان المشكلة الحقيقي.}
+a) equal
+b) in contradiction of
+c) differs
+d) match
+d
+
+472
+Which of the following is related to “Exploring the Problem”
+{حسب الصفحة 38: في جدول (3-2) الخاص باستكشاف المشكلة، تم إدراج كل هذه الخيارات كخطوات أساسية.}
+a) Hypothesize and Visualize What Could Be Wrong with the Current Situation.
+b) Brainstorm to Guess the Answer.
+c) Recall Past or Related Problems and Experiences.
+d) All of the listed answers
+d
+
+472
+The technique of that focuses on finding out where the problem statement came from does not include ...........
+{حسب الصفحة 35: عبارة (How to go from here to there) تنتمي لتقنية (Present/Desired State) في صفحة 41، وليست من ضمن تقنية تتبع مصدر المشكلة.}
+a) How to go from here to there
+b) Who posed the problem statement in the first place, your supervisor, his/her supervisor, a colleague...
+c) Can that person explain the reasoning as to how they arrived at that particular problem statement?
+d) Are the reasoning and assumptions valid?
+a
+
+472
+The technique of that focuses on finding out where the problem statement came from includes all of the following except?
+{حسب الصفحة 35: جميع الخيارات المذكورة (a, b, c) موجودة نصاً كخطوات ضمن هذه التقنية، لذا الإجابة الصحيحة هي "لا شيء مما سبق".}
+a) Where did the problem originate?
+b) Are the reasoning and assumptions valid?
+c) Have you used the first four steps to gather information about the problem?
+d) Non of the listed answers
+d
+
+472
+“Think Win-Win” is the frame of mind that seeks:
+{حسب الصفحة 12: العادة الرابعة هي عقلية تبحث عن "الفوائد المتبادلة" (Mutual benefits) لجميع الأطراف المعنية.}
+a) Competition within the team
+b) Individual recognition only
+c) Mutual benefit for all people involved in solutions and agreements
+d) Fast decision-making
+c
+
+472
+Writing a personal mission statement matches with
+{حسب الصفحة 12: العادة الثانية (Begin with the End in Mind) تنصح حرفياً بكتابة بيان مهمة شخصي (Write a personal mission statement).}
+a) Put First Things First
+b) Synergize
+c) Begin with the End in Mind
+d) Think Win-Win
+c
+
+472
+The preparation stage of problem solving involves:
+{حسب الصفحة 29: مرحلة الإعداد وأول أربع خطوات في تعريف المشكلة تركز أساساً على "جمع المعلومات" (gathering information).}
+a) Selecting the final solution
+b) Gathering information
+c) Testing prototypes
+d) Marketing the product
+b
+
+472
+Why did the Swiss watch industry’s market share drop from 80% to less than 10%?
+{حسب الصفحة 16: السويسريون عانوا من "شلل النماذج" (paradigm paralysis) وفشلوا في تبني التكنولوجيا الجديدة على الرغم من أنهم هم من اخترعها.}
+a) They did not have the technology to invent the digital watch.
+b) They were unable to afford the patents.
+c) They suffered from paradigm paralysis and failed to adopt the digital watch.
+d) They focused too much on “Renewal” and not enough on “Synergy.”
+c
+
+472
+According to Albert Einstein, what is often more essential than finding a solution?
+{حسب الصفحة 29: مقولة أينشتاين تنص على أن "صياغة المشكلة" (The formulation of a problem) أكثر أهمية من حلها الذي قد يكون مجرد مهارة رياضية.}
+a) Mathematical skill
+b) Experimental skill
+c) The formulation of a problem
+d) Rapid implementation
+c
+
+472
+Who is “George” in the context of problem-solving?
+{حسب الصفحة 32: "جورج" هو مصطلح يُطلق على الشخص الذي يمتلك سنوات من الخبرة والذكاء العملي والدهاء (years of experience and street smarts).}
+a) The CEO of the company.
+b) An individual with years of experience and “street smarts”.
+c) A fictional character used for training.
+d) The newest member of the engineering team.
+b
+
+472
+The habit “Seek First to Understand, Then to Be Understood” emphasizes:
+{حسب الصفحة 12: العادة الخامسة تؤكد على ضرورة الاستماع أولاً، وأن تكون ذا مصداقية، متعاطفاً، ومنطقياً (Be empathic and logical).}
+a) Speaking first
+b) Technical dominance
+c) Avoiding discussion
+d) Be empathic and logical
+d
+
+472
+In the context of “Failure 101,” what happened when caviar was first introduced at the Ritz Hotel?
+{حسب الصفحة 15: عندما قُدم الكافيار لأول مرة، لم يعجب الفرنسيين وبصقوه في المبصقات المجاورة (made ready use of the nearby spittoons).}
+a) It was an immediate success.
+b) The French made ready use of the nearby spittoons.
+c) The owners went out of business immediately.
+d) The French never used the nearby spittoons.
+b
+
+472
+Which of the following is the FIRST step used by experienced problem solvers in the “First Four Steps” of problem definition?
+{حسب الصفحة 29: الخطوة الأولى في جدول (3-1) هي "جمع وتحليل المعلومات والبيانات" (Collect and analyze information and data).}
+a) Talk with people familiar with the problem.
+b) Confirm all findings.
+c) Collect and analyze information and data.
+d) Brainstorm to guess the answer.
+c
+
+472
+It is important that the Present State statement ...........the Desired State statement.
+{حسب الصفحة 41: من الضروري أن يتطابق الوضع الحالي مع الوضع المطلوب (match the Desired State statement).}
+a) equal
+b) in contradiction of
+c) differs
+d) match
+d
+
+472
+The instructions “Fly to Copenhagen to begin the design and installation of a piping System” was given in the case of
+{حسب الصفحة 37: في حالة (Sweet and Sour)، كانت التعليمات المعطاة للمهندس توم أندرسون هي السفر إلى كوبنهاغن.}
+a) De-bottlenecking a Process
+b) The Dead Fish
+c) Hitting ’Em Where They Aren’t
+d) Finding Out Where the Problem Came From Sweet and Sour
+d
+
+472
+In the case of “Seeking Advice”, who suggested adding an elevator on the outside of the building?
+{حسب الصفحة 31: حارس الباب (The doorman) هو الذي سمع المحادثة مصادفة واقترح إضافة مصعد من الخارج.}
+a) the taxi driver
+b) The manager
+c) The doorman
+d) the assistant manager
+c
+
+472
+“Synergize” means:
+{حسب العادة السادسة (Synergize)، التآزر يعني العمل الجماعي البناء حيث يساعد الجميع في إبراز أفضل ما في الآخرين لإنتاج حلول أعظم من مجموع الأجزاء (Help everyone bring out the best in everyone else).}
+a) Working independently
+b) Reducing idea diversity
+c) Eliminating teamwork
+d) Help everyone bring out the best in everyone else.
+d
+
+472
+Which of the following is not related to “Exploring the Problem”
+{جميع الخيارات المذكورة (جمع المعلومات المتاحة، استرجاع النظريات ذات الصلة، وجمع المعلومات الناقصة) هي خطوات أساسية ومذكورة نصاً في جدول استكشاف المشكلة (Exploring the Problem). لذا الخيار الصحيح هو "لا شيء مما سبق".}
+a) Identify All Available Information.
+b) Recall or Learn Pertinent Theories and Fundamentals.
+c) Collect Missing Information.
+d) None of the listed answers
+d
+
+472
+When talking to people familiar with a problem, what type of questions can often produce profound results?
+{حسب ما ورد في الكتاب في بند (التحدث مع الأشخاص المطلعين)، طرح أسئلة تبدو ساذجة أو بسيطة (Seemingly naive or "dumb" questions) غالباً ما يؤدي إلى نتائج مبهرة لأنها تتحدى الافتراضات الأساسية.}
+a) Highly technical questions
+b) Seemingly naive or “dumb” questions
+c) Leading questions
+d) Negative questions
+b
+
+472
+In the problem-solving heuristic, the “Evaluation” phase is meant to ensure:
+{مرحلة التقييم (Evaluation) في منهجية حل المشكلات تهدف للتأكد من أن الحل المختار يلبي جميع المعايير والشروط المطلوبة دون انتهاك أي قيود (meets all criteria without violating constraints)، بالإضافة لكونه أخلاقي وآمن.}
+a) That you have gathered enough data.
+b) That the solution meets all criteria without violating constraints.
+c) That you have brainstormed at least ten alternatives.
+d) That the problem was defined by a supervisor.
+b
+
+472
+Which of the following does match with the Present State/Desired State technique?
+{تقنية (Present State/Desired State) تساعدنا في تحديد الفجوة بين الوضع الحالي والوضع المطلوب، وبالتالي تساعدنا في معرفة "كيف نصل إلى هناك من هنا" (how one can get there from here).}
+a) helps to generate multiple alternative solutions to the problem
+b) helps to know how one can get there from here
+c) helps to know how one can get here from there.
+d) helps to ignore whether the Desired State are consistent with Present State.
+b
+
+472
+To which block of the heuristic does this statement belong to “plan the activities you need to do to solve the problem”?
+{تخطيط الأنشطة اللازمة لحل المشكلة (plan the activities) هو جزء أساسي ومباشر من مرحلة التنفيذ (Implement the solution) حيث يتم وضع الخطط موضع التنفيذ الفعلي.}
+a) Define the problem
+b) generate alternative solutions
+c) implement the solution
+d) evaluate the problem
+c
+
+472
+Which of the following is related to “Exploring the Problem” (Variant)?
+{حسب الخطوات التفصيلية لاستكشاف المشكلة في المنهج، كل هذه العمليات (استرجاع الخبرات السابقة، رسم ووصف الحل المبدئي، وجمع المزيد من البيانات) تعتبر أجزاء رئيسية وأساسية من استكشاف المشكلة.}
+a) Recall Past or Related Problems and Experiences.
+b) Describe or Sketch the Solution in a Qualitative Manner or Sketch Out a Pathway That Will Lead to the Solution.
+c) Collect More Data and Information.
+d) All of the above
+d
+
+472
+Which of the following is NOT one of the ’First Four Steps’ used by experienced problem solvers to define a problem?
+{الخطوات الأربع الأولى لتعريف المشكلة هي: 1. جمع البيانات، 2. التحدث مع الأشخاص المطلعين، 3. رؤية المشكلة مباشرة، 4. تأكيد النتائج. "العصف الذهني لتخمين الإجابة" (Brainstorm to guess the answer) ليس من ضمنها ويعتبر تصرفاً خاطئاً في هذه المرحلة.}
+a) Talk with people familiar with the problem
+b) Confirm all findings
+c) Collect and analyze information and data
+d) Brainstorm to guess the answer
+d
