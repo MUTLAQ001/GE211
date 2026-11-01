@@ -2284,6 +2284,13 @@ const ContentView = () => {
     title: 'تقييم',
     note: 'تشك لستات 481 — كل وحدة بملف مستقل جاهز للطباعة',
     groups: [{
+      label: 'الجدول المعدّل — من الأسبوع 11 إلى السلبريشن',
+      links: [{
+        name: 'Revised Calendar (23 Oct 2026)',
+        url: F481 + 'Course-Schedule-Revised-481.pdf',
+        imp: true
+      }]
+    }, {
       label: 'جدول تسليم واجبات اللاب',
       links: [{
         name: 'الجدول المعدّل Lab Assignments Schedule',
@@ -2303,6 +2310,9 @@ const ContentView = () => {
       }, {
         name: 'الجورنال Journal',
         url: F481 + 'checklists/Engineering-Journal-Checklist-481.pdf'
+      }, {
+        name: 'DR-Quiz',
+        url: F481 + 'checklists/DR-Quiz-Checklist-481.pdf'
       }]
     }, {
       label: 'مع كل تسليم',
@@ -2337,6 +2347,12 @@ const ContentView = () => {
         name: '2nd DNB (L-4-b)',
         url: F481 + 'checklists/DNB-2nd-Assessment-Checklist-481.pdf'
       }, {
+        name: '3rd DNB (L-4-c)',
+        url: F481 + 'checklists/DNB-3rd-Assessment-Checklist-481.pdf'
+      }, {
+        name: '4th DNB (L-4-d)',
+        url: F481 + 'checklists/DNB-4th-Assessment-Checklist-481.pdf'
+      }, {
         name: 'ملخص تقييمات DNB',
         url: F481 + 'checklists/DNB-Assessments-Summary-481.pdf'
       }, {
@@ -2366,6 +2382,15 @@ const ContentView = () => {
       }, {
         name: 'C4 — Beans',
         url: F481 + 'checklists/C4-Process-Check-Beans-481.pdf'
+      }, {
+        name: 'C5-1 — Adverse Consequences',
+        url: F481 + 'checklists/C5-Process-Check-Adverse-Consequences-481.pdf'
+      }, {
+        name: 'C5-2 — Situation Analysis (Exxon Valdez)',
+        url: F481 + 'checklists/C5-Process-Check-Situation-Analysis-481.pdf'
+      }, {
+        name: 'C5-3 — Potential Problem Analysis (Solar Car)',
+        url: F481 + 'checklists/C5-Process-Check-PPA-481.pdf'
       }]
     }]
   }, {
@@ -2391,6 +2416,18 @@ const ContentView = () => {
     }, {
       name: 'الاستبيان 6',
       url: F481 + 'FDM-481-Part6-Entry-Exit-Survey.pdf'
+    }]
+  }, {
+    title: 'DR-Quiz — الخميس 17 ديسمبر',
+    featured: true,
+    note: 'المنهج: صفحات 10–18 من كتاب Engineering Design (Dieter & Schmidt) وهي داخل الباكج. أول 10 دقايق من المحاضرة بقاعة المقرر · النجاح من 60% · إذا نجحت ينشال عنك Defect واحد من جلسات الـ Concepts · ما فيه إعادة · الورقة ما ترجع لك',
+    links: [{
+      name: 'باكج الـ DR',
+      url: F481 + 'DR-Quiz-Package-481.pdf',
+      imp: true
+    }, {
+      name: 'تشك لست الـ DR',
+      url: F481 + 'checklists/DR-Quiz-Checklist-481.pdf'
     }]
   }, {
     title: 'C1 Concept Session',
@@ -2421,6 +2458,13 @@ const ContentView = () => {
       url: F481 + 'C4-481-Student-Package.pdf'
     }]
   }, {
+    title: 'C5 Concept Session',
+    note: 'داخله: نموذج KT Decision Analysis + جدول Adverse Consequences + Process Check (C5-1) + مشكلة Exxon Valdez وقصتها + ورقة Situation Analysis + Process Check (C5-2) + سلايدات Solar Car Race + Process Check PPA',
+    links: [{
+      name: 'باكج الطالب',
+      url: F481 + 'C5-481-Student-Package.pdf'
+    }]
+  }, {
     title: 'L1 Lab Session',
     note: 'داخله: واجب L-1 + تشك لست المقابلة (481) + PTW + نموذج كويز 1 بحلّه',
     links: [{
@@ -2447,6 +2491,13 @@ const ContentView = () => {
     links: [{
       name: 'باكج الطالب',
       url: F481 + 'L4-481-Student-Package.pdf'
+    }]
+  }, {
+    title: 'L5 Lab Session',
+    note: 'داخله: واجب L-4-c (Artifact Selection) + تشك لست DNB الثالث + جدول KTDA (Musts/Wants) + واجب L-4-d (Implementation) + تشك لست DNB الرابع',
+    links: [{
+      name: 'باكج الطالب',
+      url: F481 + 'L5-481-Student-Package.pdf'
     }]
   }];
   const recordings = [{
@@ -2637,6 +2688,7 @@ const ContentView = () => {
     if (activeIdx === 1) {
       const eraFiles = fileEra === '481' ? files481 : files;
       const pinned = eraFiles.filter(f => f.title === 'تقييم');
+      const featured = eraFiles.filter(f => f.featured);
       const fdm = eraFiles.filter(f => f.title.includes('FDM'));
       const concepts = eraFiles.filter(f => f.title.includes('Concept'));
       const labs = eraFiles.filter(f => f.title.includes('Lab'));
@@ -2701,6 +2753,9 @@ const ContentView = () => {
         key: `p-${i}`,
         f: f,
         isPinned: true
+      })), featured.map((f, i) => React.createElement(FileCard, {
+        key: `t-${i}`,
+        f: f
       })), fdm.map((f, i) => React.createElement(FileCard, {
         key: `f-${i}`,
         f: f
@@ -3950,6 +4005,105 @@ const CAL_OFFICIAL = [{
   date: '2026-11-05',
   type: 'deliv',
   note: 'موعدهم جلسة C5-3.'
+}, {
+  id: 'o-l5-1',
+  title: 'L5-1 — L-4-b presentation and 2nd DNB assessment',
+  date: '2026-11-08',
+  type: 'deliv',
+  note: 'عرض المرحلة (b) + تقييم DNB الثاني — إعادة التسليم في L5-3. وهي نفسها موعد إعادة تسليم L-3-0 وL-4-a.'
+}, {
+  id: 'o-l5-2',
+  title: 'L5-2 — Work on L-4-c',
+  date: '2026-11-10',
+  type: 'lecture'
+}, {
+  id: 'o-l5-3',
+  title: 'L5-3 — L-4-c presentation and 3rd DNB assessment',
+  date: '2026-11-12',
+  type: 'deliv',
+  note: 'عرض المرحلة (c) + تقييم DNB الثالث (إعادة التسليم في L6-1) + تسليم L-5 Team Process Checks.'
+}, {
+  id: 'o-q9',
+  title: 'Quiz #9 — C6-1',
+  date: '2026-11-15',
+  type: 'quiz',
+  note: 'Scope: SCPS Ch6 (6.5 to end). Session activity: Food for thought.'
+}, {
+  id: 'o-c6-2a',
+  title: 'C6-2 — Explaining L-4-d and L-4-e',
+  date: '2026-11-17',
+  type: 'lecture',
+  note: 'الجلسة ممكن تتكرر وممكن تكون أونلاين — مواعيدها: الثلاثاء 17/11 والخميس 19/11 والثلاثاء 1/12.'
+}, {
+  id: 'o-c6-2b',
+  title: 'C6-2 — Explaining L-4-d and L-4-e (تكرار)',
+  date: '2026-11-19',
+  type: 'lecture',
+  note: 'تكرار لجلسة C6-2 — ممكن تكون أونلاين.'
+}, {
+  id: 'o-c6-2c',
+  title: 'C6-2 — Explaining L-4-d and L-4-e (تكرار)',
+  date: '2026-12-01',
+  type: 'lecture',
+  note: 'تكرار لجلسة C6-2 — ممكن تكون أونلاين.'
+}, {
+  id: 'o-q10',
+  title: 'Quiz #10 — C6-3 (Work on L-4-d in class)',
+  date: '2026-12-03',
+  type: 'quiz',
+  note: 'Scope: SCPS Ch7 كامل. وبعد الكويز شغل على L-4-d داخل القاعة.'
+}, {
+  id: 'o-q78-fix',
+  title: 'آخر موعد تصحيح / ميك أب Quiz #7 و #8',
+  date: '2026-12-03',
+  type: 'deliv',
+  note: 'موعدهم جلسة C6-3.'
+}, {
+  id: 'o-l6-1',
+  title: 'L6-1 — L-4-d presentation and 4th DNB assessment',
+  date: '2026-12-06',
+  type: 'deliv',
+  note: 'عرض المرحلة (d) + تقييم DNB الرابع — ما فيه إعادة تسليم. وهي موعد إعادة تسليم L-4-c.'
+}, {
+  id: 'o-l6-2',
+  title: 'L6-2 — Reverse Engineering',
+  date: '2026-12-08',
+  type: 'lecture',
+  note: 'وهي موعد إعادة تسليم L-2 Team Norms.'
+}, {
+  id: 'o-l6-3',
+  title: 'L6-3 — L-4-e presentation and 5th DNB assessment',
+  date: '2026-12-10',
+  type: 'deliv',
+  note: 'عرض المرحلة (e) + تقييم DNB الخامس. وهي آخر موعد تصحيح / ميك أب Quiz #9 و #10 وإعادة تسليم L-5.'
+}, {
+  id: 'o-celeb1',
+  title: 'Celebration 1 — محجوز للسلبريشن',
+  date: '2026-12-13',
+  type: 'exam',
+  note: 'السلبريشن هو الاختبار النهائي: حضوره إلزامي وعدم حضوره = رسوب بالمقرر.'
+}, {
+  id: 'o-celeb2',
+  title: 'Celebration 2 — محجوز للسلبريشن',
+  date: '2026-12-15',
+  type: 'exam'
+}, {
+  id: 'o-dr',
+  title: 'DR-Quiz — أول 10 دقائق من المحاضرة',
+  date: '2026-12-17',
+  type: 'quiz',
+  note: 'Scope: صفحات 10–18 من Engineering Design (Dieter & Schmidt) — الباكج في تبويب الملفات. بقاعة المقرر، النجاح من 60%، وإذا نجحت ينشال عنك Defect واحد من جلسات الـ Concepts. ما فيه إعادة، والدرجة تدخل بالتقدير النهائي بدون ما تنعلن.'
+}, {
+  id: 'o-celeb3',
+  title: 'Celebration 3 — DR + محجوز للسلبريشن',
+  date: '2026-12-17',
+  type: 'exam'
+}, {
+  id: 'o-celeb4',
+  title: 'Celebration 4 — احتياطي (إذا احتاج)',
+  date: '2026-12-20',
+  type: 'other',
+  note: 'يُتجنّب قدر الإمكان. مسؤوليتك ما يتداخل أي نشاط أو اختبار أو محاضرة مع مواعيد المقرر لين الأحد 20 ديسمبر 2026.'
 }].map(e => Object.assign({
   official: true
 }, e));
